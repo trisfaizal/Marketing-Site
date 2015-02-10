@@ -1,0 +1,17 @@
+---
+layout: post
+title: Building Solitaire with HTML and JavaScript
+header: Building Solitaire with HTML and JavaScript
+category: Tutorials
+author: george
+---
+
+![Solitaire Game Screenshot](/img/blog/solitaire.png)
+Recently we released an <a target="_blank" href="http://solitaire.cloudvent.net">HTML5 Solitaire Game</a> built on CloudCannon. There were quite a few people keen to read some tutorials that outline how it was built.
+
+Over the next month the posts I am going to cover are:
+* The HTML and CSS to build cards
+* Creating the Interface
+* Writing the logic in Backbone.js
+
+Are there any other topics in you would want to me to write about?

@@ -1,0 +1,96 @@
+---
+layout: default
+title : Jekyll Beta Documentation
+header : Jekyll Beta Documentation
+---
+<section>
+	<div class="container">
+		<ul class="docs-nav">
+			<li><strong>Jekyll Docs</strong></li>
+			<li><a href="#welcome">Welcome</a></li>
+			<li><a href="#initial_setup">Initial Setup</a></li>
+			<li><a href="#blogging">Blogging Interface</a></li>
+			<li><a href="#post_headers">Editing Post Headers</a></li>
+
+			<li class="separator"></li>
+			<li><a href="#version">Version</a></li>
+			<li><a href="#plugins">Plugins</a></li>
+		</ul>
+
+		<div class="docs-content">
+			<h2 id="welcome">Welcome</h2>
+
+			<p>We’re really excited to have you using Jekyll on CloudCannon. There are a few things you should know.</p>
+			
+			<hr>
+
+			<div class="clearfix">
+				<h3 id="initial_setup">Initial Setup</h3>
+				<p>For a typical CloudCannon website you just need to create the site and add the files. For jekyll sites this is no different. Just add your jekyll files and make sure there is a <code>config.yml</code> file present.</p>
+
+				<p>CloudCannon will sync the files and compile it with every change.</p>
+			</div>
+			
+			<hr>
+
+			<div class="clearfix">
+				<h3 id="blogging">Blogging Interface</h3>
+				<p>One of the new things with the private beta is the blogging interface. CloudCannon will automatically make sense of your directory structure. With this CloudCannon gives you a list of your blog posts and drafts, allows you to create new one and even write your content in a visual way rather than using markdown. Of course you can still update the code directly as you usually do.</p>
+
+				<div class="gallery">
+					<img src="/img/jekyll-docs/posts-list.png" alt="Screen Shot of posts list">
+					<img src="/img/jekyll-docs/visual-editor.png" alt="Screen Shot of Visual Post Editor">
+					<img src="/img/jekyll-docs/code-editor.png" alt="Screen Shot of Code Post Editor">
+				</div>
+			</div>
+			
+			<hr>
+
+			<div class="clearfix">
+				<h3 id="post_headers">Editing Post Headers</h3>
+				<p>Editing the post headers is usually just a matter of editing some yaml at the top of your post. To do this visually we need some more information. Introducing <code>/_posts/_defaults.json</code> file. This defines what the default headers are for new posts and how it can be changed. Let take a look at CloudCannon's <code>/_posts/_defaults.json</code> file:</p>
+
+				<pre class="prettyprint linenums lang-json">{
+  "layout": "post",
+  "title": "Enter a better title here!",
+  "header": "",
+  "category": ["Features", "Freebies", "Company", "Tutorials", "Interview"],
+  "author": ["george", "mike", "yasmin"]
+}</pre>
+
+				<p>CloudCannon reads these values and uses them to generate the header for any new post. A new post will get the following header: </p>
+
+				<pre class="prettyprint linenums lang-yml">---
+layout: post
+title: Enter a better title here!
+header: 
+category: Features
+author: george
+---</pre>
+
+				<p> When this post is opened in the visual editor a cog will appear in the top left corner. Clicking this will open a settings dialog.</p>
+				<div class="gallery">
+					<img src="/img/jekyll-docs/visual-with-settings-overlay.png" alt="Screen Shot of Settings">
+					<img src="/img/jekyll-docs/visual-with-settings-open.png" alt="Screen Shot of Settings">
+				</div>
+
+				<p>Within this dialog the <code>/_posts/_defaults.json</code> file is used again and the lists (category, author) are turned into dropdown menus. As well as this the contents of the <code>_layouts</code> directory are read to give a list of layouts. With this you can configure how much configuration your clients can have.
+			</div>
+			<hr>
+			<div class="clearfix">
+				<h3 id="version">Version</h3>
+				<p>Jekyll is running version 2.03</p>
+			</div>
+			<hr>
+			<div class="clearfix">
+				<h3 id="plugins">Plugins</h3>
+				<p>Plugins are not run on CloudCannon for security reasons. If there is one that you find essential for all projects please contact us.</p>
+			</div>
+			<hr>
+			<div>
+				<p>That’s all there is to it! Get in touch anytime you need help, reach us at <a href="mailto:support@cloudcannon.com">support@cloudcannon.com</a>.</p>
+
+			</div>
+		</div> 
+	</div> 
+</section>

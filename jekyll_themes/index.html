@@ -1,0 +1,17 @@
+---
+layout: default
+title : Jekyll Themes
+header : Jekyll Themes
+---
+<section>
+	<div class="container text-container jekyll-themes">
+		{% for theme in site.jekyll_themes %}
+			<div class="column">
+				<a class="column-inner" href="{{theme.url}}">
+					<img src="{{theme.thumb}}">
+					<span>{{theme.name}}</span>
+				</a>
+			</div>
+		{% endfor %}
+	</div>
+</section>

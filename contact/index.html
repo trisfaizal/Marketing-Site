@@ -1,0 +1,42 @@
+---
+layout: default
+title : Contact
+header : Contact
+---
+
+<section>
+	<div class="container">
+		<iframe height="300" frameborder="0" style="border:0; background: #eee; display: block; width: 100%;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3153.4379181137506!2d-122.4018327!3d37.77977579999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580807deab7bd%3A0x1258de79c702ff07!2s185+Clara+St%2C+San+Francisco%2C+CA+94107%2C+USA!5e0!3m2!1sen!2snz!4v1407442706645"></iframe>
+
+        <form action="/contact_success" method="post" class="contact-form">
+			<input type="hidden" name="cc_emails[]" value="support@cloudcannon.com">
+
+			<label for="name">Full Name</label>
+			<input type="text" name="name" id="name" placeholder="Full Name">
+
+			<label for="email">Email Address</label>
+			<input type="email" name="email" id="email" placeholder="Email Address" required>
+
+			<label for="message">Message</label>
+			<textarea name="message" id="message" placeholder="Message"></textarea>
+
+			<input type="submit" value="Send Message">
+		</form>
+
+		<div class="contact-details">
+			<h4>Address</h4>
+			<address>
+				185 Clara Street,<br> 
+				San Francisco,<br> 
+				CA, 94107<br>
+				United States
+			</address>
+
+			<h4> Email </h4>
+			<a href="mailto:support@cloudcannon.com">support@cloudcannon.com</a>
+
+			<h4> Phone </h4>
+			+1 (415) 359 3289
+		</div>
+	</div>
+</section>
