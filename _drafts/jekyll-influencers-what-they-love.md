@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Jekyll Influencers What They Love
+title: 5 reasons you should use Jekyll
 header: Powerful Templates
-category: Features
-author: mike
+category: Jekyll
+author: sam
 ---
