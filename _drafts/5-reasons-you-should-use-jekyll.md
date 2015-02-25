@@ -103,14 +103,28 @@ quotes:
     image_path: https://pbs.twimg.com/profile_images/1114190642/27397_8639519_5240_n_400x400.jpg
     work_title: Jekyll data_source tutorial
     work_path: https://esq.io/blog/posts/dogfooding-with-jekyll/
-  alan:
-    text: The fact that it&#39;s a simple, but complete, system. GitHub Pages support is also huge.   
-    name: David Zvenyach
-    twitter_path: https://twitter.com/vdavez
-    image_path: https://pbs.twimg.com/profile_images/1114190642/27397_8639519_5240_n_400x400.jpg
-    work_title: Jekyll data_source tutorial
-    work_path: https://esq.io/blog/posts/dogfooding-with-jekyll/
-    Jekyll is extremely simple and easy to use. &nbsp;In addition, there is great documentation.  
+  matthew:
+    text: Jekyll is extremely simple and easy to use.   
+    name: Matthew Kosloski
+    twitter_path: https://twitter.com/_mkos
+    image_path: https://pbs.twimg.com/profile_images/499619192883396609/lAwfijv8_400x400.jpeg
+    work_title: Blogging with Jekyll
+    work_path: http://matthewkosloski.me/journal/about-the-site/
+  mike:
+    text: Jekyll is a very simple, straight-forward tool. &nbsp;It gives me just what I need to put together a blog or a static website without all of the extra junk. Tom Preston-Werner called it &quot;blogging for hackers&quot;, and I found that to be an appropriate description. &nbsp;Speaking as a programmer, I found it very easy to dive in and learn the basics. &nbsp;It gives you the freedom and ability to create just about anything you&#39;d need provided you are willing to learn Markdown and a little bit of the Liquid template engine.     
+    name: Mike Greiling
+    twitter_path: https://twitter.com/mikegreiling
+    image_path: https://pbs.twimg.com/profile_images/3665350757/672d30f885ed73aa4e1d7d8d87289649_400x400.png
+    work_title: Jekyll intro tutorial
+    work_path: http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/
+  mike:
+    text: Jekyll is a very simple, straight-forward tool. &nbsp;It gives me just what I need to put together a blog or a static website without all of the extra junk. Tom Preston-Werner called it &quot;blogging for hackers&quot;, and I found that to be an appropriate description. &nbsp;Speaking as a programmer, I found it very easy to dive in and learn the basics. &nbsp;It gives you the freedom and ability to create just about anything you&#39;d need provided you are willing to learn Markdown and a little bit of the Liquid template engine.     
+    name: Mike Greiling
+    twitter_path: https://twitter.com/mikegreiling
+    image_path: https://pbs.twimg.com/profile_images/3665350757/672d30f885ed73aa4e1d7d8d87289649_400x400.png
+    work_title: Jekyll intro tutorial
+    work_path: http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/
+     
 ---
 ---
 I recently reached out to a number of people that I consider to be Jekyll influencers. These guys aren&#39;t the core contributing team, but rather users like you and me passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
@@ -163,21 +177,15 @@ Top 5 most common reasons to love Jekyll:
 
 {% include /quote.html quote=page.quotes.dave%}
 
+{% include /quote.html quote=page.quotes.matthew%}
+
+{% include /quote.html quote=page.quotes.mike%}
 
 
-Jekyll is extremely simple and easy to use. &nbsp;In addition, there is great documentation.  
-- Matthew Kosloski&nbsp;&nbsp; &nbsp;https://twitter.com/_mkos&nbsp;&nbsp; &nbsp;295&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;http://matthewkosloski.me/journal/about-the-site/
 
-Jekyll is a very simple, straight-forward tool. &nbsp;It gives me just what I need to put together a blog or a static website without all of the extra junk.  
-Tom Preston-Werner called it &quot;blogging for hackers&quot;, and I found that to be an appropriate description. &nbsp;Speaking as a programmer, I found it very easy to dive in and learn the basics. &nbsp;It gives you the freedom and ability to create just about anything you&#39;d need provided you are willing to learn Markdown and a little bit of the Liquid template engine.  
-- Mike Greiling&nbsp;&nbsp; &nbsp;https://pbs.twimg.com/profile_images/3665350757/672d30f885ed73aa4e1d7d8d87289649_400x400.png, https://twitter.com/mikegreiling&nbsp;&nbsp; &nbsp;103&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/
+#### If I may generalise even further:
 
-Jekyll is extremely simple and easy to use.  
-- Matthew Kosloski&nbsp;&nbsp; &nbsp;https://pbs.twimg.com/profile_images/499619192883396609/lAwfijv8_400x400.jpeg&nbsp;&nbsp; &nbsp;https://twitter.com/_mkos&nbsp;&nbsp; &nbsp;295&nbsp;&nbsp; &nbsp;http://matthewkosloski.me/journal/about-the-site/&nbsp;&nbsp; &nbsp;
-
-To generalise even further:
-
-If I can go so far as to simplify that top 5 list even more it would seem to me that Jekyll appeals to developers for 2 main reasons:
+It would seem to me that those 5 most common answers for liking Jekyll are really subsets of two larger comforts for developers:
 
 1. You can understand what&#39;s happening. (HTML + CSS/SASS + Markdown get fed in and compiled, and those components themselves are easy to manipulate with minimal new learning).That gives you power and confidence.  
 2. You love what gets spit out. (Static site files that are extremely easy to handle: speed, security, stability are all amazing).
