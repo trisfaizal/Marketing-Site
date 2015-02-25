@@ -135,7 +135,7 @@ The response I had was awesome and I&#39;ve decided to share my findings in a 3 
 
 My first big question was &quot;What do you love about Jekyll?&quot;
 
-#### The Tl;DR:
+#### The TL;DR:
 
 Top 5 most common reasons to love Jekyll:
 
