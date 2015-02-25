@@ -2744,3 +2744,25 @@ td:first-child {
 .theme-slider {
   list-style: none;
 }
+
+.quote-box:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.quote-box img {
+  border-radius: 9999px;
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+}
+
+.quote-box p:first-of-type {
+  font-size: 1.2em;
+  padding-top: 20px
+}
+
+.subtext {
+  opacity: 0.8;
+}
