@@ -12,7 +12,7 @@ quotes:
   meek:
     text: Why, hello there
     name: Meek Nick
-    image_path: /img/sam.jpg
+    image_path: /img/sam.jpg 
 ---
 
 {% include /quote.html quote=page.quotes.nick%}
