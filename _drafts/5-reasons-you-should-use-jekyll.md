@@ -4,6 +4,21 @@ title: 5 reasons you should use Jekyll
 header: Powerful Templates
 category: Jekyll
 author: sam
+quotes:
+  harry:
+    text: "Its hacker-feeling nature. No CMS, no admin UI, no rich-text editor, no databases, etc. It just feels like a truly cheap-and-cheerful (whilst actually being very rich in features) way for a technical person to get a site up and running. It feels a lot &lsquo;closer to home&rsquo; by cutting out all the overhead that comes with a more traditional CMS and/or blogging platform. It&rsquo;s by developers, for developers."
+    name: Harry Roberts
+    twitter_path: https://twitter.com/csswizardry
+    image_path: https://pbs.twimg.com/profile_images/378800000842511021/741a0a2593ea55bbd6238f8705c7074f_400x400.jpeg
+    work_title: Jekyll blog post
+    work_path: http://csswizardry.com/2012/12/a-new-css-wizardry/
+  harry:
+    text: "Its hacker-feeling nature. No CMS, no admin UI, no rich-text editor, no databases, etc. It just feels like a truly cheap-and-cheerful (whilst actually being very rich in features) way for a technical person to get a site up and running. It feels a lot &lsquo;closer to home&rsquo; by cutting out all the overhead that comes with a more traditional CMS and/or blogging platform. It&rsquo;s by developers, for developers."
+    name: Harry Roberts
+    twitter_path: https://twitter.com/csswizardry
+    image_path: https://pbs.twimg.com/profile_images/378800000842511021/741a0a2593ea55bbd6238f8705c7074f_400x400.jpeg
+    work_title: Jekyll blog post
+    work_path: http://csswizardry.com/2012/12/a-new-css-wizardry/
 ---
 I recently reached out to a number of people that I consider to be Jekyll influencers. These guys aren&#39;t the core contributing team, but rather users like you and me passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
 
