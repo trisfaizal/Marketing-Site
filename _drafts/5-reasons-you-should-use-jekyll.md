@@ -117,13 +117,7 @@ quotes:
     image_path: https://pbs.twimg.com/profile_images/3665350757/672d30f885ed73aa4e1d7d8d87289649_400x400.png
     work_title: Jekyll intro tutorial
     work_path: http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/
-  mike:
-    text: Jekyll is a very simple, straight-forward tool. &nbsp;It gives me just what I need to put together a blog or a static website without all of the extra junk. Tom Preston-Werner called it &quot;blogging for hackers&quot;, and I found that to be an appropriate description. &nbsp;Speaking as a programmer, I found it very easy to dive in and learn the basics. &nbsp;It gives you the freedom and ability to create just about anything you&#39;d need provided you are willing to learn Markdown and a little bit of the Liquid template engine.     
-    name: Mike Greiling
-    twitter_path: https://twitter.com/mikegreiling
-    image_path: https://pbs.twimg.com/profile_images/3665350757/672d30f885ed73aa4e1d7d8d87289649_400x400.png
-    work_title: Jekyll intro tutorial
-    work_path: http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/
+  
      
 ---
 ---
