@@ -123,7 +123,7 @@ quotes:
 ---
 I recently reached out to a number of people that I consider to be Jekyll influencers. These guys aren&#39;t the core contributing team, but rather users like you and me passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
 
-I asked these influencers to share some of their opinions and experiences of what they love about Jekyll, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community.
+I asked these influencers to share some of their opinions and experiences of what they love about Jekyll, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community headed.
 
 The response I had was awesome and I&#39;ve decided to share my findings in a 3 part blog series.
 
