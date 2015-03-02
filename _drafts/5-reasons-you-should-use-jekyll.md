@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 reasons you should use Jekyll
-header: Powerful Templates
+header: 5 reasons you should use Jekyll
 category: Jekyll
 author: sam
 quotes:
