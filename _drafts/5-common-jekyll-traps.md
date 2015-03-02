@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 common Jekyll traps
-header: Powerful Templates
+header: 5 common Jekyll traps
 category: Jekyll
 author: sam
 quotes:
@@ -117,9 +117,14 @@ quotes:
     image_path: https://pbs.twimg.com/profile_images/3665350757/672d30f885ed73aa4e1d7d8d87289649_400x400.png
     work_title: Jekyll intro tutorial
     work_path: http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/
-  
-     
----
+  anon1:
+    text: Jekyll is extremely lightweight and customizable. I can use standard HTML/CSS with Jekyll as a page templater, and that's *it*. It doesn't force me to change anything else about my workflow or learn lots and lots of new things/languages. And...I can use it in combination with Github Pages to host stuff for free :D
+    name: Anonymous
+    twitter_path: 
+    image_path: https://www.regenes.is/wp-content/uploads/2015/01/person-placeholder-400x400.png
+    work_title: 
+    work_path: 
+
 ---
 I recently reached out to a number of people that I consider to be Jekyll influencers. These guys aren&#39;t the core contributing team, but rather users like you and me passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
 
@@ -175,7 +180,7 @@ Top 5 most common reasons to love Jekyll:
 
 {% include /quote.html quote=page.quotes.mike%}
 
-
+{% include /quote.html quote=page.quotes.anon1%}
 
 #### If I may generalise even further:
 
