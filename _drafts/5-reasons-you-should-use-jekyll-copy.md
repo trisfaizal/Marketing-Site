@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5 reasons you should use Jekyll
+title: 5 common Jekyll traps
 header: Powerful Templates
 category: Jekyll
 author: sam
