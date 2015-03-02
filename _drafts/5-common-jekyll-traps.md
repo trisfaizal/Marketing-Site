@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5 common Jekyll traps
+title: 5 common Jekyll traps (and help to overcome them!)
 header: 5 common Jekyll traps
 category: Jekyll
 author: sam
@@ -54,13 +54,6 @@ quotes:
     image_path: https://pbs.twimg.com/profile_images/378800000534594497/ff6e59ec85e5f439931a13a11e7e5212_400x400.jpeg
     work_title: DevTips "Jon doesn't like Jekyll" video
     work_path: https://www.youtube.com/watch?v=u22CLlw4_hg
-  alex:
-    text: NOPE. I first tried Octopress when creating a static blog, but found it too complex. If I'm going to have a static blog, it should be simple and understandable.  
-    name: Alex Pearce
-    twitter_path: https://alexpearce.me/
-    image_path: https://lh3.googleusercontent.com/-R6LAzyPcMZA/AAAAAAAAAAI/AAAAAAAAALs/iZEqemMNQTc/s120-c/photo.jpg
-    work_title: Search in Jekyll tutorial
-    work_path: https://alexpearce.me/2012/04/simple-jekyll-searching/
   adam:
     text: Local installation. You know that Steve Jobs quote from an Apple Q&A; "if you see a stylus, they blew it." I have that feeling with platforms that pertain to be user friendly, but the install process involves dicking around with the terminal prompt.   
     name: Adam Wilcox
@@ -75,13 +68,6 @@ quotes:
     image_path: https://pbs.twimg.com/profile_images/378800000748566726/83e335bc62829792ef3fa876463bb7e3_400x400.jpeg
     work_title: Muffin Jekyll theme
     work_path: http://richbray.me/muffin/
-  scott:
-    text: NOPE. Figuring out how to get a list of older articles on the sidebar of my blog using Liquid.     
-    name: Scott Patten
-    twitter_path: https://twitter.com/scott_patten
-    image_path: https://pbs.twimg.com/profile_images/430937746203361280/BtLohkmk_400x400.png
-    work_title: Speeding up Jekyll generation
-    work_path: http://scottpatten.ca/2011/11/speeding-up-jekyll-generation.html
   alan:
     text: Getting the file structure right. Figuring out how to get the index page to paginate through posts. Using an .html extension instead of .md and being confused about why the translation didn't happen.
     name: Alan W. Smith
@@ -96,13 +82,6 @@ quotes:
     image_path: https://pbs.twimg.com/profile_images/1114190642/27397_8639519_5240_n_400x400.jpg
     work_title: Jekyll data_source tutorial
     work_path: https://esq.io/blog/posts/dogfooding-with-jekyll/
-  matthew:
-    text: NOPE. I was trying to create a navigation for my site. I was trying to get the active navigation item to have a red line underneath it.  It was confusing because there are multiple ways of doing this.  
-    name: Matthew Kosloski
-    twitter_path: https://twitter.com/_mkos
-    image_path: https://pbs.twimg.com/profile_images/499619192883396609/lAwfijv8_400x400.jpeg
-    work_title: Blogging with Jekyll
-    work_path: http://matthewkosloski.me/journal/about-the-site/
   mike:
     text: I haven't run into any major hurdles lately, most of the growing pains came from just trying to get a firm grasp on the basics.  Does Jekyll process a page through Markdown or Liquid first?  Why can't I use Liquid tags in excerpts?  Why can't I specify a permalink in my blog index front-matter?  The documentation for Jekyll is great, but some things just need to be learned through experimentation.    
     name: Mike Greiling
@@ -119,27 +98,26 @@ quotes:
     work_path: 
 
 ---
-I recently reached out to a number of people that I consider to be Jekyll influencers. These guys aren&#39;t the core contributing team, but rather users like you and me passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
+I recently reached out to a number of people that I consider to be Jekyll influencers and asked them to share their opinions and experiences of Jekyll. [Last week](XXX Insert Link) I shared their top 5 most common reasons for loving Jekyll.
 
-I asked these influencers to share some of their opinions and experiences of what they love about Jekyll, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community headed.
+The natural curious follow up question to 'what works?' is 'what doesn't?'. However, in the interest of encouraging new Jekyll users, rather than simply asking "what don't you like?", I asked my Jekyll influencers to specifically share the teething problems of their initial experiences. If they can overcome their's so might you Jekyll padawan.
 
-The response I had was awesome and I&#39;ve decided to share my findings in a 3 part blog series.
+So without further ado*...
+*and remembering that some of these users began years ago and the Jekyll dev's have been doing a great job of fixing some of these issues or [have plans to](https://github.com/jekyll/jekyll/issues/3324).
 
-My second question was "what was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?"
+My second big survey question was "What was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?"
 
 #### The TL;DR:
 
-Top 5 most common Jekyll hurdles (to push on through!):
+Top 5 most common Jekyll hurdles starting out:
 
 1. Initial setup is a pain (getting dev environment just right)
 2. Understanding site structure
-3. Windows support is not there
+3. Windows support
 4. Compile speed
-5. GUI lacking (CLI scares some users)
+5. GUI lacking (comman line interface scares some users)
 
 #### In their own words:
-
-
 
 {% include /quote.html quote=page.quotes.harry%}
 
@@ -167,13 +145,29 @@ Top 5 most common Jekyll hurdles (to push on through!):
 
 {% include /quote.html quote=page.quotes.anon1%}
 
-#### If I may generalise even further:
+#### Help for getting through these initial Jekyll issues:
 
-It would seem to me that those 5 most common answers for loving Jekyll are really subsets of two larger comforts for developers:
+Identifying problems others have experience with Jekyll might help you feel better about having them, but it's not SO great for helping you solve them. Below is a collection of info on identified issues:
 
-1. You can understand what&#39;s happening - HTML + CSS/SASS + Markdown get fed in and compiled, and those components themselves are easy to manipulate with minimal new learning.That gives you power and confidence.  
-2. You love what gets spit out - static site files that are extremely easy to handle: speed, security, stability are all amazing.
+1. Initial setup is a pain (getting dev environment just right)
+- The Jekyll Core Team is putting lots of effort into making local installs easier - [have your say on how it should be fixed](https://talk.jekyllrb.com/t/poll-installation-priorities-for-3-0/106)
+- Watch Travis Neilson's [AWESOME intro video for local installation](https://www.youtube.com/watch?v=iWowJBRMtpc).
+- Load your markdown into [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages/) without checking it locally first like a crazy person
+- Jump on the 'Jekyll on CloudCannon' beta (and never touch your own compiling again) by emailing support@cloudcannon.com
 
-Understanding Predictability cannot be overvalued for developer peace of mind!
+2. Understanding site structure
+- The [Jekyll docs cover this really well](http://jekyllrb.com/docs/structure/) so give them another read.
+- Andrew Munsell's [Jekyll by Example](https://www.andrewmunsell.com/tutorials/jekyll-by-example/tutorial) tutorial gives a great overview of concepts in action
 
-Join me next week when I&#39;ll be sharing some common traps that these Jekyll users have had to overcome.
+3. Windows support
+- This is the [official-unofficial guide by @juthilo](http://jekyll-windows.juthilo.com/)
+- Again, avoid compiling yourself on Windows by jumping on 'Jekyll on CloudCannon' beta by emailing support@cloudcannon.com
+
+4. Compile speed
+- Not a lot of quick wins available here at the moment, however it has been and is a top priority for the Jekyll Core Team. In fact in the [latest Jekyll 3.0.0 beta release notes](https://github.com/jekyll/jekyll/blob/v3.0.0.beta1/History.markdown#head) incremental regeneration is item number one. 
+
+5. GUI lacking (command line interface scares some users)
+- [Prose.io](
+- Jump on the 'Jekyll on CloudCannon' beta (and never touch your own compiling again) by emailing support@cloudcannon.com
+
+Next week I'll be exploring how YOU can best help the Jekyll community.
