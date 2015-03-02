@@ -180,8 +180,6 @@ Top 5 most common reasons to love Jekyll:
 
 {% include /quote.html quote=page.quotes.mike%}
 
-{% include /quote.html quote=page.quotes.anon1%}
-
 #### If I may generalise even further:
 
 It would seem to me that those 5 most common answers for loving Jekyll are really subsets of two larger comforts for developers:
