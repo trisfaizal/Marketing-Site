@@ -6,119 +6,112 @@ category: Jekyll
 author: sam
 quotes:
   harry:
-    text: Its hacker-feeling nature. No CMS, no admin UI, no rich-text editor, no databases, etc. It just feels like a truly cheap-and-cheerful (whilst actually being very rich in features) way for a technical person to get a site up and running. It feels a lot &lsquo;closer to home&rsquo; by cutting out all the overhead that comes with a more traditional CMS and/or blogging platform. It&rsquo;s by developers, for developers.
+    text: Porting WordPress content over. Luckily there are/were a number of open-source tools to help me, but it wasn’t necessarily simple, and brought a fairly long-tail of legacy with it (code blocks incorrectly formatted, WP meta data being crammed into Jekyll’s YML front matter).
     name: Harry Roberts
     twitter_path: https://twitter.com/csswizardry
     image_path: https://pbs.twimg.com/profile_images/378800000842511021/741a0a2593ea55bbd6238f8705c7074f_400x400.jpeg
     work_title: Jekyll blog post
     work_path: http://csswizardry.com/2012/12/a-new-css-wizardry/
   paul:
-    text: I like that it&#39;s all static. This frees me up from worrying about making sure I have regular non-corrupt database backups or making sure my CMS was patched of all new security vulnerabilities. Now I just host on Amazon S3 with Cloudfront and have no worries about security or performance.
+    text: With over 1,000 blog posts on my site when I moved from WordPress to Jekyll, it takes some time to generate my site. That was a minor annoyance which has gotten better over the years with faster computers and more performant Jekyll updates.
     name: Paul Stamatiou
     twitter_path: https://twitter.com/stammy
     image_path: https://pbs.twimg.com/profile_images/1778867511/Screen_Shot_2012-01-24_at_2.03.52_PM_400x400.png
     work_title: WordPress to Jekyll blog post
     work_path: http://paulstamatiou.com/how-to-wordpress-to-jekyll/
   brett:
-    text: I mostly like the lack of moving parts on the server side. I&#39;ve spent an excessive amount of time replicating standard blogging workflows for my Jekyll setup, so in my case it&#39;s definitely not about convenience. But my site (http://brettterpstra.com) is fast and holds up well under heavy traffic.
+    text: The lack of documentation surrounding the site payload and methods available to the various object. It took some digging to write my first plugin.
     name: Brett Terpstra
     twitter_path: https://twitter.com/ttscoff
     image_path: https://pbs.twimg.com/profile_images/564842329714851840/qqDLuEwd_400x400.jpeg
     work_title: Jekyll CDN blog post
     work_path: http://brettterpstra.com/2014/02/21/a-jekyll-cdn-with-cloudfront/
-  marco:
-    text: Static site generation exposes the actual lower requirements of some websites: we&#39;re so obsessed with new features in websites that we miss the point of simpler use-cases.
-    name: Marco Pivetta
-    twitter_path: https://twitter.com/Ocramius
-    image_path: https://pbs.twimg.com/profile_images/1363592997/ocramius-aethril-marco-pivetta-1_400x400.png
-    work_title: Migrating to Jekyll blog post
-    work_path: http://ocramius.github.io/blog/moving-my-blog-to-jekyll/
   johan:
-    text: I like the simplicity - it was my first static site generator so knowing this kind of thing existed was a relief from either classic CMS systems or using PHP includes.
+    text: The setup is kind of hard with the ruby dependencies/rvm/gemfiles/gem bundles. Now there are some decent guides I guess but when I was starting there was no solid guide to explain how it worked, there was a lot of assumed knowledge from being a Ruby developer even though I used Jekyll as a web designer. Setting Jekyll up in Windows is also painful on its own (I don't use Windows primarily but used Jekyll in a coding workshop I gave, not everyone has a Mac)
     name: Johan Ronsse
     twitter_path: https://twitter.com/johan_ronsse
     image_path: https://pbs.twimg.com/profile_images/528173675183235075/COCkQ3PO_400x400.jpeg
     work_title: Intro to Jekyll video
     work_path: https://www.youtube.com/watch?v=O7NBEFmA7yA
   michael:
-    text: Complete control over the content you throw at it. There&#39;s no mystery to what&#39;s going on and it&#39;s easy to understand if you have a basic knowledge of how web pages are built.
+    text: Getting my Ruby environment setup and figuring out problems with gems and other dependencies installing. Jekyll was straightforward enough, it was all the mess that comes with Ruby that wasn't.
     name: Michael Rose
     twitter_path: https://twitter.com/mmistakes
     image_path: https://pbs.twimg.com/profile_images/560937271042797568/m5VndD_B.jpeg
     work_title: Jekyll themes
     work_path: https://mademistakes.com/work/
   john:
-    text: The simplicity and ability to quickly generate static sites. I greatly enjoy the ability to use includes in order to share common components like navigation, footers, etc. Same goes for multiple layout support. CLI support is also key.
+    text: Dealing with silent/undescriptive errors with liquid. Though, the majority of those seem to be remedied in later versions.
     name: John Otander
     twitter_path: https://twitter.com/4lpine
     image_path: https://pbs.twimg.com/profile_images/1685588137/thumb_400x400.jpg
     work_title: Jekyll Pixyll theme
     work_path: http://pixyll.com/
   travis:
-    text: It makes sense, and I feel that I have more control than with any other CMS I&#39;ve used.
+    text: Using Jekyll was the first time I had to use the terminal. I am a designer first, and that tends to scare our kind, but its no so bad. Another thing was trying to get my dev environment perfect. But now Jekyll handles SASS and there is an adequate Jade plugin. Still no live-reload without going to gulp/grunt route, and compile times could be faster.
     name: Travis Neilson
     twitter_path: https://twitter.com/travisneilson
     image_path: https://pbs.twimg.com/profile_images/378800000534594497/ff6e59ec85e5f439931a13a11e7e5212_400x400.jpeg
     work_title: DevTips "Jon doesn't like Jekyll" video
     work_path: https://www.youtube.com/watch?v=u22CLlw4_hg
   alex:
-    text: I know exactly how it works; it&#39;s simple and behaves how I expect. Being able to write in Markdown is part of this, I have found WYSIWYG editors often produce ugly and sometimes wrong HTML, whereas the Markdown to HTML conversion is very deterministic.  
+    text: NOPE. I first tried Octopress when creating a static blog, but found it too complex. If I'm going to have a static blog, it should be simple and understandable.  
     name: Alex Pearce
     twitter_path: https://alexpearce.me/
     image_path: https://lh3.googleusercontent.com/-R6LAzyPcMZA/AAAAAAAAAAI/AAAAAAAAALs/iZEqemMNQTc/s120-c/photo.jpg
     work_title: Search in Jekyll tutorial
     work_path: https://alexpearce.me/2012/04/simple-jekyll-searching/
   adam:
-    text: It&#39;s remarkably flexible, I&#39;ve been surprised with how easily it has been to make it do something that isn&#39;t technically blogging; photo galleries, podcasting, that sort of thing.   
+    text: Local installation. You know that Steve Jobs quote from an Apple Q&A; "if you see a stylus, they blew it." I have that feeling with platforms that pertain to be user friendly, but the install process involves dicking around with the terminal prompt.   
     name: Adam Wilcox
     twitter_path: https://twitter.com/adamwilcox
     image_path: https://pbs.twimg.com/profile_images/569370919701733376/SZzuCEB-_400x400.jpeg
     work_title: Podcasting with Jekyll tutorial
     work_path: http://www.adamwilcox.org/2013/01/17/from-the-pub/
   richard:
-    text: Easy to use static site generator. Ruby gem. Uses markdown.     
+    text: Installing it on a Windows machine. Adding Search functionality. Incorporating Tags to posts.    
     name: Richard Bray
     twitter_path: https://twitter.com/ceiga
     image_path: https://pbs.twimg.com/profile_images/378800000748566726/83e335bc62829792ef3fa876463bb7e3_400x400.jpeg
     work_title: Muffin Jekyll theme
     work_path: http://richbray.me/muffin/
   scott:
-    text: Writing in Markdown, having the whole blog on my computer easily, lack of a database, deploying with rsync and (last but not least) the speed for users.       
+    text: NOPE. Figuring out how to get a list of older articles on the sidebar of my blog using Liquid.     
     name: Scott Patten
     twitter_path: https://twitter.com/scott_patten
     image_path: https://pbs.twimg.com/profile_images/430937746203361280/BtLohkmk_400x400.png
     work_title: Speeding up Jekyll generation
     work_path: http://scottpatten.ca/2011/11/speeding-up-jekyll-generation.html
   alan:
-    text: My two favorite things about Jekyll are: 1. The ability to write posts in Markdown and in my text editor of choice. When I used to use WordPress, I&#39;d always write offline and then copy and paste into the editor. Removing the extra step encourages me to write more.&nbsp; 2. The ease of hosting a static site and the reduction of security vulnerabilities eliminating dynamic process and frameworks provides. I understand WordPress has made improvements in the way security patches are distributed but I really like not having to worry about keeping even more software up to date. The machine I run my sites on automatically updates server patches. That equates to much less time maintaining the server.
+    text: Getting the file structure right. Figuring out how to get the index page to paginate through posts. Using an .html extension instead of .md and being confused about why the translation didn't happen.
     name: Alan W. Smith
     twitter_path: https://twitter.com/TheIdOfAlan
     image_path: https://pbs.twimg.com/profile_images/2396971629/1z2l22mqcpqvhlv3hs9t_400x400.jpeg
     work_title: Date formatting in Jekyll
     work_path: http://alanwsmith.com/jekyll-liquid-date-formatting-examples
   dave:
-    text: The fact that it&#39;s a simple, but complete, system. GitHub Pages support is also huge.   
+    text: It was the data folder, though now that's not a problem.   
     name: David Zvenyach
     twitter_path: https://twitter.com/vdavez
     image_path: https://pbs.twimg.com/profile_images/1114190642/27397_8639519_5240_n_400x400.jpg
     work_title: Jekyll data_source tutorial
     work_path: https://esq.io/blog/posts/dogfooding-with-jekyll/
   matthew:
-    text: Jekyll is extremely simple and easy to use.   
+    text: NOPE. I was trying to create a navigation for my site. I was trying to get the active navigation item to have a red line underneath it.  It was confusing because there are multiple ways of doing this.  
     name: Matthew Kosloski
     twitter_path: https://twitter.com/_mkos
     image_path: https://pbs.twimg.com/profile_images/499619192883396609/lAwfijv8_400x400.jpeg
     work_title: Blogging with Jekyll
     work_path: http://matthewkosloski.me/journal/about-the-site/
   mike:
-    text: Jekyll is a very simple, straight-forward tool. &nbsp;It gives me just what I need to put together a blog or a static website without all of the extra junk. Tom Preston-Werner called it &quot;blogging for hackers&quot;, and I found that to be an appropriate description. &nbsp;Speaking as a programmer, I found it very easy to dive in and learn the basics. &nbsp;It gives you the freedom and ability to create just about anything you&#39;d need provided you are willing to learn Markdown and a little bit of the Liquid template engine.     
+    text: I haven't run into any major hurdles lately, most of the growing pains came from just trying to get a firm grasp on the basics.  Does Jekyll process a page through Markdown or Liquid first?  Why can't I use Liquid tags in excerpts?  Why can't I specify a permalink in my blog index front-matter?  The documentation for Jekyll is great, but some things just need to be learned through experimentation.    
     name: Mike Greiling
     twitter_path: https://twitter.com/mikegreiling
     image_path: https://pbs.twimg.com/profile_images/3665350757/672d30f885ed73aa4e1d7d8d87289649_400x400.png
     work_title: Jekyll intro tutorial
     work_path: http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/
   anon1:
-    text: Jekyll is extremely lightweight and customizable. I can use standard HTML/CSS with Jekyll as a page templater, and that's *it*. It doesn't force me to change anything else about my workflow or learn lots and lots of new things/languages. And...I can use it in combination with Github Pages to host stuff for free :D
+    text: Well, there's Jekyll, and then there's Github Pages Jekyll. Jekyll itself is pretty straightforward, but Github Pages doesn't have great error messaging on build fail. It has gotten a bit better over the years, but still... Jekyll itself was pretty easy to work with once you figured out the basic config setup (which, if you've never used a config file before, takes a little learning, but not too bad).
     name: Anonymous
     twitter_path: 
     image_path: https://www.regenes.is/wp-content/uploads/2015/01/person-placeholder-400x400.png
@@ -132,29 +125,27 @@ I asked these influencers to share some of their opinions and experiences of wha
 
 The response I had was awesome and I&#39;ve decided to share my findings in a 3 part blog series.
 
-My first big question was &quot;What do you love about Jekyll?&quot;
+My second question was "what was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?"
 
 #### The TL;DR:
 
-Top 5 most common reasons to love Jekyll:
+Top 5 most common Jekyll hurdles (to push on through!):
 
-1.  Simple to understand how it works
-2.  Easier than other CMS
-3.  Sites are stable
-4.  Sites are fast
-5.  Control over the system
+1. Initial setup is a pain (getting dev environment just right)
+2. Understanding site structure
+3. Windows support is not there
+4. Compile speed
+5. GUI lacking (CLI scares some users)
 
-#### What the influencers had to say:
+#### In their own words:
 
-&nbsp;&quot;What do you love about Jekyll?&quot;
+
 
 {% include /quote.html quote=page.quotes.harry%}
 
 {% include /quote.html quote=page.quotes.paul%}
 
 {% include /quote.html quote=page.quotes.brett%}
-
-{% include /quote.html quote=page.quotes.marco%}
 
 {% include /quote.html quote=page.quotes.johan%}
 
@@ -164,21 +155,17 @@ Top 5 most common reasons to love Jekyll:
 
 {% include /quote.html quote=page.quotes.travis%}
 
-{% include /quote.html quote=page.quotes.alex%}
-
 {% include /quote.html quote=page.quotes.adam%}
 
 {% include /quote.html quote=page.quotes.richard%}
-
-{% include /quote.html quote=page.quotes.scott%}
 
 {% include /quote.html quote=page.quotes.alan%}
 
 {% include /quote.html quote=page.quotes.dave%}
 
-{% include /quote.html quote=page.quotes.matthew%}
-
 {% include /quote.html quote=page.quotes.mike%}
+
+{% include /quote.html quote=page.quotes.anon1%}
 
 #### If I may generalise even further:
 
