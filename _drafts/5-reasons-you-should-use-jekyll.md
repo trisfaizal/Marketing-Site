@@ -132,7 +132,7 @@ I asked these influencers to share some of their opinions and experiences of wha
 
 The response I had was awesome and I&#39;ve decided to share my findings in a 3 part blog series.
 
-To help set the scene the average length of Jekyll use was 2.5 years. Some are relatively new users and one or two that are !(http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)almost pushing 5+ years.
+To help set the scene the average length of Jekyll use by respondents was 2.5 years with some relatively new and two [almost pushing 5+ years](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html). Jekyll is currently used by half for personal projects only, the other half using it for both personal and professional work.
 
 My first big question was &quot;What do you love about Jekyll?&quot;
 
