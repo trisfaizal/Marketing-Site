@@ -179,11 +179,11 @@ Top 5 most common reasons to love Jekyll:
 
 #### If I may generalise even further:
 
-It would seem to me that those 5 most common answers for liking Jekyll are really subsets of two larger comforts for developers:
+It would seem to me that those 5 most common answers for loving Jekyll are really subsets of two larger comforts for developers:
 
-1. You can understand what&#39;s happening. (HTML + CSS/SASS + Markdown get fed in and compiled, and those components themselves are easy to manipulate with minimal new learning).That gives you power and confidence.  
-2. You love what gets spit out. (Static site files that are extremely easy to handle: speed, security, stability are all amazing).
+1. You can understand what&#39;s happening - HTML + CSS/SASS + Markdown get fed in and compiled, and those components themselves are easy to manipulate with minimal new learning.That gives you power and confidence.  
+2. You love what gets spit out - static site files that are extremely easy to handle: speed, security, stability are all amazing.
 
-Predictability cannot be overvalued for developer peace of mind!
+Understanding Predictability cannot be overvalued for developer peace of mind!
 
 Join me next week when I&#39;ll be sharing some common traps that these Jekyll users have had to overcome.
