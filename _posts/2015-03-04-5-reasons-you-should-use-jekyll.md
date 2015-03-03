@@ -163,7 +163,7 @@ Predictability cannot be overvalued for developer peace of mind!
 
 #### In their own words:
 
-&nbsp;&quot;What do you love about Jekyll?&quot;
+**&nbsp;&quot;What do you love about Jekyll?&quot;**
 
 {% include /quote.html quote=page.quotes.harry%}
 
