@@ -126,13 +126,19 @@ quotes:
     work_path:
   
 ---
-I recently reached out to a number of people that I consider to be Jekyll influencers. These guys aren&#39;t the core contributing team, but rather users like you and me passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
+I recently reached out to a number of people that I consider to be influencers in the Jekyll community - ordinary users passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
+
+I asked them why they love using Jekyll.
+
+<!-- excerpt stop -->
+
+I recently reached out to a number of people that I consider to be Jekyll influencers. They aren&#39;t the core contributing team, but rather users like you and me passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
 
 I asked these influencers to share some of their opinions and experiences of what they love about Jekyll, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community headed.
 
-The response I had was awesome and I&#39;ve decided to share my findings in a 3 part blog series.
+The response I had was awesome and I wanted to share my findings.
 
-To help set the scene the average length of Jekyll use by respondents was 2.5 years with some relatively new and two [almost pushing 5+ years](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html). Jekyll is currently used by half for personal projects only, the other half using it for both personal and professional work.
+To help set the scene, the average length of Jekyll use by respondents was about 2 and a half years with some relatively new and two [almost pushing 5+ years](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html). Jekyll is currently used by half for personal projects only, the other half using it for both personal and professional work.
 
 My first big question was &quot;What do you love about Jekyll?&quot;
 
