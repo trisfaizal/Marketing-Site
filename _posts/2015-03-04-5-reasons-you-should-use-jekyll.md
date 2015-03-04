@@ -128,7 +128,7 @@ quotes:
 ---
 I recently reached out to a number of people that I consider to be influencers in the Jekyll community - ordinary users passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
 
-I asked them why they love using Jekyll.
+I asked them why they love using Jekyll in the hope of convincing you give it a try.
 
 <!-- excerpt stop -->
 
@@ -136,7 +136,7 @@ I recently reached out to a number of people that I consider to be influencers i
 
 I asked these influencers to share some of their opinions and experiences of what they love about Jekyll, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community headed.
 
-The response I had was awesome and I wanted to share my findings.
+The response I had was awesome and I wanted to share my findings so that if you aren't using Jekyll already you might be convinced to give it a try.
 
 To help set the scene, the average length of Jekyll use by respondents was almost 2 and a half years with some relatively new and two [almost pushing 5+ years](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html). Jekyll is currently used by half for personal projects only, the other half using it for both personal and professional work.
 
