@@ -126,15 +126,15 @@ quotes:
     work_path:
   
 ---
-I recently reached out to a number of people that I consider to be influencers in the Jekyll community - ordinary users passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
+I recently reached out to people that I consider to be influencers in the Jekyll community - ordinary users passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
 
 I asked them why they love using Jekyll in the hope of convincing you give it a try.
 
 <!-- excerpt stop -->
 
-I recently reached out to a number of people that I consider to be influencers in the Jekyll static site generator community. They aren&#39;t the core contributing team, but rather users like you and me passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
+I recently reached out to people that I consider to be influencers in the Jekyll static site generator community. These are users passionate enough to contribute code snippets, blog about using Jekyll and open source themes to the community. They aren't core contributing team members, but rather regular users like you and I.
 
-I asked these influencers to share some of their opinions and experiences of what they love about Jekyll, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community headed.
+I asked these influencers to share some of their opinions and experiences of Jekyll. I explored what they love, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community headed. 
 
 The response I had was awesome and I wanted to share my findings so that if you aren't using Jekyll already you might be convinced to give it a try.
 
