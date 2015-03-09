@@ -181,6 +181,6 @@ Identifying shared initial frustrations with Jekyll might make you feel better a
 
 Next week I'll be exploring how YOU can best help the Jekyll community.
 
-##### Plug from CloudCannon:
+#### Plug from CloudCannon:
 
 Avoid the initial Jekyll environment setup by moving your compilation to the cloud. Add non-tech friendly GUIs to your Jekyll workflow. Check out [CloudCannon's Jekyll beta overview video](https://www.youtube.com/watch?v=Fjd0V_pET5E) and then [join the beta](http://app.cloudcannon.com/jekyll_beta).
