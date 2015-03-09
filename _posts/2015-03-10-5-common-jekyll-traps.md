@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 common Jekyll traps for beginners (and help to overcome them!)
-header: 5 common Jekyll traps for beginners
+header: 5 common Jekyll traps for beginners (and help to overcome them!)
 category: Jekyll
 author: sam
 quotes:
@@ -179,9 +179,8 @@ Identifying shared initial frustrations with Jekyll might make you feel better a
 - [Prose.io](http://prose.io/) is a solution that some Jekyll users have turned to to assist with editing markdown and the publishing process.
 - CloudCannon is looking to nail this! See below.
 
+Next week I'll be exploring how YOU can best help the Jekyll community.
 
-#### Plug from CloudCannon:
+##### Plug from CloudCannon:
 
 Avoid the initial Jekyll environment setup by moving your compilation to the cloud. Add non-tech friendly GUIs to your Jekyll workflow. Check out [CloudCannon's Jekyll beta overview video](https://www.youtube.com/watch?v=Fjd0V_pET5E) and then [join the beta](http://app.cloudcannon.com/jekyll_beta).
-
-Next week I'll be exploring how YOU can best help the Jekyll community.
