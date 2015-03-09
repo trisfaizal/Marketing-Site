@@ -161,19 +161,24 @@ Identifying shared initial frustrations with Jekyll might make you feel better a
 - Watch Travis Neilson's [AWESOME intro video for local installation](https://www.youtube.com/watch?v=iWowJBRMtpc).
 - Move your compile to the cloud. See CloudCannon notes below.
 
+
 2. Understanding site structure
 - The [Jekyll docs](http://jekyllrb.com/docs/structure/) do cover this well so give them another read.
 - Andrew Munsell's [Jekyll by Example](https://www.andrewmunsell.com/tutorials/jekyll-by-example/tutorial) tutorial gives a great overview of concepts in action
 
+
 3. Windows support
 - This is the [official-unofficial guide by @juthilo](http://jekyll-windows.juthilo.com/)
+
 
 4. Compile speed
 - Not a lot of quick wins available here at the moment, but it has been and is a top priority for the Jekyll Core Team. In fact in the [latest Jekyll 3.0.0 beta release notes](https://github.com/jekyll/jekyll/blob/v3.0.0.beta1/History.markdown#head) incremental regeneration is item number one. 
 
+
 5. GUI lacking (command line interface scares some users)
 - [Prose.io](http://prose.io/) is a solution that some Jekyll users have turned to to assist with editing markdown and the publishing process.
 - CloudCannon is looking to nail this! See below.
+
 
 #### Plug from CloudCannon:
 
