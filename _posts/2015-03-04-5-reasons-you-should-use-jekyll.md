@@ -27,7 +27,7 @@ quotes:
     work_title: Jekyll CDN blog post
     work_path: http://brettterpstra.com/2014/02/21/a-jekyll-cdn-with-cloudfront/
   marco:
-    text: Static site generation exposes the actual lower requirements of some websites: we&#39;re so obsessed with new features in websites that we miss the point of simpler use-cases.
+    text: "Static site generation exposes the actual lower requirements of some websites: we&#39;re so obsessed with new features in websites that we miss the point of simpler use-cases."
     name: Marco Pivetta
     twitter_path: https://twitter.com/Ocramius
     image_path: https://pbs.twimg.com/profile_images/1363592997/ocramius-aethril-marco-pivetta-1_400x400.png
@@ -90,7 +90,7 @@ quotes:
     work_title: Speeding up Jekyll generation
     work_path: http://scottpatten.ca/2011/11/speeding-up-jekyll-generation.html
   alan:
-    text: My two favorite things about Jekyll are: 1. The ability to write posts in Markdown and in my text editor of choice. When I used to use WordPress, I&#39;d always write offline and then copy and paste into the editor. Removing the extra step encourages me to write more.&nbsp; 2. The ease of hosting a static site and the reduction of security vulnerabilities eliminating dynamic process and frameworks provides. I understand WordPress has made improvements in the way security patches are distributed but I really like not having to worry about keeping even more software up to date. The machine I run my sites on automatically updates server patches. That equates to much less time maintaining the server.
+    text: "My two favorite things about Jekyll are: 1. The ability to write posts in Markdown and in my text editor of choice. When I used to use WordPress, I&#39;d always write offline and then copy and paste into the editor. Removing the extra step encourages me to write more.&nbsp; 2. The ease of hosting a static site and the reduction of security vulnerabilities eliminating dynamic process and frameworks provides. I understand WordPress has made improvements in the way security patches are distributed but I really like not having to worry about keeping even more software up to date. The machine I run my sites on automatically updates server patches. That equates to much less time maintaining the server."
     name: Alan W. Smith
     twitter_path: https://twitter.com/TheIdOfAlan
     image_path: https://pbs.twimg.com/profile_images/2396971629/1z2l22mqcpqvhlv3hs9t_400x400.jpeg
@@ -126,13 +126,19 @@ quotes:
     work_path:
   
 ---
-I recently reached out to a number of people that I consider to be Jekyll influencers. These guys aren&#39;t the core contributing team, but rather users like you and me passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
+I recently reached out to people that I consider to be influencers in the Jekyll community - ordinary users passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
 
-I asked these influencers to share some of their opinions and experiences of what they love about Jekyll, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community headed.
+I asked them why they love using Jekyll in the hope of convincing you give it a try.
 
-The response I had was awesome and I&#39;ve decided to share my findings in a 3 part blog series.
+<!-- excerpt stop -->
 
-To help set the scene the average length of Jekyll use by respondents was 2.5 years with some relatively new and two [almost pushing 5+ years](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html). Jekyll is currently used by half for personal projects only, the other half using it for both personal and professional work.
+I recently reached out to people that I consider to be influencers in the Jekyll static site generator community. These are users passionate enough to contribute code snippets, blog about using Jekyll and open source themes to the community. They aren't core contributing team members, but rather regular users like you and I.
+
+I asked these influencers to share some of their opinions and experiences of Jekyll. I explored what they love, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community headed. 
+
+The response I had was awesome and I wanted to share my findings so that if you aren't using Jekyll already you might be convinced to give it a try.
+
+To help set the scene, the average length of Jekyll use by respondents was almost 2 and a half years with some relatively new and two [almost pushing 5+ years](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html). Jekyll is currently used by half for personal projects only, the other half using it for both personal and professional work.
 
 My first big question was &quot;What do you love about Jekyll?&quot;
 
@@ -146,9 +152,18 @@ Top 5 most common reasons to love Jekyll:
 4.  Sites are fast
 5.  Control over the system
 
+#### If I may generalise even further:
+
+It would seem to me that those 5 most common answers for loving Jekyll are really subsets of two larger comforts for developers:
+
+1. You understand exactly what&#39;s happening: HTML + CSS/SASS + Markdown get fed in and compiled, and those components themselves are easy to manipulate with minimal new learning. That gives you power and confidence.  
+2. You love what gets spit out - static site files are extremely easy to handle: their speed, security and stability are all amazing.
+
+Predictability cannot be overvalued for developer peace of mind!
+
 #### In their own words:
 
-&nbsp;&quot;What do you love about Jekyll?&quot;
+**&nbsp;&quot;What do you love about Jekyll?&quot;**
 
 {% include /quote.html quote=page.quotes.harry%}
 
@@ -184,14 +199,5 @@ Top 5 most common reasons to love Jekyll:
 
 {% include /quote.html quote=page.quotes.anon1%}
 
-
-#### If I may generalise even further:
-
-It would seem to me that those 5 most common answers for loving Jekyll are really subsets of two larger comforts for developers:
-
-1. You can understand what&#39;s happening - HTML + CSS/SASS + Markdown get fed in and compiled, and those components themselves are easy to manipulate with minimal new learning. That gives you power and confidence.  
-2. You love what gets spit out - static site files that are extremely easy to handle: speed, security, stability are all amazing.
-
-Predictability cannot be overvalued for developer peace of mind!
 
 Join me next week when I&#39;ll be sharing some common traps that these Jekyll users have had to overcome.
