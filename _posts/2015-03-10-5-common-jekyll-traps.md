@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 5 common Jekyll traps (and help to overcome them!)
-header: 5 common Jekyll traps
+title: 5 common Jekyll traps for beginners (and help to overcome them!)
+header: 5 common Jekyll traps for beginners
 category: Jekyll
 author: sam
 quotes:
