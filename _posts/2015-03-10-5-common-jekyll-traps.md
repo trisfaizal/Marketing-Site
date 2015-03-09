@@ -109,7 +109,8 @@ I recently reached out to people that I consider to be influencers in the Jekyll
 The natural curious follow up question to 'what works?' is 'what doesn't?'. But I didn't want to ask that question - it's rather un-constructive. Instead I think new users might be more encouraged to hear the initial hurdles other users have overcome to get started. If they can overcome their's so might you Jekyll padawan!
 
 So without further ado*...
-*and remembering that some users began years ago and the Jekyll dev's have been doing a great job of fixing these issues or [have plans to](https://github.com/jekyll/jekyll/issues/3324).
+
+** "*and remembering that some users began years ago and the Jekyll dev's have been doing a great job of fixing these issues or [have plans to](https://github.com/jekyll/jekyll/issues/3324)." **
 
 My second big survey question was "What was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?"
 
