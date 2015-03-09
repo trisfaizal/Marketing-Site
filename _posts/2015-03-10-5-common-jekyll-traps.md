@@ -112,7 +112,7 @@ So without further ado*...
 
 * "*and remembering that some users began years ago and the Jekyll dev's have been doing a great job of fixing these issues or [have plans to](https://github.com/jekyll/jekyll/issues/3324)." *
 
-My second big survey question was "What was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?"
+My second big survey question was **"What was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?"**
 
 #### The TL;DR:
 
