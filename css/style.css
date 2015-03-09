@@ -318,11 +318,15 @@ a:active {
 }
 
 /* Header Styles */
-header, .bright-section {
+header, .bright-section, .dark-section {
     padding: 2em 0 2em 0;
     text-align: center;
     background: #26abe2;
     color: #fff;
+}
+
+.dark-section {
+  background: #2B2E31;
 }
 
 .patterned {
@@ -1483,6 +1487,13 @@ dd p {
     font-style: italic;
 }
 
+.lp_plan.plan {
+  width: 23%;
+  margin: 0 .4% 0 .4%;
+  color: #333;
+  height: 360px;
+  background: #FAFAFA;
+}
 /* line 27, ../../app/assets/stylesheets/_payment.scss */
 .plan {
     display: block;
@@ -1545,6 +1556,10 @@ line-height: 80px;
     font-size: 0.8em;
 }
 
+.plan .plan-features.smaller {
+  font-size: 50%;
+}
+
 .plan .plan-features + .plan-features {
     padding-top: 0;
 }
@@ -1570,183 +1585,6 @@ line-height: 80px;
     margin: 50px auto;
     border-top: 1px solid #ddd;
     padding: 30px 0 0 0;
-}
-
-.workflow {
-    position: relative;
-    padding-top: 110px;
-    width: 95%;
-    max-width: 950px;
-    margin: 0 auto;
-}
-
-.workflow .cloudcannon-logo {
-    width: 125px;
-    position: relative;
-    bottom: 20px;
-}
-
-.workflow .integration {
-    position: absolute;
-    top: 0;
-    left: 70px;
-    max-width: 60px;
-}
-
-.workflow .integration.github {
-    max-width: 80px;
-}
-
-.workflow .integration.dropbox,
-.workflow .integration.other {
-    top: 50px;
-    left: 0;
-}
-
-.workflow .integration.ftp,
-.workflow .integration.other {
-    left: auto;
-    right: 0;
-}
-
-.workflow .integration.ftp {
-    top: 40px;
-}
-
-@-webkit-keyframes syncing {
-  0% {
-    opacity: 0;
-    left:0;
-  }
-
-  10% {
-    opacity: 0;
-    left:0;
-    width: 5px;
-  }
-
-  15% {
-    opacity: 1;
-    left: 0;
-    width: 10px;
-  }
-
-  50% {
-    width: 15px;
-  }
-
-  85% {
-    opacity: 1;
-    left:95%;
-    width: 10px;
-  }
-
-  90% {
-    opacity: 0;
-    left:100%;
-    width: 5px;
-  }
-
-  100% {
-    opacity: 0;
-    left:100%;
-  }
-}
-
-@keyframes syncing {
-  0% {
-    opacity: 0;
-    left:0;
-  }
-
-  10% {
-    opacity: 0;
-    left:0;
-    width: 5px;
-  }
-
-  15% {
-    opacity: 1;
-    left: 0;
-    width: 10px;
-  }
-
-  50% {
-    width: 15px;
-  }
-
-  85% {
-    opacity: 1;
-    left:95%;
-    width: 10px;
-  }
-
-  90% {
-    opacity: 0;
-    left:100%;
-    width: 5px;
-  }
-
-  100% {
-    opacity: 0;
-    left:100%;
-  }
-}
-
-.workflow .connector {
-    width: 25%;
-    position: absolute;
-    left: 13.5%;
-    bottom: 120px;
-    border-top: 1px dashed #D9E4E8;
-
-    transform: rotate(11deg);
-    -webkit-transform: rotate(11deg);
-    -moz-transform: rotate(11deg);
-    -o-transform: rotate(11deg);
-    -ms-transform: rotate(11deg);
-}
-
-.workflow .connector.deploy {
-    transform: rotate(-11deg);
-    -webkit-transform: rotate(-11deg);
-    -moz-transform: rotate(-11deg);
-    -o-transform: rotate(-11deg);
-    -ms-transform: rotate(-11deg);
-    left: auto;
-    bottom: 115px;
-    right: 13.5%;
-}
-
-
-.workflow .connector.push {
-    bottom: 100px;
-}
-
-.workflow .connector.push:before {
-    -webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
-    animation-direction: reverse;
-}
-
-.workflow .connector:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    background: #D9E4E8;
-    top: -6px;
-    border-radius: 8px;
-    border: 1px solid #fff;
-    -webkit-animation-name: syncing;
-    animation-name: syncing;
-    -webkit-animation-duration: 1200ms;
-    animation-duration: 1200ms;
-    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
-    animation-timing-function: linear;
 }
 
 @media only screen and (min-width: 590px) {
@@ -1839,9 +1677,6 @@ line-height: 80px;
 }
 
 @media only screen and (min-width: 700px) {
-    .workflow {
-        padding-top: 120px;
-    }
 
     .arrows {
         font-size: 2em;
@@ -1854,31 +1689,6 @@ line-height: 80px;
     .column {
         float: left;
         width: 50%;
-    }
-
-    .workflow .integration {
-        max-width: none !important;
-    }
-
-    .workflow .integration.ftp {
-        right: 30px;
-        top: 70px;
-    }
-
-
-    .workflow .integration.github {
-        line-height: 130px;
-    }
-
-    .workflow .integration.dropbox,
-    .workflow .integration.other {
-        top: 100px;
-    }
-
-    .workflow .cloudcannon-logo {
-        width: 200px;
-        position: relative;
-        bottom: 0;
     }
 
     .contact-details, .contact-form {
@@ -2027,7 +1837,7 @@ line-height: 80px;
         margin: 0;
     }
 
-    .html-at-core .text {
+    .lp .text, .html-at-core .text {
         padding: 60px 0;
         min-height: 266px;
     }
@@ -2036,7 +1846,7 @@ line-height: 80px;
         max-width: 550px;
     }
 
-    .html-at-core iframe {
+    .lp iframe, .html-at-core iframe {
         margin: 60px 0;
     }
 
@@ -2258,29 +2068,6 @@ line-height: 80px;
     /*display: none;*/
 }
 
-.editable-fake {
-    cursor: pointer;
-    outline: 0 solid #f7e064;
-    -webkit-transition: outline 0.5s linear;
-    transition: outline 0.5s linear;
-}
-
-body.editable-highlighted .editable-fake {
-    outline: 5px solid #f7e064;
-    -webkit-transition: outline .2s ease-in-out;
-    transition: outline .2s ease-in-out;
-}
-
-.editable-fake:hover {
-    outline: 5px solid #ccd39f;
-}
-
-.editable-fake.editable-focused,
-body.editable-highlighted .editable-fake.editable-focused {
-    cursor: text;
-    outline: 5px solid #80b5f2;
-}
-
 
 .startup-grass {
     background-image: url(/img/startup_background.png);
@@ -2376,93 +2163,6 @@ body.editable-highlighted .editable-fake.editable-focused {
 .landing_page ul {
     text-align: left;
     margin: 0;
-}
-
-.ven {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 79px;
-    position: relative;
-    top: 1px;
-}
-
-.ven.red {
-    background: rgba(255, 0, 0, .5);
-}
-
-.ven.blue {
-    background: rgba(4, 173, 220, 0.6);
-}
-
-.ven.green {
-    background: rgba(36, 204, 61, 0.7);
-}
-
-.ven-box {
-    width: 160px;
-    height: 160px;
-    position: relative;
-    margin: 0 auto;
-}
-
-.ven-box .ven {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-}
-
-.ven-box .ven.red {
-
-    top: 60px;
-   left: 30px;
-}
-
-.ven-box .ven.green {
-    left: 60px;
-}
-
-.ven-box .ven.blue {
-   left: 0px;
-}
-
-.ven-box .ven.white {
-    background: rgba(240, 240, 240, .5) !important;
-}
-
-.competitors {
-    height: 360px;
-    text-align: center;
-}
-
-.cc-comparison {
-    height: 200px;
-    text-align: center;
-    margin: 40px 0 0 0;
-}
-
-.cc-comparison .ven-box {
-    width: 240px;
-    height: 230px;
-    display: inline-block;
-}
-
-.cc-comparison .ven-box .ven {
-    width: 160px;
-    height: 160px;
-}
-
-.cc-comparison .ven-box .ven.red {
-    top: 80px;
-   left: 40px;
-}
-
-.cc-comparison .ven-box .ven.green {
-    left: 80px;
-}
-
-.cc-comparison .ven-box .ven.blue {
-    left: 0px;
 }
 
 .testimonials {
@@ -2765,4 +2465,39 @@ td:first-child {
 
 .subtext {
   opacity: 0.8;
+}
+
+.coverage-banner {
+  background: #2B2E31;
+  height: 140px;
+  text-align: center;
+}
+
+.coverage-banner img {
+  margin: 45px 10px;
+  height: 50px;
+  opacity: .2;
+}
+
+.why_use_cloudcannon {
+  text-align: center;
+}
+
+.why_use_cloudcannon img {
+  width: 50px;
+}
+
+.pushing-boundaries {
+  text-align: left;
+}
+
+.pushing-boundaries .text {
+  float: left;
+}
+
+.pushing-boundaries .image {
+  width: 454px;
+  float: left;
+  position: inherit;
+  right: inherit;
 }
