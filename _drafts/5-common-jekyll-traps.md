@@ -98,12 +98,12 @@ quotes:
     work_path: 
 
 ---
-I recently reached out to a number of people that I consider to be Jekyll influencers and asked them to share their opinions and experiences of Jekyll. Last week I shared their top [5 most common reasons for loving Jekyll](http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html).
+I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll. Last week I shared their top [5 most common reasons for loving Jekyll](http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html).
 
-The natural curious follow up question to 'what works?' is 'what doesn't?'. However, in the interest of encouraging new Jekyll users, rather than simply asking "what don't you like?", I asked my Jekyll influencers to specifically share the teething problems of their initial experiences. If they can overcome their's so might you Jekyll padawan!
+The natural curious follow up question to 'what works?' is 'what doesn't?'. But I didn't want to ask that question - it's rather un-constructive. Instead I think new users might be more encouraged to hear the initial hurdles other users have overcome to get started. If they can overcome their's so might you Jekyll padawan!
 
 So without further ado*...
-*and remembering that some of these users began years ago and the Jekyll dev's have been doing a great job of fixing some of these issues or [have plans to](https://github.com/jekyll/jekyll/issues/3324).
+*and remembering that some users began years ago and the Jekyll dev's have been doing a great job of fixing these issues or [have plans to](https://github.com/jekyll/jekyll/issues/3324).
 
 My second big survey question was "What was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?"
 
@@ -147,27 +147,29 @@ Top 5 most common Jekyll hurdles starting out:
 
 #### Help for getting through these initial Jekyll issues:
 
-Identifying problems others have experienced with Jekyll might help you feel better about having them, but it's not SO great for helping you solve them. Below is a collection of info on identified issues:
+Identifying shared initial frustrations with Jekyll might make you feel better about encountering them. But better than a problem shared is a problem solved! Below is a collection of info on identified issues:
 
 1. Initial setup is a pain (getting dev environment just right)
-- The Jekyll Core Team is putting lots of effort into making local installs easier - [have your say on how it should be fixed](https://talk.jekyllrb.com/t/poll-installation-priorities-for-3-0/106)
+- The Jekyll Core Team is putting lots of effort into making local installs easier. [Have your say on a solution](https://talk.jekyllrb.com/t/poll-installation-priorities-for-3-0/106)
 - Watch Travis Neilson's [AWESOME intro video for local installation](https://www.youtube.com/watch?v=iWowJBRMtpc).
+- Move your compile to the cloud. See CloudCannon notes below.
 
 2. Understanding site structure
-- The [Jekyll docs cover this really well](http://jekyllrb.com/docs/structure/) so give them another read.
+- The [Jekyll docs](http://jekyllrb.com/docs/structure/) do cover this well so give them another read.
 - Andrew Munsell's [Jekyll by Example](https://www.andrewmunsell.com/tutorials/jekyll-by-example/tutorial) tutorial gives a great overview of concepts in action
 
 3. Windows support
 - This is the [official-unofficial guide by @juthilo](http://jekyll-windows.juthilo.com/)
 
 4. Compile speed
-- Not a lot of quick wins available here at the moment, however it has been and is a top priority for the Jekyll Core Team. In fact in the [latest Jekyll 3.0.0 beta release notes](https://github.com/jekyll/jekyll/blob/v3.0.0.beta1/History.markdown#head) incremental regeneration is item number one. 
+- Not a lot of quick wins available here at the moment, but it has been and is a top priority for the Jekyll Core Team. In fact in the [latest Jekyll 3.0.0 beta release notes](https://github.com/jekyll/jekyll/blob/v3.0.0.beta1/History.markdown#head) incremental regeneration is item number one. 
 
 5. GUI lacking (command line interface scares some users)
 - [Prose.io](http://prose.io/) is a solution that some Jekyll users have turned to to assist with editing markdown and the publishing process.
+- CloudCannon is looking to nail this! See below.
 
 #### Plug from CloudCannon:
 
-If you wish to avoid the initial Jekyll environment setup by moving your compilation to the cloud AND add non-tech friendly GUIs to your Jekyll workflow check out [CloudCannon's Jekyll beta overview video](https://www.youtube.com/watch?v=Fjd0V_pET5E) and then [join the beta](http://app.cloudcannon.com/jekyll_beta).
+Avoid the initial Jekyll environment setup by moving your compilation to the cloud. Add non-tech friendly GUIs to your Jekyll workflow. Check out [CloudCannon's Jekyll beta overview video](https://www.youtube.com/watch?v=Fjd0V_pET5E) and then [join the beta](http://app.cloudcannon.com/jekyll_beta).
 
 Next week I'll be exploring how YOU can best help the Jekyll community.
