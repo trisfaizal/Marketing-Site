@@ -98,6 +98,12 @@ quotes:
     work_path: 
 
 ---
+I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll.
+
+I asked them what problems they encountered when they first started using Jekyll. I have some suggestions on where to look for help if you are stuck.
+
+<!-- excerpt stop -->
+
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll. Last week I shared their top [5 most common reasons for loving Jekyll](http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html).
 
 The natural curious follow up question to 'what works?' is 'what doesn't?'. But I didn't want to ask that question - it's rather un-constructive. Instead I think new users might be more encouraged to hear the initial hurdles other users have overcome to get started. If they can overcome their's so might you Jekyll padawan!
