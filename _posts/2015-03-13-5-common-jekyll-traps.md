@@ -48,7 +48,7 @@ quotes:
     work_title: Jekyll Pixyll theme
     work_path: "http://pixyll.com/"
   travis:
-    text: "Using Jekyll was the first time I had to use the terminal. I am a designer first, and that tends to scare our kind, but its no so bad. Another thing was trying to get my dev environment perfect. But now Jekyll handles SASS and there is an adequate Jade plugin. Still no live-reload without going to gulp/grunt route, and compile times could be faster."
+    text: "Using Jekyll was the first time I had to use the terminal. I am a designer first, and that tends to scare our kind, but its no so bad. Another thing was trying to get my dev environment perfect. But now Jekyll handles SASS and there is an adequate Jade plugin."
     name: Travis Neilson
     twitter_path: "https://twitter.com/travisneilson"
     image_path: "https://pbs.twimg.com/profile_images/378800000534594497/ff6e59ec85e5f439931a13a11e7e5212_400x400.jpeg"
