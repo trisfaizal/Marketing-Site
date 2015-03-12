@@ -100,7 +100,6 @@ quotes:
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll.
 
 I asked them what problems they encountered when they first started using Jekyll. I have some suggestions on where to look for help if you are stuck.
-
 <!-- excerpt stop -->
 
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll. Last week I shared their top [5 most common reasons for loving Jekyll](http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html).
@@ -127,52 +126,45 @@ Top 5 most common Jekyll hurdles starting out:
 
 Identifying shared initial frustrations with Jekyll might make you feel better about encountering them. Better than a problem shared though is a problem solved! Below is a collection of info on identified issues:
 
-Initial setup is a pain (getting dev environment just right)
+**Initial setup is a pain (getting dev environment just right)**
+
 1.  The Jekyll Core Team is putting lots of effort into making local installs easier. [Have your say on a solution](https://talk.jekyllrb.com/t/poll-installation-priorities-for-3-0/106)
 2.  Watch Travis Neilson&#39;s [AWESOME intro video for local installation](https://www.youtube.com/watch?v=iWowJBRMtpc).
 3.  Move your compile to the cloud. See CloudCannon notes below.
 
-Understanding site structure
+**Understanding site structure**
+
 1.  The [Jekyll docs](http://jekyllrb.com/docs/structure/) do cover this well so give them another read.
 2.  Andrew Munsell&#39;s [Jekyll by Example](https://www.andrewmunsell.com/tutorials/jekyll-by-example/tutorial) tutorial gives a great overview of concepts in action
 
-Windows support
+**Windows support**
+
 1.  This is the [official-unofficial guide by @juthilo](http://jekyll-windows.juthilo.com/)
 
-Compile speed
+**Compile speed**
+
 1.  Not a lot of quick wins available here at the moment, but it has been and is a top priority for the Jekyll Core Team. In fact in the [latest Jekyll 3.0.0 beta release notes](https://github.com/jekyll/jekyll/blob/v3.0.0.beta1/History.markdown#head) incremental regeneration is item number one.
 
-GUI lacking (command line interface scares some users)
+**GUI lacking (command line interface scares some users)**
+
 1.  [Prose.io](http://prose.io/) is a solution that some Jekyll users have turned to to assist with editing markdown and the publishing process.
 2.  CloudCannon is looking to nail this! See below.
 
 #### In their own words:
 
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.harry%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.paul%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.brett%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.johan%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.michael%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.john%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.travis%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.adam%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.richard%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.alan%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.dave%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.mike%25%7D|%%|-->
-
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.anon1%25%7D|%%|-->
+{% include /quote.html quote=page.quotes.harry%}
+{% include /quote.html quote=page.quotes.paul%}
+{% include /quote.html quote=page.quotes.brett%}
+{% include /quote.html quote=page.quotes.johan%}
+{% include /quote.html quote=page.quotes.michael%}
+{% include /quote.html quote=page.quotes.john%}
+{% include /quote.html quote=page.quotes.travis%}
+{% include /quote.html quote=page.quotes.adam%}
+{% include /quote.html quote=page.quotes.richard%}
+{% include /quote.html quote=page.quotes.alan%}
+{% include /quote.html quote=page.quotes.dave%}
+{% include /quote.html quote=page.quotes.mike%}
+{% include /quote.html quote=page.quotes.anon1%}
 
 #### Plug from CloudCannon:
 
