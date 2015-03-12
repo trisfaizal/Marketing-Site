@@ -152,6 +152,8 @@ Identifying shared initial frustrations with Jekyll might make you feel better a
 
 #### In their own words:
 
+**"What was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?"**
+
 {% include /quote.html quote=page.quotes.harry%}
 {% include /quote.html quote=page.quotes.paul%}
 {% include /quote.html quote=page.quotes.brett%}
