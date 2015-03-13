@@ -20,7 +20,7 @@ quotes:
     work_title: WordPress to Jekyll blog post
     work_path: "http://paulstamatiou.com/how-to-wordpress-to-jekyll/"
   brett:
-    text: The lack of documentation surrounding the site payload and methods available to the various object. It took some digging to write my first plugin.
+    text: The lack of documentation surrounding the site payload and methods available to the various objects. It took some digging to write my first plugin.
     name: Brett Terpstra
     twitter_path: "https://twitter.com/ttscoff"
     image_path: "https://pbs.twimg.com/profile_images/564842329714851840/qqDLuEwd_400x400.jpeg"
