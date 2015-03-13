@@ -104,7 +104,7 @@ I asked them what problems they encountered when they first started using Jekyll
 
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll. Last week I shared their top [5 most common reasons for loving Jekyll](http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html).
 
-The natural curious follow up question to &#39;what works?&#39; is &#39;what doesn&#39;t?&#39;. But I didn&#39;t want to ask that question - it&#39;s rather un-constructive. Instead I think new users might be more encouraged to hear the initial hurdles other users have overcome to get started. If they can overcome their&#39;s so might you Jekyll padawan!
+The natural follow up question to &#39;what works?&#39; is &#39;what doesn&#39;t?&#39;. But I didn&#39;t want to ask that question - it&#39;s rather un-constructive. Instead I think new users might be more encouraged to hear the initial hurdles other users have overcome to get started. If they can overcome their&#39;s so might you Jekyll padawan!
 
 So without further ado*...
 
