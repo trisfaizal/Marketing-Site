@@ -134,8 +134,8 @@ Identifying shared initial frustrations with Jekyll might make you feel better a
 **Understanding site structure**
 
 1.  The [Jekyll docs](http://jekyllrb.com/docs/structure/) do cover this well so give them another read.
-2.  Andrew Munsell&#39;s [Jekyll by Example](https://www.andrewmunsell.com/tutorials/jekyll-by-example/tutorial) tutorial gives a great overview of concepts in action. _Another alternative for a fully explained build is the older [Yes We Jekyll](http://yeswejekyll.com/). (16/3 suggested by @parkr)_
-3.  _If the powerful &#39;collections&#39; feature is confusing you&nbsp;check out this&nbsp;recent guide by @BenBalter:&nbsp;[Explain like I&rsquo;m five: Jekyll collections](http://ben.balter.com/2015/02/20/jekyll-collections/).&nbsp;(16/3&nbsp;great&nbsp;suggestion by @AlWillis)_
+2.  Andrew Munsell&#39;s [Jekyll by Example](https://www.andrewmunsell.com/tutorials/jekyll-by-example/tutorial) tutorial gives a great overview of concepts in action. *"Another alternative for a fully explained build is the older [Yes We Jekyll](http://yeswejekyll.com/). (16/3 suggested by @parkr)"*
+3.  *"If the powerful &#39;collections&#39; feature is confusing you&nbsp;check out this&nbsp;recent guide by @BenBalter:&nbsp;[Explain like I&rsquo;m five: Jekyll collections](http://ben.balter.com/2015/02/20/jekyll-collections/).&nbsp;(16/3&nbsp;great&nbsp;suggestion by @AlWillis)"*
 
 **Windows support**
 
@@ -154,7 +154,19 @@ Identifying shared initial frustrations with Jekyll might make you feel better a
 
 **&quot;What was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?&quot;**
 
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.harry%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.paul%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.brett%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.johan%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.michael%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.john%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.travis%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.adam%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.richard%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.alan%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.dave%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.mike%25%7D|%%|--> <!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.anon1%25%7D|%%|-->
+{% include /quote.html quote=page.quotes.harry%}
+{% include /quote.html quote=page.quotes.paul%}
+{% include /quote.html quote=page.quotes.brett%}
+{% include /quote.html quote=page.quotes.johan%}
+{% include /quote.html quote=page.quotes.michael%}
+{% include /quote.html quote=page.quotes.john%}
+{% include /quote.html quote=page.quotes.travis%}
+{% include /quote.html quote=page.quotes.adam%}
+{% include /quote.html quote=page.quotes.richard%}
+{% include /quote.html quote=page.quotes.alan%}
+{% include /quote.html quote=page.quotes.dave%}
+{% include /quote.html quote=page.quotes.mike%}
+{% include /quote.html quote=page.quotes.anon1%}
 
 #### Plug from CloudCannon:
 
