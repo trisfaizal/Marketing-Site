@@ -134,8 +134,9 @@ Identifying shared initial frustrations with Jekyll might make you feel better a
 **Understanding site structure**
 
 1.  The [Jekyll docs](http://jekyllrb.com/docs/structure/) do cover this well so give them another read.
-2.  Andrew Munsell&#39;s [Jekyll by Example](https://www.andrewmunsell.com/tutorials/jekyll-by-example/tutorial) tutorial gives a great overview of concepts in action. *"Another alternative for a fully explained build is the older [Yes We Jekyll](http://yeswejekyll.com/). (16/3 suggested by @parkr)"*
-3.  *"If the powerful &#39;collections&#39; feature is confusing you&nbsp;check out this&nbsp;recent guide by @BenBalter:&nbsp;[Explain like I&rsquo;m five: Jekyll collections](http://ben.balter.com/2015/02/20/jekyll-collections/).&nbsp;(16/3&nbsp;great&nbsp;suggestion by @AlWillis)"*
+2.  Andrew Munsell&#39;s [Jekyll by Example](https://www.andrewmunsell.com/tutorials/jekyll-by-example/tutorial) tutorial gives a great overview of concepts in action.
+3.  *Another alternative for a fully explained build is the older [Yes We Jekyll](http://yeswejekyll.com/). (16/3 suggested by @parkr)*
+4.  *If the powerful &#39;collections&#39; feature is confusing you&nbsp;check out this&nbsp;recent guide by @BenBalter:&nbsp;[Explain like I&rsquo;m five: Jekyll collections](http://ben.balter.com/2015/02/20/jekyll-collections/).&nbsp;(16/3&nbsp;great&nbsp;suggestion by @AlWillis)*
 
 **Windows support**
 
