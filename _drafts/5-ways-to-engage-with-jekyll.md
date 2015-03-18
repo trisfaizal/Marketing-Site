@@ -99,8 +99,8 @@ quotes:
     work_title: {}
     work_path: {}
 layout: post
-title: "5 ways to engage with Jekyll"
-header: "5 ways to engage with Jekyll"
+title: 5 ways to engage with Jekyll
+header: 5 ways to engage with Jekyll
 category: Jekyll
 author: sam
 ---
@@ -135,6 +135,44 @@ Top 6 Jekyll contribution gaps *you* can fill as identifed by the Jekyll communi
 
 1. Evangelists
 
+{% include /quote.html quote=page.quotes.michael%}
+
+Normally I leave the quotes in the bottom of these posts, but if I'm honest, I think this is my favourite quote from this whole research process. Jekyll is awesome. Far more awesome than the status quo, and people need to know about it.
+
+Jekyll has a young, small community compared to incumbent popular website solutions out there. Until recently it has not been hugely vocal. It's been limited to an issues board on GitHub, a list of sites running Jekyll, and a thin spread of blog posts about it's use.
+
+I'm hugely excited about the birth of talk.jekyllrb.com earlier this month. It's just starting out but it feels like the beginning of a more open, connected Jekyll.
+
+So number one way you can help Jekyll - tell others about it.
+
+2. Tutorials & 3. Advanced Documentation
+
+I had to think about whether #2 Tutorials and #3 Advanced Documentation were really the same thing. I decided they weren't. Here's how I distinguish: Tutorials - Guides for replicating functionality; Advanced Documentation - Guides for informing the extension of functionality. I'll address them together though.
+
+From the initial installation headaches we touched on last week, through to advanced features like integrated site search that users have already begun to implement, there is a demand at all levels for tutorials.
+
+Yet Jekyll will never be all things to all people. And like developers have been prone to do since the dawn of development, there is the desire out there to build custom solutions and plugins. Advanced documentation about how Jekyll behaves and how others can integrate with it is also in demand. If you understand, do share.
+
+4. Themes
+
+A blank canvas is liberating to some and utterly terrifying to others.
+
+There are a selection of high quality themes currently available but the range is limited.
+
+If you have the design skills, there is a community eager to see, share and use your work.
+
+5. GUIs
+
+I'm gonna shamelessly plug CloudCannon here. [I think we're about to nail this.](https://www.youtube.com/watch?v=Fjd0V_pET5E)
+
+Lots of Jekyll users don't need GUIs. Thats fine. But some want to use Jekyll for websites that more than one person is responsible for contributing to and maintaining. And some of the people they work with are non-technical. In situations like that it's normally an all-or-nothing decision, you can't have half the team unable to use a platform.
+
+To help spread the adoption of Jekyll long term, play with Jekyll using a GUI like CloudCannon or Prose.io. Encourage your non-technical team members to try it out. Coach them and support them. At least they don't have to learn code and Git!
+
+6. Compile Speed
+
+Again, we touched on this last week. The Jekyll Core Team have been targeting this as priority number one for Jekyll 3.00. Download the beta, try the iterative regeneration out and feedback into the dev process.
+
 #### In their own words:
 
 **&quot;What was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?&quot;**
@@ -154,5 +192,3 @@ Top 6 Jekyll contribution gaps *you* can fill as identifed by the Jekyll communi
 {% include /quote.html quote=page.quotes.anon1%}
 
 #### Plug from CloudCannon:
-
-Avoid the initial Jekyll environment setup by moving your compilation to the cloud. Add non-tech friendly GUIs to your Jekyll workflow. Check out [CloudCannon&#39;s Jekyll beta overview video](https://www.youtube.com/watch?v=Fjd0V_pET5E) and then [join the beta](http://app.cloudcannon.com/jekyll_beta).
