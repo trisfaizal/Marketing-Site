@@ -8,7 +8,7 @@ quotes:
     work_title: Jekyll blog post
     work_path: "http://csswizardry.com/2012/12/a-new-css-wizardry/"
   paul:
-    text: "With over 1,000 blog posts on my site when I moved from WordPress to Jekyll, it takes some time to generate my site. That was a minor annoyance which has gotten better over the years with faster computers and more performant Jekyll updates."
+    text: "I don't have this need myself as I'm a designer, but I can see the need for more and better designed Jekyll themes. The majority I've seen are made by engineers so they are not quite super slick on the design side yet. ;-)"
     name: Paul Stamatiou
     twitter_path: "https://twitter.com/stammy"
     image_path: "https://pbs.twimg.com/profile_images/1778867511/Screen_Shot_2012-01-24_at_2.03.52_PM_400x400.png"
@@ -84,6 +84,13 @@ quotes:
     image_path: "https://pbs.twimg.com/profile_images/3665350757/672d30f885ed73aa4e1d7d8d87289649_400x400.png"
     work_title: Jekyll intro tutorial
     work_path: "http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/"
+  marco:
+    text: Mainly documentation and cookbooks for larger/more complex use-cases (reporting/crawling/data sources/etc)
+    name: Marco Pivetta
+    twitter_path: "https://twitter.com/Ocramius"
+    image_path: "https://pbs.twimg.com/profile_images/1363592997/ocramius-aethril-marco-pivetta-1_400x400.png"
+    work_title: Migrating to Jekyll blog post
+    work_path: "http://ocramius.github.io/blog/moving-my-blog-to-jekyll/"
   anon1:
     text: "Well, there's Jekyll, and then there's Github Pages Jekyll. Jekyll itself is pretty straightforward, but Github Pages doesn't have great error messaging on build fail. It has gotten a bit better over the years, but still... Jekyll itself was pretty easy to work with once you figured out the basic config setup (which, if you've never used a config file before, takes a little learning, but not too bad)."
     name: Anonymous
