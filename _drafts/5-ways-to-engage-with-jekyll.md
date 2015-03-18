@@ -1,12 +1,5 @@
 ---
 quotes:
-  harry:
-    text: "N/A (As above, I’m really enough a part of it in order to know what’s missing.)"
-    name: Harry Roberts
-    twitter_path: "https://twitter.com/csswizardry"
-    image_path: "https://pbs.twimg.com/profile_images/378800000842511021/741a0a2593ea55bbd6238f8705c7074f_400x400.jpeg"
-    work_title: Jekyll blog post
-    work_path: "http://csswizardry.com/2012/12/a-new-css-wizardry/"
   paul:
     text: "I don't have this need myself as I'm a designer, but I can see the need for more and better designed Jekyll themes. The majority I've seen are made by engineers so they are not quite super slick on the design side yet. ;-)"
     name: Paul Stamatiou
@@ -91,8 +84,15 @@ quotes:
     image_path: "https://pbs.twimg.com/profile_images/1363592997/ocramius-aethril-marco-pivetta-1_400x400.png"
     work_title: Migrating to Jekyll blog post
     work_path: "http://ocramius.github.io/blog/moving-my-blog-to-jekyll/"
+  matt:
+    text: "I feel that it's missing a strong culture, and I feel this amazing technology is underrated."
+    name: Matthew Kosloski
+    twitter_path: "https://twitter.com/_mkos"
+    image_path: "https://pbs.twimg.com/profile_images/499619192883396609/lAwfijv8_400x400.jpeg"
+    work_title: "Matt's Jekyll Journal post"
+    work_path: "http://matthewkosloski.me/journal/about-the-site/"
   anon1:
-    text: "Well, there's Jekyll, and then there's Github Pages Jekyll. Jekyll itself is pretty straightforward, but Github Pages doesn't have great error messaging on build fail. It has gotten a bit better over the years, but still... Jekyll itself was pretty easy to work with once you figured out the basic config setup (which, if you've never used a config file before, takes a little learning, but not too bad)."
+    text: "The Jekyll homepage (jekyllrb.com) could use a bit more love, although it has been getting better (better instructions, more comprehensive). It is still not always clear why Jekyll works certain ways, or how to do things that aren't the exact things described on jekyllrb.com. I imagine that there is a lot of more advanced functionality that I don't use because the tutorials just aren't there yet, or they're written for a more advanced developer audience (I am definitely at the less technical of the developer spectrum)."
     name: Anonymous
     twitter_path: {}
     image_path: "https://www.regenes.is/wp-content/uploads/2015/01/person-placeholder-400x400.png"
@@ -162,19 +162,19 @@ Identifying shared initial frustrations with Jekyll might make you feel better a
 
 **&quot;What was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?&quot;**
 
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.harry%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.paul%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.brett%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.johan%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.michael%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.john%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.travis%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.adam%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.richard%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.alan%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.dave%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.mike%25%7D|%%|-->
-<!--|%%|%7B%25%20include%20%2Fquote.html%20quote%3Dpage.quotes.anon1%25%7D|%%|-->
+{% include /quote.html quote=page.quotes.paul%}
+{% include /quote.html quote=page.quotes.brett%}
+{% include /quote.html quote=page.quotes.johan%}
+{% include /quote.html quote=page.quotes.michael%}
+{% include /quote.html quote=page.quotes.john%}
+{% include /quote.html quote=page.quotes.travis%}
+{% include /quote.html quote=page.quotes.adam%}
+{% include /quote.html quote=page.quotes.richard%}
+{% include /quote.html quote=page.quotes.alan%}
+{% include /quote.html quote=page.quotes.dave%}
+{% include /quote.html quote=page.quotes.mike%}
+{% include /quote.html quote=page.quotes.matt%}
+{% include /quote.html quote=page.quotes.anon1%}
 
 #### Plug from CloudCannon:
 
