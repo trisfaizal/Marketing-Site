@@ -99,8 +99,8 @@ quotes:
     work_title: {}
     work_path: {}
 layout: post
-title: "5 common Jekyll traps for beginners (and help to overcome them!)"
-header: "5 common Jekyll traps for beginners (and help to overcome them!)"
+title: "5 ways to engage with Jekyll"
+header: "5 ways to engage with Jekyll"
 category: Jekyll
 author: sam
 ---
@@ -108,55 +108,32 @@ I recently reached out to people that I consider to be influencers in the Jekyll
 
 I asked them what problems they encountered when they first started using Jekyll. I have some suggestions on where to look for help if you are stuck. <!-- excerpt stop -->
 
-I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll. Last week I shared their top [5 most common reasons for loving Jekyll](http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html).
+I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll. First they shared their top [5 reasons to love Jekyll](http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html) and last week I looked at their top [5 traps for Jekyll beginners](http://cloudcannon.com/jekyll/2015/03/13/5-common-jekyll-traps.html).
 
-The natural follow up question to &#39;what works?&#39; is &#39;what doesn&#39;t?&#39;. But I didn&#39;t want to ask that question - it&#39;s rather un-constructive. Instead I think new users might be more encouraged to hear the initial hurdles other users have overcome to get started. If they can overcome their&#39;s so might you Jekyll padawan!
+Jekyll is the most popular static site generator on the web by most measures. It's a tool and a community in a growth spurt.
 
-So without further ado*...
+With that in mind I want to round off this series of Jekyll blog posts by exploring how the *current* influencers hope the product and community will continue to develop in the future.
 
-*and remembering that some users began years ago and the Jekyll dev&#39;s have been doing a great job of fixing these issues or [have plans to](https://github.com/jekyll/jekyll/issues/3324).
+If you want to contribute to Jekyll in some way going forward, consider that these areas of code and content are in demand by the community!
 
-My second big survey question was **&quot;What was the first roadblock/hurdle/facepalm moment you had to overcome to begin using Jekyll?&quot;**
+A growing base of knowledgeable users can only be good for Jekyll.
+
+The final big survey question I put to my influencers was **&quot;What is Jekyll and/or it's community currently missing?&quot;**
 
 #### The TL;DR:
 
-Top 5 most common Jekyll hurdles starting out:
+Top 6 Jekyll contribution gaps *you* can fill as identifed by the Jekyll community:
 
-1.  Initial setup is a pain (getting dev environment just right)
-2.  Understanding site structure
-3.  Windows support
-4.  Compile speed
-5.  GUI lacking (command line interface scares some users)
+1.  Evangelists
+2.  Tutorials
+3.  Advanced Documentation
+4.  Themes
+5.  GUI
+6.  Compile Speed
 
-#### Help for getting through these initial Jekyll issues:
+#### Breaking it down.
 
-Identifying shared initial frustrations with Jekyll might make you feel better about encountering them. Better than a problem shared though is a problem solved! Below is a collection of info on identified issues:
-
-**Initial setup is a pain (getting dev environment just right)**
-
-1.  The Jekyll Core Team is putting lots of effort into making local installs easier. [Have your say on a solution](https://talk.jekyllrb.com/t/poll-installation-priorities-for-3-0/106)
-2.  Watch Travis Neilson&#39;s [AWESOME intro video for local installation](https://www.youtube.com/watch?v=iWowJBRMtpc).
-3.  Move your compile to the cloud. See CloudCannon notes below.
-
-**Understanding site structure**
-
-1.  The [Jekyll docs](http://jekyllrb.com/docs/structure/) do cover this well so give them another read.
-2.  Andrew Munsell&#39;s [Jekyll by Example](https://www.andrewmunsell.com/tutorials/jekyll-by-example/tutorial) tutorial gives a great overview of concepts in action.
-3.  _Another alternative for a fully explained build is the older [Yes We Jekyll](http://yeswejekyll.com/). (16/3 suggested by @parkr)_
-4.  _If the powerful &#39;collections&#39; feature is confusing you&nbsp;check out this&nbsp;recent guide by @BenBalter:&nbsp;[Explain like I&rsquo;m five: Jekyll collections](http://ben.balter.com/2015/02/20/jekyll-collections/).&nbsp;(16/3&nbsp;great&nbsp;suggestion by @AlWillis)_
-
-**Windows support**
-
-1.  This is the [official-unofficial guide by @juthilo](http://jekyll-windows.juthilo.com/)
-
-**Compile speed**
-
-1.  Not a lot of quick wins available here at the moment, but it has been and is a top priority for the Jekyll Core Team. In fact in the [latest Jekyll 3.0.0 beta release notes](https://github.com/jekyll/jekyll/blob/v3.0.0.beta1/History.markdown#head) incremental regeneration is item number one.
-
-**GUI lacking (command line interface scares some users)**
-
-1.  [Prose.io](http://prose.io/) is a solution that some Jekyll users have turned to to assist with editing markdown and the publishing process.
-2.  CloudCannon is looking to nail this! See below.
+1. Evangelists
 
 #### In their own words:
 
