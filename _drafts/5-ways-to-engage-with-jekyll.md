@@ -64,7 +64,7 @@ quotes:
     work_title: Jekyll intro tutorial
     work_path: "http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/"
   marco:
-    text: "Mainly documentation and cookbooks for larger/more complex use-cases (reporting/crawling/data sources/etc)"
+    text: Mainly documentation and cookbooks for larger/more complex use-cases (reporting/crawling/data sources/etc)
     name: Marco Pivetta
     twitter_path: "https://twitter.com/Ocramius"
     image_path: "https://pbs.twimg.com/profile_images/1363592997/ocramius-aethril-marco-pivetta-1_400x400.png"
