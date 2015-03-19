@@ -78,7 +78,7 @@ quotes:
     work_title: "Matt's Jekyll Journal post"
     work_path: "http://matthewkosloski.me/journal/about-the-site/"
   anon1:
-    text: "The Jekyll homepage (jekyllrb.com) could use a bit more love, although it has been getting better (better instructions, more comprehensive). It is still not always clear why Jekyll works certain ways, or how to do things that aren't the exact things described on jekyllrb.com. I imagine that there is a lot of more advanced functionality that I don't use because the tutorials just aren't there yet, or they're written for a more advanced developer audience (I am definitely at the less technical of the developer spectrum)."
+    text: "The Jekyll homepage could use a bit more love, although it has been getting better (better instructions, more comprehensive). It is still not always clear why Jekyll works certain ways, or how to do things that aren't the exact things described on jekyllrb.com. I imagine that there is a lot of more advanced functionality that I don't use because the tutorials just aren't there yet, or they're written for a more advanced developer audience (I am definitely at the less technical of the developer spectrum)."
     name: Anonymous
     twitter_path:
     image_path: "https://www.regenes.is/wp-content/uploads/2015/01/person-placeholder-400x400.png"
@@ -100,7 +100,7 @@ I recently reached out to people that I consider to be influencers in the Jekyll
 
 In the third and final post this blog series I want to look at how _current_ influencers hope the product and community will continue to develop.
 
-Jekyll is the [most popular static site generator on the web](https://www.staticgen.com/). Consider that Octopress is basically a large set of Jekyll plugins and that lead extends even further.  Jekyll is a tool and a community in a growth spurt.
+Jekyll is the [most popular static site generator on the web](https://www.staticgen.com/). Consider that Octopress is basically a large set of Jekyll plugins and that lead extends even further. Jekyll is a tool and a community in a growth spurt.
 
 If you want to contribute to Jekyll in some way going forward, consider these areas of code and content in demand by the community!
 
@@ -131,7 +131,7 @@ Jekyll is awesome. Far more awesome than the status quo, and people need to know
 
 Jekyll has a young, small community compared to incumbent popular website solutions. Until recently the community has not been hugely vocal. It has been limited to the GitHub issues board, a list of sites running Jekyll, and a thin spread of blog posts about it&#39;s use.
 
-I&#39;m excited about the birth of [talk.jekyllrb.com](https://talk.jekyllrb.com/) earlier this month. It&#39;s just starting out but it feels like the beginning of a more open, vocal, connected Jekyll.
+I&#39;m excited about the birth of the offical discussion forum [talk.jekyllrb.com](https://talk.jekyllrb.com/) earlier this month. It&#39;s just starting out but it feels like the beginning of a more open, vocal, connected Jekyll.
 
 So number one way you can help Jekyll - tell others about it.
 
@@ -144,7 +144,7 @@ I had to think about whether #2 Tutorials and #3 Advanced Documentation were the
 
 We looked at initial installation frustrations last week. Some influencers have looked for advice on implementing advanced features like integrated site search. There is a demand at all levels for tutorials.
 
-As [Troy Swanson](https://twitter.com/gerphimum/) commented during the [Feb '15 Jekyll Townhall](https://www.youtube.com/watch?v=sRCXRkUVAag), while lots of features are well covered by documentation and existing tutorials, there is still a lack of definitive best practice published.
+As contributor [Troy Swanson](https://twitter.com/gerphimum/) commented during the [Feb '15 Jekyll Townhall](https://www.youtube.com/watch?v=sRCXRkUVAag), while lots of features are well covered by documentation and existing tutorials, there is still a lack of definitive best practice published.
 
 Yet Jekyll will never be all things to all people. And, like developers are prone to do, there is the desire out there to build custom solutions and plugins. Advanced documentation about how Jekyll behaves and how others can integrate with it is also in demand. If you understand, do share.
 
