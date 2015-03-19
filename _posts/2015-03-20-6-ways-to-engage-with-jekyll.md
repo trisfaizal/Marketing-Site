@@ -80,10 +80,10 @@ quotes:
   anon1:
     text: "The Jekyll homepage (jekyllrb.com) could use a bit more love, although it has been getting better (better instructions, more comprehensive). It is still not always clear why Jekyll works certain ways, or how to do things that aren't the exact things described on jekyllrb.com. I imagine that there is a lot of more advanced functionality that I don't use because the tutorials just aren't there yet, or they're written for a more advanced developer audience (I am definitely at the less technical of the developer spectrum)."
     name: Anonymous
-    twitter_path: {}
+    twitter_path:
     image_path: "https://www.regenes.is/wp-content/uploads/2015/01/person-placeholder-400x400.png"
-    work_title: {}
-    work_path: {}
+    work_title:
+    work_path:
 layout: post
 title: 6 ways to engage with Jekyll
 header: 6 ways to engage with Jekyll
@@ -114,7 +114,7 @@ Top 6 Jekyll contribution gaps you can fill as identified by the Jekyll communit
 2.  Tutorials
 3.  Advanced Documentation
 4.  Themes
-5.  GUI
+5.  Share GUIs
 6.  Compile Speed
 
 #### Breaking it down.
@@ -154,7 +154,7 @@ There are high quality themes currently available but the range is limited.
 
 If you have the design skills, there is a community eager to see, share and use your work.
 
-**5.  GUIs**
+**5.  Share GUIs**
 
 Jekyll was originally built as a blogging tool for developers by developers. Yet it seems to have grown past that now. Jekyll has played a part in further enabling static sites to be a viable option for delivering content on today&#39;s web.
 
