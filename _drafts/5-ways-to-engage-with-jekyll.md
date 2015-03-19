@@ -14,15 +14,8 @@ quotes:
     image_path: "https://pbs.twimg.com/profile_images/564842329714851840/qqDLuEwd_400x400.jpeg"
     work_title: Jekyll CDN blog post
     work_path: "http://brettterpstra.com/2014/02/21/a-jekyll-cdn-with-cloudfront/"
-  johan:
-    text: I still like Jekyll but have moved on to different static site generators because Jekyll is just too slow for my needs.
-    name: Johan Ronsse
-    twitter_path: "https://twitter.com/johan_ronsse"
-    image_path: "https://pbs.twimg.com/profile_images/528173675183235075/COCkQ3PO_400x400.jpeg"
-    work_title: Intro to Jekyll video
-    work_path: "https://www.youtube.com/watch?v=O7NBEFmA7yA"
   michael:
-    text: "As a theme developer I get a lot of feedback from Jekyll users. The ones I hear from the most are generally non-devs who gravitate to Jekyll because of the free hosting GitHub Pages provides. From their comments there definitely is a void to fill in providing a service that makes working with Jekyll easier. Whether that's something like prose.io, a GUI wrapper for those who fear the CLI, or just making it easier to get it installed and running on their system.\n\nAs far as features for Jekyll it seems to be moving in the right direction with 3.0. I have a fairly large Jekyll site and it takes forever to build, so anything to improve performance there has my vote. With the incremental rebuild stuff the Jekyll core team is working on hopefully that will be a non-issue."
+    text: "As a theme developer I get a lot of feedback from Jekyll users. The ones I hear from the most are generally non-devs who gravitate to Jekyll because of the free hosting GitHub Pages provides. From their comments there definitely is a void to fill in providing a service that makes working with Jekyll easier. Whether that's something like prose.io, a GUI wrapper for those who fear the CLI, or just making it easier to get it installed and running on their system. As far as features for Jekyll it seems to be moving in the right direction with 3.0. I have a fairly large Jekyll site and it takes forever to build, so anything to improve performance there has my vote. With the incremental rebuild stuff the Jekyll core team is working on hopefully that will be a non-issue."
     name: Michael Rose
     twitter_path: "https://twitter.com/mmistakes"
     image_path: "https://pbs.twimg.com/profile_images/560937271042797568/m5VndD_B.jpeg"
@@ -36,40 +29,33 @@ quotes:
     work_title: Jekyll Pixyll theme
     work_path: "http://pixyll.com/"
   travis:
-    text: "All of the suggestions in your questions would be rad. But I think Jekyll would have greater adoption if there were some app that would handle the config and compile. I answer a lot of questions all day about how to do this or that. Mostly just getting started.\n\nA lot of questions about getting it running on windows.\n\nIt's hard to dev a jekyll site for someone else. They just want a blog. There is prose.io, but it has its ... hang ups."
+    text: "I think Jekyll would have greater adoption if there were some app that would handle the config and compile. I answer a lot of questions all day about how to do this or that. Mostly just getting started. A lot of questions about getting it running on windows. It's hard to dev a Jekyll site for someone else. They just want a blog. There is prose.io, but it has its ... hang ups."
     name: Travis Neilson
     twitter_path: "https://twitter.com/travisneilson"
     image_path: "https://pbs.twimg.com/profile_images/378800000534594497/ff6e59ec85e5f439931a13a11e7e5212_400x400.jpeg"
     work_title: "DevTips \"Jon doesn't like Jekyll\" video"
     work_path: "https://www.youtube.com/watch?v=u22CLlw4_hg"
   adam:
-    text: "An easy to use, local installer. I am guessing your business model will mostly be managing the Jekyll engine, and letting people submit content in an easy way- thus locally installing Jekyll isn't on your radar. That said, I truly believe that a standalone installer for Jekyll is needed to open it out to people unable to find their way through installing and managing gems just to get up and running.\n\nThere is Omnibus Jekyll [1], a standalone installer for Jekyll and dependencies, but work on that is slow and not currently the main focus of the Jekyll developers.\n\n[1] https://github.com/jekyll/omnibus-jekyll"
+    text: "An easy to use, local installer. I truly believe that a standalone installer for Jekyll is needed to open it out to people unable to find their way through installing and managing gems just to get up and running. There is [Omnibus Jekyll](https://github.com/jekyll/omnibus-jekyll), a standalone installer for Jekyll and dependencies, but work on that is slow and not currently the main focus of the Jekyll developers."
     name: Adam Wilcox
     twitter_path: "https://twitter.com/adamwilcox"
     image_path: "https://pbs.twimg.com/profile_images/569370919701733376/SZzuCEB-_400x400.jpeg"
     work_title: Podcasting with Jekyll tutorial
     work_path: "http://www.adamwilcox.org/2013/01/17/from-the-pub/"
   richard:
-    text: "- A GUI making it easier to edit and update Jekyll sites like Wordpress, or Tumblr.\n- Possibly a Nodejs version."
+    text: "A GUI making it easier to edit and update Jekyll sites like Wordpress, or Tumblr. Possibly a Nodejs version."
     name: Richard Bray
     twitter_path: "https://twitter.com/ceiga"
     image_path: "https://pbs.twimg.com/profile_images/378800000748566726/83e335bc62829792ef3fa876463bb7e3_400x400.jpeg"
     work_title: Muffin Jekyll theme
     work_path: "http://richbray.me/muffin/"
   alan:
-    text: "I hacked together my own system for switching between environments:\n\n- dev - for testing HTML/JS/CSS changes.\n- drafts - to speed up jekyll builds for previewing content. \n- prod - what I build locally that gets deployed to the site. \n\nFor a while, I setup an external image directory so that images weren't under the main tree. I don't do that anymore and am not sure it's needed. (Did it to keep full deployments smaller)\n\n---\n\nI should point out that I'm about to move away from Jekyll to build a dynamic site. This has less to do with Jekyll and more to do with me wanted to mess around with Rails."
+    text: "I hacked together my own system for switching between environments: Dev - for testing HTML/JS/CSS changes; Drafts - to speed up jekyll builds for previewing content; and Prod - what I build locally that gets deployed to the site. For a while, I setup an external image directory so that images weren't under the main tree. I don't do that anymore and am not sure it's needed."
     name: Alan W. Smith
     twitter_path: "https://twitter.com/TheIdOfAlan"
     image_path: "https://pbs.twimg.com/profile_images/2396971629/1z2l22mqcpqvhlv3hs9t_400x400.jpeg"
     work_title: Date formatting in Jekyll
     work_path: "http://alanwsmith.com/jekyll-liquid-date-formatting-examples"
-  dave:
-    text: "It was the data folder, though now that's not a problem."
-    name: David Zvenyach
-    twitter_path: "https://twitter.com/vdavez"
-    image_path: "https://pbs.twimg.com/profile_images/1114190642/27397_8639519_5240_n_400x400.jpg"
-    work_title: Jekyll data_source tutorial
-    work_path: "https://esq.io/blog/posts/dogfooding-with-jekyll/"
   mike:
     text: "Jekyll needs evangelists.  I would like to see it grow a bit outside of its niche and reach more mainstream support, though given its learning curve I realize the mainstream appeal may have a ceiling.\n\nI for one am sick of clients handing me a bloated Wordpress installation to maintain when all they are using it for are few static web pages and a layout template.  The number of server resources and maintenance headaches that could be avoided is staggering."
     name: Mike Greiling
@@ -78,7 +64,7 @@ quotes:
     work_title: Jekyll intro tutorial
     work_path: "http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/"
   marco:
-    text: Mainly documentation and cookbooks for larger/more complex use-cases (reporting/crawling/data sources/etc)
+    text: "Mainly documentation and cookbooks for larger/more complex use-cases (reporting/crawling/data sources/etc)"
     name: Marco Pivetta
     twitter_path: "https://twitter.com/Ocramius"
     image_path: "https://pbs.twimg.com/profile_images/1363592997/ocramius-aethril-marco-pivetta-1_400x400.png"
@@ -135,7 +121,7 @@ Top 6 Jekyll contribution gaps you can fill as identified by the Jekyll communit
 
 **1.  Evangelists**
 
-{% include /quote.html quote=page.quotes.paul%}
+{% include /quote.html quote=page.quotes.mike%}
 
 Normally I leave the quotes to the bottom of these posts but I want to highlight this one. I think it is my favourite quote from this whole research process. 
 
@@ -188,16 +174,16 @@ Again, we touched on this [last week](http://cloudcannon.com/jekyll/2015/03/13/5
 
 {% include /quote.html quote=page.quotes.paul%}
 {% include /quote.html quote=page.quotes.brett%}
-{% include /quote.html quote=page.quotes.johan%}
 {% include /quote.html quote=page.quotes.michael%}
 {% include /quote.html quote=page.quotes.john%}
 {% include /quote.html quote=page.quotes.travis%}
 {% include /quote.html quote=page.quotes.adam%}
 {% include /quote.html quote=page.quotes.richard%}
 {% include /quote.html quote=page.quotes.alan%}
-{% include /quote.html quote=page.quotes.dave%}
-{% include /quote.html quote=page.quotes.mike%}
+{% include /quote.html quote=page.quotes.marco%}
 {% include /quote.html quote=page.quotes.matt%}
 {% include /quote.html quote=page.quotes.anon1%}
 
-#### Plug from CloudCannon:
+#### Bottom line.
+
+If you like Jekyll: Tell someone, share what you know, test and/or contribute!
