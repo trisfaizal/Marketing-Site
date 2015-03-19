@@ -92,13 +92,13 @@ author: sam
 ---
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll.
 
-I asked them what problems they encountered when they first started using Jekyll. I have some suggestions on where to look for help if you are stuck. <!-- excerpt stop -->
+In this, my final post of the three part series, I look at the direction these influencers hope Jekyll and it's community will continue in.-->
 
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll. The first post in this series covered [5 reasons to love Jekyll](http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html) and the second post looked at [5 traps for Jekyll beginners](http://cloudcannon.com/jekyll/2015/03/13/5-common-jekyll-traps.html).
 
-Jekyll is the [most popular static site generator on the web](https://www.staticgen.com/). Consider that Octopress is basically a large set of Jekyll plugins and that lead extends even further.  Jekyll is a tool and a community in a growth spurt.
-
 In the third and final post this blog series I want to look at how _current_ influencers hope the product and community will continue to develop.
+
+Jekyll is the [most popular static site generator on the web](https://www.staticgen.com/). Consider that Octopress is basically a large set of Jekyll plugins and that lead extends even further.  Jekyll is a tool and a community in a growth spurt.
 
 If you want to contribute to Jekyll in some way going forward, consider these areas of code and content in demand by the community!
 
