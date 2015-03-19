@@ -36,7 +36,7 @@ quotes:
     work_title: "DevTips \"Jon doesn't like Jekyll\" video"
     work_path: "https://www.youtube.com/watch?v=u22CLlw4_hg"
   adam:
-    text: "An easy to use, local installer. I truly believe that a standalone installer for Jekyll is needed to open it out to people unable to find their way through installing and managing gems just to get up and running. There is [Omnibus Jekyll](https://github.com/jekyll/omnibus-jekyll), a standalone installer for Jekyll and dependencies, but work on that is slow and not currently the main focus of the Jekyll developers."
+    text: "An easy to use, local installer. I truly believe that a standalone installer for Jekyll is needed to open it out to people unable to find their way through installing and managing gems just to get up and running. There is Omnibus Jekyll, a standalone installer for Jekyll and dependencies, but work on that is slow and not currently the main focus of the Jekyll developers."
     name: Adam Wilcox
     twitter_path: "https://twitter.com/adamwilcox"
     image_path: "https://pbs.twimg.com/profile_images/569370919701733376/SZzuCEB-_400x400.jpeg"
@@ -57,7 +57,7 @@ quotes:
     work_title: Date formatting in Jekyll
     work_path: "http://alanwsmith.com/jekyll-liquid-date-formatting-examples"
   mike:
-    text: "Jekyll needs evangelists.  I would like to see it grow a bit outside of its niche and reach more mainstream support, though given its learning curve I realize the mainstream appeal may have a ceiling.\n\nI for one am sick of clients handing me a bloated Wordpress installation to maintain when all they are using it for are few static web pages and a layout template.  The number of server resources and maintenance headaches that could be avoided is staggering."
+    text: "Jekyll needs evangelists.  I would like to see it grow a bit outside of its niche and reach more mainstream support, though given its learning curve I realize the mainstream appeal may have a ceiling. I for one am sick of clients handing me a bloated Wordpress installation to maintain when all they are using it for are few static web pages and a layout template.  The number of server resources and maintenance headaches that could be avoided is staggering."
     name: Mike Greiling
     twitter_path: "https://twitter.com/mikegreiling"
     image_path: "https://pbs.twimg.com/profile_images/3665350757/672d30f885ed73aa4e1d7d8d87289649_400x400.png"
@@ -92,7 +92,9 @@ author: sam
 ---
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll.
 
-In this, my final post of the three part series, I look at the direction these influencers hope Jekyll and it's community will continue in.-->
+In this, my final post of the three part series, I look at the direction these influencers hope Jekyll and it's community will continue to grow.
+
+<!-- excerpt stop -->
 
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll. The first post in this series covered [5 reasons to love Jekyll](http://cloudcannon.com/jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html) and the second post looked at [5 traps for Jekyll beginners](http://cloudcannon.com/jekyll/2015/03/13/5-common-jekyll-traps.html).
 
