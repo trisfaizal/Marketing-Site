@@ -137,10 +137,10 @@ So number one way you can help Jekyll - tell others about it.
 
 **2 &amp; 3. Tutorials &amp; Advanced Documentation**
 
-I had to think about whether #2 Tutorials and #3 Advanced Documentation were the same thing. I decided they weren&#39;t. Here&#39;s how I distinguish:
+I had to think about whether #2 Tutorials and #3 Advanced Documentation were the same thing. I decided they weren&#39;t. I&#39;ll address them together though. Here&#39;s how I distinguish:
 
 *   Tutorials - Guides for replicating existing functionality
-*   Advanced Documentation - Guides for informing the extension of functionality. I&#39;ll address them together though.
+*   Advanced Documentation - Guides for informing the extension of functionality.
 
 We looked at initial installation frustrations last week. Some influencers have looked for advice on implementing advanced features like integrated site search. There is a demand at all levels for tutorials.
 
