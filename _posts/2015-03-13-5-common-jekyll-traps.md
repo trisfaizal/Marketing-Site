@@ -91,11 +91,11 @@ quotes:
     work_path: "http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/"
   anon1:
     text: "Well, there's Jekyll, and then there's Github Pages Jekyll. Jekyll itself is pretty straightforward, but Github Pages doesn't have great error messaging on build fail. It has gotten a bit better over the years, but still... Jekyll itself was pretty easy to work with once you figured out the basic config setup (which, if you've never used a config file before, takes a little learning, but not too bad)."
-    name: Anonymous
-    twitter_path: null
-    image_path: "https://www.regenes.is/wp-content/uploads/2015/01/person-placeholder-400x400.png"
-    work_title: null
-    work_path: null
+    name: Michelle Hertzfeld
+    twitter_path: "https://twitter.com/meiqimichelle"
+    image_path: "https://pbs.twimg.com/profile_images/478563672785035264/F2GFnKCb_400x400.jpeg"
+    work_title: "Using Jekyll and GitHub, Tips for Designers"
+    work_path: "http://michellehertzfeld.com/thoughts/using-jekyll-and-github-tips-for-designers/"
 ---
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll.
 
@@ -159,6 +159,7 @@ Identifying shared initial frustrations with Jekyll might make you feel better a
 {% include /quote.html quote=page.quotes.paul%}
 {% include /quote.html quote=page.quotes.brett%}
 {% include /quote.html quote=page.quotes.johan%}
+{% include /quote.html quote=page.quotes.michelle%}
 {% include /quote.html quote=page.quotes.michael%}
 {% include /quote.html quote=page.quotes.john%}
 {% include /quote.html quote=page.quotes.travis%}
@@ -167,7 +168,6 @@ Identifying shared initial frustrations with Jekyll might make you feel better a
 {% include /quote.html quote=page.quotes.alan%}
 {% include /quote.html quote=page.quotes.dave%}
 {% include /quote.html quote=page.quotes.mike%}
-{% include /quote.html quote=page.quotes.anon1%}
 
 #### Plug from CloudCannon:
 
