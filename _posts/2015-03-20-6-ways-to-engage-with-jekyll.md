@@ -77,13 +77,13 @@ quotes:
     image_path: "https://pbs.twimg.com/profile_images/499619192883396609/lAwfijv8_400x400.jpeg"
     work_title: "Matt's Jekyll Journal post"
     work_path: "http://matthewkosloski.me/journal/about-the-site/"
-  anon1:
+  michelle:
     text: "The Jekyll homepage could use a bit more love, although it has been getting better (better instructions, more comprehensive). It is still not always clear why Jekyll works certain ways, or how to do things that aren't the exact things described on jekyllrb.com. I imagine that there is a lot of more advanced functionality that I don't use because the tutorials just aren't there yet, or they're written for a more advanced developer audience (I am definitely at the less technical of the developer spectrum)."
-    name: Anonymous
-    twitter_path:
-    image_path: "https://www.regenes.is/wp-content/uploads/2015/01/person-placeholder-400x400.png"
-    work_title:
-    work_path:
+    name: Michelle Hertzfeld
+    twitter_path: "https://twitter.com/meiqimichelle"
+    image_path: "https://pbs.twimg.com/profile_images/478563672785035264/F2GFnKCb_400x400.jpeg"
+    work_title: "Using Jekyll and GitHub, Tips for Designers"
+    work_path: "http://michellehertzfeld.com/thoughts/using-jekyll-and-github-tips-for-designers/"
 layout: post
 title: 6 ways to engage with Jekyll
 header: 6 ways to engage with Jekyll
@@ -177,6 +177,7 @@ Again, we touched on this [last week](http://cloudcannon.com/jekyll/2015/03/13/5
 {% include /quote.html quote=page.quotes.paul%}
 {% include /quote.html quote=page.quotes.brett%}
 {% include /quote.html quote=page.quotes.michael%}
+{% include /quote.html quote=page.quotes.michelle%}
 {% include /quote.html quote=page.quotes.john%}
 {% include /quote.html quote=page.quotes.travis%}
 {% include /quote.html quote=page.quotes.adam%}
@@ -184,7 +185,6 @@ Again, we touched on this [last week](http://cloudcannon.com/jekyll/2015/03/13/5
 {% include /quote.html quote=page.quotes.alan%}
 {% include /quote.html quote=page.quotes.marco%}
 {% include /quote.html quote=page.quotes.matt%}
-{% include /quote.html quote=page.quotes.anon1%}
 
 #### Bottom line.
 
