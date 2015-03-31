@@ -132,76 +132,6 @@ $(document).ready(function () {
 		return false;
 	});
 
-	$(".docs-nav").each(function () {
-		var $affixNav = $(this),
-			$container = $affixNav.parent(),
-			affixNavfixed = false,
-			originalClassName = this.className,
-			current = null,
-			$links = $affixNav.find("a");
-
-		function getClosestHeader(top) {
-			var last = $links.first();
-
-			if (top < AFFIX_TOP_LIMIT) {
-				return last;
-			}
-
-			for (var i = 0; i < $links.length; i++) {
-				var $link = $links.eq(i),
-					href = $link.attr("href");
-
-				if (href.charAt(0) === "#" && href.length > 1) {
-					var $anchor = $(href).first();
-
-					if ($anchor.length > 0) {
-						var offset = $anchor.offset();
-
-						if (top < offset.top - AFFIX_OFFSET) {
-							return last;
-						}
-
-						last = $link;
-					}
-				}
-			}
-			return last;
-		}
-
-
-		$(window).on("scroll", function(evt) {
-		    var top = window.scrollY,
-		    	height = $affixNav.outerHeight(),
-		    	max_bottom = $container.offset().top + $container.outerHeight(),
-		    	bottom = top + height + AFFIX_OFFSET;
-
-		    if (affixNavfixed) {
-		    	if (top <= AFFIX_TOP_LIMIT) {
-			    	$affixNav.removeClass("fixed");
-		    		$affixNav.css("top", 0);
-			    	affixNavfixed = false;
-		    	} else if (bottom > max_bottom) {
-		    		$affixNav.css("top", (max_bottom - height) - top);
-		    	} else {
-		    		$affixNav.css("top", AFFIX_OFFSET);
-		    	}
-		    } else if (top > AFFIX_TOP_LIMIT) {
-		    	$affixNav.addClass("fixed");
-		    	affixNavfixed = true;
-		    }
-
-		    var $current = getClosestHeader(top);
-
-		    if (current !== $current) {
-			    $affixNav.find(".active").removeClass("active");
-			    $current.addClass("active");
-			    current = $current;
-		    }
-		}).on("resize", function () {
-			$affixNav.css("max-height", $(window).height() - 70);
-		}).trigger("resize");;
-	});
-
 	prettyPrint();
 
 	var Player = function (videoId) {
@@ -214,7 +144,7 @@ $(document).ready(function () {
 		if (Player.youtubeLoaded) {
 			this.init();
 		}
-	}
+	};
 
 	Player.players = {};
 	Player.youtubeLoaded = false;
@@ -308,104 +238,4 @@ $(document).ready(function () {
 	apiScript.src = "https://www.youtube.com/iframe_api";
 	var s = document.getElementsByTagName('script')[0];
 	s.parentNode.insertBefore(apiScript,s);
-
-
-	// Testimonial Slideshow
-	var currentQuote = $(".testimonial-slider blockquote").hide().first().show(),
-		testimonialImageClick = function ($el) {
-			var handle = $el.data("handle"),
-				quote = $el.closest(".testimonial-slider").find("blockquote[data-handle=" + handle + "]");
-
-			$el.addClass("active")
-				.siblings(".active")
-				.removeClass("active");
-
-			currentQuote.hide();
-			currentQuote = quote.show();
-
-			repositionPointer();
-			resetTestimonialTimer();
-		},
-		testimonialTimer = null,
-		resetTestimonialTimer = function () {
-			if (testimonialTimer) {
-				clearTimeout(testimonialTimer);
-			}
-			testimonialTimer = setTimeout(function () {
-				testimonialTimer = null;
-
-				var $el = $(".testimonial-images a.active").next();
-
-				if($el.length > 0) {
-					testimonialImageClick($el);
-				} else {
-					testimonialImageClick($(".testimonial-images a").first());
-				}
-
-			}, 15000);
-		},
-		repositionPointer = function () {
-			var $el = $(".testimonial-images a.active");
-			if ($el.length === 0) {
-				return;
-			}
-			var offset = $el.position(),
-				parentWidth = $el.parent().width(),
-				reversed = offset.left > parentWidth / 2;
-
-			currentQuote.siblings(".blockquote-arrow")
-				.css("left", Math.max(0, Math.min(offset.left + (reversed ? 20 : 0), parentWidth -  40)))
-				.toggleClass("reversed", reversed);
-		},
-		resizeQuotes = function () {
-			var maxHeight = 0;
-			$(".testimonial-slider blockquote").each(function () {
-				maxHeight = Math.max($(this).outerHeight(), maxHeight)
-			}).each(function () {
-				$(this).css("margin-top", maxHeight - $(this).outerHeight() + 10);
-			});
-
-			repositionPointer();
-		};
-
-	$(".testimonial-images a").click(function () {
-		testimonialImageClick($(this));
-		return false;
-	});
-	if (currentQuote.length > 0) {
-		repositionPointer();
-	}
-	resetTestimonialTimer();
-	$(window).on("resize", debounce(resizeQuotes, 200));
-	resizeQuotes();
-});
-
-var mousemoveTimeout;
-$(document).on("mousemove touchmove", function (e) {
-	if (mousemoveTimeout) {
-	    clearTimeout(mousemoveTimeout);
-	    mousemoveTimeout = null;
-	}
-
-	if ($(e.target).closest(".editable-focused").length > 0) {
-		$("body").removeClass('editable-highlighted');
-	} else {
-	    $("body").addClass('editable-highlighted');
-
-	    mousemoveTimeout = setTimeout(function () {
-	    	$("body").removeClass('editable-highlighted');
-	        mousemoveTimeout = null;
-	    }, 1000);
-	}
-}).on("click", function (e) {
-	var fakeEditable = $(e.target).closest(".editable-fake");
-	if (fakeEditable.is(".editable-focused")) {
-		return false;
-	}
-
-	$(".editable-focused").removeClass('editable-focused');
-	if (fakeEditable.length > 0) {
-		fakeEditable.addClass('editable-focused');
-	}
-
 });
