@@ -2,79 +2,69 @@
 layout: default
 title : About
 header : About
+team:
+  - name: Mike Neumegen
+    image_path: /img/team/mike.jpg
+    position: CEO/Co-founder
+    twitter_handle: mikeneumegen
+    linked_in: http://www.linkedin.com/in/mikeneumegen
+  - name: George Phillips
+    image_path: /img/team/george.jpg
+    position: CTO/Co-founder
+    twitter_handle: gphillips_nz
+    linked_in: http://www.linkedin.com/in/georgepaulphillips
+  - name: Sam Bonney
+    image_path: /img/team/sam.jpg
+    position: Head of Marketing
+    twitter_handle: SamBonney
+    linked_in: http://nz.linkedin.com/pub/samuel-bonney/43/a60/743
+  - name: Tim Neumegen
+    image_path: /img/team/tim.jpg
+    position: Cloud Engineer
+    twitter_handle: n00begon
+    linked_in: https://www.linkedin.com/pub/tim-neumegen/80/543/192
+  - name: Ross Phillips
+    image_path: /img/team/ross.jpg
+    position: Application Engineer
+    twitter_handle: rphillips_nz
+    linked_in: https://www.linkedin.com/profile/view?id=128712161
 ---
 <section>
 	<div class="container text-container">
-			<p> George and I were building websites as freelancers while studying Computer Science in New Zealand. We loved creating fantastic experiences and pleasing our clients with unique designs, but a good portion of our time was spent setting up a CMS for each website. When we realised that it was the CMS dictating our workflow, we built a tool that puts creativity first. </p>
+		<p> We believe building websites should be simple for developers. You shouldn't have read pages of documentation just to build a simple website. You shouldn't have to worry if installing a plugin is going to make your site vulnerable or unscalable. And you certainly shouldn't be hesitant to make an update because it might break something on the live website.</p>
 
-			<p>Now our vision is much bigger. </p>
+		<p> We love static websites because they're: </p>
+		<ul>
+			<li>Fast to build</li>
+			<li>Simple</li>
+			<li>Scalable</li>
+			<li>Secure</li>
+			<li>Can be stored in a source control system which gives access to the entire history of changes</li>
+			<li>Powerful - with <a target="_blank" href="http://jekyllrb.com">static site generators</a> and <a target="_blank"  href="http://cloudcannon.com/tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html">3rd party plugins</a>, there's not a lot you can't do  </li>
+		</ul>
 
-			<!-- <p>In the past few years we’ve seen a trend back towards static websites. Static websites are simple and fast build and allow the web designer to concentrate on design, branding and content which is where they’re really adding value. With a growing number of people who know HTML and CSS thanks to open education platforms like Codecademy and an ecosystem of powerful javascript plugins like MailChimp, Wufoo, Parse and Disqus, we think static websites are the future.</p> -->
-
-			<p> We want to reduce the barrier to becoming a professional web designer by setting a new standard for usable, unobtrusive software in the web design industry. 
-
-</p>
-
-			<p>
-				Mike Neumegen - CEO / Cofounder 
-			</p>
+			<p> Our mission is to bring static websites to the mainstream. CloudCannon unites developers and non-technical content editors by providing the best of both worlds.  Developers build static websites to gain all the advantages listed above. Non-technical content writers can make updates quickly and easily without any coding. </p>
 
 			<div>
-	        	<a href="/contact" class="btn">Contact Us</a>
-	        </div>
-	</div> 
+	       <a href="/contact" class="btn">Contact Us</a>
+	     </div>
+	</div>
 </section>
 
 <section class="alternate">
 	<div class="container">
+		{% for team_member in page.team %}
 		<div class="profile">
-			<img src="/img/team/mike.jpg" width="200" height="200" alt="Mike Neumegen">
-			<h3>Mike Neumegen</h3>
-			<p>CEO/Co-founder</p>
-			<a href="https://twitter.com/mikeneumegen" class="social-icon twitter">
-				@mikeneumegen
+			<img src="{{team_member.image_path}}" width="200" height="200" alt="{{team_member.name}}">
+			<h3>{{team_member.name}}</h3>
+			<p>{{team_member.position}}</p>
+			<a target="_blank" href="https://twitter.com/{{team_member.twitter_handle}}" class="social-icon twitter">
+				@{{team_member.twitter_handle}}
 			</a>
-			<a href="http://www.linkedin.com/in/mikeneumegen" class="social-icon linkedin">
+			<a target="_blank" href="{{team_member.linked_in}}" class="social-icon linkedin">
 				LinkedIn
 			</a>
 		</div>
-
-		<div class="profile">
-			<img src="/img/team/george.jpg" width="200" height="200" alt="George Phillips">
-			<h3>George Phillips</h3>
-			<p>CTO/Co-founder</p>
-			<a href="https://twitter.com/gphillips_nz" class="social-icon twitter">
-				@gphillips_nz
-			</a>
-			<a href="http://www.linkedin.com/in/georgepaulphillips" class="social-icon linkedin">
-				LinkedIn
-			</a>
-		</div>
+		{% endfor %}
 	</div>
-	<div class="container clear_float" style="padding-top: 20px">
-		<div class="profile">
-			<img src="/img/team/sam.jpg" width="200" height="200" alt="Sam Bonney">
-			<h3>Sam Bonney</h3>
-			<p>Head of Marketing</p>
-			<a href="https://twitter.com/SamBonney" class="social-icon twitter">
-				
-			</a>
-			<a href="http://nz.linkedin.com/pub/samuel-bonney/43/a60/743" class="social-icon linkedin">
-				LinkedIn
-			</a>
-		</div>
-
-		<div class="profile">
-			<img src="/img/team/tim.jpg" width="200" height="200" alt="Tim Neumegen">
-			<h3>Tim Neumegen</h3>
-			<p>Cloud Engineer</p>
-			<a href="https://twitter.com/n00begon" class="social-icon twitter">
-				
-			</a>
-			<a href="https://www.linkedin.com/pub/tim-neumegen/80/543/192" class="social-icon linkedin">
-				LinkedIn
-			</a>
-		</div>
-
-	</div> 
 </section>

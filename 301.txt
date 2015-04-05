@@ -5,3 +5,7 @@
 /docs/ http://docs.cloudcannon.com/
 /docs http://docs.cloudcannon.com/
 /docs/index.html http://docs.cloudcannon.com/
+/faq /
+/pricing /
+/github_pages /
+/jekyll /

@@ -90,8 +90,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/prettify.css"  />
-		<link rel="stylesheet" href="/css/smileys.css"  />
-		<link rel="stylesheet" href="/css/grapher.min.css"  />
 	</head>
 	<body>
 		<nav>
@@ -107,11 +105,6 @@
 				</h1>
 				<div id="menu">
 					<ul class="site">
-						<li><a href="/pricing"
-							{% if page.url == '/pricing/index.html' %}
-								class="active"
-							{% endif %}
-							>Pricing</a></li>
 						<li><a href="/blog"
  							{% if page.url == '/blog/index.html' %}
  								class="active"
@@ -152,10 +145,8 @@
 
 			<ul class="footer_links">
 				<li><a href="/">Home</a></li>
-				<li><a href="/pricing">Pricing</a></li>
-				<li><a href="/docs">Docs</a></li>
+				<li><a href="http://docs.cloudcannon.com">Docs</a></li>
 				<li><a href="/blog">Blog</a></li>
-				<li><a href="/faq">FAQ</a></li>
 				<li><a href="/about">About</a></li>
 				<li><a href="/freebies">Freebies</a></li>
 				<li><a href="/press">Press</a></li>
@@ -171,9 +162,7 @@
 		</section>
 
 		<script type="text/javascript" src="/js/prettify/prettify.js"></script>
-		<script src="/js/smileys.js"></script>
 		<script src="/js/layout.js"></script>
-		<script src="/js/grapher.js"></script>
 		<script type="text/javascript">
 			if (window.location.hostname == 'cloudcannon.com') {
 			   var _mfq = _mfq || [];

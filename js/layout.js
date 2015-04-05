@@ -93,8 +93,6 @@ $('.theme-fork').click(function() {
 }());
 
 $(document).ready(function () {
-	$(".cheese").smilify();
-
 	$(".slideshow").each(function () {
 		var $el = $(this),
 			current = $el.find(".slide").first();
@@ -122,13 +120,6 @@ $(document).ready(function () {
 
 	$("#menu-toggle").on("click", function () {
 		$menu.toggleClass("open");
-		return false;
-	});
-
-	$('#learn-more, #learn-more a').on("click", function () {
-		$("html, body").animate({
-		    scrollTop: $("#tell-me-more").offset().top
-		 }, 400);
 		return false;
 	});
 

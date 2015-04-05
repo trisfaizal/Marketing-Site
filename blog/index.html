@@ -10,7 +10,7 @@ header : Blog
 			{% for post in paginator.posts %}
 				<li class="blog-post">
 					<div class="post-author-small">
-						<img src="/img/{{ post.author }}.jpg" alt="A stunning photo of Mike" width="200" height="200">
+						<img src="/img/authors/{{ post.author }}.jpg" alt="A stunning photo of {{post.author}}" width="200" height="200">
 						<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 						<p class="post-details">{{ post.category }} <span class="date">{{ post.date | date: "%B %d, %Y" }}</span></p>
 					</div>
@@ -22,7 +22,7 @@ header : Blog
 							{{ post.excerpt }}
 						{% endif %}
 					</p>
-					
+
 					<a href="{{ post.url }}" class="btn small-btn">Read more  &rarr;</a>
 				</li>
 			{% endfor %}
@@ -58,5 +58,5 @@ header : Blog
 				<br class="clear" />
 			</form>
 		</div>
-	</div> 
+	</div>
 </section>
