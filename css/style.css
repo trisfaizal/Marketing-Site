@@ -512,6 +512,9 @@ nav, header, section, .clearfix { *zoom: 1; }
 .profile img {
     border-radius: 999px;
 }
+.profile h3 a {
+  color: #333;
+}
 
 
 /* Form Styles */

@@ -7,27 +7,22 @@ team:
     image_path: /img/team/mike.jpg
     position: CEO/Co-founder
     twitter_handle: mikeneumegen
-    linked_in: http://www.linkedin.com/in/mikeneumegen
   - name: George Phillips
     image_path: /img/team/george.jpg
     position: CTO/Co-founder
     twitter_handle: gphillips_nz
-    linked_in: http://www.linkedin.com/in/georgepaulphillips
   - name: Sam Bonney
     image_path: /img/team/sam.jpg
     position: Head of Marketing
     twitter_handle: SamBonney
-    linked_in: http://nz.linkedin.com/pub/samuel-bonney/43/a60/743
   - name: Tim Neumegen
     image_path: /img/team/tim.jpg
     position: Cloud Engineer
     twitter_handle: n00begon
-    linked_in: https://www.linkedin.com/pub/tim-neumegen/80/543/192
   - name: Ross Phillips
     image_path: /img/team/ross.jpg
     position: Application Engineer
     twitter_handle: rphillips_nz
-    linked_in: https://www.linkedin.com/profile/view?id=128712161
 ---
 <section>
 	<div class="container text-container">
@@ -56,14 +51,8 @@ team:
 		{% for team_member in page.team %}
 		<div class="profile">
 			<img src="{{team_member.image_path}}" width="200" height="200" alt="{{team_member.name}}">
-			<h3>{{team_member.name}}</h3>
+			<h3><a target="_blank" href="https://twitter.com/{{team_member.twitter_handle}}">{{team_member.name}}</a></h3>
 			<p>{{team_member.position}}</p>
-			<a target="_blank" href="https://twitter.com/{{team_member.twitter_handle}}" class="social-icon twitter">
-				@{{team_member.twitter_handle}}
-			</a>
-			<a target="_blank" href="{{team_member.linked_in}}" class="social-icon linkedin">
-				LinkedIn
-			</a>
 		</div>
 		{% endfor %}
 	</div>
