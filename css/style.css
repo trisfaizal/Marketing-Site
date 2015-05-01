@@ -1310,6 +1310,7 @@ line-height: 80px;
         text-align: right;
     }
 
+
     section.alternate .image {
         left: 510px;
         right: auto;
@@ -1610,6 +1611,13 @@ section.footer .t-and-c {
 .slideshow {
     position: relative;
     overflow: hidden;
+    width: 550px;
+    height: 344px;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
 }
 
 

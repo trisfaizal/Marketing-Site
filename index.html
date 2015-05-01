@@ -2,17 +2,27 @@
 layout: default
 title: Build websites in HTML or Jekyll. Have your non-technical team update inline
 customers:
-  - image_path: /img/home_page/customers/netflix.png
-    company: Netflix
-  - image_path: /img/home_page/customers/flowtale.png
-    company: Flowtale
+  - image_path: /img/home_page/customers/psg.png
+    company: PSG
+  - image_path: /img/home_page/customers/c.png
+    company: C
+  - image_path: /img/home_page/customers/punchlane.png
+    company: Punchlane
+  - image_path: /img/home_page/customers/glace.png
+    company: Glace
+  - image_path: /img/home_page/customers/azores.png
+    company: Azores
+  - image_path: /img/home_page/customers/festningen.png
+    company: Festningen
+  - image_path: /img/home_page/customers/union.png
+    company: Union
 ---
 
 <header style="overflow: visible;">
 	<div class="container">
 		<h2 style="padding: 0 0 20px 0; font-size: 36px">
       <span style="font-size: 1.5em">Build websites in <strong>HTML</strong> or <strong>Jekyll</strong></span> <br>
-      have your team non-technical team update inline
+      have your non-technical team update inline
     </h2>
 			<div style="max-width: 700px; margin: 0 auto; padding: 0 0 15px 0">
   			<div style="position: relative; width: 100%; height: 0; padding: 3px 0 62%;">
@@ -74,20 +84,24 @@ customers:
 			<h3 class="editable">2. Live!</h3>
 			<p class="editable">See your site live on the web. Your website is hosted by CloudCannon or any other hosting service such as GitHub Pages.</p>
 		</div>
-		<div class="image" style="padding: 30px 0 0 0;">
-			<div class="fake-browser-ui">
+		<div class="image">
+      <div class="fake-browser-ui">
 				<div class="frame">
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
 				<div class="slideshow">
-          <img src="{{page.customers[0].image_path}}" class="first" width="691" height="500" alt="{{page.customers[0].name}}" />
           {% for customer in page.customers %}
-            <img src="{{customer.image_path}}" class="slide" width="691" height="500" alt="{{customer.name}}" />
+            <img src="{{customer.image_path}}" class="slide
+            {% if forloop.first %}
+              visible
+            {% endif %}
+
+            " width="550px" height="344px" alt="{{customer.company}}" />
           {% endfor %}
 				</div>
-			</div>
+      </div>
 		</div>
 	</div>
 </section>
@@ -101,25 +115,6 @@ customers:
 		</div>
 		<div class="image">
 			<iframe width="550" height="265" src="//www.youtube.com/embed/FOYDMD1jA-0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=FOYDMD1jA-0" frameborder="0" allowfullscreen=""></iframe>
-		</div>
-	</div>
-</section>
-
-<section class="lp">
-	<div class="container">
-		<div class="text">
-			<h3>4. Collaborate</h3>
-			<p>Share the website with your non-technical team. They're empowered to make updates themselves without help from developers. </p>
-		</div>
-		<div class="image">
-      <div class="fake-browser-ui">
-				<div class="frame">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<img src="/img/home_page/team_2.png" class="first" width="550" alt="Sharing a site" />
-      </div>
 		</div>
 	</div>
 </section>
