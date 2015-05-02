@@ -123,6 +123,13 @@ $(document).ready(function () {
 		return false;
 	});
 
+	$('#learn-more, #learn-more a').on("click", function () {
+		$("html, body").animate({
+		    scrollTop: $("#tell-me-more").offset().top
+		 }, 400);
+		return false;
+	});
+
 	prettyPrint();
 
 	var Player = function (videoId) {
