@@ -56,7 +56,7 @@
 				<meta name="description" content="{{ page.excerpt | strip_html }}">
 			{% endif %}
 		{% else %}
-			<meta name="description" content="CloudCannon takes the pain out of uploading and maintaining websites, so you can focus on creating beautiful designs">
+			<meta name="description" content="Build websites in HTML or Jekyll. Have your non-technical team update inline">
 		{% endif %}
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
@@ -90,8 +90,6 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/prettify.css"  />
-		<link rel="stylesheet" href="/css/smileys.css"  />
-		<link rel="stylesheet" href="/css/grapher.min.css"  />
 	</head>
 	<body>
 		<nav>
@@ -108,10 +106,10 @@
 				<div id="menu">
 					<ul class="site">
 						<li><a href="/pricing"
-							{% if page.url == '/pricing/index.html' %}
-								class="active"
-							{% endif %}
-							>Pricing</a></li>
+ 							{% if page.url == '/pricing/index.html' %}
+ 								class="active"
+ 							{% endif %}
+ 							>Pricing</a></li>
 						<li><a href="/blog"
  							{% if page.url == '/blog/index.html' %}
  								class="active"
@@ -152,10 +150,8 @@
 
 			<ul class="footer_links">
 				<li><a href="/">Home</a></li>
-				<li><a href="/pricing">Pricing</a></li>
-				<li><a href="/docs">Docs</a></li>
+				<li><a href="http://docs.cloudcannon.com">Docs</a></li>
 				<li><a href="/blog">Blog</a></li>
-				<li><a href="/faq">FAQ</a></li>
 				<li><a href="/about">About</a></li>
 				<li><a href="/freebies">Freebies</a></li>
 				<li><a href="/press">Press</a></li>
@@ -171,19 +167,7 @@
 		</section>
 
 		<script type="text/javascript" src="/js/prettify/prettify.js"></script>
-		<script src="/js/smileys.js"></script>
 		<script src="/js/layout.js"></script>
-		<script src="/js/grapher.js"></script>
-		<script type="text/javascript">
-			if (window.location.hostname == 'cloudcannon.com') {
-			   var _mfq = _mfq || [];
-			   (function() {
-			       var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
-			       mf.src = "//cdn.mouseflow.com/projects/cd2d27dc-58e2-46f6-89e5-0eb971d2384e.js";
-			       document.getElementsByTagName("head")[0].appendChild(mf);
-			   })();
-   		}
-		</script>
 		<script type="text/javascript">
 			mixpanel.people.set_once('First Visit', new Date());
 			mixpanel.track('page viewed', {

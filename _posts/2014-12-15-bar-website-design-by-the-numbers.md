@@ -106,7 +106,7 @@ My advice is that a handful of professionally taken photos will go a LONG way to
 
 Paragraphs of creative copy was really fascinating to look at.
 
-I distinguished between two different types of text on the websites, 'informative' and 'creative'. 
+I distinguished between two different types of text on the websites, 'informative' and 'creative'.
 'Informative' was boring, easy to write stuff like reservation policies, driving directions, “Like us on social media” sort of things. These are best described in plain, uninteresting language.  
 
 I considered 'creative copy' text on the site that would require exactly that, creativity. Emotive language describing the menu or the atmosphere were easy examples to identify.
@@ -225,3 +225,6 @@ Three quarters of the websites I viewed had no responsiveness whatsoever and thi
 The average Bar website from my sample has 7 pages, 9 photos, 4 paragraphs of creative copy and no videos. There is also a 1 in 3 chance that it’s out of date or has some broken code and it almost certainly isn’t responsive. Take design inspiration from the first set of stats and use the second set as a reminder not to be complacent.
 
 There is a great opportunity out there to help Bar owners create sites that are simpler, cleaner and easier to maintain. Updating sites to make sure they are viewable on a range of consumer devices is also important. Remember, company info in customers hands is what it’s all about in the end.
+
+<link rel="stylesheet" href="/css/grapher.min.css"  />
+<script src="/js/grapher.js"></script>
