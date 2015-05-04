@@ -1,69 +1,38 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
-    	<meta charset="utf-8" />
+		<meta charset="utf-8">
 
-		<script src="//cdn.optimizely.com/js/292196089.js"></script>
-		<script type="text/javascript">
-            if (window.location.hostname == 'cloudcannon.com') {
-                var key = 'UA-37472773-1';
-                var param = 'auto'
-            } else {
-                var key = 'UA-37472773-11'
-                var param = {'cookieDomain': 'none'};
-            }
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<title>
+			{% if page.title %}
+				{{ page.title }}
+			{% else page.header %}
+				{{ page.header }}
+			{% endif %}
 
+			{% if paginator.page != null and paginator.page != 1 %}
+				page {{ paginator.page }}
+			{% endif %}
 
-              ga('create', key , param);
-              ga('require', 'linkid', 'linkid.js');
-              ga('require', 'displayfeatures');
-              ga('send', 'pageview');
-        </script>
-
-		<script type="text/javascript">
-		if (window.location.hostname == 'cloudcannon.com') {
-			var mixpanel_key = "ddc346a4ade4fff2e0fc23f9504d571f";
-		} else {
-			var mixpanel_key = "a2d6b29236e84ca7c6a1505e21677c81";
-		}
-			(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-			for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-			mixpanel.init(mixpanel_key);
-		</script>
-
-		<script type="text/javascript">
-			if (window.location.hostname == 'cloudcannon.com') {
-		      (function() {
-		        window._pa = window._pa || {};
-		        var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
-		        pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/53e952a70249f7f551000011.js";
-		        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
-		      })();
-		    }
-	    </script>
-
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
+			| CloudCannon
+		</title>
 
 		{% if page.excerpt %}
 			{% if page.content contains '<!-- excerpt stop -->' %}
-			    <meta name="description" content="{{ page.content | split:'<!-- excerpt stop -->' | first | strip_html }}">
+				<meta name="description" content="{{ page.content | split:'<!-- excerpt stop -->' | first | strip_html }}">
 			{% else %}
 				<meta name="description" content="{{ page.excerpt | strip_html }}">
 			{% endif %}
 		{% else %}
 			<meta name="description" content="Build websites in HTML or Jekyll. Have your non-technical team update inline">
 		{% endif %}
+
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="google-site-verification" content="GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o" />
-
-		<meta property="og:site_name" content="CloudCannon" />
+		<meta name="google-site-verification" content="GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o">
+		<meta property="og:site_name" content="CloudCannon">
 
 		{% if page.post_image %}
 			<meta property="og:image" content="http://cloudcannon.com{{page.post_image}}">
@@ -72,56 +41,96 @@
 			<meta property="og:image" content="http://cloudcannon.com/img/cloud_cannon_logo.png">
 			<meta name="twitter:image" content="http://cloudcannon.com/img/cloud_cannon_logo.png">
 		{% endif %}
-		<title>
-				{% if page.title %}
-					{{ page.title }}
-				{% else page.header %}
-					{{ page.header }}
-				{% endif %}
 
-				{% if paginator.page != null and paginator.page != 1 %}
-					page {{ paginator.page }}
-				{% endif %}
-
-				| CloudCannon
-		</title>
 		<link rel="alternate" type="application/rss+xml" title="{{site.blog_name}}" href="{{site.site_url}}/feed/">
 		<link rel="alternate" type="application/atom+xml" title="{{site.blog_name}}" href="{{site.site_url}}/atom_feed/">
-		<link href='http://fonts.googleapis.com/css?family=Raleway:700,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/css/style.css" />
-		<link rel="stylesheet" href="/css/prettify.css"  />
+
+		<link href="//fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/prettify.css">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<script src="//cdn.optimizely.com/js/292196089.js"></script>
+		<script type="text/javascript">
+			if (window.location.hostname === "cloudcannon.com") {
+				var key = "UA-37472773-1";
+				var param = "auto"
+			} else {
+				var key = "UA-37472773-11"
+				var param = {cookieDomain: "none"};
+			}
+			(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+
+			ga("create", key , param);
+			ga("require", "linkid", "linkid.js");
+			ga("require", "displayfeatures");
+			ga("send", "pageview");
+		</script>
+
+		<script type="text/javascript">
+			if (window.location.hostname === "cloudcannon.com") {
+				var mixpanel_key = "ddc346a4ade4fff2e0fc23f9504d571f";
+			} else {
+				var mixpanel_key = "a2d6b29236e84ca7c6a1505e21677c81";
+			}
+			(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+			for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+			mixpanel.init(mixpanel_key);
+		</script>
+
+		<script type="text/javascript">
+			if (window.location.hostname === "cloudcannon.com") {
+				(function() {
+					window._pa = window._pa || {};
+					var pa = document.createElement("script"); pa.type = "text/javascript"; pa.async = true;
+					pa.src = ("https:" === document.location.protocol ? "https:" : "http:") + "//tag.perfectaudience.com/serve/53e952a70249f7f551000011.js";
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+				})();
+			}
+		</script>
 	</head>
 	<body>
 		<nav>
 			<div class="container">
 				<h1>
-					<a href="/"
-							{% if page.url == '/index.html' %}
-								class="active"
-							{% endif %}
-							>
-						<img src="/img/logo.png" width="68" height="46" alt="CloudCannon" />
+					{% if page.url == '/index.html' %}
+						<a href="/" class="active">
+					{% else %}
+						<a href="/">
+					{% endif %}
+						<img src="/img/logo.png" width="68" height="46" alt="CloudCannon">
 					</a>
 				</h1>
 				<div id="menu">
 					<ul class="site">
-						<li><a href="/pricing"
+						<li>
  							{% if page.url == '/pricing/index.html' %}
- 								class="active"
+								<a href="/pricing" class="active">Pricing</a>
+							{% else %}
+								<a href="/pricing">Pricing</a>
  							{% endif %}
- 							>Pricing</a></li>
-						<li><a href="/blog"
- 							{% if page.url == '/blog/index.html' %}
- 								class="active"
- 							{% endif %}
- 							>Blog</a></li>
-						<li><a target="_blank" href="http://docs.cloudcannon.com">Docs</a></li>
-						<li><a href="/about"
-							{% if page.url == '/about/index.html' %}
-								class="active"
+						</li>
+						<li>
+							{% if page.url == '/blog/index.html' %}
+								<a href="/blog" class="active">Blog</a>
+							{% else %}
+								<a href="/blog">Blog</a>
 							{% endif %}
-							>About</a></li>
-
+						</li>
+						<li>
+							<a target="_blank" href="http://docs.cloudcannon.com">Docs</a>
+						</li>
+						<li>
+							{% if page.url == '/about/index.html' %}
+								<a href="/about" class="active">About</a>
+							{% else %}
+								<a href="/about">About</a>
+							{% endif %}
+						</li>
 					</ul>
 
 					<ul class="user">
@@ -130,7 +139,7 @@
 					</ul>
 				</div>
 
-				<a id="menu-toggle" href="#">&#9776;</a>
+				<a id="menu-toggle" href="#"><img src="/img/menu.svg" width="30" height="30" alt="Menu"></a>
 			</div>
 		</nav>
 
@@ -143,10 +152,10 @@
 		{% endif %}
 
 		{{ content }}
-		<section class="vibrant footer centered">
 
+		<section class="vibrant footer centered">
 			<a href="https://twitter.com/cloudcannonapp" class="social-icon twitter">Twitter</a>
-			<a href="http://www.facebook.com/CloudCannon" class="social-icon facebook">Facebook</a>
+			<a href="https://www.facebook.com/CloudCannon" class="social-icon facebook">Facebook</a>
 
 			<ul class="footer_links">
 				<li><a href="/">Home</a></li>
@@ -157,22 +166,23 @@
 				<li><a href="/press">Press</a></li>
 				<li><a href="/contact">Contact</a></li>
 			</ul>
+
 			<p class="t-and-c">
 				&copy; {{ site.time | date: '%Y' }} CloudCannon Limited. |
 				<a href="https://app.cloudcannon.com/terms">Terms</a> &amp;
 				<a href="https://app.cloudcannon.com/privacy_policy">Privacy</a>
 			</p>
 
-			<a style="position:absolute; bottom: 0; right: 0" href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
+			<a style="position: absolute; bottom: 0; right: 0;" href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics"></a>
 		</section>
 
 		<script type="text/javascript" src="/js/prettify/prettify.js"></script>
 		<script src="/js/layout.js"></script>
 		<script type="text/javascript">
-			mixpanel.people.set_once('First Visit', new Date());
-			mixpanel.track('page viewed', {
-			    'page name' : document.title,
-			    'url' : [location.protocol, '//', location.host, location.pathname].join('')
+			mixpanel.people.set_once("First Visit", new Date());
+			mixpanel.track("page viewed", {
+				"page name" : document.title,
+				"url" : [location.protocol, "//", location.host, location.pathname].join("")
 			});
 		</script>
 	</body>
