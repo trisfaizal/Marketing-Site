@@ -366,6 +366,10 @@ nav #menu-toggle {
     padding: 0 16px;
 }
 
+nav #menu-toggle img {
+    margin-top: 15px;
+}
+
 nav ul.user {
     border-top: 1px solid #0A4D69;
 }
@@ -1867,6 +1871,7 @@ td:first-child {
   background: #2B2E31;
   height: 140px;
   text-align: center;
+  overflow: hidden;
 }
 
 .coverage-banner img {
