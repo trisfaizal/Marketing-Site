@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Mc an Awesome Online Conference
-header: Powerful Templates
-category: Features
-author: mike
+title: How to MC an Awesome Online Conference
+header: Awesome Conf MC
+category: JekyllConf
+author: sam
 ---
