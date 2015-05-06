@@ -6,7 +6,7 @@ category: Tips
 author: mike
 ---
 
-Something occurred to me the other day. <span class="url">&lt;title&gt;</span> and <span class="url">&lt;meta&gt;</span> tags are in the DOM so you must be able to style them like any other element. So I set up a really basic example and put a width, height and background on a meta tag and sure enough, a blue box appeared in my browser. 
+Something occurred to me the other day. <span class="url">&lt;title&gt;</span> and <span class="url">&lt;meta&gt;</span> tags are in the DOM so you must be able to style them like any other element. So I set up a really basic example and put a width, height and background on a meta tag and sure enough, a blue box appeared in my browser.
 
 From there I thought what can I create using only a basic HTML5 boilerplate, kind of like an extreme version of [CSS Zen Garden](http://www.csszengarden.com/). So I started with this:
 
@@ -24,11 +24,11 @@ From there I thought what can I create using only a basic HTML5 boilerplate, kin
 
 Then put my CSS skills to work.
 
-It was absolute madness, everything I thought I knew about web design suddenly shattered. I gave a font-size to <span class="url">&lt;title&gt;</span>, content to <span class="url">&lt;meta&gt;</span> and a background image to <span class="url">&lt;link&gt;</span>. 
+It was absolute madness, everything I thought I knew about web design suddenly shattered. I gave a font-size to <span class="url">&lt;title&gt;</span>, content to <span class="url">&lt;meta&gt;</span> and a background image to <span class="url">&lt;link&gt;</span>.
 
-Here's my [end result](/css-zen-garden/index.html):
+Here's my [end result](http://cyan-accordion.cloudvent.net/index.html):
 
-[<img src="/img/blog/css-garden/css-garden.png" alt="extreme css zen garden">](/css-zen-garden/index.html)
+[<img src="/img/blog/css-garden/css-garden.png" alt="extreme css zen garden">](http://cyan-accordion.cloudvent.net/index.html)
 
 And the CSS to go with that.
 
@@ -88,9 +88,9 @@ body::before {
 
 I did a 90s version too:
 
-[<img src="/img/blog/css-garden/css-garden-2.png" alt="extreme css zen garden">](/css-zen-garden/index2.html)
+[<img src="/img/blog/css-garden/css-garden-2.png" alt="extreme css zen garden">](http://cyan-accordion.cloudvent.net/index2.html)
 
-See the [actual website](/css-zen-garden/index2.html) for the full epileptic goodness.
+See the [actual website](http://cyan-accordion.cloudvent.net/index2.html) for the full epileptic goodness.
 
 CSS:
 
@@ -222,7 +222,7 @@ body::before{
 
 
 
-#### So is this going to change the way we do web design? 
+#### So is this going to change the way we do web design?
 Well...**no** but I think it's still a good exercise because it's so constraining. You have to use every CSS trick in the book.
 
 Give it a go yourself, start with the HTML above and see what you can create. Post back here if you make something cool, I’d love to see what’s possible.
