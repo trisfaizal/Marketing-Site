@@ -47,7 +47,7 @@ Here&#39;s the intro skeleton I decided I would use for JekyllConf:
 *   **Where is this&nbsp;speaker talking from?**
 *   **Where does this&nbsp;speaker work&nbsp;currently?**
 *   **Where has the&nbsp;speaker&nbsp;worked previously**
-*   **&nbsp;Why is the&nbsp;speaker relevant to the conference and/or why I am (as part of the conference team and MC and attendee)&nbsp;excited to hear from them?**
+*   **Why is the&nbsp;speaker relevant to the conference and/or why I am (as part of the conference team and MC and attendee)&nbsp;excited to hear from them?**
 
 The first three points build context. People like context.
 
@@ -164,7 +164,7 @@ The little things, doth the conference make.
 
 If you have the opportunity to MC an online conference, awesome, congratulations to you. Someone thinks you have an important set of skills to add to the atmosphere of the event.
 
-Enjoy it.  
+Enjoy it.
 
 Remember though that you are a key part of the conference day&nbsp;and it&#39;s not a role to be undertaken without a little forethought.
 
