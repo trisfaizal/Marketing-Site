@@ -22,7 +22,7 @@ The key features are:
 
 This video offers a quick overview of Jekyll on CloudCannon.
 
-[Video Embed]
+http://www.youtube.com/watch?v=jlAtW1AyZA4
 
 <em>Obviously comments about contacting us to join the beta no longer apply :)</em>
 
