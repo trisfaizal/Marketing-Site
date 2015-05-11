@@ -16,8 +16,8 @@ CloudCannon&#39;s support for the Jekyll static site generator has moved from pr
 
 The key features are:
 
-*   Cloud-based Jekyll site compiling (a benefit for designers and developers)
-*   Easy to use client interfaces for creating and editing the content (blog posts, photos, menus, etc) in their Jekyll powered website. Editors won&#39;t have to understand Markdown or front matter to make Jekyll site content contributions.
+*   <strong> Cloud-based Jekyll site compiling </strong> (a benefit for designers and developers)
+*   <strong> Easy to use client interfaces for creating editing content </strong>(blog posts, photos, menus, etc) in their Jekyll powered website. Editors won&#39;t have to understand Markdown or front matter to make Jekyll site content contributions.
 
 ### Video overviews
 
@@ -41,7 +41,7 @@ The [CloudCannon site](http://cloudcannon.com) and our [documentation website](h
 
 <!-- remove this section after Office Hours on Thurs 14 May -->
 
-To assist you in getting started with Jekyll we are scheduling a drop-in &#39;office hours&#39; session this week via Google Hangout. This will take place on Thursday 14th May at:
+To assist you in getting started with Jekyll we are scheduling a drop-in &#39;office hours&#39; session this week via Google Hangout. This will take place on <strong> Thursday 14th May</strong> at:
 - 2pm San Fran time
 - 5pm New York time
 - 10pm London time
