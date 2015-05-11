@@ -18,15 +18,20 @@ The key features are:
 - Cloud-based Jekyll site compiling (a benefit for designers and developers)
 - Easy to use client interfaces for creating and editing the content (blog posts, photos, menus, etc) in their Jekyll powered website. Editors won't have to understand Markdown or front matter to make Jekyll site content contributions.
 
-### Overview
+### Video overviews
 
-This video offers a quick overview of Jekyll on CloudCannon.
+This 3 minute video offers a quick overview of Jekyll on CloudCannon.
 
-http://www.youtube.com/watch?v=jlAtW1AyZA4
+<iframe width="600" height="450"
+src="http://www.youtube.com/watch?v=jlAtW1AyZA4?autoplay=0?controls=2">
+</iframe>
+<em>Comments about contacting us to join the beta obviously no longer apply :)</em>
 
-<em>Obviously comments about contacting us to join the beta no longer apply :)</em>
+The longer video of the public beta announcement and demonstration by our CEO at the recent [JekyllConf](http://JekyllConf.com) is also available below.
 
-The longer video of the public beta announcement and demonstration by our CEO from the recent JekyllConf is also available here. <link>
+<iframe width="600" height="450"
+src="https://www.youtube.com/watch?v=NuChR_YdjrI?autoplay=0?controls=2">
+</iframe>
 
 ### Should I put my professional and client projects on your Jekyll functionality that is still in beta?
 
@@ -44,7 +49,7 @@ and 9am Wellington time (Friday 15th)
 
 Our team will be ready and available to answer any of your Jekyll questions.
 
-No need to register, simply visit http://cloudcannon.com/office-hours on the day to join.
+No need to register, simply visit [cloudcannon.com/office-hours](http://cloudcannon.com/office-hours) on the day to join.
 
 Cheers,
 Sam and the CloudCannon team
