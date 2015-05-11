@@ -42,6 +42,8 @@ The CloudCannon site and our documentation website already run on CloudCannon us
 
 ### Open office hours planned
 
+<!-- remove this section after Office Hours on Thurs 14 May -->
+
 To assist you in getting started with Jekyll we are scheduling a drop-in &#39;office hours&#39; session this week via Google Hangout. This will take place on Thursday 14th May at:
 2pm San Fran time
 5pm New York time
