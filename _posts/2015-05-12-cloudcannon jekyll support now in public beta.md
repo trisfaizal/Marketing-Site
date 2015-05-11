@@ -42,6 +42,7 @@ The [CloudCannon site](http://cloudcannon.com) and our [documentation website](h
 <!-- remove this section after Office Hours on Thurs 14 May -->
 
 To assist you in getting started with Jekyll we are scheduling a drop-in &#39;office hours&#39; session this week via Google Hangout. This will take place on <strong> Thursday 14th May</strong> at:
+
 * 2pm San Fran time
 * 5pm New York time
 * 10pm London time
