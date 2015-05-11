@@ -10,7 +10,7 @@ CloudCannon&#39;s support for the Jekyll static site generator has moved from pr
 
 ### What does this mean for you?
 
-[Jekyll](http://jekyll is a useful tool for building static sites. Jekyll allows static websites to have powerful site functionality like blogs and galleries that only worked in dynamic sites in the past.
+[Jekyll](http://jekyll) is a useful tool for building static sites. Jekyll allows static websites to have powerful site functionality like blogs and galleries that only worked in dynamic sites in the past.
 
 All users on CloudCannon now have access to our Jekyll features.
 
@@ -23,14 +23,11 @@ The key features are:
 
 This 3 minute video offers a quick overview of Jekyll on CloudCannon.
 
-<iframe width="600" height="450" src="http://www.youtube.com/watch?v=jlAtW1AyZA4?autoplay=0?controls=2">
-</iframe>
-_Comments about contacting us to join the beta obviously no longer apply :)_
+<iframe width="600" height="450" src="https://www.youtube.com/embed/jlAtW1AyZA4" frameborder="0" allowfullscreen></iframe>
 
 The longer video of the public beta announcement and demonstration by our CEO at the recent [JekyllConf](http://JekyllConf.com) is also available below.
 
-<iframe width="600" height="450" src="https://www.youtube.com/watch?v=NuChR_YdjrI?autoplay=0?controls=2">
-</iframe>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/NuChR_YdjrI" frameborder="0" allowfullscreen></iframe>
 
 ### Should I put my professional and client projects on your Jekyll functionality that is still in beta?
 
@@ -38,7 +35,7 @@ Our Jekyll support features are stable. Sites compile and the client editing int
 
 The public beta status of our Jekyll support reflects the fact that we still have better documentation we want to write and we are likely to continue making improvements to the user interfaces.
 
-The CloudCannon site and our documentation website already run on CloudCannon using Jekyll.
+The [CloudCannon site](http://cloudcannon.com) and our [documentation website](http://docs.cloudcannon.com) already run on CloudCannon using Jekyll.
 
 ### Open office hours planned
 

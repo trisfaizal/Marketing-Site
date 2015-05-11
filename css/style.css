@@ -1902,3 +1902,7 @@ td:first-child {
   position: inherit;
   right: inherit;
 }
+
+.post-container iframe {
+  width: 100%;
+}
