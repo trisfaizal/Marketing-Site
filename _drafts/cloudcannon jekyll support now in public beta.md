@@ -2,6 +2,8 @@
 layout: post
 author: sam
 title: CloudCannon Jekyll support now in public beta
+header: Jekyll support now public beta
+category: Announcements
 ---
 
 CloudCannon's support for the Jekyll static site generator has moved from private to public beta.
@@ -13,7 +15,7 @@ Jekyll is a useful tool for building static sites as it allows website creators 
 All users on CloudCannon now have access to our Jekyll features.
 
 The key features are:
-- cloud-based Jekyll site compiling (a benefit for designers and developers)
+- Cloud-based Jekyll site compiling (a benefit for designers and developers)
 - Easy to use client interfaces for creating and editing the content (blog posts, photos, menus, etc) in their Jekyll powered website. Editors won't have to understand Markdown or front matter to make Jekyll site content contributions.
 
 ### Overview
