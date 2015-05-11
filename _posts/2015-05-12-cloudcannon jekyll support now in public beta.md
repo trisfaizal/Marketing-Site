@@ -53,4 +53,5 @@ Our team will be ready and available to answer any of your Jekyll questions.
 No need to register, simply visit [cloudcannon.com/office-hours](http://cloudcannon.com/office-hours) on the day to join.
 
 Cheers,
+
 Sam and the CloudCannon team
