@@ -12,12 +12,12 @@ CloudCannon&#39;s support for the Jekyll static site generator has moved from pr
 
 [Jekyll](http://jekyll) is a useful tool for building static sites. Jekyll allows static websites to have powerful site functionality like blogs and galleries that only worked in dynamic sites in the past.
 
-** All users on CloudCannon now have access to our Jekyll features. **
+**All users on CloudCannon now have access to our Jekyll features.**
 
 The key features are:
 
-*   ** Cloud-based Jekyll site compiling ** (a benefit for designers and developers)
-*   ** Easy to use client interfaces for creating editing content **(blog posts, photos, menus, etc) in their Jekyll powered website. Editors won&#39;t have to understand Markdown or front matter to make Jekyll site content contributions.
+*   **Cloud-based Jekyll site compiling** (a benefit for designers and developers)
+*   **Easy to use client interfaces for creating editing content** (blog posts, photos, menus, etc) in their Jekyll powered website. Editors won&#39;t have to understand Markdown or front matter to make Jekyll site content contributions.
 
 ### Video overviews
 
@@ -40,7 +40,7 @@ The [CloudCannon site](http://cloudcannon.com) and our [documentation website](h
 ### Open office hours planned
 <!-- remove this section after Office Hours on Thurs 14 May -->
 
-To assist you in getting started with Jekyll we are scheduling a drop-in &#39;office hours&#39; session this week via Google Hangout. This will take place on ** Thursday 14th May** at:
+To assist you in getting started with Jekyll we are scheduling a drop-in &#39;office hours&#39; session this week via Google Hangout. This will take place on **Thursday 14th May** at:
 
 *   2pm San Fran time
 *   5pm New York time
