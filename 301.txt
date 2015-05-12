@@ -9,3 +9,4 @@
 /pricing /
 /github_pages /
 /jekyll /
+/announcements/2015/05/12/cloudcannon%20jekyll%20support%20now%20in%20public%20beta.html /announcements/2015/05/12/cloudcannon-jekyll-support-now-in-public-beta.html
