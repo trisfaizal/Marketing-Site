@@ -141,6 +141,6 @@ We have learned heaps. We did something good for an open source community (that 
 We'll do it again, but we'll be older and wiser.
 
 (Oh, and where did we spend the $50? Printing and Blutack for our MC background.)
-[](
+[](/img/blog/mc_background.png)
 
 
