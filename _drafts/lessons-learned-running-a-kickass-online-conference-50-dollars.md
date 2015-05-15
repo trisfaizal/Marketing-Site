@@ -6,7 +6,11 @@ category: Features
 author: Sam
 ---
 
-Lessons Learned Running a Kickass Online Conference with 400 attendees for $50
+We ran JekyllConf, a free online global conference for all things Jekyll static site generator on May 2 2015. 400 people showed up. It cost $50. And we'd never done anything like it before.
+
+<!-- excerpt stop -->
+
+## Lessons Learned Running a Kickass Online Conference with 400 attendees for $50
 
 Here at CloudCannon we’ve been busy building product around an open source project called Jekyll. Jekyll has a large community - we estimate there’s over 1 millions Jekyll websites live on the web today. However, the community is not particularly centralized so we had no easy way of getting CloudCannon in front of a large audience of Jekyll users.
 
@@ -16,14 +20,11 @@ For a team who had only attended a handful of conferences we thought “How hard
 
 Here’s our lessons learned from running our first conference - JekyllConf.
 
-## + 1. An online conference format kicks ass
+## 1. An online conference format kicks ass
 
 As I mentioned before we had no idea where the Jekyll community was physically centralized. We also had no sense for how many people would be interested in a conference for Jekyll. Could we get 10 people to come? 100? 1000?
 
 An all online, totally free event seemed like the natural way to run a conference. It reduced the risk on our end and it reduced the barrier for anyone to participate. Lots of people seemed to love this.
-
-[Twitter comment]
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Detritus from a bygone era! From this past weekend, see <a href="http://t.co/WOmohgClE2">http://t.co/WOmohgClE2</a> for a modern, lean conference format <a href="https://t.co/04cDlqYfgn">https://t.co/04cDlqYfgn</a></p>&mdash; Damian Betebenner (@DBetebenner) <a href="https://twitter.com/DBetebenner/status/595316458139226116">May 4, 2015</a></blockquote>
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">...walked away confused about diffs bw. static &amp; dynamic websites. Overall, an excellent eg. of a virtual conference: <a href="https://twitter.com/hashtag/jekyllconf?src=hash">#jekyllconf</a>! (2/2)</p>&mdash; Vijay Krishna Palepu (@vkrishnapalepu) <a href="https://twitter.com/vkrishnapalepu/status/594637473164054528">May 2, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -37,9 +38,10 @@ An all online, totally free event seemed like the natural way to run a conferenc
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">I had no idea <a href="https://twitter.com/JekyllConf">@JekyllConf</a> was even a thing... so awesome that it&#39;s livestreaming.</p>&mdash; jason lewis (@canweriotnow) <a href="https://twitter.com/canweriotnow/status/594622171290476544">May 2, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Detritus from a bygone era! From this past weekend, see <a href="http://t.co/WOmohgClE2">http://t.co/WOmohgClE2</a> for a modern, lean conference format <a href="https://t.co/04cDlqYfgn">https://t.co/04cDlqYfgn</a></p>&mdash; Damian Betebenner (@DBetebenner) <a href="https://twitter.com/DBetebenner/status/595316458139226116">May 4, 2015</a></blockquote>
 
 
-##2. Tools to run online conferences are available for free and are easy to use.
+## 2. Tools to run online conferences are available for free and are easy to use.
 
 The two key tools we used were Hangouts on Air, for broadcasting (free) and Twitter, for discussion (also free).
 
@@ -56,7 +58,7 @@ Twitter worked well for getting questions from the audience, but it didn't quite
 
 If we were to do it again we might look at a medium with a bit more cohesive feel like Slack. The lack of public conversation might not be such a big deal with more initial awareness.
 
-3. Logistics 
+## 3. Logistics 
 
 We had speakers enter the “Green room” (a private Google Hangout) 15 minutes before their start time. This gave us a chance to test their mic was working, check their slides and answer any last questions. This step was crucial as the majority of speakers had minor issues. 
 
@@ -66,11 +68,11 @@ Our MC would do a introduction, the speaker would talk on camera for a minute or
 
 We needed three people to run JekyllConf. An MC, someone onboarding speakers in the Green Room and someone handling the twitter account.
 
-4. Saturday timeslot seemed to suit our audience (developers)
+## 4. Saturday timeslot seemed to suit our audience (developers)
 
 Saturday morning PST turned out to be a great time to host our conference. The speakers and audience didn’t need to take time off work to attend, we struck a good balance for timezones and what better way to start the weekend than listening to a bunch of geeks talking about Jekyll?
 
-+5. There's an easy-ish way to find speakers...
+## 5. There's an easy-ish way to find speakers...
 
 There's a thing called a CFP - a Call For Proposals.
 
@@ -80,7 +82,7 @@ There are even channels that would love to assist you to find speakers like @Cal
 
 But. We didn't know about it.
 
-6. ...but we found speakers the hard way.
+## 6. ...but we found speakers the hard way.
 
 We thought that a conference organisers main job was finding and curating the speakers at the conference.
 
@@ -92,7 +94,7 @@ So we worked hard. Really hard. And found and chased down awesome Jekyll speaker
 
 With that said, JekyllConf didn’t exist until a few months ago so it’s hard to know if we could of pulled in speakers with CFP without any credibility. 
 
-- 7. Diversity is important...
+## 7. Diversity is important...
 
 The purpose of JekyllConf is to showcase Jekyll as a tool and a community to be taken seriously. It has grown from being a bedroom blogging tool for hackers to a powerful platform that some very large organisations trust to run their websites. We want to see this trend continue.
 
@@ -110,13 +112,13 @@ Some people did not like this and took to Twitter vocally when they saw we had a
 
 
 
-- 8. ...and you can't address it well late in the organisation stages.
+## 8. ...and you can't address it well late in the organisation stages.
 
 This was a huge learning curve for us as it’s the first time we’ve faced serious criticism. We realised we’d made a mistake and tried to be as open and honest about what we were doing to fix it.
 
 The steps I'm happy that we took are:
 
-+ Replying to the tweets saying we had much room for improvement on the diversity front
+Replying to the tweets saying we had much room for improvement on the diversity front
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/linoleumtile">@linoleumtile</a> <a href="https://twitter.com/jekyllrb">@jekyllrb</a> Hey Beth, you&#39;re totally right we could have done a much better job on speaker diversity. We&#39;ll try harder next time</p>&mdash; JekyllConf (@JekyllConf) <a href="https://twitter.com/JekyllConf/status/592792036157366272">April 27, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -128,7 +130,7 @@ The steps I'm happy that we took are:
 + Publically addressing the issue on a podcast
 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/203158529&color=ff5500"></iframe>
 
-Conclusion
+## Conclusion
 
 Running an online conference was a great experience. We are so proud that we brought the community together and created a resource which continues to serve the Jekyll community.
 
@@ -138,5 +140,7 @@ We have learned heaps. We did something good for an open source community (that 
 
 We'll do it again, but we'll be older and wiser.
 
+(Oh, and where did we spend the $50? Printing and Blutack.)
+[](
 
 
