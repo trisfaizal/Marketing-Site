@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Lessons Learned Running a Kickass Online Conference with 400 attendees for $50
-header: Powerful Templates
-category: Features
+header: Lessons Learned Running a Kickass Online Conference with 400 attendees for $50
+category: JekyllConf
 author: Sam
 ---
 
@@ -24,12 +24,22 @@ Here&rsquo;s our lessons learned from running our first conference - JekyllConf.
 As I mentioned before we had no idea where the Jekyll community was physically centralized. We also had no sense for how many people would be interested in a conference for Jekyll. Could we get 10 people to come? 100? 1000?
 
 An all online, totally free event seemed like the natural way to run a conference. It reduced the risk on our end and it reduced the barrier for anyone to participate. Lots of people seemed to love this.
-> ...walked away confused about diffs bw. static &amp; dynamic websites. Overall, an excellent eg. of a virtual conference: [#jekyllconf](https://twitter.com/hashtag/jekyllconf?src=hash)! (2/2)
-> &mdash; Vijay Krishna Palepu (@vkrishnapalepu) [May 2, 2015](https://twitter.com/vkrishnapalepu/status/594637473164054528)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>> [@JekyllConf](https://twitter.com/JekyllConf) [#JekyllConf](https://twitter.com/hashtag/JekyllConf?src=hash) just want to say, thanks for the conference! It&#39;s been great.
-> &mdash; David Darnes (@DavidDarnes) [May 2, 2015](https://twitter.com/DavidDarnes/status/594632161375969280)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>> Thank you all who spoke at [#JekyllConf](https://twitter.com/hashtag/JekyllConf?src=hash) and also to all those that helped set it up. It was Crazy Awesome!
-> &mdash; RussEby (@RussEby) [May 2, 2015](https://twitter.com/RussEby/status/594635806163206145)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>> I had no idea [@JekyllConf](https://twitter.com/JekyllConf) was even a thing... so awesome that it&#39;s livestreaming.
-> &mdash; jason lewis (@canweriotnow) [May 2, 2015](https://twitter.com/canweriotnow/status/594622171290476544)<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>> Detritus from a bygone era! From this past weekend, see [http://t.co/WOmohgClE2](http://t.co/WOmohgClE2) for a modern, lean conference format [https://t.co/04cDlqYfgn](https://t.co/04cDlqYfgn)
-> &mdash; Damian Betebenner (@DBetebenner) [May 4, 2015](https://twitter.com/DBetebenner/status/595316458139226116)
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/JekyllConf">@JekyllConf</a> <a href="https://twitter.com/hashtag/JekyllConf?src=hash">#JekyllConf</a> just want to say, thanks for the conference! It&#39;s been great.</p>&mdash; David Darnes (@DavidDarnes) <a href="https://twitter.com/DavidDarnes/status/594632161375969280">May 2, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Thank you all who spoke at <a href="https://twitter.com/hashtag/JekyllConf?src=hash">#JekyllConf</a> and also to all those that helped set it up. It was Crazy Awesome!</p>&mdash; RussEby (@RussEby) <a href="https://twitter.com/RussEby/status/594635806163206145">May 2, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">...walked away confused about diffs bw. static &amp; dynamic websites. Overall, an excellent eg. of a virtual conference: <a href="https://twitter.com/hashtag/jekyllconf?src=hash">#jekyllconf</a>! (2/2)</p>&mdash; Vijay Krishna Palepu (@vkrishnapalepu) <a href="https://twitter.com/vkrishnapalepu/status/594637473164054528">May 2, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Detritus from a bygone era! From this past weekend, see <a href="http://t.co/WOmohgClE2">http://t.co/WOmohgClE2</a> for a modern, lean conference format <a href="https://t.co/04cDlqYfgn">https://t.co/04cDlqYfgn</a></p>&mdash; Damian Betebenner (@DBetebenner) <a href="https://twitter.com/DBetebenner/status/595316458139226116">May 4, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">I had no idea <a href="https://twitter.com/JekyllConf">@JekyllConf</a> was even a thing... so awesome that it&#39;s livestreaming.</p>&mdash; jason lewis (@canweriotnow) <a href="https://twitter.com/canweriotnow/status/594622171290476544">May 2, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 ## 2. Tools to run online conferences are available for free and are easy to use.
 
@@ -93,19 +103,12 @@ We ended up with a speaker lineup that included 8 men and 0 women. We hadn&#39;t
 
 Some people did not like this and took to Twitter vocally when they saw we had an all male speaker lineup.
 
-&nbsp;
-> I thought we already had a conversation as a community about mostly white dudes speaking at an event? [http://t.co/BRFApomdW8](http://t.co/BRFApomdW8)
-> &mdash; Nick Quaranto (@qrush) [April 27, 2015](https://twitter.com/qrush/status/592756008616906755)
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">I thought we already had a conversation as a community about mostly white dudes speaking at an event? <a href="http://t.co/BRFApomdW8">http://t.co/BRFApomdW8</a></p>&mdash; Nick Quaranto (@qrush) <a href="https://twitter.com/qrush/status/592756008616906755">April 27, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-&nbsp;
-<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Also, dearest <a href="https://twitter.com/jekyllrb">@jekyllrb</a>, you are great but you need to TRY HARDER on the speaker diversity front.</p>&mdash; Beth McKeever (@linoleumtile) <a href="https://twitter.com/linoleumtile/status/592768242269212673">April 27, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-&nbsp;
-> Also, dearest [@jekyllrb](https://twitter.com/jekyllrb), you are great but you need to TRY HARDER on the speaker diversity front.
-> &mdash; Beth McKeever (@linoleumtile) [April 27, 2015](https://twitter.com/linoleumtile/status/592768242269212673)
-
-&nbsp;
-<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## 8. ...and you can&#39;t address it well late in the organisation stages.
 
@@ -115,12 +118,8 @@ The steps I&#39;m happy that we took are:
 
 *   Replying to the tweets saying we had much room for improvement on the diversity front
 
-&nbsp;
-> [@linoleumtile](https://twitter.com/linoleumtile) [@jekyllrb](https://twitter.com/jekyllrb) Hey Beth, you&#39;re totally right we could have done a much better job on speaker diversity. We&#39;ll try harder next time
-> &mdash; JekyllConf (@JekyllConf) [April 27, 2015](https://twitter.com/JekyllConf/status/592792036157366272)
-
-&nbsp;
-<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/linoleumtile">@linoleumtile</a> <a href="https://twitter.com/jekyllrb">@jekyllrb</a> Hey Beth, you&#39;re totally right we could have done a much better job on speaker diversity. We&#39;ll try harder next time</p>&mdash; JekyllConf (@JekyllConf) <a href="https://twitter.com/JekyllConf/status/592792036157366272">April 27, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 *   Private messaging the most vocal people and understanding what we could do to improve the situation
 *   Adding a conference code of conduct
@@ -140,4 +139,4 @@ We have learned heaps. We did something good for an open source community (that 
 We&#39;ll do it again, but we&#39;ll be older and wiser.
 
 (Oh, and where did we spend the $50? Printing and Blutack for our MC background.)
-[](/img/blog/mc_background.png)
+[MC @SamBonney with JekyllConf background](/img/blog/mc_background.png)
