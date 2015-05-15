@@ -118,16 +118,16 @@ This was a huge learning curve for us as it’s the first time we’ve faced ser
 
 The steps I'm happy that we took are:
 
-Replying to the tweets saying we had much room for improvement on the diversity front
++ Replying to the tweets saying we had much room for improvement on the diversity front
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/linoleumtile">@linoleumtile</a> <a href="https://twitter.com/jekyllrb">@jekyllrb</a> Hey Beth, you&#39;re totally right we could have done a much better job on speaker diversity. We&#39;ll try harder next time</p>&mdash; JekyllConf (@JekyllConf) <a href="https://twitter.com/JekyllConf/status/592792036157366272">April 27, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 + Private messaging the most vocal people and understanding what we could do to improve the situation 
-
 + Adding a conference code of conduct
 + Reaching out to our speakers to let them know we were aware of the issue and were taking it seriously.
 + Publically addressing the issue on a podcast
+
 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/203158529&color=ff5500"></iframe>
 
 ## Conclusion
@@ -140,7 +140,7 @@ We have learned heaps. We did something good for an open source community (that 
 
 We'll do it again, but we'll be older and wiser.
 
-(Oh, and where did we spend the $50? Printing and Blutack.)
+(Oh, and where did we spend the $50? Printing and Blutack for our MC background.)
 [](
 
 
