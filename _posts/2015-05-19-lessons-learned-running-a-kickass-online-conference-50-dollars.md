@@ -43,7 +43,6 @@ An all online, totally free event seemed like the natural way to run a conferenc
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
-<div>
 ## 2. Tools to run online conferences are available for free and are easy to use.
 
 The two key tools we used were Hangouts on Air, for broadcasting (free) and Twitter, for discussion (also free).
@@ -59,8 +58,6 @@ On Twitter we used a hashtag #JekyllConf to keep the conversation trackable. We 
 Twitter worked well for getting questions from the audience, but it didn&#39;t quite encourage the free flowing conference dialog that we had envisaged.
 
 If we were to do it again we might look at a medium with a bit more cohesive feel like Slack. The lack of public conversation might not be such a big deal with more initial awareness.
-
-</div>
 
 ## 3. Logistics
 
