@@ -137,5 +137,5 @@ We have learned heaps. We did something good for an open source community (that 
 
 We&#39;ll do it again, but we&#39;ll be older and wiser.
 
-(Oh, and where did we spend the $50? Printing and Blutack for our MC background!)
+(Oh, and where did we spend the $50? Last minute printing and Blutack for our MC background!)
 ![MC @SamBonney with JekyllConf background](/img/blog/mc_background.png)
