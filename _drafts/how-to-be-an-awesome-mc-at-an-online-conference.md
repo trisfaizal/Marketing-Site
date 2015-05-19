@@ -1,9 +1,9 @@
 ---
 layout: post
+author: sam
 title: How to be an awesome MC at an online conference
 header: Awesome Conf MC
 category: JekyllConf
-author: sam
 ---
 
 Last weekend I was part of JekyllConf, a free online conference for the Jekyll static site generator community.
