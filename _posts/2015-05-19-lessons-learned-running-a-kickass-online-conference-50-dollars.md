@@ -21,14 +21,14 @@ For a team who had only attended a handful of conferences we thought &ldquo;How 
 
 Here&rsquo;s our lessons learned from running our first conference - [JekyllConf](http://JekyllConf.com).
 
-## 1. An online conference format kicks ass
+## 1. An online conference format rocks
 
 As I mentioned before we had no idea where the Jekyll community was physically centralized. We also had no sense for how many people would be interested in a conference for Jekyll. Could we get 10 people to come? 100? 1000?
 
 An all online, totally free event seemed like the natural way to run a conference. It reduced the risk on our end and it reduced the barrier for anyone to participate. Lots of people seemed to love this.
 
 <div>
-<blockquote class="twitter-tweet" data-partner="tweetdeck" width="auto"><p lang="en" dir="ltr"><a href="https://twitter.com/JekyllConf">@JekyllConf</a> <a href="https://twitter.com/hashtag/JekyllConf?src=hash">#JekyllConf</a> just want to say, thanks for the conference! It&#39;s been great.</p>&mdash; David Darnes (@DavidDarnes) <a href="https://twitter.com/DavidDarnes/status/594632161375969280">May 2, 2015</a></blockquote>
+<blockquote width="100%" class="twitter-tweet" data-partner="tweetdeck" width="auto"><p lang="en" dir="ltr"><a href="https://twitter.com/JekyllConf">@JekyllConf</a> <a href="https://twitter.com/hashtag/JekyllConf?src=hash">#JekyllConf</a> just want to say, thanks for the conference! It&#39;s been great.</p>&mdash; David Darnes (@DavidDarnes) <a href="https://twitter.com/DavidDarnes/status/594632161375969280">May 2, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Thank you all who spoke at <a href="https://twitter.com/hashtag/JekyllConf?src=hash">#JekyllConf</a> and also to all those that helped set it up. It was Crazy Awesome!</p>&mdash; RussEby (@RussEby) <a href="https://twitter.com/RussEby/status/594635806163206145">May 2, 2015</a></blockquote>
@@ -126,7 +126,7 @@ The steps I&#39;m happy that we took are:
 *   Private messaging the most vocal people and understanding what we could do to improve the situation
 *   Adding a conference code of conduct
 *   Reaching out to our speakers to let them know we were aware of the issue and were taking it seriously.
-*   Publically addressing the issue on a podcast
+*   Publicly addressing the issue on a podcast
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/203158529&amp;color=ff5500"></iframe>
 
