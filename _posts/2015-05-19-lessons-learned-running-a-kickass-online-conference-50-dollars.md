@@ -60,7 +60,7 @@ Twitter worked well for getting questions from the audience, but it didn&#39;t q
 
 If we were to do it again we might look at a medium with a bit more cohesive feel like Slack. The lack of public conversation might not be such a big deal with more initial awareness.
 
-</div
+</div>
 
 ## 3. Logistics
 
