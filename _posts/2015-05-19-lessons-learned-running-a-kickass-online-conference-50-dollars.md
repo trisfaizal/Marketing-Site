@@ -27,7 +27,7 @@ As I mentioned before we had no idea where the Jekyll community was physically c
 
 An all online, totally free event seemed like the natural way to run a conference. It reduced the risk on our end and it reduced the barrier for anyone to participate. Lots of people seemed to love this.
 
-<div center>
+<div>
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/JekyllConf">@JekyllConf</a> <a href="https://twitter.com/hashtag/JekyllConf?src=hash">#JekyllConf</a> just want to say, thanks for the conference! It&#39;s been great.</p>&mdash; David Darnes (@DavidDarnes) <a href="https://twitter.com/DavidDarnes/status/594632161375969280">May 2, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
