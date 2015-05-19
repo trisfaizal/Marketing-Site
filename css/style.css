@@ -1906,3 +1906,7 @@ td:first-child {
 .post-container iframe {
   width: 100%;
 }
+
+.twitter-block iframe {
+  width: 100% !important;
+}
