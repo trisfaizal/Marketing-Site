@@ -125,7 +125,7 @@ The steps I&#39;m happy that we took are:
 *   Reaching out to our speakers to let them know we were aware of the issue and were taking it seriously.
 *   Publicly addressing the issue on a podcast
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/203158529&amp;color=ff5500"></iframe>
+<iframe width="80%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/203158529&amp;color=ff5500"></iframe>
 
 ## Conclusion
 
