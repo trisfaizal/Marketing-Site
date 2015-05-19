@@ -115,8 +115,10 @@ The steps I&#39;m happy that we took are:
 
 *   Replying to the tweets saying we had much room for improvement on the diversity front
 
+<section width="100%">
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr"><a href="https://twitter.com/linoleumtile">@linoleumtile</a> <a href="https://twitter.com/jekyllrb">@jekyllrb</a> Hey Beth, you&#39;re totally right we could have done a much better job on speaker diversity. We&#39;ll try harder next time</p>&mdash; JekyllConf (@JekyllConf) <a href="https://twitter.com/JekyllConf/status/592792036157366272">April 27, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section
 
 *   Private messaging the most vocal people and understanding what we could do to improve the situation
 *   Adding a conference code of conduct
