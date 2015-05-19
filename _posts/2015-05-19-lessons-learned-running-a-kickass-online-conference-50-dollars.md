@@ -15,7 +15,7 @@ We&rsquo;ve been busy building product around an open source project called [Jek
 
 This led to the idea of hosting a conference for Jekyll, a day where we could bring the community together and celebrate all things Jekyll.
 
-At this point we had a huge number of unknowns...where should the conference be held? How do we get speakers? How much should we charge?
+At this point we had a huge number of unknowns. Where should the conference be held? How do we get speakers? How much should we charge?
 
 For a team who had only attended a handful of conferences we thought &ldquo;How hard could it be?&rdquo;.
 
