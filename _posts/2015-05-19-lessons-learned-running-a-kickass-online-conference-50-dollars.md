@@ -99,12 +99,13 @@ We ended up with a speaker lineup that included 8 men and 0 women. We hadn&#39;t
 
 Some people did not like this and took to Twitter vocally when they saw we had an all male speaker lineup.
 
+<section width="100%">
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">I thought we already had a conversation as a community about mostly white dudes speaking at an event? <a href="http://t.co/BRFApomdW8">http://t.co/BRFApomdW8</a></p>&mdash; Nick Quaranto (@qrush) <a href="https://twitter.com/qrush/status/592756008616906755">April 27, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Also, dearest <a href="https://twitter.com/jekyllrb">@jekyllrb</a>, you are great but you need to TRY HARDER on the speaker diversity front.</p>&mdash; Beth McKeever (@linoleumtile) <a href="https://twitter.com/linoleumtile/status/592768242269212673">April 27, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+</section>
 
 ## 8. ...and you can&#39;t address it well late in the organisation stages.
 
