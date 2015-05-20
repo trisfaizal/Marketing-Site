@@ -8,10 +8,10 @@ author: sam
 
 We ran JekyllConf, a free online global conference for all things Jekyll static site generator on May 2 2015. 400 people showed up. It cost $50. And we&#39;d never done anything like it before.
 
-Here's the lessons we learned.
+Here are the lessons we learned.
 <!-- excerpt stop -->
 
-We&rsquo;ve been busy building product around an open source project called [Jekyll](http://jekyllrb.com). Jekyll has a large community - we estimate there&rsquo;s over 1 millions Jekyll websites live on the web today. However, the community is not particularly centralized so we had no easy way of getting CloudCannon in front of a large audience of Jekyll users.
+We&rsquo;ve been busy building product around an open source project called [Jekyll](http://jekyllrb.com). Jekyll has a large community - we estimate there are over 1 millions Jekyll websites live on the web today. However, the community is not particularly centralized so we had no easy way of getting CloudCannon in front of a large audience of Jekyll users.
 
 This led to the idea of hosting a conference for Jekyll, a day where we could bring the community together and celebrate all things Jekyll.
 
@@ -19,7 +19,7 @@ At this point we had a huge number of unknowns. Where should the conference be h
 
 For a team who had only attended a handful of conferences we thought &ldquo;How hard could it be?&rdquo;.
 
-Here&rsquo;s our lessons learned from running our first conference - [JekyllConf](http://JekyllConf.com).
+Here are our lessons learned from running our first conference - [JekyllConf](http://JekyllConf.com).
 
 ## 1. An online conference format rocks
 
@@ -37,7 +37,7 @@ An all online, totally free event seemed like the natural way to run a conferenc
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </section>
 
-## 2. Tools to run online conferences are available for free and are easy to use.
+## 2. Tools to run online conferences are available for free and are easy to use
 
 The two key tools we used were [Hangouts on Air](https://www.google.com/intl/en/+/learnmore/hangouts/onair.html) for broadcasting and [Twitter](http://twitter.com) for discussion.
 
@@ -59,7 +59,7 @@ We had speakers enter the &ldquo;Green room&rdquo; (a private Google Hangout) 15
 
 A few minutes before they were on we would send them a link to the Google Hangouts on Air stream where they would log in and immediately mute themselves.
 
-Our MC would do a introduction, the speaker would talk on camera for a minute or two then bring up their slides. At the end of the talk our MC would ask the speaker questions from Twitter. One of the limitations of Google Hangouts on Air is you can show your face or your screen not both at the same time.
+Our MC would do an introduction, the speaker would talk on camera for a minute or two then bring up their slides. At the end of the talk our MC would ask the speaker questions from Twitter. One of the limitations of Google Hangouts on Air is you can show your face or your screen not both at the same time.
 
 We needed three people to run JekyllConf. An MC, someone onboarding speakers in the Green Room and someone handling the twitter account.
 
@@ -91,9 +91,9 @@ With that said, JekyllConf didn&rsquo;t exist until a few months ago. It&rsquo;s
 
 The purpose of JekyllConf is to showcase Jekyll as a tool and a community to be taken seriously. It has grown from being a bedroom blogging tool for hackers to a powerful platform that some very large organisations trust to run their websites. We want to see this trend continue.
 
-I think we did a great job in showcasing interesting, unique use cases and perspectives of Jekyll as a technology. However, we did a poor job of is representing Jekyll as a community.
+I think we did a great job in showcasing interesting, unique use cases and perspectives of Jekyll as a technology. However, we did a poor job of representing Jekyll as a community.
 
-We ended up with a speaker lineup that included 8 men and 0 women. We hadn&#39;t tried to exclude women, but we hadn&#39;t made an special effort to include any either.
+We ended up with a speaker lineup that included 8 men and 0 women. We hadn&#39;t tried to exclude women, but we hadn&#39;t made a special effort to include any either.
 
 Some people did not like this and took to Twitter vocally when they saw we had an all male speaker lineup.
 
