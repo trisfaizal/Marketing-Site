@@ -1,0 +1,51 @@
+[
+	{
+		"name": "Prototyping",
+		"className": "plan lp_plan",
+		"url": "https://app.cloudcannon.com/users/sign_up",
+		"price": "Free",
+		"features": [
+			"1 Editor",
+			"Website Hosting*"
+		]
+	},
+	{
+		"name": "Small Team",
+		"className": "plan lp_plan",
+		"url": "https://app.cloudcannon.com/users/sign_up",
+		"price": "$9",
+		"features": [
+			"5 Editors",
+			"Website Hosting"
+		]
+	},
+	{
+		"name": "Agency",
+		"className": "plan lp_plan production",
+		"url": "https://app.cloudcannon.com/users/sign_up",
+		"price": "Contact Us",
+		"features": [
+			"Increased Editors",
+			"Website Hosting",
+			"White-labelling",
+			"Bulk websites",
+			"Personal support"
+		]
+	},
+	{
+		"name": "Enterprise",
+		"className": "plan lp_plan production",
+		"url": "https://app.cloudcannon.com/users/sign_up",
+		"price": "Contact Us",
+		"features": [
+			"Unlimited Editors",
+			"Website hosting",
+			"White-labelling",
+			"Increase Jekyll build time allowance",
+			"Geo-location",
+			"Internationalisation",
+			"Custom plugin support",
+			"Priority Support"
+		]
+	}
+]

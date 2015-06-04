@@ -1,0 +1,21 @@
+name,Prototyping,Small Team,Agency,Enterprise
+Websites per subscription,1,1,Multiple,Multiple
+Collaborators,0,4,5 to 15,Unlimited
+Simple password protected editing,No,Yes,Yes,Yes
+Custom site domain,Yes,Yes,Yes,Yes
+.cloudvent.net domain for testing,Yes,Yes,Yes,Yes
+File syncing with GitHub,Yes,Yes,Yes,Yes
+File syncing with Dropbox,Yes,Yes,Yes,Yes
+File syncing with FTP,Yes,Yes,Yes,Yes
+Website hosting,Yes,Yes,Yes,Yes
+Site password protection,Compulsory,Optional,Optional,Optional
+Email support,Yes,Yes,Priority,Priority
+Phone support,No,No,Yes,Yes
+White-labelling,No,No,Yes,Yes
+Volume discounting,No,No,Yes,Yes
+Custom Jekyll plugins supported,No,No,No,Yes
+Geo-location,No,No,No,Yes
+Increased Jekyll build time allowance,No,No,No,Yes
+Site Internationalisation,No,No,No,Yes
+CloudCannon and Jekyll training,No,No,Negotiable,Negotiable
+Payment option,Free,Credit Card,Credit Card or Invoice,Credit Card or Invoice
