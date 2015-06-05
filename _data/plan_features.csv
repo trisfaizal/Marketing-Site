@@ -1,21 +1,24 @@
 name,Prototyping,Small Team,Agency,Enterprise
 Websites per subscription,1,1,Multiple,Multiple
-Collaborators,0,4,5 to 15,Unlimited
-Simple password protected editing,not-available,available,available,available
-Custom site domain,available,available,available,available
+Collaborators,0,4,5 - 15,Unlimited
+,,,,
+Custom site domain,not-available,available,available,available
 .cloudvent.net domain for testing,available,available,available,available
+Website hosting,available,available,available,available
+Password Protected,Compulsory,Optional,Optional,Optional
+,,,,
+File syncing with Bitbucket,available,available,available,available
 File syncing with GitHub,available,available,available,available
 File syncing with Dropbox,available,available,available,available
 File syncing with FTP,available,available,available,available
-Website hosting,available,available,available,available
-Site password protection,Compulsory,Optional,Optional,Optional
-Email support,available,available,Priority,Priority
-Phone support,not-available,not-available,available,available
+,,,,
 White-labelling,not-available,not-available,available,available
-Volume discounting,not-available,not-available,available,available
-Custom Jekyll plugins supported,not-available,not-available,not-available,available
-Geo-location,not-available,not-available,not-available,available
-Increased Jekyll build time allowance,not-available,not-available,not-available,available
+Jekyll Plugin Support,not-available,not-available,not-available,available
+Geolocation,not-available,not-available,not-available,available
+Increased Jekyll Build Time,not-available,not-available,not-available,available
 Site Internationalisation,not-available,not-available,not-available,available
-CloudCannon and Jekyll training,not-available,not-available,Negotiable,Negotiable
-Payment option,Free,Credit Card,Credit Card or Invoice,Credit Card or Invoice
+,,,,
+Email Support,available,available,Priority,Priority
+Phone Support,not-available,not-available,available,available
+CloudCannon/Jekyll Training,not-available,not-available,available,available
+Payment Option,Free,Credit Card,Flexible,Flexible

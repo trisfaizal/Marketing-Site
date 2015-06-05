@@ -4,26 +4,6 @@ title: Pricing
 header: Pricing
 ---
 
-<section class="darker">
-    <div class="container">
-        <h4 class="center-text">Simple pricing that scales as you grow</h4>
-        {% for plan in site.data.plans %}
-            <div class="{{ plan.className }}">
-                <div class="plan-header">
-                    <a href="{{ plan.url }}" class="sign-up">
-                        <h2>{{ plan.name }}</h2>
-                        <p class="price-per-month" style="font-size: 30px">{{ plan.price }}</p>
-                    </a>
-                </div>
-
-                {% for feature in plan.features %}
-                    <p class="plan-features">{{ feature }}</p>
-                {% endfor %}
-            </div>
-        {% endfor %}
-    </div>
-</section>
-
 <section>
     <div class="container">
         <table class="light">
@@ -33,29 +13,41 @@ header: Pricing
                     <th>{{ plan.name }}</th>
                 {% endfor %}
             </tr>
+            <tr>
+                <th>Price per month</td>
+                {% for plan in site.data.plans %}
+                    <th>{{ plan.price }}</th>
+                {% endfor %}
+            </tr>
             {% for feature in site.data.plan_features %}
-                <tr>
-                    <th>{{ feature.name }}</th>
-                    {% for plan in site.data.plans %}
-                        {% assign val = feature[plan.name] %}
-                        {% if (val == 'not-available') %}
-                            <td class="not-available">
-                                <img src="/img/close.svg" width="24" height="24" alt="Not Available">
-                            </td>
-                        {% elsif (val == 'available') %}
-                            <td class="available">
-                                <img src="/img/tick.svg" width="24" height="24" alt="Available">
-                            </td>
-                        {% else %}
-                            <td>{{ val }}</td>
-                        {% endif %}
-                    {% endfor %}
-                </tr>
+                {% if feature.name %}
+                    <tr>
+                        <th>{{ feature.name }}</th>
+                        {% for plan in site.data.plans %}
+                            {% assign val = feature[plan.name] %}
+                            {% if val == 'not-available' %}
+                                <td class="not-available">
+                                    <img src="/img/close.svg" width="24" height="24" alt="Not Available">
+                                </td>
+                            {% elsif val == 'available' %}
+                                <td class="available">
+                                    <img src="/img/tick.svg" width="24" height="24" alt="Available">
+                                </td>
+                            {% else %}
+                                <td>{{ val }}</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% else %}
+                    <tr class="separator">
+                        <td colspan="{{ site.data.plans | size | plus: 1 }}"></td>
+                    </tr>
+                {% endif %}
             {% endfor %}
             <tr>
                 <td></td>
                 {% for plan in site.data.plans %}
-                    <td><a href="{{ plan.url }}" class="btn">{{ plan.name }}</a></td>
+                    <td><a href="{{ plan.url }}" class="{{plan.buttonClass}}">{{ plan.call-to-action }}</a></td>
                 {% endfor %}
             </tr>
         </table>
