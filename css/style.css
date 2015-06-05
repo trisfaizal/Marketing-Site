@@ -1910,3 +1910,42 @@ td:first-child {
 .twitter-block iframe {
   width: 100% !important;
 }
+
+
+table.light td,
+table.light th {
+    border: 0;
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+    background: transparent;
+    line-height: 1;
+    height: 40px;
+}
+
+table.light {
+    border: 0;
+    background: transparent;
+}
+
+table.light tr:first-child {
+    font-size: 1.2em;
+    border-bottom: 2px solid #eee;
+}
+
+table.light tr > :first-child {
+  text-align: right;
+  width: auto;
+}
+
+table.light td {
+  font-size: 0.9em;
+}
+
+table.light .not-available {
+    opacity: 0.1;
+}
+
+table.light img {
+    width: 32px !important;
+}
