@@ -6,11 +6,11 @@ header: Pricing
 
 <section>
     <div class="container">
-        <table class="light">
+        <table class="desktop-pricing">
             <tr>
                 <th></th>
                 {% for plan in site.data.plans %}
-                    <th>{{ plan.name }}</th>
+                    <th><span>{{ plan.name }}</span></th>
                 {% endfor %}
             </tr>
             <tr>
@@ -47,9 +47,27 @@ header: Pricing
             <tr>
                 <td></td>
                 {% for plan in site.data.plans %}
-                    <td><a href="{{ plan.url }}" class="{{plan.buttonClass}}">{{ plan.call-to-action }}</a></td>
+                    <td><a href="{{ plan.url }}" class="{{ plan.buttonClass }}">{{ plan.call-to-action }}</a></td>
                 {% endfor %}
             </tr>
         </table>
+
+        {% for plan in site.data.plans %}
+            <div class="mobile-pricing">
+                <h3>{{ plan.name }} <small>Price: {{ plan.price }}</small></h3>
+                <dl>
+                    {% for feature in site.data.plan_features %}
+                        {% assign val = feature[plan.name] %}
+                        {% if val != 'not-available' and feature.name %}
+                            <dt><img src="/img/tick.svg" width="18" height="18" alt="Available"> {{ feature.name }}</dt>
+                            {% unless val == 'available' %}
+                                <dd>{{ val }}</dd>
+                            {%  endunless %}
+                        {% endif %}
+                    {% endfor %}
+                </dl>
+                <div><a href="{{ plan.url }}" class="{{ plan.buttonClass }}">{{ plan.call-to-action }}</a></div>
+            </div>
+        {% endfor %}
     </div>
 </section>

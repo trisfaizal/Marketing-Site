@@ -1913,8 +1913,11 @@ td:first-child {
 }
 
 
-table.light td,
-table.light th {
+table.desktop-pricing {
+    display: none;
+}
+table.desktop-pricing td,
+table.desktop-pricing th {
     border: 0;
     text-align: center;
     padding: 5px;
@@ -1924,40 +1927,105 @@ table.light th {
     height: 40px;
 }
 
-table.light {
+table.desktop-pricing {
     border: 0;
     background: transparent;
 }
 
-table.light tr:first-child {
-    font-size: 1.2em;
+table.desktop-pricing tr:first-child {
     border-bottom: 2px solid #eee;
 }
 
-table.light tr > :first-child {
-  text-align: right;
-  width: auto;
+table.desktop-pricing th span {
+    white-space: nowrap;
+    width: 100px;
+    display: block;
+    font-size: 1em;
+    margin: 0 auto;
 }
 
-table.light td {
-  font-size: 0.9em;
+table.desktop-pricing tr > :first-child {
+    text-align: right;
+    width: auto;
 }
 
-table.light .not-available {
+table.desktop-pricing td {
+    font-size: 0.9em;
+}
+
+table.desktop-pricing .not-available {
     opacity: 0.1;
 }
 
-table.light img {
+table.desktop-pricing img {
     width: 32px !important;
 }
 
-table.light .btn {
+table.desktop-pricing .btn {
     margin-top: 0;
 }
 
 tr.separator td {
-  background-color: #EEE;
-  height: 1px;
-  padding: 0;
-  border: 10px solid #FFF;
+    background-color: #EEE;
+    height: 1px;
+    padding: 0;
+    border: 10px solid #FFF;
+}
+
+.mobile-pricing {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.mobile-pricing + .mobile-pricing {
+    margin: 40px auto 0 auto;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #eee;
+}
+
+.mobile-pricing small {
+    display: block;
+}
+
+.mobile-pricing dt, .mobile-pricing dd {
+    display: inline;
+}
+
+.mobile-pricing dt + dd:before {
+    content: " - ";
+}
+
+.mobile-pricing dt:before {
+    content: "";
+    display: block;
+}
+
+/*
+@media (min-width: 550px) {
+    .mobile-pricing,
+    .mobile-pricing + .mobile-pricing {
+        width: 48%;
+        padding: 0;
+        border: 0;
+        margin: 0 1%;
+        float: left;
+    }
+}*/
+
+@media (min-width: 700px) {
+    table.desktop-pricing {
+        display: table;
+    }
+
+    .mobile-pricing {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    table.desktop-pricing th span {
+        font-size: 1.2em;
+        width: 137px;
+    }
 }

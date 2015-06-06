@@ -1,24 +1,24 @@
-name,Prototyping,Small Team,Agency,Enterprise
-Websites per subscription,1,1,Multiple,Multiple
-Collaborators,0,4,5 - 15,Unlimited
-,,,,
-Custom site domain,not-available,available,available,available
-.cloudvent.net domain for testing,available,available,available,available
-Website hosting,available,available,available,available
-Password Protected,Compulsory,Optional,Optional,Optional
-,,,,
-File syncing with Bitbucket,available,available,available,available
-File syncing with GitHub,available,available,available,available
-File syncing with Dropbox,available,available,available,available
-File syncing with FTP,available,available,available,available
-,,,,
-White-labelling,not-available,not-available,available,available
-Jekyll Plugin Support,not-available,not-available,not-available,available
-Geolocation,not-available,not-available,not-available,available
-Increased Jekyll Build Time,not-available,not-available,not-available,available
-Site Internationalisation,not-available,not-available,not-available,available
-,,,,
-Email Support,available,available,Priority,Priority
-Phone Support,not-available,not-available,available,available
-CloudCannon/Jekyll Training,not-available,not-available,available,available
-Payment Option,Free,Credit Card,Flexible,Flexible
+name,Prototyping,Small Team,Agency,Enterprise,mobile_visible
+Websites per subscription,1,1,Multiple,Multiple,true
+Collaborators,0,4,5 - 15,Unlimited,true
+,,,,,
+Custom Domain Name,not-available,available,available,available,true
+.cloudvent.net domain for testing,available,available,available,available,true
+Website hosting,available,available,available,available,true
+Password Protected,Compulsory,Optional,Optional,Optional,true
+,,,,,
+File syncing with Bitbucket,available,available,available,available,true
+File syncing with GitHub,available,available,available,available,true
+File syncing with Dropbox,available,available,available,available,true
+File syncing with FTP,available,available,available,available,true
+,,,,,
+White-labelling,not-available,not-available,available,available,true
+Jekyll Plugin Support,not-available,not-available,not-available,available,true
+Geolocation,not-available,not-available,not-available,available,true
+Increased Jekyll Build Time,not-available,not-available,not-available,available,true
+Site Internationalisation,not-available,not-available,not-available,available,true
+,,,,,
+Email Support,available,available,Priority,Priority,true
+Phone Support,not-available,not-available,available,available,true
+CloudCannon/Jekyll Training,not-available,not-available,available,available,true
+Payment Option,Free,Credit Card,Flexible,Flexible,true
