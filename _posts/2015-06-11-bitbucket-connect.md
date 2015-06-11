@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bring your Jekyll Site to Life with BitBucket Connect
-header: Bring your Jekyll Site to Life with BitBucket Connect
+title: Bring your Jekyll Site to Life with Bitbucket Connect
+header: Bring your Jekyll Site to Life with Bitbucket Connect
 category: Features
 author: mike
 ---
