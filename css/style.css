@@ -1300,6 +1300,12 @@ line-height: 80px;
         padding: 0 1%;
     }
 
+    .quarters {
+        width: 23%;
+        float: left;
+        padding: 0 1%;
+    }
+
     .how-it-works {
         background: url(/img/process-background.png) no-repeat top center;
         padding-top: 165px;
@@ -1999,6 +2005,22 @@ tr.separator td {
 .mobile-pricing dt:before {
     content: "";
     display: block;
+}
+
+.switcher {
+  width: 300px;
+  margin: 30px auto;
+  text-align: center;
+
+}
+
+.switcher a {
+  padding: 10px;
+}
+
+.switcher a.active {
+  background: #26abe2;
+  color: #fff;
 }
 
 /*

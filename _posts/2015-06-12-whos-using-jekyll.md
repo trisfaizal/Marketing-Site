@@ -38,5 +38,6 @@ Large scale deployments of Jekyll include:
 * [CSS Wizardry](http://csswizardry.com/)
 * [JetStrap Docs](http://blog.jetstrap.com/2013/03/building-a-docs-site-with-jekyll-github-pages/)
 * [Devo.ps Docs](http://docs.devo.ps/)
+* [Atlassian Design](https://design.atlassian.com)
 
 Who have we missed?
