@@ -10,7 +10,7 @@ CloudCannon&#39;s support for the Jekyll static site generator has moved from pr
 
 ### What does this mean for you?
 
-[Jekyll](http://jekyll) is a useful tool for building static sites. Jekyll allows static websites to have powerful site functionality like blogs and galleries that only worked in dynamic sites in the past.
+[Jekyll](http://jekyllrb.com) is a useful tool for building static sites. Jekyll allows static websites to have powerful site functionality like blogs and galleries that only worked in dynamic sites in the past.
 
 **All users on CloudCannon now have access to our Jekyll features.**
 
