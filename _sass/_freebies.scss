@@ -1,0 +1,168 @@
+// TODO rename to freebies
+.template-container img {
+	border: 1px solid #eee;
+}
+
+.templates-list, .templates-list li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.templates-list li {
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+.templates-list li + li {
+	margin-top: 20px;
+}
+
+.templates-list .banner {
+	height: 195px;
+	background: #eee;
+	position: relative;
+}
+
+.templates-list .details {
+	overflow: hidden;
+	*zoom: 1;
+	border-top: 1px solid #eee;
+	padding: 15px;
+	position: relative;
+}
+
+.templates-list h3 {
+	margin: 0;
+	line-height: 42px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+}
+
+.templates-list h3 a {
+	display: inline-block;
+	background: #222;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	padding: 0 10px;
+}
+
+.templates-list .buttons {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.templates-list .btn {
+	margin: 10px 0 0 0;
+	line-height: 40px;
+	text-align: center;
+	width: auto;
+	padding: 0 15px;
+	height: 40px;
+	max-width: none;
+	font-size: 17px;
+}
+
+.templates-list p {
+	float: left;
+	margin: 10px 153px 10px 0;
+	line-height: 23px;
+	text-align: justify;
+}
+
+.templates-list .nimbus .banner {
+	background: #d2780e url(/img/template-screens/nimbus.png) bottom center no-repeat;
+}
+
+.templates-list .cirrus .banner {
+	background: #75bfff url(/img/template-screens/cirrus.png) bottom center no-repeat;
+}
+
+.templates-list .billows .banner {
+	background: #851D1D url(/img/template-screens/billows.png) bottom center no-repeat;
+}
+
+.templates-list .smileys .banner {
+	background: #f2f2f2 url(/img/blog/smileys.js.png) center no-repeat;
+}
+
+.templates-list .solitaire .banner {
+	background: #fff url(/img/blog/solitaire.png) top center no-repeat;
+}
+
+.templates-list .device-icons .banner {
+	background: #f2f2f2 url(/downloads/device-icons/cloud-cannon-device-icons.png) center no-repeat;
+}
+
+.templates-list .prefixer .banner {
+	background: #f2f2f2 url(/img/prefixer.png) bottom center no-repeat;
+}
+
+.templates-list .previewer .banner {
+	background: #f2f2f2 url(/img/previewer.png) bottom center no-repeat;
+}
+
+
+@media only screen and (min-width: 590px) {
+	.templates-list .banner {
+		height: 220px;
+	}
+
+	.templates-list .buttons {
+		display: block;
+		float:right;
+	}
+
+	.templates-list h3 {
+		float: left;
+	}
+
+	.templates-list .btn {
+		margin: 0 0 0 10px;
+		float: left;
+	}
+
+	.templates-list-grid h3 {
+		text-align: center;
+		display: block;
+		float: none;
+	}
+
+	.templates-list-grid .buttons {
+		display: none;
+	}
+
+	.templates-list-grid li {
+		width: 32%;
+		float: left;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.templates-list-grid li + li {
+		margin: 0 0 0 2%;
+	}
+
+	.thirds.push-right {
+		margin-left: 16.5%;
+	}
+}
+
+@media only screen and (min-width: $break-medium) {
+	.template-container > div {
+		width: 49%;
+		float: left;
+	}
+
+	.template-container > div + div {
+		margin-left: 2%;
+	}
+
+	.template-container .btn {
+		margin: 20px 0 0;
+	}
+}
