@@ -20,254 +20,165 @@ customers:
     company: Union
 ---
 
-<div class="switcher"><a href="#" class="active" data-type="developers">Developers</a><a href="#" data-type="marketers">Clients</a></div>
+<div class="switcher">
+	<a href="#" class="btn btn-large active" data-type="developers">Developers</a>
+	<a href="#" class="btn btn-large" data-type="marketers">Clients</a>
+</div>
 
 <div class="developer-toggle">
-  <section class="lp alternate">
-  	<div class="container">
-  		<div class="text">
-  			<h3 class="editable"><span class="step-number">1</span> Sync</h3>
-  			<p class="editable">Create a repository in GitHub or Bitbucket with your <a href="http://jekyllrb.com">Jekyll</a> or static site. You create and control 100% of the source code.</p>
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3 class="editable"><span class="step-number">1</span> Sync</h3>
+				<p class="editable">Create a repository in GitHub or Bitbucket with your <a href="http://jekyllrb.com">Jekyll</a> or static site. You create and control 100% of the source code.</p>
 
-        <p> Connect your repository to CloudCannon and it will download and keep future updates in sync for you. </p>
-  		</div>
-  		<div class="image">
-  			<div class="fake-browser-ui" style="overflow: visible;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-  				<img src="/img/home/filebrowser_2.png" width="550" alt="Uploading to a site" />
-  				<img src="/img/landing_pages/how-it-works/storage.png" class="big-badge" alt="Add your files with Upload, GitHub or Bitbucket" />
-  			 </div>
-  		</div>
-  	</div>
-  </section>
+				<p> Connect your repository to CloudCannon and it will download and keep future updates in sync for you. </p>
+			</div>
+			<div class="image">
+				<div class="screenshot">
+					<img src="/img/home/filebrowser_2.png" width="550" alt="Uploading to a site" />
+					<img src="/img/landing_pages/how-it-works/storage.png" class="big-badge" alt="Add your files with Upload, GitHub or Bitbucket" />
+				 </div>
+			</div>
+		</div>
+	</section>
 
-  <section class="lp alternate">
-  	<div class="container">
-  		<div class="text">
-  			<h3 class="editable"><span class="step-number">2</span> Live!</h3>
-  			<p class="editable">Your site is live on the web. CloudCannon optimizes Javascript, CSS and other assets so your site loads insanely fast.</p>
-  		</div>
-  		<div class="image">
-  			<div class="fake-browser-ui">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-  				<div class="slideshow">
-  					{% for customer in page.customers %}
-  					<img src="{{customer.image_path}}" class="slide
-  					{% if forloop.first %}
-  					  visible
-  					{% endif %}
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3 class="editable"><span class="step-number">2</span> Live!</h3>
+				<p class="editable">Your site is live on the web. CloudCannon optimizes Javascript, CSS and other assets so your site loads insanely fast.</p>
+			</div>
+			<div class="image">
+				<div class="screenshot">
+					<div class="slideshow">
+						{% for customer in page.customers %}
+						<img src="{{customer.image_path}}" class="slide
+						{% if forloop.first %}
+						  visible
+						{% endif %}
 
-  					" width="550px" height="344px" alt="{{customer.company}}" />
-  					{% endfor %}
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-  </section>
+						" width="550px" height="344px" alt="{{customer.company}}" />
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <section class="lp alternate">
-  	<div class="container">
-  		<div class="text">
-  			<h3 class="editable"><span class="step-number">3</span> Share</h3>
-  			<p class="editable">Share your CloudCannon site with the <strong>Developers</strong> and <strong>Clients</strong> on your team.</p>
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3 class="editable"><span class="step-number">3</span> Share</h3>
+				<p class="editable">Share your CloudCannon site with the <strong>Developers</strong> and <strong>Clients</strong> on your team.</p>
 
-  			<p> <strong>Clients</strong> get a beautiful interface for updating Blogs, Collections and Front Matter. To make content on a page editable for <strong>Clients</strong> add <code>class="editable"</code> to elements in the HTML. </p>
-  		</div>
-  		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
+				<p> <strong>Clients</strong> get a beautiful interface for updating Blogs, Collections and Front Matter. To make content on a page editable for <strong>Clients</strong> add <code>class="editable"</code> to elements in the HTML. </p>
+			</div>
+			<div class="image">
+				<div class="proportional-iframe">
+					<div class="proportional-iframe-wrapper">
+						<img class="ratio" src="http://placehold.it/110x53"/>
+						<iframe width="550" height="265" src="//www.youtube.com/embed/FOYDMD1jA-0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=FOYDMD1jA-0" frameborder="0" allowfullscreen=""></iframe>
+					</div>
+				</div>
+			 </div>
+		</div>
+	</section>
 
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img class="ratio" src="http://placehold.it/110x53"/>
-  						<iframe width="550" height="265" src="//www.youtube.com/embed/FOYDMD1jA-0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=FOYDMD1jA-0" frameborder="0" allowfullscreen=""></iframe>
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
-  	</div>
-  </section>
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3 class="editable"><span class="step-number">4</span> Build your own CMS components</h3>
+				<p class="editable"> Using <a href="http://jekyllrb.com/docs/collections/">Collections</a> or <a href="http://jekyllrb.com/docs/frontmatter/">Front Matter</a> you can use YAML to build your own interface for updating complex content or metadata. </p>
 
-  <section class="lp alternate">
-  	<div class="container">
-  		<div class="text">
-  			<h3 class="editable"><span class="step-number">4</span> Build your own CMS components</h3>
-  			<p class="editable"> Using <a href="http://jekyllrb.com/docs/collections/">Collections</a> or <a href="http://jekyllrb.com/docs/frontmatter/">Front Matter</a> you can use YAML to build your own interface for updating complex content or metadata. </p>
+				<p> You can build controls to manage any content on your site including photos in a gallery, the page title or even hiding a page section.  </p>
+			</div>
+			<div class="image">
+				<img class="screenshot" src="/img/landing_pages/how-it-works/yaml.png" width="550" alt="YAML Editor" />
+			 </div>
+		</div>
+	</section>
 
-        <p> You can build controls to manage any content on your site including photos in a gallery, the page title or even hiding a page section.  </p>
-  		</div>
-  		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3 class="editable"><span class="step-number">5</span> Work your way</h3>
+				<p class="editable">You can continue working in your local environment with your favourite tools. To sync changes to CloudCannon just push to your repository. </p>
 
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img src="/img/landing_pages/how-it-works/yaml.png" width="550" alt="YAML Editor" />
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
-  	</div>
-  </section>
+				<p> Changes made in CloudCannon also get pushed back to the repository so you can always pull in an up-to-date version of the site. </p>
+			</div>
+			<div class="image">
+				<img class="screenshot" src="/img/landing_pages/how-it-works/atom.png" width="550" alt="Atom Editor" />
+			</div>
+		</div>
+	</section>
+	</div>
 
-  <section class="lp alternate">
-  	<div class="container">
-  		<div class="text">
-  			<h3 class="editable"><span class="step-number">5</span> Work your way</h3>
-  			<p class="editable">You can continue working in your local environment with your favourite tools. To sync changes to CloudCannon just push to your repository. </p>
+	<div class="marketing-toggle" style="display:none">
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3 class="editable"><span class="step-number">1</span> Preview</h3>
+				<p class="editable">Once you share the site with your client, they can login and preview their site.</p>
+			</div>
+			<div class="image">
+				<img class="screenshot" src="/img/landing_pages/how-it-works/preview.png" width="550" alt="Preview" />
+			</div>
+		</div>
+	</section>
 
-  			<p> Changes made in CloudCannon also get pushed back to the repository so you can always pull in an up-to-date version of the site. </p>
-  		</div>
-  		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3 class="editable"><span class="step-number">2</span> Update Content</h3>
+				<p class="editable"> Yellow boxes indicate the content they can update. If they click on one and update content directly on the page. What they see is exactly what it will look like on the live site. </p>
+			</div>
+			<div class="image">
+				<img class="screenshot" src="/img/landing_pages/how-it-works/editing.png" width="550" alt="Editing" />
+			</div>
+		</div>
+	</section>
 
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img src="/img/landing_pages/how-it-works/atom.png" width="550" alt="Atom Editor" />
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
-  	</div>
-  </section>
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3 class="editable"><span class="step-number">3</span> Manage the Blog</h3>
+				<p class="editable"> If their site has a blog or collections they can manage all posts easily and visually. No coding required. </p>
+			</div>
+			<div class="image">
+				<img class="screenshot" src="/img/landing_pages/how-it-works/blog.png" width="550" alt="Blog" />
+			 </div>
+		</div>
+	</section>
+
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3 class="editable"><span class="step-number">4</span> Complex Content</h3>
+				<p class="editable"> You can even manage complex content like photo galleries, products or the page title using a simple interface. </p>
+			</div>
+			<div class="image">
+				<img class="screenshot" src="/img/landing_pages/how-it-works/yaml-agency.png" width="550" alt="YAML Editor" />
+			 </div>
+		</div>
+	</section>
+
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3 class="editable"><span class="step-number">5</span> Live</h3>
+				<p class="editable">Saved changes are instantly pushed to the live website. They can control over all the content on their site. </p>
+			</div>
+			<div class="image">
+				<img class="screenshot" src="/img/landing_pages/how-it-works/live.png" width="550" alt="Live site" />
+			</div>
+		</div>
+	</section>
 </div>
 
-<div class="marketing-toggle" style="display:none">
-  <section class="lp alternate">
-  	<div class="container">
-  		<div class="text">
-  			<h3 class="editable"><span class="step-number">1</span> Preview</h3>
-  			<p class="editable">Once you share the site with your client, they can login and preview their site.</p>
-  		</div>
-  		<div class="image">
-  			<div class="fake-browser-ui" style="overflow: visible;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-  				<img src="/img/landing_pages/how-it-works/preview.png" width="550" alt="Preview" />
-  			 </div>
-  		</div>
-  	</div>
-  </section>
-
-  <section class="lp alternate">
-  	<div class="container">
-  		<div class="text">
-  			<h3 class="editable"><span class="step-number">2</span> Update Content</h3>
-  			<p class="editable"> Yellow boxes indicate the content they can update. If they click on one and update content directly on the page. What they see is exactly what it will look like on the live site. </p>
-  		</div>
-  		<div class="image">
-  			<div class="fake-browser-ui">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-          <img src="/img/landing_pages/how-it-works/editing.png" width="550" alt="Editing" />
-  			</div>
-  		</div>
-  	</div>
-  </section>
-
-  <section class="lp alternate">
-  	<div class="container">
-  		<div class="text">
-  			<h3 class="editable"><span class="step-number">3</span> Manage the Blog</h3>
-  			<p class="editable"> If their site has a blog or collections they can manage all posts easily and visually. No coding required. </p>
-  		</div>
-  		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img src="/img/landing_pages/how-it-works/blog.png" width="550" alt="Blog" />
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
-  	</div>
-  </section>
-
-  <section class="lp alternate">
-  	<div class="container">
-  		<div class="text">
-  			<h3 class="editable"><span class="step-number">4</span> Complex Content</h3>
-  			<p class="editable"> You can even manage complex content like photo galleries, products or the page title using a simple interface. </p>
-  		</div>
-  		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img src="/img/landing_pages/how-it-works/yaml-agency.png" width="550" alt="YAML Editor" />
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
-  	</div>
-  </section>
-
-  <section class="lp alternate">
-  	<div class="container">
-  		<div class="text">
-  			<h3 class="editable"><span class="step-number">5</span> Live</h3>
-  			<p class="editable">Saved changes are instantly pushed to the live website. They can control over all the content on their site. </p>
-      </div>
-  		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img src="/img/landing_pages/how-it-works/live.png" width="550" alt="Live site" />
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
-  	</div>
-  </section>
-</div>
-
-<section>
+<section class="bright-section centered">
 	<div class="container">
-     <h3 class="center-text"> Use CloudCannon on your next client site </h3>
-     <a href="https://app.cloudcannon.com/users/sign_up" class="btn">Sign up free today</a>
-  </div>
+		<h2>Use CloudCannon on your next client site</h2>
+		<p><a href="/contact/" class="btn btn-primary btn-large btn-block btn-centered">Get in touch today</a></p>
+	</div>
 </section>

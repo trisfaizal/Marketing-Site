@@ -10,12 +10,12 @@
 }
 
 .templates-list li {
-	border: 1px solid #ccc;
+	@extend .screenshot;
 	background: #fff;
 }
 
 .templates-list li + li {
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 .templates-list .banner {
@@ -47,6 +47,7 @@
 	background: rgba(0,0,0,0.5);
 	color: #fff;
 	padding: 0 10px;
+	text-decoration: none;
 }
 
 .templates-list .buttons {

@@ -1,22 +1,7 @@
 // TODO extend .screenshot
-.fake-browser-ui {
-	padding: 20px 0 0;
-	border-radius: 3px;
-	border-bottom: 2px solid #ccc;
-	background: #ddd;
-	display: inline-block;
+.screenshot {
 	position: relative;
-	width:95%;
 	line-height: 0;
-	overflow:hidden;
-
-	.frame {
-		display: block;
-		height: 15px;
-		position: absolute;
-		top:5px;
-		left: 1px;
-	}
 
 	.badge {
 		position: absolute;
@@ -33,39 +18,13 @@
 		width: 70%;
 		left: 15%;
 	}
-
-
-	span {
-		height: 8px;
-		width: 8px;
-		border-radius: 8px;
-		background-color: #eee;
-		border:1px solid #dadada;
-		float: left;
-		margin: 0 0 0 4px;
-	}
 }
 
 @media only screen and (min-width: $break-large) {
-	.fake-browser-ui .badge {
+	.screenshot .badge {
 		left: auto;
 		right: -30px;
 		bottom: -20px;
 		margin: 0;
-	}
-
-	.fake-browser-ui {
-		width: auto;
-	}
-
-	.fake-browser-ui.framer {
-		width: 95%;
-		max-width: 650px;
-	}
-
-	.image .fake-browser-ui.framer,
-	.image .fake-browser-ui.framer img,
-	.image .fake-browser-ui.framer iframe {
-		max-width: 550px;
 	}
 }

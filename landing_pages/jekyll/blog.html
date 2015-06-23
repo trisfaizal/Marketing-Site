@@ -21,26 +21,16 @@ customers:
 
 <header style="overflow: visible;">
 	<div class="container">
-		<h2 style="padding: 0 0 20px 0; font-size: 36px">
-			<span style="font-size: 1.5em">A Beautiful Jekyll Blog Editor</span> <br>
-		</h2>
+		<h2>A Beautiful Jekyll Blog Editor</h2>
 
-		<div class="fake-browser-ui framer">
-			<div class="frame">
-				<span></span>
-				<span></span>
-				<span></span>
+		<div class="proportional-iframe">
+			<div class="proportional-iframe-wrapper">
+				<img class="ratio" src="/img/16x10.gif" alt="ratio image"/>
+				<iframe width="700" height="438" src="//www.youtube.com/embed/fzrcjlqBVjs?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=fzrcjlqBVjs" frameborder="0" allowfullscreen></iframe>
 			</div>
+		</div>
 
-			<div class="proportional-iframe">
-				<div class="proportional-iframe-wrapper">
-					<img class="ratio" src="/img/16x10.gif" alt="ratio image"/>
-					<iframe width="700" height="438" src="//www.youtube.com/embed/fzrcjlqBVjs?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=fzrcjlqBVjs" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
-		 </div>
-
-		 <div><a href="https://app.cloudcannon.com/users/sign_up" class="btn sign-up">Start Free Today</a></div>
+		<p><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Sign Up Free Today</a></p>
 	</div>
 </header>
 
@@ -77,12 +67,8 @@ customers:
 			<p class="editable">Upload your static or Jekyll website files to CloudCannon in the browser. If your files are on GitHub, Dropbox or FTP, we can pull and keep them in sync for you.</p>
 		</div>
 		<div class="image">
-			<div class="fake-browser-ui" style="overflow: visible;">
-				<div class="frame">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
+			<div class="screenshot" style="overflow: visible;">
+
 				<img src="/img/home/filebrowser_2.png" width="550" alt="Uploading to a site" />
 				<img src="/img/home/filebrowser-badge.png" class="big-badge" alt="Add your files with Upload, GitHub or Dropbox" />
 			 </div>
@@ -97,12 +83,7 @@ customers:
 			<p class="editable">See your site live on the web. Your website is hosted by CloudCannon or any other hosting service such as GitHub Pages.</p>
 		</div>
 		<div class="image">
-			<div class="fake-browser-ui">
-				<div class="frame">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
+			<div class="screenshot">
 				<div class="slideshow">
 					{% for customer in page.customers %}
 					<img src="{{customer.image_path}}" class="slide
@@ -126,48 +107,21 @@ customers:
 			<p class="editable">Your non-technical team make updates directly on the page, what they see is what they get.</p>
 		</div>
 		<div class="image">
-			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-				<div class="frame">
-					<span></span>
-					<span></span>
-					<span></span>
+			<div class="proportional-iframe">
+				<div class="proportional-iframe-wrapper">
+					<img class="ratio" src="http://placehold.it/110x53"/>
+					<iframe width="550" height="265" src="//www.youtube.com/embed/FOYDMD1jA-0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=FOYDMD1jA-0" frameborder="0" allowfullscreen=""></iframe>
 				</div>
-
-				<div class="proportional-iframe">
-					<div class="proportional-iframe-wrapper">
-						<img class="ratio" src="http://placehold.it/110x53"/>
-						<iframe width="550" height="265" src="//www.youtube.com/embed/FOYDMD1jA-0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=FOYDMD1jA-0" frameborder="0" allowfullscreen=""></iframe>
-					</div>
-				</div>
-			 </div>
+			</div>
 		 </div>
 	</div>
 </section>
 
-<section class="bright-section pushing-boundaries">
-	<div class="container">
-		<div class="text">
-			<h2>The Power of Jekyll</h2>
-			<p>Blogging, updatable photo galleries and documentation websites are possible with CloudCannon's Jekyll Integration</p>
-			<div><a href="#" data-video-id="jlAtW1AyZA4" class="btn small-btn">Watch Overview Video</a></div>
-		</div>
-		<div class="image">
-			<img src="/img/home/cloudcannon_and_jekyll.png" class="first" width="683" alt="CloudCannon and Jekyll" style="margin: 50px 0 0 0;" />
-		</div>
-	</div>
-</section>
+{% include jekyll-callout.html %}
 
 <section class="centered">
 	<div class="container">
-		<h3>Create Jekyll websites your clients can update</h3>
-		<div><a href="https://app.cloudcannon.com/users/sign_up" class="btn sign-up">Start Free Today</a></div>
+		<h2>Create Jekyll websites your clients can update</h2>
+		<p><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Sign Up Free Today</a></p>
 	</div>
 </section>
-
-<div class="coverage-banner">
-	<img src="/img/coverage/tc.png" alt="TechCrunch" />
-	<img src="/img/coverage/yahoo_news.png" alt="Yahoo News" />
-	<img src="/img/coverage/tnw.png" alt="The Next Web"/>
-	<img src="/img/coverage/tuts.png" alt="Tuts+"/>
-	<img src="/img/coverage/appstorm.png" alt="Appstorm"/>
-</div>

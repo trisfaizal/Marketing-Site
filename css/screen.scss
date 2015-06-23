@@ -26,6 +26,7 @@ $break-large: 700px;
 
 // Page styles
 @import "blog";
+@import "blog";
 @import "pricing";
 @import "staff-profiles";
 @import "freebies";
@@ -36,3 +37,6 @@ $break-large: 700px;
 @import "browser-wrapper";
 @import "slideshow";
 @import "social";
+
+@import "blog/quotes";
+@import "blog/services";

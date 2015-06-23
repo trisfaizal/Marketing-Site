@@ -20,7 +20,10 @@ customers:
     company: Union
 ---
 
-<div class="switcher"><a href="#" class="active" data-type="developers">Developers</a><a href="#" data-type="marketers">Non-Developers</a></div>
+<div class="switcher">
+	<a href="#" class="btn btn-large active" data-type="developers">Developers</a>
+	<a href="#" class="btn btn-large" data-type="marketers">Non-Developers</a>
+</div>
 
 <div class="developer-toggle">
   <section class="lp alternate">
@@ -32,15 +35,10 @@ customers:
         <p> Connect your repository to CloudCannon and it will download and keep future updates in sync for you. </p>
   		</div>
   		<div class="image">
-  			<div class="fake-browser-ui" style="overflow: visible;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
+  			<div class="screenshot">
   				<img src="/img/home/filebrowser_2.png" width="550" alt="Uploading to a site" />
   				<img src="/img/landing_pages/how-it-works/storage.png" class="big-badge" alt="Add your files with Upload, GitHub or Bitbucket" />
-  			 </div>
+  			</div>
   		</div>
   	</div>
   </section>
@@ -52,12 +50,7 @@ customers:
   			<p class="editable">Your site is live on the web. CloudCannon optimizes Javascript, CSS and other assets so your site loads insanely fast.</p>
   		</div>
   		<div class="image">
-  			<div class="fake-browser-ui">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
+  			<div class="screenshot">
   				<div class="slideshow">
   					{% for customer in page.customers %}
   					<img src="{{customer.image_path}}" class="slide
@@ -82,21 +75,13 @@ customers:
   			<p> <strong>Non-Developers</strong> get a beautiful interface for updating Blogs, Collections and Front Matter. To make content on a page editable for <strong>Non-Developers</strong> add <code>class="editable"</code> to elements in the HTML. </p>
   		</div>
   		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img class="ratio" src="http://placehold.it/110x53"/>
-  						<iframe width="550" height="265" src="//www.youtube.com/embed/FOYDMD1jA-0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=FOYDMD1jA-0" frameborder="0" allowfullscreen=""></iframe>
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
+  			<div class="proportional-iframe">
+				<div class="proportional-iframe-wrapper">
+					<img class="ratio" src="http://placehold.it/110x53"/>
+					<iframe width="550" height="265" src="//www.youtube.com/embed/FOYDMD1jA-0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=FOYDMD1jA-0" frameborder="0" allowfullscreen=""></iframe>
+				</div>
+			</div>
+  		</div>
   	</div>
   </section>
 
@@ -109,20 +94,8 @@ customers:
         <p> You can build controls to manage any content on your site including photos in a gallery, the page title or even hiding a page section.  </p>
   		</div>
   		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img src="/img/landing_pages/how-it-works/yaml.png" width="550" alt="YAML Editor" />
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
+  			<img class="screenshot" src="/img/landing_pages/how-it-works/yaml.png" width="550" alt="YAML Editor" />
+		</div>
   	</div>
   </section>
 
@@ -135,21 +108,9 @@ customers:
   			<p> Changes made in CloudCannon also get pushed back to the repository so you can always pull in an up-to-date version of the site. </p>
   		</div>
   		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img src="/img/landing_pages/how-it-works/atom.png" width="550" alt="Atom Editor" />
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
-  	</div>
+  			<img class="screenshot" src="/img/landing_pages/how-it-works/atom.png" width="550" alt="Atom Editor" />
+		</div>
+    </div>
   </section>
 </div>
 
@@ -161,14 +122,7 @@ customers:
   			<p class="editable">Once your <strong>Developer</strong> shares the site with you, login to CloudCannon get a live preview of the site.</p>
   		</div>
   		<div class="image">
-  			<div class="fake-browser-ui" style="overflow: visible;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-  				<img src="/img/landing_pages/how-it-works/preview.png" width="550" alt="Preview" />
-  			 </div>
+  			<img class="screenshot" src="/img/landing_pages/how-it-works/preview.png" width="550" alt="Preview" />
   		</div>
   	</div>
   </section>
@@ -180,14 +134,7 @@ customers:
   			<p class="editable"> Yellow boxes indicate the content you can update. Click on one and update content directly on the page. What you see is exactly what it will look like on the live site. </p>
   		</div>
   		<div class="image">
-  			<div class="fake-browser-ui">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-          <img src="/img/landing_pages/how-it-works/editing.png" width="550" alt="Editing" />
-  			</div>
+            <img class="screenshot" src="/img/landing_pages/how-it-works/editing.png" width="550" alt="Editing" />
   		</div>
   	</div>
   </section>
@@ -199,20 +146,8 @@ customers:
   			<p class="editable"> If your site has a blog or collections you can manage all posts easily and visually. No coding required. </p>
   		</div>
   		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img src="/img/landing_pages/how-it-works/blog.png" width="550" alt="Blog" />
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
+  			<img class="screenshot" src="/img/landing_pages/how-it-works/blog.png" width="550" alt="Blog" />
+		</div>
   	</div>
   </section>
 
@@ -223,20 +158,8 @@ customers:
   			<p class="editable"> You can even manage complex content like photo galleries, products or the page title using a simple interface. </p>
   		</div>
   		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img src="/img/landing_pages/how-it-works/yaml.png" width="550" alt="YAML Editor" />
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
+  			<img class="screenshot" src="/img/landing_pages/how-it-works/yaml.png" width="550" alt="YAML Editor" />
+		</div>
   	</div>
   </section>
 
@@ -245,29 +168,16 @@ customers:
   		<div class="text">
   			<h3 class="editable"><span class="step-number">5</span> Live</h3>
   			<p class="editable">Saved changes are instantly pushed to the live website. Have control over all the content on your site. </p>
-      </div>
+        </div>
   		<div class="image">
-  			<div class="fake-browser-ui framer" style="margin: 60px 0;">
-  				<div class="frame">
-  					<span></span>
-  					<span></span>
-  					<span></span>
-  				</div>
-
-  				<div class="proportional-iframe">
-  					<div class="proportional-iframe-wrapper">
-  						<img src="/img/landing_pages/how-it-works/live.png" width="550" alt="Live site" />
-  					</div>
-  				</div>
-  			 </div>
-  		 </div>
-  	</div>
+  			<img class="screenshot" src="/img/landing_pages/how-it-works/live.png" width="550" alt="Live site" />
+        </div>
   </section>
 </div>
 
-<section>
+<section class="bright-section centered">
 	<div class="container">
-     <h3 class="center-text"> Use CloudCannon on your next site </h3>
-     <a href="https://app.cloudcannon.com/users/sign_up" class="btn">Sign up free today</a>
-  </div>
+		<h2>Use CloudCannon on your next site</h2>
+		<p><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-primary btn-large btn-block btn-centered">Sign up free today</a></p>
+	</div>
 </section>
