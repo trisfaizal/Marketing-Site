@@ -16,14 +16,23 @@ CloudCannon is kindly giving the power of Smileys to everyone. If you want to us
 
 ### Step 1 - Add the happiness
 Add the smileys.css file to the head.
-<pre class="prettyprint linenums">&lt;link rel="stylesheet" href="smiley.css"&gt;</pre>
+
+{% highlight html %}
+<link rel="stylesheet" href="smiley.css">
+{% endhighlight %}
 
 Add smileys.js to the end of the body after JQuery
-<pre class="prettyprint linenums">&lt;script src="smileys.js"&gt;&lt;/script&gt;</pre>
+
+{% highlight html %}
+<script src="smileys.js"></script>
+{% endhighlight %}
 
 ### Step 2 - Smilify
 Just call smilify on any element as you would any other JQuery function.
-<pre class="prettyprint linenums">$("selector").smilify();</pre>
+
+{% highlight javascript %}
+$("selector").smilify();
+{% endhighlight %}
 
 ### Links
 

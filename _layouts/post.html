@@ -17,6 +17,7 @@ layout: default
 		<p class="post-details"><a href="/blog">Blog</a> | {{ page.category }} | {{ page.header }} <span class="date">{{ page.date | date: "%B %d, %Y" }}</span></p>
 		{{ content | split:'<!-- excerpt stop -->' | last }}
 
+		<hr>
 		<div class="share-options">
 			<div class="fb-share-button share-button push-right" data-href="http://cloudcannon.com{{ page.url }}" data-layout="button_count"></div>
 			<div class="share-button tweak"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://cloudcannon.com{{ page.url }}" data-via="CloudCannonApp">Tweet</a>
@@ -34,7 +35,7 @@ layout: default
 		</div>
 
 		{% if page.author %}
-		<div class="post-author">
+		<div class="post-author clearfix">
 			{% if page.author == "mike" %}
 				{% include /_authors/mike.html %}
 			{% elsif page.author == "yasmin" %}

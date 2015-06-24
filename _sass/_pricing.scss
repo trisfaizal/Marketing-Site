@@ -34,6 +34,11 @@ table.desktop-pricing {
 		width: auto;
 	}
 
+	tr {
+		background: none;
+		border-bottom: 0;
+	}
+
 	.not-available {
 		opacity: 0.1;
 	}
@@ -65,10 +70,16 @@ tr.separator td {
 
 	dt, dd {
 		display: inline;
+		float: none;
+		white-space: normal;
+		width: auto;
 	}
 
-	dt + dd:before {
-		content: " - ";
+	dt + dd {
+		margin: 0;
+		&:before {
+			content: " - ";
+		}
 	}
 
 	dt:before {

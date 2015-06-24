@@ -156,10 +156,7 @@ Today I'm rounding up the best of these services.
 		<li><a href="https://raygun.io/"><img src="/img/blog/apps-for-static-sites/raygun.png">Raygun</a></li>
 	</ul>
 </div>
-<br class="clear" />
-<br />
 
 This is only scratching the surface of the apps and services available for static websites.
 
 What services have I missed?
-

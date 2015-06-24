@@ -1,11 +1,11 @@
 @-webkit-keyframes materialResponse {
-    0% { 
+    0% {
         width: 0;
         height: 0;
         margin: 0;
         background: rgba(255,255,255,0.1);
     }
-    100% { 
+    100% {
         width: 250%;
         height: 250%;
         margin: -125%;
@@ -14,13 +14,13 @@
 }
 
 @keyframes materialResponse {
-    0% { 
+    0% {
         width: 0;
         height: 0;
         margin: 0;
         background: rgba(255,255,255,0.1);
     }
-    100% { 
+    100% {
         width: 250%;
         height: 250%;
         margin: -125%;
@@ -32,7 +32,7 @@
     width: 360px;
     height: 360px;
     margin: 40px auto;
-    font-family: "Roboto", Arial;
+    font-family: "Roboto", Arial !important;
 }
 
 .material-grid section,
@@ -76,6 +76,7 @@ section.material-standalone-section {
     height: 70px;
     margin: 55px;
     position: relative;
+    font-family: "Roboto", Arial !important;
 }
 
 .material-icon span,
@@ -234,15 +235,15 @@ bottom: -10px;
     transform: translateY(32px) rotate(180deg);
 }
 
-.plus-one:before, 
-.plus-one:after, 
-.plus-two:before, 
+.plus-one:before,
+.plus-one:after,
+.plus-two:before,
 .plus-two:after {
     text-align: center !important;
     background: transparent !important;
 }
 
-.plus-one:before, 
+.plus-one:before,
 .plus-two:after {
     color: #fff;
     font-size: 52px;
@@ -258,25 +259,25 @@ bottom: -10px;
 }
 
 .material-green,
-.material-green .material-icon:before, 
+.material-green .material-icon:before,
 .material-green .material-icon:after { background: #4CAF50; }
 
 .material-amber,
-.material-amber .material-icon:before, 
+.material-amber .material-icon:before,
 .material-amber .material-icon:after { background: #FFC107; }
 
 .material-blue,
-.material-blue .material-icon:before, 
+.material-blue .material-icon:before,
 .material-blue .material-icon:after { background: #2196F3; }
 
 .material-red,
-.material-red .material-icon:before, 
+.material-red .material-icon:before,
 .material-red .material-icon:after { background: #F44336; }
 
-.visible-masks .material-icon:before, 
+.visible-masks .material-icon:before,
 .visible-masks .material-icon:after { background: #000; background: rgba(0,0,0,0.5); }
 
-.no-mask .material-icon:before, 
+.no-mask .material-icon:before,
 .no-mask .material-icon:after { display: none; }
 
 @-webkit-keyframes spin {
@@ -291,54 +292,54 @@ bottom: -10px;
 
 @-webkit-keyframes leader {
     0% { -webkit-transform: rotate(0); transform: rotate(0); }
-    12% { 
-        -webkit-transform: rotate(90deg); 
-        transform: rotate(90deg); 
+    12% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
         border-bottom-color: transparent;
     }
-    12.00001% { 
+    12.00001% {
         border-bottom-color: #fff;
     }
     25% {
         -webkit-transform: rotate(180deg);
-        transform: rotate(180deg); 
+        transform: rotate(180deg);
         border-bottom-color: #fff;
     }
-    37.5% { 
-        -webkit-transform: rotate(180deg); 
-        transform: rotate(180deg); 
+    37.5% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
         border-bottom-color: #fff;
         border-right-color: transparent;
     }
     37.50001%, 50% {
         -webkit-transform: rotate(180deg);
-        transform: rotate(180deg); 
+        transform: rotate(180deg);
         border-bottom-color: transparent;
         border-right-color: transparent;
     }
 
     /* --- */
-    67.5% { 
-        -webkit-transform: rotate(270deg); 
-        transform: rotate(270deg); 
+    67.5% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
         border-bottom-color: transparent;
         border-right-color: transparent;
     }
-    67.50001% { 
-        -webkit-transform: rotate(270deg); 
-        transform: rotate(270deg); 
+    67.50001% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
         border-bottom-color: #fff;
         border-right-color: transparent;
     }
-    75%, 87.5% { 
-        -webkit-transform: rotate(360deg); 
-        transform: rotate(360deg); 
+    75%, 87.5% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
         border-bottom-color: #fff;
         border-right-color: transparent;
     }
     87.50001%, 100% {
         -webkit-transform: rotate(360deg);
-        transform: rotate(360deg); 
+        transform: rotate(360deg);
         border-bottom-color: transparent;
         border-right-color: transparent;
     }
@@ -346,54 +347,54 @@ bottom: -10px;
 
 @keyframes leader {
     0% { -webkit-transform: rotate(0); transform: rotate(0); }
-    12% { 
-        -webkit-transform: rotate(90deg); 
-        transform: rotate(90deg); 
+    12% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
         border-bottom-color: transparent;
     }
-    12.00001% { 
+    12.00001% {
         border-bottom-color: #fff;
     }
     25% {
         -webkit-transform: rotate(180deg);
-        transform: rotate(180deg); 
+        transform: rotate(180deg);
         border-bottom-color: #fff;
     }
-    37.5% { 
-        -webkit-transform: rotate(180deg); 
-        transform: rotate(180deg); 
+    37.5% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
         border-bottom-color: #fff;
         border-right-color: transparent;
     }
     37.50001%, 50% {
         -webkit-transform: rotate(180deg);
-        transform: rotate(180deg); 
+        transform: rotate(180deg);
         border-bottom-color: transparent;
         border-right-color: transparent;
     }
 
     /* --- */
-    67.5% { 
-        -webkit-transform: rotate(270deg); 
-        transform: rotate(270deg); 
+    67.5% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
         border-bottom-color: transparent;
         border-right-color: transparent;
     }
-    67.50001% { 
-        -webkit-transform: rotate(270deg); 
-        transform: rotate(270deg); 
+    67.50001% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
         border-bottom-color: #fff;
         border-right-color: transparent;
     }
-    75%, 87.5% { 
-        -webkit-transform: rotate(360deg); 
-        transform: rotate(360deg); 
+    75%, 87.5% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
         border-bottom-color: #fff;
         border-right-color: transparent;
     }
     87.50001%, 100% {
         -webkit-transform: rotate(360deg);
-        transform: rotate(360deg); 
+        transform: rotate(360deg);
         border-bottom-color: transparent;
         border-right-color: transparent;
     }
@@ -402,24 +403,24 @@ bottom: -10px;
 @-webkit-keyframes trailer {
     0% { -webkit-transform: rotate(0); transform: rotate(0); }
     25% { -webkit-transform: rotate(0); transform: rotate(0); }
-    37.5% { 
-        -webkit-transform: rotate(90deg); 
-        transform: rotate(90deg); 
+    37.5% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
     50% {
         -webkit-transform: rotate(180deg);
-        transform: rotate(180deg); 
+        transform: rotate(180deg);
         border-bottom-color: transparent;
         border-right-color: transparent;
     }
     75% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
-    87.5% { 
-        -webkit-transform: rotate(270deg); 
-        transform: rotate(270deg); 
+    87.5% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
     }
     100% {
         -webkit-transform: rotate(360deg);
-        transform: rotate(360deg); 
+        transform: rotate(360deg);
         border-bottom-color: transparent;
         border-right-color: transparent;
     }
@@ -428,24 +429,24 @@ bottom: -10px;
 @keyframes trailer {
     0% { -webkit-transform: rotate(0); transform: rotate(0); }
     25% { -webkit-transform: rotate(0); transform: rotate(0); }
-    37.5% { 
-        -webkit-transform: rotate(90deg); 
-        transform: rotate(90deg); 
+    37.5% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
     50% {
         -webkit-transform: rotate(180deg);
-        transform: rotate(180deg); 
+        transform: rotate(180deg);
         border-bottom-color: transparent;
         border-right-color: transparent;
     }
     75% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
-    87.5% { 
-        -webkit-transform: rotate(270deg); 
-        transform: rotate(270deg); 
+    87.5% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
     }
     100% {
         -webkit-transform: rotate(360deg);
-        transform: rotate(360deg); 
+        transform: rotate(360deg);
         border-bottom-color: transparent;
         border-right-color: transparent;
     }

@@ -17,7 +17,7 @@ There are [a lot](https://www.docker.com/whatisdocker/) of [in depth](http://www
 Docker uses linux containers [(LXC)](https://linuxcontainers.org/) which naturally requires a linux based operating system. So what do you do with your cool coworkers and their Mac laptops? You can use [boot2docker](https://github.com/boot2docker/boot2docker) which sets up a virtual machine behind the scenes so that you can use docker on Windows or OS X. To simplify running our services we made a bash script which names the container based on its folder. We had issues connecting to amazon services from boot2docker due to timeouts. This could be solved by syncing the time with the ntp server, which the script runs each time it starts boot2docker.
 
 
-<pre class="prettyprint linenums large">
+{% highlight bash %}
 #!/bin/bash
 
 path=${PWD##*/}
@@ -57,7 +57,7 @@ docker rm $NAME
 
 #Start the new container
 docker run -d -e "environment=development" -e "USER=$USER" $OPEN --name $NAME cloudcannon/$NAME
-</pre>
+{% endhighlight %}
 
 ###The base image
 

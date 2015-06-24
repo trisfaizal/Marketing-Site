@@ -1,5 +1,6 @@
 .roundup-boxes {
 	ul {
+		@extend .clearfix;
 		list-style: none;
 		text-align: center;
 		font-weight: bold;

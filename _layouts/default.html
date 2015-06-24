@@ -191,5 +191,14 @@
 				"url" : [location.protocol, "//", location.host, location.pathname].join("")
 			});
 		</script>
+		<script type="text/javascript">
+			function isTouchDevice() {
+				return 'ontouchstart' in window || 'onmsgesturechange' in window;
+			};
+
+			if (!isTouchDevice()) {
+				document.body.classList.add("no-touch");
+			}
+		</script>
 	</body>
 </html>
