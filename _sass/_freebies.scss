@@ -10,6 +10,7 @@
 }
 
 .templates-list li {
+	overflow: hidden;
 	@extend .screenshot;
 	background: #fff;
 }
@@ -30,6 +31,11 @@
 	border-top: 1px solid #eee;
 	padding: 15px;
 	position: relative;
+}
+
+.templates-list-grid .details {
+	overflow: visible;
+	padding: 0;
 }
 
 .templates-list h3 {

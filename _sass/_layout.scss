@@ -7,6 +7,10 @@ html {  overflow-x: hidden; }
 	position: relative;
 }
 
+.text-container {
+	text-align: left;
+}
+
 header, .bright-section, .dark-section {
 	padding: 40px 0;
 	text-align: center;
@@ -40,10 +44,10 @@ header {
 	}
 }
 
-section { padding: 1em 0 3em; text-align: center; }
+section { padding: 3em 0 3em; }
 section.alternate { background: #F8F8F8; }
 section.darker { background: #eee; }
-section.vibrant { background: #2B2E31; color: #fff; }
+section.vibrant, footer { background: #2B2E31; color: #fff; }
 section.centered .image { margin: 50px 0 30px; }
 
 section.thin {
@@ -102,22 +106,23 @@ footer {
 	margin: -6px 0 0 -50px;
 }
 
-section.vibrant.footer {
+footer {
 	color: #7C7C7C;
 	position: relative;
 	padding: 30px 0;
+	font-family: 'Open Sans', sans-serif;
 }
 
-section.footer a{
+footer a{
 	color: #7C7C7C;
-}
-
-section.footer a:hover {
-	color: #fff;
 	text-decoration: none;
 }
 
-section.footer .t-and-c {
+footer a:hover {
+	color: #fff;
+}
+
+footer .t-and-c {
 	text-align: center;
 	padding: 0;
 	width: 100%;

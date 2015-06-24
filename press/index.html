@@ -187,42 +187,34 @@ coverage:
 ---
 <section>
 	<div class="container text-container">
-		<div class="col">
-			<h3> Company Info </h3>
+		<h2>Company Info</h2>
+		{% for stat in page.company_stats %}
+			<h4>{{stat[0] | replace:'_',' ' | capitalize}}</h4>
+			<p>{{stat[1]}}</p>
+		{% endfor %}
 
-			<p>
-				{% for stat in page.company_stats %}
-					<strong> {{stat[0] | replace:'_',' ' | capitalize}}: </strong> {{stat[1]}} <br>
-				{% endfor %}
-			</p>
-		</div>
+		<h3>Press Kit</h3>
 
-		<div class="col">
+		<p>Includes logos, screenshots, and team photos.</p>
+		<div><a href="/cc_mediakit.zip" class="btn small-btn" style="margin: 0">Download Mediakit</a></div>
 
-			<h3> Press Kit </h3>
-
-			<p>Includes logos, screenshots, and team photos.</p>
-			<div><a href="/cc_mediakit.zip" class="btn small-btn" style="margin: 0">Download Mediakit</a></div>
-
-			<h3 style="margin-top:35px"> Media Contacts </h3>
-			<p>
-				{% for contact in page.media_contacts %}
-					{{contact.name}}, {{contact.position}} <a href="mailto:{{contact.email}}">Email</a><br>
-				{% endfor %}
-			</p>
-		</div>
-
+		<h3 style="margin-top:35px"> Media Contacts </h3>
+		<p>
+			{% for contact in page.media_contacts %}
+				{{contact.name}}, {{contact.position}} <a href="mailto:{{contact.email}}">Email</a><br>
+			{% endfor %}
+		</p>
 	</div>
 </section>
 <section class="alternate">
 	<div class="container text-container">
 		<div class="milestones">
-			<h3> Milestones </h3>
+			<h2>Milestones</h2>
 			{% for milestone in page.milestones %}
 				<div class="milestone">
 					<img src="{{milestone.logo_path}}" alt="{{milestone.name}}">
-					<h4> {{milestone.date}} </h4>
-					<p><a href="{{milestone.link}}">{{milestone.description}}</a></p>
+					<h4><a href="{{milestone.link}}">{{milestone.description}}</a></h4>
+					<p>{{milestone.date}}</p>
 				</div>
 			{% endfor %}
 		</div>
@@ -230,13 +222,13 @@ coverage:
 </section>
 <section>
 		<div class="container text-container articles">
-			<h3> Featured Articles </h3>
+			<h2>Featured Articles</h2>
 
 			{% for article in page.coverage %}
 			<div class="article">
 				<div class="logo"><img src="{{article.logo_path}}" alt="{{article.name}}"></div>
-				<h4> {{article.date}}  </h4>
-				<p><a target="_blank" href="{{article.link}}">{{article.title}}</a></p>
+				<h4><a target="_blank" href="{{article.link}}">{{article.title}}</a></h4>
+				<p>{{article.date}}</p>
 			</div>
 			{% endfor %}
 		</div>
