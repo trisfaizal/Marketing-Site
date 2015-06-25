@@ -4,5 +4,12 @@ blog_name: The CloudCannon Blog
 blog_description: The CloudCannon Blog
 site_url: http://cloudcannon.com
 collections:
-  jekyll_themes:
-    output: true
+  press:
+    name: Featured Articles
+    output: false
+  milestones:
+    name: Milestones
+    output: false
+  staff:
+    name: Team Members
+    output: false

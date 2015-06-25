@@ -12,21 +12,7 @@ Today we're bringing a new level of simplicity to managing [Jekyll](http://jekyl
 
 At the press of a button, Bitbucket users can turn a repository with a Jekyll site into a live website with a beautiful content management system.
 
-<div class="center-text">
-  <div class="fake-browser-ui framer" style="padding:0">
-    <div class="frame">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="proportional-iframe">
-      <div class="proportional-iframe-wrapper">
-        <img class="ratio" src="/img/16x10.gif" alt="ratio image"/>
-        <iframe width="700" height="438" src="//www.youtube.com/embed/gGZwFvW_U_U?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=gGZwFvW_U_U" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-   </div>
-</div>
+{% include proportional-youtube.html width=16 height=10 factor=70 youtube_id="gGZwFvW_U_U" %}
 
 The workflow is completely seamless. All changes between CloudCannon and Bitbucket are kept in sync so you can always pull a production copy of the site to your local machine.
 
@@ -68,18 +54,4 @@ And also Blogs, Collections and Data Files:
 
 We can't wait to see how you use it. If you're interested in learning more about Jekyll and CloudCannon, check out [Jekyll.tips](http://jekyll.tips) for a Get Started Guide.
 
-<div class="center-text">
-  <div class="fake-browser-ui framer" style="padding:0">
-    <div class="frame">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="proportional-iframe">
-      <div class="proportional-iframe-wrapper">
-        <img class="ratio" src="/img/16x10.gif" alt="ratio image"/>
-        <iframe width="700" height="438" src="//www.youtube.com/embed/Pp3YBk3Jmds?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=Pp3YBk3Jmds" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-   </div>
-</div>
+{% include proportional-youtube.html width=16 height=10 factor=70 youtube_id="Pp3YBk3Jmds" %}

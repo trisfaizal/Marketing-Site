@@ -25,13 +25,11 @@ We found there was a lot of confusion between a "prototyping" cloudvent.net addr
 Don't worry, we still have a free plan but it's now a single cloudvent.net site to give you a taste of CloudCannon.
 
 ## What’s Next? ##
-CloudCannon makes it really easy for you to get websites online for you clients. Now it’s time to take things further. 
+CloudCannon makes it really easy for you to get websites online for you clients. Now it’s time to take things further.
 
 Over the next few months we’re focusing on:
+
 * Making it easier to work in teams on CloudCannon websites
 * We’ve made websites load super fast already. We want to make them load even faster.
 * Adding more power for you guys to create more complex websites on CloudCannon
 * Simplifying the client experience even more
-
-
-

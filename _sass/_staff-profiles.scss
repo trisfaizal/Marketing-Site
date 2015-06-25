@@ -1,0 +1,30 @@
+.profile {
+	p {
+		margin: 0 0  1em 0;
+	}
+
+	img {
+		border-radius: 999px;
+	}
+
+	h3 a {
+		color: #333;
+		text-decoration: none;
+	}
+
+	& + .profile {
+		margin-top: 1.5em;
+	}
+
+	@media only screen and (min-width: $break-large) {
+		text-align: center;
+		display: block;
+		width: 450px;
+		padding: 30px 2%;
+		float: left;
+
+		& + .profile {
+			margin-top: 0;
+		}
+	}
+}

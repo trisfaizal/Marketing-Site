@@ -223,6 +223,23 @@ $(document).ready(function () {
 		return false;
 	});
 
+  $('.switcher a').click(function() {
+    var type = $(this).attr('data-type');
+
+    $('.switcher a').removeClass('active');
+    $(this).addClass('active');
+
+    if (type == "developers") {
+      $('.developer-toggle').show();
+      $('.marketing-toggle').hide();
+    } else {
+      $('.developer-toggle').hide();
+      $('.marketing-toggle').show();
+    }
+
+    return false;
+  });
+
     document.onkeyup = checkESC;
 
     var apiScript = document.createElement('script');

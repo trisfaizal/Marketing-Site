@@ -1,0 +1,76 @@
+.social-icon {
+	display: inline-block;
+	width: 53px;
+	height: 32px;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	text-indent: 200px;
+	overflow: hidden;
+}
+
+a.social-icon { opacity: 0.2; }
+a.social-icon:hover { opacity: 0.5; }
+a.social-icon:active { opacity: 1; }
+
+a.social-icon.white { opacity: 0.7; }
+a.social-icon.white:hover { opacity: 0.85; }
+a.social-icon.white:active { opacity: 1; }
+
+.linkedin { background-image: url(/img/linkedin-black.png); }
+.twitter { background-image: url(/img/twitter-black.png); }
+.facebook { background-image: url(/img/facebook-black.png); }
+
+.social-shares,  .social-shares li {
+	margin: 0 0 1em;
+	padding: 0;
+	list-style: none;
+	line-height: 1;
+}
+
+.social-shares li {
+	display: block;
+	float: left;
+	width: 120px;
+}
+
+.fb_iframe_widget {
+	height: 20px;
+}
+
+.share-options {
+	text-align: center;
+	padding: 5px 0;
+}
+.share-button {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.share-button.tweak {
+	position: relative;
+	top: 11px
+}
+
+.share-button.push-right {
+	padding: 0 20px 0 0;
+}
+
+.twitter-block iframe {
+	width: 100% !important;
+}
+
+
+@media only screen and (min-width: $break-large) {
+	.twitter-tweet {
+		width: 46%;
+		float: left;
+		margin: 10px 2% !important;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;	/* Firefox, other Gecko */
+		box-sizing: border-box;		 /* Opera/IE 8+ */
+	}
+
+	.twitter-tweet:nth-child(even) {
+		clear:left;
+	}
+}

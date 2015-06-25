@@ -1,0 +1,29 @@
+.roundup-boxes {
+	ul {
+		@extend .clearfix;
+		list-style: none;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	li {
+		width: 190px;
+		height: 200px;
+		float: left;
+	}
+
+	img {
+		width: 120px;
+		height:120px;
+		opacity: .8;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	a:hover img {
+		-webkit-transform: scale(1.01);
+		-ms-transform: scale(1.01);
+		transform: scale(1.01);
+		opacity: 1;
+	}
+}

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -45,9 +44,8 @@
 		<link rel="alternate" type="application/rss+xml" title="{{site.blog_name}}" href="{{site.site_url}}/feed/">
 		<link rel="alternate" type="application/atom+xml" title="{{site.blog_name}}" href="{{site.site_url}}/atom_feed/">
 
-		<link href="//fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/prettify.css">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400italic,400,300italic,300,700,700italic|Open+Sans:400italic,600italic,700italic,700,600,400|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/screen.css">
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
@@ -109,31 +107,29 @@
 					<ul class="site">
 						<li>
  							{% if page.url == '/pricing/index.html' %}
-								<a href="/pricing" class="active">Pricing</a>
+								<a href="/pricing/" class="active">Pricing</a>
 							{% else %}
-								<a href="/pricing">Pricing</a>
+								<a href="/pricing/">Pricing</a>
  							{% endif %}
 						</li>
 						<li>
 							{% if page.url == '/blog/index.html' %}
-								<a href="/blog" class="active">Blog</a>
+								<a href="/blog/" class="active">Blog</a>
 							{% else %}
-								<a href="/blog">Blog</a>
+								<a href="/blog/">Blog</a>
 							{% endif %}
 						</li>
 						<li>
-							<a target="_blank" href="http://docs.cloudcannon.com">Docs</a>
-						</li>
-						<li>
 							{% if page.url == '/about/index.html' %}
-								<a href="/about" class="active">About</a>
+								<a href="/about/" class="active">About</a>
 							{% else %}
-								<a href="/about">About</a>
+								<a href="/about/">About</a>
 							{% endif %}
 						</li>
 					</ul>
 
 					<ul class="user">
+						<li><a target="_blank" href="http://docs.cloudcannon.com">Docs</a></li>
 						<li><a href="https://app.cloudcannon.com/">Log in</a></li>
 						<li><a href="https://app.cloudcannon.com/users/sign_up" class="sign-up">Sign Up</a></li>
 					</ul>
@@ -146,25 +142,35 @@
 		{% if page.header %}
 			<header>
 				<div class="container">
-					<h2 class="lone-header">{{ page.header }}</h2>
+					<h2>{{ page.header }}</h2>
 				</div>
 			</header>
 		{% endif %}
 
 		{{ content }}
 
-		<section class="vibrant footer centered">
+		<div class="coverage-banner">
+			<img src="/img/coverage/tc.png" alt="TechCrunch" />
+			<img src="/img/coverage/yahoo_news.png" alt="Yahoo News" />
+			<img src="/img/coverage/tnw.png" alt="The Next Web"/>
+			<img src="/img/coverage/tuts.png" alt="Tuts+"/>
+			<img src="/img/coverage/appstorm.png" alt="Appstorm"/>
+		</div>
+
+		<footer>
 			<a href="https://twitter.com/cloudcannonapp" class="social-icon twitter">Twitter</a>
 			<a href="https://www.facebook.com/CloudCannon" class="social-icon facebook">Facebook</a>
 
 			<ul class="footer_links">
 				<li><a href="/">Home</a></li>
-				<li><a href="http://docs.cloudcannon.com">Docs</a></li>
-				<li><a href="/blog">Blog</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/freebies">Freebies</a></li>
-				<li><a href="/press">Press</a></li>
-				<li><a href="/contact">Contact</a></li>
+				<li><a href="http://docs.cloudcannon.com/">Docs</a></li>
+				<li><a href="/blog/">Blog</a></li>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/freebies/">Freebies</a></li>
+				<li><a href="/agencies/">Agencies</a></li>
+				<li><a href="/enterprise/">Enterprise</a></li>
+				<li><a href="/press/">Press</a></li>
+				<li><a href="/contact/">Contact</a></li>
 			</ul>
 
 			<p class="t-and-c">
@@ -184,6 +190,15 @@
 				"page name" : document.title,
 				"url" : [location.protocol, "//", location.host, location.pathname].join("")
 			});
+		</script>
+		<script type="text/javascript">
+			function isTouchDevice() {
+				return 'ontouchstart' in window || 'onmsgesturechange' in window;
+			};
+
+			if (!isTouchDevice()) {
+				document.body.classList.add("no-touch");
+			}
 		</script>
 	</body>
 </html>
