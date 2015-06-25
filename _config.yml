@@ -10,3 +10,6 @@ collections:
   milestones:
     name: Milestones
     output: false
+  staff:
+    name: Team Members
+    output: false

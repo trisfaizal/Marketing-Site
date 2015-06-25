@@ -2,23 +2,6 @@
 layout: default
 title : About
 header : About
-team:
-  - name: Mike Neumegen
-    image_path: /img/team/mike.jpg
-    position: CEO/Co-founder
-    twitter_handle: mikeneumegen
-  - name: George Phillips
-    image_path: /img/team/george.jpg
-    position: CTO/Co-founder
-    twitter_handle: gphillips_nz
-  - name: Tim Neumegen
-    image_path: /img/team/tim.jpg
-    position: Cloud Engineer
-    twitter_handle: n00begon
-  - name: Ross Phillips
-    image_path: /img/team/ross.jpg
-    position: Application Engineer
-    twitter_handle: rphillips_nz
 ---
 <section>
 	<div class="container text-container">
@@ -44,7 +27,7 @@ team:
 
 <section class="alternate">
 	<div class="container">
-		{% for team_member in page.team %}
+		{% for team_member in site.staff %}
 		<div class="profile">
 			<img src="{{team_member.image_path}}" width="200" height="200" alt="{{team_member.name}}">
 			<h3><a target="_blank" href="https://twitter.com/{{team_member.twitter_handle}}">{{team_member.name}}</a></h3>
