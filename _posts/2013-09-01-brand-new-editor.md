@@ -11,12 +11,16 @@ We found some users were struggling with the old editor especially when it came 
 
 ![New Editor](/img/blog/new_editor.png)
 
-Not only is it __easier__ to use but now you can add an _editable_ class to most elements (not just div's) meaning you have much more control over what your clients can edit. Have an image you want your client to change? Just go: 
+Not only is it __easier__ to use but now you can add an _editable_ class to most elements (not just div's) meaning you have much more control over what your clients can edit. Have an image you want your client to change? Just go:
 
-&lt;img src="abc.jpg" class="editable" /&gt; 
+{% highlight html %}
+	<img src="abc.jpg" class="editable" />
+{% endhighlight %}
 
-How about having your client update a heading? Try: 
+How about having your client update a heading? Try:
 
-&lt;h2 class=”editable”&gt; Change this &lt;/h2&gt;. 
+{% highlight html %}
+	<h2 class=”editable”>Change this</h2>
+{% endhighlight %}
 
 You can do some really powerful things with the new editor. We'd love to hear your experiences with it.

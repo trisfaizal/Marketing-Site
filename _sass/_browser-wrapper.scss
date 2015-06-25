@@ -1,0 +1,30 @@
+// TODO extend .screenshot
+.screenshot {
+	position: relative;
+	line-height: 0;
+
+	.badge {
+		position: absolute;
+		bottom: -50px;
+		left: 50%;
+		margin: 0 0 0 -50px;
+		width: 100px;
+	}
+
+	.big-badge {
+		position: absolute;
+		left: 0;
+		bottom: -30px;
+		width: 70%;
+		left: 15%;
+	}
+}
+
+@media only screen and (min-width: $break-large) {
+	.screenshot .badge {
+		left: auto;
+		right: -30px;
+		bottom: -20px;
+		margin: 0;
+	}
+}

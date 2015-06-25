@@ -1,0 +1,124 @@
+nav {
+	@extend .clearfix;
+	background: #135571;
+	padding: 10px 0;
+	min-height: 60px;
+
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	a {
+		font-family: "Open Sans", sans-serif;
+		text-decoration: none;
+		padding: 0 1em;
+		color: #EEE;
+		font-size: .9em;
+		height: 60px;
+		line-height: 60px;
+		display: block;
+
+		&:hover {
+			background: #195974;
+			color: #eee;
+			text-decoration: none;
+		}
+
+		&:active {
+			background: #27637e;
+		}
+
+		&.active {
+			background: #1e5c77;
+		}
+
+		&.active, &:active {
+			color: #fff;
+			cursor: default;
+		}
+
+		&.active:hover {
+			text-decoration: none;
+		}
+	}
+
+	h1 {
+		margin: 0 0 0 -7px;
+		text-indent: 0;
+
+		a {
+			padding: 7px 16px;
+			height: 46px;
+			line-height: 0;
+			background-color: transparent !important;
+			float: left;
+		}
+	}
+
+	#menu {
+		overflow: hidden;
+		max-height: 0;
+		clear: left;
+
+		&.open {
+			max-height: 9999px;
+		}
+	}
+
+	#menu-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: 1.5em;
+		padding: 0 16px;
+
+		img {
+			margin-top: 15px;
+		}
+	}
+
+	ul.user {
+		border-top: 1px solid #0A4D69;
+	}
+
+	ul.site {
+		padding: 20px 0 0 0;
+	}
+}
+
+@media only screen and (min-width: 820px) {
+	nav, nav #menu {
+		height: 60px !important;
+	}
+
+	nav li, nav a {
+		float: left;
+	}
+
+	nav ul.user {
+		position: absolute;
+		right: 0;
+		border-top: 0;
+	}
+
+	nav ul.site {
+		float: left;
+		padding: 0;
+		clear: none;
+	}
+
+	nav ul.site li {
+		margin: 0 0 0 10px;
+	}
+
+	nav #menu-toggle {
+		display: none !important;
+	}
+
+	nav #menu {
+		max-height: 9999px;
+		clear: none;
+	}
+}

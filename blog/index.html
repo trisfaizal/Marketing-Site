@@ -28,34 +28,35 @@ header : Blog
 			{% endfor %}
 		</ul>
 
+		<hr>
 		<!-- Pagination links -->
 		<div class="pagination">
-		  {% if paginator.previous_page %}
-		    <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Newer Posts</a>
-		  {% else %}
-		    <span class="previous">No Newer Posts</span>
-		  {% endif %}
-		  <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-		  {% if paginator.next_page %}
-		    <a href="{{ paginator.next_page_path }}" class="next">Older Posts &rarr;</a>
-		  {% else %}
-		    <span class="next">No Older Posts</span>
-		  {% endif %}
+			{% if paginator.previous_page %}
+				<a href="{{ paginator.previous_page_path }}" class="previous btn">&larr; Newer Posts</a>
+			{% else %}
+				<span class="previous">No Newer Posts</span>
+			{% endif %}
+
+			<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+			{% if paginator.next_page %}
+				<a href="{{ paginator.next_page_path }}" class="next btn">Older Posts &rarr;</a>
+			{% else %}
+				<span class="next">No Older Posts</span>
+			{% endif %}
 		</div>
 
+		<hr>
+
 		<div id="mc_embed_signup" class="newsletter-signup">
-			<h4> Subscribe to the CloudCannon Blog </h4>
+			<h3> Subscribe to the CloudCannon Blog </h3>
 
 			<p> Join <strong>thousands</strong> of web designers. Get the latest deconstructions, trends and tutorials sent straight to your inbox. </p>
 
-			<form action="http://cloudcannon.us6.list-manage1.com/subscribe/post?u=8cb8984760b59af9f847b1168&amp;id=5c25c4fc1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate blog-newsletter" target="_blank">
-				<div class="col col-2third"><input type="email" value="" name="EMAIL" placeholder="Email Address" required="true" style="max-width: 450px;padding: 8px; margin:0">
-				</div>
+			<form action="http://cloudcannon.us6.list-manage1.com/subscribe/post?u=8cb8984760b59af9f847b1168&amp;id=5c25c4fc1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="clearfix validate blog-newsletter" target="_blank">
+				<input type="email" value="" name="EMAIL" placeholder="Email Address" required="true">
 
-				<div class="col col-third">
-					<input type="submit" value="Send me the latest" name="subscribe" id="mc-embedded-subscribe" class="button" style="padding: 8px; margin: 0">
-				</div>
-				<br class="clear" />
+				<input type="submit" value="Send me the latest" name="subscribe" id="mc-embedded-subscribe" class="button">
 			</form>
 		</div>
 	</div>

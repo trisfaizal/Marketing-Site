@@ -10,17 +10,17 @@ Something occurred to me the other day. <span class="url">&lt;title&gt;</span> a
 
 From there I thought what can I create using only a basic HTML5 boilerplate, kind of like an extreme version of [CSS Zen Garden](http://www.csszengarden.com/). So I started with this:
 
-<pre class="prettyprint linenums large">
-&#x3C;!DOCTYPE html&#x3E;
-&#x3C;html&#x3E;
-&#x9;&#x3C;head&#x3E;
-&#x9;&#x9;&#x3C;title&#x3E;Extreme CSS Garden&#x3C;/title&#x3E;
-&#x9;&#x9;&#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
-&#x9;&#x9;&#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;style.css&#x22;&#x3E;
-&#x9;&#x3C;/head&#x3E;
-&#x9;&#x3C;body&#x3E;&#x3C;/body&#x3E;
-&#x3C;/html&#x3E;
-</pre>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Extreme CSS Garden</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body></body>
+</html>
+{% endhighlight %}
 
 Then put my CSS skills to work.
 
@@ -32,59 +32,59 @@ Here's my [end result](http://cyan-accordion.cloudvent.net/index.html):
 
 And the CSS to go with that.
 
-<pre class="prettyprint linenums large lang-css">
+{% highlight css %}
 html {
-	font-family: Helvetica, Arial, sans-serif;
-	height: 100%;
-	background: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+    background: #eee;
 }
 
 head, title, meta, link {
-	display: block;
+    display: block;
 }
 
 title {
-	font-size: 5em;
-	padding: 20px 0;
+    font-size: 5em;
+    padding: 20px 0;
 }
 
 title, meta {
-	text-align: center;
-	color: #fff;
+    text-align: center;
+    color: #fff;
 }
 
 meta {
-	font-style: italic;
+    font-style: italic;
 }
 
 meta::before {
-	content: "This is almost a legitimate website";
+    content: "This is almost a legitimate website";
 }
 
 link {
-	width: 100px;
-	height: 100px;
-	margin: 20px auto;
-	background: url(https://en.gravatar.com/avatar/56b658c5d0c89b95f635fb94dc536594?s=100&d=mm);
-	background-size: contain;
-	border: 2px solid #fff;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background: url(https://en.gravatar.com/avatar/56b658c5d0c89b95f635fb94dc536594?s=100&d=mm);
+    background-size: contain;
+    border: 2px solid #fff;
     border-radius: 60px;
 }
 
 head {
-	background: #222;
-	border-bottom: 1px dotted #aaa;
+    background: #222;
+    border-bottom: 1px dotted #aaa;
 }
 
 body {
-	text-align: center;
-	font-size: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 body::before {
-	content: "I'm going to take a stab and say CSS content isn't exactly search engine friendly.";
+    content: "I'm going to take a stab and say CSS content isn't exactly search engine friendly.";
 }
-</pre>
+{% endhighlight %}
 
 I did a 90s version too:
 
@@ -94,18 +94,18 @@ See the [actual website](http://cyan-accordion.cloudvent.net/index2.html) for th
 
 CSS:
 
-<pre class="prettyprint linenums large css">
+{% highlight css %}
 html {
-	font-family: Helvetica, Arial, sans-serif;
-	height: 100%;
-	background-color: red;
-	-webkit-animation: bganimation 5s infinite alternate; /* Chrome, Safari, Opera */
-	animation: bganimation 5s infinite alternate;
-	text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+    background-color: red;
+    -webkit-animation: bganimation 5s infinite alternate; /* Chrome, Safari, Opera */
+    animation: bganimation 5s infinite alternate;
+    text-align: center;
 }
 
 html::after {
-	content: url(http://31.media.tumblr.com/tumblr_m9dg70itF41ru71nxo1_100.gif);
+    content: url(http://31.media.tumblr.com/tumblr_m9dg70itF41ru71nxo1_100.gif);
 }
 
 /* Chrome, Safari, Opera */
@@ -125,46 +125,46 @@ html::after {
 }
 
 head, title, meta, link {
-	display: block;
+    display: block;
 }
 
 title {
-	font-size: 4em;
-	font-weight: bold;
-	text-decoration: underline;
-	background: yellow;
+    font-size: 4em;
+    font-weight: bold;
+    text-decoration: underline;
+    background: yellow;
 }
 
 title:hover {
-	background: green;
+    background: green;
 }
 
 @keyframes blink {
-	to {
-		visibility: hidden;
-	}
+    to {
+        visibility: hidden;
+    }
 }
 
 @-webkit-keyframes blink {
-	to {
-		visibility: hidden;
-	}
+    to {
+        visibility: hidden;
+    }
 }
 
 title::before {
-	content: url(http://static.tumblr.com/x17glcz/T5dmizmm4/ani.businessman2.gif);
+    content: url(http://static.tumblr.com/x17glcz/T5dmizmm4/ani.businessman2.gif);
 }
 
 title::after {
-	content: url(http://33.media.tumblr.com/53c9c25e44646f7dff7684214ca28e88/tumblr_mgfh7uvmEo1ru71nxo1_250.gif);
+    content: url(http://33.media.tumblr.com/53c9c25e44646f7dff7684214ca28e88/tumblr_mgfh7uvmEo1ru71nxo1_250.gif);
 }
 
 meta {
-	position: absolute;
-	top: 0;
-	left: 0;
-	-webkit-animation: metaanimation 5s infinite alternate; /* Chrome, Safari, Opera */
-	animation: metaanimation 5s infinite alternate;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: metaanimation 5s infinite alternate; /* Chrome, Safari, Opera */
+    animation: metaanimation 5s infinite alternate;
 }
 
 /* Chrome, Safari, Opera */
@@ -184,15 +184,15 @@ meta {
 }
 
 meta::after {
-	content: url(http://www.animatedgif.net/underconstruction/anim0206-1_e0.gif);
+    content: url(http://www.animatedgif.net/underconstruction/anim0206-1_e0.gif);
 }
 
 link {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	-webkit-animation: linkanimation 10s infinite alternate; /* Chrome, Safari, Opera */
-	animation: linkanimation 10s infinite alternate;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-animation: linkanimation 10s infinite alternate; /* Chrome, Safari, Opera */
+    animation: linkanimation 10s infinite alternate;
 }
 
 /* Chrome, Safari, Opera */
@@ -212,13 +212,13 @@ link {
 }
 
 link::after {
-	content: url(http://www.animatedgif.net/underconstruction/const_e0.gif);
+    content: url(http://www.animatedgif.net/underconstruction/const_e0.gif);
 }
 
 body::before{
-	content: url(http://s3-ec.buzzfed.com/static/2013-10/enhanced/webdr05/15/9/anigif_enhanced-buzz-26358-1381845043-13.gif);
+    content: url(http://s3-ec.buzzfed.com/static/2013-10/enhanced/webdr05/15/9/anigif_enhanced-buzz-26358-1381845043-13.gif);
 }
-</pre>
+{% endhighlight %}
 
 
 

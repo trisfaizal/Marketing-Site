@@ -28,23 +28,22 @@ I am going to rebuild the car/pickup in HTML, SVG and CSS. I was going to build 
 	</div>
 </div>
 
-<pre class="prettyprint linenums large">
-&lt;div class="truck"&gt;
-	&lt;div class="body"&gt;
-		&lt;img src="truck-under.svg"&gt;
-		&lt;div class="shine"&gt;&lt;/div&gt;
-		&lt;img src="truck-frame.svg" class="frame"&gt;
-	&lt;/div&gt;
+{% highlight html %}
+<div class="truck">
+    <div class="body">
+        <img src="truck-under.svg">
+        <div class="shine"></div>
+        <img src="truck-frame.svg" class="frame">
+    </div>
 
-	&lt;div class="speed-thingy"&gt;&lt;/div&gt;
-	&lt;div class="speed-thingy second"&gt;&lt;/div&gt;
-	&lt;div class="shadow"&gt;&lt;/div&gt;
+    <div class="speed-thingy"></div>
+    <div class="speed-thingy second"></div>
+    <div class="shadow"></div>
 
-	&lt;div class="wheel back"&gt;&lt;/div&gt;
-	&lt;div class="wheel front"&gt;&lt;/div&gt;
-
-&lt;/div&gt;	
-</pre>
+    <div class="wheel back"></div>
+    <div class="wheel front"></div>
+</div>
+{% endhighlight %}
 
 Let's break it down.
 
@@ -62,54 +61,54 @@ I started building the car using just HTML and CSS so theses are circles built u
 	</div>
 </div>
 
-<pre class="prettyprint linenums large">
+{% highlight css %}
 @keyframes spin {
-	0% { transform: rotate(0); }
-	100% { transform: rotate(360deg); }
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
 }
 
 .wheel,
 .wheel:after,
 .wheel:before {
-	bottom: -20%;
-	width: 12.8%;
-	height: 46.38%;
-	border-radius: 100%;
-	background: #1e2327;
+    bottom: -20%;
+    width: 12.8%;
+    height: 46.38%;
+    border-radius: 100%;
+    background: #1e2327;
 }
 
 .wheel {
-	left: 21.5%;
-	-webkit-animation: spin 0.4s infinite linear;
-	animation: spin 0.4s infinite linear;
+    left: 21.5%;
+    -webkit-animation: spin 0.4s infinite linear;
+    animation: spin 0.4s infinite linear;
 }
 
 .wheel.front {
-	left: 82%;
+    left: 82%;
 }
 
 .wheel:after,
 .wheel:before {
-	content: "";
-	position: absolute;
-	display: block;
-	top: 20%;
-	left: 20%;
-	width: 60%;
-	height: 60%;
+    content: "";
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
 }
 
 .wheel:before {
-	background: #aaa;
+    background: #aaa;
 }
 
 .wheel:after {
-	top: 40%;
-	left: 40%;
-	width: 20%;
-	height: 20%;
-}	
-</pre>
+    top: 40%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+}
+{% endhighlight %}
 
 #### The Body
 
@@ -131,35 +130,35 @@ I started building the body with HTML elements and CSS but felt I was using the 
 	</div>
 </div>
 
-<pre class="prettyprint linenums large">
+{% highlight css %}
 @keyframes bobbing {
-	0%{
-		transform: rotate(0) translateY(0);
-	}
-	100%{
-		transform: rotate(0.1deg) translateY(5px);
-	}
+    0%{
+        transform: rotate(0) translateY(0);
+    }
+    100%{
+        transform: rotate(0.1deg) translateY(5px);
+    }
 }
 
 .body {
-	width: 100%;
-	position: relative;
-	transform-origin: right center;
-	animation: bobbing 0.2s infinite ease-in-out forwards alternate;
+    width: 100%;
+    position: relative;
+    transform-origin: right center;
+    animation: bobbing 0.2s infinite ease-in-out forwards alternate;
 }
 
 .frame {
-	position: relative;
+    position: relative;
 }
 
 .truck img {
-	width: 100%;
-	height: auto;
-	top: 0;
-	left: 0;
-	margin: 0;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
-</pre>
+{% endhighlight %}
 
 #### The Shine
 This uses the same effect as the [Facebook content placeholder](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html). It has the bobble animation as it's placed inside the <code>.body</code> of the truck. The first image is to show the gradient and the shape which is achieved using transforms and a linear gradient. The second one has an animation applied.
@@ -180,39 +179,39 @@ This uses the same effect as the [Facebook content placeholder](http://cloudcann
 	</div>
 </div>
 
-<pre class="prettyprint linenums large">
+{% highlight css %}
 @keyframes shine {
-	0%{
-		opacity: 0.1;
-		background-position: 50px top;
-	}
-	30% { opacity: 1; }
-	50%, 100%{
-		opacity: 0.2;
-		background-position: -500px 0;
-	}
+    0%{
+        opacity: 0.1;
+        background-position: 50px top;
+    }
+    30% { opacity: 1; }
+    50%, 100%{
+        opacity: 0.2;
+        background-position: -500px 0;
+    }
 }
 
 .shine {
-	/* Position it in the gap */
-	width: 67%;
-	height: 37%;
-	left: 9%;
-	top: 6%;
+    /* Position it in the gap */
+    width: 67%;
+    height: 37%;
+    left: 9%;
+    top: 6%;
 
-	/* Shape of the div to fit the windows */
-	transform: skew(33deg, 1deg);
-	border-radius: 56px 100px 20px 0;
+    /* Shape of the div to fit the windows */
+    transform: skew(33deg, 1deg);
+    border-radius: 56px 100px 20px 0;
 
-	/* The background */
-	background: linear-gradient(to right, transparent 76%, rgba(255,255,255,0.8) 78%, rgba(255,255,255,0.8) 96%, transparent 98%);
-	background-repeat: no-repeat;
-	background-size: cover;
+    /* The background */
+    background: linear-gradient(to right, transparent 76%, rgba(255,255,255,0.8) 78%, rgba(255,255,255,0.8) 96%, transparent 98%);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-	/* The animation */
-	animation: shine 3s infinite ease forwards;
+    /* The animation */
+    animation: shine 3s infinite ease forwards;
 }
-</pre>
+{% endhighlight %}
 
 
 #### The Speed Things
@@ -229,41 +228,41 @@ These are simple shrinking and growing divs.
 	</div>
 </div>
 
-<pre class="prettyprint linenums large">
+{% highlight css %}
 @keyframes thingy {
-	0%{
-		transform: translateX(0);
-		width: 0;
-		opacity: 0;
-	}
-	10%{
-		width: 10%;
-		opacity: 1;
-	}
-	30%, 100%{
-		transform: translateX(-250px);
-		width: 0;
-		opacity: 0;
-	}
+    0%{
+        transform: translateX(0);
+        width: 0;
+        opacity: 0;
+    }
+    10%{
+        width: 10%;
+        opacity: 1;
+    }
+    30%, 100%{
+        transform: translateX(-250px);
+        width: 0;
+        opacity: 0;
+    }
 }
 
 .speed-thingy {
-	position: absolute;
-	width: 20px;
-	border-radius: 10px;
-	height: 5%;
-	background: #fff;
-	top: -10%;
-	left: 50%;
-	animation: thingy 3s infinite ease forwards;
+    position: absolute;
+    width: 20px;
+    border-radius: 10px;
+    height: 5%;
+    background: #fff;
+    top: -10%;
+    left: 50%;
+    animation: thingy 3s infinite ease forwards;
 }
 
 .speed-thingy.second {
-	top: 50%;
-	left: 30%;
-	animation-delay: 0.1s;
+    top: 50%;
+    left: 30%;
+    animation-delay: 0.1s;
 }
-</pre>
+{% endhighlight %}
 
 #### A Shadow to top it all off
 This makes the bobbing effect seem more realistic and shows a platform for the wheels to sit on. We want it to stay still at the front so we change the transform origin to the front. Once that's done we scale it ever so slightly with timing to match the body.
@@ -278,27 +277,27 @@ This makes the bobbing effect seem more realistic and shows a platform for the w
 	</div>
 </div>
 
-<pre class="prettyprint linenums large">
+{% highlight css %}
 @keyframes shadow {
-	0%{
-		transform: scale(1);
-	}
-	100%{
-		transform: scale(1.01);
-	}
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.01);
+    }
 }
 
 .shadow {
-	width: 90%;
-	border-radius: 100%;
-	height: 20px;
-	bottom: -25%;
-	left: 5%;
-	background: rgba(0,0,0,0.1);
-	animation: shadow 0.2s infinite ease-in-out forwards alternate;
-	transform-origin: right center;
+    width: 90%;
+    border-radius: 100%;
+    height: 20px;
+    bottom: -25%;
+    left: 5%;
+    background: rgba(0,0,0,0.1);
+    animation: shadow 0.2s infinite ease-in-out forwards alternate;
+    transform-origin: right center;
 }
-</pre>
+{% endhighlight %}
 
 #### All Together Again
 

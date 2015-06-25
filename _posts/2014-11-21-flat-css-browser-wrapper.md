@@ -6,34 +6,26 @@ category: Deconstructions
 author: george
 ---
 
-This isn't the weekly deconstruction, that'll be out in a few days. This is a small post to tide you over until then. 
+This isn't the weekly deconstruction, that'll be out in a few days. This is a small post to tide you over until then.
 
 This deconstruction is from our recent <a href="/">front page redesign</a>. I wanted to display screen shots but didn't want to include the window frame in the image. I tried it without the banner window frame but it looked a bit naked and lacked context. So I decided to use CSS to recreate a simplified window frame.
 
 ### What is it?
 It is wrapper with three buttons in the top corner (close, minimize and maximize).
 
+<img class="screenshot" src="/img/blog/deconstructions/browser-image-with-arrows.jpg" width="604" height="400" alt="arrows pointing out the features and a nice background">
+
+{% highlight css %}
 <div class="fake-browser-ui">
-	<div class="frame">
-		<span></span>
-		<span></span>
-		<span></span>
-	</div>
+    <div class="frame">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-	<img src="/img/blog/deconstructions/browser-image-with-arrows.jpg" width="604" height="400" alt="arrows pointing out the features and a nice background">
+    <img src="/screenshot.jpg" width="691" height="500" alt="A nice description">
 </div>
-
-<pre class="prettyprint linenums large">
-&lt;div class="fake-browser-ui"&gt;
-	&lt;div class="frame"&gt;
-		&lt;span&gt;&lt;/span&gt;
-		&lt;span&gt;&lt;/span&gt;
-		&lt;span&gt;&lt;/span&gt;
-	&lt;/div&gt;
-
-	&lt;img src="/screenshot.jpg" width="691" height="500" alt="A nice description"&gt;
-&lt;/div&gt;
-</pre>
+{% endhighlight %}
 
 Let's break it down.
 
@@ -45,57 +37,47 @@ This doesn't need any explanation. Put what ever you want inside this, I am usin
 #### Wrap that content with a div.
 This div will give us a background colour and some padding to create the frame. I like to put a 2px border on the bottom to give some depth. It also wraps the content in case it is mostly white. Adding a line-height of 0 will prevent any spacing around the image. Then to top all of this off, add a border radius to soften the edges.
 
-<div class="fake-browser-ui">
-	<img src="/img/blog/deconstructions/browser-image.jpg" width="604" height="400" alt="A nice background with some kitchen wares">
-</div>
+<img class="screenshot" style="background-image: none;" src="/img/blog/deconstructions/browser-image.jpg" width="604" height="400" alt="A nice background with some kitchen wares">
 
-<pre class="prettyprint linenums large">
+{% highlight css %}
 .fake-browser-ui {
-	padding: 20px 0 0;
-	border-radius: 3px;
-	border-bottom: 2px solid #ccc;
-	background: #ddd;
-	display: inline-block;
-	position: relative;
-	line-height: 0;
+    padding: 20px 0 0;
+    border-radius: 3px;
+    border-bottom: 2px solid #ccc;
+    background: #ddd;
+    display: inline-block;
+    position: relative;
+    line-height: 0;
 }
-</pre>
+{% endhighlight %}
 
 #### Three buttons
 I used 4 elements for this part. One to wrap the buttons and position it correctly. The other 3 are the buttons which just float beside each other.
 
-<div class="fake-browser-ui">
-	<div class="frame">
-		<span></span>
-		<span></span>
-		<span></span>
-	</div>
+<img class="screenshot" src="/img/blog/deconstructions/browser-image-with-arrows.jpg" width="604" height="400" alt="arrows pointing out the features and a nice background">
 
-	<img src="/img/blog/deconstructions/browser-image-with-arrows.jpg" width="604" height="400" alt="arrows pointing out the features and a nice background">
-</div>
-
-<pre class="prettyprint linenums large">
+{% highlight css %}
 .fake-browser-ui .frame {
-	display: block;
-	height: 15px;
-	position: absolute;
-	top: 5px;
-	left: 1px;
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: 1px;
 }
 
 .fake-browser-ui span {
-	height: 8px;
-	width: 8px;
-	border-radius: 8px;
-	background-color: #eee;
-	border: 1px solid #dadada;
-	float: left;
-	margin: 0 0 0 4px;
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    background-color: #eee;
+    border: 1px solid #dadada;
+    float: left;
+    margin: 0 0 0 4px;
 }
-</pre>
+{% endhighlight %}
 
 ### Why would I ever use this?
-I really like this technique because I can throw anything into it and I know it will look right. This prevents loading any additional assets and can be cached. We used a similar technique for the Macbook on the <a href="/">top of our homepage</a> and all of the devices on our <a href="http://cloudcannon.com/previewer/">previewer</a>. The <a href="http://cloudcannon.com/previewer/">previewer</a> demonstrates how flexible this technique by animating between the different device shapes. 
+I really like this technique because I can throw anything into it and I know it will look right. This prevents loading any additional assets and can be cached. We used a similar technique for the Macbook on the <a href="/">top of our homepage</a> and all of the devices on our <a href="http://cloudcannon.com/previewer/">previewer</a>. The <a href="http://cloudcannon.com/previewer/">previewer</a> demonstrates how flexible this technique by animating between the different device shapes.
 
 This is completely scalable, try zooming the page and you will it just as crisp as when you had it at 100%. Other than that how many more excuses do you need to play with CSS (it's amazing).
 
@@ -104,18 +86,18 @@ This deconstruction does not include the URL bar as the purpose of this UI eleme
 
 <style>
 .fake-browser-ui {
-	max-width: 500px;
-	margin: 0 auto;
-	display: block;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
 }
 
 .fake-browser-ui img {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .blank-image-wrapper {
-	max-width: 500px;
-	margin: 0 auto;
-	text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }
 </style>
