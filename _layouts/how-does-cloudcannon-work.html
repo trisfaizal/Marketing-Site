@@ -2,21 +2,6 @@
 layout: default
 developer: Developers
 non_developer: Non-Developers
-customers:
-  - image_path: /img/home/customers/psg.png
-    company: PSG
-  - image_path: /img/home/customers/c.png
-    company: C
-  - image_path: /img/home/customers/punchlane.png
-    company: Punchlane
-  - image_path: /img/home/customers/glace.png
-    company: Glace
-  - image_path: /img/home/customers/azores.png
-    company: Azores
-  - image_path: /img/home/customers/festningen.png
-    company: Festningen
-  - image_path: /img/home/customers/union.png
-    company: Union
 ---
 
 <div class="switcher">
@@ -50,16 +35,7 @@ customers:
 			</div>
 			<div class="image">
 				<div class="screenshot">
-					<div class="slideshow">
-						{% for customer in page.customers %}
-						{% if forloop.first %}
-						<img src="{{customer.image_path}}" class="slide visible" width="550" height="344" alt="{{customer.company}}" />
-						<img src="{{customer.image_path}}" class="ratio" width="550" height="344" alt="{{customer.company}}" />
-						{% else %}
-						<img src="{{customer.image_path}}" class="slide" width="550" height="344" alt="{{customer.company}}" />
-						{% endif %}
-						{% endfor %}
-					</div>
+					{% include customer-slideshow.html %}
 				</div>
 			</div>
 		</div>
@@ -74,12 +50,7 @@ customers:
 				<p> <strong>{{ page.non_developer }}</strong> get a beautiful interface for updating Blogs, Collections and Front Matter. To make content on a page editable for <strong>{{ page.non_developer }}</strong> add <code>class="editable"</code> to elements in the HTML. </p>
 			</div>
 			<div class="image">
-				<div class="proportional-iframe">
-					<div class="proportional-iframe-wrapper">
-						<img class="ratio" src="http://placehold.it/110x53"/>
-						<iframe width="550" height="265" src="//www.youtube.com/embed/FOYDMD1jA-0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=FOYDMD1jA-0" frameborder="0" allowfullscreen=""></iframe>
-					</div>
-				</div>
+				{% include proportional-youtube.html width=16 height=10 factor=70 youtube_id="FOYDMD1jA-0" %}
 			</div>
 		</div>
 	</section>

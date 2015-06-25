@@ -2,21 +2,6 @@
 layout: default
 title: CloudCannon for Agencies
 permalink: /agencies/
-customers:
-  - image_path: /img/home/customers/psg.png
-    company: PSG
-  - image_path: /img/home/customers/c.png
-    company: C
-  - image_path: /img/home/customers/punchlane.png
-    company: Punchlane
-  - image_path: /img/home/customers/glace.png
-    company: Glace
-  - image_path: /img/home/customers/azores.png
-    company: Azores
-  - image_path: /img/home/customers/festningen.png
-    company: Festningen
-  - image_path: /img/home/customers/union.png
-    company: Union
 ---
 
 <header style="overflow: visible;">
@@ -25,12 +10,7 @@ customers:
 			 A source control backed CMS for <br/><strong>developers</strong> working with <strong>clients</strong>
 		</h2>
 
-		<div class="proportional-iframe">
-			<div class="proportional-iframe-wrapper">
-				<img class="ratio" src="/img/16x10.gif" alt="ratio image"/>
-				<iframe width="700" height="438" src="//www.youtube.com/embed/T0VmTPTP5qk?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=T0VmTPTP5qk" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
+		{% include proportional-youtube.html width=16 height=10 factor=70 youtube_id="T0VmTPTP5qk" %}
 	</div>
 </header>
 

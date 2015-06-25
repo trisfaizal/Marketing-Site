@@ -1,19 +1,4 @@
 ---
-customers:
-  - image_path: /img/home/customers/psg.png
-    company: PSG
-  - image_path: /img/home/customers/c.png
-    company: C
-  - image_path: /img/home/customers/punchlane.png
-    company: Punchlane
-  - image_path: /img/home/customers/glace.png
-    company: Glace
-  - image_path: /img/home/customers/azores.png
-    company: Azores
-  - image_path: /img/home/customers/festningen.png
-    company: Festningen
-  - image_path: /img/home/customers/union.png
-    company: Union
 layout: default
 title: A source control backed, Jekyll CMS for developers working with non-developers
 ---
@@ -24,14 +9,9 @@ title: A source control backed, Jekyll CMS for developers working with non-devel
 			 A source control backed CMS for <br/> <strong>developers</strong> working with <strong>non-developers</strong>
 		</h2>
 
-		<div class="proportional-iframe">
-			<div class="proportional-iframe-wrapper">
-				<img class="ratio" src="/img/16x10.gif" alt="ratio image"/>
-				<iframe width="700" height="438" src="//www.youtube.com/embed/Mjr3AprR9Xo?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;modestbranding&amp;playlist=Mjr3AprR9Xo" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
+		{% include proportional-youtube.html width=16 height=10 factor=70 youtube_id="Mjr3AprR9Xo" %}
 
-		 <p><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Sign Up Free Today</a></p>
+		<p><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Sign Up Free Today</a></p>
 	</div>
 </header>
 
@@ -43,7 +23,7 @@ title: A source control backed, Jekyll CMS for developers working with non-devel
 		</div>
 		<div class="image">
 			<img class="screenshot" src="/img/landing_pages/enterprise/preview.png" width="550" alt="Preview" />
-			 </div>
+			</div>
 		</div>
 	</div>
 </section>
