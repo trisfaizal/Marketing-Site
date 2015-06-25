@@ -45,7 +45,7 @@ nav {
 	}
 
 	h1 {
-		margin: 0;
+		margin: 0 0 0 -7px;
 		text-indent: 0;
 
 		a {
@@ -53,6 +53,7 @@ nav {
 			height: 46px;
 			line-height: 0;
 			background-color: transparent !important;
+			float: left;
 		}
 	}
 

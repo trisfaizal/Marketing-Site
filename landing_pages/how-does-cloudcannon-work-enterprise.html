@@ -52,14 +52,14 @@ customers:
   		<div class="image">
   			<div class="screenshot">
   				<div class="slideshow">
-  					{% for customer in page.customers %}
-  					<img src="{{customer.image_path}}" class="slide
-  					{% if forloop.first %}
-  					  visible
-  					{% endif %}
-
-  					" width="550px" height="344px" alt="{{customer.company}}" />
-  					{% endfor %}
+                      {% for customer in page.customers %}
+                          {% if forloop.first %}
+                              <img src="{{customer.image_path}}" class="slide visible" width="550" height="344" alt="{{customer.company}}" />
+                              <img src="{{customer.image_path}}" class="ratio" width="550" height="344" alt="{{customer.company}}" />
+                          {% else %}
+                              <img src="{{customer.image_path}}" class="slide" width="550" height="344" alt="{{customer.company}}" />
+                          {% endif %}
+                      {% endfor %}
   				</div>
   			</div>
   		</div>

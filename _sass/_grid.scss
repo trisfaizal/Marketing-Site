@@ -2,29 +2,7 @@
 // Grid styles: No font or other attributes allowed
 // ---
 
-.col {
-	float: left;
-	width: 50%;
-}
-
-.col.col-2third {
-	width: 60%;
-}
-
-.col.col-third {
-	width: 40%;
-}
-
-// .thirds p {
-// 	max-width: 300px;
-// 	margin: 0 auto;
-// }
-//
-// .thirds p em {
-// 	font-size: 0.9em;
-// }
-
-.thirds {
+.thirds, .halves {
 	margin-top: 1em;
 }
 
@@ -34,10 +12,15 @@
 	}
 }
 
-
 @media only screen and (min-width: $break-medium) {
 	.thirds {
 		width: 31%;
+		float: left;
+		padding: 0 1%;
+	}
+
+	.halves {
+		width: 48%;
 		float: left;
 		padding: 0 1%;
 	}
