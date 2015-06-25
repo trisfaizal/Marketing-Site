@@ -12,30 +12,19 @@ media_contacts:
   - name: Mike Neumegen
     position: CEO &amp; Co-Founder
     email: mike@cloudcannon.com
-milestones:
-  - name: Kiwi Landing Pad
-    logo_path: /img/press/klp.png
-    date: April 2014
-    link: http://kiwilandingpad.com/
-    description: KLP8 Programme at Kiwi Landing Pad
-  - name: Lightning Lab
-    logo_path: /img/lightning_lab.png
-    date: March 2014
-    link: http://lightninglab.com/
-    description: Lightning Lab Business Accelerator
 ---
 <section>
 	<div class="container text-container">
 		<h2>Company Info</h2>
 		{% for stat in page.company_stats %}
-			<h3>{{stat[0] | replace:'_',' ' | capitalize}}</h3>
-			<p>{{stat[1]}}</p>
+			<h3>{{ stat[0] | replace:'_',' ' | capitalize }}</h3>
+			<p>{{ stat[1] }}</p>
 		{% endfor %}
 
 		<h3> Media Contacts </h3>
 		<p>
 			{% for contact in page.media_contacts %}
-				{{contact.name}}, {{contact.position}} <a href="mailto:{{contact.email}}">Email</a><br>
+				{{ contact.name }}, {{ contact.position }} <a href="mailto:{{ contact.email }}">Email</a><br>
 			{% endfor %}
 		</p>
 	</div>
@@ -44,11 +33,12 @@ milestones:
 	<div class="container text-container">
 		<div class="milestones">
 			<h2>Milestones</h2>
-			{% for milestone in page.milestones %}
+			{% assign milestones = site.milestones | sort: 'date' | reverse %}
+			{% for milestone in milestones %}
 				<div class="milestone">
-					<img src="{{milestone.logo_path}}" alt="{{milestone.name}}">
-					<h4><a href="{{milestone.link}}">{{milestone.description}}</a></h4>
-					<p>{{milestone.date}}</p>
+					<img src="{{ milestone.logo_path }}" alt="{{ milestone.name }}">
+					<h4><a href="{{ milestone.link }}">{{ milestone.description }}</a></h4>
+					<p>{{ milestone.date | date: '%B %Y' }}</p>
 				</div>
 			{% endfor %}
 		</div>
@@ -58,12 +48,12 @@ milestones:
 		<div class="container text-container articles">
 			<h2>Featured Articles</h2>
 
-			{% assign articles = site.press | sort: 'date' %}
+			{% assign articles = site.press | sort: 'date' | reverse %}
 			{% for article in articles %}
 			<div class="article">
-				<div class="logo"><img src="{{article.logo_path}}" alt="{{article.name}}"></div>
-				<h4><a target="_blank" href="{{article.link}}">{{article.title}}</a></h4>
-				<p>{{article.date}}</p>
+				<div class="logo"><img src="{{ article.logo_path }}" alt="{{ article.name }}"></div>
+				<h4><a target="_blank" href="{{ article.link }}">{{article.title}}</a></h4>
+				<p>{{ article.date | date_to_string }}</p>
 			</div>
 			{% endfor %}
 		</div>

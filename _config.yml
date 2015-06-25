@@ -7,3 +7,6 @@ collections:
   press:
     name: Featured Articles
     output: false
+  milestones:
+    name: Milestones
+    output: false
