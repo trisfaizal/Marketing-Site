@@ -4,5 +4,6 @@ blog_name: The CloudCannon Blog
 blog_description: The CloudCannon Blog
 site_url: http://cloudcannon.com
 collections:
-  jekyll_themes:
-    output: true
+  press:
+    name: Featured Articles
+    output: false
