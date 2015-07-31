@@ -12,4 +12,12 @@ collections:
     output: false
   staff:
     name: Team Members
-    output: false
+  customers:
+    name: Customers
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: "customers"
+    values:
+      layout: "customer"
