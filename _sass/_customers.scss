@@ -3,3 +3,61 @@
   padding: 0;
   list-style: none;
 }
+
+.customer-sidebar {
+  width: 250px;
+  float: left;
+
+  p {
+    font-size: .8em;
+    line-height: 1.6em;
+  }
+}
+
+.testimonal {
+  text-align: center;
+
+  span, img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 100px;
+  }
+
+  .name {
+    font-weight: bold;
+  }
+}
+
+.customer-content {
+  margin-left: 280px;
+}
+
+.customer-slides {
+  padding: 0;
+  margin: 0 0 40px 0;
+  list-style: none;
+
+  li {
+    position: relative;
+  }
+  .caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,.9);
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+    a {
+      color: #fff;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

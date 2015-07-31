@@ -1,8 +1,48 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="/css/looper.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <section>
-	<div class="container post-container text-container">
-    {{content}}
+
+	<div class="container">
+		<div class="customer-sidebar">
+			<div><a href="{{page.site}}"><img width="220px" src="{{page.logo_path}}" alt="{{page.name}}" /></a></div>
+			<h4><a href="{{page.site}}">{{page.name}}</a></h4>
+			<p>{{page.description}}</p>
+		</div>
+
+		<div class="customer-content text-content">
+    	<h2>The Challenge</h2>
+			{{ page.challenge | markdownify }}
+
+			<h2> How CloudCannon helped </h2>
+			{{ page.solution | markdownify }}
+
+			{% include customers/testimonial.html testimonal=page.testimonal %}
+
+			<h2> Results </h2>
+
+			<h4> Site </h4>
+			<p><a href="{{page.results.site.url}}">{{page.results.site.name}}</a></p>
+
+			<h4> CloudCannon Features Used </h4>
+			<p><a href="{{page.results.site.url}}">{{page.results.site.name}}</a></p>
+
+			<h4> Overview </h4>
+			{% include customers/slideshow.html name="overview" slides=page.results.overview %}
+
+			<h2> Workflow </h2>
+			<div><img src="{{page.workflow.image_path}}" alt="workflow" /></div>
+			{{ page.workflow.description | markdownify }}
+
+			<h4> Marketers </h4>
+			{% include customers/slideshow.html name="marketing" slides=page.workflow.marketers %}
+
+			<h4> Developers </h4>
+			{% include customers/slideshow.html name="developer" slides=page.workflow.developers %}
+		</div>
   </div>
 </section>
+
+<script src="/js/looper.min.js"></script>
