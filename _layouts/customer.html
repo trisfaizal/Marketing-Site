@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" href="/css/looper.css">
+<link type="text/css" rel="stylesheet" href="/css/lightslider.css" />
+<!-- <link rel="stylesheet" href="/css/looper.css"> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <section>
 
@@ -19,15 +20,15 @@ layout: default
 			<h2> How CloudCannon helped </h2>
 			{{ page.solution | markdownify }}
 
-			{% include customers/testimonial.html testimonal=page.testimonal %}
+			{% include quote.html quote=page.testimonal %}
 
 			<h2> Results </h2>
 
 			<h4> Site </h4>
-			<p><a href="{{page.results.site.url}}">{{page.results.site.name}}</a></p>
+			<p><a href="{{ page.results.site.url }}">{{ page.results.site.name }}</a></p>
 
 			<h4> CloudCannon Features Used </h4>
-			<p><a href="{{page.results.site.url}}">{{page.results.site.name}}</a></p>
+			<p>{{ page.results.features | join: ', ' }}</p>
 
 			<h4> Overview </h4>
 			{% include customers/slideshow.html name="overview" slides=page.results.overview %}
@@ -45,4 +46,21 @@ layout: default
   </div>
 </section>
 
-<script src="/js/looper.min.js"></script>
+<!-- <script src="/js/looper.min.js"></script> -->
+
+<script src="/js/lightslider.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.photo_gallery').lightSlider({
+        gallery: true,
+        item: 1,
+        loop: true,
+        thumbItem: 5,
+				thumbMargin: 5,
+        slideMargin: 0,
+        enableDrag: false,
+        currentPagerPosition: 'left',
+    });
+  });
+</script>

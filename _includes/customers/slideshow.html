@@ -1,10 +1,9 @@
-<div id="{{ include.name }}Looper" data-looper="go" class="looper slide customer-slides">
+<!-- <div id="{{ include.name }}Looper" data-looper="go" data-interval="false" class="looper slide customer-slides">
   <div class="looper-inner">
   {% for slide in include.slides %}
     <div class="item">
         <img class="screenshot" alt="{{ slide.alt }}" src="{{ slide.image_path }}" />
         <div class="caption">{{ slide.caption | markdownify }}</div>
-      </li>
     </div>
   {% endfor %}
   </div>
@@ -16,4 +15,14 @@
         <i class="fa fa-angle-right"></i>
     </a>
   </div>
-</div>
+</div> -->
+
+
+<ul class="photo_gallery">
+  {% for slide in include.slides %}
+  <li data-thumb="{{ slide.image_path }}" data-src="{{ slide.image_path }}">
+      <img class="screenshot" alt="{{ slide.alt }}" src="{{ slide.image_path }}" />
+      <div class="caption">{{ slide.caption | markdownify }}</div>
+  </li>
+  {% endfor %}
+</ul>
