@@ -1,28 +1,7 @@
-<!-- <div id="{{ include.name }}Looper" data-looper="go" data-interval="false" class="looper slide customer-slides">
-  <div class="looper-inner">
-  {% for slide in include.slides %}
-    <div class="item">
-        <img class="screenshot" alt="{{ slide.alt }}" src="{{ slide.image_path }}" />
-        <div class="caption">{{ slide.caption | markdownify }}</div>
-    </div>
-  {% endfor %}
-  </div>
-  <div>
-    <a class="looper-control left" data-looper="prev" href="#{{ include.name }}Looper">
-        <i class="fa fa-angle-left "></i>
-    </a>
-    <a class="looper-control right" data-looper="next" href="#{{ include.name }}Looper">
-        <i class="fa fa-angle-right"></i>
-    </a>
-  </div>
-</div> -->
-
-
 <ul class="photo_gallery">
   {% for slide in include.slides %}
   <li data-thumb="{{ slide.image_path }}" data-src="{{ slide.image_path }}">
       <img class="screenshot" alt="{{ slide.alt }}" src="{{ slide.image_path }}" />
-      <div class="caption">{{ slide.caption | markdownify }}</div>
   </li>
   {% endfor %}
 </ul>
