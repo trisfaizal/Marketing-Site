@@ -1,16 +1,17 @@
 ---
 name: Netflix
+title: Netflix Case Study
 logo_path: /img/customers/netflix/logo.png
-header: "Case Study: Netflix"
 company_site: http://netflix.com
 site: https://devices.netflix.com
+site_name: Netflix Devices
 description: The world’s leading Internet television network with over 62 million members.
 challenge: |
   Netflix is the world’s leading Internet television network. The company works hard to provide its partners and consumers with information at a fast pace. One of the ways Netflix does this is by ensuring informational websites stay up to date with relevant and engaging content.
 
   Maintaining sites such as [Netflix Devices](https://devices.netflix.com) was a difficult process. Existing solutions were inflexible in the kind of edits they allowed. The marketing team struggled to make the edits they needed, often requiring help from developers. Netflix needed an innovative, fast paced way of creating and maintaining these sites to empower marketers and free up developer time.
 solution: |
-  Netflix partnered with CloudCannon to rebuild [Netflix Devices](https://devices.netflix.com). Devices was originally a Drupal site and was rebuilt in a fraction of the time using Jekyll. The site is static so it loads quickly, scales to the millions of Netflix visitors and is reliable.
+  Netflix partnered with CloudCannon to rebuild [Netflix Devices](https://devices.netflix.com). Devices was originally a Drupal site and was rebuilt in a fraction of the time using Jekyll. The site is static so it loads quickly and reliably scales to the millions of Netflix visitors.
 
   The marketing team have taken control of their sites. They can quickly try out new messaging and update content directly on the page.
 testimonal:
@@ -32,10 +33,10 @@ overview:
     alt: Geolocation
 features:
   - name: GitHub Syncing
-    description: "Developers work in their local environment and deploy changes by pushing to GitHub.
+    description: "Developers work on the site on their local machine. Marketers update in CloudCannon. Everything is kept in sync through GitHub.
 
 
-    All content and file changes are version controlled and can be rolled back at any time."
+    All content/file changes are version controlled and can be rolled back at any time."
     image_path: /img/customers/netflix/filebrowser.png
   - name: Editable Regions
     description: "The marketing team can update the site themselves by clicking on text to start writing content.
@@ -77,6 +78,5 @@ summary: |
   Netflix can now get sites online and in front of customers faster than has ever been possible.
 
   Netflix Devices was a successful pilot of CloudCannon's platform. We're currently working with Netflix to roll out more websites in the coming months.
-
 
 ---

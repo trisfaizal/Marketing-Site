@@ -8,11 +8,11 @@ header : Customers
 	<div class="container text-container">
 		<ul class="customers">
 			{% for customer in site.customers %}
-			   <li class="thirds">
-           <a href="{{customer.url}}"><img width="250px" src="{{customer.logo_path}}" alt="{{customer.name}}" /></a>
-           <h4><a href="{{customer.url}}">{{customer.name }}</a></h4>
-           <p> </p>
-         </li>
+				<li class="thirds">
+					<a href="{{customer.url}}"><img width="250px" src="{{customer.logo_path}}" alt="{{customer.name}}" /></a>
+					<h4><a href="{{customer.url}}">{{customer.name }}</a></h4>
+					<p></p>
+				</li>
 			{% endfor %}
 		</ul>
 </section>

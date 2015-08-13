@@ -1,60 +1,67 @@
 ---
 layout: default
 ---
+<header class="{{ page.name | slugify }}">
+	<div class="container">
+		<h2>CloudCannon Case Study: <a href="{{ page.site }}"><img width="250" src="{{ page.logo_path }}" alt="{{ page.name }}" /></a></h2>
+		<h3>{{ page.description }}</h3>
+		<p><a href="{{ page.site }}" target="_blank">View {{ page.site_name }} &rarr;</a></p>
+	</div>
+</header>
+
 <link type="text/css" rel="stylesheet" href="/css/lightslider.css" />
-<!-- <link rel="stylesheet" href="/css/looper.css"> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 <section>
+	<div class="container text-container">
+		{% include quote.html quote=page.testimonal %}
+
+		<h2>The Challenge</h2>
+		{{ page.challenge | markdownify }}
+
+		<h2>How CloudCannon helped</h2>
+		{{ page.solution | markdownify }}
+	</div>
 
 	<div class="container">
-		<div class="customer-sidebar">
-			<div><a href="{{ page.company_site }}"><img width="220px" src="{{ page.logo_path }}" alt="{{ page.name }}" /></a></div>
-			<ul>
-				<li><a href="{{ page.site }}">View Site</a></li>
-				<li><a href="{{ page.company_site }}">Go to {{ page.name }}</a></li>
+		{% include customers/slideshow.html name="overview" slides=page.overview %}
+	</div>
+</section>
 
-			</ul>
-			<p>{{page.description}}</p>
+<section style="text-align: center; padding-bottom: 0;">
+	<div class="container">
+		<h2>CloudCannon Features Used</h2>
+	</div>
+</section>
+
+{% for feature in page.features %}
+	<section class="{% cycle '', 'alternate' %}">
+		<div class="container">
+			<div class="text">
+				<h3>{{ feature.name }}</h3>
+				{{ feature.description | markdownify }}
+			</div>
+			<div class="image">
+				<img class="screenshot" src="{{ feature.image_path }}" width="550" alt="{{ feature.name }}" />
+			</div>
 		</div>
+	</section>
+{% endfor %}
 
-		<div class="customer-content text-content">
-    	<h2>The Challenge</h2>
-			{{ page.challenge | markdownify }}
+<section class="alternate">
+	<div class="container text-container">
+		<h2>Summary</h2>
+		{{ page.summary | markdownify }}
+	</div>
+</section>
 
-			<h2> How CloudCannon helped </h2>
-			{{ page.solution | markdownify }}
-
-			{% include quote.html quote=page.testimonal %}
-
-			<h2> Overview </h2>
-			{% include customers/slideshow.html name="overview" slides=page.overview %}
-
-			<h2> CloudCannon Features Used </h2>
-
-			{% for feature in page.features %}
-			<section class="{% cycle 'alternate', '' %}">
-				<div class="container">
-					<div class="text">
-						<h3>{{ feature.name }}</h3>
-						{{ feature.description | markdownify }}
-					</div>
-					<div class="image">
-						<img class="screenshot" src="{{ feature.image_path }}" width="550" alt="{{ feature.name }}" />
-					</div>
-				</div>
-			</section>
-			{% endfor %}
-
-
-
-			<h2> Workflow </h2>
-			<div><img src="{{ page.workflow.image_path }}" alt="workflow" /></div>
-			{{ page.workflow.description | markdownify }}
-
-			<h2> Summary </h2>
-			{{ page.summary | markdownify }}
-		</div>
-  </div>
+<section class="bright-section centered">
+	<div class="container">
+		<h2>Join {{ page.name }} and use CloudCannon with your team</h2>
+		<p>
+			<a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-primary btn-large btn-block btn-centered">Sign up now</a>
+		</p>
+	</div>
 </section>
 
 <!-- <script src="/js/looper.min.js"></script> -->
