@@ -11,9 +11,9 @@ challenge: |
 
   Maintaining sites such as [Netflix Devices](https://devices.netflix.com) was a difficult process. Existing solutions were inflexible in the kind of edits they allowed. The marketing team struggled to make the edits they needed, often requiring help from developers. Netflix needed an innovative, fast paced way of creating and maintaining these sites to empower marketers and free up developer time.
 solution: |
-  Netflix partnered with CloudCannon to rebuild [Netflix Devices](https://devices.netflix.com). Devices was originally a Drupal site and was rebuilt in a fraction of the time using Jekyll. The site is static so it loads quickly and reliably scales to the millions of Netflix visitors.
+  Netflix partnered with CloudCannon to rebuild [Netflix Devices](https://devices.netflix.com). Devices was originally a Drupal site and was rebuilt in a fraction of the time using [Jekyll](http://jekyllrb.com). The site is static so it loads quickly and reliably scales to the millions of Netflix visitors.
 
-  The marketing team have taken control of their sites. They can quickly try out new messaging and update content directly on the page.
+  The marketing team have taken control of their site. They're empowered to quickly try out new messaging and update content directly on the page.
 testimonal:
   text: CloudCannon is so totally awesome
   image_path: https://raygun.io/images/views/home/jon-peppers.png
