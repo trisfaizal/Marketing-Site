@@ -88,7 +88,7 @@ function recordKeenEvent(event_name, data) {
 
 	events.record = function (eventName, data) {
 		data = data || {};
-		recordKeenEvent(eventName);
+		recordKeenEvent(eventName, data);
 		ga('send', {
 			'hitType': 'event',
 			'eventCategory': eventName,

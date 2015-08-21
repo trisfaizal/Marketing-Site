@@ -20,6 +20,10 @@ layout: default
 
 		<h2>How CloudCannon helped</h2>
 		{{ page.solution | markdownify }}
+
+		{% if page.testimonial %}
+			{% include quote.html quote=page.testimonial %}
+		{% endif %}
 	</div>
 
 	<div class="container">

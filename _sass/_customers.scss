@@ -1,3 +1,4 @@
+header.engine-yard,
 header.netflix {
     background: #221F1F;
     padding: 100px 0;
@@ -40,6 +41,14 @@ header.netflix {
         }
     }
 }
+
+header.engine-yard {
+  background-image: url('/img/customers/engine_yard/bg.jpg');
+  background-size: cover;
+}
+
+
+
 
 .customers {
     text-align: center;
