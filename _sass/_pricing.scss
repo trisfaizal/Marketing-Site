@@ -2,8 +2,11 @@ table.desktop-pricing {
 	display: none;
 	border: 0;
 	background: transparent;
+	table-layout: fixed;
+	margin: 60px 0;
 
-	td, th {
+	td,
+	th {
 		border: 0;
 		text-align: center;
 		padding: 5px;
@@ -17,46 +20,44 @@ table.desktop-pricing {
 		font-size: 0.9em;
 	}
 
-	tr:first-child {
-		border-bottom: 2px solid #eee;
-	}
+	th {
+		font-weight: 600;
+		line-height: 1.4;
 
-	th span {
-		white-space: nowrap;
-		width: 100px;
-		display: block;
-		font-size: 1em;
-		margin: 0 auto;
-	}
-
-	tr > :first-child {
-		text-align: right;
-		width: auto;
+		span {
+			white-space: nowrap;
+			width: 100px;
+			display: block;
+			font-size: 1em;
+			margin: 0 auto;
+		}
 	}
 
 	tr {
 		background: none;
 		border-bottom: 0;
+
+		& > :first-child {
+			text-align: left;
+			width: 30%;
+		}
 	}
 
 	.not-available {
-		opacity: 0.1;
+		opacity: 0.15;
 	}
 
 	img {
 		width: 32px !important;
 	}
-
-	.btn {
-		margin-top: 0;
-	}
 }
 
 tr.separator td {
-	background-color: #EEE;
-	height: 1px;
-	padding: 0;
-	border: 10px solid #FFF;
+	h3 {
+		font-size: 1.2em;
+		font-weight: 700;
+		margin: 25px 0 15px 0;
+	}
 }
 
 .mobile-pricing {
@@ -66,6 +67,8 @@ tr.separator td {
 
 	small {
 		display: block;
+		margin-top: 5px;
+		font-size: 0.7em;
 	}
 
 	dt, dd {
@@ -88,8 +91,8 @@ tr.separator td {
 	}
 
 	& + .mobile-pricing {
-		margin: 40px auto 0 auto;
-		padding: 20px 0 0 0;
+		margin: 40px auto 40px auto;
+		padding: 40px 0 0 0;
 		border-top: 1px solid #eee;
 	}
 }

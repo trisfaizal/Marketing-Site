@@ -5,69 +5,69 @@ header: Pricing
 ---
 
 <section>
-    <div class="container">
-        <table class="desktop-pricing">
-            <tr>
-                <th></th>
-                {% for plan in site.data.plans %}
-                    <th><span>{{ plan.name }}</span></th>
-                {% endfor %}
-            </tr>
-            <tr>
-                <th>Price per month</td>
-                {% for plan in site.data.plans %}
-                    <th>{{ plan.price }}</th>
-                {% endfor %}
-            </tr>
-            {% for feature in site.data.plan_features %}
-                {% if feature.name %}
-                    <tr>
-                        <th>{{ feature.name }}</th>
-                        {% for plan in site.data.plans %}
-                            {% assign val = feature[plan.name] %}
-                            {% if val == 'not-available' %}
-                                <td class="not-available">
-                                    <img src="/img/close.svg" width="24" height="24" alt="Not Available">
-                                </td>
-                            {% elsif val == 'available' %}
-                                <td class="available">
-                                    <img src="/img/tick.svg" width="24" height="24" alt="Available">
-                                </td>
-                            {% else %}
-                                <td>{{ val }}</td>
-                            {% endif %}
-                        {% endfor %}
-                    </tr>
-                {% else %}
-                    <tr class="separator">
-                        <td colspan="{{ site.data.plans | size | plus: 1 }}"></td>
-                    </tr>
-                {% endif %}
-            {% endfor %}
-            <tr>
-                <td></td>
-                {% for plan in site.data.plans %}
-                    <td><a href="{{ plan.url }}" class="{{ plan.buttonClass }}">{{ plan.call-to-action }}</a></td>
-                {% endfor %}
-            </tr>
-        </table>
+	<div class="container">
+		<a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Start Free Trial</a>
 
-        {% for plan in site.data.plans %}
-            <div class="mobile-pricing">
-                <h3>{{ plan.name }} <small>Price: {{ plan.price }}</small></h3>
-                <dl>
-                    {% for feature in site.data.plan_features %}
-                        {% assign val = feature[plan.name] %}
-                        {% if val != 'not-available' and feature.name %}
-                            <dt><img src="/img/tick.svg" width="18" height="18" alt="Available"> {{ feature.name }}</dt>
-                            {% unless val == 'available' %}
-                                <dd>{{ val }}</dd>
-                            {%  endunless %}
-                        {% endif %}
-                    {% endfor %}
-                </dl>
-                <div><a href="{{ plan.url }}" class="{{ plan.buttonClass }}">{{ plan.call-to-action }}</a></div>
-            </div>
-        {% endfor %}
-    </div>
+		<table class="desktop-pricing">
+			<tr>
+				<th></th>
+				{% for plan in site.data.plans %}
+					<th><span>{{ plan.name }}</span></th>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Monthly price per seat</td>
+				{% for plan in site.data.plans %}
+					<th>{{ plan.price }}</th>
+				{% endfor %}
+			</tr>
+
+			{% for feature in site.data.plan_features %}
+				{% if feature.name %}
+					<tr>
+						<th>{{ feature.name }}</th>
+						{% for plan in site.data.plans %}
+							{% assign val = feature[plan.name] %}
+							{% if val == 'not-available' %}
+								<td class="not-available">
+									<img src="/img/close.svg" width="24" height="24" alt="Not Available">
+								</td>
+							{% elsif val == 'available' %}
+								<td class="available">
+									<img src="/img/tick.svg" width="24" height="24" alt="Available">
+								</td>
+							{% else %}
+								<td>{{ val }}</td>
+							{% endif %}
+						{% endfor %}
+					</tr>
+				{% else %}
+					<tr class="separator">
+						<td colspan="{{ site.data.plans | size | plus: 1 }}">
+							<h3>{{ feature.category_name }}</h3>
+						</td>
+					</tr>
+				{% endif %}
+			{% endfor %}
+		</table>
+
+		{% for plan in site.data.plans %}
+			<div class="mobile-pricing">
+				<h3>{{ plan.name }} <small>Price: {{ plan.price }}</small></h3>
+				<dl>
+					{% for feature in site.data.plan_features %}
+						{% assign val = feature[plan.name] %}
+						{% if val != 'not-available' and feature.name %}
+							<dt><img src="/img/tick.svg" width="18" height="18" alt="Available"> {{ feature.name }}</dt>
+							{% unless val == 'available' %}
+								<dd>{{ val }}</dd>
+							{%  endunless %}
+						{% endif %}
+					{% endfor %}
+				</dl>
+			</div>
+		{% endfor %}
+
+		<a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Start Free Trial</a>
+	</div>
 </section>

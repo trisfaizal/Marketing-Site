@@ -1,24 +1,18 @@
-name,Prototyping,Small Team,Agency,Enterprise,mobile_visible
-Websites per subscription,1,1,Multiple,Multiple,true
-Collaborators,0,4,5 - 15,Unlimited,true
-,,,,,
-Custom Domain Name,not-available,available,available,available,true
-.cloudvent.net domain for testing,available,available,available,available,true
-Website hosting,available,available,available,available,true
-Password Protected,Compulsory,Optional,Optional,Optional,true
-,,,,,
-File syncing with Bitbucket,available,available,available,available,true
-File syncing with GitHub,available,available,available,available,true
-File syncing with Dropbox,available,available,available,available,true
-File syncing with FTP,available,available,available,available,true
-,,,,,
-White-labelling,not-available,not-available,available,available,true
-Jekyll Plugin Support,not-available,not-available,not-available,available,true
-Geolocation,not-available,not-available,not-available,available,true
-Increased Jekyll Build Time,not-available,not-available,not-available,available,true
-Site Internationalisation,not-available,not-available,not-available,available,true
-,,,,,
-Email Support,available,available,Priority,Priority,true
-Phone Support,not-available,not-available,available,available,true
-CloudCannon/Jekyll Training,not-available,not-available,available,available,true
-Payment Option,Free,Credit Card,Flexible,Flexible,true
+name,Basic,Agency,Enterprise,mobile_visible,category_name
+Websites,Unlimited,Unlimited,Unlimited,true,
+Support,available,available,available,true,
+,,,,,Site Features
+Custom Domains,available,available,available,true,
+Test Domains,available,available,available,true,
+Hosting,available,available,available,true,
+Storage Providers,available,available,available,true,
+White Label,not-available,available,available,true,
+Increased Build Times,not-available,available,available,true,
+Jekyll Plugins,not-available,Soon,Soon,true,
+Internationalisation,not-available,not-available,available,true,
+Geolocation,not-available,not-available,available,true,
+,,,,,Site Authentication
+Password,available,available,available,true,
+User Accounts,not-available,available,available,true,
+Custom Interfaces and Routes,not-available,available,available,true,
+SAML,not-available,not-available,available,true,
