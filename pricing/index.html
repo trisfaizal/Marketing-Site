@@ -59,13 +59,20 @@ header: Pricing
 							<dt><img src="/img/tick.svg" width="18" height="18" alt="Available"> {{ feature.name }}</dt>
 							{% unless val == 'available' %}
 								<dd>{{ val }}</dd>
-							{%  endunless %}
+							{% endunless %}
 						{% endif %}
 					{% endfor %}
 				</dl>
 			</div>
 		{% endfor %}
+	</div>
+</section>
 
-		<a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Start Free Trial</a>
+<section class="bright-section centered">
+	<div class="container">
+		<h2>Sign up to start your 30 day FREE trial on the Enterprise Plan</h2>
+		<p>
+			<a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Start Free Trial Now</a>
+		</p>
 	</div>
 </section>
