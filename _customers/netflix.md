@@ -14,12 +14,6 @@ solution: |
   Netflix partnered with CloudCannon to rebuild [Netflix Devices](https://devices.netflix.com). Devices was originally a Drupal site and was rebuilt in a fraction of the time using [Jekyll](http://jekyllrb.com). The site is static so it loads quickly and reliably scales to the millions of Netflix visitors.
 
   The marketing team have taken control of their site. They're empowered to quickly try out new messaging and update content directly on the page.
-testimonal:
-  text: CloudCannon is so totally awesome
-  image_path: https://raygun.io/images/views/home/jon-peppers.png
-  name: Jonathan Peppers
-  work_title: Lead Developer at Hitcents
-  work_path: http://netflix.com
 overview:
   - image_path: /img/customers/netflix/home.png
     alt: Devices Home Page
