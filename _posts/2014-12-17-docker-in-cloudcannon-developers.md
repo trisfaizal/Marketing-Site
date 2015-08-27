@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docker in Cloudcannon - Development
+title: Docker in CloudCannon - Development
 header: How we use Docker in our development environment.
 category: Operations
 author: tim

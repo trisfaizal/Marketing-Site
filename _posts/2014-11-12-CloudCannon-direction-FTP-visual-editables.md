@@ -13,7 +13,7 @@ author: sam
 We recently released four major product updates, (including FTP support!), [publicly announced our fundraising round and partnership with Rightside](http://techcrunch.com/2014/10/20/cloudcannon-raises-500k-to-make-designing-static-websites-simpler/).
 
 We have a clear direction on where we are going with the company and the product. Read on to learn how these changes are going to make it easier get your static websites live and editable.
- 
+
 <!-- excerpt stop -->
 
 The last two months have been crazy for CloudCannon.
@@ -22,7 +22,7 @@ We released four major product updates, [publicly announced our fundraising roun
 
 We have a clear direction on where we are going with the company and the product. Today I'm going to cover our company direction and then we'll take a look at how they've influenced the product feature updates.
 
-### CloudCannon's direction
+### CloudCannon direction
 
 The team at CloudCannon has been looking hard at what we're doing, where we're going, and how we can make a difference to how people develop websites. Our vision is clear:
 
@@ -54,8 +54,8 @@ FTP means you can look after your own website hosting - supercharging, maintaini
 
 We have made it just the same as using Dropbox. When you connect your FTP we will pull out a copy and keep in sync. Any changes that you make we will publish right back to your FTP. You can keep working the way you were before CloudCannon only now you have a great editor.
 
-<!-- 
-	Every time you wish to make an edit, we'll suck your website out of your host via FTP, present it to you in the CloudCannon interface to make changes, and then save it all back to your host via FTP again. 
+<!--
+	Every time you wish to make an edit, we'll suck your website out of your host via FTP, present it to you in the CloudCannon interface to make changes, and then save it all back to your host via FTP again.
 -->
 
 Linking your hosting FTP to your website is as simple as selecting it under the 'Storage Provider' options...
@@ -104,7 +104,7 @@ You can then save them by clicking the disk.
 
 It was quite annoying having to save between visual and code views in the editor. So now you can now switch between adding editables, editing visually, and the code view without saving. You can see exactly whats going only looking at the HTML that is changing. Just remember to save changes before you leave the page entirely.
 
-On top of that the editor is even better. We added another level of editing. You can now make "a", "span", "small", "strong", "em", "i", "b", "sub", "sup", "li", "dd", "dt", and "td" elements editable. These elements are span editables; this means that only the text can be updated. 
+On top of that the editor is even better. We added another level of editing. You can now make "a", "span", "small", "strong", "em", "i", "b", "sub", "sup", "li", "dd", "dt", and "td" elements editable. These elements are span editables; this means that only the text can be updated.
 
 #### Other things we've done
 

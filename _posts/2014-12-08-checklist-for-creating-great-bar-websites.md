@@ -174,7 +174,7 @@ Stick with text and good quality photos. Avoid plugins.
 - <label class="checkbox-label"><input type="checkbox"> Date, event title, short event description</label>
 - <label class="checkbox-label"><input type="checkbox"> Arrange them in a logical order</label>
 
-Examples I found that did it well: 
+Examples I found that did it well:
 
 ![Good Events example](/img/blog/2014-11-25-great-bar-websites-checklist/bar-website-events-example.png
 )
@@ -183,7 +183,7 @@ Examples I found that did it well:
 
 [http://havanabar.co.nz/#/Events](http://havanabar.co.nz/#/Events)
 
-#### Reservations/Private Hire Page # 
+#### Reservations/Private Hire Page #
 <p class="subtitle">Give info about reservations and how larger parties can use the venue.</p>
 
 *Include:*
@@ -259,7 +259,7 @@ You *could* include on an appropriate existing page if applicable:
 
 - Press page. These pages look lonely if there is not regular or recent press. It works on [this site](https://barnightjar.com/) (it's the 2nd best bar in the world apparently), but again, maybe not on your local. Instead choose a choice quote from any coverage and stick it on another page.
 
-#### Avoid including: 
+#### Avoid including:
 <p class="subtitle">Challenge your client on including these site features.</p>
 
 - Videos. None of the websites I visited did these well. Too much production quality is required to make a good impression.
@@ -268,7 +268,7 @@ You *could* include on an appropriate existing page if applicable:
 
 - Social media feeds. You're going to the effort to create a website that's on brand for the bar and social media feeds are hard to integrate seamlessly. You can't control the content or the way it looks on your website.
 
-- Blog. Blogs are like press pages and need to have regular content to come across credible and trustworthy. I freak out when CloudCannon's goes two weeks without a post because people might think we've abandoned the business. If your client isn't going to dedicate the time to it in their normal business day, don't include it.
+- Blog. Blogs are like press pages and need to have regular content to come across credible and trustworthy. I freak out when CloudCannon goes two weeks without a post because people might think we've abandoned the business. If your client isn't going to dedicate the time to it in their normal business day, don't include it.
 
 - Subscribe to mailing list. Similar to the blog. A dead email list implies regular communication. Use your judgement on the clients plans to use this channel. Suggest links to social media pages as a replacement.
 
@@ -449,5 +449,3 @@ Random bars on Yelp from New Zealand, Australia, USA, England, Canada:
 All of the above is my opinion on bar website design of course. If you have any opinions of your own please share them below in the comments. I've intentionally left out some interesting statistics about these bar websites. I'll be doing a follow up post looking at the quantitative data for all you stats geeks.
 
 If you haven't already, check out [CloudCannon](http://cloudcannon.com) - it's a low time investment way to add simple client editing to this type of website. If you need any help, just [flick us a message](mailto:support@cloudcannon.com), we're happy to help.
-
-

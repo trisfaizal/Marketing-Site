@@ -90,7 +90,7 @@ quotes:
     work_title: Jekyll intro tutorial
     work_path: "http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/"
   michelle:
-    text: "Well, there's Jekyll, and then there's Github Pages Jekyll. Jekyll itself is pretty straightforward, but Github Pages doesn't have great error messaging on build fail. It has gotten a bit better over the years, but still... Jekyll itself was pretty easy to work with once you figured out the basic config setup (which, if you've never used a config file before, takes a little learning, but not too bad)."
+    text: "Well, there's Jekyll, and then there's GitHub Pages Jekyll. Jekyll itself is pretty straightforward, but GitHub Pages doesn't have great error messaging on build fail. It has gotten a bit better over the years, but still... Jekyll itself was pretty easy to work with once you figured out the basic config setup (which, if you've never used a config file before, takes a little learning, but not too bad)."
     name: Michelle Hertzfeld
     twitter_path: "https://twitter.com/meiqimichelle"
     image_path: "https://pbs.twimg.com/profile_images/478563672785035264/F2GFnKCb_400x400.jpeg"

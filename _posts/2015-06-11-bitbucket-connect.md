@@ -6,7 +6,7 @@ category: Features
 author: mike
 ---
 
-Today we're bringing a new level of simplicity to managing [Jekyll](http://jekyllrb.com) websites with CloudCannon's add-on for Bitbucket Connect.
+Today we're bringing a new level of simplicity to managing [Jekyll](http://jekyllrb.com) websites with the CloudCannon add-on for Bitbucket Connect.
 
 ![Bitbucket](/img/blog/bitbucket/bitbucket.png)
 

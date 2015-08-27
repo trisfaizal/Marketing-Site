@@ -118,7 +118,7 @@ quotes:
     work_title: Jekyll intro tutorial
     work_path: "http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/"
   michelle:
-    text: "Jekyll is extremely lightweight and customizable. I can use standard HTML/CSS with Jekyll as a page templater, and that's *it*. It doesn't force me to change anything else about my workflow or learn lots and lots of new things/languages. And...I can use it in combination with Github Pages to host stuff for free :D"
+    text: "Jekyll is extremely lightweight and customizable. I can use standard HTML/CSS with Jekyll as a page templater, and that's *it*. It doesn't force me to change anything else about my workflow or learn lots and lots of new things/languages. And...I can use it in combination with GitHub Pages to host stuff for free :D"
     name: Michelle Hertzfeld
     twitter_path: "https://twitter.com/meiqimichelle"
     image_path: "https://pbs.twimg.com/profile_images/478563672785035264/F2GFnKCb_400x400.jpeg"
@@ -133,7 +133,7 @@ I asked them why they love using Jekyll in the hope of convincing you give it a 
 
 I recently reached out to people that I consider to be influencers in the Jekyll static site generator community. These are users passionate enough to contribute code snippets, blog about using Jekyll and open source themes to the community. They aren&#39;t core contributing team members, but rather regular users like you and I.
 
-I asked these influencers to share some of their opinions and experiences of Jekyll. I explored what they love, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community headed. 
+I asked these influencers to share some of their opinions and experiences of Jekyll. I explored what they love, what makes them facepalm, and where they would like to see Jekyll and it&#39;s community headed.
 
 The response I had was awesome and I wanted to share my findings so that if you aren&#39;t using Jekyll already you might be convinced to give it a try.
 

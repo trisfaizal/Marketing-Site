@@ -32,7 +32,7 @@ header : Blog
 		<!-- Pagination links -->
 		<div class="pagination">
 			{% if paginator.previous_page %}
-				<a href="{{ paginator.previous_page_path }}" class="previous btn">&larr; Newer Posts</a>
+				<a href="{{ paginator.previous_page_path }}" class="previous btn">&larr; Newer posts</a>
 			{% else %}
 				<span class="previous">No Newer Posts</span>
 			{% endif %}
@@ -40,7 +40,7 @@ header : Blog
 			<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
 
 			{% if paginator.next_page %}
-				<a href="{{ paginator.next_page_path }}" class="next btn">Older Posts &rarr;</a>
+				<a href="{{ paginator.next_page_path }}" class="next btn">Older posts &rarr;</a>
 			{% else %}
 				<span class="next">No Older Posts</span>
 			{% endif %}
