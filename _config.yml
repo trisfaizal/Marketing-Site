@@ -14,7 +14,7 @@ collections:
     name: Team Members
   customers:
     name: Customers
-    output: true
+    output: false
 defaults:
   - scope:
       path: ""
