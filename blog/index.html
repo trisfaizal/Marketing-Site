@@ -17,7 +17,7 @@ header : Blog
 
 					<p>
 						{% if post.content contains '<!-- excerpt stop -->' %}
-						    {{ post.content | split:'<!-- excerpt stop -->' | first }}
+							{{ post.content | split:'<!-- excerpt stop -->' | first }}
 						{% else %}
 							{{ post.excerpt }}
 						{% endif %}
@@ -49,9 +49,9 @@ header : Blog
 		<hr>
 
 		<div id="mc_embed_signup" class="newsletter-signup">
-			<h3> Subscribe to the CloudCannon Blog </h3>
+			<h3>Subscribe to the CloudCannon Blog</h3>
 
-			<p> Join <strong>thousands</strong> of web designers. Get the latest deconstructions, trends and tutorials sent straight to your inbox. </p>
+			<p>Join <strong>thousands</strong> of web developers. Get the latest deconstructions, trends and tutorials sent straight to your inbox.</p>
 
 			<form action="http://cloudcannon.us6.list-manage1.com/subscribe/post?u=8cb8984760b59af9f847b1168&amp;id=5c25c4fc1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="clearfix validate blog-newsletter" target="_blank">
 				<input type="email" value="" name="EMAIL" placeholder="Email Address" required="true">
