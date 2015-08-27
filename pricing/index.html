@@ -14,7 +14,7 @@ header: Pricing
 				{% endfor %}
 			</tr>
 			<tr>
-				<th>Monthly price per seat</td>
+				<th>Monthly price per user</td>
 				{% for plan in site.data.plans %}
 					<th>{{ plan.price }}</th>
 				{% endfor %}
@@ -74,5 +74,57 @@ header: Pricing
 		<p>
 			<a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Sign up free</a>
 		</p>
+	</div>
+</section>
+
+<section>
+	<div class="container text-container">
+		<h2>FAQ</h2>
+
+		<h4>Can I try CloudCannon for free?</h4>
+		<p>
+			Yes! Signing up for CloudCannon starts a free 30 day trial with the enterprise plan features.
+			During this trial period you can enter a credit card and select a plan if you'd like to continue using CloudCannon.
+		</p>
+
+		<h4>How am I billed when adding new users?</h4>
+		<p>
+			We'll make a one-time, prorated charge to your credit card to cover your new team
+			member's account for the remainder of the current billing period.
+		</p>
+		<p>
+			For example, if your team is on the agency plan, it will cost $75 per user per month.
+			You add a new team member 10 days into your billing period and there are 20 remaining days in the month.
+			The per-day cost for each user is $75 &divide; 30, so we will make a one-time charge of $50
+			($75 &divide; 30 days &times; 20 days) to your credit card on file.
+		</p>
+
+		<h4>CloudCannon almost fits my needs, do you offer X?</h4>
+		<p>We listen closely to the feedback of our customers. If you need something more from CloudCannon, get in touch with support.</p>
+
+		<h4>Where are CloudCannon sites hosted?</h4>
+		<p>
+			CloudCannon uses Amazon Web Services for all infrastructure.
+			Sites are served from our custom File Server and automatically optimised.
+			Optimisations include GZIP, serving assets from a CDN and minification.
+		</p>
+		<p>
+			CloudCannon also supports <a href="http://docs.cloudcannon.com/hosting/overview/" target="_blank">hosting sites on your own servers</a>.
+		</p>
+
+		<h4>What happens after the 30 day trial?</h4>
+		<p>
+			If you haven't added a credit card and selected a plan, you'll be downgraded to our free plan.
+			The free plan restricts access to your sites and removes all the shares you've made.
+		</p>
+
+		<h4>Do I have to pay for a user when I'm sharing to a client?</h4>
+		<p>No, you can use <a href="http://docs.cloudcannon.com/sharing/client-sharing/" target="_blank">Client Sharing</a> which does not count as a user.</p>
+
+		<h4>Can I switch plans?</h4>
+		<p>Yes, you can change your plan any time in <em>Account Settings</em>.</p>
+
+		<h4>How do I cancel my CloudCannon account?</h4>
+		<p>You can either downgrade to the free plan or delete your account. You can find these options in <em>Account Settings</em>.</p>
 	</div>
 </section>
