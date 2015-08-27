@@ -22,8 +22,8 @@ The team at Snipcart have created some Javascript magic so that with a single li
 That’s:
 
 <pre class="prettyprint snipcart">
-&lt;script type="text/javascript" 
-  id="snipcart" 
+&lt;script type="text/javascript"
+  id="snipcart"
   src="https://app.snipcart.com/scripts/snipcart.js"
   data-api-key="{YOUR_API_KEY}"&gt;
 &lt;/script&gt;
@@ -59,7 +59,7 @@ François over at Snipcart has just released an excellent tutorial on setting up
 
 Check out the link below:
 <div>
-	<a class="btn" href="https://snipcart.com/blog/how-to-sell-online-with-cloudcannon">Take me to the CloudCannon &amp; Snipcart Tutorial</a>
+	<a class="btn" href="https://snipcart.com/blog/how-to-sell-online-with-cloudcannon">Take me to the CloudCannon &amp; Snipcart tutorial</a>
 </div>
 
 Side notes:
@@ -71,4 +71,3 @@ Side notes:
 + **Do tell us** if you love using Snipcart on CloudCannon so we can put extra effort into working together on a much simpler integration.
 
 Get designing, and get selling!
-

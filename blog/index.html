@@ -17,7 +17,7 @@ header : Blog
 
 					<p>
 						{% if post.content contains '<!-- excerpt stop -->' %}
-						    {{ post.content | split:'<!-- excerpt stop -->' | first }}
+							{{ post.content | split:'<!-- excerpt stop -->' | first }}
 						{% else %}
 							{{ post.excerpt }}
 						{% endif %}
@@ -32,7 +32,7 @@ header : Blog
 		<!-- Pagination links -->
 		<div class="pagination">
 			{% if paginator.previous_page %}
-				<a href="{{ paginator.previous_page_path }}" class="previous btn">&larr; Newer Posts</a>
+				<a href="{{ paginator.previous_page_path }}" class="previous btn">&larr; Newer posts</a>
 			{% else %}
 				<span class="previous">No Newer Posts</span>
 			{% endif %}
@@ -40,24 +40,17 @@ header : Blog
 			<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
 
 			{% if paginator.next_page %}
-				<a href="{{ paginator.next_page_path }}" class="next btn">Older Posts &rarr;</a>
+				<a href="{{ paginator.next_page_path }}" class="next btn">Older posts &rarr;</a>
 			{% else %}
 				<span class="next">No Older Posts</span>
 			{% endif %}
 		</div>
+	</div>
+</section>
 
-		<hr>
-
-		<div id="mc_embed_signup" class="newsletter-signup">
-			<h3> Subscribe to the CloudCannon Blog </h3>
-
-			<p> Join <strong>thousands</strong> of web designers. Get the latest deconstructions, trends and tutorials sent straight to your inbox. </p>
-
-			<form action="http://cloudcannon.us6.list-manage1.com/subscribe/post?u=8cb8984760b59af9f847b1168&amp;id=5c25c4fc1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="clearfix validate blog-newsletter" target="_blank">
-				<input type="email" value="" name="EMAIL" placeholder="Email Address" required="true">
-
-				<input type="submit" value="Send me the latest" name="subscribe" id="mc-embedded-subscribe" class="button">
-			</form>
-		</div>
+<section class="bright-section centered">
+	<div class="container">
+		<h2>Use CloudCannon on your next site</h2>
+		<p><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-primary btn-large btn-block btn-centered">Sign up free</a></p>
 	</div>
 </section>

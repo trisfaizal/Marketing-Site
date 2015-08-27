@@ -21,14 +21,14 @@ Lately we've been working on an integration with [Jekyll](http://jekyllrb.com), 
 Our Jekyll feature set is currently in private beta right now. To get early access to blogging on CloudCannon head over to [cloudcannon.com/jekyll](/jekyll).  
 
 <div>
-	<a class="btn" href="/jekyll">Give me blogging on CloudCannon! →</a>
+	<a class="btn" href="/jekyll">Give me blogging on CloudCannon! &rarr;</a>
 </div>
- 
+
 
 ### App look and feel ###
- 
+
 Three big changes you might have noticed about how CloudCannon looks:
- 
+
 
 * We’ve done a complete redesign of the designer browser interface.
 We’ve changed icons to be larger, more colourful (yes we speak UK english) and clearer.
@@ -36,13 +36,13 @@ We’ve changed icons to be larger, more colourful (yes we speak UK english) and
 <img src="/img/blog/july14-update/site_icons.png" alt="Site Icons" style="width: 80%" />
 
 * Configuration from the Designer view is also now much much easier. Config has it’s own tab down the left hand menu. Better than a couple of buttons along the bottom we had previously.
- 
+
 <img src="/img/blog/july14-update/config.png" alt="Configuration" style="width: 80%" />
 
 
 * The client editing experience has been made much smoother, particularly around site navigation.
 Users can now navigate their site in the editor view much like the would normally (click buttons, follow internal links, etc) and make changes as they go.
- 
+
 ### New Functionality ###
 
 You can now host multiple websites on a single domain.
@@ -52,9 +52,9 @@ This functionality is enabled by creating a new ‘website’ under an already u
 
 
 ### Performance updates ###
- 
+
 * Syncing is faster now. Small updates should be live almost instantly.
- 
+
 * Adding a template to a website will also be much faster now.
 
 ### Minor usability updates ###
@@ -64,9 +64,9 @@ This functionality is enabled by creating a new ‘website’ under an already u
 <img src="/img/blog/july14-update/sync_icon.png" alt="Sync icons" style="width: 40%" />
 
 
- 
+
 * Filenames are now smarter. They span over two lines and truncate in the middle.
- 
+
 * We’ve added some sexy alert messages that pop out of the bottom right of your screen to let you know what’s going on.
 
 <img src="/img/blog/july14-update/update_alert.png" alt="Alert Message" style="width: 60%" />
@@ -79,7 +79,7 @@ This functionality is enabled by creating a new ‘website’ under an already u
 ![Sync icon](/img/blog/july14-update/fav_icon.png)
 
 
- 
+
 ### New faces ###
 
 Until now, CloudCannon has just been George and I. We’ve achieved a lot to date, but we have bigger visions for what CloudCannon can be and what our community of awesome web designers will be capable of.
@@ -94,7 +94,7 @@ With that in mind, we’re excited to officially welcome Sam Bonney to the team 
 
 <img src="/img/blog/july14-update/sam.jpg" alt="Sam" style="border-radius: 1000px;" />
 
-<p style="text-align:center">Sam Bonney, our new Head of Marketing.</p> 
+<p style="text-align:center">Sam Bonney, our new Head of Marketing.</p>
 
 He loves [cravats](http://en.wikipedia.org/wiki/Ascot_tie#Popularity_of_the_day_cravat) and [noodles](http://en.wikipedia.org/wiki/Instant_noodles)! [Often together](/img/blog/july14-update/sam_2.jpg).
 

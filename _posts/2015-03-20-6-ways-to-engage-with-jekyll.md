@@ -22,7 +22,7 @@ quotes:
     work_title: Jekyll themes
     work_path: "https://mademistakes.com/work/"
   john:
-    text: "Better support for custom collections, themes, and the ability to potentially switch out themes on the fly. It would be ideal if there were an easier way to ship with plugin support (Github pages doesn't support it)."
+    text: "Better support for custom collections, themes, and the ability to potentially switch out themes on the fly. It would be ideal if there were an easier way to ship with plugin support (GitHub pages doesn't support it)."
     name: John Otander
     twitter_path: "https://twitter.com/4lpine"
     image_path: "https://pbs.twimg.com/profile_images/1685588137/thumb_400x400.jpg"
@@ -125,7 +125,7 @@ Top 6 Jekyll contribution gaps you can fill as identified by the Jekyll communit
 
 {% include /quote.html quote=page.quotes.mike%}
 
-Normally I leave the quotes to the bottom of these posts but I want to highlight this one. I think it is my favourite quote from this whole research process. 
+Normally I leave the quotes to the bottom of these posts but I want to highlight this one. I think it is my favourite quote from this whole research process.
 
 Jekyll is awesome. Far more awesome than the status quo, and people need to know about it.
 

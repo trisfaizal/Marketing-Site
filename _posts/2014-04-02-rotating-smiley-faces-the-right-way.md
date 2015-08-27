@@ -37,6 +37,6 @@ $("selector").smilify();
 ### Links
 
 * <a target="_blank" href="http://cloudcannon.com/smileys/">Project Page</a>
-* <a target="_blank" href="https://github.com/GeorgePhillips/Smiley.js">Github Repo</a>
+* <a target="_blank" href="https://github.com/GeorgePhillips/Smiley.js">GitHub Repo</a>
 
 Enjoy!
