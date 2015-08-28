@@ -2,7 +2,7 @@
 layout: post
 title: Improved Pricing
 header: Improved Pricing
-category: Jekyll
+category: Features
 author: mike
 ---
 
