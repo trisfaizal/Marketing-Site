@@ -28,15 +28,15 @@ If you’re on an existing pricing plan you have the option to upgrade to our ne
 * [Custom Authentication Interfaces](http://docs.cloudcannon.com/authentication/custom-interfaces/) - Customise the authentication interfaces used to view your site.
 
 
-New Enterprise Features
+## New Enterprise Features
 
 Enterprises have access to new features including:
 
 * [Geolocation](http://docs.cloudcannon.com/i18n/geolocation/) - change content depending on the visitor's location.
 * [Internationalisation](http://docs.cloudcannon.com/i18n/internationalisation/) - translate your site into multiple languages.
 * [SAML authentication](http://docs.cloudcannon.com/authentication/saml/) - Use One Login or other single sign on provider to restrict access to your site.<!-- Screenshot -->
-  ## New UI
 
+## New UI
 
 You’ll also notice a brand new UI in CloudCannon. We constantly strive to make CloudCannon even easier for everyone to use. This latest iteration fixes many of the usability issues we’ve seen crop up.<!-- Screenshot --><!-- Screenshot -->
 
