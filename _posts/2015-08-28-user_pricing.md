@@ -51,6 +51,6 @@ Our Jekyll support has come a long way since launching the beta a few months ago
 
 ## Change Log
 
-[We’ve introduced a product change log](http://docs.cloudcannon.com/changelog/) to improve communication on the progress we’re making on CloudCannon. If you want to keep up to date there’s a [RSS feed](http://docs.cloudcannon.com/rss/).
+[We’ve introduced a product change log](http://docs.cloudcannon.com/changelog/) to keep you up to date with all changes in our day-to-day deployments. If you want to keep up to date follow the [change log RSS feed](http://docs.cloudcannon.com/rss/).
 
 If you have any questions about the new pricing and features, get in touch with [our support team](http://docs.cloudcannon.com/contact/).
