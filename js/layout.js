@@ -100,7 +100,6 @@ function recordKeenEvent(event_name, data) {
 }(window));
 
 
-console.log(Cookies.get('uuid_metrics'));
 if (Cookies.get('uuid_metrics') === undefined) {
   window.eventsWrapper.record('Visited CloudCannon');
 }
