@@ -7,6 +7,7 @@ author: mike
 ---
 
 We have exciting updates for CloudCannon including new pricing, new UI and brand new features.
+
 ## Pricing
 
 We’ve learned a lot about how people are using CloudCannon and realised we could do a better job on how we price CloudCannon.
@@ -18,14 +19,16 @@ CloudCannon now charges per user instead of per website. For example, say you’
 If you’re on an existing pricing plan you have the option to upgrade to our new pricing at any time in Account Settings.
 
 ![](/uploads/versions/screen shot 2015-08-28 at 12.49.46 pm---x----900-563x---.png)<!--Screenshot -->
+
 ## New Agency Features
 
 * [White labeling](h) - Brand CloudCannon as your own when you’re sharing to clients using [client sharing](http://docs.cloudcannon.com/sharing/client-sharing/).
 * [User Account Sharing](http://docs.cloudcannon.com/authentication/user-accounts/) - Restrict access to your site to select group of people.
 * [Custom Routes](http://docs.cloudcannon.com/authentication/custom-routes/) - Restrict public access to certain parts of your site.
-* [Custom Authentication Interfaces](http://docs.cloudcannon.com/authentication/custom-interfaces/) - Customise the authentication interfaces used to view your site.<!-- Screenshot -->
-  ## New Enterprise Features
+* [Custom Authentication Interfaces](http://docs.cloudcannon.com/authentication/custom-interfaces/) - Customise the authentication interfaces used to view your site.
 
+
+New Enterprise Features
 
 Enterprises have access to new features including:
 
@@ -42,11 +45,13 @@ You’ll also notice a brand new UI in CloudCannon. We constantly strive to make
 ![](/uploads/versions/screen shot 2015-08-28 at 12.55.21 pm---x----900-563x---.png)
 
 ![](/uploads/versions/screen shot 2015-08-28 at 12.53.39 pm---x----900-563x---.png)
+
 ## Front Matter UI
 
 The Jekyll has come a long way since launching a few months ago. We recently added the ability to have complety control over the UI displayed when front matter is editing. Now you can have date fields, check boxes, select boxes and more.
 
 ![](/uploads/versions/screen shot 2015-08-28 at 12.59.48 pm---x----900-563x---.png)
+
 ## Change Log
 
 To improve communication on the progress we’re making on CloudCannon we’ve introduced a product change log. Now you can read about all the improvements we’re making. If you want to keep up to date there’s a [RSS feed](http://docs.cloudcannon.com/rss/).
