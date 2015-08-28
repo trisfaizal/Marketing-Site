@@ -27,7 +27,6 @@ If you’re on an existing pricing plan you have the option to upgrade to our ne
 * [Custom Routes](http://docs.cloudcannon.com/authentication/custom-routes/) - Restrict public access to certain parts of your site.
 * [Custom Authentication Interfaces](http://docs.cloudcannon.com/authentication/custom-interfaces/) - Customise the authentication interfaces used to view your site.
 
-
 ## New Enterprise Features
 
 Enterprises have access to new features including:
@@ -50,10 +49,10 @@ You’ll also notice a brand new UI in CloudCannon. We constantly strive to make
 
 Our Jekyll support has come a long way since launching the beta a few months ago. We recently added the ability to have complety control over the UI displayed when editing front matter. Now you can have date fields, check boxes, select boxes and more. [Checkout the docs for the full range of possibilities](http://docs.cloudcannon.com/editing/front-matter/).
 
-![](/uploads/versions/screen shot 2015-08-28 at 12.59.48 pm---x----900-563x---.png){: .screenshot}
+![](/uploads/versions/screen shot 2015-08-28 at 3.25.34 pm---x----900-563x---.png){: .screenshot}
 
 ## Change Log
 
-[We’ve introduced a product change log](http://docs.cloudcannon.com/changelog/) to improve communication on the progress we’re making on CloudCannon If you want to keep up to date there’s a [RSS feed](http://docs.cloudcannon.com/rss/).
+[We’ve introduced a product change log](http://docs.cloudcannon.com/changelog/) to improve communication on the progress we’re making on CloudCannon. If you want to keep up to date there’s a [RSS feed](http://docs.cloudcannon.com/rss/).
 
 If you have any questions about the new pricing and features, get in touch with [our support team](http://docs.cloudcannon.com/contact/).
