@@ -12,17 +12,17 @@ We have exciting updates for CloudCannon including new pricing, new UI and brand
 
 We’ve learned a lot about how people are using CloudCannon. We want to simplify the workflow and make it easier to add sites to CloudCannon.
 
-[The new plans](/pricing/) have unlimited websites, white labelling for agencies and advanced features for enterprises.<!-- Pricing Plans -->
+[The new plans](/pricing/) have unlimited websites, white labelling for agencies and advanced features for enterprises.
 
-CloudCannon now charges per user instead of per website. For example, say you’re a design agency with three people on the team looking to use CloudCannon. You’d select your desired pricing tier, then share your site to the rest of your team. You account is charged for each new user you've shared with. You can then create more sites and share them with your team at no extra charge. [Client Sharing](http://docs.cloudcannon.com/sharing/client-sharing/) does not count as a user so you can share a site with smaller clients at no extra cost.
+CloudCannon now charges per user instead of per website. For example, say you’re a design agency with three people on the team looking to use CloudCannon. You’d select your desired pricing tier, then share your site to the rest of your team. You account is charged for each new user you've shared with. You can then create more sites and share them with your team at no extra charge. [Client Sharing](http://docs.cloudcannon.com/sharing/client-sharing/) does not count as a user so you can share to a client at no extra cost.
 
 If you’re on an existing pricing plan you have the option to upgrade to our new pricing at any time in Account Settings.
 
-![](/uploads/versions/screen shot 2015-08-28 at 12.49.46 pm---x----900-563x---.png){: .screenshot}<!--Screenshot -->
+![](/uploads/versions/screen shot 2015-08-28 at 12.49.46 pm---x----900-563x---.png){: .screenshot}
 
 ## New Agency Features
 
-* [White labelling](http://docs.cloudcannon.com/sharing/white-labeling/) - Brand CloudCannon as your own when you’re sharing to clients using [client sharing](http://docs.cloudcannon.com/sharing/client-sharing/).
+* [White labelling](http://docs.cloudcannon.com/sharing/white-labeling/) - Brand CloudCannon as your own when you’re sharing to clients using [Client Sharing](http://docs.cloudcannon.com/sharing/client-sharing/).
 * [User Account Sharing](http://docs.cloudcannon.com/authentication/user-accounts/) - Restrict access to your site to select group of people.
 * [Custom Routes](http://docs.cloudcannon.com/authentication/custom-routes/) - Restrict public access to certain parts of your site.
 * [Custom Authentication Interfaces](http://docs.cloudcannon.com/authentication/custom-interfaces/) - Customise the authentication interfaces used to view your site.
@@ -37,7 +37,7 @@ Enterprises have access to new features including:
 
 ## New UI
 
-You’ll also notice a brand new UI in CloudCannon. We constantly strive to make CloudCannon even easier for everyone to use. This latest iteration fixes many of the usability issues we’ve seen crop up.<!-- Screenshot --><!-- Screenshot -->
+You’ll also notice a brand new UI in CloudCannon. We constantly strive to make CloudCannon even easier for everyone to use. This latest iteration fixes many of the usability issues we’ve seen crop up.
 
 ![](/uploads/versions/screen shot 2015-08-28 at 12.55.52 pm---x----900-563x---.png){: .screenshot}
 
@@ -47,7 +47,7 @@ You’ll also notice a brand new UI in CloudCannon. We constantly strive to make
 
 ## Front Matter UI
 
-Our Jekyll support has come a long way since launching the beta a few months ago. We recently added the ability to have complety control over the UI displayed when editing front matter. Now you can have date fields, check boxes, select boxes and more. [Checkout the docs for the full range of possibilities](http://docs.cloudcannon.com/editing/front-matter/).
+Our Jekyll support has come a long way since launching the beta a few months ago. We recently added the ability to have complete control over the UI displayed when editing front matter. Now you can have date fields, check boxes, select boxes and more. [Checkout the docs for the full range of possibilities](http://docs.cloudcannon.com/editing/front-matter/).
 
 ![](/uploads/versions/screen shot 2015-08-28 at 3.25.34 pm---x----900-563x---.png){: .screenshot}
 
