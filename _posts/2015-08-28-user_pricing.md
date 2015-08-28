@@ -31,7 +31,7 @@ If you’re on an existing pricing plan you have the option to upgrade to our ne
 
 * [Geolocation](http://docs.cloudcannon.com/i18n/geolocation/) - Change content depending on the visitor's location.
 * [Internationalisation](http://docs.cloudcannon.com/i18n/internationalisation/) - Translate your site into multiple languages.
-* [SAML authentication](http://docs.cloudcannon.com/authentication/saml/) - Use One Login or other single sign on provider to restrict access to your site.<!-- Screenshot -->
+* [SAML authentication](http://docs.cloudcannon.com/authentication/saml/) - Use One Login or other single sign on providers to restrict access to your site.<!-- Screenshot -->
 
 ## New UI
 
