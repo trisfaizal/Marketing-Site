@@ -48,7 +48,7 @@ You’ll also notice a brand new UI in CloudCannon. We constantly strive to make
 
 ## Front Matter UI
 
-The Jekyll has come a long way since launching a few months ago. We recently added the ability to have complety control over the UI displayed when front matter is editing. Now you can have date fields, check boxes, select boxes and more.
+The Jekyll has come a long way since launching a few months ago. We recently added the ability to have complety control over the UI displayed when front matter is editing. Now you can have date fields, check boxes, select boxes and more. [Checkout the docs for the full range of possibilities](http://docs.cloudcannon.com/editing/front-matter/). 
 
 ![](/uploads/versions/screen shot 2015-08-28 at 12.59.48 pm---x----900-563x---.png)
 
