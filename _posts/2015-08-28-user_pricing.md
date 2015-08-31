@@ -22,8 +22,8 @@ If you’re on an existing pricing plan you have the option to upgrade to our ne
 
 ## New Agency Features
 
-* [White labelling](http://docs.cloudcannon.com/sharing/white-labeling/) - Brand CloudCannon as your own when you’re sharing to clients using [Client Sharing](http://docs.cloudcannon.com/sharing/client-sharing/).
-* [User Account Sharing](http://docs.cloudcannon.com/authentication/user-accounts/) - Restrict access to your site to select group of people.
+* [White Labelling](http://docs.cloudcannon.com/sharing/white-labeling/) - Brand CloudCannon as your own when you’re sharing to clients using [Client Sharing](http://docs.cloudcannon.com/sharing/client-sharing/).
+* [User Account Authentication](http://docs.cloudcannon.com/authentication/user-accounts/) - Restrict access to your site to select group of people.
 * [Custom Routes](http://docs.cloudcannon.com/authentication/custom-routes/) - Restrict public access to certain parts of your site.
 * [Custom Authentication Interfaces](http://docs.cloudcannon.com/authentication/custom-interfaces/) - Customise the authentication interfaces used to view your site.
 
@@ -31,7 +31,7 @@ If you’re on an existing pricing plan you have the option to upgrade to our ne
 
 * [Geolocation](http://docs.cloudcannon.com/i18n/geolocation/) - Change content depending on the visitor's location.
 * [Internationalisation](http://docs.cloudcannon.com/i18n/internationalisation/) - Translate your site into multiple languages.
-* [SAML authentication](http://docs.cloudcannon.com/authentication/saml/) - Use One Login or other single sign on providers to restrict access to your site.<!-- Screenshot -->
+* [SAML Authentication](http://docs.cloudcannon.com/authentication/saml/) - Use One Login or other single sign on providers to restrict access to your site.<!-- Screenshot -->
 
 ## New UI
 
