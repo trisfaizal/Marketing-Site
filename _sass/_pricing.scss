@@ -1,3 +1,40 @@
+.tooltip {
+	.tooltip-indicator {
+		opacity: 0.8;
+	}
+
+	em {
+		font-style: normal;
+		position: relative;
+	}
+
+	& em::before {
+		transition: 0.1s ease opacity;
+		pointer-events: none;
+		opacity: 0;
+		background-color: #333;
+		border-radius: 2px;
+		color: #fefefe;
+		padding: 10px 13px;
+		position: absolute;
+		width: 250px;
+		left: 60px;
+		top: 115%;
+		content: attr(data-title);
+		font-size: 1.5rem;
+		line-height: 1.4;
+		z-index: 1;
+	}
+
+	& em:hover {
+		cursor: help;
+
+		&::before {
+			opacity: 1;
+		}
+	}
+}
+
 table.desktop-pricing {
 	display: none;
 	border: 0;
@@ -23,6 +60,7 @@ table.desktop-pricing {
 	th {
 		font-weight: 600;
 		line-height: 1.4;
+		position: relative;
 
 		span {
 			white-space: nowrap;
@@ -46,10 +84,6 @@ table.desktop-pricing {
 	.not-available {
 		opacity: 0.15;
 	}
-
-	img {
-		width: 32px !important;
-	}
 }
 
 tr.separator td {
@@ -57,6 +91,7 @@ tr.separator td {
 		font-size: 1.2em;
 		font-weight: 700;
 		margin: 25px 0 15px 0;
+		display: inline-block;
 	}
 }
 

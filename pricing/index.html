@@ -23,16 +23,26 @@ header: Pricing
 			{% for feature in site.data.plan_features %}
 				{% if feature.name %}
 					<tr>
-						<th>{{ feature.name }}</th>
+						{% if feature.tooltip %}
+							<th class="tooltip">
+								<em data-title="{{ feature.tooltip }}">
+									{{ feature.name }}
+									<img src="/img/icons/help-outline.svg" width="13" height="13" class="tooltip-indicator">
+								</em>
+							</th>
+						{% else %}
+							<th>{{ feature.name }}</th>
+						{% endif %}
+
 						{% for plan in site.data.plans %}
 							{% assign val = feature[plan.name] %}
 							{% if val == 'not-available' %}
 								<td class="not-available">
-									<img src="/img/close.svg" width="24" height="24" alt="Not Available">
+									<img src="/img/close.svg" width="32" height="32" alt="Not Available">
 								</td>
 							{% elsif val == 'available' %}
 								<td class="available">
-									<img src="/img/tick.svg" width="24" height="24" alt="Available">
+									<img src="/img/tick.svg" width="32" height="32" alt="Available">
 								</td>
 							{% else %}
 								<td>{{ val }}</td>
@@ -41,9 +51,18 @@ header: Pricing
 					</tr>
 				{% else %}
 					<tr class="separator">
-						<td colspan="{{ site.data.plans | size | plus: 1 }}">
-							<h3>{{ feature.category_name }}</h3>
-						</td>
+						{% if feature.tooltip %}
+							<td class="tooltip">
+								<em data-title="{{ feature.tooltip }}">
+									<h3>{{ feature.category_name }}</h3>
+									<img src="/img/icons/help-outline.svg" width="13" height="13" class="tooltip-indicator">
+								</em>
+							</td>
+						{% else %}
+							<td><h3>{{ feature.category_name }}</h3></td>
+						{% endif %}
+
+						<td colspan="{{ site.data.plans | size }}"></td>
 					</tr>
 				{% endif %}
 			{% endfor %}
@@ -96,14 +115,13 @@ header: Pricing
 
 		<h4>How am I billed when adding new users?</h4>
 		<p>
-			We'll make a one-time, prorated charge to your credit card to cover your new team
-			member's account for the remainder of the current billing period.
+			We'll add prorated charge (or refund if you're removing a user) to your next invoice.
 		</p>
 		<p>
 			For example, if your team is on the agency plan, it will cost $75 per user per month.
 			You add a new team member 10 days into your billing period and there are 20 remaining days in the month.
-			The per-day cost for each user is $75 &divide; 30, so we will make a one-time charge of $50
-			($75 &divide; 30 days &times; 20 days) to your credit card on file.
+			The per-day cost for each user is $75 &divide; 30, so we will add on $50
+			($75 &divide; 30 days &times; 20 days) ontop of your next invoice.
 		</p>
 
 		<h4>CloudCannon almost fits my needs, do you offer X?</h4>
