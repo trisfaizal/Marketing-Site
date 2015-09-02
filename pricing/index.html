@@ -23,7 +23,11 @@ header: Pricing
 			{% for feature in site.data.plan_features %}
 				{% if feature.name %}
 					<tr>
-						<th>{{ feature.name }}</th>
+						{% if feature.tooltip %}
+							<th data-title="{{ feature.tooltip }}" class="tooltip"><em>{{ feature.name }}</em></th>
+						{% else %}
+							<th>{{ feature.name }}</th>
+						{% endif %}
 						{% for plan in site.data.plans %}
 							{% assign val = feature[plan.name] %}
 							{% if val == 'not-available' %}

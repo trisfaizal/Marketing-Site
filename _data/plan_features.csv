@@ -1,18 +1,1 @@
-name,Basic,Agency,Enterprise,mobile_visible,category_name
-Websites,Unlimited,Unlimited,Unlimited,true,
-Support,available,available,available,true,
-,,,,,Site Features
-Custom Domains,available,available,available,true,
-Test Domains,available,available,available,true,
-Hosting,available,available,available,true,
-Storage Providers,available,available,available,true,
-White Label,not-available,available,available,true,
-Increased Build Times,not-available,available,available,true,
-Jekyll Plugins,not-available,Soon,Soon,true,
-Internationalisation,not-available,not-available,available,true,
-Geolocation,not-available,not-available,available,true,
-,,,,,Site Authentication
-Password,available,available,available,true,
-User Accounts,not-available,available,available,true,
-Custom Interfaces and Routes,not-available,available,available,true,
-SAML,not-available,not-available,available,true,
+name,Basic,Agency,Enterprise,mobile_visible,category_name,tooltipWebsites,Unlimited,Unlimited,Unlimited,TRUE,,Support,available,available,available,TRUE,,Free Client Sharing,available,available,available,TRUE,,"With the Client Sharing feature, you can share with your clients without paying for extra users",,,,,Site Features,Custom Domains,available,available,available,TRUE,,Bring your own root or subdomain e.g. yoursite.com or www.yoursite.comTest Domains,available,available,available,TRUE,,A generated *.cloudvent.net domain you can use for testingHosting,available,available,available,TRUE,,Host your site on CloudCannon's supercharged infrastructureStorage Providers,available,available,available,TRUE,,Synchornise your site with a GitHub/Bitbucket repo or DropboxWhite Label,not-available,available,available,TRUE,,Remove all CloudCannon branding and add your own logo when sharing to clientsIncreased Build Time Limit,not-available,available,available,TRUE,,Remove the Jekyll build time limit. This limit is only hit on very large sites.Jekyll Plugins,not-available,Soon,Soon,TRUE,,Run custom ruby code on your siteInternationalisation,not-available,not-available,available,TRUE,,Translate sites into multiple languagesGeolocation,not-available,not-available,available,TRUE,,Display different content based on where the user is located,,,,,Site Authentication,Password,available,available,available,TRUE,,Restrict public access to a site using a passwordUser Accounts,not-available,available,available,TRUE,,Restrict public access to a site using emails and passwordsCustom Interfaces and Routes,not-available,available,available,TRUE,,Customise the authentication interfacesSAML,not-available,not-available,available,TRUE,,Restrict public access to a site using SAML authenticaiton

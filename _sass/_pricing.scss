@@ -23,6 +23,7 @@ table.desktop-pricing {
 	th {
 		font-weight: 600;
 		line-height: 1.4;
+		position: relative;
 
 		span {
 			white-space: nowrap;
@@ -30,6 +31,40 @@ table.desktop-pricing {
 			display: block;
 			font-size: 1em;
 			margin: 0 auto;
+		}
+
+		&.tooltip em{
+			font-style: normal;
+
+			&:after {
+				background-image: url('/img/icons/help_outline.png');
+				background-size: cover;
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin: 0 0 0 3px;
+				content: "";
+				position: absolute;
+    		bottom: 18px;
+			}
+		}
+	}
+
+	th.tooltip:hover {
+		cursor: help;
+		&:before {
+			display: block;
+			background: rgba(0, 0, 0, 0.8);
+	    border-radius: 5px;
+	    color: #fff;
+	    padding: 5px 15px;
+	    position: absolute;
+	    z-index: 98;
+	    width: 160px;
+			left: 150px;
+			top: 0;
+			content: attr(data-title);
+			font-size: .8em;
 		}
 	}
 
