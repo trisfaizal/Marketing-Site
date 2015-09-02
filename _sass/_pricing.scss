@@ -1,3 +1,40 @@
+.tooltip {
+	.tooltip-indicator {
+		opacity: 0.8;
+	}
+
+	em {
+		font-style: normal;
+		position: relative;
+	}
+
+	& em::before {
+		transition: 0.1s ease opacity;
+		pointer-events: none;
+		opacity: 0;
+		background-color: #333;
+		border-radius: 2px;
+		color: #fefefe;
+		padding: 10px 13px;
+		position: absolute;
+		width: 250px;
+		left: 60px;
+		top: 115%;
+		content: attr(data-title);
+		font-size: 1.5rem;
+		line-height: 1.4;
+		z-index: 1;
+	}
+
+	& em:hover {
+		cursor: help;
+
+		&::before {
+			opacity: 1;
+		}
+	}
+}
+
 table.desktop-pricing {
 	display: none;
 	border: 0;
@@ -32,40 +69,6 @@ table.desktop-pricing {
 			font-size: 1em;
 			margin: 0 auto;
 		}
-
-		&.tooltip em{
-			font-style: normal;
-
-			&:after {
-				background-image: url('/img/icons/help_outline.png');
-				background-size: cover;
-				display: inline-block;
-				width: 10px;
-				height: 10px;
-				margin: 0 0 0 3px;
-				content: "";
-				position: absolute;
-    		bottom: 18px;
-			}
-		}
-	}
-
-	th.tooltip:hover {
-		cursor: help;
-		&:before {
-			display: block;
-			background: rgba(0, 0, 0, 0.8);
-	    border-radius: 5px;
-	    color: #fff;
-	    padding: 5px 15px;
-	    position: absolute;
-	    z-index: 98;
-	    width: 160px;
-			left: 150px;
-			top: 0;
-			content: attr(data-title);
-			font-size: .8em;
-		}
 	}
 
 	tr {
@@ -81,10 +84,6 @@ table.desktop-pricing {
 	.not-available {
 		opacity: 0.15;
 	}
-
-	img {
-		width: 32px !important;
-	}
 }
 
 tr.separator td {
@@ -92,6 +91,7 @@ tr.separator td {
 		font-size: 1.2em;
 		font-weight: 700;
 		margin: 25px 0 15px 0;
+		display: inline-block;
 	}
 }
 
