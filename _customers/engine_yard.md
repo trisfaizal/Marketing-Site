@@ -7,11 +7,11 @@ site: https://www.engineyard.com
 site_name: Engine Yard
 description: The leading cloud orchestration platform to provision, manage, monitor and control applications.
 challenge: |
-  Engine Yard is a pioneer in offering fantastic support and resources to the developer community. To minimize the development time building and maintaining their sites, they needed a lightweight platform.
+  Engine Yard is a pioneer in offering fantastic support and resources to the developer community. To cut development and maintenance time on their sites they needed a flexible yet lightweight platform.
 
   Engine Yard developers chose [Jekyll](http://jekyllrb.com) to build [engineyard.com](https://www.engineyard.com) and [deis.com](http://deis.com/). This setup worked great for the developers. But when it can time for their non-technical marketing team to make content changes there was a problem.
 
-  The developers tried teaching the marketing team to use GitHub so they could edit source code but it was too difficult. So instead, content changes were emailed to developers. This was frustrating and time consuming for everyone involved.
+  The developers tried teaching the marketing team to use GitHub so they could edit source code but it was too difficult. So instead, content changes were emailed to developers. This was slow, frustrating and time consuming for everyone involved.
 solution: |
   Engine Yard partnered with CloudCannon to create a workflow that empowers the marketing team to update content themselves.
 
@@ -37,7 +37,7 @@ overview:
     alt: Dies Blog
 features:
   - name: GitHub Syncing
-    description: "Developers work on the site on their local machine. Marketers update in CloudCannon. Everything is kept in sync through GitHub.
+    description: "Developers work on the site on their local machine. Marketers update in CloudCannon. Everything stays in sync through GitHub.
 
 
     All content/file changes are version controlled and can be rolled back at any time."
@@ -50,7 +50,7 @@ features:
     "
     image_path: /img/customers/engine_yard/editable_region.png
   - name: Front Matter
-    description: "Marketers are empowered to control all parts of the site including the page title and event tracking.
+    description: "Marketers control all parts of the site including the page title and event tracking.
 
 
     Developers set up the interface for making these changes by writing simple [Front Matter](http://docs.cloudcannon.com/editing/front-matter/).
@@ -64,10 +64,10 @@ features:
     The Developers were able to quickly set up this interface by using [Jekyll blogging](http://docs.cloudcannon.com/editing/blogging/)."
     image_path: /img/customers/engine_yard/collections.png
   - name: Staging Environment
-    description: "Engine Yard uses CloudCannon as their staging environment which has reduced the number of servers they need to maintain and simplified their deployment process."
+    description: "Engine Yard uses CloudCannon as their staging environment. This has reduced the number of servers they need to maintain and simplified their deployment process."
     image_path: /img/customers/engine_yard/staging.png
   - name: External Hosting
-    description: "Being an application hosting company, Engine Yard naturally wanted to use their own servers to host their sites.
+    description: "As an application hosting company, Engine Yard naturally wanted to use their own servers to host their sites.
 
 
     With CloudCannon they could keep their existing build script which pulls in the source files from GitHub."
@@ -76,5 +76,5 @@ workflow:
   image_path: /img/customers/netflix/workflow.png
   description: Developers work on the site on their local machine. Marketers update in CloudCannon. Everything is kept in sync through GitHub.
 summary: |
-  With CloudCannon, Engine Yard's marketing team has full access to the content on their sites. Developers are no longer making time consuming content changes and they've reduced the number of servers they're using.
+  With CloudCannon, Engine Yard’s marketing team has full access to the content on their sites. Developers no longer make time consuming content changes. Engine Yard has also reduced the number of servers they’re using.
 ---
