@@ -1,26 +1,31 @@
 ---
 name: Xtendly
 title: Xtendly Case Study
-logo_path: /img/customers/xtendly/logo.png
+logo:
+  path: /img/customers/xtendly/logo.png
+  width: 100px
 company_site: http://www.xtendly.com/
 site: http://rallyteam.com/
 site_name: Rally Team
 description: Digital Agency
 challenge: |
-  Xtendly is known for creating beautiful sites and providing marketing services to help SMBs succeed online. They were using Wordpress to build sites for their customers but found the platform was holding them back. They were limited by Wordpress  because:
+  Xtendly is known for creating beautiful sites and providing marketing services to help small and medium businesses succeed online. They were using Wordpress to build sites for their customers but found the platform was holding them back.
+
+
+  They were limited by Wordpress  because:
 
   * Clients found the admin panel overwhelming and would email change requests instead of updating content themselves.
   * Building client websites and rolling them out on their production server was a time consuming and complicated process.
   * They had to install multiple plugins to make the sites fast and secure.
   * Training junior developers to get up to speed with Wordpress would take weeks.
 solution: |
-  Xtendly now builds their client sites in a fraction of the time on CloudCannon. Xtendly now spends more time on their competitive advantage, beautiful design.
+  Xtendly now builds their client sites in a fraction of the time on CloudCannon. They now spend more time on their competitive advantage, beautiful design.
 
 
   Clients are much happier on CloudCannon. Training clients to use CloudCannon takes minutes instead of an hour. Once they're trained they actually update content themselves.
 
 
-  Xtendly developers ran through CloudCannon's [Get Started Guide](http://docs.cloudcannon.com/getting_started/introduction/) and were building client sites on the platform days later. Junior developers on their team are quickly onboarded. Now they only need to know HTML/CSS instead of PHP, MYSQL and Wordpress.
+  Xtendly developers ran through the CloudCannon [Get Started Guide](http://docs.cloudcannon.com/getting_started/introduction/) and were building client sites on the platform days later. Junior developers on their team are quickly onboarded. Now they only need to know HTML/CSS instead of PHP, MYSQL and Wordpress.
 testimonial:
   text: |
     Custom small business websites used to take us two weeks to get live. With CloudCannon, we can spin up client sites in days.
@@ -62,7 +67,7 @@ features:
     The Developers were able to quickly set up this interface by using [Jekyll blogging](http://docs.cloudcannon.com/editing/blogging/)."
     image_path: /img/customers/xtendly/blogging.png
 summary: |
-  Xtendly gets sites online for their customers faster giving them a big advantage over competitors. Clients love how easily they can update cotent.
+  Xtendly gets sites online for their customers faster, giving them a big advantage over competitors. Clients love how easily they can update content.
 
   Xtendly builds all their new sites on CloudCannon.
 ---

@@ -1,7 +1,8 @@
 ---
 name: Netflix
 title: Netflix Case Study
-logo_path: /img/customers/netflix/logo.png
+logo:
+  path: /img/customers/netflix/logo.png
 company_site: http://netflix.com
 site: https://devices.netflix.com
 site_name: Netflix Devices

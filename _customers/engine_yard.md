@@ -1,7 +1,8 @@
 ---
 name: Engine Yard
 title: Engine Yard Case Study
-logo_path: /img/customers/engine_yard/logo.png
+logo:
+  path: /img/customers/engine_yard/logo.png
 company_site: https://www.engineyard.com
 site: https://www.engineyard.com
 site_name: Engine Yard

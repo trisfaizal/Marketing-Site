@@ -51,6 +51,18 @@ header.engine-yard {
 header.xtendly {
   background-image: url('/img/customers/xtendly/bg.jpg');
   background-size: cover;
+
+  h3 {
+    border-top: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 25px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .container p a {
+    color: #fff;
+  }
 }
 
 

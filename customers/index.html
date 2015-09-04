@@ -9,7 +9,7 @@ header : Customers
 		<ul class="customers">
 			{% for customer in site.customers %}
 				<li class="thirds">
-					<a href="{{customer.url}}"><img width="250px" src="{{customer.logo_path}}" alt="{{customer.name}}" /></a>
+					<a href="{{customer.url}}"><img width="250px" src="{{customer.logo.path}}" alt="{{customer.name}}" /></a>
 					<h4><a href="{{customer.url}}">{{customer.name }}</a></h4>
 					<p></p>
 				</li>
