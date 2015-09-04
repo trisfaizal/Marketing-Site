@@ -9,7 +9,7 @@ description: The leading cloud orchestration platform to provision, manage, moni
 challenge: |
   Engine Yard is a pioneer in offering fantastic support and resources to the developer community. To cut development and maintenance time on their sites they needed a flexible yet lightweight platform.
 
-  Engine Yard developers chose [Jekyll](http://jekyllrb.com) to build [engineyard.com](https://www.engineyard.com) and [deis.com](http://deis.com/). This setup worked great for the developers. But when it can time for their non-technical marketing team to make content changes there was a problem.
+  Engine Yard developers chose [Jekyll](http://jekyllrb.com) to build [engineyard.com](https://www.engineyard.com) and [deis.com](http://deis.com/). This setup worked great for the developers. But when it came time for their non-technical marketing team to make content changes, there was a problem.
 
   The developers tried teaching the marketing team to use GitHub so they could edit source code but it was too difficult. So instead, content changes were emailed to developers. This was slow, frustrating and time consuming for everyone involved.
 solution: |
@@ -72,9 +72,6 @@ features:
 
     With CloudCannon they could keep their existing build script which pulls in the source files from GitHub."
     image_path: /img/customers/engine_yard/home.png
-workflow:
-  image_path: /img/customers/netflix/workflow.png
-  description: Developers work on the site on their local machine. Marketers update in CloudCannon. Everything is kept in sync through GitHub.
 summary: |
   With CloudCannon, Engine Yard’s marketing team has full access to the content on their sites. Developers no longer make time consuming content changes. Engine Yard has also reduced the number of servers they’re using.
 ---

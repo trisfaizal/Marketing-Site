@@ -72,12 +72,9 @@ features:
   - name: Multiple Environments
     description: "Content updates are made on a staging site. The team can preview the site and see exactly how it will look before they push it live."
     image_path: /img/customers/netflix/staging.png
-workflow:
-  image_path: /img/customers/netflix/workflow.png
-  description: Developers work on the site on their local machine. Marketers update in CloudCannon. Everything is kept in sync through GitHub.
 summary: |
   Netflix Partner Marketing can now get sites online and in front of customers faster than has ever been possible.
 
-  Netflix Devices was a successful pilot of CloudCannon's platform. We're currently working with Netflix to roll out more sites in the coming months.
+  Netflix Devices was a successful pilot of the CloudCannon platform. We're currently working with Netflix to roll out more sites in the coming months.
 
 ---
