@@ -26,12 +26,25 @@ layout: default
 
 		<h2>How CloudCannon helped</h2>
 		{{ page.solution | markdownify }}
-
-		{% if page.testimonial %}
-			{% include quote.html quote=page.testimonial %}
-		{% endif %}
 	</div>
+</section>
 
+	{% if page.testimonial %}
+		<blockquote class="testimonial">
+				<div class="container text-container">
+					<p class="quote"> {{ page.testimonial.text }}</p>
+					<div class="author">
+						<img src="{{page.testimonial.image_path}}">
+						<p>
+								<span>{{ page.testimonial.name }}</span> <br>
+								{{ page.testimonial.work_title }}
+						</p>
+					</div>
+				</div>
+		</blockquote>
+	{% endif %}
+
+<section>
 	<div class="container">
 		{% include customers/slideshow.html name="overview" slides=page.overview %}
 	</div>
@@ -79,15 +92,15 @@ layout: default
 
 <script type="text/javascript">
 $(document).ready(function() {
-    $('.photo_gallery').lightSlider({
-        gallery: true,
-        item: 1,
-        loop: true,
-        thumbItem: 5,
+		$('.photo_gallery').lightSlider({
+				gallery: true,
+				item: 1,
+				loop: true,
+				thumbItem: 5,
 				thumbMargin: 5,
-        slideMargin: 0,
-        enableDrag: false,
-        currentPagerPosition: 'left',
-    });
-  });
+				slideMargin: 0,
+				enableDrag: false,
+				currentPagerPosition: 'left',
+		});
+	});
 </script>

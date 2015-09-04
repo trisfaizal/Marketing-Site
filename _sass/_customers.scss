@@ -65,6 +65,41 @@ header.xtendly {
   }
 }
 
+.testimonial {
+  background: #444;
+  color: #fff;
+  padding: 60px 0;
+
+  .quote {
+    margin: 0 0 28px 0;
+  }
+
+  .quote:before {
+    content: "“";
+  }
+
+  .quote:after {
+    content: "”";
+  }
+
+  .author {
+    img {
+      width: 68px;
+      border-radius: 100px;
+      float: left;
+    }
+
+    span {
+      font-size: 1.5em;
+    }
+
+    p {
+      padding: 3px 0 0 88px;
+      font-style: normal;
+    }
+  }
+}
+
 
 
 .customers {
