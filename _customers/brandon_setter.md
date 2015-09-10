@@ -40,7 +40,7 @@ features:
     description: "Brandon develops sites in Jekyll on his computer. The files sync to CloudCannon automatically through Dropbox.
 
 
-    When Brandon's clients update content in CloudCannon, the changes push back to Dropbox
+    When Brandon's clients update content in CloudCannon, the changes push back to Dropbox.
     "
     image_path: /img/customers/brandon/file_browser.png
   - name: Editable Regions
