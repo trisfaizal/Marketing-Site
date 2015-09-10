@@ -3,7 +3,6 @@ name: Engine Yard
 title: Engine Yard Case Study
 logo:
   path: /img/customers/engine_yard/logo.png
-company_site: https://www.engineyard.com
 site: https://www.engineyard.com
 site_name: Engine Yard
 description: The leading cloud orchestration platform to provision, manage, monitor and control applications.

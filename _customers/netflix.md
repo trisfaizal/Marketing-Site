@@ -3,7 +3,6 @@ name: Netflix
 title: Netflix Case Study
 logo:
   path: /img/customers/netflix/logo.png
-company_site: http://netflix.com
 site: https://devices.netflix.com
 site_name: Netflix Devices
 description: The world’s leading Internet television network with over 62 million members.

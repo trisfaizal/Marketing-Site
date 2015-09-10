@@ -4,9 +4,8 @@ title: Xtendly Case Study
 logo:
   path: /img/customers/xtendly/logo.png
   width: 100px
-company_site: http://www.xtendly.com/
-site: http://rallyteam.com/
-site_name: Rally Team
+site: http://www.xtendly.com
+site_name: Xtendly
 description: Digital Agency
 challenge: |
   Xtendly is known for creating beautiful sites and providing marketing services to help small and medium businesses succeed online. They were using Wordpress to build sites for their customers but found the platform was holding them back.

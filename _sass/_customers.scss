@@ -1,6 +1,7 @@
 header.xtendly,
 header.engine-yard,
-header.netflix {
+header.netflix,
+header.brandon-setter {
     background: #221F1F;
     padding: 100px 0;
 
@@ -41,6 +42,19 @@ header.netflix {
             transform: translateY(1px);
         }
     }
+}
+
+header.brandon-setter {
+  background-image: url('/img/customers/brandon/bg.jpg');
+  background-size: cover;
+
+  .container p a {
+    color: #fff;
+  }
+
+  h3 {
+    border-color: #fff;
+  }
 }
 
 header.engine-yard {
