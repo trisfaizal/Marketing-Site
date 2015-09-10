@@ -12,11 +12,11 @@ challenge: |
 
   He was using Wordpress to build client sites. Wordpress could do everything Brandon needed but he found there was so much overhead in setting it up and maintaining servers. It took him away from what he loved doing.
 
-  Brandon wanted a platform that his clients would love and would reduce the amount of coding he was doing.
+  Brandon wanted a platform his clients loved and would reduce the amount of coding he was doing.
 solution: |
   Brandon found CloudCannon and thought "Oh my goodness, this is the solution I’ve been dreaming about". He now spends less time coding, gets sites live faster and no longer has no manager servers.
 
-  His workflow is more streamlined too. Now he develops sites on his local computer and has them sync to CloudCannon using Dropbox. If a client site needs tweaking urgently, he can login to CloudCannon on any computer, anywhere in the world and quickly make updates using the online code editor.
+  His workflow is more streamlined too. He develops sites on his local computer and syncs to CloudCannon using Dropbox. If a client site needs tweaking urgently, he can login to CloudCannon on any computer, anywhere in the world and quickly make updates using the online code editor.
 
   Brandon's clients gave CloudCannon the thumbs up. Not only did they find updating in CloudCannon easier but they have access to update sections of the site they couldn't before.
 testimonial:
