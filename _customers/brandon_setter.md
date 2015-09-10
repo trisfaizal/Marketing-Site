@@ -16,11 +16,11 @@ challenge: |
 solution: |
   Brandon found CloudCannon and thought "Oh my goodness, this is the solution I’ve been dreaming about". He now spends less time coding, gets sites live faster and no longer has no manager servers.
 
-  His workflow is more streamlined too. Now he develops sites on his local computer and has them automatically sync to CloudCannon using Dropbox. If a client site needs tweaking urgently, he can login to CloudCannon on any computer, anywhere in the world and quickly make updates using the online code editor.
+  His workflow is more streamlined too. Now he develops sites on his local computer and has them sync to CloudCannon using Dropbox. If a client site needs tweaking urgently, he can login to CloudCannon on any computer, anywhere in the world and quickly make updates using the online code editor.
 
   Brandon's clients gave CloudCannon the thumbs up. Not only did they find updating in CloudCannon easier but they have access to update sections of the site they couldn't before.
 testimonial:
-  text: "I actually enjoy my experience as a designer when I’m using CloudCannon. It’s very simple, beautiful and makes me more efficient. Most of all, I’m pumped because my clients love using it."
+  text: "I actually enjoy my experience as a designer when I’m using CloudCannon. It’s simple, beautiful and makes me more efficient. Most of all, I’m pumped because my clients love using it."
   image_path: /img/customers/brandon/brandon.jpg
   name: Brandon Setter
   work_title: Owner
@@ -40,7 +40,7 @@ features:
     description: "Brandon develops sites in Jekyll on his computer. The files sync to CloudCannon automatically through Dropbox.
 
 
-    When Brandon's clients update content in CloudCannon, the changes are pushed back to Dropbox
+    When Brandon's clients update content in CloudCannon, the changes push back to Dropbox
     "
     image_path: /img/customers/brandon/file_browser.png
   - name: Editable Regions
