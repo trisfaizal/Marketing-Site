@@ -70,6 +70,7 @@ features:
 
 
     CloudCannon provides [optimised](http://docs.cloudcannon.com/hosting/optimisations/) hosting for Xtendly's sites."
+    image_path: /img/customers/xtendly/robin.png
 summary: |
   Xtendly gets sites online for their customers faster, giving them a big advantage over competitors. Clients love how easily they can update content.
 
