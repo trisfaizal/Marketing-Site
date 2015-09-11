@@ -50,7 +50,6 @@ header.brandon-setter {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.09), transparent), url(/img/customers/brandon/bg.jpg);
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09), transparent), url(/img/customers/brandon/bg.jpg);
     background-position: bottom right;
-    background-size: initial;
     background-repeat: repeat, no-repeat;
     background-attachment: scroll, scroll;
 
@@ -111,6 +110,8 @@ header.xtendly {
 
   .quote {
     margin: 0 0 28px 0;
+    font-size: 1.2em;
+    line-height: 1.7em;
   }
 
   .quote:before {

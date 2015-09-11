@@ -19,7 +19,7 @@ solution: |
 
   The marketing team can add content and try new messaging without the help of a developer.
 testimonial:
-  text: With CloudCannon we actually have the people who should be updating the site and should be updating content actually using it
+  text: "With CloudCannon we actually have the people who should be updating the site and should be updating content actually using it."
   image_path: /img/customers/engine_yard/gerlando.jpeg
   name: Gerlando Piro
   work_title: Web Producer

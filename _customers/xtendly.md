@@ -26,8 +26,7 @@ solution: |
 
   Xtendly developers ran through the CloudCannon [Get Started Guide](http://docs.cloudcannon.com/getting_started/introduction/) and were building client sites on the platform days later. Junior developers on their team are quickly onboarded. Now they only need to know HTML/CSS instead of PHP, MYSQL and Wordpress.
 testimonial:
-  text: |
-    Custom small business websites used to take us two weeks to get live. With CloudCannon, we can spin up client sites in days.
+  text: "Custom small business websites used to take us two weeks to get live. With CloudCannon, we can spin up client sites in days."
   image_path: /img/customers/xtendly/dennis.jpg
   name: Dennis Velasco
   work_title: CEO
@@ -48,16 +47,13 @@ features:
     description: "Clients update content themselves. They simply click on text to start writing content.
 
 
-    Developers define the Editable Regions by adding `class=\"editable\"` to elements in the HTML.
-    "
+    Developers define the Editable Regions by adding `class=\"editable\"` to elements in the HTML."
     image_path: /img/customers/xtendly/editable_region.png
   - name: Front Matter
     description: "Clients control all parts of the site including the site title and description.
 
 
-    Developers set up the interface for making these changes by writing simple [Front Matter](http://docs.cloudcannon.com/editing/front-matter/).
-
-    "
+    Developers set up the interface for making these changes by writing simple [Front Matter](http://docs.cloudcannon.com/editing/front-matter/)."
     image_path: /img/customers/xtendly/frontmatter.png
   - name: Blogging
     description: "Clients have their own blog and can easily add and manage posts.
