@@ -65,6 +65,11 @@ features:
 
     The Developers were able to quickly set up this interface by using [Jekyll blogging](http://docs.cloudcannon.com/editing/blogging/)."
     image_path: /img/customers/xtendly/blogging.png
+  - name: Hosting
+    description: "Xtendly doesn't need to spin up new servers.
+
+
+    CloudCannon provides [optimised](http://docs.cloudcannon.com/hosting/optimisations/) hosting for Xtendly's sites."
 summary: |
   Xtendly gets sites online for their customers faster, giving them a big advantage over competitors. Clients love how easily they can update content.
 
