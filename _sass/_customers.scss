@@ -45,17 +45,42 @@ header.brandon-setter {
 }
 
 header.brandon-setter {
-  background-image: url('/img/customers/brandon/bg.jpg');
-  background-size: cover;
+    padding: 80px 0;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.09), transparent), url(/img/customers/brandon/bg.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09), transparent), url(/img/customers/brandon/bg.jpg);
+    background-position: bottom right;
+    background-size: initial;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, scroll;
 
-  .container p a {
-    color: #fff;
-  }
+    h3, h2 {
+      color: #000;
+      border: 0;
+    }
 
-  h3 {
-    border-color: #fff;
+    h3 {
+      padding: 0;
+    }
+
+    img {
+      width: 180px;
+      margin: 20px auto;
+    }
+
+    .container p a {
+      color: #000;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+  header.brandon-setter {
+    background-position: 175% 0;
   }
 }
+
 
 header.engine-yard {
   background-image: url('/img/customers/engine_yard/bg.jpg');
