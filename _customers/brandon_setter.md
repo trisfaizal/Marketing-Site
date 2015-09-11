@@ -63,5 +63,5 @@ features:
     CloudCannon provides [optimised](http://docs.cloudcannon.com/hosting/optimisations/) hosting for Brandon's sites."
     image_path: /img/customers/brandon/1.jpg
 summary: |
-  Brandon ​gets​ sites online and updatable by clients faster than ​*before*​. He doesn’t ​set up​ new servers and his clients are much happier.
+  Brandon ​gets​ sites online and updatable by clients faster than ​before​. He doesn’t ​set up​ new servers and his clients are much happier.
 ---
