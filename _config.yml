@@ -14,7 +14,8 @@ collections:
     name: Team Members
   customers:
     name: Customers
-    output: false
+    output: true
+    permalink: /customers/:name/
 defaults:
   - scope:
       path: ""
