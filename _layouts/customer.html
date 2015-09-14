@@ -2,8 +2,14 @@
 layout: default
 ---
 <header class="{{ page.name | slugify }}">
-	<div class="text-container container">
-		<h2>CloudCannon Case Study: <a href="{{ page.site }}"><img width="250" src="{{ page.logo_path }}" alt="{{ page.name }}" /></a></h2>
+	<div class="container">
+		<h2>CloudCannon Case Study: <a href="{{ page.site }}">
+			{% if page.logo.width %}
+				<img width="{{ page.logo.width }}" src="{{ page.logo.path }}" alt="{{ page.name }}" />
+			{% else %}
+				<img width="250" src="{{ page.logo.path }}" alt="{{ page.name }}" />
+			{% endif %}
+		</a></h2>
 		<h3>{{ page.description }}</h3>
 		<p><a href="{{ page.site }}" target="_blank">View {{ page.site_name }} &rarr;</a></p>
 	</div>
@@ -20,12 +26,25 @@ layout: default
 
 		<h2>How CloudCannon helped</h2>
 		{{ page.solution | markdownify }}
-
-		{% if page.testimonial %}
-			{% include quote.html quote=page.testimonial %}
-		{% endif %}
 	</div>
+</section>
 
+	{% if page.testimonial %}
+		<blockquote class="testimonial">
+				<div class="container text-container">
+					<p class="quote">{{ page.testimonial.text }}</p>
+					<div class="author">
+						<img src="{{page.testimonial.image_path}}">
+						<p>
+								<span>{{ page.testimonial.name }}</span> <br>
+								{{ page.testimonial.work_title }}
+						</p>
+					</div>
+				</div>
+		</blockquote>
+	{% endif %}
+
+<section>
 	<div class="container">
 		{% include customers/slideshow.html name="overview" slides=page.overview %}
 	</div>
@@ -67,21 +86,19 @@ layout: default
 	</div>
 </section>
 
-<!-- <script src="/js/looper.min.js"></script> -->
-
 <script src="/js/lightslider.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function() {
-    $('.photo_gallery').lightSlider({
-        gallery: true,
-        item: 1,
-        loop: true,
-        thumbItem: 5,
-				thumbMargin: 5,
-        slideMargin: 0,
-        enableDrag: false,
-        currentPagerPosition: 'left',
-    });
-  });
+		$('.photo_gallery').lightSlider({
+				gallery: true,
+				item: 1,
+				loop: true,
+				thumbItem: 5,
+				thumbMargin: 20,
+				slideMargin: 0,
+				enableDrag: false,
+				currentPagerPosition: 'left',
+		});
+	});
 </script>
