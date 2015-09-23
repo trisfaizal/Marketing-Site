@@ -13,7 +13,9 @@ The site is a basic material design blog template.
 
 The home page lists all the blog posts:
 
-![](/uploads/versions/home---x----900-563x---.jpg)There's an about page:
+![](/uploads/versions/home---x----900-563x---.jpg)
+
+There's an about page:
 
 ![](/uploads/versions/screen-shot-2015-09-23-at-2.40.19-pm---x----900-563x---.png)
 
