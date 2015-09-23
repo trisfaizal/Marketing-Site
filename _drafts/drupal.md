@@ -13,7 +13,15 @@ The site is a basic material design blog template.
 
 The home page lists all the blog posts:
 
-![](/uploads/versions/home---x----900-563x---.jpg) There's an about page: ![](/uploads/versions/screen-shot-2015-09-23-at-2.40.19-pm---x----900-563x---.png) And a page to view a blog post: ![](/uploads/versions/screen-shot-2015-09-23-at-2.38.07-pm---x----900-563x---.png)
+![](/uploads/versions/home---x----900-563x---.jpg)
+
+There's an about page:
+
+![](/uploads/versions/screen-shot-2015-09-23-at-2.40.19-pm---x----900-563x---.png)
+
+And a page to view a blog post:
+
+![](/uploads/versions/screen-shot-2015-09-23-at-2.38.07-pm---x----900-563x---.png)
 
 ## Setup
 
@@ -65,48 +73,39 @@ Using Jekyll I created 3 layouts:
 
 The blog posts are created as markdown files. The title, author, header image and other metadata is defined using Frontmatter at the top of the file:
 
+## d
+
 {% highlight liquid %}
 {% raw %}
----
-layout: post
-title: On The Road
-author: The Newist
-header_image_url: '/images/road_big.jpg'
----
+{% endhighlight %}
+
+layout: post title: On The Road author: The Newist
+
+## header_image_url: '/images/road_big.jpg'
 
 Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
 
 Qui ullamco consectetur aute fugiat officia ullamco proident Lorem ad irure. Sint eu ut consectetur ut esse veniam laboris adipisicing aliquip minim anim labore commodo. Incididunt eu enim enim ipsum Lorem commodo tempor duis eu ullamco tempor elit occaecat sit. Culpa eu sit voluptate ullamco ad irure. Anim commodo aliquip cillum ea nostrud commodo id culpa eu irure ut proident. Incididunt cillum excepteur incididunt mollit exercitation fugiat in. Magna irure laborum amet non ullamco aliqua eu. Aliquip adipisicing dolore irure culpa aute enim. Ullamco quis eiusmod ipsum laboris quis qui.
 
-Cillum ullamco eu cupidatat excepteur Lorem minim sint quis officia irure irure sint fugiat nostrud. Pariatur Lorem irure excepteur Lorem non irure ea fugiat adipisicing esse nisi ullamco proident sint. Consectetur qui quis cillum occaecat ullamco veniam et Lorem cupidatat pariatur. Labore officia ex aliqua et occaecat velit dolor deserunt minim velit mollit irure. Cillum cupidatat enim officia non velit officia labore. Ut esse nisi voluptate et deserunt enim laborum qui magna sint sunt cillum. Id exercitation labore sint ea labore adipisicing deserunt enim commodo consectetur reprehenderit enim. Est anim nostrud quis non fugiat duis cillum. Aliquip enim officia ad commodo id.
-{% endraw %}
-{% endhighlight %}
+Cillum ullamco eu cupidatat excepteur Lorem minim sint quis officia irure irure sint fugiat nostrud. Pariatur Lorem irure excepteur Lorem non irure ea fugiat adipisicing esse nisi ullamco proident sint. Consectetur qui quis cillum occaecat ullamco veniam et Lorem cupidatat pariatur. Labore officia ex aliqua et occaecat velit dolor deserunt minim velit mollit irure. Cillum cupidatat enim officia non velit officia labore. Ut esse nisi voluptate et deserunt enim laborum qui magna sint sunt cillum. Id exercitation labore sint ea labore adipisicing deserunt enim commodo consectetur reprehenderit enim. Est anim nostrud quis non fugiat duis cillum. Aliquip enim officia ad commodo id. {% endraw %}
 
 To list the blog posts in index.html I create a forloop and reference the frontmatter in each blog post:
 
+##  
+
 {% highlight liquid %}
 {% raw %}
----
+{% endhighlight %}
+
 layout: default
-title: Home
----
+
+## title: Home
 
 {% for post in site.posts %}
-  <div class="mdl-card mdl-cell mdl-cell--12-col">
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image: url('{{ post.header_image_url }}')">
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    </div>
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-      <div class="minilogo"></div>
-      <div>
-        <strong>{{ post.author }}</strong>
-        <span>{{ post.date | date: "%-d %B %Y" }}</span>
-      </div>
-    </div>
-  </div>
-{% endfor %}
-{% endraw %}
-{% endhighlight %}
+
+<div class="mdl-card mdl-cell mdl-cell--12-col"><div class="mdl-card**media mdl-color-text--grey-50" style="background-image: url({{ post.header_image_url }})" data-cms-original-style="background-image: url('{{ post.header_image_url }}')"><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></div><div class="mdl-card**supporting-text meta mdl-color-text--grey-600"><div class="minilogo"> </div><div><strong>{{ post.author }}</strong> <span>{{ post.date | date: &quot;%-d %B %Y&quot; }}</span></div></div></div>
+
+{% endfor %} {% endraw %}
 
 ## Deployment
 
