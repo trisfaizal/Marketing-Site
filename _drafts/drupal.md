@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll and CloudCannon vs Drupal
+title: Drupal vs Jekyll and CloudCannon
 header: Improved Pricing
 category: Features
 author: mike
