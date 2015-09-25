@@ -4,6 +4,7 @@ title: Designer Spotlight - Jack Ewing and Seb Petravic
 header: Designer Spotlight - Jack Ewing and Seb Petravic
 category: Interview
 author: sam
+permalink: /interview/2014/08/28/designer-spotlight-jack-ewing-and-seb-petravic.html 
 ---
 
 ![Jack & Seb](/img/blog/ds-jack-ewing-and-seb-petravic/Seb_Jack.jpg "Jack Ewing & Seb Petravic of Glassjar")

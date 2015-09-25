@@ -124,6 +124,7 @@ quotes:
     image_path: "https://pbs.twimg.com/profile_images/478563672785035264/F2GFnKCb_400x400.jpeg"
     work_title: "Using Jekyll and GitHub, Tips for Designers"
     work_path: "http://michellehertzfeld.com/thoughts/using-jekyll-and-github-tips-for-designers/"
+permalink: /jekyll/2015/03/04/5-reasons-you-should-use-jekyll.html 
 ---
 I recently reached out to people that I consider to be influencers in the Jekyll community - ordinary users passionate enough and vocal enough to contribute code snippets,&nbsp;write about their experience of using Jekyll or open source themes to the community.
 

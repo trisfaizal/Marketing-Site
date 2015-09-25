@@ -4,6 +4,7 @@ title: Using CloudCannon with Javascript
 header: Using CloudCannon with Javascript
 category: Tutorials
 author: george
+permalink: /tutorials/2014/04/18/cloud-cannon-and-javascript.html 
 ---
 
 ![A fake slideshow image](/img/blog/slider.png)

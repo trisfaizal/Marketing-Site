@@ -4,6 +4,7 @@ title: Bring your Jekyll Site to Life with Bitbucket Connect
 header: Bring your Jekyll Site to Life with Bitbucket Connect
 category: Features
 author: mike
+permalink: /features/2015/06/11/bitbucket-connect.html 
 ---
 
 Today we're bringing a new level of simplicity to managing [Jekyll](http://jekyllrb.com) websites with the CloudCannon add-on for Bitbucket Connect.

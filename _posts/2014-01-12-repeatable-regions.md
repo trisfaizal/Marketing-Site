@@ -4,6 +4,7 @@ title: Clients can now update feature rich websites
 header: Clients can now update feature rich websites
 category: Features
 author: mike
+permalink: /features/2014/01/12/repeatable-regions.html 
 ---
 
 Today we're releasing a game changing feature for CloudCannon, <strong>repeatable regions</strong>. With a single class you can now give your clients the ability to add, move and delete a repeating element. Repeatable regions will help in a number of situations such as updating photos in a photo gallery, adding a news section or updating staff profiles.

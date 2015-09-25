@@ -4,6 +4,7 @@ title: The state of Bar website design by the numbers
 header: The state of Bar website design by the numbers
 category: Features
 author: sam
+permalink: /features/2014/12/15/bar-website-design-by-the-numbers.html 
 ---
 
 Last week I compiled a [checklist for building bar websites](http://cloudcannon.com/tutorials/2014/12/08/checklist-for-creating-great-bar-websites.html). That was a pretty opinion heavy piece, but I tried to pull out insights from stats I collected as well. Instead of creating a massive post with all that info I decided to split it up.

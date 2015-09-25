@@ -4,6 +4,7 @@ title: Improved Pricing
 header: Improved Pricing
 category: Features
 author: mike
+permalink: /features/2015/08/28/user_pricing.html 
 ---
 
 We have exciting updates for CloudCannon including new pricing, new UI and brand new features.

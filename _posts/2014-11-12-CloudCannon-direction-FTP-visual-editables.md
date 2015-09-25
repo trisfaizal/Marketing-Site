@@ -4,6 +4,7 @@ title: The big update. Two months of major feature releases and company directio
 header: The big update. Two months of major feature releases and company direction to cover!
 category: Features
 author: sam
+permalink: /features/2014/11/12/CloudCannon-direction-FTP-visual-editables.html 
 ---
 
 <!-- summary photo and summary here -->

@@ -4,6 +4,7 @@ title: Designer Spotlight - Cody Tatman
 header: Designer Spotlight - Cody Tatman
 category: Interview
 author: sam
+permalink: /interview/2014/08/05/designer-spotlight-cody-tatman.html 
 ---
 ![Cody Tatman](/img/blog/ds-cody-tatman/cody-tatman.png "Cody Tatman in his studio")
 

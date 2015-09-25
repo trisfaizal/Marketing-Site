@@ -4,6 +4,7 @@ title: Introducing Pricing Tiers
 header: Introducing Pricing Tiers
 category: Features
 author: mike
+permalink: /features/2014/04/01/new-pricing-tiers.html 
 ---
 
 We’ve had a big week at CloudCannon and I’m very happy to announce new pricing tiers for CloudCannon.

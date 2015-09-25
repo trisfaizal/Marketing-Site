@@ -4,6 +4,7 @@ title: How Facebook content placeholder works
 header: Facebook content placeholder deconstruction
 category: Deconstructions
 author: george
+permalink: /deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html 
 ---
 
 This is the first post of my new blog series called Deconstructions. Showcasing cool things people are doing in web development and breaking them down step by step. My first target is a cool content placeholder from the most recent Facebook overhaul. Before your friend's latest selfie or dog picture loads you may have noticed this nice bit of polish.

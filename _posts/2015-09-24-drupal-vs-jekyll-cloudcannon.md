@@ -2,7 +2,7 @@
 layout: post
 title: Drupal vs Jekyll + CloudCannon
 header: Drupal vs Jekyll + CloudCannon
-category: Features
+category: Comparison
 author: mike
 ---
 This is the first of a series where we compare a traditional content management system with a static approach of [Jekyll](http://jekyllrb.com) + [CloudCannon](http://cloudcannon.com). We will take an HTML5 template and integrate it into different systems.
