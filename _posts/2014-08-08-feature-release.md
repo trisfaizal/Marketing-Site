@@ -4,6 +4,7 @@ title: 8th August Feature Release
 header: 8th August Feature Release
 category: Features
 author: george
+permalink: /features/2014/08/08/feature-release.html 
 ---
 ![New empty site state in CloudCannon](/img/blog/2014-08-08-feature-release/new-site-empty-state-header.png "New empty site state in CloudCannon")
 

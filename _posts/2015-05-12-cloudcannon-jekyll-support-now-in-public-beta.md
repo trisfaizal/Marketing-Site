@@ -4,6 +4,7 @@ author: sam
 title: CloudCannon Jekyll support now in public beta
 header: Jekyll support now public beta
 category: Announcements
+permalink: /announcements/2015/05/12/cloudcannon-jekyll-support-now-in-public-beta.html 
 ---
 
 CloudCannon&#39;s support for the Jekyll static site generator has moved from private to public beta.

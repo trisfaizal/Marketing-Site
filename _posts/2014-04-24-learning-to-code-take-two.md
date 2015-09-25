@@ -4,6 +4,7 @@ title: Learning to Code - Take Two!
 header: Learning to Code - Take Two!
 category: Interview
 author: yasmin
+permalink: /interview/2014/04/24/learning-to-code-take-two.html 
 ---
 
 So for a while there after my first go at coding html with the help of Codecademy’s awesome tutorials I was on a bit of ego high, because I made text change colours, I linked words to images, added images from different websites, made lists with different background colours and heaps of other exciting stuff which I had always presumed was super hard. 

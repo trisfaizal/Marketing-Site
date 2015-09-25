@@ -4,6 +4,7 @@ title: Google's transforming material icons in HTML and CSS
 header: Google's transforming material icons Deconstruction
 category: Deconstructions
 author: george
+permalink: /deconstructions/2014/12/05/material-design-delightful-details.html 
 ---
 
 This week I am deconstructing the Delightful Details from [Google's Material Design](http://www.google.com/design/spec/material-design/introduction.html). It's not built in HTML and CSS but that's not important. What's important is that we can.

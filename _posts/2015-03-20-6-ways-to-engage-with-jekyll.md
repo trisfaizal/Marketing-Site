@@ -4,84 +4,84 @@ quotes:
     text: "I don't have this need myself as I'm a designer, but I can see the need for more and better designed Jekyll themes. The majority I've seen are made by engineers so they are not quite super slick on the design side yet. ;-)"
     name: Paul Stamatiou
     twitter_path: "https://twitter.com/stammy"
-    image_path: "https://pbs.twimg.com/profile_images/1778867511/Screen_Shot_2012-01-24_at_2.03.52_PM_400x400.png"
+    image_path: "/img/blog/6-ways-jekyll/stammy.png"
     work_title: WordPress to Jekyll blog post
     work_path: "http://paulstamatiou.com/how-to-wordpress-to-jekyll/"
   brett:
     text: "I'd love to see additional documentation for the plugin system. The basics are well documented these days, but it still takes a lot of digging to figure out how to do anything unexpected."
     name: Brett Terpstra
     twitter_path: "https://twitter.com/ttscoff"
-    image_path: "https://pbs.twimg.com/profile_images/564842329714851840/qqDLuEwd_400x400.jpeg"
+    image_path: "/img/blog/6-ways-jekyll/ttscoff.png"
     work_title: Jekyll CDN blog post
     work_path: "http://brettterpstra.com/2014/02/21/a-jekyll-cdn-with-cloudfront/"
   michael:
     text: "As a theme developer I get a lot of feedback from Jekyll users. The ones I hear from the most are generally non-devs who gravitate to Jekyll because of the free hosting GitHub Pages provides. From their comments there definitely is a void to fill in providing a service that makes working with Jekyll easier. Whether that's something like prose.io, a GUI wrapper for those who fear the CLI, or just making it easier to get it installed and running on their system. As far as features for Jekyll it seems to be moving in the right direction with 3.0. I have a fairly large Jekyll site and it takes forever to build, so anything to improve performance there has my vote. With the incremental rebuild stuff the Jekyll core team is working on hopefully that will be a non-issue."
     name: Michael Rose
     twitter_path: "https://twitter.com/mmistakes"
-    image_path: "https://pbs.twimg.com/profile_images/560937271042797568/m5VndD_B.jpeg"
+    image_path: "/img/blog/6-ways-jekyll/mmistakes.jpg"
     work_title: Jekyll themes
     work_path: "https://mademistakes.com/work/"
   john:
     text: "Better support for custom collections, themes, and the ability to potentially switch out themes on the fly. It would be ideal if there were an easier way to ship with plugin support (GitHub pages doesn't support it)."
     name: John Otander
     twitter_path: "https://twitter.com/4lpine"
-    image_path: "https://pbs.twimg.com/profile_images/1685588137/thumb_400x400.jpg"
+    image_path: "/img/blog/6-ways-jekyll/4lpine.jpg"
     work_title: Jekyll Pixyll theme
     work_path: "http://pixyll.com/"
   travis:
     text: "I think Jekyll would have greater adoption if there were some app that would handle the config and compile. I answer a lot of questions all day about how to do this or that. Mostly just getting started. A lot of questions about getting it running on windows. It's hard to dev a Jekyll site for someone else. They just want a blog. There is prose.io, but it has its ... hang ups."
     name: Travis Neilson
     twitter_path: "https://twitter.com/travisneilson"
-    image_path: "https://pbs.twimg.com/profile_images/378800000534594497/ff6e59ec85e5f439931a13a11e7e5212_400x400.jpeg"
+    image_path: "/img/blog/6-ways-jekyll/travisneilson.jpeg"
     work_title: "DevTips \"Jon doesn't like Jekyll\" video"
     work_path: "https://www.youtube.com/watch?v=u22CLlw4_hg"
   adam:
     text: "An easy to use, local installer. I truly believe that a standalone installer for Jekyll is needed to open it out to people unable to find their way through installing and managing gems just to get up and running. There is Omnibus Jekyll, a standalone installer for Jekyll and dependencies, but work on that is slow and not currently the main focus of the Jekyll developers."
     name: Adam Wilcox
     twitter_path: "https://twitter.com/adamwilcox"
-    image_path: "https://pbs.twimg.com/profile_images/569370919701733376/SZzuCEB-_400x400.jpeg"
+    image_path: "/img/blog/6-ways-jekyll/adamwilcox.jpg"
     work_title: Podcasting with Jekyll tutorial
     work_path: "http://www.adamwilcox.org/2013/01/17/from-the-pub/"
   richard:
     text: "A GUI making it easier to edit and update Jekyll sites like Wordpress, or Tumblr. Possibly a Nodejs version."
     name: Richard Bray
     twitter_path: "https://twitter.com/ceiga"
-    image_path: "https://pbs.twimg.com/profile_images/378800000748566726/83e335bc62829792ef3fa876463bb7e3_400x400.jpeg"
+    image_path: "/img/blog/6-ways-jekyll/ceiga.jpeg"
     work_title: Muffin Jekyll theme
     work_path: "http://richbray.me/muffin/"
   alan:
     text: "I hacked together my own system for switching between environments: Dev - for testing HTML/JS/CSS changes; Drafts - to speed up jekyll builds for previewing content; and Prod - what I build locally that gets deployed to the site. For a while, I setup an external image directory so that images weren't under the main tree. I don't do that anymore and am not sure it's needed."
     name: Alan W. Smith
     twitter_path: "https://twitter.com/TheIdOfAlan"
-    image_path: "https://pbs.twimg.com/profile_images/2396971629/1z2l22mqcpqvhlv3hs9t_400x400.jpeg"
+    image_path: "/img/blog/6-ways-jekyll/theidofalan.jpg"
     work_title: Date formatting in Jekyll
     work_path: "http://alanwsmith.com/jekyll-liquid-date-formatting-examples"
   mike:
     text: "Jekyll needs evangelists.  I would like to see it grow a bit outside of its niche and reach more mainstream support, though given its learning curve I realize the mainstream appeal may have a ceiling. I for one am sick of clients handing me a bloated Wordpress installation to maintain when all they are using it for are few static web pages and a layout template.  The number of server resources and maintenance headaches that could be avoided is staggering."
     name: Mike Greiling
     twitter_path: "https://twitter.com/mikegreiling"
-    image_path: "https://pbs.twimg.com/profile_images/3665350757/672d30f885ed73aa4e1d7d8d87289649_400x400.png"
+    image_path: "/img/blog/6-ways-jekyll/mikegreiling.png"
     work_title: Jekyll intro tutorial
     work_path: "http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/"
   marco:
     text: Mainly documentation and cookbooks for larger/more complex use-cases (reporting/crawling/data sources/etc)
     name: Marco Pivetta
     twitter_path: "https://twitter.com/Ocramius"
-    image_path: "https://pbs.twimg.com/profile_images/1363592997/ocramius-aethril-marco-pivetta-1_400x400.png"
+    image_path: "/img/blog/6-ways-jekyll/ocramius.png"
     work_title: Migrating to Jekyll blog post
     work_path: "http://ocramius.github.io/blog/moving-my-blog-to-jekyll/"
   matt:
     text: "I feel that it's missing a strong culture, and I feel this amazing technology is underrated."
     name: Matthew Kosloski
     twitter_path: "https://twitter.com/_mkos"
-    image_path: "https://pbs.twimg.com/profile_images/499619192883396609/lAwfijv8_400x400.jpeg"
+    image_path: "/img/blog/6-ways-jekyll/mkos.jpg"
     work_title: "Matt's Jekyll Journal post"
     work_path: "http://matthewkosloski.me/journal/about-the-site/"
   michelle:
     text: "The Jekyll homepage could use a bit more love, although it has been getting better (better instructions, more comprehensive). It is still not always clear why Jekyll works certain ways, or how to do things that aren't the exact things described on jekyllrb.com. I imagine that there is a lot of more advanced functionality that I don't use because the tutorials just aren't there yet, or they're written for a more advanced developer audience (I am definitely at the less technical of the developer spectrum)."
     name: Michelle Hertzfeld
     twitter_path: "https://twitter.com/meiqimichelle"
-    image_path: "https://pbs.twimg.com/profile_images/478563672785035264/F2GFnKCb_400x400.jpeg"
+    image_path: "/img/blog/6-ways-jekyll/meiqimichelle.jpeg"
     work_title: "Using Jekyll and GitHub, Tips for Designers"
     work_path: "http://michellehertzfeld.com/thoughts/using-jekyll-and-github-tips-for-designers/"
 layout: post
@@ -89,6 +89,7 @@ title: 6 ways to engage with Jekyll
 header: 6 ways to engage with Jekyll
 category: Jekyll
 author: sam
+permalink: /jekyll/2015/03/20/6-ways-to-engage-with-jekyll.html
 ---
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll.
 

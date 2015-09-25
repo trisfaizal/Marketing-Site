@@ -5,6 +5,7 @@ header: The ultimate list of services for static websites
 category: Tips
 author: mike
 post_image: /img/blog/apps-for-static-sites/mailchimp.png
+permalink: /tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html 
 ---
 
 Think you need a backend? Think again. With the huge number of plugins, apps and services you can drop into static sites, there's not a lot you can't do.

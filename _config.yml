@@ -3,6 +3,7 @@ paginate_path: "blog/:num/"
 blog_name: The CloudCannon Blog
 blog_description: The CloudCannon Blog
 site_url: http://cloudcannon.com
+permalink: pretty
 collections:
   press:
     name: Featured Articles

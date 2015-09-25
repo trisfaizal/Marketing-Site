@@ -4,6 +4,7 @@ title: Have SSL on your CloudCannon website for free
 header: Have SSL on your CloudCannon website for free
 category: Tutorials
 author: mike
+permalink: /tutorials/2014/12/09/have-ssl-on-your-cloudcannon-website-for-free.html 
 ---
 
 Today I’m going to show you how you can add SSL to your CloudCannon website in under 5 minutes. What’s even better, it’s free!

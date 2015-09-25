@@ -4,6 +4,7 @@ title: Controlling video playback with the mouse
 header: Controlling video playback with the mouse
 category: Tutorials
 author: mike
+permalink: /tutorials/2014/12/01/controlling-video-playback-speed-with-the-mouse.html 
 ---
 
 Until yesterday, my [personal website](http://mikeneumegen.com) was a video of me eating an apple with an 80's porn star moustache. The moustache is long gone so it's time for an update. <a href="https://vimeo.com/50588111"><img src="/img/blog/video-playback/old.png" alt="old mikeneumegen.com page"></a>

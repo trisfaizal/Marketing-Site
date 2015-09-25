@@ -4,6 +4,7 @@ title: Turn ANY template or theme into a CMS
 header: Turn ANY template or theme into a CMS
 category: Tutorials
 author: sam
+permalink: /tutorials/2014/09/01/turn-any-template-or-theme-into-a-cms.html 
 ---
 
 <!-- summary photo and summary here -->

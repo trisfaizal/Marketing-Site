@@ -4,6 +4,7 @@ title: Improved image editing in CloudCannon
 header: Improved image editing in CloudCannon
 category: Features
 author: george
+permalink: /features/2014/08/27/improved-image-editing.html 
 ---
 
 ![Improved image editing](/img/blog/improved-image-editing/improvedImageEditing_summary.png "More options and better UI for image editing in CloudCannon")

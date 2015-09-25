@@ -4,6 +4,7 @@ title: Building Solitaire with HTML and JavaScript
 header: Building Solitaire with HTML and JavaScript
 category: Tutorials
 author: george
+permalink: /tutorials/2014/03/28/html-solitaire-intro.html 
 ---
 
 ![Solitaire Game Screenshot](/img/blog/solitaire.png)
