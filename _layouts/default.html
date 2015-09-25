@@ -72,10 +72,12 @@
 
 		<script src="//cdn.jsdelivr.net/keen.js/3.2.6/keen.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
-		  window.keen_client = new Keen({
-		    projectId: "{{ site[jekyll.environment].keen.project_id }}",
-		    writeKey: "{{ site[jekyll.environment].keen.write_key }}"
-		  });
+			if (window.Keen) {
+			  window.keen_client = new Keen({
+			    projectId: "{{ site[jekyll.environment].keen.project_id }}",
+			    writeKey: "{{ site[jekyll.environment].keen.write_key }}"
+			  });
+			}
 		</script>
 	</head>
 	<body>

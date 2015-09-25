@@ -79,7 +79,9 @@ function recordKeenEvent(event_name, data) {
 
   for (var key in data) { event_data[key] = data[key]; }
 
-  window.keen_client.addEvent(event_name, event_data, function(err, res){});
+  if (window.keen_client) {
+    window.keen_client.addEvent(event_name, event_data, function(err, res){});
+  }
 }
 
 
