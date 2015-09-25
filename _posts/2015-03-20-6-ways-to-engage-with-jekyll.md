@@ -89,6 +89,7 @@ title: 6 ways to engage with Jekyll
 header: 6 ways to engage with Jekyll
 category: Jekyll
 author: sam
+permalink: /jekyll/2015/03/20/6-ways-to-engage-with-jekyll.html 
 ---
 I recently reached out to people that I consider to be influencers in the Jekyll community. I asked them to share their opinions and experiences of Jekyll.
 

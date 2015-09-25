@@ -4,6 +4,7 @@ title: We've joined Lightning Lab
 header: We've joined Lightning Lab
 category: Company
 author: mike
+permalink: /company/2014/03/30/lightning-lab.html 
 ---
 
 We’ve been so busy the past month I haven’t had a chance to update this blog. That’s all changing now, there's too much going on here not to share. I'm going to spend more time keeping you updated with all the exciting things happening at CloudCannon.

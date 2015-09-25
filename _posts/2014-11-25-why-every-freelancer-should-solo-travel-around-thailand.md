@@ -4,6 +4,7 @@ title: Why every freelancer should solo travel around Thailand
 header: Why every freelancer should solo travel around Thailand
 category: Other
 author: mike
+permalink: /other/2014/11/25/why-every-freelancer-should-solo-travel-around-thailand.html 
 ---
 
 One year ago I decided I needed a change. I’d spent the majority of my life in Dunedin, a small city in New Zealand. I’d flown internationally once and it was to Australia which I’m not sure even counts. Basically, I was living in a bubble.

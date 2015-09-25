@@ -4,6 +4,7 @@ title: Learning HTML from the perspective of a designer
 header: My journey from illustrator to HTML
 category: Interview
 author: yasmin
+permalink: /interview/2014/04/03/my-journey-from-illustrator-to-HTML.html 
 ---
 
 This blog will document the journey of a totally code-naive designer(me) as I attempt to learn to 

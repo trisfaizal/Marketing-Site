@@ -4,6 +4,7 @@ title: Docker in CloudCannon - Development
 header: How we use Docker in our development environment.
 category: Operations
 author: tim
+permalink: /operations/2014/12/17/docker-in-cloudcannon-developers.html 
 ---
 
 Environments can be tricky. Making sure the libraries are the same between your developer machines and production servers, updating dependencies consistently and onboarding new staff, it can turn into a mess. Luckily there are tools that can help us. I have previously used [Chef](https://www.chef.io/chef/) for this type of problem but now [Docker](https://www.docker.com/) has arrived to make things easier.

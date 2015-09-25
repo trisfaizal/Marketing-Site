@@ -4,6 +4,7 @@ title: Form Submissions and Redirects
 header: Form Submissions and Redirects
 category: Features
 author: mike
+permalink: /features/2013/10/21/redirects-form-submissions.html 
 ---
 
 Today we're announcing __two brand-new features__ which will help you make __kick-ass__ websites.

@@ -4,6 +4,7 @@ title: How To Create A Super Simple Christmas Landing Page
 header: How To Create A Super Simple Christmas Landing Page
 category: Deconstructions
 author: george
+permalink: /deconstructions/2014/12/23/super-simple-christmas-landing-page.html 
 ---
 
 This week I felt like doing something Christmas related, it seemed quite relevant. Instead of enjoying the summer sun that a New Zealand Christmas offers I decided to build an experimental landing page to share. Hope you enjoy it.

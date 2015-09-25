@@ -4,6 +4,7 @@ title: Free Flat Monochrome Device Icons
 header: Free Flat Device Icons
 category: Freebies
 author: george
+permalink: /freebies/2014/04/07/free-flat-device-icons.html 
 ---
 
 ![Preview of Device Icons](/img/downloads/device-monochome-icons.png)

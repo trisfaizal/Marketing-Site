@@ -4,6 +4,7 @@ title:  Free Resources for Designers
 header: Free Resources for Designers
 category: Freebies
 author: mike
+permalink: /freebies/2014/02/03/free-resources-for-designers.html 
 ---
 
 ![Template Screenshots](/img/blog/free-templates-large.png)

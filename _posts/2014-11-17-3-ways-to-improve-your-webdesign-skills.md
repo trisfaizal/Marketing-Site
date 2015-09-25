@@ -4,6 +4,7 @@ title: 3 ways to improve your web design skills
 header: 3 ways to improve your web design skills
 category: Tutorials
 author: mike
+permalink: /tutorials/2014/11/17/3-ways-to-improve-your-webdesign-skills.html 
 ---
 
 Constant self improvement is one of my main philosophies in life. Getting just a little bit better at something every day is not only a way I improve myself professionally but I find it gives me a more fulfilling life.

@@ -4,6 +4,7 @@ title: Creating better 'Bar' websites - a checklist
 header: Creating better 'Bar' websites - a checklist
 category: Tutorials
 author: sam
+permalink: /tutorials/2014/12/08/checklist-for-creating-great-bar-websites.html 
 ---
 
 Bars and pubs are a common small business customer for freelance web designers and developers.

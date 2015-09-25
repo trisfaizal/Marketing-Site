@@ -4,6 +4,7 @@ title: International Domain Names
 header: International Domain Names
 category: Features
 author: mike
+permalink: /features/2013/09/14/international-domains.html 
 ---
 It's been a busy few weeks here at CloudCannon. We've just pushed a whole heap of changes you're going to love.
 
