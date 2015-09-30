@@ -1,4 +1,5 @@
 ---
+sort_key: 4
 name: Brandon Setter
 title: Brandon Setter Case Study
 logo:

@@ -1,7 +1,29 @@
+.customer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    a {
+        display: block;
+        flex: 1 1 600px;
+        cursor: pointer;
+        min-height: 290px;
+    }
+
+    strong {
+        max-width: 500px;
+        font-size: 1.4em;
+    }
+}
+
 header.xtendly,
 header.engine-yard,
 header.netflix,
-header.brandon-setter {
+header.brandon-setter,
+.customer-grid a.xtendly,
+.customer-grid a.engine-yard,
+.customer-grid a.netflix,
+.customer-grid a.brandon-setter {
     background: #221F1F;
     padding: 100px 0;
 
@@ -26,7 +48,7 @@ header.brandon-setter {
         margin: 0 auto;
     }
 
-    p a {
+    p a, > strong {
         display: inline-block;
         padding: 5px;
         margin-top: 20px;
@@ -39,12 +61,18 @@ header.brandon-setter {
         }
 
         &:active {
+            -webkit-transform: translateY(1px);
             transform: translateY(1px);
         }
     }
+
+    > strong {
+        color: #fff;
+    }
 }
 
-header.brandon-setter {
+header.brandon-setter,
+.customer-grid a.brandon-setter {
     padding: 80px 0;
     background-color: #fff;
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.09), transparent), url(/img/customers/brandon/bg.jpg);
@@ -67,7 +95,7 @@ header.brandon-setter {
       margin: 20px auto;
     }
 
-    .container p a {
+    .container p a, > strong {
       color: #000;
     }
 
@@ -75,18 +103,21 @@ header.brandon-setter {
 }
 
 @media only screen and (max-width: 700px) {
-  header.brandon-setter {
+  header.brandon-setter,
+  .customer-grid a.brandon-setter {
     background-position: 175% 0;
   }
 }
 
 
-header.engine-yard {
+header.engine-yard,
+.customer-grid a.engine-yard {
   background-image: url('/img/customers/engine_yard/bg.jpg');
   background-size: cover;
 }
 
-header.xtendly {
+header.xtendly,
+.customer-grid a.xtendly {
   background-image: url('/img/customers/xtendly/bg.jpg');
   background-size: cover;
 
@@ -98,15 +129,16 @@ header.xtendly {
     font-weight: bold;
   }
 
-  .container p a {
+  .container p a, > strong {
     color: #fff;
   }
 }
 
 .testimonial {
-  background: #444;
+  background: #333;
   color: #fff;
   padding: 60px 0;
+  border-left: 0;
 
   .quote {
     margin: 0 0 28px 0;

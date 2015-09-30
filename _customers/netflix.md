@@ -1,4 +1,5 @@
 ---
+sort_key: 1
 name: Netflix
 title: Netflix Case Study
 logo:
