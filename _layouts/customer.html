@@ -29,20 +29,20 @@ layout: default
 	</div>
 </section>
 
-	{% if page.testimonial %}
-		<blockquote class="testimonial">
-				<div class="container text-container">
-					<p class="quote">{{ page.testimonial.text }}</p>
-					<div class="author">
-						<img src="{{page.testimonial.image_path}}">
-						<p>
-								<span>{{ page.testimonial.name }}</span> <br>
-								{{ page.testimonial.work_title }}
-						</p>
-					</div>
+{% if page.testimonial %}
+	<blockquote class="testimonial">
+			<div class="container text-container">
+				<p class="quote">{{ page.testimonial.text }}</p>
+				<div class="author">
+					<img src="{{page.testimonial.image_path}}">
+					<p>
+							<span>{{ page.testimonial.name }}</span> <br>
+							{{ page.testimonial.work_title }}
+					</p>
 				</div>
-		</blockquote>
-	{% endif %}
+			</div>
+	</blockquote>
+{% endif %}
 
 <section>
 	<div class="container">

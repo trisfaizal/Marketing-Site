@@ -1,4 +1,5 @@
 ---
+sort_key: 3
 name: Xtendly
 title: Xtendly Case Study
 logo:
