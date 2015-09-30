@@ -1,14 +1,23 @@
 .customer-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     text-align: center;
+    @extend .clearfix;
 
     a {
         display: block;
-        flex: 1 1 600px;
         cursor: pointer;
-        min-height: 290px;
+        height: 580px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        box-sizing: border-box;
+
+        @media (min-width: 750px) {
+            width: 50%;
+            float: left;
+        }
     }
+
+
 
     strong {
         max-width: 500px;
