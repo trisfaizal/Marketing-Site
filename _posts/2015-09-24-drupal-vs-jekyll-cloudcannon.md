@@ -7,6 +7,8 @@ author: mike
 ---
 This is the first of a series where we compare a traditional content management system with a static approach of [Jekyll](http://jekyllrb.com) + [CloudCannon](http://cloudcannon.com). We will take an HTML5 template and integrate it into different systems.
 
+There's a huge eco-system of plugins and add-ons available for any CMS. In these comparisons we'll be using the content management systems straight out of the box to reduce the complexity and time to get the sites live.
+
 Today we're looking at Drupal, a powerful open source PHP CMS which has been around since 2000.
 
 It’s the first time I’ve used Drupal so there might be better ways of doing things. If you can see an improvement leave a comment below.
@@ -297,6 +299,8 @@ All changes made on CloudCannon are committed back to the repository so I can wo
 I had the following cache settings turned on and loaded the page several times to ensure everything was cached properly.
 
 ![](/img/blog/drupal-jekyll/drupal-speed.png){:.screenshot}
+
+For a further speed increase, one of our readers suggested using the [Boost module](https://www.drupal.org/project/boost).
 
 ### Jekyll
 
