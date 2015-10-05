@@ -2,7 +2,7 @@
 layout: post
 title: "Editables Everywhere, Easier Navigation and Link Editing"
 header: "Editables Everywhere, Easier Navigation and Link Editing"
-category: feature
+category: Features
 author: george
 ---
 
