@@ -18,7 +18,7 @@ Before editable elements needed to be in the base HTML page. Now editable elemen
 
 ### Better Navigation
 
-Navigation and routing is cleaned up in the app. We removed the ugly hash that was in the URL and changed that to a path everyone can understand. Refactored developer views are all available under the browser namespace. The new breadcrumbs inside the code view are an easy way to transition back to the parent folders.
+Navigation and routing is cleaned up in the app. We removed the ugly hash that was in the URL and changed that to a path everyone can understand. The new breadcrumbs inside the code view are an easy way to transition back to the parent folders.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FgQoQvXOAJc?rel=0&amp;showinfo=0&amp;modestbranding" class="screenshot" frameborder="0" allowfullscreen></iframe>
 
@@ -28,7 +28,7 @@ The Collection view got a similar refresh with a neat breadcrumb and nicer URL.
 
 The visual editor has had the biggest change. URLs now use the output URL which allows you to view all pages within the app. The title of the page replaces the breadcrumb. We removed the preview option as you can now navigate links inside editables. To preview, keep your mouse still and the yellow boxes will go away.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0IorGmJ9Sb0?rel=0&amp;showinfo=0&amp;modestbranding" class="screenshot" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CUpziwR_96A?rel=0&amp;showinfo=0&amp;modestbranding" class="screenshot" frameborder="0" allowfullscreen></iframe>
 
 Across all three of these sections we have changed the view toggle to a view change. The current state is automatically hidden to reduce the number of buttons shown.
 
