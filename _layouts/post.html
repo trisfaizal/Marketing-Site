@@ -35,19 +35,14 @@ layout: default
 		</div>
 
 		{% if page.author %}
-		<div class="post-author clearfix">
-			{% if page.author == "mike" %}
-				{% include /_authors/mike.html %}
-			{% elsif page.author == "yasmin" %}
-				{% include /_authors/yasmin.html %}
-			{% elsif page.author == "george" %}
-				{% include /_authors/george.html %}
-			{% elsif page.author == "sam" %}
-				{% include /_authors/sam.html %}
-			{% elsif page.author == "tim" %}
-				{% include /_authors/tim.html %}
+			{% assign author = site.authors | where: "author", page.author | limit: 1 %}
+			{% if author and author[0] %}
+				{% assign author = author[0] %}
+				<div class="post-author clearfix">
+					<img src="{{ author.image_path }}" alt="A stunning photo of {{ author.name }}" width="200" height="200">
+					<p><a target="_blank" href="https://twitter.com/{{ author.twitter_handle }}">{{ author.name}}</a>  {{ author.bio }}</p>
+				</div>
 			{% endif %}
-		</div>
 		{% endif %}
 
 		<div id="disqus_thread"></div>
