@@ -12,25 +12,36 @@ Over the last couple weeks we have released some big changes.
 
 Before editable elements needed to be in the base html page. Now editable elements can be in any layout or include. Update sidebars, headers and footers across many pages in the visual editor. CloudCannon will detect where the editables came from then update the relevant files.&nbsp;Give it a try by adding `class="editable"` in an include or layout.
 
-VIDEO HERE
+<a href="#" data-video-id="e2kEYFwE5B4">
+	<img class="screenshot" src="/img/home/explainer_video_placeholder.png" width="700" alt="Jekyll CMS" />
+</a>
 
 ### Better Navigation
 
 Navigation and routing has been cleaned up every in the app. We removed the ugly hash that was in the url and changed that to a path everyone can understand. Refactored&nbsp;developer views have are all available&nbsp;under the browser namespace. Easy to use breadcrumbs inside the code view have been added to transition back to the parent folders.
 
-QUICK CODE VIDEO HERE
+
+<a href="#" data-video-id="FgQoQvXOAJc">
+	<img class="screenshot" src="/img/home/explainer_video_placeholder.png" width="700" alt="Jekyll CMS" />
+</a>
 
 The Collection view got a similar refresh with a neat breadcrumb and nicer url.
 
-QUICK COLLECTION VIDEO HERE
+<a href="#" data-video-id="d-7RGLccpeo">
+	<img class="screenshot" src="/img/home/explainer_video_placeholder.png" width="700" alt="Jekyll CMS" />
+</a>
 
 The visual editor has had the biggest change. URLs use the output url which allows you to view all pages to within the app. The title of the page replaces the breadcrumb. We removed the preview option as you can now navigate links inside editables. To preview, keep your mouse still and the yellow boxes go away.
 
-QUICK EDITOR VIDEO HERE
+<a href="#" data-video-id="0IorGmJ9Sb0">
+	<img class="screenshot" src="/img/home/explainer_video_placeholder.png" width="700" alt="Jekyll CMS" />
+</a>
 
 Across all three of these sections we have changed the view toggle to a view change. The current state will no longer be visible to keep the number of buttons down.
 
-TOGGLE VIDEO
+<a href="#" data-video-id="uGLjjaOx5Uc">
+	<img class="screenshot" src="/img/home/explainer_video_placeholder.png" width="700" alt="Jekyll CMS" />
+</a>
 
 ### New Link Editor
 
@@ -41,8 +52,9 @@ Adding and updating links is an essential part of CloudCannon and&nbsp;needed a 
 * Allows navigating&nbsp;to the current link
 * Is consistent with the image editor controls
 
-
-QUICK LINK EDITOR VIDEO HERE
+<a href="#" data-video-id="jl7D0QylS1E">
+	<img class="screenshot" src="/img/home/explainer_video_placeholder.png" width="700" alt="Jekyll CMS" />
+</a>
 
 ### Case studies
 
