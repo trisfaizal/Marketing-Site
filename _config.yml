@@ -13,6 +13,10 @@ collections:
     output: false
   staff:
     name: Team Members
+    output: false
+  authors:
+    name: Authors
+    output: false
   customers:
     name: Customers
     output: true

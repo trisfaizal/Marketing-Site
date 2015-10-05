@@ -74,7 +74,7 @@ function recordKeenEvent(event_name, data) {
   };
 
   if (window.user_id !== undefined) {
-    event_data['user_id'] = window.user_id;
+    event_data.user_id = window.user_id;
   }
 
   for (var key in data) { event_data[key] = data[key]; }
@@ -102,9 +102,7 @@ function recordKeenEvent(event_name, data) {
 }(window));
 
 
-if (Cookies.get('uuid_metrics') === undefined) {
-  window.eventsWrapper.record('Visited CloudCannon');
-}
+
 
 $('.download-billows').click(function() {
 	window.eventsWrapper.record('Downloaded Billows Template');
