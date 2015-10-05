@@ -12,7 +12,7 @@ In the past two weeks we’ve released major features to make CloudCannon easier
 
 ### Editables everywhere
 
-Before editable elements needed to be in the base HTML page. Now editable elements can be in any layout or include. Update sidebars, headers and footers across many pages in the visual editor. CloudCannon will detect where the editables came from then update the relevant files. Give it a try by adding `class="editable"` in an include or layout.
+Until recently, editable elements only worked in the base HTML page. Now editable elements can be in any layout or include. Update sidebars, headers and footers across many pages in the visual editor. CloudCannon will detect where the editables came from and update the relevant files. Give it a try by adding `class="editable"` in an include or layout.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2kEYFwE5B4?rel=0&amp;showinfo=0&amp;modestbranding" class="screenshot" frameborder="0" allowfullscreen></iframe>
 
