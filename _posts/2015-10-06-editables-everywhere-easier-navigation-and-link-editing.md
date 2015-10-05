@@ -14,25 +14,25 @@ In the past two weeks we’ve released major features to make CloudCannon easier
 
 Before editable elements needed to be in the base HTML page. Now editable elements can be in any layout or include. Update sidebars, headers and footers across many pages in the visual editor. CloudCannon will detect where the editables came from then update the relevant files. Give it a try by adding `class="editable"` in an include or layout.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e2kEYFwE5B4" class="screenshot" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e2kEYFwE5B4?rel=0&amp;showinfo=0&amp;modestbranding" class="screenshot" frameborder="0" allowfullscreen></iframe>
 
 ### Better Navigation
 
 Navigation and routing is cleaned up in the app. We removed the ugly hash that was in the URL and changed that to a path everyone can understand. Refactored developer views are all available under the browser namespace. The new breadcrumbs inside the code view are an easy way to transition back to the parent folders.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FgQoQvXOAJc" class="screenshot" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FgQoQvXOAJc?rel=0&amp;showinfo=0&amp;modestbranding" class="screenshot" frameborder="0" allowfullscreen></iframe>
 
 The Collection view got a similar refresh with a neat breadcrumb and nicer URL.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d-7RGLccpeo" class="screenshot" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d-7RGLccpeo?rel=0&amp;showinfo=0&amp;modestbranding" class="screenshot" frameborder="0" allowfullscreen></iframe>
 
 The visual editor has had the biggest change. URLs now use the output URL which allows you to view all pages within the app. The title of the page replaces the breadcrumb. We removed the preview option as you can now navigate links inside editables. To preview, keep your mouse still and the yellow boxes will go away.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0IorGmJ9Sb0" class="screenshot" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0IorGmJ9Sb0?rel=0&amp;showinfo=0&amp;modestbranding" class="screenshot" frameborder="0" allowfullscreen></iframe>
 
 Across all three of these sections we have changed the view toggle to a view change. The current state is automatically hidden to reduce the number of buttons shown.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uGLjjaOx5Uc" class="screenshot" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uGLjjaOx5Uc?rel=0&amp;showinfo=0&amp;modestbranding" class="screenshot" frameborder="0" allowfullscreen></iframe>
 
 ### New Link Editor
 
@@ -43,7 +43,7 @@ Adding and updating links is an essential part of CloudCannon and needed a refre
 * Allows navigating to the current link
 * Is consistent with the image editor controls
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jl7D0QylS1E" class="screenshot" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jl7D0QylS1E?rel=0&amp;showinfo=0&amp;modestbranding" class="screenshot" frameborder="0" allowfullscreen></iframe>
 
 ### Case studies
 
