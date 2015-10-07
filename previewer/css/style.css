@@ -136,7 +136,7 @@ header a:active {
 		display: block;
 		padding: 0;
 	}
-	
+
 	header nav,
 	header nav a {
 		line-height: 40px;
@@ -402,6 +402,10 @@ header a:active {
 	width: 1920px;
 	height: 1080px;
 	margin-left: -980px;
+}
+
+.previewer iframe {
+	background-color: white;
 }
 
 iframe {
