@@ -145,4 +145,9 @@ p.post-details {
 
 .post-container iframe {
 	width: 100%;
+
+	&.screenshot {
+		height: 500px;
+		margin: 0 auto 2em;
+	}
 }
