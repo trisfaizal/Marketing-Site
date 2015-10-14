@@ -181,5 +181,13 @@
 				document.body.classList.add("no-touch");
 			}
 		</script>
+
+		{% if page.landing_page %}
+			<script type="text/javascript">
+				$(window).load(function() {
+					window.eventsWrapper.record('Visited Landing Page');
+				});
+			</script>
+		{% endif %}
 	</body>
 </html>
