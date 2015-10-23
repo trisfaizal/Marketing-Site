@@ -34,6 +34,13 @@ layout: default
 			<div class="g-plusone" data-href="http://cloudcannon.com{{ page.url }}"></div></div>
 		</div>
 
+		<section class="centered blog-cta" style="display:none">
+			<div class="container">
+				<h3>CloudCannon is a platform to create, manage and host editable websites for your team and clients</h3>
+				<p><a href="http://cloudcannon.com" class="btn btn-primary btn-large btn-block btn-centered">Learn More</a></p>
+			</div>
+		</section>
+
 		{% if page.author %}
 			{% assign author = site.authors | where: "author", page.author | limit: 1 %}
 			{% if author and author[0] %}

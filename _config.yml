@@ -4,6 +4,7 @@ blog_name: The CloudCannon Blog
 blog_description: The CloudCannon Blog
 site_url: http://cloudcannon.com
 permalink: pretty
+timezone: Pacific/Auckland
 collections:
   press:
     name: Featured Articles
