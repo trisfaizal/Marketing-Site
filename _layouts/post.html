@@ -19,19 +19,22 @@ layout: default
 
 		<hr>
 		<div class="share-options">
-			<div class="fb-share-button share-button push-right" data-href="http://cloudcannon.com{{ page.url }}" data-layout="button_count"></div>
-			<div class="share-button tweak"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://cloudcannon.com{{ page.url }}" data-via="CloudCannonApp">Tweet</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
-			<div class="share-button tweak  push-right"><script src="//platform.linkedin.com/in.js" type="text/javascript">
-			  lang: en_US
-			</script>
-			<script type="IN/Share" data-url="http://cloudcannon.com{{ page.url }}" data-counter="right"></script></div>
+			<div class="fb-share-button share-button push-right" style="top: 1px;" data-href="http://cloudcannon.com{{ page.url }}" data-layout="button_count"></div>
 
-			<div class="share-button tweak">
-			<!-- Place this tag in your head or just before your close body tag. -->
-			<script src="https://apis.google.com/js/platform.js" async defer></script>
-			<!-- Place this tag where you want the +1 button to render. -->
-			<div class="g-plusone" data-href="http://cloudcannon.com{{ page.url }}"></div></div>
+			<div class="share-button tweak push-right">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://cloudcannon.com{{ page.url }}" data-via="CloudCannonApp"></a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+
+			<div class="share-button tweak" style="padding-right: 15px;">
+				<script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+				<script type="IN/Share" data-url="http://cloudcannon.com{{ page.url }}" data-counter="right"></script>
+			</div>
+
+			<div class="share-button tweak" style="top: 12px;">
+				<script src="https://apis.google.com/js/platform.js" async defer></script>
+				<div class="g-plusone" data-href="http://cloudcannon.com{{ page.url }}"></div>
+			</div>
 		</div>
 
 		<section class="centered blog-cta" style="display:none">
@@ -47,17 +50,14 @@ layout: default
 				{% assign author = author[0] %}
 				<div class="post-author clearfix">
 					<img src="{{ author.image_path }}" alt="A stunning photo of {{ author.name }}" width="200" height="200">
-					<p><a target="_blank" href="https://twitter.com/{{ author.twitter_handle }}">{{ author.name}}</a>  {{ author.bio }}</p>
+					<p><a target="_blank" href="https://twitter.com/{{ author.twitter_handle }}">{{ author.name }}</a> {{ author.bio }}</p>
 				</div>
 			{% endif %}
 		{% endif %}
 
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
-			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-			var disqus_shortname = 'cloudcannon'; // required: replace example with your forum shortname
-
-			/* * * DON'T EDIT BELOW THIS LINE * * */
+			var disqus_shortname = 'cloudcannon';
 			(function() {
 				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';

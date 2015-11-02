@@ -24,7 +24,7 @@
 				<meta name="description" content="{{ page.excerpt | strip_html }}">
 			{% endif %}
 		{% else %}
-			<meta name="description" content="Build websites in HTML or Jekyll. Have your non-technical team update inline">
+			<meta name="description" content="Build websites in HTML or Jekyll. Have your non-technical team update inline.">
 		{% endif %}
 
 		<meta name="HandheldFriendly" content="True">
@@ -52,9 +52,7 @@
 		<script src="//cdn.optimizely.com/js/292196089.js"></script>
 		<script type="text/javascript">
 			{% if jekyll.environment == 'development' %}
-				var param = {
-					cookieDomain: "none"
-				};
+				var param = {cookieDomain: "none"};
 			{% else %}
 				var param = "auto";
 			{% endif %}
@@ -64,7 +62,7 @@
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,"script","//www.google-analytics.com/analytics.js","ga");
 
-			ga("create", "{{ site[jekyll.environment].google_analytics_key }}" , param);
+			ga("create", "{{ site[jekyll.environment].google_analytics_key }}", param);
 			ga("require", "linkid", "linkid.js");
 			ga("require", "displayfeatures");
 			ga("send", "pageview");
@@ -73,15 +71,15 @@
 		<script src="//cdn.jsdelivr.net/keen.js/3.2.6/keen.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			if (window.Keen) {
-			  window.keen_client = new Keen({
-			    projectId: "{{ site[jekyll.environment].keen.project_id }}",
-			    writeKey: "{{ site[jekyll.environment].keen.write_key }}"
-			  });
+				window.keen_client = new Keen({
+					projectId: "{{ site[jekyll.environment].keen.project_id }}",
+					writeKey: "{{ site[jekyll.environment].keen.write_key }}"
+				});
 			}
 		</script>
 	</head>
-	<body>
 
+	<body>
 		<nav>
 			<div class="container">
 				<h1>
@@ -139,21 +137,21 @@
 
 		{{ content }}
 
-		<div class="coverage-banner">
-			<img src="/img/coverage/tc.png" alt="TechCrunch" />
-			<img src="/img/coverage/yahoo_news.png" alt="Yahoo News" />
-			<img src="/img/coverage/tnw.png" alt="The Next Web"/>
-			<img src="/img/coverage/tuts.png" alt="Tuts+"/>
-			<img src="/img/coverage/appstorm.png" alt="Appstorm"/>
-		</div>
-
 		<footer>
-			<a href="https://twitter.com/cloudcannonapp" class="social-icon twitter">Twitter</a>
-			<a href="https://www.facebook.com/CloudCannon" class="social-icon facebook">Facebook</a>
+			<div class="coverage-banner">
+				<img src="/img/coverage/tc.png" alt="TechCrunch">
+				<img src="/img/coverage/yahoo_news.png" alt="Yahoo News">
+				<img src="/img/coverage/tnw.png" alt="The Next Web">
+				<img src="/img/coverage/tuts.png" alt="Tuts+">
+				<img src="/img/coverage/appstorm.png" alt="Appstorm">
+			</div>
+
+			<a href="https://twitter.com/cloudcannonapp" class="social-icon white twitter">Twitter</a>
+			<a href="https://www.facebook.com/CloudCannon" class="social-icon white facebook">Facebook</a>
 
 			<ul class="footer_links">
 				<li><a href="/">Home</a></li>
-				<li><a href="http://docs.cloudcannon.com/">Docs</a></li>
+				<li><a href="http://docs.cloudcannon.com/" target="_blank">Docs</a></li>
 				<li><a href="/blog/">Blog</a></li>
 				<li><a href="/about/">About</a></li>
 				<li><a href="/freebies/">Freebies</a></li>
@@ -164,7 +162,7 @@
 			</ul>
 
 			<p class="t-and-c">
-				&copy; {{ site.time | date: '%Y' }} CloudCannon Limited. |
+				&copy; {{ site.time | date: '%Y' }} CloudCannon Limited |
 				<a href="https://app.cloudcannon.com/terms">Terms</a> &amp;
 				<a href="https://app.cloudcannon.com/privacy_policy">Privacy</a>
 			</p>
@@ -174,8 +172,8 @@
 		<script src="/js/layout.js"></script>
 		<script type="text/javascript">
 			function isTouchDevice() {
-				return 'ontouchstart' in window || 'onmsgesturechange' in window;
-			};
+				return "ontouchstart" in window || "onmsgesturechange" in window;
+			}
 
 			if (!isTouchDevice()) {
 				document.body.classList.add("no-touch");
@@ -184,8 +182,8 @@
 
 		{% if page.landing_page %}
 			<script type="text/javascript">
-				$(window).load(function() {
-					window.eventsWrapper.record('Visited Landing Page');
+				$(window).load(function () {
+					window.eventsWrapper.record("Visited Landing Page");
 				});
 			</script>
 		{% endif %}

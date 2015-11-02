@@ -165,22 +165,22 @@ Predictability cannot be overvalued for developer peace of mind!
 
 **&nbsp;&quot;What do you love about Jekyll?&quot;**
 
-{% include /quote.html quote=page.quotes.harry%}
-{% include /quote.html quote=page.quotes.paul%}
-{% include /quote.html quote=page.quotes.brett%}
-{% include /quote.html quote=page.quotes.michelle%}
-{% include /quote.html quote=page.quotes.marco%}
-{% include /quote.html quote=page.quotes.johan%}
-{% include /quote.html quote=page.quotes.michael%}
-{% include /quote.html quote=page.quotes.john%}
-{% include /quote.html quote=page.quotes.travis%}
-{% include /quote.html quote=page.quotes.alex%}
-{% include /quote.html quote=page.quotes.adam%}
-{% include /quote.html quote=page.quotes.richard%}
-{% include /quote.html quote=page.quotes.scott%}
-{% include /quote.html quote=page.quotes.alan%}
-{% include /quote.html quote=page.quotes.dave%}
-{% include /quote.html quote=page.quotes.matthew%}
-{% include /quote.html quote=page.quotes.mike%}
+{% include /quote.html quote=page.quotes.harry %}
+{% include /quote.html quote=page.quotes.paul %}
+{% include /quote.html quote=page.quotes.brett %}
+{% include /quote.html quote=page.quotes.michelle %}
+{% include /quote.html quote=page.quotes.marco %}
+{% include /quote.html quote=page.quotes.johan %}
+{% include /quote.html quote=page.quotes.michael %}
+{% include /quote.html quote=page.quotes.john %}
+{% include /quote.html quote=page.quotes.travis %}
+{% include /quote.html quote=page.quotes.alex %}
+{% include /quote.html quote=page.quotes.adam %}
+{% include /quote.html quote=page.quotes.richard %}
+{% include /quote.html quote=page.quotes.scott %}
+{% include /quote.html quote=page.quotes.alan %}
+{% include /quote.html quote=page.quotes.dave %}
+{% include /quote.html quote=page.quotes.matthew %}
+{% include /quote.html quote=page.quotes.mike %}
 
 Join me next week when I&#39;ll be sharing some common traps that these Jekyll users have had to overcome.

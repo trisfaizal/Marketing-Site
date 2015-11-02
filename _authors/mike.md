@@ -1,5 +1,5 @@
 ---
-image_path: /img/authors/mike.jpg
+image_path: /img/team/mike.jpg
 twitter_handle: mikeneumegen
 author: mike
 name: Mike Neumegen

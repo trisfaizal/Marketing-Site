@@ -1,4 +1,6 @@
-html {  overflow-x: hidden; }
+html {
+	overflow-x: hidden;
+}
 
 .container {
 	width: 90%;
@@ -48,20 +50,37 @@ header {
 	}
 }
 
-section { padding: 3em 0 3em; }
-section.alternate { background: #F8F8F8; }
-section.darker { background: #eee; }
-section.vibrant, footer { background: #2B2E31; color: #fff; }
-section.centered .image { margin: 50px 0 30px; }
+section {
+	padding: 3em 0 3em;
 
-section.thin {
-	padding: 0.9em 0;
+	&.alternate {
+		background: #F8F8F8;
+	}
+
+	&.darker {
+		background: #eee;
+	}
+
+	&.centered .image {
+		margin: 50px 0 30px;
+	}
+
+	&.thin {
+		padding: 0.9em 0;
+
+		p {
+			text-align: left;
+			margin: 0;
+		}
+	}
 }
 
-section.thin p {
-	text-align: left;
-	margin: 0;
+section.vibrant,
+footer {
+	background: #2B2E31;
+	color: #fff;
 }
+
 
 footer {
 	text-align: center;
@@ -84,14 +103,15 @@ footer {
 
 .coverage-banner {
 	background: #2B2E31;
-	height: 140px;
+	height: 90px;
 	text-align: center;
 	overflow: hidden;
+	margin-bottom: 25px;
 
 	img {
-		margin: 45px 10px;
+		margin: 20px 10px;
 		height: 50px;
-		opacity: .2;
+		opacity: 0.2;
 	}
 }
 
@@ -117,7 +137,7 @@ footer {
 	font-family: 'Open Sans', sans-serif;
 }
 
-footer a{
+footer a {
 	color: #7C7C7C;
 	text-decoration: none;
 }
@@ -191,7 +211,9 @@ footer .t-and-c {
 }
 
 @media only screen and (min-width: $break-large) {
-	.image img, .image iframe, .image .screenshot {
+	.image img,
+	.image iframe,
+	.image .screenshot {
 		margin: 0;
 		max-width: 550px;
 		width: 100%;
@@ -205,7 +227,8 @@ footer .t-and-c {
 		float: left;
 	}
 
-	.contact-details, .contact-form {
+	.contact-details,
+	.contact-form {
 		float: left;
 		width: 40%;
 		margin-top: 30px;
@@ -217,11 +240,13 @@ footer .t-and-c {
 		margin-left: 8%;
 	}
 
-	.contact-form input, .contact-form textarea {
+	.contact-form input,
+	.contact-form textarea {
 		margin: 0 0 20px;
 	}
 
-	header, .bright-section {
+	header,
+	.bright-section {
 		padding: 80px 0;
 	}
 
@@ -234,19 +259,26 @@ footer .t-and-c {
 		max-width: 800px;
 	}
 
-	section { padding: 3em 0; text-align: left; }
-	section.centered, section .profile {
+	section {
+		padding: 3em 0;
+		text-align: left;
+	}
+
+	section.centered,
+	section .profile {
 		text-align: center;
 	}
 
-	header .text, section .text {
+	header .text,
+	section .text {
 		display: block;
 		float: right;
 		width: 450px;
 		padding: 30px 2%;
 	}
 
-	header .image, section .image {
+	header .image,
+	section .image {
 		position: absolute;
 		right: 510px;
 		width: 100%;
@@ -277,7 +309,8 @@ footer .t-and-c {
 		min-height: 100px;
 	}
 
-	section.centered .text, section.centered .image{
+	section.centered .text,
+	section.centered .image {
 		margin-right: auto;
 		margin-left: auto;
 		float: none;
