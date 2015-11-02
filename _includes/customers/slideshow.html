@@ -1,7 +1,7 @@
-<ul class="photo_gallery">
-  {% for slide in include.slides %}
-  <li data-thumb="{{ slide.image_path }}" data-src="{{ slide.image_path }}">
-      <img class="screenshot" alt="{{ slide.alt }}" src="{{ slide.image_path }}" />
-  </li>
-  {% endfor %}
+<ul class="photo-gallery">
+	{% for slide in include.slides %}
+		<li data-thumb="{{ slide.image_path }}" data-src="{{ slide.image_path }}">
+			<img class="screenshot" alt="{{ slide.alt }}" src="{{ slide.image_path }}" />
+		</li>
+	{% endfor %}
 </ul>
