@@ -6,7 +6,10 @@
 	background-repeat: no-repeat;
 	text-indent: 200px;
 	overflow: hidden;
+}
 
+.social-icon,
+.coverage-banner a {
 	transition: opacity 0.2s ease;
 }
 
@@ -14,9 +17,9 @@ a.social-icon { opacity: 0.2; }
 a.social-icon:hover { opacity: 0.5; }
 a.social-icon:active { opacity: 1; }
 
-a.social-icon.white { opacity: 0.35; }
-a.social-icon.white:hover { opacity: 0.85; }
-a.social-icon.white:active { opacity: 1; }
+.coverage-banner a, a.social-icon.white { opacity: 0.35; }
+.coverage-banner a:hover, a.social-icon.white:hover { opacity: 0.85; }
+.coverage-banner a:active, a.social-icon.white:active { opacity: 1; }
 
 .twitter { background-image: url(/img/twitter-black.png); }
 .facebook { background-image: url(/img/facebook-black.png); }
