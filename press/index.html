@@ -1,7 +1,7 @@
 ---
 layout: default
-title : Press
-header : Press
+title: Press
+header: Press
 company_stats:
   founded: August 2013
   team_size: 4
@@ -24,7 +24,8 @@ media_contacts:
 		<h3> Media Contacts </h3>
 		<p>
 			{% for contact in page.media_contacts %}
-				{{ contact.name }}, {{ contact.position }} <a href="mailto:{{ contact.email }}">Email</a><br>
+				{{ contact.name }}, {{ contact.position }} <a href="mailto:{{ contact.email }}">Email</a>
+				{% unless forloop.last %}<br>{% endunless %}
 			{% endfor %}
 		</p>
 	</div>
@@ -44,7 +45,7 @@ media_contacts:
 		</div>
 	</div>
 </section>
-<section>
+<section id="featured-articles">
 		<div class="container text-container articles">
 			<h2>Featured Articles</h2>
 
