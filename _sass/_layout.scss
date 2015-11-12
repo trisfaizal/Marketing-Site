@@ -1,5 +1,6 @@
 html {
 	overflow-x: hidden;
+	background: #2B2E31;
 }
 
 .container {
@@ -52,6 +53,7 @@ header {
 
 section {
 	padding: 3em 0 3em;
+	background: #FFF;
 
 	&.alternate {
 		background: #F8F8F8;
