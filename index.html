@@ -5,8 +5,8 @@ title: A source control backed, Jekyll CMS for developers working with non-devel
 
 <header>
 	<div class="container">
-		<h2>A source control backed CMS for<br/> <strong>developers</strong> working with <strong>non-developers</strong></h2>
-
+		<h2 style="margin: 0">Let <strong>them</strong> do the editing</h2>
+		<h3>Create, manage and host editable websites for your team and clients</h3>
 		<div class="explainer-video">
 			<a href="#" data-video-id="kZm4Iq6fFOo">
 				<img class="screenshot" src="/img/home/explainer_video_placeholder.png" width="700" alt="Jekyll CMS" />
@@ -32,61 +32,207 @@ title: A source control backed, Jekyll CMS for developers working with non-devel
 		</div>
 </blockquote>
 
-<section class="alternate">
-	<div class="container">
-		<div class="text">
-			<h3>Beautiful Editing</h3>
-			<p><strong>Non-Developers</strong> can focus on creating and updating their own content, directly on the site.</p>
-			<p><strong>Developers</strong> have complete control over which elements clients can edit.</p>
+<div class="old-content">
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3>Beautiful Editing</h3>
+				<p><strong>Non-Developers</strong> can focus on creating and updating their own content, directly on the site.</p>
+				<p><strong>Developers</strong> have complete control over which elements clients can edit.</p>
+			</div>
+			<div class="image">
+				<img class="screenshot" src="/img/home/beautiful.png" width="550" alt="CMS" />
+			</div>
 		</div>
-		<div class="image">
-			<img class="screenshot" src="/img/home/beautiful.png" width="550" alt="CMS" />
-		</div>
-	</div>
-</section>
+	</section>
 
-<section>
-	<div class="container">
-		<div class="text">
-			<h3>Build Faster</h3>
-			<p><strong>Developers</strong> can build sites faster than ever before and have complete flexibility over the design, libraries and frameworks used.</p>
-			<p>CloudCannon handles all the infrastructure, scaling and speed optimizations automatically.</p>
+	<section>
+		<div class="container">
+			<div class="text">
+				<h3>Build Faster</h3>
+				<p><strong>Developers</strong> can build sites faster than ever before and have complete flexibility over the design, libraries and frameworks used.</p>
+				<p>CloudCannon handles all the infrastructure, scaling and speed optimizations automatically.</p>
+			</div>
+			<div class="image">
+				<img class="screenshot" src="/img/home/code.png" width="550" alt="Code" />
+			</div>
 		</div>
-		<div class="image">
-			<img class="screenshot" src="/img/home/code.png" width="550" alt="Code" />
-		</div>
-	</div>
-</section>
+	</section>
 
-<section class="alternate">
-	<div class="container">
-		<div class="text">
-			<h3>Full Revision History</h3>
-			<p>CloudCannon syncs files with GitHub and Bitbucket. You can access the entire history of the website and revert at any time.</p>
-			<p><strong>Developers</strong> can work on their local machines and deploy changes by pushing to the repository.</p>
+	<section class="alternate">
+		<div class="container">
+			<div class="text">
+				<h3>Full Revision History</h3>
+				<p>CloudCannon syncs files with GitHub and Bitbucket. You can access the entire history of the website and revert at any time.</p>
+				<p><strong>Developers</strong> can work on their local machines and deploy changes by pushing to the repository.</p>
+			</div>
+			<div class="image">
+				<img src="/img/landing_pages/enterprise/github_bitbucket.png" width="550" alt="GitHub and Bitbucket" />
+			</div>
 		</div>
-		<div class="image">
-			<img src="/img/landing_pages/enterprise/github_bitbucket.png" width="550" alt="GitHub and Bitbucket" />
-		</div>
-	</div>
-</section>
+	</section>
 
-<section>
-	<div class="container clearfix">
-		<div class="text">
-			<h3>A Better Way</h3>
-			<p>CloudCannon outputs static websites which are faster, more scalable and more secure than traditional content management systems.</p>
-			<p><strong>Developers</strong> can create blogs, photo galleries and other complex components using CloudCannon Jekyll integration.</p>
+	<section>
+		<div class="container clearfix">
+			<div class="text">
+				<h3>A Better Way</h3>
+				<p>CloudCannon outputs static websites which are faster, more scalable and more secure than traditional content management systems.</p>
+				<p><strong>Developers</strong> can create blogs, photo galleries and other complex components using CloudCannon Jekyll integration.</p>
+			</div>
+			<div class="image">
+				<img src="/img/home/cloudcannon_jekyll.png" width="550" alt="CloudCannon and Jekyll" />
+			</div>
 		</div>
-		<div class="image">
-			<img src="/img/home/cloudcannon_jekyll.png" width="550" alt="CloudCannon and Jekyll" />
+
+		<div class="container">
+			<p><a href="/how-does-cloudcannon-work/" class="btn btn-large btn-block btn-centered">How does CloudCannon work?</a></p>
 		</div>
+	</section>
+</div>
+
+<div class="new-content" style="display: none">
+	<div class="switcher">
+		<a href="#" class="btn btn-large active" data-type="developers">Developers</a>
+		<a href="#" class="btn btn-large" data-type="marketers">Non-Developers</a>
 	</div>
 
-	<div class="container">
-		<p><a href="/how-does-cloudcannon-work/" class="btn btn-large btn-block btn-centered">How does CloudCannon work?</a></p>
+	<div class="developer-toggle">
+		<section class="alternate">
+			<div class="container">
+				<div class="text">
+					<h3 class="editable"><span class="step-number">1</span> Sync</h3>
+					<p class="editable">Create a repository in GitHub or Bitbucket with your <a href="http://jekyllrb.com" target="_blank">Jekyll</a> or static site. You create and control 100% of the source code. </p>
+
+					<p> Connect your repository to CloudCannon and it will download and keep future updates in sync for you. </p>
+				</div>
+				<div class="image">
+					<div class="screenshot">
+						<img src="/img/home/filebrowser_2.png" width="550" alt="Uploading to a site" />
+						<img src="/img/landing_pages/how-it-works/storage.png" class="big-badge" alt="Add your files with Upload, GitHub or Bitbucket" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="alternate">
+			<div class="container">
+				<div class="text">
+					<h3 class="editable"><span class="step-number">2</span> Live!</h3>
+					<p class="editable">Your site is live on the web. CloudCannon optimizes Javascript, CSS and other assets so your site loads insanely fast.</p>
+				</div>
+				<div class="image">
+					<div class="screenshot">
+						{% include customer-slideshow.html %}
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="alternate">
+			<div class="container">
+				<div class="text">
+					<h3 class="editable"><span class="step-number">3</span> Share</h3>
+					<p class="editable">Share your CloudCannon site with your team.</p>
+
+					<p><strong>Non-Developers</strong> get a beautiful interface for updating Blogs, Collections and Front Matter. To make content on a page editable for <strong>non-developers</strong> add <code>class="editable"</code> to elements in the HTML.</p>
+				</div>
+				<div class="image">
+					{% include proportional-youtube.html width=16 height=10 factor=70 youtube_id="FOYDMD1jA-0" %}
+				</div>
+			</div>
+		</section>
+
+		<section class="alternate">
+			<div class="container">
+				<div class="text">
+					<h3 class="editable"><span class="step-number">4</span> Build your own CMS components</h3>
+					<p class="editable"> Using <a href="http://docs.cloudcannon.com/editing/collections/" target="_blank">Collections</a> and <a href="http://docs.cloudcannon.com/editing/front-matter/" target="_blank">Front Matter</a> you can use YAML to build your own interface for updating complex content or metadata. </p>
+
+					<p> You can build controls to manage any content on your site including <a href="http://docs.cloudcannon.com/tutorials/photo-gallery/" target="_blank">photos in a gallery</a>, the page title or even hiding a page section.  </p>
+				</div>
+				<div class="image">
+					<img class="screenshot" src="/img/landing_pages/how-it-works/yaml.png" width="550" alt="YAML Editor" />
+				</div>
+			</div>
+		</section>
+
+		<section class="alternate">
+			<div class="container">
+				<div class="text">
+					<h3 class="editable"><span class="step-number">5</span> Work your way</h3>
+					<p class="editable">You can continue working in your local environment with your favourite tools. To sync changes to CloudCannon just push to your repository. </p>
+
+					<p>Changes made in CloudCannon also get pushed back to the repository so you can always pull in an up-to-date version of the site.</p>
+				</div>
+				<div class="image">
+					<img class="screenshot" src="/img/landing_pages/how-it-works/atom.png" width="550" alt="Atom Editor" />
+				</div>
+			</div>
+		</section>
 	</div>
-</section>
+
+	<div class="marketing-toggle" style="display:none">
+		<section class="alternate">
+			<div class="container">
+				<div class="text">
+					<h3 class="editable"><span class="step-number">1</span> Preview</h3>
+					<p class="editable">Once your <strong>Developer</strong> shares the site with you, login to CloudCannon get a live preview of the site.</p>
+				</div>
+				<div class="image">
+					<img class="screenshot" src="/img/landing_pages/how-it-works/preview.png" width="550" alt="Preview" />
+				</div>
+			</div>
+		</section>
+
+		<section class="alternate">
+			<div class="container">
+				<div class="text">
+					<h3 class="editable"><span class="step-number">2</span> Update Content</h3>
+					<p class="editable"> Yellow boxes indicate the content you can update. Click on one and update content directly on the page. What you see is exactly what it will look like on the live site. </p>
+				</div>
+				<div class="image">
+					<img class="screenshot" src="/img/landing_pages/how-it-works/editing.png" width="550" alt="Editing" />
+				</div>
+			</div>
+		</section>
+
+		<section class="alternate">
+			<div class="container">
+				<div class="text">
+					<h3 class="editable"><span class="step-number">3</span> Manage the Blog</h3>
+					<p class="editable"> If your site has a blog or collections you can manage all posts easily and visually. No coding or knowledge of markdown required. </p>
+				</div>
+				<div class="image">
+					<img class="screenshot" src="/img/landing_pages/how-it-works/blog.png" width="550" alt="Blog" />
+				</div>
+			</div>
+		</section>
+
+		<section class="alternate">
+			<div class="container">
+				<div class="text">
+					<h3 class="editable"><span class="step-number">4</span> Complex Content</h3>
+					<p class="editable"> You can even manage complex content like photo galleries, products or the page title using a simple interface. </p>
+				</div>
+				<div class="image">
+					<img class="screenshot" src="/img/landing_pages/how-it-works/yaml.png" width="550" alt="YAML Editor" />
+				</div>
+			</div>
+		</section>
+
+		<section class="alternate">
+			<div class="container">
+				<div class="text">
+					<h3 class="editable"><span class="step-number">5</span> Live</h3>
+					<p class="editable">Saved changes are instantly pushed to the live website. Have control over all the content on your site. </p>
+				</div>
+				<div class="image">
+					<img class="screenshot" src="/img/landing_pages/how-it-works/live.png" width="550" alt="Live site" />
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
 
 <section class="bright-section centered">
 	<div class="container">
