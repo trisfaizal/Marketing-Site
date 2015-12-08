@@ -20,7 +20,6 @@ layout: default
 
 <section>
 	<div class="container text-container">
-
 		<h2>The Challenge</h2>
 		{{ page.challenge | markdownify }}
 
@@ -36,8 +35,9 @@ layout: default
 				<div class="author">
 					<img src="{{page.testimonial.image_path}}">
 					<p>
-							<span>{{ page.testimonial.name }}</span> <br>
-							{{ page.testimonial.work_title }}
+						<span>{{ page.testimonial.name }}</span>
+						<br>
+						{{ page.testimonial.work_title }}
 					</p>
 				</div>
 			</div>
@@ -89,16 +89,16 @@ layout: default
 <script src="/js/lightslider.js"></script>
 
 <script type="text/javascript">
-$(document).ready(function() {
-		$('.photo-gallery').lightSlider({
-				gallery: true,
-				item: 1,
-				loop: true,
-				thumbItem: 5,
-				thumbMargin: 20,
-				slideMargin: 0,
-				enableDrag: false,
-				currentPagerPosition: 'left',
+	$(document).ready(function () {
+		$(".photo-gallery").lightSlider({
+			gallery: true,
+			item: 1,
+			loop: true,
+			thumbItem: 5,
+			thumbMargin: 20,
+			slideMargin: 0,
+			enableDrag: false,
+			currentPagerPosition: "left",
 		});
 	});
 </script>
