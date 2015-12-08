@@ -3,7 +3,7 @@ layout: post
 title: Site Status and New User Flow
 header: Site Status and New User Flow
 category: Features
-post_image: /img/blog/site-status-and-new-user-flow/post-image.png
+post_image: /img/blog/site-status-and-new-user-flow/site-status@2x.png
 author: ross
 ---
 
