@@ -4,6 +4,9 @@ title: Site Status and New User Flow
 header: Site Status and New User Flow
 category: Features
 post_image: /img/blog/site-status-and-new-user-flow/site-status@2x.png
+post_image_type: image/png
+post_image_width: 1600
+post_image_height: 1000
 author: ross
 ---
 
