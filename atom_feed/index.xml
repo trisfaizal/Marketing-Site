@@ -3,27 +3,30 @@ layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text" xml:lang="en">{{site.blog_name}}</title>
-  <link type="application/atom+xml" href="{{site.site_url}}/atom_feed" rel="self"/>
-  <link type="text/html" href="{{site.site_url}}/" rel="alternate"/>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>{{site.site_url}}/</id>
-  <author>
-    <name>Mike Neumegen</name>
-  </author>
+	<title type="text" xml:lang="en">{{ site.blog_name }}</title>
+	<link type="application/atom+xml" href="{{ site.site_url }}/atom_feed/" rel="self" />
+	<link type="text/html" href="{{ site.site_url }}/" rel="alternate" />
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>{{ site.site_url }}/</id>
+	<author>
+		<name>CloudCannon</name>
+	</author>
 
-  {% for post in site.posts limit:20 %}
-  <entry>
-    <title>{{ post.title }}</title>
-    <link href="{{site.site_url}}{{ post.url }}"/>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://cloudcannon.com{{ post.id }}</id>
-    <content type="html">{{ post.content | xml_escape }}</content>
-    {% if post.author %}
-    <author>
-      <name>{{post.author}}</name>
-    </author>
-    {% endif %}
-  </entry>
-  {% endfor %}
+	{% for post in site.posts %}
+		<entry>
+			<title>{{ post.title }}</title>
+			<link href="{{ site.site_url }}{{ post.url }}" />
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>http://cloudcannon.com{{ post.url }}</id>
+			<content type="html">{{ post.content | xml_escape }}</content>
+			{% if post.author %}
+				{% assign author = site.authors | where: "author", post.author | limit: 1 %}
+				{% if author and author[0] %}
+					<author>
+						<name>{{ author[0].name }}</name>
+					</author>
+				{% endif %}
+			{% endif %}
+		</entry>
+	{% endfor %}
 </feed>
