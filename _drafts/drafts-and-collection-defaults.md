@@ -26,4 +26,4 @@ Before this release, new collection items were pre-populated with cleared data f
 
 ![Defaults in the File Browser](/img/blog/drafts-and-defaults/defaults-in-browser.png){: .screenshot}
 
-As always, these changes were inspired by your feedback. Syncing performance and reliability is the focus of our next release. If you have anything get in touch at [support@cloudcannon.com](mailto:support@cloudcannon.com) or send us a message in app.
+As always, these changes were inspired by your feedback. Syncing performance and reliability is the focus of our next release. If you need anything get in touch at [support@cloudcannon.com](mailto:support@cloudcannon.com) or send us a message in the app.
