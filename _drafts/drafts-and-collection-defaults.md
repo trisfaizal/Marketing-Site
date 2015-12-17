@@ -3,6 +3,10 @@ layout: post
 title: Output Drafts and Collection Defaults
 header: Output Drafts and Collection Defaults
 category: Features
+post_image: 
+post_image_type: image/png
+post_image_width: 1600
+post_image_height: 1000
 author: george
 ---
 
