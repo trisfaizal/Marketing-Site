@@ -10,7 +10,7 @@ post_image_height: 1000
 author: george
 ---
 
-This week we have a smaller release for some highly requested configuration. CloudCannon is perfectly suited to running multiple sites for different environments. We added draft post compiling and defaults for creating collection items.
+This week we have a smaller release for some highly requested configuration. We added draft post compiling and defaults for creating collection items.
 
 ### Output Draft Posts
 
