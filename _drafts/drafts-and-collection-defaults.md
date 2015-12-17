@@ -14,7 +14,7 @@ This week we have a smaller release for some highly requested configuration. Clo
 
 ### Output Draft Posts
 
-CloudCannon users can now preview draft posts in staging environments before publishing for the live site. Configure this in the *Site Settings* to add the `--drafts` flag to any Jekyll build on that site. Enabling **Output draft posts** will trigger a build and include drafts with posts.
+CloudCannon users can now preview draft posts in staging environments before publishing to the live site. Configure this in the *Site Settings* to add the `--drafts` flag to any Jekyll build on that site. Enabling **Output draft posts** will trigger a build and include drafts with posts.
 
 ![Output draft posts option in Site Settings](/img/blog/drafts-and-defaults/output-drafts-in-settings.png){: .screenshot}
 
