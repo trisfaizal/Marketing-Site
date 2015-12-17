@@ -28,6 +28,7 @@ defaults:
       type: "customers"
     values:
       layout: "customer"
+
 development:
   google_analytics_key: "UA-37472773-11"
   keen:

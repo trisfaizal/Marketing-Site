@@ -1,26 +1,31 @@
 ---
 layout: null
 ---
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>{{site.blog_name}}</title>
-		<link>{{site.site_url}}/feed</link>
-		<description>{{site.blog_description}}</description>
-		<language>en-us</language>     
+		<title>{{ site.blog_name }}</title>
+		<link>{{ site.site_url }}/feed/</link>
+		<description>{{ site.blog_description }}</description>
+		<language>en-us</language>
 		<pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 		<lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
-		<atom:link href="{{site.site_url}}/feed" rel="self" type="application/rss+xml" />
+		<atom:link href="{{ site.site_url }}/feed/" rel="self" type="application/rss+xml" />
 
-		{% for post in site.posts limit: 20 %}
+		{% for post in site.posts %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
-				<link>{{site.site_url}}{{ post.url }}</link>
+				<link>{{ site.site_url }}{{ post.url }}</link>
 				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 				{% if post.author %}
-					<author>{{ post.author| xml_escape }}</author>
+					{% assign author = site.authors | where: "author", post.author | limit: 1 %}
+					{% if author and author[0] %}
+						<author>
+							<name>{{ author[0].name | xml_escape }}</name>
+						</author>
+					{% endif %}
 				{% endif %}
-				<guid>{{site.site_url}}{{ post.id }}</guid>
+				<guid>{{ site.site_url }}{{ post.url }}</guid>
 				<description>{{ post.content | xml_escape }}</description>
 			</item>
 		{% endfor %}
