@@ -105,8 +105,7 @@ This is where the magic happens. It's a box that is has a animated background an
     animation-name: placeHolderShimmer;
     animation-timing-function: linear;
     background: #f6f7f8;
-    background: linear-gradient(to right,  #eeeeee 8%,#dddddd 18%,#eeeeee 33%);
-    background-repeat: no-repeat;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
     background-size: 800px 104px;
     height: 96px;
     position: relative;
