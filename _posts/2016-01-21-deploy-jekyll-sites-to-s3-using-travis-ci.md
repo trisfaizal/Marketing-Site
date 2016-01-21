@@ -43,6 +43,7 @@ The script will set up Ruby:
 {% highlight yaml %}
 language: ruby
 rvm:
+ - 2.1
 {% endhighlight %}
 
 Install the `jekyll` and `s3_website` gems. `s3_website` copies the website files to S3.
