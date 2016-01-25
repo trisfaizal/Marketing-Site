@@ -43,7 +43,7 @@ The script will set up Ruby:
 {% highlight yaml %}
 language: ruby
 rvm:
- - 2.1
+  - 2.1
 {% endhighlight %}
 
 Install the `jekyll` and `s3_website` gems. `s3_website` copies the website files to S3.
@@ -69,7 +69,7 @@ Copy the script to `.travis.yml` in your repository:
 {% highlight yaml %}
 language: ruby
 rvm:
-- 2.1
+  - 2.1
 install: gem install jekyll -v 2.4.0 && gem install s3_website
 script: jekyll build
 after_success: s3_website push
