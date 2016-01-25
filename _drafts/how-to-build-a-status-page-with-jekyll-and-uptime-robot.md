@@ -10,7 +10,7 @@ post_image_height: 1000
 author: george
 ---
 
-Introduction to status pages. Link to open source project
+Introduction to status pages. Link to open source project and Introduction to CloudCannon status page.
 
 ### Components
 
