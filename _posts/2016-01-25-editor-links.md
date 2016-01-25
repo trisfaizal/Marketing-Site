@@ -30,7 +30,7 @@ Jekyll generates the paths you need in a number of situations. Adding an edit bu
 {% highlight html %}
 {% raw %}{% for post in site.posts %}
   ...
-  <a href="cloudcannon:collections/{{ post.path }}">Edit</a>
+  <a href="cloudcannon:collections/{{ post.path }}">Edit Post</a>
   ...
 {% endfor %}{% endraw %}
 {% endhighlight %}
