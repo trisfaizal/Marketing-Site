@@ -43,7 +43,7 @@ Introduction to status pages. Link to open source project and Introduction to Cl
 
 ### A more static alternative
 
-Discuss the idea of having a background script push metric data to a json file to remove reliance on uptimerobot.
+Discuss the idea of having a background script push metric data to a json file to remove reliance on Uptimerobot.
 
 Link to open source project
 
