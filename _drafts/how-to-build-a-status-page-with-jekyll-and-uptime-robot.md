@@ -105,11 +105,11 @@ The best choice for this was clearly JavaScript. Using liquid we can inject Java
 <script type="text/javascript">
 window.incidents = [
 {% for post in site.posts | sort: "date" %}
-	{
-		date: new moment({{ post.date | jsonify }}),
-		name: {{ post.name | jsonify }},
-		content: {{ post.content | jsonify }}
-	}{% unless forloop.last %},{% endunless %}
+  {
+    date: new moment({{ post.date | jsonify }}),
+    name: {{ post.name | jsonify }},
+    content: {{ post.content | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ];
 </script>
@@ -120,32 +120,32 @@ Next we need to output an element for the past 10 days, if there are any inciden
 
 ~~~
 (function (window, $, moment) {
-	var nextIncidentIndex = 0;
+  var nextIncidentIndex = 0;
 
-	function formatIncident(date) {
-		var html = "<div class='incident-day'><h3>" + date.format("Do MMMM YYYY") + "</h3>",
-			incident = window.incidents[nextIncidentIndex];
+  function formatIncident(date) {
+    var html = "<div class='incident-day'><h3>" + date.format("Do MMMM YYYY") + "</h3>",
+        incident = window.incidents[nextIncidentIndex];
 
-		if (incident && incident.date.isSame(date, "day")) {
-			while(incident.date.isSame(date, "day")) {
-				html += "<div class='incident'><h3>" + incident.name + "</h3>" + incident.content + "</div>";
-				incident = window.incidents[++nextIncidentIndex];
-			}
-		} else {
-			html += "<p class='no-incidents'>No incidents reported.</p>";
-		}
+    if (incident && incident.date.isSame(date, "day")) {
+      while(incident.date.isSame(date, "day")) {
+        html += "<div class='incident'><h3>" + incident.name + "</h3>" + incident.content + "</div>";
+        incident = window.incidents[++nextIncidentIndex];
+      }
+    } else {
+      html += "<p class='no-incidents'>No incidents reported.</p>";
+    }
 
-		return html + "</div>";
-	}
+    return html + "</div>";
+  }
 
-	var date = moment(),
-		end = moment().subtract(10, "days"),
-		$incidents = $(".incidents");
+  var date = moment(),
+      end = moment().subtract(10, "days"),
+      $incidents = $(".incidents");
 
-	while (date > end) {
-		$incidents.append(formatIncident(date));
-		date = date.subtract(1, "day");
-	}
+  while (date > end) {
+    $incidents.append(formatIncident(date));
+    date = date.subtract(1, "day");
+  }
 })(window, window.jQuery, window.moment);
 ~~~
 
