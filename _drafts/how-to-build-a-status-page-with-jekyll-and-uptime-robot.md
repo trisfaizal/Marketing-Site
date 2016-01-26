@@ -29,15 +29,15 @@ state: operational
 Once we have the collection we can output the components using a forloop:
 
 ~~~{% raw %}
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;ul class="components"&gt;
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{% for component in site.components %}
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;li&gt;
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;strong&gt;{{ component.name }}&lt;/strong&gt;
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;span class="description"&gt;{{ component.description }}&lt;/span&gt;
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;span class="badge {{ component.state | slugify }}"&gt;{{ component.state }}&lt;/span&gt;
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/li&gt;
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{% endfor %}
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;/ul&gt;
+<ul class="components">
+  {% for component in site.components %}
+    <li>
+      <strong>{{ component.name }}</strong>
+      <span class="description">{{ component.description }}</span>
+      <span class="badge {{ component.state | slugify }}">{{ component.state }}</span>
+    </li>
+  {% endfor %}
+</ul>
 {% endraw %}~~~
 
 In addition to outputting the components we want the title to change if any component state is not set to `operational`. To do this we loop over the each component again:
@@ -45,15 +45,15 @@ In addition to outputting the components we want the title to change if any comp
 ~~~{% raw %}
 {% assign working = true %}
 {% for component in site.components %}
-&nbsp;&nbsp; &nbsp;{% if component.state != "operational" %}
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;{% assign working = false %}
-&nbsp;&nbsp; &nbsp;{% endif %}
+	{% if component.state != "operational" %}
+		{% assign working = false %}
+	{% endif %}
 {% endfor %}
 
 {% if working %}
-&nbsp;&nbsp; &nbsp;&lt;h2 class="operational-heading"&gt;All Systems Operational&lt;/h2&gt;
+	<h2 class="operational-heading">All Systems Operational</h2>
 {% else %}
-&nbsp;&nbsp; &nbsp;&lt;h2 class="issues-heading"&gt;Experiencing Issues&lt;/h2&gt;
+	<h2 class="issues-heading">Experiencing Issues</h2>
 {% endif %}
 {% endraw %}~~~
 
