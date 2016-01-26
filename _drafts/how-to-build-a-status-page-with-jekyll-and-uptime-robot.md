@@ -28,7 +28,8 @@ state: operational
 
 Once we have the collection we can output the components using a forloop:
 
-~~~{% raw %}
+{% raw %}
+~~~
 <ul class="components">
   {% for component in site.components %}
     <li>
@@ -38,11 +39,13 @@ Once we have the collection we can output the components using a forloop:
     </li>
   {% endfor %}
 </ul>
-{% endraw %}~~~
+~~~
+{% endraw %}
 
 In addition to outputting the components we want the title to change if any component state is not set to `operational`. To do this we loop over the each component again:
 
-~~~{% raw %}
+{% raw %}
+~~~
 {% assign working = true %}
 {% for component in site.components %}
 	{% if component.state != "operational" %}
@@ -55,7 +58,8 @@ In addition to outputting the components we want the title to change if any comp
 {% else %}
 	<h2 class="issues-heading">Experiencing Issues</h2>
 {% endif %}
-{% endraw %}~~~
+~~~
+{% endraw %}
 
 With all this put together we have a well formatted components section which we can easily toggle the state of all the different parts.
 
