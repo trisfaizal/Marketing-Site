@@ -149,6 +149,7 @@ Next we need to output an element for the past 10 days, if there are any inciden
 })(window, window.jQuery, window.moment);
 ~~~
 
+This will output any incidents in the last 10 days or 'No incidents reported'. Adding/updating a post in git or on CloudCannon will add it to our status page. Alternatively this could be implementing using a Jekyll plugin in combination with a daily compile.
 
 SCREENSHOT OF INCIDENTS
 
@@ -165,7 +166,6 @@ SCREENSHOT OF INCIDENTS
 * Components
 * Incidents
 * Metrics
-
 
 ### A more static alternative
 
