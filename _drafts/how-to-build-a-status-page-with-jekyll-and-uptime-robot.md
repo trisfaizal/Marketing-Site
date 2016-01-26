@@ -10,7 +10,7 @@ post_image_height: 1000
 author: george
 ---
 
-Introduction to status pages. Link to open source project and Introduction to CloudCannon status page.
+Public visibility of an apps performance is vital to a the trust placed on that product. Today we announce our [new status page](http://status.cloudcannon.com/) and [twitter account](https://twitter.com/CCAppStatus) focused on greater visibility into our performance and uptime. Our status page was built using Jekyll and [Uptimerobot](https://uptimerobot.com/). This allows us to host the site anywhere at a reduced cost.
 
 ### Components
 
@@ -27,11 +27,10 @@ Introduction to status pages. Link to open source project and Introduction to Cl
 ### Metrics Graphs with Uptime robot
 
 * What is uptime robot
-* Using their Javascript API to obtain data
+* Using their Javascript API to obtain data (Security note on having a public monitor)
 * Using Jekyll Collections to inject javascript components
 * Using Flot to graph the data
 * Some alternatives to uptime robot
-* Security note on having a public monitor
 
 
 ### Using CloudCannon for status page UI
