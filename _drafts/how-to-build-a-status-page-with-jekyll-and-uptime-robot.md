@@ -118,7 +118,7 @@ window.incidents = [
 
 Next we need to output an element for the past 10 days, if there are any incidents we will output the entire contents. We are using [moment.js](http://momentjs.com/) to simplify date formatting and manipulation. As we know the posts come out in order we can save time on each day by only checking the latest post we have.
 
-~~~
+~~~js
 (function (window, $, moment) {
   var nextIncidentIndex = 0;
 
