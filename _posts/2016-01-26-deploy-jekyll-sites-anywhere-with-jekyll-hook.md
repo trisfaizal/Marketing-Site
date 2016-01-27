@@ -12,11 +12,11 @@ author: mike
 
 [In the last tutorial](http://cloudcannon.com/tutorial/2016/01/21/deploy-jekyll-sites-to-s3-using-travis-ci/), we used [Travis CI](https://travis-ci.org) to deploy a Jekyll site to Amazon S3. This tutorial covers using [jekyll-hook](https://github.com/developmentseed/jekyll-hook) to automatically deploy changes from GitHub/CloudCannon to your own server.
 
-## What is jekyll-hook?
+### What is jekyll-hook?
 
 [jekyll-hook](https://github.com/developmentseed/jekyll-hook) is a Node.js program which runs on a server. It listens for new commits on a GitHub repository using [webhooks](https://developer.github.com/webhooks/). When there is a commit, jekyll-hook pulls the latest source code, builds the site with Jekyll, then deploys the built site to a directory.
 
-## Setup
+### Setup
 
 I'm using Ubuntu 14.04 so adjust the instructions for your operating system.
 
@@ -47,7 +47,7 @@ $ cd jekyll-hook
 $ npm install
 {% endhighlight %}
 
-## Configuration
+### Configuration
 
 Copy the sample configuration to `config.json`:
 
@@ -71,24 +71,24 @@ Here's my complete `config.json`:
 
 {% highlight javascript %}
 {
-  "gh_server": "github.com", // The GitHub server from which to pull code, e.g. github.com
-  "temp": "/home/ubuntu/jekyll-hook", // A directory to store code and site files
-  "public_repo": true, // Whether the repo is public or private (default is public)
+  "gh_server": "github.com",
+  "temp": "/home/ubuntu/jekyll-hook",
+  "public_repo": true,
   "scripts": {
-    "#default": { // Runs by default. You can also configure scripts for a specific branch
-      "build": "./scripts/build.sh", // The build script
-      "publish": "./scripts/publish.sh" // The publish script
+    "#default": {
+      "build": "./scripts/build.sh",
+      "publish": "./scripts/publish.sh"
     }
   },
-  "secret": "", //  Optional. GitHub webhook secret.
-  "email": { // Optional. Settings for sending email alerts
-    "isActivated": false, // If set to true email will be sent after each trigger
-    "user": "", // Sending email account's user name
-    "password": "", // Sending email account's password
-    "host": "", // SMTP host for sending email account
+  "secret": "",
+  "email": {
+    "isActivated": false,
+    "user": "",
+    "password": "",
+    "host": "",
     "ssl": true
   },
-  "accounts": [ // An array of accounts or organizations whose repositories can be used with this server
+  "accounts": [
 
     "cloudcannon",
     "mneumegen"
@@ -169,7 +169,7 @@ rm -rf $site
 
 Jekyll-hook is set up to listen for changes from GitHub. When there is a change it will build the site and deploy it to a folder.
 
-## Webhook
+### Webhook
 
 Now we need GitHub to send jekyll-hook a webhook when there's a commit to the repository.
 
@@ -181,7 +181,7 @@ Click Add webhook. Set the Payload URL to point at your jekyll-hook server `http
 
 ![GitHub webhook](/img/blog/jekyll-hook/github-webhook.png)
 
-## Deploying the site
+### Deploying the site
 
 Run jekyll-hook. It listens for changes on port 8080:
 
