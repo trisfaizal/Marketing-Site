@@ -10,7 +10,7 @@ post_image_height: 1000
 author: george
 ---
 
-Public visibility of an apps performance is vital to the trust placed on that product. Today we announce our [new status page](http://status.cloudcannon.com/) and [twitter account](https://twitter.com/CCAppStatus) focused on greater visibility into our performance and uptime. Our status page was built using Jekyll and [Uptimerobot](https://uptimerobot.com/). This allows us to host the site anywhere at a reduced cost. Building this site in Jekyll gives the added benefit of being fully customisable with any HTML, CSS or JavaScript.
+Public visibility of an apps performance is vital to the trust placed on that product. Today we announce our [new status page](http://status.cloudcannon.com/) and [twitter account](https://twitter.com/CCAppStatus) focused on greater visibility into our performance and uptime. Our status page was built using Jekyll and [Uptimerobot](https://uptimerobot.com/). This allows us to host the site anywhere with minimal cost. Building this site in Jekyll gives the added benefit of being fully customisable with any HTML, CSS or JavaScript.
 
 [![The banner of the CloudCannon status page](/img/blog/status-page/banner.png){: .screenshot srcset="/img/blog/status-page/banner.png 800w, /img/blog/status-page/banner@2x.png 1600w"}](http://status.cloudcannon.com/)
 
@@ -152,7 +152,7 @@ Next we need to output an element for each day in the past 10 days, if there are
 })(window, window.jQuery, window.moment);
 {% endhighlight %}
 
-Adding/updating a post in git or on CloudCannon will add it to our status page. Alternatively, recent incidents could be implementing using a Jekyll plugin and a daily compile.
+Adding/updating a post in Git or on CloudCannon will add it to our status page. Alternatively, recent incidents could be implementing using a Jekyll plugin and a daily compile.
 
 ![Displaying the incidents](/img/blog/status-page/incidents.png){: .screenshot srcset="/img/blog/status-page/incidents.png 800w, /img/blog/status-page/incidents@2x.png 1600w"}
 
@@ -160,7 +160,7 @@ Adding/updating a post in git or on CloudCannon will add it to our status page. 
 
 Response time graphs often show the performance and reliability of a system. CloudCannon uses Uptimerobot internally for monitoring. For every service we want to track, we create a monitor on Uptimerobot which pings the service on a regular interval.
 
-Uptimerobt provide a JavaScript API for obtaining response time and uptime data. For each monitor we need to obtain its read key. There is an option to use a global key but that should be avoided as it gives control of your account. We opted to created separate monitors for our status page as the data attached to a monitor. This data includes information on our external integrations.
+Uptimerobot provide a JavaScript API for obtaining response time and uptime data. For each monitor we need to obtain its read key. There is an option to use a global key but that should be avoided as it gives control of your account. We opted to create separate monitors for our status page as their API exposes data about our external integrations.
 
 #### Managing monitors with collections
 
@@ -261,7 +261,7 @@ for (var i = 0; i < window.monitors.length; i++) {
 
 #### Displaying the metrics
 
-To display the data we will use a combination of Jekyll and JavaScript. On our index page we will output an outline for the graphs with Jekyll. This will prevent a shift in window height when the data load and gives an indeterminate state to the viewers.
+To display the data we will use a combination of Jekyll and JavaScript. On our index page we will output an outline for the graphs with Jekyll. This will prevent a shift in window height when the data loads and gives an indeterminate state to the viewers.
 
 {% highlight html %}
 {% raw %}
