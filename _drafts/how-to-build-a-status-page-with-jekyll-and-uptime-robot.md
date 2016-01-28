@@ -152,7 +152,7 @@ Next we need to output an element for each day in the past 10 days, if there are
 })(window, window.jQuery, window.moment);
 {% endhighlight %}
 
-Adding/updating a post in Git or on CloudCannon will add it to our status page. Alternatively, recent incidents could be implementing using a Jekyll plugin and a daily compile.
+Adding/updating a post in Git or on CloudCannon will add it to our status page. Alternatively, recent incidents could be implemented using a Jekyll plugin and a daily compile.
 
 ![Displaying the incidents](/img/blog/status-page/incidents.png){: .screenshot srcset="/img/blog/status-page/incidents.png 800w, /img/blog/status-page/incidents@2x.png 1600w"}
 
