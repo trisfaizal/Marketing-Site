@@ -63,13 +63,13 @@ Additionally, we want the title to change if any component state is not set to `
 {% endraw %}
 {% endhighlight %}
 
-This completes the components section which we can easily change the state of all the different parts.
+This completes the components section where we can easily change the state of all the different parts.
 
 ![Displaying the components](/img/blog/status-page/components.png){: .screenshot srcset="/img/blog/status-page/components.png 800w, /img/blog/status-page/components@2x.png 1600w"}
 
 ### Incidents
 
-Incidents allow us to provide greater visibility and progress into the resolution of problems. This is a perfect use case for Jekyll posts. Posts can be written in markdown and are attached to a date. To read more about writing posts see our [documentation on blogging](http://docs.cloudcannon.com/editing/blogging/).
+Incidents allow us to provide greater visibility and progress when resolving problems. This is a perfect use case for Jekyll posts. Posts can be written in Markdown and are attached to a date. To read more about writing posts see our [documentation on blogging](http://docs.cloudcannon.com/editing/blogging/).
 
 Incidents are made up of two sections, full history and recent incidents. The Full history displays every post grouped by the month that it occurred. The following code uses a for loop to output each post. If the month changes between posts, a header will be output for the month and year.
 
