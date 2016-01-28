@@ -14,11 +14,11 @@ Public visibility of an apps performance is vital to the trust placed on that pr
 
 [![The banner of the CloudCannon status page](/img/blog/status-page/banner.png){: .screenshot srcset="/img/blog/status-page/banner.png 800w, /img/blog/status-page/banner@2x.png 1600w"}](http://status.cloudcannon.com/)
 
-This article will break down how each section was created and their purpose. An unbranded version of the status page is available on Github.
+This article will break down how each section was created and their purpose. An unbranded version of the status page is available on GitHub.
 
 ### Components
 
-The components section describes the different parts of your application. CloudCannon consists of six different components which we can toggle into different states given an outage or reduced performance. To develop this section we used a Jekyll collection called `components`. The `components` are a set of markdown files under the `_components` folder which look like:
+The components section describes the different parts of your application. CloudCannon consists of six different components which we can toggle into different states given an outage or reduced performance. To develop this section we used a Jekyll collection called `components`. The `components` are a set of Markdown files under the `_components` folder which look like:
 
 {% highlight html %}
 ---
@@ -28,7 +28,7 @@ state: operational
 ---
 {% endhighlight %}
 
-To output the components using a forloop:
+To output the components using a for loop:
 
 {% highlight html %}
 {% raw %}
