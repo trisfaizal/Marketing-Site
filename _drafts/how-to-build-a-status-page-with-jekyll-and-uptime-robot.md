@@ -71,7 +71,7 @@ This completes the components section where we can easily change the state of al
 
 Incidents allow us to provide greater visibility and progress when resolving problems. This is a perfect use case for Jekyll posts. Posts are written in Markdown with an attached date. To read more about writing posts see our [documentation on blogging](http://docs.cloudcannon.com/editing/blogging/).
 
-Incidents are made up of two sections, full history and recent incidents. The Full history displays every post grouped by the month that it occurred. The following code uses a for loop to output each post. If the month changes between posts, a header will be output for the month and year.
+Incidents are made up of two sections, full history and recent incidents. The full history displays every post grouped by the month that it occurred. The following code uses a for loop to output each post. If the month changes between posts, a header will be output for the month and year.
 
 {% highlight html %}
 {% raw %}
