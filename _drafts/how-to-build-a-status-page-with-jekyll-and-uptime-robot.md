@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to build a status page with Jekyll and Uptime robot
+title: How to build a status page with Jekyll and Uptimerobot
 header: How to build a Jekyll status page
 category: Features
 post_image: /img/blog/status-page/banner@2x.png
@@ -10,15 +10,15 @@ post_image_height: 1000
 author: george
 ---
 
-Public visibility of an apps performance is vital to a the trust placed on that product. Today we announce our [new status page](http://status.cloudcannon.com/) and [twitter account](https://twitter.com/CCAppStatus) focused on greater visibility into our performance and uptime. Our status page was built using Jekyll and [Uptimerobot](https://uptimerobot.com/). This allows us to host the site anywhere at a reduced cost. Building this site in Jekyll gives the added benefit of being fully customisable with custom css and additional components anywhere.
+Public visibility of an apps performance is vital to the trust placed on that product. Today we announce our [new status page](http://status.cloudcannon.com/) and [twitter account](https://twitter.com/CCAppStatus) focused on greater visibility into our performance and uptime. Our status page was built using Jekyll and [Uptimerobot](https://uptimerobot.com/). This allows us to host the site anywhere at a reduced cost. Building this site in Jekyll gives the added benefit of being fully customisable with any HTML, CSS or JavaScript.
 
-[![COMPONENTS](/img/blog/status-page/banner.png){: .screenshot srcset="/img/blog/status-page/banner.png 800w, /img/blog/status-page/banner@2x.png 1600w"}](http://status.cloudcannon.com/)
+[![The banner of the CloudCannon status page](/img/blog/status-page/banner.png){: .screenshot srcset="/img/blog/status-page/banner.png 800w, /img/blog/status-page/banner@2x.png 1600w"}](http://status.cloudcannon.com/)
 
 This article will break down how each section was created and their purpose. An unbranded version of the status page is available on Github.
 
 ### Components
 
-The components section describes the different parts of your application. CloudCannon consists of six different components which we can toggle into different states if there was an outage or reduced performance. Do develop this section we use a Jekyll collection called `components`. The `components` are a set of markdown files under the `_components` folder which look like:
+The components section describes the different parts of your application. CloudCannon consists of six different components which we can toggle into different states given an outage or reduced performance. To develop this section we used a Jekyll collection called `components`. The `components` are a set of markdown files under the `_components` folder which look like:
 
 {% highlight html %}
 ---
@@ -28,9 +28,10 @@ state: operational
 ---
 {% endhighlight %}
 
-Once we have the collection we can output the components using a forloop:
+To output the components using a forloop:
 
-{% highlight html %}{% raw %}
+{% highlight html %}
+{% raw %}
 <ul class="components">
   {% for component in site.components %}
     <li>
@@ -40,11 +41,13 @@ Once we have the collection we can output the components using a forloop:
     </li>
   {% endfor %}
 </ul>
-{% endraw %}{% endhighlight %}
+{% endraw %}
+{% endhighlight %}
 
-In addition to outputting the components we want the title to change if any component state is not set to `operational`. To do this we loop over the each component again:
+Additionally, we want the title to change if any component state is not set to `operational`. To do this we loop over the each component again:
 
-{% highlight html %}{% raw %}
+{% highlight html %}
+{% raw %}
 {% assign working = true %}
 {% for component in site.components %}
   {% if component.state != "operational" %}
@@ -57,19 +60,21 @@ In addition to outputting the components we want the title to change if any comp
 {% else %}
   <h2 class="issues-heading">Experiencing Issues</h2>
 {% endif %}
-{% endraw %}{% endhighlight %}
+{% endraw %}
+{% endhighlight %}
 
-With all this put together we have a well formatted components section which we can easily toggle the state of all the different parts.
+This completes the components section which we can easily change the state of all the different parts.
 
 ![Displaying the components](/img/blog/status-page/components.png){: .screenshot srcset="/img/blog/status-page/components.png 800w, /img/blog/status-page/components@2x.png 1600w"}
 
 ### Incidents
 
-Incidents are a perfect use case for jekyll posts. Posts can be written in markdown and are attached to a date. To read more about writing posts see our [documentation on blogging](http://docs.cloudcannon.com/editing/blogging/).
+Incidents allow us to provide greater visibility and progress into the resolution of problems. This is a perfect use case for Jekyll posts. Posts can be written in markdown and are attached to a date. To read more about writing posts see our [documentation on blogging](http://docs.cloudcannon.com/editing/blogging/).
 
-The easiest step to begin with is the full history of posts. This displays every post grouped by the month that it occurred. The following code uses a for loop to output each post. If the the post being output is not the same month as the last a header will be output for the month and year.
+Incidents are made up of two sections, full history and recent incidents. The Full history displays every post grouped by the month that it occurred. The following code uses a for loop to output each post. If the month changes between posts, a header will be output for the month and year.
 
-{% highlight html %}{% raw %}
+{% highlight html %}
+{% raw %}
 {% for post in site.posts %}
   {% capture month %}{{ post.date | date: '%B' }}{% endcapture %}
 
@@ -83,17 +88,20 @@ The easiest step to begin with is the full history of posts. This displays every
   {{ post.content }}
   {% capture prev_month %}{{ post.date | date: '%B' }}{% endcapture %}
 {% endfor %}
-{% endraw %}{% endhighlight %}
+{% endraw %}
+{% endhighlight %}
 
-The list of incidents on the main page is slightly more complicated:
+Recent incidents on the main page are slightly more complicated:
 
-- We want to output every day in the last 10 days
-- If a day has no incidents we want to show that as it is quite positive
-- We don't want to recompile the site everyday to get the latest day showing 'no incidents'.
+* We need to output every day in the last ten days
+* If a day has no incidents we want to show that as it is quite positive
+* To simplify things we don't want to recompile the site everyday to get the latest day showing 'no incidents'
+
 
 The best choice for this was clearly JavaScript. Using liquid we can inject JavaScript into the page to define our incidents:
 
-{% highlight html %}{% raw %}
+{% highlight html %}
+{% raw %}
 <div class="incidents"></div>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js"></script>
@@ -108,9 +116,10 @@ window.incidents = [
 {% endfor %}
 ];
 </script>
-{% endraw %}{% endhighlight %}
+{% endraw %}
+{% endhighlight %}
 
-Next we need to output an element for the past 10 days, if there are any incidents we will output the entire contents. We are using [moment.js](http://momentjs.com/) to simplify date formatting and manipulation. As we know the posts come out in order we can save time on each day by only checking the latest post we have.
+Next we need to output an element for each day in the past 10 days, if there are any incidents we will output them. If there are no posts on a day we will output 'No incidents reported'. To help with date formatting and manipulation we are using [moment.js](http://momentjs.com/).
 
 {% highlight javascript %}
 (function (window, $, moment) {
@@ -143,15 +152,15 @@ Next we need to output an element for the past 10 days, if there are any inciden
 })(window, window.jQuery, window.moment);
 {% endhighlight %}
 
-This will output any incidents in the last 10 days or 'No incidents reported'. Adding/updating a post in git or on CloudCannon will add it to our status page. Alternatively this could be implementing using a Jekyll plugin in combination with a daily compile.
+Adding/updating a post in git or on CloudCannon will add it to our status page. Alternatively, recent incidents could be implementing using a Jekyll plugin and a daily compile.
 
 ![Displaying the incidents](/img/blog/status-page/incidents.png){: .screenshot srcset="/img/blog/status-page/incidents.png 800w, /img/blog/status-page/incidents@2x.png 1600w"}
 
-### Metrics Graphs with Uptime robot
+### Metrics Graphs with Uptimerobot
 
-CloudCannon uses Uptimerobot internally for monitoring so it was the obvious choice for our status page. They provide a JavaScript API for obtaining response time and uptime data.
+Response time graphs often show the performance and reliability of a system. CloudCannon uses Uptimerobot internally for monitoring. For every service we want to track, we create a monitor on Uptimerobot which pings the service on a regular interval.
 
-Uptimerobot splits each ping service into a monitor. To use the JavaScript API we need a read key per monitor. There is an option to use a global key but that should be avoided as it gives control of your account. We opted to created new monitors for our status page as the data attached to a monitor was also shared including data on external integrations.
+Uptimerobt provide a JavaScript API for obtaining response time and uptime data. For each monitor we need to obtain its read key. There is an option to use a global key but that should be avoided as it gives control of your account. We opted to created separate monitors for our status page as the data attached to a monitor. This data includes information on our external integrations.
 
 #### Managing monitors with collections
 
@@ -167,9 +176,10 @@ threshold: 1000
 ---
 {% endhighlight %}
 
-Using the same technique as we used with incidents we will output the monitors to javascript:
+Using the same technique as we used on incidents, we will output the monitors to javascript:
 
-{% highlight html %}{% raw %}
+{% highlight html %}
+{% raw %}
 <script type="text/javascript">
 window.monitors = [
 {% for monitor in site.monitors %}
@@ -184,11 +194,12 @@ window.monitors = [
 {% endfor %}
 ];
 </script>
-{% endraw %}{% endhighlight %}
+{% endraw %}
+{% endhighlight %}
 
 #### Requesting the data from Uptimerobot
 
-Now that we have the monitors in `window.monitors` we need to obtain the data per monitor. For this we created a function call getData:
+Now that we have the monitors in `window.monitors` we need to obtain the data per monitor. For this we created a function `getData` which requests the data and returns an error or the json data.
 
 {% highlight javascript %}
 function getData(monitor, callback) {
@@ -250,9 +261,10 @@ for (var i = 0; i < window.monitors.length; i++) {
 
 #### Displaying the metrics
 
-To display the data we will use a combination of Jekyll and JavaScript. On our index page we will output an outline for the graphs to go with Jekyll. This will prevent a shift in window height when the data load and gives an indeterminate state to the viewers.
+To display the data we will use a combination of Jekyll and JavaScript. On our index page we will output an outline for the graphs with Jekyll. This will prevent a shift in window height when the data load and gives an indeterminate state to the viewers.
 
-{% highlight html %}{% raw %}
+{% highlight html %}
+{% raw %}
 <h2>System Metrics</h2>
 {% for monitor in site.monitors %}
 <div class="metric" id="{{ monitor.name | slugify }}">
@@ -266,7 +278,8 @@ To display the data we will use a combination of Jekyll and JavaScript. On our i
 	</ul>
 </div>
 {% endfor %}
-{% endraw %}{% endhighlight %}
+{% endraw %}
+{% endhighlight %}
 
 The uptime values are the easiest to begin with:
 
@@ -287,7 +300,7 @@ getData(monitor, function (err, data) {
 ...
 {% endhighlight %}
 
-Before we can show the data from Uptimerobot we need to process the data. We want to make an average of all of the data for the `.response-time` element and we need to change it into a form our graphing library will understand.
+Before we can show the data from Uptimerobot we need to process it. We want to make an average of all of the data for the `.response-time` element and we need to change it into a form our graphing library will understand.
 
 {% highlight javascript %}
 ...
@@ -308,7 +321,12 @@ getData(monitor, function (err, data) {
 ...
 {% endhighlight %}
 
-At this point we have everything except a graph. I have found the most flexible graphing library to be [flot](http://www.flotcharts.org/). For this we need to add the base library and the three plugins we are using.
+At this point we have everything except a graph. I have found the most flexible graphing library to be [flot](http://www.flotcharts.org/). For this we need to add the base library and the following three plugins:
+
+* **Threshold:** extends flot to change the colour of a line graph if the values reach above a certain value
+* **Time:** handle time series data on graphs
+* **Resize:** forces a rerender of the graphs on window resize
+
 
 {% highlight html %}
 <script type="text/javascript" src="/js/flot/jquery.flot.min.js"></script>
@@ -351,24 +369,14 @@ getData(monitor, function (err, data) {
 ...
 {% endhighlight %}
 
-This creates a graph for our response time data over the last 12 hours. There are a number of plugins added to the basic flot graph:
-
-* Threshold - This extends flot to set a range that is higher than normal and show a different colour at that range
-* Time - This extends flot to handle time series data
-* Resize - By default flot does not resize, adding this forces a rerender on resize
-
-Now we have a complete status page with metrics we can manage using a Jekyll collection.
+This creates a graph for our response time data over the last 12 hours. Now we have a complete status page with metrics we can manage using a Jekyll collection.
 
 ![Displaying the metrics](/img/blog/status-page/metrics.png){: .screenshot srcset="/img/blog/status-page/metrics.png 800w, /img/blog/status-page/metrics@2x.png 1600w"}
 
-### Using CloudCannon for status page UI
-
-* Components
-* Incidents
-* Metrics
-
 ---
 
-Link to open source project
+This status page is updatable using CloudCannon. This allows a team of non-developers to update the status page while the developers focus on the problems at hand. Alternatively it can still be updated through a storage provider and hosted anywhere static files can be served.
 
-Conclusion
+There are a number of alternatives to Uptimerobot with their own API. As an extension the data could be downloaded to the site as a json object which reduce the reliance on their uptime.
+
+Feel free to use the status page template or contribute updates. If you have any questions comment below or on the repo. Remember to checkout [status.cloudcannon.com](http://status.cloudcannon.com) if you are experiencing any issues.
