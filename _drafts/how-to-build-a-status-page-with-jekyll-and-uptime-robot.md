@@ -160,7 +160,7 @@ Adding/updating a post in Git or on CloudCannon will add it to our status page. 
 
 Response time graphs show the performance and reliability of a system. CloudCannon uses Uptimerobot internally for monitoring. For every service we want to track, we create a monitor on Uptimerobot which pings the service on a regular interval.
 
-Uptimerobot provides a JavaScript API for obtaining response time and uptime data. For each monitor we need to obtain its read key. There is an option to use a global key but that should be avoided as it gives control of your account. We opted to create separate monitors for our status page as their API exposes data about our external integrations.
+Uptimerobot provides a JavaScript API for obtaining response time and uptime data. For each monitor we need to obtain its read key. ​Avoid using a global key, as it provides full control of your account. We opted to create separate monitors for our status page as their API exposes data about our external integrations.
 
 #### Managing monitors with collections
 
@@ -176,7 +176,7 @@ threshold: 1000
 ---
 {% endhighlight %}
 
-Using the same technique as we used on incidents, we will output the monitors to javascript:
+Using the same technique as we used on incidents, we output the monitors to JavaScript:
 
 {% highlight html %}
 {% raw %}
@@ -199,7 +199,7 @@ window.monitors = [
 
 #### Requesting the data from Uptimerobot
 
-Now that we have the monitors in `window.monitors` we need to obtain the data per monitor. For this we created a function `getData` which requests the data and returns an error or the json data.
+Now that we have the monitors in `window.monitors`, we need to obtain the data per monitor. For this we created a `getData` function which requests the data and returns an error or the JSON data.
 
 {% highlight javascript %}
 function getData(monitor, callback) {
@@ -239,7 +239,7 @@ function getData(monitor, callback) {
 }
 {% endhighlight %}
 
-Using the above function we can obtain the data we need from Uptimerobot. This data includes the response times in the last twelve hours and the `customUptimeRatio` values for the last 1, 7 and 30 days. To fetch all the data for each monitor we can iterate over them:
+The getData function provides the data we need from Uptimerobot. This data includes the response times in the last twelve hours and the `customUptimeRatio` values for the last 1, 7 and 30 days. To fetch all the data for each monitor we can iterate over them:
 
 {% highlight javascript %}
 function addMonitor(monitor) {
@@ -369,7 +369,7 @@ getData(monitor, function (err, data) {
 ...
 {% endhighlight %}
 
-This creates a graph for our response time data over the last 12 hours. Now we have a complete status page with metrics we can manage using a Jekyll collection.
+This creates a graph for our response time data over the last 12 hours. Now we have a complete status page with metrics managed with a Jekyll collection.
 
 ![Displaying the metrics](/img/blog/status-page/metrics.png){: .screenshot srcset="/img/blog/status-page/metrics.png 800w, /img/blog/status-page/metrics@2x.png 1600w"}
 
@@ -377,6 +377,6 @@ This creates a graph for our response time data over the last 12 hours. Now we h
 
 This status page is updatable using CloudCannon. This allows a team of non-developers to update the status page while the developers focus on the problems at hand. Alternatively it can still be updated through a storage provider and hosted anywhere static files can be served.
 
-There are a number of alternatives to Uptimerobot with their own API. As an extension the data could be downloaded to the site as a json object which reduce the reliance on their uptime.
+There are a number of alternatives to Uptimerobot with their own API. As an extension the data could be downloaded to the site as a JSON object which reduce the reliance on their uptime.
 
-Feel free to use the status page template or contribute updates. If you have any questions comment below or on the repo. Remember to checkout [status.cloudcannon.com](http://status.cloudcannon.com) if you are experiencing any issues.
+Feel free to use the status page template or contribute updates. If you have any questions comment below or on the repo. Remember to check out [status.cloudcannon.com](http://status.cloudcannon.com) and our [status twitter account](https://twitter.com/CCAppStatus) if you are experiencing any issues.
