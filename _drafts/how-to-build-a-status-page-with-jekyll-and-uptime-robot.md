@@ -44,7 +44,7 @@ To output the components using a for loop:
 {% endraw %}
 {% endhighlight %}
 
-Additionally, we want the title to change if any component state is not set to `operational`. To do this we loop over the each component again:
+Additionally, we want the title to change if any component state is not set to `operational`. To do this, we loop over the each component again:
 
 {% highlight html %}
 {% raw %}
