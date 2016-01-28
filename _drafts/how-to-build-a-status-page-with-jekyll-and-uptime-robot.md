@@ -98,7 +98,7 @@ Recent incidents on the main page are slightly more complicated:
 * To simplify things we don't want to recompile the site everyday to get the latest day showing 'no incidents'
 
 
-The best choice for this was JavaScript. Using liquid we can inject JavaScript into the page to define our incidents:
+The best choice for this was JavaScript. Using Liquid we can inject JavaScript into the page to define our incidents:
 
 {% highlight html %}
 {% raw %}
