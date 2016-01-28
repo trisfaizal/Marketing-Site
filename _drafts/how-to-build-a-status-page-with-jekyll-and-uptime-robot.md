@@ -160,7 +160,7 @@ Adding/updating a post in Git or on CloudCannon will add it to our status page. 
 
 Response time graphs show the performance and reliability of a system. CloudCannon uses Uptimerobot internally for monitoring. For every service we want to track, we create a monitor on Uptimerobot which pings the service on a regular interval.
 
-Uptimerobot provide a JavaScript API for obtaining response time and uptime data. For each monitor we need to obtain its read key. There is an option to use a global key but that should be avoided as it gives control of your account. We opted to create separate monitors for our status page as their API exposes data about our external integrations.
+Uptimerobot provides a JavaScript API for obtaining response time and uptime data. For each monitor we need to obtain its read key. There is an option to use a global key but that should be avoided as it gives control of your account. We opted to create separate monitors for our status page as their API exposes data about our external integrations.
 
 #### Managing monitors with collections
 
