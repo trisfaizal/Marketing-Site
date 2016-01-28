@@ -76,7 +76,7 @@ Incidents are made up of two sections, full history and recent incidents. The fu
 {% highlight html %}
 {% raw %}
 {% for post in site.posts %}
-  {% capture month %}{{ post.date | date: '%B' }}{% endcapture %}
+  {% capture month %}{{ post.date | date: "%B" }}{% endcapture %}
 
   {% if month != prev_month %}
     {% unless forloop.first %}<hr>{% endunless %}
@@ -86,7 +86,7 @@ Incidents are made up of two sections, full history and recent incidents. The fu
   <h3>{{ post.name }} <small>{{ post.date | date: "%A %e" }}</small></h3>
 
   {{ post.content }}
-  {% capture prev_month %}{{ post.date | date: '%B' }}{% endcapture %}
+  {% capture prev_month %}{{ post.date | date: "%B" }}{% endcapture %}
 {% endfor %}
 {% endraw %}
 {% endhighlight %}
@@ -94,7 +94,7 @@ Incidents are made up of two sections, full history and recent incidents. The fu
 Recent incidents on the main page are slightly more complicated:
 
 * We need to output every day in the last ten days
-* If a day has no incidents we want to show that as it is quite positive
+* If a day has no incidents we want to show that positively
 * To simplify things we don't want to recompile the site everyday to get the latest day showing 'no incidents'
 
 
