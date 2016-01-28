@@ -98,7 +98,7 @@ Recent incidents on the main page are slightly more complicated:
 * To simplify things we don't want to recompile the site everyday to get the latest day showing 'no incidents'
 
 
-The best choice for this was clearly JavaScript. Using liquid we can inject JavaScript into the page to define our incidents:
+The best choice for this was JavaScript. Using liquid we can inject JavaScript into the page to define our incidents:
 
 {% highlight html %}
 {% raw %}
@@ -158,13 +158,13 @@ Adding/updating a post in Git or on CloudCannon will add it to our status page. 
 
 ### Metrics Graphs with Uptimerobot
 
-Response time graphs often show the performance and reliability of a system. CloudCannon uses Uptimerobot internally for monitoring. For every service we want to track, we create a monitor on Uptimerobot which pings the service on a regular interval.
+Response time graphs show the performance and reliability of a system. CloudCannon uses Uptimerobot internally for monitoring. For every service we want to track, we create a monitor on Uptimerobot which pings the service on a regular interval.
 
 Uptimerobot provide a JavaScript API for obtaining response time and uptime data. For each monitor we need to obtain its read key. There is an option to use a global key but that should be avoided as it gives control of your account. We opted to create separate monitors for our status page as their API exposes data about our external integrations.
 
 #### Managing monitors with collections
 
-In order to maintain all of the Uptimerobot monitors we will use another Jekyll collection called `monitors`. The following is an example monitor for our App:
+In order to maintain all of the Uptimerobot monitors we used another Jekyll collection called `monitors`. The following is an example monitor for our App:
 
 {% highlight html %}
 ---
@@ -261,7 +261,7 @@ for (var i = 0; i < window.monitors.length; i++) {
 
 #### Displaying the metrics
 
-To display the data we will use a combination of Jekyll and JavaScript. On our index page we will output an outline for the graphs with Jekyll. This will prevent a shift in window height when the data loads and gives an indeterminate state to the viewers.
+To display the data we used a combination of Jekyll and JavaScript. On our index page we output an outline for the graphs with Jekyll. This prevents a shift in window height when the data loads and gives an indeterminate state to the viewers.
 
 {% highlight html %}
 {% raw %}
