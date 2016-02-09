@@ -5,12 +5,14 @@ header: The ultimate list of services for static websites
 category: Tips
 author: mike
 post_image: /img/blog/apps-for-static-sites/mailchimp.png
-permalink: /tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html 
+permalink: /tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html
 ---
 
 Think you need a backend? Think again. With the huge number of plugins, apps and services you can drop into static sites, there's not a lot you can't do.
 
 <!-- excerpt stop -->
+
+*An updated version of this post now lives at [Jekyll.tips](http://jekyll.tips/services/)*
 
 There's no hiding it, we love static websites. They're simple, easy to maintain and super fast. Not everyone shares our slightly obsessive point of view though. The main reasons we hear for not using static websites are:
 
