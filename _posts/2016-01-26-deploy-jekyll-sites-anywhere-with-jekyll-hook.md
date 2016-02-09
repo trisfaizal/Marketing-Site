@@ -175,11 +175,11 @@ Now we need GitHub to send jekyll-hook a webhook when there's a commit to the re
 
 Open your repository on GitHub. Then go to Settings -> Webhooks & services.
 
-![GitHub webhooks](/img/blog/jekyll-hook/github.png)
+![GitHub webhooks](/img/blog/jekyll-hook/github.png){:.screenshot}
 
 Click Add webhook. Set the Payload URL to point at your jekyll-hook server `http://example.org:8080/hooks/jekyll/:branch` where `:branch` is the branch you want to publish. The rest of the defaults are fine, press Add webhook.
 
-![GitHub webhook](/img/blog/jekyll-hook/github-webhook.png)
+![GitHub webhook](/img/blog/jekyll-hook/github-webhook.png){:.screenshot}
 
 ### Deploying the site
 
