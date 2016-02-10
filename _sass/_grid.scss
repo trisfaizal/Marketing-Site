@@ -13,6 +13,30 @@
 	}
 }
 
+@media only screen and (max-width: $break-small) {
+		.hide-on-mobile {
+			display: none;
+		}
+
+		div.col-1-3, .col-1-2 {
+			width: 100%;
+		}
+
+		.cta .col {
+			left: 0;
+		}
+}
+
+@media only screen and (max-width: 940px) {
+	.image-trio .left, .image-trio .right {
+		display: none;
+	}
+
+	.col-1-3 {
+		width: 50%;
+	}
+}
+
 @media only screen and (min-width: $break-medium) {
 	.thirds {
 		width: 31%;
