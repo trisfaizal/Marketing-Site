@@ -1,19 +1,33 @@
 
-@media only screen and (max-width: $break-small) {
+@media only screen and (max-width: $break-large) {
 		.hide-on-mobile {
 			display: none;
+		}
+
+		div.show-on-mobile {
+			display: block;
 		}
 
 		.cta .col.first {
 			text-align: center;
 		}
 
-		div.col-1-3, .col-1-2 {
+		div.col-1-3, div.col-1-2 {
 			width: 100%;
 		}
 
-		.cta .col {
+		.cta .col.col-1-2.first {
 			left: 0;
+			padding:0;
+			text-align: center;
+		}
+
+		div.your-workflow img {
+			top: 0;
+		}
+
+		div.live-scalable img {
+			top: 0;
 		}
 }
 
@@ -25,6 +39,10 @@
 	.col-1-3 {
 		width: 50%;
 	}
+}
+
+.show-on-mobile {
+	display: none;
 }
 
 .image-trio {
@@ -151,7 +169,7 @@ section.new-content.alternate {
 	padding: 20px 0;
 }
 
-.the-best-of-both-worlds img {
+.the-best-of-both-worlds .push-down {
 	position: relative;
 	top: 40px;
 }
