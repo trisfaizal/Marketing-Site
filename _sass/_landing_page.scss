@@ -119,10 +119,6 @@ section.cta {
 	}
 }
 
-.alternate.new-content {
-	background: #fff;
-}
-
 .other-features {
 	display: flex;
 	flex-wrap: wrap;
@@ -140,7 +136,7 @@ section.cta {
 	}
 }
 
-header.new-content {
+header {
 	height: calc(100vh - 266px);
 	min-height: 400px;
 	max-height: 900px;
@@ -169,7 +165,7 @@ header.new-content {
 }
 
 
-section.new-content.alternate {
+section.alternate {
 	padding: 20px 0;
 }
 
