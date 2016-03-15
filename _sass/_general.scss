@@ -15,6 +15,6 @@
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
-.new-content {
-	display: none !important;
+.new-content, .btn-sub-text.new-content {
+	display: none;
 }
