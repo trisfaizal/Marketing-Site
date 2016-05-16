@@ -10,7 +10,7 @@ post_image_height: 1000
 author: george
 ---
 
-This week we are excited to announce the beginning of two features. The first is the ability to use plugins on any Jekyll site. The second is SSL support to serve sites over HTTPS. Both features are in private beta, [contact support](mailto:support@cloudcannon.com) to request early access.
+This week we are excited to announce the beginning of two features: the ability to use Jekyll plugins and SSL support. Both features are in private beta, [contact support](mailto:support@cloudcannon.com) to request early access.
 
 ## Plugins Private Beta
 
@@ -26,13 +26,13 @@ Plugins are used for:
 - Generating pages from data files
 - And much more
 
-Have the editing of CloudCannon and the full power of Jekyll. [Get in touch](mailto:support@cloudcannon.com) If you want to try Jekyll plugins on CloudCannon.
+Enjoy the editing of CloudCannon with the full power of Jekyll. [Get in touch](mailto:support@cloudcannon.com) If you want to try Jekyll plugins on CloudCannon.
 
 ## SSL Private Beta
 
 ![Add HTTPS to your CloudCannon Site](/img/blog/plugins/https.png){: srcset="/img/blog/plugins/https.png 800w, /img/blog/plugins/https@2x.png 1600w"}
 
-Dozens of users are already using our SSL Support. This allows you serve any traffic on your site over SSL. Simply upload your cert and connect it to your site. This enables HTTPS for any traffic to your site.
+Dozens of users are already using our SSL Support. This allows you to serve any traffic on your site over SSL. Simply upload your cert and connect it to your site. This enables HTTPS for any traffic to your site.
 
 Optionally, any site can be configured to force SSL. This redirects any HTTP traffic to HTTPS.
 
