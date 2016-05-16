@@ -26,7 +26,7 @@ Plugins are used for:
 - Generating pages from data files
 - And much more
 
-Have the editing of CloudCannon and the full power of Jekyll. Get in touch If you want to try Jekyll plugins on CloudCannon.
+Have the editing of CloudCannon and the full power of Jekyll. [Get in touch](mailto:support@cloudcannon.com) If you want to try Jekyll plugins on CloudCannon.
 
 ## SSL Private Beta
 
