@@ -20,8 +20,8 @@ Plugins support allows you to add custom plugins to any site and CloudCannon exe
 
 Plugins are used for:
 
-- Reducing the repetition across site
-- Connect to external data sources
+- Reducing the repetition across sites
+- Connecting to external data sources
 - Adding additional liquid tags
 - Generating pages from data files
 - And much more
