@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Plugins and SSL Support
-header: Plugins and SSL Support
+title: Plugins and SSL Private Beta
+header: Plugins and SSL Private Beta
 category: Features
 post_image: /img/blog/plugins/filetypes@2x.png
 post_image_type: image/png
@@ -12,7 +12,7 @@ author: george
 
 This week we are excited to announce the beginning of two features. The first is the ability to use plugins on any Jekyll site. The second is SSL support to serve sites over HTTPS. Both features are in private beta, [contact support](mailto:support@cloudcannon.com) to request early access.
 
-## Plugins Support
+## Plugins Private Beta
 
 ![Ruby and Gemfiles are now supported within CloudCannon](/img/blog/plugins/filetypes.png){: srcset="/img/blog/plugins/filetypes.png 800w, /img/blog/plugins/filetypes@2x.png 1600w"}
 
@@ -28,7 +28,7 @@ Plugins are used for:
 
 Have the editing of CloudCannon and the full power of Jekyll. Get in touch If you want to try Jekyll plugins on CloudCannon.
 
-## SSL Support
+## SSL Private Beta
 
 ![Add HTTPS to your CloudCannon Site](/img/blog/plugins/https.png){: srcset="/img/blog/plugins/https.png 800w, /img/blog/plugins/https@2x.png 1600w"}
 
