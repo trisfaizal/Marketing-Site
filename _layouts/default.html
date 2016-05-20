@@ -5,7 +5,7 @@
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		{% capture title %}{% if page.title %}{{ page.title }}{% else %}{{ page.header }}{% endif %}{% if paginator.page != null and paginator.page != 1 %} page {{ paginator.page }}{% endif %} | CloudCannon{% endcapture %}
-		{% capture description %}{% if page.excerpt %}{% if page.content contains '<!-- excerpt stop -->' %}{{ page.content | split:'<!-- excerpt stop -->' | first | strip_html }}{% else %}{{ page.excerpt | strip_html }}{% endif %}{% else %}Build websites in HTML or Jekyll. Have your non-technical team update inline.{% endif %}{% endcapture %}
+		{% capture description %}{% if page.excerpt %}{% if page.content contains '<!-- excerpt stop -->' %}{{ page.content | split:'<!-- excerpt stop -->' | first | strip_html }}{% else %}{{ page.excerpt | strip_html }}{% endif %}{% else %}{{ site.description }}{% endif %}{% endcapture %}
 		{% capture image %}{% if page.post_image %}http://cloudcannon.com{{page.post_image}}{% else %}http://cloudcannon.com/img/cloud_cannon_logo.png{% endif %}{% endcapture %}
 
 		<title>{{ title }}</title>
@@ -33,8 +33,8 @@
 		<meta name="MobileOptimized" content="320">
 		<meta name="google-site-verification" content="GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o">
 
-		<link rel="alternate" type="application/rss+xml" title="{{ site.blog_name }}" href="{{ site.site_url }}/feed/">
-		<link rel="alternate" type="application/atom+xml" title="{{ site.blog_name }}" href="{{ site.site_url }}/atom_feed/">
+		<link rel="alternate" type="application/rss+xml" title="{{ site.blog_name }}" href="{{ site.url }}/feed/">
+		<link rel="alternate" type="application/atom+xml" title="{{ site.blog_name }}" href="{{ site.url }}/atom_feed/">
 
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400italic,400,300italic,300,700,700italic|Open+Sans:400italic,600italic,700italic,700,600,400|Inconsolata:400,700">
 		<link rel="stylesheet" href="/css/screen.css">
@@ -138,8 +138,8 @@
 				<a href="/press/#featured-articles"><img src="/img/coverage/appstorm.png" alt="Appstorm"></a>
 			</div>
 
-			<a href="https://twitter.com/cloudcannonapp" class="social-icon white twitter">Twitter</a>
-			<a href="https://www.facebook.com/CloudCannon" class="social-icon white facebook">Facebook</a>
+			<a href="{{ site.twitter_url }}" class="social-icon white twitter">Twitter</a>
+			<a href="{{ site.facebook_url }}" class="social-icon white facebook">Facebook</a>
 
 			<ul class="footer_links">
 				<li><a href="/">Home</a></li>
