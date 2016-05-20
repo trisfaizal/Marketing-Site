@@ -1,11 +1,23 @@
 gems:
   - jekyll-paginate
 
+title: CloudCannon
+description: The Cloud CMS for Jekyll. Build static or Jekyll websites, have your team and clients update inline with the CloudCannon GUI.
+url: http://cloudcannon.com
+
+facebook_url: https://www.facebook.com/CloudCannon
+google_plus_url: https://plus.google.com/+CloudCannon
+twitter_url: https://twitter.com/CloudCannonApp
+youtube_url: https://www.youtube.com/c/CloudCannon
+linkedin_url: https://www.linkedin.com/company/cloud-cannon
+github_url: https://github.com/CloudCannon
+
+number_of_employees: 3
+
 paginate: 5
 paginate_path: "blog/:num/"
 blog_name: The CloudCannon Blog
 blog_description: The CloudCannon Blog
-site_url: http://cloudcannon.com
 permalink: pretty
 timezone: Pacific/Auckland
 collections:

@@ -4,20 +4,20 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title type="text" xml:lang="en">{{ site.blog_name }}</title>
-	<link type="application/atom+xml" href="{{ site.site_url }}/atom_feed/" rel="self" />
-	<link type="text/html" href="{{ site.site_url }}/" rel="alternate" />
+	<link type="application/atom+xml" href="{{ site.url }}/atom_feed/" rel="self" />
+	<link type="text/html" href="{{ site.url }}/" rel="alternate" />
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>{{ site.site_url }}/</id>
+	<id>{{ site.url }}/</id>
 	<author>
-		<name>CloudCannon</name>
+		<name>{{ site.title }}</name>
 	</author>
 
 	{% for post in site.posts %}
 		<entry>
 			<title>{{ post.title }}</title>
-			<link href="{{ site.site_url }}{{ post.url }}" />
+			<link href="{{ site.url }}{{ post.url }}" />
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
-			<id>http://cloudcannon.com{{ post.url }}</id>
+			<id>{{ site.url }}{{ post.url }}</id>
 			<content type="html">{{ post.content | xml_escape }}</content>
 			{% if post.author %}
 				{% assign author = site.authors | where: "author", post.author | limit: 1 %}
