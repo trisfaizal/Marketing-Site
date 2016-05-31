@@ -109,7 +109,7 @@
 					</ul>
 
 					<ul class="user">
-						<li><a target="_blank" href="http://docs.cloudcannon.com">Docs</a></li>
+						<li><a target="_blank" href="https://docs.cloudcannon.com">Docs</a></li>
 						<li><a href="https://app.cloudcannon.com/">Log in</a></li>
 						<li><a href="https://app.cloudcannon.com/users/sign_up" class="sign-up">Sign Up</a></li>
 					</ul>
@@ -130,37 +130,51 @@
 		{{ content }}
 
 		<footer>
-			<div class="coverage-banner">
-				<a href="/press/#featured-articles"><img src="/img/coverage/tc.png" alt="TechCrunch"></a>
-				<a href="/press/#featured-articles"><img src="/img/coverage/yahoo_news.png" alt="Yahoo News"></a>
-				<a href="/press/#featured-articles"><img src="/img/coverage/tnw.png" alt="The Next Web"></a>
-				<a href="/press/#featured-articles"><img src="/img/coverage/tuts.png" alt="Tuts+"></a>
-				<a href="/press/#featured-articles"><img src="/img/coverage/appstorm.png" alt="Appstorm"></a>
+			<div class="container">
+				<div class="footer-columns">
+					<ul class="footer-links">
+						<li><h2>CloudCannon</h2></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/pricing/">Pricing</a></li>
+						<li><a href="/blog/">Blog</a></li>
+						<li><a href="/case-studies/">Case Studies</a></li>
+					</ul>
+
+					<ul class="footer-links">
+						<li><h2>Resources</h2></li>
+						<li><a href="/about/">About</a></li>
+						<li><a href="/freebies/">Freebies</a></li>
+						<li><a href="/press/">Press</a></li>
+						<li><a href="/contact/">Contact</a></li>
+					</ul>
+
+					<ul class="footer-links">
+						<li><h2>Social</h2></li>
+						<li><a target="_blank" href="{{ site.twitter_url }}">{% include icons/twitter.svg %}Twitter</a></li>
+						<li><a target="_blank" href="{{ site.facebook_url }}">{% include icons/facebook.svg %}Facebook</a></li>
+						<li><a target="_blank" href="{{ site.google_plus_url }}">{% include icons/google-plus.svg %}Google+</a></li>
+						<li><a target="_blank" href="{{ site.youtube_url }}">{% include icons/youtube.svg %}YouTube</a></li>
+					</ul>
+
+					<ul class="footer-links">
+						<li><h2>App</h2></li>
+						<li><a href="https://app.cloudcannon.com/users/sign_up" class="sign-up">Sign Up</a></li>
+						<li><a href="https://app.cloudcannon.com/">Log in</a></li>
+						<li><a href="https://docs.cloudcannon.com/" target="_blank">Docs</a></li>
+						<li><a href="http://status.cloudcannon.com/" target="_blank">Status</a></li>
+					</ul>
+				</div>
 			</div>
 
-			<a href="{{ site.twitter_url }}" class="social-icon white twitter">Twitter</a>
-			<a href="{{ site.facebook_url }}" class="social-icon white facebook">Facebook</a>
+			<div class="legal-line">
+				<p class="container">
+					&copy; {{ site.time | date: '%Y' }} CloudCannon Ltd &bull;
+					<a href="https://app.cloudcannon.com/terms">Terms</a> &amp;
+					<a href="https://app.cloudcannon.com/privacy_policy">Privacy</a>
+				</p>
+			</div>
+		</footer>
 
-			<ul class="footer_links">
-				<li><a href="/">Home</a></li>
-				<li><a href="http://docs.cloudcannon.com/" target="_blank">Docs</a></li>
-				<li><a href="/blog/">Blog</a></li>
-				<li><a href="/about/">About</a></li>
-				<li><a href="/freebies/">Freebies</a></li>
-				<li><a href="/agencies/">Agencies</a></li>
-				<li><a href="/enterprise/">Enterprise</a></li>
-				<li><a href="/press/">Press</a></li>
-				<li><a href="/contact/">Contact</a></li>
-			</ul>
-
-			<p class="t-and-c">
-				&copy; {{ site.time | date: '%Y' }} CloudCannon Limited |
-				<a href="https://app.cloudcannon.com/terms">Terms</a> &amp;
-				<a href="https://app.cloudcannon.com/privacy_policy">Privacy</a>
-			</p>
-		</section>
-
-		<script type="text/javascript" src="/js/prettify/prettify.js"></script>
 		<script src="/js/layout.js"></script>
 		<script type="text/javascript">
 			function isTouchDevice() {

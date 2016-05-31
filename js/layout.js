@@ -204,8 +204,6 @@ $(document).ready(function () {
 		return false;
 	});
 
-	prettyPrint();
-
 	var Player = function (videoId) {
 		this._videoId = videoId;
 		this._elId = "player" + videoId;
