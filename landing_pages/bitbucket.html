@@ -1,25 +1,15 @@
 ---
-layout: landing-page
-title: Host Jekyll websites from Bitbucket
+layout: landing-page-main
+title: The Cloud CMS for Bitbucket
+tagline: Host Jekyll websites from Bitbucket
 permalink: /bitbucket-jekyll/
 ---
 
-<header>
+<section class="alternate" id="landing-page-content">
 	<div class="container">
-		<h2>Host Jekyll Sites from Bitbucket<br>Have clients update inline</h2>
-		{% include proportional-youtube.html width=16 height=10 factor=70 youtube_id="gGZwFvW_U_U" %}
-		 <p><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Sign up free</a></p>
-	</div>
-</header>
-
-{% include why-use-cloudcannon.html %}
-
-<section class="alternate">
-	<div class="container">
-		<h2 class="center-text">How it Works</h2><br>
 		<div class="text">
 			<h3 class="editable"><span class="step-number">1</span> Enable the add-on</h3>
-			<p>Login to <a href="https://bitbucket.org/">Bitbucket</a> and go to <a href="https://bitbucket.org/account/addon-directory/">Find new add-ons</a>. Click Install next to CloudCannon.</p>
+			<p>Log in to <a href="https://bitbucket.org/">Bitbucket</a> and go to <a href="https://bitbucket.org/account/addon-directory/">Find new add-ons</a>. Click <strong>Install</strong> next to CloudCannon.</p>
 		</div>
 		<div class="image">
 			<img src="/img/blog/bitbucket/list.png" class="screenshot" width="550" alt="Atlassian Market Place" />
@@ -31,7 +21,7 @@ permalink: /bitbucket-jekyll/
 	<div class="container">
 		<div class="text">
 			<h3 class="editable"><span class="step-number">2</span> Create a site</h3>
-			<p class="editable">Click the CloudCannon button on your Bitbucket Jekyll Repository and create a site. CloudCannon will synchronize your files. </p>
+			<p class="editable">Click the CloudCannon button on your Bitbucket Jekyll repository and create a site. CloudCannon then synchronises your files.</p>
 		</div>
 		<div class="image">
 			<img class="screenshot" src="/img/landing_pages/connect/add_site.png" width="550" alt="Create a site" />
@@ -44,9 +34,8 @@ permalink: /bitbucket-jekyll/
 		<div class="text">
 			<h3 class="editable"><span class="step-number">3</span> Set editable elements</h3>
 			<p class="editable">Add <code>class="editable"</code> to elements in the HTML to control which elements can be updated inline.</p>
-			<p class="editable">Your non-technical team make updates directly on the page, what they see is what they get.</p>
-
-			<p class="editable">All changes are pushed back to your Bitbucket Repository</p>
+			<p class="editable"><strong>Non-developers</strong> make updates directly on the page, what they see is what they get.</p>
+			<p class="editable">All changes are pushed back to your Bitbucket repository with Git.</p>
 		</div>
 		<div class="image">
 			{% include proportional-youtube.html width=16 height=10 factor=70 youtube_id="FOYDMD1jA-0" %}
@@ -54,11 +43,4 @@ permalink: /bitbucket-jekyll/
 	</div>
 </section>
 
-{% include jekyll-callout.html %}
-
-<section class="centered">
-	<div class="container">
-		<h2>Simplify your workflow</h2>
-		<p><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-primary btn-large btn-block btn-centered">Sign up free</a></p>
-	</div>
-</section>
+{% include why-use-cloudcannon.html %}

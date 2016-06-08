@@ -1,0 +1,39 @@
+<script type="application/ld+json">
+{
+	"@context" : "http://schema.org",
+	"@type": "Organization",
+	"name": "{{ site.title }}",
+	"alternateName": "Cloud Cannon",
+	"description": "{{ site.description }}",
+	"url": "{{ site.url }}",
+	"email": "support@cloudcannon.com",
+	"numberOfEmployees": "{{ site.company.team_size }}",
+	"logo": "{{ site.url }}/img/cloudcannon-logo.png",
+	"sameAs": [
+		"{{ site.facebook_url }}",
+		"{{ site.google_plus_url }}",
+		"{{ site.twitter_url }}",
+		"{{ site.youtube_url }}",
+		"{{ site.linkedin_url }}",
+		"{{ site.github_url }}"
+	],
+	"founders": [
+		{
+			"@type": "Person",
+			"name": "George Phillips",
+			"sameAs": "https://twitter.com/gphillips_nz"
+		},
+		{
+			"@type": "Person",
+			"name": "Mike Neumegen",
+			"url": "https://mikeneumegen.com",
+			"sameAs": "https://twitter.com/mikeneumegen"
+		}
+	],
+	"foundingDate": "2013-08-01T00:00:00Z",
+	"foundingLocation": {
+		"@type": "Place",
+		"address": "Dunedin, New Zealand"
+	}
+}
+</script>

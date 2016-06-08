@@ -1,24 +1,12 @@
 ---
-layout: landing-page
-title: Host Jekyll websites from GitHub
+layout: landing-page-main
+title: The Cloud CMS for GitHub
+tagline: Host Jekyll websites from GitHub
 permalink: /github-jekyll/
 ---
 
-<header>
+<section class="alternate" id="landing-page-content">
 	<div class="container">
-		<h2>Host Jekyll Sites from GitHub <br>Have clients update inline</h2>
-
-		{% include proportional-youtube.html width=16 height=10 factor=70 youtube_id="T0VmTPTP5qk" %}
-
-		<p><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Sign up free</a></p>
-	</div>
-</header>
-
-{% include why-use-cloudcannon.html %}
-
-<section class="alternate">
-	<div class="container">
-		<h2 class="center-text">How it Works</h2><br>
 		<div class="text">
 			<h3 class="editable"><span class="step-number">1</span> Create a site</h3>
 			<p class="editable">Create a site in CloudCannon and connect GitHub as a storage provider. Select the repository with your Jekyll website.</p>
@@ -33,7 +21,7 @@ permalink: /github-jekyll/
 	<div class="container">
 		<div class="text">
 			<h3 class="editable"><span class="step-number">2</span> Synchronize</h3>
-			<p class="editable">CloudCannon will pull in the files from your repository and keep them in sync</p>
+			<p class="editable">CloudCannon fetches the files from your repository and keeps them in sync.</p>
 		</div>
 		<div class="image">
 			<img src="/img/landing_pages/dropbox/file_browser.png" class="screenshot" width="550" alt="Sync" />
@@ -46,7 +34,7 @@ permalink: /github-jekyll/
 		<div class="text">
 			<h3 class="editable"><span class="step-number">3</span> Set editable elements</h3>
 			<p class="editable">Add <code>class="editable"</code> to elements in the HTML to control which elements can be updated inline.</p>
-			<p class="editable">Your non-technical team make updates directly on the page, what they see is what they get.</p>
+			<p class="editable"><strong>Non-developers</strong> make updates directly on the page, what they see is what they get.</p>
 		</div>
 		<div class="image">
 			{% include proportional-youtube.html width=110 height=53 factor=5 youtube_id="FOYDMD1jA-0" %}
@@ -54,11 +42,4 @@ permalink: /github-jekyll/
 	</div>
 </section>
 
-{% include jekyll-callout.html %}
-
-<section class="centered">
-	<div class="container">
-		<h2>Simplify your workflow</h2>
-		<p><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-block btn-centered btn-large btn-primary sign-up">Sign up free</a></p>
-	</div>
-</section>
+{% include why-use-cloudcannon.html %}
