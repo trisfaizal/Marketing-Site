@@ -4,12 +4,17 @@ title: How Facebook content placeholder works
 header: Facebook content placeholder deconstruction
 category: Deconstructions
 author: george
-permalink: /deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html 
+permalink: /deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html
+post_image: /img/blog/facebook-content-placeholder.png
+post_image_type: image/png
+post_image_width: 1076
+post_image_height: 532
 ---
 
 This is the first post of my new blog series called Deconstructions. Showcasing cool things people are doing in web development and breaking them down step by step. My first target is a cool content placeholder from the most recent Facebook overhaul. Before your friend's latest selfie or dog picture loads you may have noticed this nice bit of polish.
 
 ### What is it?
+
 Straight to the point here it is. Below you can see my clone and my HTML (I changed a few things to make it easier to see):
 
 <div class="timeline-wrapper">

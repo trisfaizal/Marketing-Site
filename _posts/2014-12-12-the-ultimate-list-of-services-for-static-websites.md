@@ -4,7 +4,10 @@ title: The ultimate list of services for static websites
 header: The ultimate list of services for static websites
 category: Tips
 author: mike
-post_image: /img/blog/apps-for-static-sites/mailchimp.png
+post_image: /img/blog/apps-for-static-sites/static-jekyll-site-services.png
+post_image_type: image/png
+post_image_width: 1600
+post_image_height: 1000
 permalink: /tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html
 ---
 
