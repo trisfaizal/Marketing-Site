@@ -6,7 +6,7 @@
 
 		{% capture title %}{% if page.title %}{{ page.title }}{% else %}{{ page.header }}{% endif %}{% if paginator.page != null and paginator.page != 1 %} page {{ paginator.page }}{% endif %} | CloudCannon{% endcapture %}
 		{% capture description %}{% if page.excerpt %}{% if page.content contains '<!-- excerpt stop -->' %}{{ page.content | split:'<!-- excerpt stop -->' | first | strip_html }}{% else %}{{ page.excerpt | strip_html }}{% endif %}{% else %}{{ site.description }}{% endif %}{% endcapture %}
-		{% capture image %}{% if page.post_image %}http://cloudcannon.com{{page.post_image}}{% else %}http://cloudcannon.com/img/cloud_cannon_logo.png{% endif %}{% endcapture %}
+		{% capture image %}{% if page.post_image %}http://cloudcannon.com{{page.post_image}}{% else %}http://cloudcannon.com/img/cloudcannon-logo.png{% endif %}{% endcapture %}
 
 		<title>{{ title }}</title>
 		<meta name="description" content="{{ description | strip_newlines }}">
@@ -36,7 +36,7 @@
 		<link rel="alternate" type="application/rss+xml" title="{{ site.blog_name }}" href="{{ site.url }}/feed/">
 		<link rel="alternate" type="application/atom+xml" title="{{ site.blog_name }}" href="{{ site.url }}/atom_feed/">
 
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400italic,400,300italic,300,700,700italic|Open+Sans:400italic,600italic,700italic,700,600,400|Inconsolata:400,700">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400italic,400,300italic,300,700,700italic|Open+Sans:400italic,600italic,700italic,700,600,400|Inconsolata:400,700{{ page.extra_google_fonts }}">
 		<link rel="stylesheet" href="/css/screen.css">
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -86,14 +86,14 @@
 				<div id="menu">
 					<ul class="site">
 						<li>
- 							{% if page.url == '/pricing/index.html' %}
+ 							{% if page.url == '/pricing/' %}
 								<a href="/pricing/" class="active">Pricing</a>
 							{% else %}
 								<a href="/pricing/">Pricing</a>
  							{% endif %}
 						</li>
 						<li>
-							{% if page.url == '/blog/index.html' %}
+							{% if page.url == '/blog/' %}
 								<a href="/blog/" class="active">Blog</a>
 							{% else %}
 								<a href="/blog/">Blog</a>
@@ -123,6 +123,7 @@
 			<header>
 				<div class="container">
 					<h2>{{ page.header }}</h2>
+					{% if page.header_subtext %}<p class="sub-text" style="margin-bottom: 0;">{{ page.header_subtext }}</p>{% endif %}
 				</div>
 			</header>
 		{% endif %}

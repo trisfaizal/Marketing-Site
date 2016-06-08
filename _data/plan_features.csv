@@ -1,1 +1,19 @@
-name,Basic,Agency,Enterprise,mobile_visible,category_name,tooltipWebsites,Unlimited,Unlimited,Unlimited,TRUE,,Support,available,available,available,TRUE,,,,,,,Site Features,Client Sharing,available,available,available,TRUE,,Let your clients edit their sites without paying for extra users.Custom Domains,available,available,available,TRUE,,Use your own root or subdomains (e.g. yoursite.com or www.yoursite.com).Test Domains,available,available,available,TRUE,,Generated *.cloudvent.net domains you can use for testing.Hosting,available,available,available,TRUE,,Host your sites on supercharged CloudCannon infrastructure.Storage Providers,available,available,available,TRUE,,"Synchronise your site files with GitHub, Bitbucket or Dropbox."White Label,not-available,available,available,TRUE,,Remove all CloudCannon branding and add your own logo when sharing to clients.Increased Build Time Limit,not-available,available,available,TRUE,,Remove the Jekyll build time limit. This limit is only hit on very large sites.Jekyll Plugins,not-available,Soon,Soon,TRUE,,Run custom Ruby code on your sites.Internationalisation,not-available,not-available,available,TRUE,,Serve your sites in multiple languages.Geolocation,not-available,not-available,available,TRUE,,Display different content to viewers based on where they are in the world.,,,,,Site Authentication,Restrict who can view your sites.Password,available,available,available,TRUE,,User Accounts,not-available,available,available,TRUE,,Custom Interfaces and Routes,not-available,available,available,TRUE,,Customise the authentication interfaces. Configure which parts of your sites are authenticated.SAML,not-available,not-available,available,TRUE,,
+name,Basic,Agency,Enterprise,mobile_visible,category_name,tooltip
+Websites,Unlimited,Unlimited,Unlimited,TRUE,,
+Support,available,available,available,TRUE,,
+,,,,,Site Features,
+Client Sharing,available,available,available,TRUE,,Let your clients edit their sites without paying for extra users.
+Custom Domains,available,available,available,TRUE,,Use your own root or subdomains (e.g. yoursite.com or www.yoursite.com).
+Testing Domains,available,available,available,TRUE,,Generated *.cloudvent.net domains you can use for testing.
+Hosting,available,available,available,TRUE,,Host your sites on supercharged CloudCannon infrastructure.
+Storage Providers,available,available,available,TRUE,,"Synchronise your site files with GitHub, Bitbucket or Dropbox."
+Jekyll Plugins,Beta,Beta,Beta,TRUE,,Run custom Ruby code on your sites.
+White Label,not-available,available,available,TRUE,,Remove all CloudCannon branding and add your own logo when sharing to clients.
+Increased Build Time Limit,not-available,available,available,TRUE,,Remove the Jekyll build time limit. This limit is only hit on very large sites.
+Internationalisation,not-available,not-available,available,TRUE,,Serve your sites in multiple languages.
+Geolocation,not-available,not-available,available,TRUE,,Display different content to viewers based on where they are in the world.
+,,,,,Site Authentication,Restrict who can view your sites.
+Password,available,available,available,TRUE,,
+User Accounts,not-available,available,available,TRUE,,
+Custom Interfaces and Routes,not-available,available,available,TRUE,,Customise the authentication interfaces. Configure which parts of your sites are authenticated.
+SAML,not-available,not-available,available,TRUE,,

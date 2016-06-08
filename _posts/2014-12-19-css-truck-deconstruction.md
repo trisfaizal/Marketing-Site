@@ -4,10 +4,10 @@ title: How To Create an Animated Pickup in CSS and HTML
 header: Creating a CSS and HTML Animated Pickup
 category: Deconstructions
 author: george
-permalink: /deconstructions/2014/12/19/css-truck-deconstruction.html 
+permalink: /deconstructions/2014/12/19/css-truck-deconstruction.html
 ---
 
-This week I came across the [7mml](http://7mml.org/) website and I loved the loaded symbol. An animated car with a scrolling background. It was rather sluggish so I looked at how it was built. It was actually built using a large background image with javascript changing the background position.
+This week I came across the [7mml](http://7mml.org/) website and I loved the loaded symbol. An animated car with a scrolling background. It was rather sluggish so I looked at how it was built. It was actually built using a large background image with JavaScript changing the background position.
 
 ### What is it?
 I am going to rebuild the car/pickup in HTML, SVG and CSS. I was going to build it all in CSS but as it is a complicated shape SVG is probably better. Here's my version:
