@@ -45,9 +45,8 @@ layout: default
 		</section>
 
 		{% if page.author %}
-			{% assign author = site.authors | where: "author", page.author | limit: 1 %}
-			{% if author and author[0] %}
-				{% assign author = author[0] %}
+			{% assign author = site.authors | where: "author", page.author | first %}
+			{% if author %}
 				<div class="post-author clearfix">
 					<img src="{{ author.image_path }}" alt="A stunning photo of {{ author.name }}" width="200" height="200">
 					<p><a target="_blank" href="https://twitter.com/{{ author.twitter_handle }}">{{ author.name }}</a> {{ author.bio }}</p>
@@ -70,3 +69,39 @@ layout: default
 		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	</div>
 </section>
+
+
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "BlogPosting",
+	"@id": "{{ page.url }}",
+	"mainEntityOfPage": "{{ page.url }}",
+	"wordCount": {{ page.content | number_of_words }},
+	{% if author %}"author": {% include structured-data/person.json person=author %},{% endif %}
+	"datePublished": "{{ page.date | date_to_xmlschema }}",
+	"dateModified": "{{ page.date | date_to_xmlschema }}",
+	"headline": "{{ page.title | xml_escape }}",
+	{% if page.post_image and page.post_image_width and page.post_image_height %}
+		"image": {
+			"@type": "ImageObject",
+			"url": "{{ page.post_image | prepend: site.url }}",
+			"width": {{ page.post_image_width }},
+			"height": {{ page.post_image_height }}
+		},
+	{% elsif page.post_image %}
+		"image": "{{ page.post_image | prepend: site.url }}",
+	{% endif %}
+	"description": {{ page.excerpt | strip_html | strip | jsonify }},
+	"publisher": {
+		"@type": "Organization",
+		"name": "CloudCannon",
+		"logo": {
+			"@type": "ImageObject",
+			"url": "{{ site.url }}/img/publisher-logo.png",
+			"width": 402,
+			"height": 60
+		}
+	}
+}
+</script>

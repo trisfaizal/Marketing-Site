@@ -1,3 +1,7 @@
+{% assign george = site.staff | where: "name", "George Phillips" | first %}
+{% assign mike = site.staff | where: "name", "Mike Neumegen" | first %}
+{% assign ross = site.staff | where: "name", "Ross Phillips" | first %}
+
 <script type="application/ld+json">
 {
 	"@context" : "http://schema.org",
@@ -18,17 +22,11 @@
 		"{{ site.github_url }}"
 	],
 	"founders": [
-		{
-			"@type": "Person",
-			"name": "George Phillips",
-			"sameAs": "https://twitter.com/gphillips_nz"
-		},
-		{
-			"@type": "Person",
-			"name": "Mike Neumegen",
-			"url": "https://mikeneumegen.com",
-			"sameAs": "https://twitter.com/mikeneumegen"
-		}
+		{% include structured-data/person.json person=george %},
+		{% include structured-data/person.json person=mike %}
+	],
+	"employees": [
+		{% include structured-data/person.json person=ross %}
 	],
 	"foundingDate": "2013-08-01T00:00:00Z",
 	"foundingLocation": {
