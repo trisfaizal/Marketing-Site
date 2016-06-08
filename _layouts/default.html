@@ -33,6 +33,8 @@
 		<meta name="MobileOptimized" content="320">
 		<meta name="google-site-verification" content="GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o">
 
+		<link rel="canonical" href="{{ page.url | remove: 'index.html' | prepend: site.url }}">
+
 		<link rel="alternate" type="application/rss+xml" title="{{ site.blog_name }}" href="{{ site.url }}/feed/">
 		<link rel="alternate" type="application/atom+xml" title="{{ site.blog_name }}" href="{{ site.url }}/atom_feed/">
 
@@ -151,10 +153,10 @@
 
 					<ul class="footer-links">
 						<li><h2>Social</h2></li>
-						<li><a target="_blank" href="{{ site.twitter_url }}">{% include icons/twitter.svg %}Twitter</a></li>
-						<li><a target="_blank" href="{{ site.facebook_url }}">{% include icons/facebook.svg %}Facebook</a></li>
-						<li><a target="_blank" href="{{ site.google_plus_url }}">{% include icons/google-plus.svg %}Google+</a></li>
-						<li><a target="_blank" href="{{ site.youtube_url }}">{% include icons/youtube.svg %}YouTube</a></li>
+						<li><a target="_blank" href="{{ site.twitter_url }}" class="twitter-icon">{% include icons/twitter.svg %}Twitter</a></li>
+						<li><a target="_blank" href="{{ site.facebook_url }}" class="facebook-icon">{% include icons/facebook.svg %}Facebook</a></li>
+						<li><a target="_blank" href="{{ site.google_plus_url }}" class="google-plus-icon">{% include icons/google-plus.svg %}Google+</a></li>
+						<li><a target="_blank" href="{{ site.youtube_url }}" class="youtube-icon">{% include icons/youtube.svg %}YouTube</a></li>
 					</ul>
 
 					<ul class="footer-links">
