@@ -7,7 +7,7 @@ logo:
   width: 100px
 site: http://brandonsetter.com/
 site_name: Brandon Setter
-description: Freelancer
+tagline: Freelancer
 challenge: |
   Brandon Setter is a freelance web designer who creates elegant, hand-crafted websites for his clients.
 
