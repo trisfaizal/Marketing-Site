@@ -5,21 +5,7 @@
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		{% capture title %}{% if page.title %}{{ page.title }}{% else %}{{ page.header }}{% endif %}{% if paginator.page != null and paginator.page != 1 %} page {{ paginator.page }}{% endif %} | CloudCannon{% endcapture %}
-
-		{% capture description %}
-			{% if page.excerpt %}
-				{% if page.content contains '<!-- excerpt stop -->' %}
-					{{ page.content | split:'<!-- excerpt stop -->' | first | strip_html }}
-				{% else %}
-					{{ page.excerpt | strip_html }}
-				{% endif %}
-			{% elsif page.description %}
-				{{ page.description }}
-			{% else %}
-				{{ site.description }}
-			{% endif %}
-		{% endcapture %}
-
+		{% capture description %}{% if page.excerpt %}{% if page.content contains '<!-- excerpt stop -->' %}{{ page.content | split:'<!-- excerpt stop -->' | first | strip_html }}{% else %}{{ page.excerpt | strip_html }}{% endif %}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
 		{% capture image %}{% if page.post_image %}http://cloudcannon.com{{page.post_image}}{% else %}http://cloudcannon.com/img/cloudcannon-logo.png{% endif %}{% endcapture %}
 
 		<title>{{ title }}</title>
