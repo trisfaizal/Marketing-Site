@@ -1,5 +1,5 @@
 ---
-image_path: /img/team/tim.jpg
+image_path: /img/authors/tim.jpg
 twitter_handle: n00begon
 author: tim
 name: Tim Neumegen

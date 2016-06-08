@@ -1,12 +1,13 @@
 ---
 layout: default
-title : Contact
-header : Contact
+title: Contact
+header: Contact
+header_subtext: Ask a question or send us a message
 ---
 
 <section>
 	<div class="container">
-		<iframe height="300" frameborder="0" style="border:0; background: #eee; display: block; width: 100%;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3153.4379181137506!2d-122.4018327!3d37.77977579999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580807deab7bd%3A0x1258de79c702ff07!2s185+Clara+St%2C+San+Francisco%2C+CA+94107%2C+USA!5e0!3m2!1sen!2snz!4v1407442706645"></iframe>
+		<iframe height="300" frameborder="0" style="border:0; background: #eee; display: block; width: 100%;" src="https://www.google.com/maps/embed/v1/place?key={{ site[jekyll.environment].google_maps_embed_api_key }}&q={{ site.company.address | remove: ',' | replace: ' ','+' | uri_escape }}"></iframe>
 
         <form action="/contact_success" method="post" class="contact-form">
 			<input type="hidden" name="cc_emails[]" value="support@cloudcannon.com">
@@ -16,7 +17,7 @@ header : Contact
 
 			<label for="email">Email Address</label>
 			<input type="email" name="email" id="email" placeholder="Enter your email..." required>
-			
+
 			<label for="message">Message</label>
 			<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
@@ -25,17 +26,12 @@ header : Contact
 
 		<div class="contact-details">
 			<h4>Address</h4>
-			<p><address>
-				226 Musselburgh Rise,<br>
-				Dunedin,<br>
-				Otago, 9013<br>
-				New Zealand
-			</address></p>
+			<p><address>{{ site.company.address | replace: ', ',',<br>' }}</address></p>
 
-			<h4> Email </h4>
+			<h4>Email</h4>
 			<p><a href="mailto:support@cloudcannon.com">support@cloudcannon.com</a></p>
 
-			<h4> Phone </h4>
+			<h4>Phone</h4>
 			<p>+1 (415) 359 3289</p>
 		</div>
 	</div>

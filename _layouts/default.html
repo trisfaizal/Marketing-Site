@@ -86,14 +86,14 @@
 				<div id="menu">
 					<ul class="site">
 						<li>
- 							{% if page.url == '/pricing/index.html' %}
+ 							{% if page.url == '/pricing/' %}
 								<a href="/pricing/" class="active">Pricing</a>
 							{% else %}
 								<a href="/pricing/">Pricing</a>
  							{% endif %}
 						</li>
 						<li>
-							{% if page.url == '/blog/index.html' %}
+							{% if page.url == '/blog/' %}
 								<a href="/blog/" class="active">Blog</a>
 							{% else %}
 								<a href="/blog/">Blog</a>
@@ -123,6 +123,7 @@
 			<header>
 				<div class="container">
 					<h2>{{ page.header }}</h2>
+					{% if page.header_subtext %}<p class="sub-text" style="margin-bottom: 0;">{{ page.header_subtext }}</p>{% endif %}
 				</div>
 			</header>
 		{% endif %}

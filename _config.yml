@@ -12,7 +12,11 @@ youtube_url: https://www.youtube.com/c/CloudCannon
 linkedin_url: https://www.linkedin.com/company/cloud-cannon
 github_url: https://github.com/CloudCannon
 
-number_of_employees: 3
+company:
+  founded: August 2013
+  team_size: 3
+  address: 226 Musselburgh Rise, Dunedin, 9013, Otago, New Zealand
+  funding: $500K Seed
 
 paginate: 5
 paginate_path: "blog/:num/"
@@ -46,18 +50,21 @@ defaults:
 
 development:
   google_analytics_key: "UA-37472773-11"
+  google_maps_embed_api_key: "AIzaSyD7rj_NMkAQ2g5oUreDm5Ym4BRALGAVhYU"
   keen:
     project_id: "55cbfe8490e4bd146ec3bf27"
     write_key: "f08246251e08b254e6611777a889f6094b596e58b08beb716ab3664540dbdf153a9054bf8c8cd5062d8f5677eb15220c9dddc49997984dec05aa0ac4cdef3f5c460e90350d898d0efef8a0e26350c2b471b215341517247e88aa7b666173aff84751f8a7ee9c7a76dbd7ba617a043a02"
 
 staging:
   google_analytics_key: "UA-37472773-11"
+  google_maps_embed_api_key: "AIzaSyD7rj_NMkAQ2g5oUreDm5Ym4BRALGAVhYU"
   keen:
     project_id: "55cbfd9590e4bd13ca5c363c"
     write_key: "4467f64b4a622def5ee5830a3aadb1ad9c8de7a0d9a3ac8256d008ec1c86736fb53c4757611417eb40e614cd0f8ae8abdf82625d9321882bb196c6166190443dbf31722d15d72236dfe30aceb119579fc397bb2d94a5af271b67bd54ac6e1bbce34c1bb51ab235a3fe1a3575c681fc43"
 
 production:
   google_analytics_key: "UA-37472773-1"
+  google_maps_embed_api_key: "AIzaSyD7rj_NMkAQ2g5oUreDm5Ym4BRALGAVhYU"
   keen:
     project_id: "55cbfe8490e4bd146ec3bf27"
     write_key: "f08246251e08b254e6611777a889f6094b596e58b08beb716ab3664540dbdf153a9054bf8c8cd5062d8f5677eb15220c9dddc49997984dec05aa0ac4cdef3f5c460e90350d898d0efef8a0e26350c2b471b215341517247e88aa7b666173aff84751f8a7ee9c7a76dbd7ba617a043a02"

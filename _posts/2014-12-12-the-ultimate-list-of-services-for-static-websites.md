@@ -18,14 +18,14 @@ There's no hiding it, we love static websites. They're simple, easy to maintain 
 
 1. **Non-technical users can't update static websites easily**. This is a problem we're working hard to solve at [CloudCannon](http://cloudcannon.com).
 
-2. **I can't do x without a backend**. With the huge number of apps and services you can drop into static websites there's actually not a lot you *can't* do with static websites.  
+2. **I can't do this without a backend**. With the huge number of apps and services you can drop into static websites there's actually not a lot you *can't* do with static websites.  
 
 Today I'm rounding up the best of these services.
 
 <div class="roundup-boxes">
 
-	<h4> Newsletters </h4>
-	<p> Capture email addresses and send periodic newsletters. </p>
+	<h4>Newsletters</h4>
+	<p>Capture email addresses and send periodic newsletters.</p>
 	<ul>
 		<li><a href="http://mailchimp.com"><img src="/img/blog/apps-for-static-sites/mailchimp.png">MailChimp</a></li>
 		<li><a href="https://www.campaignmonitor.com/"><img src="/img/blog/apps-for-static-sites/campaignmonitor.png">Campaign Monitor</a></li>
@@ -36,8 +36,8 @@ Today I'm rounding up the best of these services.
 	</ul>
 	<br class="clear"/>
 
-	<h4> Community </h4>
-	<p> Build communities by allowing your visitors to post comments on your website. </p>
+	<h4>Community</h4>
+	<p>Build communities by allowing your visitors to post comments on your website.</p>
 	<ul>
 		<li><a href="https://disqus.com"><img src="/img/blog/apps-for-static-sites/disqus.png">Disqus</a></li>
 		<li><a href="http://intensedebate.com/"><img src="/img/blog/apps-for-static-sites/intensedebate.png">IntenseDebate</a></li>
@@ -46,8 +46,8 @@ Today I'm rounding up the best of these services.
 	</ul>
 	<br class="clear"/>
 
-	<h4> Contact Forms </h4>
-	<p> Add contact forms without having to do any backend coding. </p>
+	<h4>Contact Forms</h4>
+	<p>Add contact forms without having to do any backend coding.</p>
 	<ul>
 		<li><a href="https://formkeep.com/"><img src="/img/blog/apps-for-static-sites/formkeep.png">FormKeep</a></li>
 		<li><a href="https://www.formstack.com/"><img src="/img/blog/apps-for-static-sites/formstack.png">Formstack</a></li>
@@ -59,8 +59,8 @@ Today I'm rounding up the best of these services.
 	</ul>
 	<br class="clear"/>
 
-	<h4> Live Chat </h4>
-	<p> Chat directly with visitors.</p>
+	<h4>Live Chat</h4>
+	<p>Chat directly with visitors.</p>
 	<ul>
 		<li><a href="https://www.olark.com/"><img src="/img/blog/apps-for-static-sites/olark.png">Olark</a></li>
 		<li><a href="https://www.zopim.com/"><img src="/img/blog/apps-for-static-sites/zopim.png">Zopim</a></li>
@@ -69,8 +69,8 @@ Today I'm rounding up the best of these services.
 	</ul>
 	<br class="clear"/>
 
-	<h4> E-Commerce </h4>
-	<p> Simple e-commerce is possible on static websites.</p>
+	<h4>E-Commerce</h4>
+	<p>Simple e-commerce is possible on static websites.</p>
 	<ul>
 		<li><a href="http://snipcart.com"><img src="/img/blog/apps-for-static-sites/snipcart.png">SnipCart</a></li>
 		<li><a href="https://checkout.google.com/seller/integrate_shoppingcart.html"><img src="/img/blog/apps-for-static-sites/google.png">Google Checkout</a></li>
@@ -82,8 +82,8 @@ Today I'm rounding up the best of these services.
 	</ul>
 	<br class="clear"/>
 
-	<h4> Surveys </h4>
-	<p> Get feedback by adding a survey to your site.</p>
+	<h4>Surveys</h4>
+	<p>Get feedback by adding a survey to your site.</p>
 	<ul>
 		<li><a href="http://typeform.com"><img src="/img/blog/apps-for-static-sites/typeform.png">TypeForm</a></li>
 		<li><a href="http://www.surveymonkey.com"><img src="/img/blog/apps-for-static-sites/surveymonkey.png">SurveyMonkey</a></li>
@@ -93,8 +93,8 @@ Today I'm rounding up the best of these services.
 	</ul>
 	<br class="clear"/>
 
-	<h4> Search </h4>
-	<p> Full search capability for static websites.</p>
+	<h4>Search</h4>
+	<p>Full search capability for static websites.</p>
 	<ul>
 		<li><a href="https://swiftype.com/"><img src="/img/blog/apps-for-static-sites/swiftype.png">Swiftype</a></li>
 		<li><a href="https://www.kimonolabs.com/"><img src="/img/blog/apps-for-static-sites/kimonolabs.png">Kimono Labs</a></li>
@@ -103,8 +103,8 @@ Today I'm rounding up the best of these services.
 	</ul>
 	<br class="clear"/>
 
-	<h4> Backends </h4>
-	<p> Even full backends with authentication are available for static websites.</p>
+	<h4>Backends</h4>
+	<p>Even full backends with authentication are available for static websites.</p>
 	<ul>
 		<li><a href="https://www.firebase.com/"><img src="/img/blog/apps-for-static-sites/firebase.png">FireBase</a></li>
 		<li><a href="https://www.userapp.io/"><img src="/img/blog/apps-for-static-sites/userapp.png">UserApp</a></li>
@@ -113,8 +113,8 @@ Today I'm rounding up the best of these services.
 	</ul>
 	<br class="clear"/>
 
-	<h4> Analytics </h4>
-	<p> Analyse what visitors are doing on your website.</p>
+	<h4>Analytics</h4>
+	<p>Analyse what visitors are doing on your website.</p>
 	<ul>
 		<li><a href="http://www.google.com/analytics/"><img src="/img/blog/apps-for-static-sites/google.png">Google Analytics</a></li>
 		<li><a href="http://clicky.com/"><img src="/img/blog/apps-for-static-sites/clicky.png">Clicky</a></li>
@@ -129,8 +129,8 @@ Today I'm rounding up the best of these services.
 	</ul>
 	<br class="clear"/>
 
-	<h4> Embeddable Content </h4>
-	<p> Content you can drop into your static websites.</p>
+	<h4>Embeddable Content</h4>
+	<p>Content you can drop into your static websites.</p>
 	<ul>
 		<li><a href="https://www.flickr.com/"><img src="/img/blog/apps-for-static-sites/flickr.png">Flickr</a></li>
 		<li><a href="https://soundcloud.com/"><img src="/img/blog/apps-for-static-sites/soundcloud.png">SoundCloud</a></li>
@@ -150,8 +150,8 @@ Today I'm rounding up the best of these services.
 	</ul>
 	<br class="clear"/>
 
-	<h4> Frontend error trackers </h4>
-	<p> As you add more javascript to your website it's worth tracking any errors that arise.</p>
+	<h4>Frontend error trackers</h4>
+	<p>As you add more JavaScript to your website it's worth tracking any errors that arise.</p>
 	<ul>
 		<li><a href="http://newrelic.com/"><img src="/img/blog/apps-for-static-sites/newrelic.png">NewRelic</a></li>
 		<li><a href="https://errorception.com/"><img src="/img/blog/apps-for-static-sites/errorception.png">Errorception</a></li>
