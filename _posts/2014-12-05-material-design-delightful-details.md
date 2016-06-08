@@ -18,9 +18,9 @@ This week I am deconstructing the Delightful Details from [Google's Material Des
 
 This week I am deconstructing the Delightful Details from [Google's Material Design](http://www.google.com/design/spec/material-design/introduction.html).
 
-<video crossorigin="anonymous" preload="metadata" loop autoplay>
-    <source src="/video/animation-delightfuldetails.webm" type="video/webm">
+<video crossorigin="anonymous" preload="metadata" loop autoplay poster="/video/animation-delightfuldetails.png" style="margin-bottom: 35px;">
     <source src="/video/animation-delightfuldetails.mp4" type="video/mp4">
+    <source src="/video/animation-delightfuldetails.mkv" type="video/x-matroska">
 </video>
 
 <link rel="stylesheet" href="/css/delightful-details.css"  />
