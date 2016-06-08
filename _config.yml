@@ -18,10 +18,10 @@ company:
   address: 226 Musselburgh Rise, Dunedin, 9013, Otago, New Zealand
   funding: $500K Seed
 
-paginate: 5
+paginate: 10
 paginate_path: "blog/:num/"
 blog_name: The CloudCannon Blog
-blog_description: The CloudCannon Blog
+blog_description: Stay informed with the latest news and web development tutorials from CloudCannon, the Cloud CMS for Jekyll and static sites.
 permalink: pretty
 timezone: Pacific/Auckland
 collections:
@@ -40,7 +40,7 @@ collections:
   customers:
     name: Customers
     output: true
-    permalink: /customers/:name/
+    permalink: /case-studies/:name/
 defaults:
   - scope:
       path: ""

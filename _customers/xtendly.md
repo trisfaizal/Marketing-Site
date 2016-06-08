@@ -7,7 +7,7 @@ logo:
   width: 100px
 site: http://www.xtendly.com
 site_name: Xtendly
-description: Digital Agency
+tagline: Digital Agency
 challenge: |
   Xtendly is known for creating beautiful sites and providing marketing services to help small and medium businesses succeed online. They were using Wordpress to build sites for their customers but found the platform was holding them back.
 

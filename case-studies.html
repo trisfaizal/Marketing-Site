@@ -1,7 +1,8 @@
 ---
 layout: default
 permalink: /case-studies/
-title: A source control backed, Jekyll CMS for developers working with non-developers
+title: Case Studies
+description: Learn how great companies use CloudCannon, the source control backed, Jekyll CMS for developers working with non-developers.
 header: Case Studies
 header_subtext: Learn how great companies use CloudCannon
 ---
@@ -15,7 +16,7 @@ header_subtext: Learn how great companies use CloudCannon
 			{% else %}
 				<img width="250" src="{{ customer.logo.path }}" alt="{{ customer.name }}" />
 			{% endif %}
-			<strong>{{ customer.description }}</strong>
+			<strong>{{ customer.tagline }}</strong>
 		</a>
 	{% endfor %}
 </div>
