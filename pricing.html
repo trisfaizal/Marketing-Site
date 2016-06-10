@@ -17,7 +17,12 @@ permalink: /pricing/
 				{% endfor %}
 			</tr>
 			<tr>
-				<th>Monthly price per user</th>
+				<th class="tooltip">
+					<em data-title="Users are members of your team. Clients edit at no additional cost.">
+						Monthly price per user
+						<img src="/img/icons/help-outline.svg" width="13" height="13" class="tooltip-indicator">
+					</em>
+				</th>
 				{% for plan in site.data.plans %}
 					<th>{{ plan.price }}</th>
 				{% endfor %}
@@ -105,7 +110,7 @@ permalink: /pricing/
 
 		<h4>Can I try CloudCannon for free?</h4>
 		<p>
-			Yes! Signing up for CloudCannon starts a free 30 day trial on the <strong>Enterprise</strong> plan.
+			Yes, signing up for CloudCannon starts a free 30 day trial on the <strong>Enterprise</strong> plan.
 			During this trial period you can enter a credit card and select a plan if you'd like to continue using CloudCannon.
 		</p>
 
@@ -115,20 +120,25 @@ permalink: /pricing/
 			The free plan restricts access to your sites and removes all the shares you've made.
 		</p>
 
+		<h4>Can I switch plans?</h4>
+		<p>Yes, change your plan any time in <em>Account Settings</em>.</p>
+
+		<h4>Do I pay for another user when sharing to a client?</h4>
+		<p>No, sharing with <a href="https://docs.cloudcannon.com/sharing/client-sharing/" target="_blank">Client Sharing</a> does not count towards your total users.</p>
 
 		<h4>How am I billed when adding new users?</h4>
 		<p>
-			We'll add prorated charge (or refund if you're removing a user) to your next invoice.
+			CloudCannon adds a prorated charge (or refund when removing a user) to your next invoice.
 		</p>
 		<p>
-			For example, if your team is on the <strong>Agency</strong> plan, it will cost $75 per user per month.
+			For example, if your team is on the <strong>Agency</strong> plan, it costs $75 per user per month.
 			You add a new team member 10 days into your billing period and there are 20 remaining days in the month.
 			The per-day cost for each user is $75 &divide; 30, so we add on $50
 			($75 &divide; 30 days &times; 20 days) to your next invoice.
 		</p>
 
 		<h4>Do you take feature requests?</h4>
-		<p>We listen closely to our customers. <a href="mailto:support@cloudcannon.com">Contact support</a> if you have requests or feedback. Many CloudCannon features are driven by your feedback.</p>
+		<p>Yes, we listen closely to our customers. <a href="mailto:support@cloudcannon.com">Contact support</a> if you have requests or feedback. Many CloudCannon features are driven by your feedback.</p>
 
 		<h4>Where are CloudCannon sites hosted?</h4>
 		<p>
@@ -139,12 +149,6 @@ permalink: /pricing/
 		<p>
 			CloudCannon supports <a href="https://docs.cloudcannon.com/hosting/options/" target="_blank">other hosting options</a>, including your own servers.
 		</p>
-
-		<h4>Do I pay for another user when sharing to a client?</h4>
-		<p>No, sharing with <a href="https://docs.cloudcannon.com/sharing/client-sharing/" target="_blank">Client Sharing</a> does not count towards your total users.</p>
-
-		<h4>Can I switch plans?</h4>
-		<p>Yes, change your plan any time in <em>Account Settings</em>.</p>
 
 		<h4>How do I cancel my CloudCannon account?</h4>
 		<p>Either downgrade to the free plan or delete your account. Find these options in your <em>Account Settings</em>.</p>
