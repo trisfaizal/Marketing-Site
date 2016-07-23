@@ -1,7 +1,7 @@
 ---
 layout: post
-title: The big update. Two months of major feature releases and company direction to cover!
-header: The big update. Two months of major feature releases and company direction to cover!
+title: Major feature releases and company direction
+header: Major feature releases and company direction
 category: Features
 author: sam
 permalink: /features/2014/11/12/cloudcannon-direction-ftp-visual-editables.html
@@ -9,7 +9,7 @@ permalink: /features/2014/11/12/cloudcannon-direction-ftp-visual-editables.html
 
 <!-- summary photo and summary here -->
 
-![CloudCannon syncing with FTP](/img/blog/cloudcannon-direction-FTP-visual-editables/ftp-header.png "FTP Syncing with CloudCannon. It's a game changer")
+![CloudCannon syncing with FTP](/img/blog/cloudcannon-direction-ftp-visual-editables/ftp-header.png "FTP Syncing with CloudCannon. It's a game changer")
 
 We recently released four major product updates, (including FTP support!), [publicly announced our fundraising round and partnership with Rightside](http://techcrunch.com/2014/10/20/cloudcannon-raises-500k-to-make-designing-static-websites-simpler/).
 
@@ -36,15 +36,17 @@ We found that people were in love with the workflow of CloudCannon which include
 Our focus is on a great editing experience and empowering you to work the way you want. As part of that we want to partner with services who are focused on simplifying other areas of the website experience. We have started with domain registration to make that really easy but we want to make everything as seamless. Whether it's eCommerce, website building or email newsletters we want to work together to create a better world for websites.
 
 #### Shift in pricing to match
+
 We used to have a pretty extensive free offering. You could make a website and basically have it live on the web with all the trimmings - the only thing that didn't work was that it didn't have a custom domain.
 
 When we thought about it, adding a custom domain is a pretty arbitrary pay wall. That workflow was also more of a demo of what it's like to *host* a website, which caused confusion about what CloudCannon is about.
 
 So we've changed the way free works; free focuses on editing. A website on our free plan is like a private sandbox for your changes.
 
-In free websites you can add your files any way you want whether that's with a storage provider(FTP or Dropbox) or just drag and drop. You can share and tweak the website as much as you want. When you are ready to push changes live to your website you simply upgrade to be Published, which is just $9 a month.
+In free websites you can add your files any way you want whether that's with a storage provider (FTP or Dropbox) or just drag and drop. You can share and tweak the website as much as you want. When you are ready to push changes live to your website you simply upgrade to be Published, which is just $9 a month.
 
-<hr>
+---
+
 ### Product feature update
 
 #### FTP is here and it's awesome!
@@ -54,10 +56,6 @@ As mentioned above FTP support is an exciting feature for CloudCannon.
 FTP means you can look after your own website hosting - supercharging, maintaining and SSL'ing it as you wish - but still get the awesome CloudCannon editing experience.
 
 We have made it just the same as using Dropbox. When you connect your FTP we will pull out a copy and keep in sync. Any changes that you make we will publish right back to your FTP. You can keep working the way you were before CloudCannon only now you have a great editor.
-
-<!--
-	Every time you wish to make an edit, we'll suck your website out of your host via FTP, present it to you in the CloudCannon interface to make changes, and then save it all back to your host via FTP again.
--->
 
 Linking your hosting FTP to your website is as simple as selecting it under the 'Storage Provider' options...
 
@@ -105,18 +103,14 @@ You can then save them by clicking the disk.
 
 It was quite annoying having to save between visual and code views in the editor. So now you can now switch between adding editables, editing visually, and the code view without saving. You can see exactly whats going only looking at the HTML that is changing. Just remember to save changes before you leave the page entirely.
 
-On top of that the editor is even better. We added another level of editing. You can now make "a", "span", "small", "strong", "em", "i", "b", "sub", "sup", "li", "dd", "dt", and "td" elements editable. These elements are span editables; this means that only the text can be updated.
+On top of that the editor is even better. We added another level of editing. You can now make `a`, `span`, `small`, `strong`, `em`, `i`, `b`, `sub`, `sup`, `li`, `dd`, `dt`, and `td` elements editable. These elements are span editables; this means that only the text can be updated.
 
 #### Other things we've done
 
 * Saving is way faster - you should notice that saving through the interface is much faster. We rebuilt some of our architecture and managed to speed it up massively. Enjoy!
-
 * A new payment system is in place. We over hauled all those older interfaces and gave a fresh CloudCannon feel to make it easier to manage everything around payments.
-
 * Additional file types - these have been requested by users and we're happy to deliver:
 	.ai, .7z, .doc, .docx, .bmp, .csv, .eps, .svgz, .xls, .xlsx, .yaml, .rar, .gz, .text, .rss,
 	.markdown, .mdown, .mkdn, .md, .mkd, .mdwn, .mdtxt, .mdtext,
 
 General bug fixes - thanks for pushing through support tickets.
-
-Sam
