@@ -8,91 +8,91 @@ quotes:
   harry:
     text: "Porting WordPress content over. Luckily there are/were a number of open-source tools to help me, but it wasn’t necessarily simple, and brought a fairly long-tail of legacy with it (code blocks incorrectly formatted, WP meta data being crammed into Jekyll’s YML front matter)."
     name: Harry Roberts
-    twitter_path: "https://twitter.com/csswizardry"
+    twitter_url: "https://twitter.com/csswizardry"
     image_path: "/img/blog/jekyll-traps/csswizardry.jpeg"
     work_title: Jekyll blog post
     work_path: "http://csswizardry.com/2012/12/a-new-css-wizardry/"
   paul:
     text: "With over 1,000 blog posts on my site when I moved from WordPress to Jekyll, it takes some time to generate my site. That was a minor annoyance which has gotten better over the years with faster computers and more performant Jekyll updates."
     name: Paul Stamatiou
-    twitter_path: "https://twitter.com/stammy"
+    twitter_url: "https://twitter.com/stammy"
     image_path: "/img/blog/jekyll-traps/stammy.png"
     work_title: WordPress to Jekyll blog post
     work_path: "http://paulstamatiou.com/how-to-wordpress-to-jekyll/"
   brett:
     text: The lack of documentation surrounding the site payload and methods available to the various objects. It took some digging to write my first plugin.
     name: Brett Terpstra
-    twitter_path: "https://twitter.com/ttscoff"
+    twitter_url: "https://twitter.com/ttscoff"
     image_path: "/img/blog/jekyll-traps/ttscoff.png"
     work_title: Jekyll CDN blog post
     work_path: "http://brettterpstra.com/2014/02/21/a-jekyll-cdn-with-cloudfront/"
   johan:
     text: "The setup is kind of hard with the ruby dependencies/rvm/gemfiles/gem bundles. Now there are some decent guides I guess but when I was starting there was no solid guide to explain how it worked, there was a lot of assumed knowledge from being a Ruby developer even though I used Jekyll as a web designer. Setting Jekyll up in Windows is also painful on its own (I don't use Windows primarily but used Jekyll in a coding workshop I gave, not everyone has a Mac)"
     name: Johan Ronsse
-    twitter_path: "https://twitter.com/johan_ronsse"
+    twitter_url: "https://twitter.com/johan_ronsse"
     image_path: "/img/blog/jekyll-traps/johan_ronsse.png"
     work_title: Intro to Jekyll video
     work_path: "https://www.youtube.com/watch?v=O7NBEFmA7yA"
   michael:
     text: "Getting my Ruby environment setup and figuring out problems with gems and other dependencies installing. Jekyll was straightforward enough, it was all the mess that comes with Ruby that wasn't."
     name: Michael Rose
-    twitter_path: "https://twitter.com/mmistakes"
+    twitter_url: "https://twitter.com/mmistakes"
     image_path: "/img/blog/jekyll-traps/mmistakes.jpg"
     work_title: Jekyll themes
     work_path: "https://mademistakes.com/work/"
   john:
     text: "Dealing with silent/undescriptive errors with liquid. Though, the majority of those seem to be remedied in later versions."
     name: John Otander
-    twitter_path: "https://twitter.com/4lpine"
+    twitter_url: "https://twitter.com/4lpine"
     image_path: "/img/blog/jekyll-traps/4lpine.jpg"
     work_title: Jekyll Pixyll theme
     work_path: "http://pixyll.com/"
   travis:
     text: "Using Jekyll was the first time I had to use the terminal. I am a designer first, and that tends to scare our kind, but its not so bad. Another thing was trying to get my dev environment perfect. But now Jekyll handles SASS and there is an adequate Jade plugin."
     name: Travis Neilson
-    twitter_path: "https://twitter.com/travisneilson"
+    twitter_url: "https://twitter.com/travisneilson"
     image_path: "/img/blog/jekyll-traps/travisneilson.jpeg"
     work_title: "DevTips \"Jon doesn't like Jekyll\" video"
     work_path: "https://www.youtube.com/watch?v=u22CLlw4_hg"
   adam:
     text: "Local installation. You know that Steve Jobs quote from an Apple Q&A; \"if you see a stylus, they blew it.\" I have that feeling with platforms that pertain to be user friendly, but the install process involves dicking around with the terminal prompt."
     name: Adam Wilcox
-    twitter_path: "https://twitter.com/adamwilcox"
+    twitter_url: "https://twitter.com/adamwilcox"
     image_path: "/img/blog/jekyll-traps/adamwilcox.jpg"
     work_title: Podcasting with Jekyll tutorial
     work_path: "http://www.adamwilcox.org/2013/01/17/from-the-pub/"
   richard:
     text: Installing it on a Windows machine. Adding Search functionality. Incorporating Tags to posts.
     name: Richard Bray
-    twitter_path: "https://twitter.com/ceiga"
+    twitter_url: "https://twitter.com/ceiga"
     image_path: "/img/blog/jekyll-traps/ceiga.jpeg"
     work_title: Muffin Jekyll theme
     work_path: "http://richbray.me/muffin/"
   alan:
     text: "Getting the file structure right. Figuring out how to get the index page to paginate through posts. Using an .html extension instead of .md and being confused about why the translation didn't happen."
     name: Alan W. Smith
-    twitter_path: "https://twitter.com/TheIdOfAlan"
+    twitter_url: "https://twitter.com/TheIdOfAlan"
     image_path: "/img/blog/jekyll-traps/theidofalan.jpg"
     work_title: Date formatting in Jekyll
     work_path: "http://alanwsmith.com/jekyll-liquid-date-formatting-examples"
   dave:
     text: "It was the data folder, though now that's not a problem."
     name: David Zvenyach
-    twitter_path: "https://twitter.com/vdavez"
+    twitter_url: "https://twitter.com/vdavez"
     image_path: "/img/blog/jekyll-traps/vdavez.jpg"
     work_title: Jekyll data_source tutorial
     work_path: "https://esq.io/blog/posts/dogfooding-with-jekyll/"
   mike:
     text: "I haven't run into any major hurdles lately, most of the growing pains came from just trying to get a firm grasp on the basics.  Does Jekyll process a page through Markdown or Liquid first?  Why can't I use Liquid tags in excerpts?  Why can't I specify a permalink in my blog index front-matter?  The documentation for Jekyll is great, but some things just need to be learned through experimentation."
     name: Mike Greiling
-    twitter_path: "https://twitter.com/mikegreiling"
+    twitter_url: "https://twitter.com/mikegreiling"
     image_path: "/img/blog/jekyll-traps/mikegreiling.png"
     work_title: Jekyll intro tutorial
     work_path: "http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/"
   michelle:
     text: "Well, there's Jekyll, and then there's GitHub Pages Jekyll. Jekyll itself is pretty straightforward, but GitHub Pages doesn't have great error messaging on build fail. It has gotten a bit better over the years, but still... Jekyll itself was pretty easy to work with once you figured out the basic config setup (which, if you've never used a config file before, takes a little learning, but not too bad)."
     name: Michelle Hertzfeld
-    twitter_path: "https://twitter.com/meiqimichelle"
+    twitter_url: "https://twitter.com/meiqimichelle"
     image_path: "/img/blog/jekyll-traps/meiqimichelle.jpeg"
     work_title: "Using Jekyll and GitHub, Tips for Designers"
     work_path: "http://michellehertzfeld.com/thoughts/using-jekyll-and-github-tips-for-designers/"
