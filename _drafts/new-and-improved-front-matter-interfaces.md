@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Get the most from front matter
-header: Get the most from front matter
+title: New and Improved Front Matter Interfaces
+header: New and Improved Front Matter Interfaces
 category: Features
-post_image: /img/blog/get-the-most-from-front-matter/front-matter-example@2x.png
+post_image: /img/blog/new-and-improved-front-matter-interfaces/front-matter-example@2x.png
 post_image_type: image/png
 post_image_width: 1600
 post_image_height: 1000
@@ -14,11 +14,20 @@ extra_google_fonts: "|Material+Icons"
 CloudCannon is committed to bringing the best editing experience to static and Jekyll sites.
 We provide world-class interfaces for your clients to update their front matter, a core offering of Jekyll.
 
-![Example front matter in CloudCannon](/img/blog/get-the-most-from-front-matter/front-matter-example.png){: .screenshot srcset="/img/blog/get-the-most-from-front-matter/front-matter-example.png 800w, /img/blog/get-the-most-from-front-matter/front-matter-example@2x.png 1600w"}
+![Example front matter in CloudCannon](/img/blog/new-and-improved-front-matter-interfaces/front-matter-example.png){: .screenshot srcset="/img/blog/new-and-improved-front-matter-interfaces/front-matter-example.png 800w, /img/blog/new-and-improved-front-matter-interfaces/front-matter-example@2x.png 1600w"}
 
 There are more front matter interfaces available in CloudCannon than ever before. We've recently added more interfaces and ways to customise them.
 
 ---
+
+### Rich Text
+
+Front matter is often useful for sections of text outside the main content of a page.
+Give clients control of formatting with this new interface.
+The `_html` and `_markdown` conventions set what format the text is saved in. Markdown values need to be run through the `markdownify` filter to render with formatting.
+
+<i class="material-icons">format_size</i> [Full documentation for rich text](https://docs.cloudcannon.com/editing/front-matter/#rich-text)
+{: .list-item-with-icon}
 
 ### Colour
 
