@@ -363,3 +363,14 @@ footer {
 .explainer-video {
 	margin: 50px 0;
 }
+
+.list-item-with-icon {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+
+	i {
+		margin-right: 5px;
+	}
+}

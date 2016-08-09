@@ -35,7 +35,7 @@ description: Discover the motivations behind creating CloudCannon. Meet the team
 		{% for team_member in site.staff %}
 			<div class="profile">
 				<img src="{{ team_member.image_path }}" width="200" height="200" alt="{{ team_member.name }}">
-				<h3><a target="_blank" href="https://twitter.com/{{ team_member.twitter_handle }}">{{ team_member.name }}</a></h3>
+				<h3><a target="_blank" href="https://twitter.com/{{ team_member.twitter_username }}">{{ team_member.name }}</a></h3>
 				<p>{{ team_member.position }}</p>
 			</div>
 		{% endfor %}

@@ -5,9 +5,9 @@ layout: null
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	{% for post in site.posts %}
 		<url>
-			<loc>{{ site.url }}{{ post.url }}</loc>
+			<loc>{{ post.url | prepend: site.url }}</loc>
 			{% if post.sitemap.lastmod %}
-				<lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+				<lastmod>{{ post.sitemap.lastmod | date_to_xmlschema }}</lastmod>
 			{% elsif post.date %}
 				<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
 			{% else %}
@@ -25,14 +25,12 @@ layout: null
 			{% endif %}
 		</url>
 	{% endfor %}
-	{% for page in site.pages %}
-		{% assign extension = page.path | split: "." | last %}
-
-		{% if page.sitemap.exclude != "yes" and extension == "html" and page.path != "404.html" %}
+	{% for page in site.html_pages %}
+		{% if page.sitemap != false and page.path != "404.html" %}
 			<url>
-				<loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+				<loc>{{ page.url | prepend: site.url }}</loc>
 				{% if page.sitemap.lastmod %}
-					<lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+					<lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
 				{% elsif page.date %}
 					<lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
 				{% else %}

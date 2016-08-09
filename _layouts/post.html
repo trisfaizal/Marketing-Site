@@ -49,24 +49,26 @@ layout: default
 			{% if author %}
 				<div class="post-author clearfix">
 					<img src="{{ author.image_path }}" alt="A stunning photo of {{ author.name }}" width="200" height="200">
-					<p><a target="_blank" href="https://twitter.com/{{ author.twitter_handle }}">{{ author.name }}</a> {{ author.bio }}</p>
+					<p><a target="_blank" href="https://twitter.com/{{ author.twitter_username }}">{{ author.name }}</a> {{ author.bio }}</p>
 				</div>
 			{% endif %}
 		{% endif %}
 
-		<div id="disqus_thread"></div>
-		<script type="text/javascript">
-			var disqus_shortname = "cloudcannon";
-			(function () {
-				var dsq = document.createElement("script");
-				dsq.type = "text/javascript";
-				dsq.async = true;
-				dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
-				(document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(dsq);
-			})();
-		</script>
-		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		{% if jekyll.environment == 'production' %}
+			<div id="disqus_thread"></div>
+			<script type="text/javascript">
+				var disqus_shortname = "cloudcannon";
+				(function () {
+					var dsq = document.createElement("script");
+					dsq.type = "text/javascript";
+					dsq.async = true;
+					dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+					(document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(dsq);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		{% endif %}
 	</div>
 </section>
 
@@ -75,8 +77,8 @@ layout: default
 {
 	"@context": "http://schema.org",
 	"@type": "BlogPosting",
-	"@id": "{{ page.url }}",
-	"mainEntityOfPage": "{{ page.url }}",
+	"@id": "{{ page.url | prepend: site.url }}",
+	"mainEntityOfPage": "{{ page.url | prepend: site.url }}",
 	"wordCount": {{ page.content | number_of_words }},
 	{% if author %}"author": {% include structured-data/person.json person=author %},{% endif %}
 	"datePublished": "{{ page.date | date_to_xmlschema }}",
