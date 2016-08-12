@@ -25,8 +25,14 @@ blog_description: Stay informed with the latest news and web development tutoria
 permalink: pretty
 timezone: Pacific/Auckland
 collections:
+  gallery:
+    name: Gallery
+    output: false
   press:
     name: Featured Articles
+    output: false
+  experts:
+    name: Experts
     output: false
   milestones:
     name: Milestones

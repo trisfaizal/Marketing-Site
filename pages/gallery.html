@@ -1,0 +1,26 @@
+---
+layout: default
+title: Gallery
+description: Example of sites on CloudCannon
+header: Gallery
+header_subtext: Examples of sites on CloudCannon
+permalink: /gallery/
+---
+
+<section>
+	<div class="container">
+		<div class="gallery">
+			{% assign sorted_gallery = site.gallery | sort: "name" %}
+			{% for item in sorted_gallery %}
+				<div class="gallery-item col col-1-2">
+					<h3><a href="{{ item.link }}">{{ item.name }}</a></h3>
+					<div>
+						<a href="{{ item.link }}">
+							<img src="{{ item.image_path}}" alt="{{ item.name }}" class="screenshot" srcset="{{ item.image_path }} 620w, {{ item.image_path | replace: ".png", "@2x.png" }} 1240w">
+						</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,19 @@
+.gallery {
+	margin: 0 -20px;
+	.gallery-item {
+		padding: 40px 20px;
+
+		@media only screen and (max-width: $break-large) {
+			&.col.col-1-2 {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+
+
+
+	h3 a {
+		text-decoration: none;
+	}
+}
