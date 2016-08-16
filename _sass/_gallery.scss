@@ -1,13 +1,24 @@
 .gallery {
 	margin: 0 -20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap:         wrap;
+
 	.gallery-item {
 		padding: 40px 20px;
+		width: 50%;
+		box-sizing: border-box;
 
 		@media only screen and (max-width: $break-large) {
-			&.col.col-1-2 {
+			& {
 				width: 100%;
-				float: none;
 			}
+		}
+
+		.location .material-icons {
+			position: relative;
+			top: 5px
 		}
 	}
 

@@ -158,7 +158,6 @@ $(document).ready(function () {
 	if (jQuery().twentytwenty) {
 		$(".before-after-slider").each(function( index ) {
 			$(this).twentytwenty();
-			$(this).find('video').get(0).play();
 		});
 	}
 	$('a[href*="#"]:not([href="#"])').click(function() {

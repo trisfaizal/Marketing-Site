@@ -1,5 +1,5 @@
 ---
 name: Static is the new Dynamic
-image_path: /img/gallery/static-is-the-new-dynamic.png
+image_path: /img/gallery/static-is-the-new-dynamic.jpeg
 link: https://www.thenewdynamic.org/
 ---
