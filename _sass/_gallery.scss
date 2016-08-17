@@ -1,5 +1,5 @@
 .gallery {
-	margin: 0 -20px;
+	margin: -20px;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-wrap: wrap; /* Safari */
@@ -13,6 +13,7 @@
 		@media only screen and (max-width: $break-large) {
 			& {
 				width: 100%;
+				padding: 20px;
 			}
 		}
 
@@ -22,9 +23,14 @@
 		}
 	}
 
-
-
 	h3 a {
 		text-decoration: none;
+		font-size: .8em;
+	}
+
+	@media only screen and (max-width: $break-large) {
+		& {
+			margin: -40px -20px;
+		}
 	}
 }
