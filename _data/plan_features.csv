@@ -7,7 +7,7 @@ Custom Domains,available,available,available,TRUE,,Use your own root or subdomai
 Testing Domains,available,available,available,TRUE,,Generated *.cloudvent.net domains you can use for testing.
 Hosting,available,available,available,TRUE,,Host your sites on supercharged CloudCannon infrastructure.
 Storage Providers,available,available,available,TRUE,,"Synchronise your site files with GitHub, Bitbucket or Dropbox."
-Jekyll Plugins,Beta,Beta,Beta,TRUE,,Run custom Ruby code on your sites.
+Jekyll Plugins,available,available,available,TRUE,,Run custom Ruby code on your sites.
 White Label,not-available,available,available,TRUE,,Remove all CloudCannon branding and add your own logo when sharing to clients.
 Increased Build Time Limit,not-available,available,available,TRUE,,Remove the Jekyll build time limit. This limit is only hit on very large sites.
 Internationalisation,not-available,not-available,available,TRUE,,Serve your sites in multiple languages.
