@@ -2,7 +2,7 @@
 layout: post
 title: Officially Out of Jekyll Beta
 header: Officially Out of Jekyll Beta
-category: Features
+category: Announcements
 post_image: /img/blog/officially-out-of-jekyll-beta/logos@2x.png
 post_image_type: image/png
 post_image_width: 1600
