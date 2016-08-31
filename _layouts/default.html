@@ -5,16 +5,17 @@
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		{% capture title %}{% if page.title %}{{ page.title }}{% else %}{{ page.header }}{% endif %}{% if paginator.page != null and paginator.page != 1 %} page {{ paginator.page }}{% endif %} | CloudCannon{% endcapture %}
+
 		{% capture description %}{% if page.excerpt %}{% if page.content contains '<!-- excerpt stop -->' %}{{ page.content | split:'<!-- excerpt stop -->' | first | strip_html }}{% else %}{{ page.excerpt | strip_html }}{% endif %}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+
 		{% capture image %}{% if page.post_image %}http://cloudcannon.com{{page.post_image}}{% else %}http://cloudcannon.com/img/cloudcannon-logo.png{% endif %}{% endcapture %}
 
-		<title>{{ title }}</title>
-		<meta name="description" content="{{ description | strip_newlines }}">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="google-site-verification" content="GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o">
 
-		<meta property="og:site_name" content="CloudCannon">
-		<meta property="og:url" content="http://cloudcannon.com{{ page.url | remove:'index.html'}}">
-		<meta property="og:title" content="{{ title }}">
-		<meta property="og:description" content="{{ description | strip_newlines }}">
+		{% seo %}
+
 		<meta property="og:image" content="{{ image }}">
 
 		{% if page.post_image and page.post_image_width %}
@@ -26,21 +27,12 @@
 		{% if page.post_image and page.post_image_type %}
 			<meta property="og:image:type" content="{{ page.post_image_type }}">
 		{% endif %}
-
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@CloudCannonApp">
 		<meta name="twitter:title" content="{{ title }}">
 		<meta name="twitter:description" content="{{ description }}">
 		<meta name="twitter:image" content="{{ image }}">
 
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<meta name="google-site-verification" content="GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o">
-
-		<link rel="canonical" href="{{ page.url | remove: 'index.html' | prepend: site.url }}">
-
-		<link rel="alternate" type="application/rss+xml" title="{{ site.blog_name }}" href="{{ site.url }}/feed/">
-		<link rel="alternate" type="application/atom+xml" title="{{ site.blog_name }}" href="{{ site.url }}/atom_feed/">
 		{% feed_meta %}
 
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400italic,400,300italic,300,700,700italic|Open+Sans:400italic,600italic,700italic,700,600,400|Inconsolata:400,700{{ page.extra_google_fonts }}">
@@ -82,37 +74,17 @@
 		<nav>
 			<div class="container">
 				<h1>
-					{% if page.url == '/index.html' %}
-						<a href="/" class="active">
-					{% else %}
-						<a href="/">
-					{% endif %}
+					<a href="/" {% if page.url == '/' %}class="active"{% endif %}>
 						<img src="/img/logo.png" width="68" height="46" alt="CloudCannon">
 					</a>
 				</h1>
 				<div id="menu">
 					<ul class="site">
-						<li>
- 							{% if page.url == '/pricing/' %}
-								<a href="/pricing/" class="active">Pricing</a>
-							{% else %}
-								<a href="/pricing/">Pricing</a>
- 							{% endif %}
-						</li>
-						<li>
-							{% if page.url == '/blog/' %}
-								<a href="/blog/" class="active">Blog</a>
-							{% else %}
-								<a href="/blog/">Blog</a>
-							{% endif %}
-						</li>
-						<li>
-							{% if page.url == '/gallery/' %}
-								<a href="/gallery/" class="active">Gallery</a>
-							{% else %}
-								<a href="/gallery/">Gallery</a>
-							{% endif %}
-						</li>
+						{% for item in site.data.navigation %}
+							<li>
+								<a href="{{ item.link }}" {% if item.link == page.url %}class="active"{% endif %}>{{ item.name }}</a>
+							</li>
+						{% endfor %}
 					</ul>
 
 					<ul class="user">
@@ -140,40 +112,18 @@
 		<footer>
 			<div class="container">
 				<div class="footer-columns">
+					{% for column in site.data.footer %}
 					<ul class="footer-links">
-						<li><h2>CloudCannon</h2></li>
-						<li><a href="/">Home</a></li>
-						<li><a href="/pricing/">Pricing</a></li>
-						<li><a href="/blog/">Blog</a></li>
-						<li><a href="/gallery/">Gallery</a></li>
-						<li><a href="/case-studies/">Case Studies</a></li>
-						<li><a href="/experts/">Experts</a></li>
+						<li><h2>{{ column.title }}</h2></li>
+						{% for link in column.links %}
+							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{{ link.link }}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+								{% if link.social_icon %}
+									{% include social-icon.html social_icon=link.social_icon %}
+								{% endif %}
+								{{ link.name }}</a></li>
+						{% endfor %}
 					</ul>
-
-					<ul class="footer-links">
-						<li><h2>Resources</h2></li>
-						<li><a href="/about/">About</a></li>
-						<li><a href="http://jekyll.tips/" target="_blank">Learn Jekyll</a></li>
-						<li><a href="/freebies/">Freebies</a></li>
-						<li><a href="/press/">Press</a></li>
-						<li><a href="/contact/">Contact</a></li>
-					</ul>
-
-					<ul class="footer-links">
-						<li><h2>Social</h2></li>
-						<li><a target="_blank" href="{{ site.twitter_url }}" class="twitter-icon">{% include icons/twitter.svg %}Twitter</a></li>
-						<li><a target="_blank" href="{{ site.facebook_url }}" class="facebook-icon">{% include icons/facebook.svg %}Facebook</a></li>
-						<li><a target="_blank" href="{{ site.google_plus_url }}" class="google-plus-icon">{% include icons/google-plus.svg %}Google+</a></li>
-						<li><a target="_blank" href="{{ site.youtube_url }}" class="youtube-icon">{% include icons/youtube.svg %}YouTube</a></li>
-					</ul>
-
-					<ul class="footer-links">
-						<li><h2>App</h2></li>
-						<li><a href="https://app.cloudcannon.com/users/sign_up" class="sign-up">Sign Up</a></li>
-						<li><a href="https://app.cloudcannon.com/">Log in</a></li>
-						<li><a href="https://docs.cloudcannon.com/" target="_blank">Docs</a></li>
-						<li><a href="http://status.cloudcannon.com/" target="_blank">Status</a></li>
-					</ul>
+					{% endfor %}
 				</div>
 			</div>
 

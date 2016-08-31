@@ -10,9 +10,7 @@ post_image_height: 563
 author: mike
 ---
 
-CloudCannon consolidates editing and reliable hosting into a single package. Alternatively, you can use external hosting solutions and keep editing in CloudCannon.
-
-To demonstrate this workflow, we will use [Amazon S3](http://aws.amazon.com/s3/), a great platform to host static and Jekyll websites. The uptime is [99.9% guaranteed](http://aws.amazon.com/s3/sla/), it scales indefinitely and it's cheap.
+CloudCannon consolidates editing and reliable hosting into a single package. Alternatively, you can use external hosting solutions and keep editing in CloudCannon. To demonstrate this workflow, we will use [Amazon S3](http://aws.amazon.com/s3/), a great platform to host static and Jekyll websites. The uptime is [99.9% guaranteed](http://aws.amazon.com/s3/sla/), it scales indefinitely and it's cheap.
 
 This tutorial shows you how to automatically deploy changes from CloudCannon/GitHub to S3 using [Travis CI](https://travis-ci.org/).
 

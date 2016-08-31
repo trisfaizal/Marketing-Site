@@ -4,13 +4,10 @@ title: Jekyll private beta and July Update
 header: Jekyll private beta and July Update
 category: Newsletter
 author: mike
-permalink: /newsletter/2014/07/25/jekyll-blogging-and-july-update.html 
+permalink: /newsletter/2014/07/25/jekyll-blogging-and-july-update.html
 ---
 
-![j](/img/blog/july14-update/cc_jekyll_header.png)
- At CloudCannon we’ve been extremely busy over the last 3 months. But admittedly, not very vocal. Since we last sent out an update there have been both new features added to the CloudCannon app and a new face added to the CloudCannon team.
-
-Here’s a recap of what’s been going on:
+![Jekyll](/img/blog/july14-update/cc_jekyll_header.png)
 
 ### Blogging is coming to CloudCannon! ###
 When we first started CloudCannon we thought that we’d only ever serve static sites. However the sheer number of requests for blog support lead us to reconsider.
@@ -78,37 +75,3 @@ This functionality is enabled by creating a new ‘website’ under an already u
 * We got a new favicon. Awwww yeah.
 
 ![Sync icon](/img/blog/july14-update/fav_icon.png)
-
-
-
-### New faces ###
-
-Until now, CloudCannon has just been George and I. We’ve achieved a lot to date, but we have bigger visions for what CloudCannon can be and what our community of awesome web designers will be capable of.
-
-You might remember that [we recently went through a business accelerator programme in New Zealand](/company/2014/03/30/lightning-lab.html).
-
-Wow, did two computer science majors learn a lot about running a business!
-
-One of the main things we took away from that experience is that to achieve what we want, we’re going to have to grow.
-
-With that in mind, we’re excited to officially welcome Sam Bonney to the team as our Head of Marketing.
-
-<img src="/img/blog/july14-update/sam.jpg" alt="Sam" style="border-radius: 1000px;" />
-
-<p style="text-align:center">Sam Bonney, our new Head of Marketing.</p>
-
-He loves [cravats](http://en.wikipedia.org/wiki/Ascot_tie#Popularity_of_the_day_cravat) and [noodles](http://en.wikipedia.org/wiki/Instant_noodles)! [Often together](/img/blog/july14-update/sam_2.jpg).
-
-We met Sam during our time in the accelerator - he was running it! - and as well as getting along with him like a house on fire, we realised that he brings a completely different way of thinking to CloudCannon.
-
-Sam understands how lots of different kinds of businesses run and we think thats going to be crucial not only for us, but for all of our users who have to 'run the business' of being a freelance web designer, small agency or DIY business owner.
-
-Sam’s been with us for a few weeks now so you may already have received an email or two from him.
-
-
-With a bit more man power around the place, communication from us is going to be a lot more regular (for real this time).
-
-<img src="/img/blog/july14-update/team.jpg" alt="CloudCannon Team" style="width: 80%" />
-
-
-That's all for now. We're currently working on a  secret project which will change the way you migrate websites. Stay tuned for details.

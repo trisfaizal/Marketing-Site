@@ -1,6 +1,3 @@
-gems:
-  - jekyll-paginate
-
 title: CloudCannon
 description: The Cloud CMS for Jekyll. Build static or Jekyll websites, have your team and clients update inline with the CloudCannon GUI.
 url: http://cloudcannon.com
@@ -28,14 +25,8 @@ collections:
   gallery:
     name: Gallery
     output: false
-  press:
-    name: Featured Articles
-    output: false
   experts:
     name: Experts
-    output: false
-  milestones:
-    name: Milestones
     output: false
   staff:
     name: Team Members

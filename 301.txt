@@ -25,3 +25,15 @@
 /disrupt/promomadness/ /
 /mission/ /about/
 /css-zen-garden/index2.html /tips/2014/12/18/extreme-css-zen-garden.html
+/atom_feed/ /feed.xml
+/feed/ /feed.xml
+/features/2013/08/21/powerful-templates.html /blog/
+/features/2013/11/08/new-freemium-pricing.html /blog/
+/features/2014/01/12/repeatable-regions.html /blog/
+/features/2014/04/01/new-pricing-tiers.html /blog/
+/interview/2014/04/03/my-journey-from-illustrator-to-html.html /blog/
+/interview/2014/04/24/learning-to-code-take-two.html /blog/
+/features/2014/08/27/improved-image-editing.html /blog/
+/features/2014/11/12/cloudcannon-direction-ftp-visual-editables.html /blog/
+/features/2014/12/15/bar-website-design-by-the-numbers.html /blog/
+/tutorials/2014/12/08/checklist-for-creating-great-bar-websites.html /blog/

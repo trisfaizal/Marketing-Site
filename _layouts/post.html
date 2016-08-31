@@ -19,22 +19,14 @@ layout: default
 
 		<hr>
 		<div class="share-options">
-			<div class="fb-share-button share-button push-right" style="top: 1px;" data-href="http://cloudcannon.com{{ page.url }}" data-layout="button_count"></div>
-
-			<div class="share-button tweak push-right">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://cloudcannon.com{{ page.url }}" data-via="CloudCannonApp"></a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-			</div>
-
-			<div class="share-button tweak" style="padding-right: 15px;">
-				<script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-				<script type="IN/Share" data-url="http://cloudcannon.com{{ page.url }}" data-counter="right"></script>
-			</div>
-
-			<div class="share-button tweak" style="top: 12px;">
-				<script src="https://apis.google.com/js/platform.js" async defer></script>
-				<div class="g-plusone" data-href="http://cloudcannon.com{{ page.url }}"></div>
-			</div>
+        {% assign url = page.url | prepend: site[jekyll.environment].url | cgi_escape %}
+        <a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+            {% include social-icon.html social_icon="facebook" %} Share
+        </a><a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">
+            {% include social-icon.html social_icon="twitter" %} Tweet
+        </a><a class="share-btn google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">
+            {% include social-icon.html social_icon="google-plus" %} Share
+        </a>
 		</div>
 
 		<section class="centered blog-cta">
