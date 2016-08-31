@@ -50,7 +50,7 @@ The most notable options are `baseurl`, `source`, and Jekyll's other custom dire
 
 #### Additional Features
 
-To complement Jekyll's custom directories, we've created `uploads_dir` to change the location that images uploaded in the editor are stored. By default it's set to **uploads**. For consistency with Jekyll, the path is relative to the Jekyll `source` if left unset, and absolute if set.
+To complement Jekyll's custom directories, we've created `uploads_dir` to change the location that images uploaded in the editor are stored. By default it's set to **uploads**. For consistency with Jekyll, the path is relative to the Jekyll `source` if set.
 
 <i class="material-icons">photo</i> [Full documentation for image editable regions](https://docs.cloudcannon.com/editing/editable-regions/#image-elements)
 {: .list-item-with-icon}
