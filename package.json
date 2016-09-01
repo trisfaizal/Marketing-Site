@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "grunt": "^1.0.1",
+    "grunt-uncss-report": "0.0.0",
     "grunt-unused": "^0.2.3"
   }
 }
