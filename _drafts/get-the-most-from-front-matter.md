@@ -8,7 +8,6 @@ post_image_type: image/png
 post_image_width: 1600
 post_image_height: 1000
 author: ross
-extra_google_fonts: "|Material+Icons"
 ---
 
 CloudCannon is committed to bringing the best editing experience to static and Jekyll sites.
