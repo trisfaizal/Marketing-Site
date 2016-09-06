@@ -37,3 +37,7 @@
 /features/2014/11/12/cloudcannon-direction-ftp-visual-editables.html /blog/
 /features/2014/12/15/bar-website-design-by-the-numbers.html /blog/
 /tutorials/2014/12/08/checklist-for-creating-great-bar-websites.html /blog/
+/smileys/ http://smiley.cloudcannon.com/
+/smileys/* http://smiley.cloudcannon.com/
+/previewer/ http://previewer.cloudcannon.com/
+/previewer/* http://previewer.cloudcannon.com/

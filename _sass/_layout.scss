@@ -35,6 +35,15 @@ header .sub-text {
 	font-size: 1.1em;
 }
 
+header.fancy-hero {
+	background: linear-gradient(to bottom, #26abe2 50%, rgb(61, 128, 199) 100%);
+
+	img {
+		max-width: 800px;
+		box-shadow: 10px 4px 100px rgba(0,0,0,0.3);
+	}
+}
+
 .btn-centered {
 	margin: 30px auto 0;
 }
@@ -208,21 +217,6 @@ footer {
 	width: 50px;
 }
 
-.pushing-boundaries {
-	text-align: left;
-}
-
-.pushing-boundaries .text {
-	float: left;
-}
-
-.pushing-boundaries .image {
-	width: 454px;
-	float: left;
-	position: inherit;
-	right: inherit;
-}
-
 .switcher {
 	padding: 20px;
 	background-color: rgba(0, 0, 0, 0);
@@ -373,4 +367,8 @@ footer {
 	i {
 		margin-right: 5px;
 	}
+}
+
+.old-content {
+	display: none;
 }
