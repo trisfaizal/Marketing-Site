@@ -63,39 +63,3 @@ layout: default
 		{% endif %}
 	</div>
 </section>
-
-
-<script type="application/ld+json">
-{
-	"@context": "http://schema.org",
-	"@type": "BlogPosting",
-	"@id": "{{ page.url | prepend: site.url }}",
-	"mainEntityOfPage": "{{ page.url | prepend: site.url }}",
-	"wordCount": {{ page.content | number_of_words }},
-	{% if author %}"author": {% include structured-data/person.json person=author %},{% endif %}
-	"datePublished": "{{ page.date | date_to_xmlschema }}",
-	"dateModified": "{{ page.date | date_to_xmlschema }}",
-	"headline": "{{ page.title | xml_escape }}",
-	{% if page.post_image and page.post_image_width and page.post_image_height %}
-		"image": {
-			"@type": "ImageObject",
-			"url": "{{ page.post_image | prepend: site.url }}",
-			"width": {{ page.post_image_width }},
-			"height": {{ page.post_image_height }}
-		},
-	{% elsif page.post_image %}
-		"image": "{{ page.post_image | prepend: site.url }}",
-	{% endif %}
-	"description": {{ page.excerpt | strip_html | strip | jsonify }},
-	"publisher": {
-		"@type": "Organization",
-		"name": "CloudCannon",
-		"logo": {
-			"@type": "ImageObject",
-			"url": "{{ site.url }}/img/publisher-logo.png",
-			"width": 402,
-			"height": 60
-		}
-	}
-}
-</script>

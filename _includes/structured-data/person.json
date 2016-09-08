@@ -1,8 +1,0 @@
-{
-	"@type": "Person",
-	"name": "{{ include.person.name | xml_escape}}",
-	{% if include.person.email_address %}"email": "{{ include.person.email_address }}",{% endif %}
-	{% if include.person.position %}"jobTitle": "{{ include.person.position }}",{% endif %}
-	"image": "{{ include.person.image_path | prepend: site.url }}",
-	"sameAs": "https://twitter.com/{{ include.person.twitter_username }}"
-}

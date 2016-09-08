@@ -41,3 +41,6 @@
 /smileys/* http://smiley.cloudcannon.com/
 /previewer/ http://previewer.cloudcannon.com/
 /previewer/* http://previewer.cloudcannon.com/
+/how-does-cloudcannon-work-for-agencies/ /agencies/
+/how-does-cloudcannon-work-for-enterprise/ /enterprise/
+/how-does-cloudcannon-work/ /
