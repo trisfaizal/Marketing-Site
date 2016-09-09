@@ -1,6 +1,7 @@
 title: CloudCannon
 description: The Cloud CMS for Jekyll. Build static or Jekyll websites, have your team and clients update inline with the CloudCannon GUI.
 url: http://cloudcannon.com
+disqus_shortname: cloudcannon
 
 logo: http://cloudcannon.com/img/cloudcannon-logo.png
 twitter:

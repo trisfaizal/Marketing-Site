@@ -2,16 +2,6 @@
 layout: default
 ---
 
-<!-- Sharing setup -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
-	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <section>
 	<div class="container post-container text-container">
 		<p class="post-details"><a href="/blog">Blog</a> | {{ page.category }} | {{ page.header }} <span class="date">{{ page.date | date: "%B %d, %Y" }}</span></p>
@@ -46,20 +36,6 @@ layout: default
 			{% endif %}
 		{% endif %}
 
-		{% if jekyll.environment == 'production' %}
-			<div id="disqus_thread"></div>
-			<script type="text/javascript">
-				var disqus_shortname = "cloudcannon";
-				(function () {
-					var dsq = document.createElement("script");
-					dsq.type = "text/javascript";
-					dsq.async = true;
-					dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
-					(document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(dsq);
-				})();
-			</script>
-			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-		{% endif %}
+		{% include disqus.html %}
 	</div>
 </section>
