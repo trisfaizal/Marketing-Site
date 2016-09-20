@@ -47,7 +47,7 @@
   - name: Log in
     link: https://app.cloudcannon.com/
     class: sign-up
-  - name: Documentaiton
+  - name: Documentation
     link: https://docs.cloudcannon.com/
     new_window: true
   - name: Status
