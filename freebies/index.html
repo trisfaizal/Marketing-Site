@@ -4,7 +4,7 @@ title: Free Web Developement Resources
 description: Free resources for web design and development from CloudCannon, the Cloud CMS for Jekyll and static sites.
 header: Freebies
 header_subtext: Free resources for web design and development
-share_text: Free HTML5 templates for you next site
+share_text: Free HTML5 templates for your next site
 ---
 <section>
 	<div class="container text-container">
@@ -94,7 +94,7 @@ share_text: Free HTML5 templates for you next site
 
 				<div class="details">
 					<p>Need device icons for your next project?</p>
-					<p>Look no further than these sexy flat icons.</p>
+					<p>Look no further than these custom designed flat icons.</p>
 
 					<div class="buttons">
 						<a class="btn" href="/freebies/2014/04/07/free-flat-device-icons.html">View freebie</a>
@@ -155,21 +155,15 @@ share_text: Free HTML5 templates for you next site
 		<h3>Licence</h3>
 		<p>These resources are released under MIT licence. Here is a <a href="http://www.tldrlegal.com/l/MIT">simplified explanation of the license</a>.</p>
 
-		<ul class="social-shares clearfix">
-			<li><div class="fb-share-button" data-href="http://cloudcannon.com/freebies" data-width="120" data-type="button_count"></div></li>
-
-			<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://cloudcannon.com/freebies" data-text="Completely free, fully responsive HTML5 and CSS3 website templates - http://cloudcannon.com/freebies" data-via="cloudcannonapp">Tweet</a></li>
-
-			<li><div class="g-plusone" data-action="share" data-width="120" data-href="http://cloudcannon.com/freebies"></div></li>
-		</ul>
+		<div class="share-options">
+				{% assign url = page.url | prepend: site[jekyll.environment].url | cgi_escape %}
+				<a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+						{% include social-icon.html social_icon="facebook" %} Share
+				</a><a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.share_text | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">
+						{% include social-icon.html social_icon="twitter" %} Tweet
+				</a><a class="share-btn google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">
+						{% include social-icon.html social_icon="google-plus" %} Share
+				</a>
+		</div>
 	</div>
 </section>
-
-<script type="text/javascript">
-	(function() {
-		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-		po.src = 'https://apis.google.com/js/platform.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	})();
-</script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
