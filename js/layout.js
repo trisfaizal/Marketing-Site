@@ -318,4 +318,13 @@ $(document).ready(function () {
 	apiScript.src = "https://www.youtube.com/iframe_api";
 	var s = document.getElementsByTagName("script")[0];
 	s.parentNode.insertBefore(apiScript, s);
+
+	$(".video .play").click(function() {
+		var $this = $(this),
+			videoId = /^https:\/\/www\.youtube\.com\/watch\?v\=([a-zA-Z1-9]+)$/.exec($this.attr('href'))[1];
+
+	$this.parent().html('<div class="video-embed"><iframe class="screenshot" src="https://www.youtube.com/embed/' + videoId + '?autoplay=1&modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe></div>');
+
+		return false;
+	});
 });

@@ -9,14 +9,14 @@ layout: default
 
 		<hr>
 		<div class="share-options">
-        {% assign url = page.url | prepend: site[jekyll.environment].url | cgi_escape %}
-        <a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
-            {% include social-icon.html social_icon="facebook" %} Share
-        </a><a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">
-            {% include social-icon.html social_icon="twitter" %} Tweet
-        </a><a class="share-btn google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">
-            {% include social-icon.html social_icon="google-plus" %} Share
-        </a>
+				{% assign url = page.url | prepend: site[jekyll.environment].url | cgi_escape %}
+				<a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+						{% include social-icon.html social_icon="facebook" %} Share
+				</a><a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">
+						{% include social-icon.html social_icon="twitter" %} Tweet
+				</a><a class="share-btn google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">
+						{% include social-icon.html social_icon="google-plus" %} Share
+				</a>
 		</div>
 
 		<section class="centered blog-cta">

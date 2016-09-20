@@ -45,7 +45,14 @@
 			<header>
 				<div class="container">
 					<h2>{{ page.header }}</h2>
-					{% if page.header_subtext %}<p class="sub-text" style="margin-bottom: 0;">{{ page.header_subtext }}</p>{% endif %}
+					{% if page.header_subtext %}
+						<p class="sub-text">{{ page.header_subtext }}</p>
+					{% elsif page.author %}
+						{% assign author = site.authors | where: "author", page.author | first %}
+						{% if author %}
+							<p class="sub-text">by {{ author.name }}</p>
+						{% endif %}
+					{% endif %}
 				</div>
 			</header>
 		{% endif %}

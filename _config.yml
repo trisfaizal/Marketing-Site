@@ -55,6 +55,12 @@ defaults:
       type: "customers"
     values:
       layout: "customer"
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true
 
 development:
   google_analytics_key: "UA-37472773-11"

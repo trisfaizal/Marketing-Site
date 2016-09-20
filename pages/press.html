@@ -221,20 +221,7 @@ articles:
 		</p>
 	</div>
 </section>
-<section class="alternate">
-	<div class="container text-container">
-		<div class="milestones">
-			<h3>Milestones</h3>
-			{% for milestone in page.milestones reversed %}
-				<div class="milestone">
-					<img src="{{ milestone.logo_path }}" alt="{{ milestone.name }}">
-					<h4><a href="{{ milestone.link }}">{{ milestone.description }}</a></h4>
-					<p>{{ milestone.date | date: '%B %Y' }}</p>
-				</div>
-			{% endfor %}
-		</div>
-	</div>
-</section>
+
 <section id="featured-articles">
 		<div class="container text-container articles">
 			<h3>Featured Articles</h3>
@@ -249,4 +236,19 @@ articles:
 		</div>
 	</div>
 
+</section>
+
+<section>
+	<div class="container text-container">
+		<div class="milestones">
+			<h3>Milestones</h3>
+			{% for milestone in page.milestones reversed %}
+				<div class="milestone">
+					<img src="{{ milestone.logo_path }}" alt="{{ milestone.name }}">
+					<h4><a href="{{ milestone.link }}">{{ milestone.description }}</a></h4>
+					<p>{{ milestone.date | date: '%B %Y' }}</p>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 </section>
