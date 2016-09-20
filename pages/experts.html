@@ -13,7 +13,7 @@ permalink: /experts/
 			{% for expert in site.experts %}
 				<div class="gallery-item">
 					<h3><a href="{{ expert.link }}" target="_blank">{{ expert.name }}</a></h3>
-					<p class="location"><i class="material-icons">place</i><a target="_blank" href="http://maps.google.com/?q={{ expert.location | url_encode }}">{{ expert.location }}</a></p>
+					<p class="location"><i class="material-icons">place</i><a target="_blank" href="{{ expert.link }}">{{ expert.location }}</a></p>
 					<div>
 						<a href="{{ expert.link }}" target="_blank">
 							<img src="{{ expert.image_path}}" alt="{{ expert.name }}" class="screenshot" srcset="{{ expert.image_path }} 620w, {{ expert.image_path | replace: ".png", "@2x.png" | replace: ".jpeg", "@2x.jpeg" }} 1240w">
