@@ -325,7 +325,7 @@ $(document).ready(function () {
 
 		$(".cta-container").css("margin-top", "70px");
 
-	$this.parent().parent().html('<div class="video-embed"><iframe class="screenshot" src="https://www.youtube.com/embed/' + videoId + '?autoplay=1&modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe></div>');
+	$this.parent().parent().html('<div class="video-embed screenshot"><iframe src="https://www.youtube.com/embed/' + videoId + '?autoplay=1&modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe></div>');
 
 		return false;
 	});
