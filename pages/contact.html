@@ -1,0 +1,37 @@
+---
+layout: default
+title: Contact
+description: Ask a question or send a message to the team at CloudCannon, the Cloud CMS for Jekyll and static sites.
+header: Contact
+header_subtext: Ask a question or send us a message
+permalink: /contact/
+---
+
+<section>
+	<div class="container">
+		<iframe height="300" frameborder="0" style="border:0; background: #eee; display: block; width: 100%;" src="https://www.google.com/maps/embed/v1/place?key={{ site[jekyll.environment].google_maps_embed_api_key }}&q={{ site.company.address | remove: ',' | replace: ' ','+' | uri_escape }}"></iframe>
+
+        <form action="/contact-success/" method="post" class="contact-form">
+			<input type="hidden" name="cc_emails[]" value="support@cloudcannon.com">
+
+			<label for="name">Full Name</label>
+			<input type="text" name="name" id="name" placeholder="Enter your name...">
+
+			<label for="email">Email Address</label>
+			<input type="email" name="email" id="email" placeholder="Enter your email..." required>
+
+			<label for="message">Message</label>
+			<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
+
+			<input type="submit" value="Send Message">
+		</form>
+
+		<div class="contact-details">
+			<h4>Address</h4>
+			<p><address>{{ site.company.address | replace: ', ',',<br>' }}</address></p>
+
+			<h4>Email</h4>
+			<p><a href="mailto:support@cloudcannon.com">support@cloudcannon.com</a></p>
+		</div>
+	</div>
+</section>

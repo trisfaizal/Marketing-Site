@@ -1,17 +1,25 @@
-gems:
-  - jekyll-paginate
-
 title: CloudCannon
 description: The Cloud CMS for Jekyll. Build static or Jekyll websites, have your team and clients update inline with the CloudCannon GUI.
 url: http://cloudcannon.com
+disqus_shortname: cloudcannon
 
-facebook_url: https://www.facebook.com/CloudCannon
-google_plus_url: https://plus.google.com/+CloudCannon
-twitter_url: https://twitter.com/CloudCannonApp
-youtube_url: https://www.youtube.com/c/CloudCannon
-linkedin_url: https://www.linkedin.com/company/cloud-cannon
-github_url: https://github.com/CloudCannon
+logo: http://cloudcannon.com/img/cloudcannon-logo.png
+twitter:
+  username: CloudCannonApp
 
+facebook:
+  publisher: https://www.facebook.com/CloudCannon
+
+social:
+  links:
+    - https://www.facebook.com/CloudCannon
+    - https://plus.google.com/+CloudCannon
+    - https://twitter.com/CloudCannonApp
+    - https://www.youtube.com/c/CloudCannon
+    - https://www.linkedin.com/company/cloud-cannon
+    - https://github.com/CloudCannon
+
+google_site_verification: GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o
 company:
   founded: August 2013
   team_size: 3
@@ -25,11 +33,11 @@ blog_description: Stay informed with the latest news and web development tutoria
 permalink: pretty
 timezone: Pacific/Auckland
 collections:
-  press:
-    name: Featured Articles
+  gallery:
+    name: Gallery
     output: false
-  milestones:
-    name: Milestones
+  experts:
+    name: Experts
     output: false
   staff:
     name: Team Members
@@ -47,6 +55,12 @@ defaults:
       type: "customers"
     values:
       layout: "customer"
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true
 
 development:
   google_analytics_key: "UA-37472773-11"

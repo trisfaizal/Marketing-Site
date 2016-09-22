@@ -3,6 +3,7 @@
 $break-small: 590px;
 $break-medium: 620px;
 $break-large: 700px;
+$break-larger: 950px;
 
 // Company styles
 @import "brand/mixins";
@@ -35,6 +36,7 @@ $break-large: 700px;
 @import "press";
 @import "customers";
 @import "landing_page";
+@import "gallery";
 
 // Generic Interfaces
 @import "video-dialog";

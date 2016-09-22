@@ -158,7 +158,6 @@ $(document).ready(function () {
 	if (jQuery().twentytwenty) {
 		$(".before-after-slider").each(function( index ) {
 			$(this).twentytwenty();
-			$(this).find('video').get(0).play();
 		});
 	}
 	$('a[href*="#"]:not([href="#"])').click(function() {
@@ -319,4 +318,15 @@ $(document).ready(function () {
 	apiScript.src = "https://www.youtube.com/iframe_api";
 	var s = document.getElementsByTagName("script")[0];
 	s.parentNode.insertBefore(apiScript, s);
+
+	$(".video .play").click(function() {
+		var $this = $(this),
+			videoId = /^https:\/\/www\.youtube\.com\/watch\?v\=([a-zA-Z1-9-]+)$/.exec($this.attr('href'))[1];
+
+		$(".cta-container").css("margin-top", "50px");
+
+	$this.parent().parent().html('<div class="video-embed"><iframe src="https://www.youtube.com/embed/' + videoId + '?autoplay=1&modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe></div>');
+
+		return false;
+	});
 });

@@ -2,36 +2,32 @@
 layout: default
 ---
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1404150359836434";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <section>
 	<div class="container template-container">
 		<div class="halves">
-			<img src="/img/{{ page.templateName }}-screenshot.png" alt="a screen shot of {{ page.templateName }} HTML template">
+			<img src="/img/{{ page.template_name }}-screenshot.png" alt="a screen shot of {{ page.template_name }} HTML template">
 		</div>
 
 		<div class="halves">
 			<h3>Free template for you</h3>
 			<p>This template is free for you to use on your own projects. It's our way of giving back to a community which has given us so much. If you want to show your support, spread the love by sharing these resources with your friends.</p>
 
-			<ul class="social-shares clearfix">
-				<li><div class="fb-share-button" data-href="http://cloudcannon.com/freebies/{{ page.templateName }}" data-width="120" data-type="button_count"></div></li>
-				<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://cloudcannon.com/freebies/{{ page.templateName }}" data-text="{{ page.templateName | capitalize }} - A free high quality responsive HTML5 website template" data-via="CloudCannonApp">Tweet</a></li>
-				<li><div class="g-plusone" data-action="share" data-width="120" data-href="http://cloudcannon.com/freebies/{{ page.templateName }}"></div></li>
-			</ul>
+			<div class="share-options">
+					{% assign url = page.url | prepend: site[jekyll.environment].url | cgi_escape %}
+					<a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+							{% include social-icon.html social_icon="facebook" %} Share
+					</a><a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.share_text | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">
+							{% include social-icon.html social_icon="twitter" %} Tweet
+					</a><a class="share-btn google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">
+							{% include social-icon.html social_icon="google-plus" %} Share
+					</a>
+			</div>
 
 			<h3>Licence</h3>
 			<p>These resources are released under MIT licence. Here is a <a href="http://www.tldrlegal.com/l/MIT">simplified explanation of the license</a>.</p>
 
-			<a class="btn secondary" href="http://{{ page.templateName }}.cloudvent.net" target="_blank">Live demo</a>
-			<a class="btn download-{{ page.templateName }}" href="/templates/{{ page.templateName }}.zip" target="_blank">Download template</a>
+			<a class="btn secondary" href="http://{{ page.template_name }}.cloudvent.net" target="_blank">Live demo</a>
+			<a class="btn download-{{ page.template_name }}" href="/templates/{{ page.template_name }}.zip" target="_blank">Download template</a>
 		</div>
 	</div>
 </section>
