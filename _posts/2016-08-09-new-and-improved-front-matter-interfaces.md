@@ -1,23 +1,29 @@
 ---
 layout: post
-title: Get the most from front matter
-header: Get the most from front matter
+title: New and Improved Front Matter Interfaces
+header: New and Improved Front Matter Interfaces
 category: Features
-post_image: /img/blog/get-the-most-from-front-matter/front-matter-example@2x.png
+post_image: /img/blog/new-and-improved-front-matter-interfaces/front-matter-example@2x.png
 post_image_type: image/png
 post_image_width: 1600
 post_image_height: 1000
 author: ross
 ---
 
-CloudCannon is committed to bringing the best editing experience to static and Jekyll sites.
-We provide world-class interfaces for your clients to update their front matter, a core offering of Jekyll.
+CloudCannon is committed to bringing the best editing experience to static and Jekyll sites. We provide world-class interfaces for your clients to update their front matter, a core offering of Jekyll.
 
-![Example front matter in CloudCannon](/img/blog/get-the-most-from-front-matter/front-matter-example.png){: .screenshot srcset="/img/blog/get-the-most-from-front-matter/front-matter-example.png 800w, /img/blog/get-the-most-from-front-matter/front-matter-example@2x.png 1600w"}
+![Example front matter in CloudCannon](/img/blog/new-and-improved-front-matter-interfaces/front-matter-example.png){: .screenshot srcset="/img/blog/new-and-improved-front-matter-interfaces/front-matter-example.png 800w, /img/blog/new-and-improved-front-matter-interfaces/front-matter-example@2x.png 1600w"}
 
 There are more front matter interfaces available in CloudCannon than ever before. We've recently added more interfaces and ways to customise them.
 
 ---
+
+### Rich Text
+
+Front matter is often useful for sections of text outside the main content of a page. Give clients control of formatting with this new interface. The `_html` and `_markdown` conventions set what format the text is saved in. Markdown values need to be run through the `markdownify` filter to render with formatting.
+
+<i class="material-icons">format_size</i> [Full documentation for rich text](https://docs.cloudcannon.com/editing/front-matter/#rich-text)
+{: .list-item-with-icon}
 
 ### Colour
 
@@ -28,8 +34,7 @@ Giving your clients access to colour doesn't always bode well for a design's lon
 
 ### Multiselect
 
-If you've ever needed an interface for clients to select a subset of items from a predefined set of values, this is for you.
-CloudCannon populates values from arrays or objects defined in `_config.yml`, and collection items. Clients add collection items to create additional values in the set.
+If you've ever needed an interface for clients to select a subset of items from a predefined set of values, this is for you. CloudCannon populates values from arrays or objects defined in `_config.yml`, and collection items. Clients add collection items to create additional values in the set.
 
 <i class="material-icons">view_list</i> [Full documentation for multiselect](https://docs.cloudcannon.com/editing/front-matter/#multiselect)
 {: .list-item-with-icon}
@@ -66,8 +71,7 @@ Comments provide instructional or guide text for any interface. Use this heavily
 
 ### Array Defaults
 
-When clients create new items in an array, the keys and interface types are created from the previous item to ensure a consistent interface.
-You can now [provide the starting values for the new item](https://docs.cloudcannon.com/editing/front-matter/#array-defaults) as well.
+When clients create new items in an array, the keys and interface types are created from the previous item to ensure a consistent interface. You can now [provide the starting values for the new item](https://docs.cloudcannon.com/editing/front-matter/#array-defaults) as well.
 
 Set starting values for variables to the most likely value, and set starting images to placeholders (retaining the path when the client selects another)
 
