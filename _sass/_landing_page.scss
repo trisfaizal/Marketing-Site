@@ -266,6 +266,10 @@ section.alternate {
 	margin: 0 auto;
 	position: relative;
 
+	&.screenshot {
+		box-shadow: 0 1px 0 #ccc,0 1px 1px #eee;
+	}
+
 	a.play {
 		position: absolute;
 		width: 100%;
