@@ -249,7 +249,7 @@ section.alternate {
 		}
 	}
 
-	section.new-content.alternate .container  {
+	section.new-content.alternate .container	{
 		.new-image {
 			margin: 0 0 0 -200px;
 		}
@@ -293,11 +293,10 @@ section.alternate {
 }
 
 .video-embed {
-  width: 100%;
-  position: relative;
-  padding-bottom: 59.4%;
-  padding-top: 25px;
-  height: 0;
+	width: 100%;
+	position: relative;
+	padding: 0 0 62.5% 0;
+	height: 0;
 
 	iframe {
 		background: #000;
@@ -327,4 +326,8 @@ section.alternate {
 		left: 0;
 		right: 0;
 	}
+}
+
+.bright-section .btn-sub-text {
+	color: #fff;
 }
