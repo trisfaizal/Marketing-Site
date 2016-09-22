@@ -1,0 +1,36 @@
+.gallery {
+	margin: -20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap:         wrap;
+
+	.gallery-item {
+		padding: 40px 20px;
+		width: 50%;
+		box-sizing: border-box;
+
+		@media only screen and (max-width: $break-large) {
+			& {
+				width: 100%;
+				padding: 20px;
+			}
+		}
+
+		.location .material-icons {
+			position: relative;
+			top: 5px
+		}
+	}
+
+	h3 a {
+		text-decoration: none;
+		font-size: .8em;
+	}
+
+	@media only screen and (max-width: $break-large) {
+		& {
+			margin: -40px -20px;
+		}
+	}
+}

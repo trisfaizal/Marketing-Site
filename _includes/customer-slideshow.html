@@ -1,10 +1,7 @@
-<div class="slideshow">
-    {% for customer in site.data.customers %}
-        {% if forloop.first %}
-            <img src="{{customer.image_path}}" class="ratio" width="550" height="344" alt="{{customer.company}}" />
-            <img src="{{customer.image_path}}" class="slide visible" width="550" height="344" alt="{{customer.company}}" />
-        {% else %}
-            <img src="{{customer.image_path}}" class="slide" width="550" height="344" alt="{{customer.company}}" />
-        {% endif %}
-    {% endfor %}
-</div>
+<ul class="photo-gallery">
+	{% for slide in include.slides %}
+		<li data-thumb="{{ slide.image_path }}" data-src="{{ slide.image_path }}">
+			<img class="screenshot" alt="{{ slide.alt }}" src="{{ slide.image_path }}" />
+		</li>
+	{% endfor %}
+</ul>

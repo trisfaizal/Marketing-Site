@@ -4,7 +4,7 @@ author: sam
 title: CloudCannon Jekyll support now in public beta
 header: Jekyll support now public beta
 category: Announcements
-permalink: /announcements/2015/05/12/cloudcannon-jekyll-support-now-in-public-beta.html 
+permalink: /announcements/2015/05/12/cloudcannon-jekyll-support-now-in-public-beta.html
 ---
 
 CloudCannon&#39;s support for the Jekyll static site generator has moved from private to public beta.
@@ -37,21 +37,3 @@ Our Jekyll support features are stable. Sites compile and the client editing int
 The public beta status of our Jekyll support reflects the fact that we still have better documentation we want to write and we are likely to continue making improvements to the user interfaces.
 
 The [CloudCannon site](http://cloudcannon.com) and our [documentation website](http://docs.cloudcannon.com) already run on CloudCannon using Jekyll.
-
-### Open office hours planned
-<!-- remove this section after Office Hours on Thurs 14 May -->
-
-To assist you in getting started with Jekyll we are scheduling a drop-in &#39;office hours&#39; session this week via Google Hangout. This will take place on **Thursday 14th May** at:
-
-*   2pm San Fran time
-*   5pm New York time
-*   10pm London time
-*   and 9am Wellington, New Zealand time (Friday 15th)
-
-Our team will be ready and available to answer any of your Jekyll questions.
-
-No need to register, simply visit [cloudcannon.com/office-hours](http://cloudcannon.com/office-hours) on the day to join.
-
-Cheers,
-
-Sam and the CloudCannon team

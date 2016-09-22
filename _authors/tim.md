@@ -3,5 +3,5 @@ image_path: /img/authors/tim.jpg
 twitter_username: n00begon
 author: tim
 name: Tim Neumegen
-bio: "has a <a target='_blank' href='http://otago.ourarchive.ac.nz/handle/10523/5069'>MSc</a> in Computer Science and is the guy keeping the servers humming along. He is fascinated by technology and history."
+bio: "is fascinated by technology and history."
 ---

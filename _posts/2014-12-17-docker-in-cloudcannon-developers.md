@@ -4,7 +4,7 @@ title: Docker in CloudCannon - Development
 header: How we use Docker in our development environment.
 category: Operations
 author: tim
-permalink: /operations/2014/12/17/docker-in-cloudcannon-developers.html 
+permalink: /operations/2014/12/17/docker-in-cloudcannon-developers.html
 ---
 
 Environments can be tricky. Making sure the libraries are the same between your developer machines and production servers, updating dependencies consistently and onboarding new staff, it can turn into a mess. Luckily there are tools that can help us. I have previously used [Chef](https://www.chef.io/chef/) for this type of problem but now [Docker](https://www.docker.com/) has arrived to make things easier.
@@ -13,7 +13,7 @@ Environments can be tricky. Making sure the libraries are the same between your 
 
 There are [a lot](https://www.docker.com/whatisdocker/) of [in depth](http://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/) [introductions to docker](http://developerblog.redhat.com/2014/05/15/practical-introduction-to-docker-containers/), but basically it is a box that holds your app and its dependencies. You can then run this on any machine and get a consistent experience. Today I will be focusing on how we use docker on our development machines. If you are thinking of trying docker then this is where you will start out, so hopefully you will find some useful tips from our experience.
 
-###Out of Linux
+### Out of Linux
 
 Docker uses linux containers [(LXC)](https://linuxcontainers.org/) which naturally requires a linux based operating system. So what do you do with your cool coworkers and their Mac laptops? You can use [boot2docker](https://github.com/boot2docker/boot2docker) which sets up a virtual machine behind the scenes so that you can use docker on Windows or OS X. To simplify running our services we made a bash script which names the container based on its folder. We had issues connecting to amazon services from boot2docker due to timeouts. This could be solved by syncing the time with the ntp server, which the script runs each time it starts boot2docker.
 
@@ -60,7 +60,7 @@ docker rm $NAME
 docker run -d -e "environment=development" -e "USER=$USER" $OPEN --name $NAME cloudcannon/$NAME
 {% endhighlight %}
 
-###The base image
+### The base image
 
 Docker images are created using a Dockerfile which has instructions on all the dependencies and requirements for your application. There are a couple of camps about how you should use these dockerfiles, either [running a single process per container](https://docs.docker.com/articles/dockerfile_best-practices/) or [treating it as a light weight vm](http://phusion.github.io/baseimage-docker/). We have a foot in each camp, with our node services only running a single process and our ruby a bit more fleshed out.
 
@@ -68,7 +68,7 @@ For node we have our own base cloudcannon image which installs node, npm and the
 
 Our ruby on rails app is based on the [phusion base image](https://github.com/phusion/passenger-docker) . This gives a solid base to work from with rails and nginx already installed. After installing our libraries we follow the same pattern as the node apps by adding the gemfile, doing the bundle install then adding the application files. Changing to this order gave a significant speedup in our iterations, changing from taking about 10 minutes to do the install each time to seconds when it is only code changes.
 
-###Wrapping up
+### Wrapping up
 
 A final tip is it is especially important with your docker images is to be strict with your version numbers. Whether it is the version of the base image or the dependencies in your gem file you want to specify exactly what is going into it. This will not only allow you to be consistent across your environments but also ensure that you are reusing the cache until you expect it to change.
 
