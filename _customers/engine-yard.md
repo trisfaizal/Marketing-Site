@@ -55,7 +55,7 @@ features:
     description: "Marketers control all parts of the site including the page title and event tracking.
 
 
-    Developers set up the interface for making these changes by writing simple [Front Matter](http://docs.cloudcannon.com/editing/front-matter/).
+    Developers set up the interface for making these changes by writing simple [Front Matter](https://docs.cloudcannon.com/editing/front-matter/).
 
     "
     image_path: /img/customers/engine_yard/frontmatter.png
@@ -63,7 +63,7 @@ features:
     description: "Engine Yard manages all their repeating content such as case studies, press releases and news using a blog.
 
 
-    The Developers were able to quickly set up this interface by using [Jekyll blogging](http://docs.cloudcannon.com/editing/blogging/)."
+    The Developers were able to quickly set up this interface by using [Jekyll blogging](https://docs.cloudcannon.com/editing/blogging/)."
     image_path: /img/customers/engine_yard/collections.png
   - name: Staging Environment
     description: "Engine Yard uses CloudCannon as their staging environment. This has reduced the number of servers they need to maintain and simplified their deployment process."

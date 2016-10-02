@@ -50,7 +50,7 @@ features:
     description: "Marketers control all parts of the site including the page title and sponsorship sections.
 
 
-    Developers set up the interface for making these changes by writing simple [Front Matter](http://docs.cloudcannon.com/editing/front-matter/).
+    Developers set up the interface for making these changes by writing simple [Front Matter](https://docs.cloudcannon.com/editing/front-matter/).
 
     "
     image_path: /img/customers/netflix/frontmatter.png
@@ -58,7 +58,7 @@ features:
     description: "The devices Netflix supports are managed using a simple interface.
 
 
-    The Developers were able to quickly set up this interface by using [Collections](http://docs.cloudcannon.com/editing/collections/)."
+    The Developers were able to quickly set up this interface by using [Collections](https://docs.cloudcannon.com/editing/collections/)."
     image_path: /img/customers/netflix/collections.png
   - name: Internationalisation
     description: "Netflix Devices is translated into 16 languages which all get served from the same Jekyll site.

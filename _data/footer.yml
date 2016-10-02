@@ -1,55 +1,57 @@
 
 - title: CloudCannon
   links:
-  - name: Home
-    link: /
-  - name: Pricing
-    link: /pricing/
-  - name: Blog
-    link: /blog/
-  - name: Gallery
-    link: /gallery/
-  - name: Experts
-    link: /experts/
+    - name: Home
+      link: /
+    - name: Pricing
+      link: /pricing/
+    - name: Blog
+      link: /blog/
+    - name: Gallery
+      link: /gallery/
+    - name: Experts
+      link: /experts/
 - title: Resources
   links:
-  - name: About
-    link: /about/
-  - name: Freebies
-    link: /freebies/
-  - name: Press
-    link: /press/
-  - name: Contact
-    link: /contact/
+    - name: About
+      link: /about/
+    - name: Freebies
+      link: /freebies/
+    - name: Case Studies
+      link: /case-studies/
+    - name: Press
+      link: /press/
+    - name: Contact
+      link: /contact/
 - title: Social
   links:
-  - name: Twitter
-    link: https://twitter.com/CloudCannonApp
-    social_icon: twitter
-    new_window: true
-  - name: Facebook
-    link: https://www.facebook.com/CloudCannon
-    social_icon: facebook
-    new_window: true
-  - name: Google+
-    link: https://plus.google.com/+CloudCannon
-    social_icon: google-plus
-    new_window: true
-  - name: YouTube
-    link: https://www.youtube.com/c/CloudCannon
-    social_icon: youtube
-    new_window: true
+    - name: Twitter
+      link: https://twitter.com/CloudCannonApp
+      social_icon: twitter
+      new_window: true
+    - name: Facebook
+      link: https://www.facebook.com/CloudCannon
+      social_icon: facebook
+      new_window: true
+    - name: Google+
+      link: https://plus.google.com/+CloudCannon
+      social_icon: google-plus
+      new_window: true
+    - name: YouTube
+      link: https://www.youtube.com/c/CloudCannon
+      social_icon: youtube
+      new_window: true
 - title: App
   links:
-  - name: Sign Up
-    link: https://app.cloudcannon.com/users/sign_up
-    class: sign-up
-  - name: Log in
-    link: https://app.cloudcannon.com/
-    class: sign-up
-  - name: Documentation
-    link: https://docs.cloudcannon.com/
-    new_window: true
-  - name: Status
-    link: https://status.cloudcannon.com/
-    new_window: true
+    - name: Sign Up
+      link: https://app.cloudcannon.com/users/sign_up
+      class: sign-up
+    - name: Log in
+      link: https://app.cloudcannon.com/
+      class: sign-up
+    - name: Documentation
+      link: https://docs.cloudcannon.com/
+      new_window: true
+    - name: Status
+      link: https://status.cloudcannon.com/
+      new_window: true

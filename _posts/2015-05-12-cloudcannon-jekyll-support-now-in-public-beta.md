@@ -36,4 +36,4 @@ Our Jekyll support features are stable. Sites compile and the client editing int
 
 The public beta status of our Jekyll support reflects the fact that we still have better documentation we want to write and we are likely to continue making improvements to the user interfaces.
 
-The [CloudCannon site](http://cloudcannon.com) and our [documentation website](http://docs.cloudcannon.com) already run on CloudCannon using Jekyll.
+The [CloudCannon site](http://cloudcannon.com) and our [documentation website](https://docs.cloudcannon.com/) already run on CloudCannon using Jekyll.
