@@ -38,31 +38,29 @@ overview:
     alt: Norm
 features:
   - name: Dropbox Syncing
-    description: "Brandon develops sites in Jekyll on his computer. The files sync to CloudCannon automatically through Dropbox.
+    description: |
+      Brandon develops sites in Jekyll on his computer. The files sync to CloudCannon automatically through Dropbox.
 
-
-    When Brandon's clients update content in CloudCannon, the changes push back to Dropbox.
-    "
+      When Brandon's clients update content in CloudCannon, the changes push back to Dropbox.
     image_path: /img/customers/brandon/file_browser.png
   - name: Editable Regions
-    description: "Clients update content themselves. They simply click on text to start writing content.
+    description: |
+      Clients update content themselves. They simply click on text to start writing content.
 
-
-    Brandon defines the Editable Regions by adding `class=\"editable\"` to elements in the HTML.
-    "
+      Brandon defines the Editable Regions by adding `class="editable"` to elements in the HTML.
     image_path: /img/customers/brandon/editable_region.jpg
   - name: Front Matter
-    description: "Clients control all parts of the site including the site title and description.
+    description: |
+      Clients control all parts of the site including the site title and description.
 
-
-    Brandon writes [Front Matter](http://docs.cloudcannon.com/editing/front-matter/) to set up the interface for making these changes."
+      Brandon writes [Front Matter](https://docs.cloudcannon.com/editing/front-matter/) to set up the interface for making these changes.
     image_path: /img/customers/brandon/front_matter.jpg
   - name: Hosting
     description: "Brandon doesn't worry about setting up servers anymore.
 
 
-    CloudCannon provides [optimised](http://docs.cloudcannon.com/hosting/optimisations/) hosting for Brandon's sites."
+    CloudCannon provides [optimised](https://docs.cloudcannon.com/building/optimisations/) hosting for Brandon's sites."
     image_path: /img/customers/brandon/1.jpg
 summary: |
-  Brandon ​gets​ sites online and updatable by clients faster than ​before​. He doesn’t ​set up​ new servers and his clients are much happier.
+  Brandon gets sites online and updatable by clients faster than before. He doesn’t set up new servers and his clients are much happier.
 ---

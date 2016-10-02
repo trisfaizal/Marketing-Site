@@ -40,7 +40,7 @@ navigating to the editor for that blog post.
 
 ![CloudCannon blog posts with edit buttons](/img/blog/editor-links/blog-posts.png){: .screenshot srcset="/img/blog/editor-links/blog-posts.png 800w, /img/blog/editor-links/blog-posts@2x.png 1600w"}
 
-Our [documentation](http://docs.cloudcannon.com/editing/editor-links/) includes instructions for **Editor Links on collection items** and **hiding them in the live site**.
+Our [documentation](https://docs.cloudcannon.com/editing/editor-links/) includes instructions for **Editor Links on collection items** and **hiding them in the live site**.
 
 ---
 

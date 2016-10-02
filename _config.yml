@@ -46,7 +46,7 @@ collections:
     name: Authors
     output: false
   customers:
-    name: Customers
+    name: Case Studies
     output: true
     permalink: /case-studies/:name/
 defaults:

@@ -22,7 +22,7 @@ In addition to the live site, you can preview drafts within the app. Just like p
 
 ### Collection Defaults
 
-Before this release, new collection items were pre-populated with cleared data from another item. Developers can now create a file within the collection folder to control default values. This file is used to define new items by cloning both the contents and filetype into the new file. Since this file begins with an underscore Jekyll will not output the file to the live site. As an exception, draft posts will always read from `/_posts/` rather than `/_drafts/`. More details are available in [our documentation](http://docs.cloudcannon.com/editing/collection-defaults/).
+Before this release, new collection items were pre-populated with cleared data from another item. Developers can now create a file within the collection folder to control default values. This file is used to define new items by cloning both the contents and filetype into the new file. Since this file begins with an underscore Jekyll will not output the file to the live site. As an exception, draft posts will always read from `/_posts/` rather than `/_drafts/`. More details are available in [our documentation](https://docs.cloudcannon.com/editing/collection-defaults/).
 
 ![Defaults in the File Browser](/img/blog/drafts-and-defaults/defaults-in-browser.png){: .screenshot srcset="/img/blog/drafts-and-defaults/defaults-in-browser.png 800w, /img/blog/drafts-and-defaults/defaults-in-browser@2x.png 1600w"}
 
