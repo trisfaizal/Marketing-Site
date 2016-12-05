@@ -4,28 +4,49 @@ title: Free Web Developement Resources
 description: Free resources for web design and development from CloudCannon, the Cloud CMS for Jekyll and static sites.
 header: Freebies
 header_subtext: Free resources for web design and development
+header_shares: true
 share_text: Free HTML5 templates for your next site
 ---
 <section>
-	<div class="container text-container">
-		<h3>Resources</h3>
+	<div class="container">
+		<h3>Templates</h3>
 		<p>All resources below are free for you to use on your own projects.</p>
 
-		<div class="share-options">
-				{% assign url = page.url | prepend: site[jekyll.environment].url | cgi_escape %}
-				<a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
-						{% include social-icon.html social_icon="facebook" %} Share
-				</a><a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.share_text | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">
-						{% include social-icon.html social_icon="twitter" %} Tweet
-				</a><a class="share-btn google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">
-						{% include social-icon.html social_icon="google-plus" %} Share
-				</a>
-		</div>
+		<ul class="templates-list">
+			{% for template in site.data.templates %}
+				{% unless template[1].legacy %}
+					<li class="{{ template[0] }}">
+						<div class="banner">
+							<h3><a target="_blank" href="{{ template[1].address }}">{{ template[1].name }} Template</a></h3>
+						</div>
+
+						<div class="details">
+							<p>{{ template[1].description }}</p>
+
+							<ul class="clearfix">
+								{% for feature in template[1].features %}
+									<li><i class="material-icons">check_box</i> {{ feature }}</li>
+								{% endfor %}
+							</ul>
+
+							<div class="buttons">
+								<a class="btn" target="_blank" href="{{ template[1].address }}">View Live Demo</a>
+								<a class="btn" target="_blank" href="https://github.com/{{ template[1].githubRepo }}">View on Github</a>
+							</div>
+						</div>
+					</li>
+				{% endunless %}
+			{% endfor %}
+		</ul>
 	</div>
 </section>
 
+
 <section class="alternate">
-	<div class="container text-container">
+	<div class="container">
+		<h3>Resources</h3>
+		<p>All resources below are free for you to use on your own projects.</p>
+
 		<ul class="templates-list">
 			<li class="smileys">
 				<div class="banner">
@@ -98,51 +119,6 @@ share_text: Free HTML5 templates for your next site
 
 					<div class="buttons">
 						<a class="btn" href="/freebies/2014/04/07/free-flat-device-icons.html">View freebie</a>
-					</div>
-				</div>
-			</li>
-
-			<li class="nimbus">
-				<div class="banner">
-					<h3><a href="/freebies/nimbus">Nimbus Template</a></h3>
-				</div>
-
-				<div class="details">
-					<p>A simple template for your next website.</p>
-					<p>If you use this on CloudCannon all the text and image elements are already editable.</p>
-
-					<div class="buttons">
-						<a class="btn" href="/freebies/nimbus/">View freebie</a>
-					</div>
-				</div>
-			</li>
-
-			<li class="cirrus">
-				<div class="banner">
-					<h3><a href="/freebies/cirrus">Cirrus Template</a></h3>
-				</div>
-
-				<div class="details">
-					<p>A simple template for your next website.</p>
-					<p>If you use this on CloudCannon all the text and image elements are already editable.</p>
-
-					<div class="buttons">
-						<a class="btn" href="/freebies/cirrus/">View freebie</a>
-					</div>
-				</div>
-			</li>
-
-			<li class="billows">
-				<div class="banner">
-					<h3><a href="/freebies/billows">Billows Template</a></h3>
-				</div>
-
-				<div class="details">
-					<p>A simple template for your next website.</p>
-					<p>If you use this on CloudCannon all the text and image elements are already editable.</p>
-
-					<div class="buttons">
-						<a class="btn" href="/freebies/billows/">View freebie</a>
 					</div>
 				</div>
 			</li>
