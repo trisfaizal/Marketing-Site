@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Plugins and SSL Private Beta
 header: Plugins and SSL Private Beta
 category: Features

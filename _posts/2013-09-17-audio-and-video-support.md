@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Audio and Video Support
 header: Audio and Video Support
 category: Features

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Deploy Jekyll sites anywhere using jekyll-hook
 header: Deploy Jekyll sites anywhere using jekyll-hook
 category: Tutorial

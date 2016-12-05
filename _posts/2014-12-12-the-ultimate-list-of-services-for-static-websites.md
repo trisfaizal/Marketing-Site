@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The ultimate list of services for static websites
 header: The ultimate list of services for static websites
 category: Tips

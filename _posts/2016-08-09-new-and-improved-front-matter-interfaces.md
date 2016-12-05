@@ -1,5 +1,4 @@
 ---
-layout: post
 title: New and Improved Front Matter Interfaces
 header: New and Improved Front Matter Interfaces
 category: Features

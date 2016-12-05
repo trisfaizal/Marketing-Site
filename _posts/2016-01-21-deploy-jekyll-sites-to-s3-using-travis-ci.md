@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Deploy Jekyll sites to S3 using Travis CI
 header: Deploy Jekyll sites to S3 using Travis CI
 category: Tutorial

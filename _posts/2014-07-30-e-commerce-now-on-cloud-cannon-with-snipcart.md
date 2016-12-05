@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Build e-commerce sites on CloudCannon with Snipcart
 header: E-commerce now on CloudCannon with Snipcart
 category: Tutorials

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Docker in CloudCannon - Development
 header: How we use Docker in our development environment.
 category: Operations

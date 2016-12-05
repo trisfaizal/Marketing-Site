@@ -1,5 +1,4 @@
 ---
-layout: post
 title: International Domain Names
 header: International Domain Names
 category: Features

@@ -1,10 +1,9 @@
 ---
-layout: post
 title: How To Create a Browser Window With Just CSS and HTML
 header: Creating a CSS and HTML Browser Window
 category: Deconstructions
 author: george
-permalink: /deconstructions/2014/11/21/flat-css-browser-wrapper.html 
+permalink: /deconstructions/2014/11/21/flat-css-browser-wrapper.html
 ---
 
 This isn't the weekly deconstruction, that'll be out in a few days. This is a small post to tide you over until then.

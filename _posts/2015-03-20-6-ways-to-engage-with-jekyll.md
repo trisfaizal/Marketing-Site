@@ -84,7 +84,6 @@ quotes:
     image_path: "/img/blog/6-ways-jekyll/meiqimichelle.jpeg"
     work_title: "Using Jekyll and GitHub, Tips for Designers"
     work_path: "http://michellehertzfeld.com/thoughts/using-jekyll-and-github-tips-for-designers/"
-layout: post
 title: 6 ways to engage with Jekyll
 header: 6 ways to engage with Jekyll
 category: Jekyll

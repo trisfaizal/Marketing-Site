@@ -61,6 +61,7 @@ defaults:
       type: posts
     values:
       is_post: true
+      layout: post
 
 development:
   google_analytics_key: "UA-37472773-11"

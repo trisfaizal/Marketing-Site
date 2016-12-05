@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Jekyll private beta and July Update
 header: Jekyll private beta and July Update
 category: Newsletter

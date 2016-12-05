@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Improved Pricing
 header: Improved Pricing
 category: Features

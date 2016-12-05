@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Drupal vs Jekyll + CloudCannon
 header: Drupal vs Jekyll + CloudCannon
 category: Comparison

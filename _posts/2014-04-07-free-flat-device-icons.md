@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Free Flat Monochrome Device Icons
 header: Free Flat Device Icons
 category: Freebies

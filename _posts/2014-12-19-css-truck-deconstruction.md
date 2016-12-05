@@ -1,5 +1,4 @@
 ---
-layout: post
 title: How To Create an Animated Pickup in CSS and HTML
 header: Creating a CSS and HTML Animated Pickup
 category: Deconstructions

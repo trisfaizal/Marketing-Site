@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Google's transforming material icons in HTML and CSS
 header: Google's transforming material icons Deconstruction
 category: Deconstructions

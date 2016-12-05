@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Brand New Editor
 header: Brand New Editor
 category: Features

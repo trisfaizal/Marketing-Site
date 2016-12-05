@@ -1,5 +1,4 @@
 ---
-layout: post
 title: How Facebook content placeholder works
 header: Facebook content placeholder deconstruction
 category: Deconstructions

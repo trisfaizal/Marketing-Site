@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Officially Out of Jekyll Beta
 header: Officially Out of Jekyll Beta
 category: Announcements
