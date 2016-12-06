@@ -6,14 +6,10 @@
 		"description": "💧&nbsp; API Documentation template for Jekyll",
 		"features": [
 			"Three column layout",
-			"Fully responsive",
 			"Full text search",
-			"Pre-styled components",
-			"Auto-generated navigation based on category",
-			"Optimised for editing in CloudCannon",
-			"SEO tags",
-			"Google Analytics"
-		]
+			"Auto-generated navigation based on category"
+		],
+		"hidden": true
 	},
 	"cause": {
 		"name": "Cause",
@@ -21,12 +17,7 @@
 		"githubRepo": "CloudCannon/cause-jekyll-template",
 		"description": "🌷&nbsp; Not for profit template for Jekyll",
 		"features": [
-			"Pre-built pages",
-			"Pre-styled components",
 			"Configurable footer",
-			"Optimised for editing in CloudCannon",
-			"SEO tags",
-			"Google Analytics",
 			"Donorbox",
 			"MailChimp"
 		]
@@ -39,13 +30,8 @@
 		"features": [
 			"Two column layout",
 			"Full text search",
-			"Pre-styled components",
 			"Auto-generated navigation based on category",
-			"Optimised for editing in CloudCannon",
-			"Change log",
-			"RSS/Atom feed",
-			"SEO tags",
-			"Google Analytics"
+			"Change log with RSS/Atom feed"
 		]
 	},
 	"frisco": {
@@ -55,17 +41,8 @@
 		"description": "📱&nbsp; App marketing template for Jekyll",
 		"features": [
 			"Contact form",
-			"Pre-built pages",
-			"Pre-styled components",
-			"Blog with pagination",
-			"Post category pages",
-			"Disqus comments for posts",
-			"Staff and author system",
-			"Configurable footer",
-			"Optimised for editing in CloudCannon",
-			"RSS/Atom feed",
-			"SEO tags",
-			"Google Analytics"
+			"Blogging",
+			"Configurable footer"
 		]
 	},
 	"hydra": {
@@ -75,17 +52,8 @@
 		"description": "🐉&nbsp; Product marketing template for Jekyll",
 		"features": [
 			"Contact form",
-			"Pre-built pages",
-			"Pre-styled components",
-			"Blog with pagination",
-			"Post category pages",
-			"Disqus comments for posts",
-			"Staff and author system",
-			"Configurable footer",
-			"Optimised for editing in CloudCannon",
-			"RSS/Atom feed",
-			"SEO tags",
-			"Google Analytics"
+			"Blogging",
+			"Configurable footer"
 		]
 	},
 	"justice": {
@@ -95,17 +63,8 @@
 		"description": "🏢&nbsp; Law firm themed business template for Jekyll",
 		"features": [
 			"Contact form",
-			"Pre-built pages",
-			"Pre-styled components",
-			"Blog with pagination",
-			"Post category pages",
-			"Disqus comments for posts",
-			"Staff and author system",
-			"Configurable footer",
-			"Optimised for editing in CloudCannon",
-			"RSS/Atom feed",
-			"SEO tags",
-			"Google Analytics"
+			"Blogging",
+			"Configurable footer"
 		]
 	},
 	"malt": {
@@ -114,11 +73,6 @@
 		"githubRepo": "CloudCannon/malt-jekyll-template",
 		"description": "🍻&nbsp; Event marketing template for Jekyll",
 		"features": [
-			"Pre-built page",
-			"Pre-styled components",
-			"Optimised for editing in CloudCannon",
-			"SEO tags",
-			"Google Analytics",
 			"EventBrite",
 			"Contact Form",
 			"Featured",
@@ -132,17 +86,8 @@
 		"description": "☁️&nbsp; Agency template for Jekyll",
 		"features": [
 			"Contact form",
-			"Pre-built pages",
-			"Pre-styled components",
-			"Blog with pagination",
-			"Post category pages",
-			"Disqus comments for posts",
-			"Staff and author system",
-			"Configurable footer",
-			"Optimised for editing in CloudCannon",
-			"RSS/Atom feed",
-			"SEO tags",
-			"Google Analytics"
+			"Blogging",
+			"Configurable footer"
 		]
 	},
 
@@ -151,38 +96,23 @@
 		"address": "https://nimbus.cloudvent.net",
 		"githubRepo": "https://nimbus.cloudvent.net",
 		"description": "Urban is a strong foundation for an agency portfolio.",
-		"features": [
-			"Full Blog",
-			"Client Portfolio",
-			"Staff Page",
-			"Contact Form"
-		],
-		"legacy": true
+		"features": [],
+		"hidden": true
 	},
 	"cirrus": {
 		"name": "Cirrus",
 		"address": "https://cirrus.cloudvent.net",
 		"githubRepo": "https://nimbus.cloudvent.net",
 		"description": "Urban is a strong foundation for an agency portfolio.",
-		"features": [
-			"Full Blog",
-			"Client Portfolio",
-			"Staff Page",
-			"Contact Form"
-		],
-		"legacy": true
+		"features": [],
+		"hidden": true
 	},
 	"billows": {
 		"name": "Billows",
 		"address": "https://billows.cloudvent.net",
 		"githubRepo": "https://nimbus.cloudvent.net",
 		"description": "Urban is a strong foundation for an agency portfolio.",
-		"features": [
-			"Full Blog",
-			"Client Portfolio",
-			"Staff Page",
-			"Contact Form"
-		],
-		"legacy": true
+		"features": [],
+		"hidden": true
 	}
 }
