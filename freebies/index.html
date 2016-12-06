@@ -9,8 +9,21 @@ share_text: Free HTML5 templates for your next site
 ---
 <section>
 	<div class="container">
-		<h3>Templates</h3>
-		<p>All resources below are free for you to use on your own projects.</p>
+		<h3>Jekyll Templates</h3>
+		<div class="clearfix thirds-container">
+			<div class="thirds">
+				<h4><i class="material-icons">search</i> Google Ready</h4>
+				<p>All templates are Google Analytics ready and have all recommended SEO tags.</p>
+			</div>
+			<div class="thirds">
+				<h4><i class="material-icons">devices</i> Content Ready</h4>
+				<p>Our responsive templates have prestyled content ready to drop in your brand and copy.</p>
+			</div>
+			<div class="thirds">
+				<h4><i class="material-icons">turned_in_not</i> Blogging Ready</h4>
+				<p>Disqus commenting, authors, and category pages are there if you need it.</p>
+			</div>
+		</div>
 
 		<ul class="templates-list">
 			{% for template in site.data.templates %}
