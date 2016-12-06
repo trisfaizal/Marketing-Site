@@ -123,6 +123,8 @@ Starting a new Jekyll site from scratch can be a pain. It's often easier to star
 <style>
 	h3 small {
 		font-size: .5em;
+		position: relative;
+		top: 2px;
 	}
 
 	h3 small .fa-external-link:before {

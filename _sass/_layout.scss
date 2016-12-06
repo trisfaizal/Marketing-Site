@@ -29,6 +29,15 @@ header, .bright-section, .dark-section {
 	}
 }
 
+h3 small {
+	font-size: .5em;
+	position: relative;
+	top: 2px;
+	.fa-external-link:before {
+		font-size: .6em;
+	}
+}
+
 header .sub-text {
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
