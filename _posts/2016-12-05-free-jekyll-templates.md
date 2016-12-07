@@ -121,15 +121,7 @@ Starting a new Jekyll site from scratch can be a pain. It's often easier to star
 <link type="text/css" rel="stylesheet" href="/css/lightslider.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <style>
-	h3 small {
-		font-size: .5em;
-		position: relative;
-		top: 2px;
-	}
 
-	h3 small .fa-external-link:before {
-		font-size: .6em;
-	}
 </style>
 ## Usage
 
@@ -137,7 +129,7 @@ To use the new templates in CloudCannon, create a new site and select the "Choos
 
 ![Choose a jekyll template](/img/blog/7-free-jekyll-templates/choose.png){:class="screenshot"}
 
-From here you can browse through the templates. If you have a GitHub account connected you'll also have the option to fork.
+From here you can browse through the templates and select your favourite.
 
 ![List of jekyll templates](/img/blog/7-free-jekyll-templates/templates.png){:class="screenshot"}
 
@@ -166,7 +158,7 @@ Some of you may be wondering why we didn't use the new Jekyll theme functionalit
 
 We really enjoyed making these templates and we hope they're useful for you. We'd love to hear how you're using them!
 
-We'll be making more templates in the future. Let us what type of templates would be valuable for you.
+We'll be making more templates in the future. Let us know what type of templates would be valuable for you in the comments below.
 
 <script src="/js/lightslider.js"></script>
 
