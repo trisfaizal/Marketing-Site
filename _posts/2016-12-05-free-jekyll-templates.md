@@ -107,8 +107,8 @@ templates:
       Write documentation for your product using [Edition](https://github.com/CloudCannon/edition-jekyll-template/tree/master).
 
       * Clearly document how you use your product.
-      * With fully integrated search your customers can find the content they're looking for.
-      * Write a change long to keep customers up-to-date with the latest changes.
+      * Fully integrated search allows your customers to find the content they're looking for.
+      * Write a change log to keep customers up-to-date with the latest changes.
     images:
       - image: /img/blog/7-free-jekyll-templates/edition1.png
       - image: /img/blog/7-free-jekyll-templates/edition2.png
