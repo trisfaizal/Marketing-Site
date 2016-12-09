@@ -57,7 +57,7 @@ templates:
       - image: /img/blog/7-free-jekyll-templates/cause5.jpeg
   - name: Frisco
     repository: https://github.com/CloudCannon/frisco-jekyll-template
-    demo_url: https://clean-oryx.cloudvent.net/
+    demo_url: https://brave-submarine.cloudvent.net/
     description: |-
       Build a marketing site for your app with [Frisco](https://github.com/CloudCannon/frisco-jekyll-template/tree/master).
 
