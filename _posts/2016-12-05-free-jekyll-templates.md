@@ -2,7 +2,7 @@
 title: 7 Free Jekyll Templates
 header: 7 Free Jekyll Templates
 category: Announcements
-post_image: /img/blog/7-free-jekyll-templates/frisco1.png
+post_image: /img/blog/7-free-jekyll-templates/frisco1.jpeg
 post_image_type: image/png
 post_image_width: 1600
 post_image_height: 1000
@@ -19,11 +19,11 @@ templates:
       * Talk about the latest trends in the industry on the blog.
       * Get new business through the contact form.
     images:
-      - image: /img/blog/7-free-jekyll-templates/urban1.png
-      - image: /img/blog/7-free-jekyll-templates/urban2.png
-      - image: /img/blog/7-free-jekyll-templates/urban3.png
-      - image: /img/blog/7-free-jekyll-templates/urban4.png
-      - image: /img/blog/7-free-jekyll-templates/urban5.png
+      - image: /img/blog/7-free-jekyll-templates/urban1.jpeg
+      - image: /img/blog/7-free-jekyll-templates/urban2.jpeg
+      - image: /img/blog/7-free-jekyll-templates/urban3.jpeg
+      - image: /img/blog/7-free-jekyll-templates/urban4.jpeg
+      - image: /img/blog/7-free-jekyll-templates/urban5.jpeg
 
   - name: Justice
     repository: https://github.com/CloudCannon/justice-jekyll-template
@@ -35,11 +35,11 @@ templates:
       * Your clients post advice on their blog.
       * Inbound leads get in touch on the contact form.
     images:
-      - image: /img/blog/7-free-jekyll-templates/justice1.png
-      - image: /img/blog/7-free-jekyll-templates/justice2.png
-      - image: /img/blog/7-free-jekyll-templates/justice3.png
-      - image: /img/blog/7-free-jekyll-templates/justice4.png
-      - image: /img/blog/7-free-jekyll-templates/justice5.png
+      - image: /img/blog/7-free-jekyll-templates/justice1.jpeg
+      - image: /img/blog/7-free-jekyll-templates/justice2.jpeg
+      - image: /img/blog/7-free-jekyll-templates/justice3.jpeg
+      - image: /img/blog/7-free-jekyll-templates/justice4.jpeg
+      - image: /img/blog/7-free-jekyll-templates/justice5.jpeg
   - name: Cause
     repository: https://github.com/CloudCannon/cause-jekyll-template
     demo_url: https://clean-oryx.cloudvent.net/
@@ -50,11 +50,11 @@ templates:
       * Accept donations from around the world.
       * Post the latest milestones to your community.
     images:
-      - image: /img/blog/7-free-jekyll-templates/cause1.png
-      - image: /img/blog/7-free-jekyll-templates/cause2.png
-      - image: /img/blog/7-free-jekyll-templates/cause3.png
-      - image: /img/blog/7-free-jekyll-templates/cause4.png
-      - image: /img/blog/7-free-jekyll-templates/cause5.png
+      - image: /img/blog/7-free-jekyll-templates/cause1.jpeg
+      - image: /img/blog/7-free-jekyll-templates/cause2.jpeg
+      - image: /img/blog/7-free-jekyll-templates/cause3.jpeg
+      - image: /img/blog/7-free-jekyll-templates/cause4.jpeg
+      - image: /img/blog/7-free-jekyll-templates/cause5.jpeg
   - name: Frisco
     repository: https://github.com/CloudCannon/frisco-jekyll-template
     demo_url: https://clean-oryx.cloudvent.net/
@@ -65,11 +65,11 @@ templates:
         * Write about your latest release and findings in the blog.
         * Get customers using your app.
     images:
-      - image: /img/blog/7-free-jekyll-templates/frisco1.png
-      - image: /img/blog/7-free-jekyll-templates/frisco2.png
-      - image: /img/blog/7-free-jekyll-templates/frisco3.png
-      - image: /img/blog/7-free-jekyll-templates/frisco4.png
-      - image: /img/blog/7-free-jekyll-templates/frisco5.png
+      - image: /img/blog/7-free-jekyll-templates/frisco1.jpeg
+      - image: /img/blog/7-free-jekyll-templates/frisco2.jpeg
+      - image: /img/blog/7-free-jekyll-templates/frisco3.jpeg
+      - image: /img/blog/7-free-jekyll-templates/frisco4.jpeg
+      - image: /img/blog/7-free-jekyll-templates/frisco5.jpeg
   - name: Malt
     repository: https://github.com/CloudCannon/malt-jekyll-template
     demo_url: https://whispering-boat.cloudvent.net/
@@ -80,11 +80,11 @@ templates:
       * Embed Eventbrite so attendees can book tickets directly on the site.
       * Show photos from previous years in the photo gallery.
     images:
-      - image: /img/blog/7-free-jekyll-templates/malt1.png
-      - image: /img/blog/7-free-jekyll-templates/malt2.png
-      - image: /img/blog/7-free-jekyll-templates/malt3.png
-      - image: /img/blog/7-free-jekyll-templates/malt4.png
-      - image: /img/blog/7-free-jekyll-templates/malt5.png
+      - image: /img/blog/7-free-jekyll-templates/malt1.jpeg
+      - image: /img/blog/7-free-jekyll-templates/malt2.jpeg
+      - image: /img/blog/7-free-jekyll-templates/malt3.jpeg
+      - image: /img/blog/7-free-jekyll-templates/malt4.jpeg
+      - image: /img/blog/7-free-jekyll-templates/malt5.jpeg
   - name: Hydra
     repository: https://github.com/CloudCannon/hydra-jekyll-template
     demo_url: https://proud-alligator.cloudvent.net/
@@ -95,11 +95,11 @@ templates:
       * Write about your industry in the blog.
       * Have potential customers get in touch on the contact page.
     images:
-      - image: /img/blog/7-free-jekyll-templates/hydra1.png
-      - image: /img/blog/7-free-jekyll-templates/hydra2.png
-      - image: /img/blog/7-free-jekyll-templates/hydra3.png
-      - image: /img/blog/7-free-jekyll-templates/hydra4.png
-      - image: /img/blog/7-free-jekyll-templates/hydra5.png
+      - image: /img/blog/7-free-jekyll-templates/hydra1.jpeg
+      - image: /img/blog/7-free-jekyll-templates/hydra2.jpeg
+      - image: /img/blog/7-free-jekyll-templates/hydra3.jpeg
+      - image: /img/blog/7-free-jekyll-templates/hydra4.jpeg
+      - image: /img/blog/7-free-jekyll-templates/hydra5.jpeg
   - name: Edition
     repository: https://github.com/CloudCannon/edition-jekyll-template
     demo_url: https://long-pig.cloudvent.net/
@@ -110,11 +110,11 @@ templates:
       * Fully integrated search allows your customers to find the content they're looking for.
       * Write a change log to keep customers up-to-date with the latest changes.
     images:
-      - image: /img/blog/7-free-jekyll-templates/edition1.png
-      - image: /img/blog/7-free-jekyll-templates/edition2.png
-      - image: /img/blog/7-free-jekyll-templates/edition3.png
-      - image: /img/blog/7-free-jekyll-templates/edition4.png
-      - image: /img/blog/7-free-jekyll-templates/edition5.png
+      - image: /img/blog/7-free-jekyll-templates/edition1.jpeg
+      - image: /img/blog/7-free-jekyll-templates/edition2.jpeg
+      - image: /img/blog/7-free-jekyll-templates/edition3.jpeg
+      - image: /img/blog/7-free-jekyll-templates/edition4.jpeg
+      - image: /img/blog/7-free-jekyll-templates/edition5.jpeg
 ---
 Starting a new Jekyll site from scratch can be a pain. It's often easier to start with an existing site and modify for your use case. To help get you started on your next project we've created seven high quality Jekyll templates for common use cases. Even better they're all optimised for use with [CloudCannon](https://cloudcannon.com). The templates are licensed under MIT so you're free to use and modify them however you'd like.
 
@@ -127,11 +127,11 @@ Starting a new Jekyll site from scratch can be a pain. It's often easier to star
 
 To use the new templates in CloudCannon, create a new site and select the "Choose a Template" option.
 
-![Choose a jekyll template](/img/blog/7-free-jekyll-templates/choose.png){:class="screenshot"}
+![Choose a jekyll template](/img/blog/7-free-jekyll-templates/choose.jpeg){:class="screenshot"}
 
 From here you can browse through the templates and select your favourite.
 
-![List of jekyll templates](/img/blog/7-free-jekyll-templates/templates.png){:class="screenshot"}
+![List of jekyll templates](/img/blog/7-free-jekyll-templates/templates.jpeg){:class="screenshot"}
 
 These templates also work without CloudCannon, just fork the template repository on GitHub or download a zip.
 
