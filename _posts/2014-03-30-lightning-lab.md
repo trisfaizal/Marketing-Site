@@ -1,5 +1,4 @@
 ---
-layout: post
 title: We've joined Lightning Lab
 header: We've joined Lightning Lab
 category: Company
@@ -9,7 +8,7 @@ permalink: /company/2014/03/30/lightning-lab.html
 
 ![Includes](/img/blog/lightning-lab/ll-logo.jpg)
 
-We’ve joined a New Zealand based business accelerator programme called [Lightning Lab](http://lightninglab.co.nz). 
+We’ve joined a New Zealand based business accelerator programme called [Lightning Lab](http://lightninglab.co.nz).
 
 George and I originally built CloudCannon to solve our own problem... it just shouldn’t be that hard to get a simple website online. Six months later we’ve found thousands of web designers share our vision and are using CloudCannon everyday.
 

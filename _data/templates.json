@@ -1,0 +1,118 @@
+{
+	"aviator": {
+		"name": "Aviator",
+		"address": "https://tangerine-lemon.cloudvent.net",
+		"githubRepo": "CloudCannon/aviator-jekyll-template",
+		"description": "💧&nbsp; API Documentation template for Jekyll",
+		"features": [
+			"Three column layout",
+			"Full text search",
+			"Auto-generated navigation based on category"
+		],
+		"hidden": true
+	},
+	"cause": {
+		"name": "Cause",
+		"address": "https://clean-oryx.cloudvent.net",
+		"githubRepo": "CloudCannon/cause-jekyll-template",
+		"description": "🌷&nbsp; Not for profit template for Jekyll",
+		"features": [
+			"Configurable footer",
+			"Donorbox",
+			"MailChimp"
+		]
+	},
+	"edition": {
+		"name": "Edition",
+		"address": "https://long-pig.cloudvent.net",
+		"githubRepo": "CloudCannon/edition-jekyll-template",
+		"description": "🎓&nbsp; Product documentation template for Jekyll",
+		"features": [
+			"Two column layout",
+			"Full text search",
+			"Auto-generated navigation based on category",
+			"Change log with RSS/Atom feed"
+		]
+	},
+	"frisco": {
+		"name": "Frisco",
+		"address": "https://brave-submarine.cloudvent.net",
+		"githubRepo": "CloudCannon/frisco-jekyll-template",
+		"description": "📱&nbsp; App marketing template for Jekyll",
+		"features": [
+			"Contact form",
+			"Blogging",
+			"Configurable footer"
+		]
+	},
+	"hydra": {
+		"name": "Hydra",
+		"address": "https://proud-alligator.cloudvent.net",
+		"githubRepo": "CloudCannon/hydra-jekyll-template",
+		"description": "🐉&nbsp; Product marketing template for Jekyll",
+		"features": [
+			"Contact form",
+			"Blogging",
+			"Configurable footer"
+		]
+	},
+	"justice": {
+		"name": "Justice",
+		"address": "https://grey-grouse.cloudvent.net",
+		"githubRepo": "CloudCannon/justice-jekyll-template",
+		"description": "🏢&nbsp; Law firm themed business template for Jekyll",
+		"features": [
+			"Contact form",
+			"Blogging",
+			"Configurable footer"
+		]
+	},
+	"malt": {
+		"name": "Malt",
+		"address": "https://whispering-boat.cloudvent.net",
+		"githubRepo": "CloudCannon/malt-jekyll-template",
+		"description": "🍻&nbsp; Event marketing template for Jekyll",
+		"features": [
+			"EventBrite",
+			"Contact Form",
+			"Featured",
+			"Image Gallery",
+		]
+	},
+	"urban": {
+		"name": "Urban",
+		"address": "https://teal-worm.cloudvent.net",
+		"githubRepo": "CloudCannon/urban-jekyll-template",
+		"description": "☁️&nbsp; Agency template for Jekyll",
+		"features": [
+			"Contact form",
+			"Blogging",
+			"Configurable footer"
+		]
+	},
+
+	"nimbus": {
+		"name": "Nimbus",
+		"address": "https://nimbus.cloudvent.net",
+		"githubRepo": "https://nimbus.cloudvent.net",
+		"description": "Urban is a strong foundation for an agency portfolio.",
+		"features": [],
+		"hidden": true
+	},
+	"cirrus": {
+		"name": "Cirrus",
+		"address": "https://cirrus.cloudvent.net",
+		"githubRepo": "https://nimbus.cloudvent.net",
+		"description": "Urban is a strong foundation for an agency portfolio.",
+		"features": [],
+		"hidden": true
+	},
+	"billows": {
+		"name": "Billows",
+		"address": "https://billows.cloudvent.net",
+		"githubRepo": "https://nimbus.cloudvent.net",
+		"description": "Urban is a strong foundation for an agency portfolio.",
+		"features": [],
+		"hidden": true
+	}
+}

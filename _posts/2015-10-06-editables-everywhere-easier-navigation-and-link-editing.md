@@ -1,7 +1,6 @@
 ---
-layout: post
-title: "Editables Everywhere, Easier Navigation and Link Editing"
-header: "Editables Everywhere, Easier Navigation and Link Editing"
+title: Editables Everywhere, Easier Navigation and Link Editing
+header: Editables Everywhere, Easier Navigation and Link Editing
 category: Features
 author: george
 ---

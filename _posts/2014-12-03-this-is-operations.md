@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The ops team
 header: Hi I'm Tim and I am the operations team.
 category: Operations

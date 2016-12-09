@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 3 ways to improve your web design skills
 header: 3 ways to improve your web design skills
 category: Tutorials

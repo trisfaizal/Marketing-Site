@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Powerful Templates
 header: Powerful Templates
 category: Features

@@ -1,10 +1,9 @@
 ---
-layout: post
 title: How Pixelapse image blurring works
 header: Pixelapse blurred Image deconstruction
 category: Deconstructions
 author: george
-permalink: /deconstructions/2014/11/19/pixelapse-blurred-image-deconstruction.html 
+permalink: /deconstructions/2014/11/19/pixelapse-blurred-image-deconstruction.html
 ---
 
 The last deconstruction about the <a href="/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html">Facebook content placeholder</a> seemed to be popular so here's my next one. I recently discovered a fantastic start up called <a href="https://www.pixelapse.com/">Pixelapse</a> and the level of polish on their site was outstanding. Today I am doing a deconstruction on something I found there.

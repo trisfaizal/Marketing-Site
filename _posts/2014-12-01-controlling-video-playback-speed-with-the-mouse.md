@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Controlling video playback with the mouse
 header: Controlling video playback with the mouse
 category: Tutorials

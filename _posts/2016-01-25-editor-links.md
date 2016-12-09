@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Editor Links
 header: Editor Links
 category: Features
@@ -46,4 +45,3 @@ Our [documentation](https://docs.cloudcannon.com/editing/editor-links/) includes
 
 One of our customers requested this feature to create buttons to edit products from the Visual Editor.
 We'd love to hear how you use it in the comments below.
-

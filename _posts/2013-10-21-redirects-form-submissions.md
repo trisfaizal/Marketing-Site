@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Form Submissions and Redirects
 header: Form Submissions and Redirects
 category: Features

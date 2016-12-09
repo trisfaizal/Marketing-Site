@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Designer Spotlight - Cody Tatman
 header: Designer Spotlight - Cody Tatman
 category: Interview

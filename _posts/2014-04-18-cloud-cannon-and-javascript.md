@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using CloudCannon with JavaScript
 header: Using CloudCannon with JavaScript
 category: Tutorials

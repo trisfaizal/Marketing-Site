@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Inline Editing of Markdown Pages
 header: Inline Editing of Markdown Pages
 category: Features

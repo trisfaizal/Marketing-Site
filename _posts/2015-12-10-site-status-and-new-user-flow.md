@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Site Status and New User Flow
 header: Site Status and New User Flow
 category: Features

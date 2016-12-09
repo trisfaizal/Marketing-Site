@@ -1,10 +1,9 @@
 ---
-layout: post
 title: Have SSL on your CloudCannon website for free
 header: Have SSL on your CloudCannon website for free
 category: Tutorials
 author: mike
-permalink: /tutorials/2014/12/09/have-ssl-on-your-cloudcannon-website-for-free.html 
+permalink: /tutorials/2014/12/09/have-ssl-on-your-cloudcannon-website-for-free.html
 ---
 
 Today I’m going to show you how you can add SSL to your CloudCannon website in under 5 minutes. What’s even better, it’s free!
@@ -17,7 +16,7 @@ SSL is a way of ensuring all the data passed between a website visitor and the s
 ![Secure page](/img/blog/ssl/blurred.png)
 
 ## What’s CloudFlare?
-CloudFlare is service which works as a reverse proxy for your website. What that means is when someone visits your website, the request will go to CloudFlare, then CloudFlare will download the website from the hosting provider and serve it to the user. 
+CloudFlare is service which works as a reverse proxy for your website. What that means is when someone visits your website, the request will go to CloudFlare, then CloudFlare will download the website from the hosting provider and serve it to the user.
 
 The advantage of doing this is CloudFlare does a number of performance and security enhancements so your website will load faster and be more immune to malicious attacks. They’ve also recently added free SSL support.
 
@@ -37,7 +36,7 @@ Next you’ll be asked for your website address
 After this CloudFlare will take about a minute to scan your existing DNS records. Once it’s finished it, it’ll show you the DNS records it’s found. You need to verify these records are correct. For CloudCannon websites the DNS records should be fairly simple, usually the setup is:
 
 * an A record for the root domain pointing to 184.169.135.34
-* an A record for *.rootdomain pointing to 184.169.135.34 
+* an A record for *.rootdomain pointing to 184.169.135.34
 * perhaps an MX record if you have email set up for that domain
 
 If you're setting up a new domain refer to our [documentation](http://cloudcannon.com/docs#setting_up_a_domain) under the "Use your Domain Registrar's DNS server" section and enter those details into CloudFlare.
@@ -49,13 +48,12 @@ Once you’re happy these are correct click the continue button.
 Next up is configuring CloudFlare. I switched the plan to free and the performance to CDN + Full optimizations.
 ![Configure CloudFlare](/img/blog/ssl/settings.png)
 
- 
+
 The last step is updating your nameservers. To do this log in to your domain provider and change the nameservers to the ones that CloudFlare gives you.
 ![dns](/img/blog/ssl/update-ns.png)
 
-That’s it! It’s so easy to get setup. Changing your DNS can take up to 48 hours to propagate and CloudFlare’s free SSL can take up to 24 hours to set up, so while there should be no downtime, it might be a day or two before you have SSL and CloudFlare serving your website. 
+That’s it! It’s so easy to get setup. Changing your DNS can take up to 48 hours to propagate and CloudFlare’s free SSL can take up to 24 hours to set up, so while there should be no downtime, it might be a day or two before you have SSL and CloudFlare serving your website.
 
-Now I can access my site on [https://mikeneumegen.com](https://mikeneumegen.com) or [http://mikeneumegen.com](http://mikeneumegen.com) and everything loads super fast. 
+Now I can access my site on [https://mikeneumegen.com](https://mikeneumegen.com) or [http://mikeneumegen.com](http://mikeneumegen.com) and everything loads super fast.
 
 Give it a go and get in touch if you have any problems setting CloudFlare up. We’re always here to help.
-

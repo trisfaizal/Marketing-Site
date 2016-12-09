@@ -1,10 +1,9 @@
 ---
-layout: post
 title: Turn ANY template or theme into a CMS
 header: Turn ANY template or theme into a CMS
 category: Tutorials
 author: sam
-permalink: /tutorials/2014/09/01/turn-any-template-or-theme-into-a-cms.html 
+permalink: /tutorials/2014/09/01/turn-any-template-or-theme-into-a-cms.html
 ---
 
 <!-- summary photo and summary here -->
@@ -22,7 +21,7 @@ CloudCannon is powerful enough and versatile enough to add CMS capability to any
 But just because you CAN bring fully custom websites to CloudCannon doesn't mean you have to.
 
 You can bring any HTML template or theme on the web.
-			  
+
 [Start Bootstrap](http://startbootstrap.com/)? Yessir.
 
 [Theme Forest](http://themeforest.net/category/site-templates)? Yup.

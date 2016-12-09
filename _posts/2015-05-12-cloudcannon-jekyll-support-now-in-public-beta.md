@@ -1,5 +1,4 @@
 ---
-layout: post
 author: sam
 title: CloudCannon Jekyll support now in public beta
 header: Jekyll support now public beta
