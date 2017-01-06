@@ -13,7 +13,7 @@ Increased Build Time Limit,not-available,available,available,TRUE,,Remove the Je
 Internationalisation,not-available,not-available,available,TRUE,,Serve your sites in multiple languages.
 Geolocation,not-available,not-available,available,TRUE,,Display different content to viewers based on where they are in the world.
 ,,,,,Site Authentication,Restrict who can view your sites.
+Custom Interfaces and Routes,available,available,available,TRUE,,Customise the authentication interfaces. Configure which parts of your sites are authenticated.
 Password,available,available,available,TRUE,,
 User Accounts,not-available,available,available,TRUE,,
-Custom Interfaces and Routes,not-available,available,available,TRUE,,Customise the authentication interfaces. Configure which parts of your sites are authenticated.
 SAML,not-available,not-available,available,TRUE,,
