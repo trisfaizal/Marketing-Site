@@ -41,6 +41,7 @@ collections:
     output: false
   staff:
     name: Team Members
+    _hide_content: true
     output: false
   authors:
     name: Authors
