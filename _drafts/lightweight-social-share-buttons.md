@@ -2,10 +2,10 @@
 title: Lightweight Social Share Buttons
 header: Lightweight Social Share Buttons
 category: Tutorials
-post_image: /img/blog/lightweight-social-share-buttons/social-icon-grid@2x.jpg
+post_image: /img/blog/lightweight-social-share-buttons/buttons@2x.png
 post_image_type: image/png
 post_image_width: 1600
-post_image_height: 1000
+post_image_height: 540
 author: ross
 ---
 
