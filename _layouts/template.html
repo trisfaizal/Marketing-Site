@@ -12,15 +12,11 @@ layout: default
 			<h3>Free template for you</h3>
 			<p>This template is free for you to use on your own projects. It's our way of giving back to a community which has given us so much. If you want to show your support, spread the love by sharing these resources with your friends.</p>
 
-			<div class="share-options">
-					{% assign url = page.url | prepend: site[jekyll.environment].url | cgi_escape %}
-					<a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
-							{% include social-icon.html social_icon="facebook" %} Share
-					</a><a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.share_text | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">
-							{% include social-icon.html social_icon="twitter" %} Tweet
-					</a><a class="share-btn google-plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">
-							{% include social-icon.html social_icon="google-plus" %} Share
-					</a>
+			<div class="share-options well">
+				{% assign url = page.url | prepend: site.url | cgi_escape %}
+				<a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" target="_blank">{% include social-icon.html icon="Facebook" %} Share</a>
+				<a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ url }}&amp;text={{ page.share_text | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">{% include social-icon.html icon="Twitter" %} Tweet</a>
+				<a class="share-btn google-plus" href="https://plus.google.com/share?url={{ url }}" target="_blank">{% include social-icon.html icon="Google Plus" %} Share</a>
 			</div>
 
 			<h3>Licence</h3>
