@@ -134,6 +134,22 @@ a.social-icon.white:active { opacity: 1; }
 			background-color: #455166;
 		}
 	}
+
+	&.hacker-news {
+		background-color: #ff6600;
+
+		&:hover {
+			background-color: #ff7515;
+		}
+	}
+
+	&.designer-news {
+		background-color: #2d72d9;
+
+		&:hover {
+			background-color: #3d82e9;
+		}
+	}
 }
 
 @media only screen and (min-width: $break-large) {

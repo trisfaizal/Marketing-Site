@@ -28,6 +28,10 @@ Social networks also provide a share URL as an alternative to the embedded butto
 
 	<a class="share-btn reddit" href="https://reddit.com/submit?url={{ url }}&title={{ page.title | cgi_escape }}&resubmit=true" target="_blank">{% include social-icon.html icon="Reddit" %} Submit to Reddit</a>
 
+	<a class="share-btn hacker-news" href="https://news.ycombinator.com/submitlink?u={{ url }}&t=={{ page.title | cgi_escape | replace: "+", "%20" }}" target="_blank">{% include social-icon.html icon="Hacker News" %} Submit to Hacker News</a>
+
+	<a class="share-btn designer-news" href="https://www.designernews.co/submit?url={{ url }}&title={{ page.title | cgi_escape }}" target="_blank">{% include social-icon.html icon="Designer News" %} Submit to Designer News</a>
+
 	<a class="share-btn email" href="mailto:?subject={{ page.title | cgi_escape }}&body={{ "Check this out: " | cgi_escape | append: url }}" target="_blank">{% include social-icon.html icon="Email" %} Share via Email</a>
 
 </div>
@@ -113,6 +117,12 @@ Here are the base styles for the buttons shown above:
 .share-button.tumblr { background-color: #35465c; }
 .share-button.tumblr:hover { background-color: #455166; }
 
+.share-button.hacker-news { background-color: #ff6600; }
+.share-button.hacker-news:hover { background-color: #ff7515; }
+
+.share-button.designer-news { background-color: #2d72d9; }
+.share-button.designer-news:hover { background-color: #3d82e9; }
+
 .share-button.google-plus {
   background-color: #fefefe;
   color: #333;
@@ -181,6 +191,19 @@ Options are provided for developers to customise the share experience. Previews 
 `https://reddit.com/submit?url={url}&title={title}&resubmit=true`
 
 - **title** is the submission heading text
+
+##### Hacker News
+
+`https://news.ycombinator.com/submitlink?u={url}&t={title}`
+
+- **title** is the submission heading text
+
+##### Designer News
+
+`https://www.designernews.co/submit?url={url}&title={title}`
+
+- **title** is the submission heading text
+
 
 ##### Email
 
