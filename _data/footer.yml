@@ -27,19 +27,19 @@
   links:
     - name: Twitter
       link: https://twitter.com/CloudCannonApp
-      social_icon: twitter
+      social_icon: Twitter
       new_window: true
     - name: Facebook
       link: https://www.facebook.com/CloudCannon
-      social_icon: facebook
+      social_icon: Facebook
       new_window: true
     - name: Google+
       link: https://plus.google.com/+CloudCannon
-      social_icon: google-plus
+      social_icon: Google Plus
       new_window: true
     - name: YouTube
       link: https://www.youtube.com/c/CloudCannon
-      social_icon: youtube
+      social_icon: YouTube
       new_window: true
 - title: App
   links:

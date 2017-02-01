@@ -36,23 +36,29 @@ a.social-icon.white:active { opacity: 1; }
 }
 
 .share-btn {
+	position: relative;
 	display: inline-flex;
 	align-items: center;
-	color: #fff;
-	border-radius: 2px;
 	padding: 3px 10px 2px 8px;
-	font-size: 15px;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.1);
 	margin: 10px;
-	font-weight: 600;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	background-color: #333;
 	border-radius: 2px;
-	box-shadow: 0 1px 1px rgba(0,0,0,.35);
-	position: relative;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
 	text-decoration: none;
 	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	font-size: 15px;
 
 	&:hover {
 		color: #fff;
+		background-color: #4f4f4f;
+	}
+
+	&:active {
+		top: 1px;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
 	}
 
 	svg {
@@ -78,6 +84,10 @@ a.social-icon.white:active { opacity: 1; }
 		}
 	}
 
+	&.email {
+		text-shadow: none;
+	}
+
 	&.google-plus {
 		background-color: #fefefe;
 		color: #333;
@@ -90,6 +100,54 @@ a.social-icon.white:active { opacity: 1; }
 
 		svg {
 			fill: #DB4437;
+		}
+	}
+
+	&.pinterest {
+		background-color: #c92228;
+
+		&:hover {
+			background-color: #cf4146;
+		}
+	}
+
+	&.linkedin {
+		background-color: #0077B5;
+
+		&:hover {
+			background-color: #1e84b9;
+		}
+	}
+
+	&.reddit {
+		background-color: #5f99cf;
+
+		&:hover {
+			background-color: #75a6d4;
+		}
+	}
+
+	&.tumblr {
+		background-color: #35465c;
+
+		&:hover {
+			background-color: #455166;
+		}
+	}
+
+	&.hacker-news {
+		background-color: #ff6600;
+
+		&:hover {
+			background-color: #ff7515;
+		}
+	}
+
+	&.designer-news {
+		background-color: #2d72d9;
+
+		&:hover {
+			background-color: #3d82e9;
 		}
 	}
 }
