@@ -9,36 +9,34 @@ post_image_height: 540
 author: ross
 ---
 
+
 Social share buttons are commonplace on a range of websites. Many social networks provide embed code to build them quickly, however these solutions load a number of additional requests and resources. This increases the load time for your pages.
 
 Social networks also provide a share URL as an alternative to the embedded buttons. Linking to these with a few `<a>` tags is much more lightweight than the embedded solution. They can also be styled to match your branding. Here are the buttons and everything you need to recreate them for your site:
 
-{% assign url = page.url | prepend: site.url | cgi_escape %}
-<div class="well">
-	<a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" target="_blank">{% include social-icon.html icon="Facebook" %} Share on Facebook</a>
-	<a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">{% include social-icon.html icon="Twitter" %} Tweet this</a>
-	<a class="share-btn google-plus" href="https://plus.google.com/share?url={{ url }}" target="_blank">{% include social-icon.html icon="Google Plus" %} Share on Google+</a>
+{% assign url = page.url | prepend: site.url | cgi_escape %}&lt;div class="well"&gt;	[{% include social-icon.html icon="Facebook" %} Share on Facebook](https://www.facebook.com/sharer/sharer.php?u={{ url }}){: .share-btn.facebook}	[{% include social-icon.html icon="Twitter" %} Tweet this](https://twitter.com/intent/tweet?url={{ url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannonApp){: .share-btn.twitter}	[{% include social-icon.html icon="Google Plus" %} Share on Google+](https://plus.google.com/share?url={{ url }}){: .share-btn.google-plus}
 
-	<a class="share-btn pinterest" href="https://pinterest.com/pin/create/button/?url={{ url }}&description={{ page.title | cgi_escape }}&media={{ page.post_image | prepend: site.url | cgi_escape }}" target="_blank">{% include social-icon.html icon="Pinterest" %} Save on Pinterest</a>
+```
+<a class="share-btn pinterest" href="https://pinterest.com/pin/create/button/?url={{ url }}&description={{ page.title | cgi_escape }}&media={{ page.post_image | prepend: site.url | cgi_escape }}" target="_blank">{% include social-icon.html icon="Pinterest" %} Save on Pinterest</a>
 
-	<a class="share-btn linkedin" href="https://www.linkedin.com/shareArticle?url={{ url }}&title={{ page.title | cgi_escape }}&source=CloudCannon&mini=true" target="_blank">{% include social-icon.html icon="LinkedIn" %} Share on LinkedIn</a>
+<a class="share-btn linkedin" href="https://www.linkedin.com/shareArticle?url={{ url }}&title={{ page.title | cgi_escape }}&source=CloudCannon&mini=true" target="_blank">{% include social-icon.html icon="LinkedIn" %} Share on LinkedIn</a>
 
-	<a class="share-btn tumblr" href="
-	https://tumblr.com/widgets/share/tool?canonicalUrl={{ url }}&tags=jekyll,webdev,webdesign&caption={{ page.title | cgi_escape}}" target="_blank">{% include social-icon.html icon="Tumblr" %} Share on Tumblr</a>
+<a class="share-btn tumblr" href="
+https://tumblr.com/widgets/share/tool?canonicalUrl={{ url }}&tags=jekyll,webdev,webdesign&caption={{ page.title | cgi_escape}}" target="_blank">{% include social-icon.html icon="Tumblr" %} Share on Tumblr</a>
 
-	<a class="share-btn reddit" href="https://reddit.com/submit?url={{ url }}&title={{ page.title | cgi_escape }}&resubmit=true" target="_blank">{% include social-icon.html icon="Reddit" %} Submit to Reddit</a>
+<a class="share-btn reddit" href="https://reddit.com/submit?url={{ url }}&title={{ page.title | cgi_escape }}&resubmit=true" target="_blank">{% include social-icon.html icon="Reddit" %} Submit to Reddit</a>
 
-	<a class="share-btn hacker-news" href="https://news.ycombinator.com/submitlink?u={{ url }}&t=={{ page.title | cgi_escape | replace: "+", "%20" }}" target="_blank">{% include social-icon.html icon="Hacker News" %} Submit to Hacker News</a>
+<a class="share-btn hacker-news" href="https://news.ycombinator.com/submitlink?u={{ url }}&t=={{ page.title | cgi_escape | replace: "+", "%20" }}" target="_blank">{% include social-icon.html icon="Hacker News" %} Submit to Hacker News</a>
 
-	<a class="share-btn designer-news" href="https://www.designernews.co/submit?url={{ url }}&title={{ page.title | cgi_escape }}" target="_blank">{% include social-icon.html icon="Designer News" %} Submit to Designer News</a>
+<a class="share-btn designer-news" href="https://www.designernews.co/submit?url={{ url }}&title={{ page.title | cgi_escape }}" target="_blank">{% include social-icon.html icon="Designer News" %} Submit to Designer News</a>
 
-	<a class="share-btn email" href="mailto:?subject={{ page.title | cgi_escape }}&body={{ "Check this out: " | cgi_escape | append: url }}" target="_blank">{% include social-icon.html icon="Email" %} Share via Email</a>
+<a class="share-btn email" href="mailto:?subject={{ page.title | cgi_escape }}&body={{ "Check this out: " | cgi_escape | append: url }}" target="_blank">{% include social-icon.html icon="Email" %} Share via Email</a>
+```
 
-</div>
-
+&lt;/div&gt;
 <!-- ![Social icons on a phone](/img/blog/lightweight-social-share-buttons/social-icon-grid.jpg){: srcset="/img/blog/lightweight-social-share-buttons/social-icon-grid.jpg 800w, /img/blog/lightweight-social-share-buttons/social-icon-grid@2x.jpg 1600w"} -->
 
-***
+---
 
 #### Markup and Styling
 
@@ -138,7 +136,7 @@ Here are the base styles for the buttons shown above:
 }
 {% endhighlight %}
 
-***
+---
 
 #### URL Reference
 
@@ -146,7 +144,7 @@ Here's a collated list of provided share URLs and relevant options. It's better 
 
 Options are provided for developers to customise the share experience. Previews are often generated automatically from the URL provided. The `url` query parameter is required on all share URLs except email:
 
-- **url** is the encoded URL to share
+* **url** is the encoded URL to share
 
 ##### Facebook
 
@@ -160,59 +158,58 @@ Options are provided for developers to customise the share experience. Previews 
 
 `https://twitter.com/intent/tweet?url={url}&text={text}&via={via}&hashtags={hashtags}`
 
-- **text** is the pre-populated Tweet text
-- **hashtags** is a comma separated list of pre-populated hash tags (without "#")
-- **via** is the Twitter username of the author or site (without "@")
+* **text** is the pre-populated Tweet text
+* **hashtags** is a comma separated list of pre-populated hash tags (without "#")
+* **via** is the Twitter username of the author or site (without "@")
 
 ##### [Pinterest](https://developers.pinterest.com/docs/widgets/save/)
 
 `https://pinterest.com/pin/create/button/?url={url}&description={description}&media={media}`
 
-- **description** is the caption text for the pin
-- **media** is an encoded URL to the image in the pin
+* **description** is the caption text for the pin
+* **media** is an encoded URL to the image in the pin
 
 ##### [LinkedIn](https://developer.linkedin.com/docs/share-on-linkedin)
 
 `https://www.linkedin.com/shareArticle?url={url}&title={title}&source={source}&summary={summary}&mini=true`
 
-- **title** is the pre-populated title of the share
-- **summary** is the description for the share
-- **source** is your site name
+* **title** is the pre-populated title of the share
+* **summary** is the description for the share
+* **source** is your site name
 
 ##### [Tumblr](https://www.tumblr.com/docs/en/share_button#custom-button)
 
 `https://tumblr.com/widgets/share/tool?canonicalUrl={url}&tags={tags}&caption={caption}`
 
-- **tags** is a comma separated list of tags
-- **caption** is the pre-populated share text
+* **tags** is a comma separated list of tags
+* **caption** is the pre-populated share text
 
 ##### [Reddit](https://www.reddit.com/dev/api#POST_api_submit)
 
 `https://reddit.com/submit?url={url}&title={title}&resubmit=true`
 
-- **title** is the submission heading text
+* **title** is the submission heading text
 
 ##### Hacker News
 
 `https://news.ycombinator.com/submitlink?u={url}&t={title}`
 
-- **title** is the submission heading text
+* **title** is the submission heading text
 
 ##### Designer News
 
 `https://www.designernews.co/submit?url={url}&title={title}`
 
-- **title** is the submission heading text
-
+* **title** is the submission heading text
 
 ##### Email
 
 `mailto:?subject={subject}&body={body}`
 
-- **subject** is the subject line of the pre-populated email
-- **body** is the body text content of the pre-populated email
+* **subject** is the subject line of the pre-populated email
+* **body** is the body text content of the pre-populated email
 
-***
+---
 
 #### Tips
 
@@ -220,15 +217,19 @@ The previews that are automatically generated rely heavily on the [Open Graph](h
 
 Encode your query parameters on your Jekyll sites with the `cgi_escape` filter. The `uri_escape` filter is for entire URLs, so won't escape some characters (e.g. "?") and may break your buttons.
 
-{% highlight html %}{% raw %}
+{% highlight html %}
+{% raw %}
 <a class="share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}" target="_blank">Share on Facebook</a>
-{% endraw %}{% endhighlight %}
+{% endraw %}
+{% endhighlight %}
 
 Jekyll includes are a great way to reuse SVG icons in your buttons and the rest of a site.
 
-{% highlight html %}{% raw %}
+{% highlight html %}
+{% raw %}
 <a class="share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}" target="_blank">{% include facebook-icon.html %} Share on Facebook</a>
-{% endraw %}{% endhighlight %}
+{% endraw %}
+{% endhighlight %}
 
 Tracking your share buttons can help you discover how your visitors are interacting with the site and focus your resources more effectively. Track [custom events](https://developers.google.com/analytics/devguides/collection/analyticsjs/events) for clicks on your share buttons with Google Analytics using the following code:
 
@@ -247,6 +248,6 @@ for (var i = 0; i < buttons.length; i++) {
 }
 {% endhighlight %}
 
-***
+---
 
 Be sure to let us know in the comments if you've got any tips or feedback on the topic!
