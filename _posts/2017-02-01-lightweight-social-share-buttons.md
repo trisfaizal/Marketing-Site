@@ -14,9 +14,15 @@ Social share buttons are commonplace on a range of websites. Many social network
 
 Social networks also provide a share URL as an alternative to the embedded buttons. Linking to these with a few `<a>` tags is much more lightweight than the embedded solution. They can also be styled to match your branding. Here are the buttons and everything you need to recreate them for your site:
 
-{% assign url = page.url | prepend: site.url | cgi_escape %}&lt;div class="well"&gt;	[{% include social-icon.html icon="Facebook" %} Share on Facebook](https://www.facebook.com/sharer/sharer.php?u={{ url }}){: .share-btn.facebook}	[{% include social-icon.html icon="Twitter" %} Tweet this](https://twitter.com/intent/tweet?url={{ url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannonApp){: .share-btn.twitter}	[{% include social-icon.html icon="Google Plus" %} Share on Google+](https://plus.google.com/share?url={{ url }}){: .share-btn.google-plus}
+{% assign url = page.url | prepend: site.url | cgi_escape %}
 
-```
+<div class="well">
+<a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" target="_blank">{% include social-icon.html icon="Facebook" %} Share on Facebook</a>
+
+<a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">{% include social-icon.html icon="Twitter" %} Tweet this</a>
+
+<a class="share-btn google-plus" href="https://plus.google.com/share?url={{ url }}" target="_blank">{% include social-icon.html icon="Google Plus" %} Share on Google+</a>
+
 <a class="share-btn pinterest" href="https://pinterest.com/pin/create/button/?url={{ url }}&description={{ page.title | cgi_escape }}&media={{ page.post_image | prepend: site.url | cgi_escape }}" target="_blank">{% include social-icon.html icon="Pinterest" %} Save on Pinterest</a>
 
 <a class="share-btn linkedin" href="https://www.linkedin.com/shareArticle?url={{ url }}&title={{ page.title | cgi_escape }}&source=CloudCannon&mini=true" target="_blank">{% include social-icon.html icon="LinkedIn" %} Share on LinkedIn</a>
@@ -31,9 +37,8 @@ https://tumblr.com/widgets/share/tool?canonicalUrl={{ url }}&tags=jekyll,webdev,
 <a class="share-btn designer-news" href="https://www.designernews.co/submit?url={{ url }}&title={{ page.title | cgi_escape }}" target="_blank">{% include social-icon.html icon="Designer News" %} Submit to Designer News</a>
 
 <a class="share-btn email" href="mailto:?subject={{ page.title | cgi_escape }}&body={{ "Check this out: " | cgi_escape | append: url }}" target="_blank">{% include social-icon.html icon="Email" %} Share via Email</a>
-```
+</div>
 
-&lt;/div&gt;
 <!-- ![Social icons on a phone](/img/blog/lightweight-social-share-buttons/social-icon-grid.jpg){: srcset="/img/blog/lightweight-social-share-buttons/social-icon-grid.jpg 800w, /img/blog/lightweight-social-share-buttons/social-icon-grid@2x.jpg 1600w"} -->
 
 ---
@@ -217,19 +222,15 @@ The previews that are automatically generated rely heavily on the [Open Graph](h
 
 Encode your query parameters on your Jekyll sites with the `cgi_escape` filter. The `uri_escape` filter is for entire URLs, so won't escape some characters (e.g. "?") and may break your buttons.
 
-{% highlight html %}
-{% raw %}
+{% highlight html %}{% raw %}
 <a class="share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}" target="_blank">Share on Facebook</a>
-{% endraw %}
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
 
 Jekyll includes are a great way to reuse SVG icons in your buttons and the rest of a site.
 
-{% highlight html %}
-{% raw %}
+{% highlight html %}{% raw %}
 <a class="share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}" target="_blank">{% include facebook-icon.html %} Share on Facebook</a>
-{% endraw %}
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
 
 Tracking your share buttons can help you discover how your visitors are interacting with the site and focus your resources more effectively. Track [custom events](https://developers.google.com/analytics/devguides/collection/analyticsjs/events) for clicks on your share buttons with Google Analytics using the following code:
 
