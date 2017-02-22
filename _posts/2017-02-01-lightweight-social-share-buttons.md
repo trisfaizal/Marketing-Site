@@ -19,7 +19,7 @@ Social networks also provide a share URL as an alternative to the embedded butto
 <div class="well">
 <a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" target="_blank">{% include social-icon.html icon="Facebook" %} Share on Facebook</a>
 
-<a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannonApp" target="_blank">{% include social-icon.html icon="Twitter" %} Tweet this</a>
+<a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannon" target="_blank">{% include social-icon.html icon="Twitter" %} Tweet this</a>
 
 <a class="share-btn google-plus" href="https://plus.google.com/share?url={{ url }}" target="_blank">{% include social-icon.html icon="Google Plus" %} Share on Google+</a>
 
