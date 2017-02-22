@@ -5,7 +5,7 @@ disqus_shortname: cloudcannon
 
 logo: http://cloudcannon.com/img/cloudcannon-logo.png
 twitter:
-  username: CloudCannonApp
+  username: CloudCannon
 
 facebook:
   publisher: https://www.facebook.com/CloudCannon
@@ -14,7 +14,7 @@ social:
   links:
     - https://www.facebook.com/CloudCannon
     - https://plus.google.com/+CloudCannon
-    - https://twitter.com/CloudCannonApp
+    - https://twitter.com/CloudCannon
     - https://www.youtube.com/c/CloudCannon
     - https://www.linkedin.com/company/cloud-cannon
     - https://github.com/CloudCannon
