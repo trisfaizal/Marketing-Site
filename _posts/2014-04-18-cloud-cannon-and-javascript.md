@@ -68,4 +68,4 @@ Accordions are another way of showing and hiding related content. They help decl
 
 ### That’s all today
 
-Thanks for reading. Here's [a demo of the slider](http://sliderdemo.cloudvent.net/). Note it's not pretty but would be easy to style. If you want me to go over any other kind of JavaScript UI modules or somethings unclear feel free to send me a message. To keep up to date on these posts make sure to [follow us on Twitter](https://twitter.com/cloudcannonapp).
+Thanks for reading. Here's [a demo of the slider](http://sliderdemo.cloudvent.net/). Note it's not pretty but would be easy to style. If you want me to go over any other kind of JavaScript UI modules or somethings unclear feel free to send me a message. To keep up to date on these posts make sure to [follow us on Twitter](https://twitter.com/CloudCannon).
