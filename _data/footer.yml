@@ -11,10 +11,12 @@
       link: /gallery/
     - name: Experts
       link: /experts/
-- title: Resources
-  links:
     - name: About
       link: /about/
+- title: Resources
+  links:
+    - name: Academy
+      link: https://learn.cloudcannon.com/
     - name: Freebies
       link: /freebies/
     - name: Case Studies
