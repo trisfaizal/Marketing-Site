@@ -29,13 +29,19 @@ header, .bright-section, .dark-section {
 	}
 }
 
-h3 small {
+h3 small, h4 small {
 	font-size: .5em;
 	position: relative;
 	top: 2px;
 	.fa-external-link:before {
 		font-size: .6em;
 	}
+}
+
+h4 .material-icons {
+	font-size: 1em;
+	position: relative;
+	top: 3px;
 }
 
 header .sub-text {
