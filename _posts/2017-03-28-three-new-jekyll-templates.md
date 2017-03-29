@@ -59,14 +59,13 @@ templates:
 It's great to see the different ways people are using the [Jekyll templates we launched late last year](/announcements/2016/12/05/free-jekyll-templates/). To continue this success, we've put together three new templates ready for your next site. These are licensed under MIT to feel free to use them on client/commercial projects.
 
 <link type="text/css" rel="stylesheet" href="/css/lightslider.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 ### The Templates
 
 {% for template in page.templates %}
 <h4>
 	<a href="{{ template.repository }}">{{ template.name }}</a>
-	<small><a href="{{ template.demo_url }}" target="_blank">live demo</a> <i class="fa fa-external-link" aria-hidden="true"></i></small>
+	<small><a class="external" href="{{ template.demo_url }}" target="_blank">live demo</a> <i class="material-icons">launch</i></small>
 </h4>
 
 {{ template.description | markdownify }}

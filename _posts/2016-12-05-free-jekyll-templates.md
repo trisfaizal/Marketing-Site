@@ -119,10 +119,7 @@ templates:
 Starting a new Jekyll site from scratch can be a pain. It's often easier to start with an existing site and modify for your use case. To help get you started on your next project we've created seven high quality Jekyll templates for common use cases. Even better they're all optimised for use with [CloudCannon](https://cloudcannon.com). The templates are licensed under MIT so you're free to use and modify them however you'd like.
 
 <link type="text/css" rel="stylesheet" href="/css/lightslider.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<style>
 
-</style>
 ### Usage
 
 To use the new templates in CloudCannon, create a new site and select the "Choose a Template" option.
@@ -142,7 +139,7 @@ Some of you may be wondering why we didn't use the new Jekyll theme functionalit
 {% for template in page.templates %}
 <h4>
 	<a href="{{ template.repository }}">{{ template.name }}</a>
-	<small><a href="{{ template.demo_url }}" target="_blank">live demo</a> <i class="fa fa-external-link" aria-hidden="true"></i></small>
+	<small><a href="{{ template.demo_url }}" target="_blank">live demo</a> <i class="material-icons">launch</i></small>
 </h4>
 
 {{ template.description | markdownify }}
