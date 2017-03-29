@@ -140,10 +140,10 @@ Some of you may be wondering why we didn't use the new Jekyll theme functionalit
 ### The Templates
 
 {% for template in page.templates %}
-<h3>
+<h4>
 	<a href="{{ template.repository }}">{{ template.name }}</a>
 	<small><a href="{{ template.demo_url }}" target="_blank">live demo</a> <i class="fa fa-external-link" aria-hidden="true"></i></small>
-</h3>
+</h4>
 
 {{ template.description | markdownify }}
 
