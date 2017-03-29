@@ -1,6 +1,6 @@
 ---
-title: 7 Free Jekyll Templates
-header: 7 Free Jekyll Templates
+title: Seven Free Jekyll Templates
+header: Seven Free Jekyll Templates
 category: Announcements
 post_image: /img/blog/7-free-jekyll-templates/frisco1.jpeg
 post_image_type: image/png
@@ -123,7 +123,7 @@ Starting a new Jekyll site from scratch can be a pain. It's often easier to star
 <style>
 
 </style>
-## Usage
+### Usage
 
 To use the new templates in CloudCannon, create a new site and select the "Choose a Template" option.
 
@@ -137,12 +137,12 @@ These templates also work without CloudCannon, just fork the template repository
 
 Some of you may be wondering why we didn't use the new Jekyll theme functionality for the templates. We may convert them to themes in the future, for now we want to encourage people to look through and modify the source code on their site.
 
-## The Templates
+### The Templates
 
 {% for template in page.templates %}
 <h3>
 	<a href="{{ template.repository }}">{{ template.name }}</a>
-	<small><a href="{{ template.demo_url }}" target="_blank">live demo <i class="fa fa-external-link" aria-hidden="true"></i></a></small>
+	<small><a href="{{ template.demo_url }}" target="_blank">live demo</a> <i class="fa fa-external-link" aria-hidden="true"></i></small>
 </h3>
 
 {{ template.description | markdownify }}

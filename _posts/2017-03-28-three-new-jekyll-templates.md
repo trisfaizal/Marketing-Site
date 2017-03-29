@@ -1,6 +1,6 @@
 ---
-title: 3 New Jekyll Templates
-header: 3 New Jekyll Templates
+title: Three New Jekyll Templates
+header: Three New Jekyll Templates
 category: Announcements
 post_image: /img/blog/3-new-jekyll-templates/base/1.jpeg
 post_image_type: image/png
@@ -13,7 +13,7 @@ templates:
     repository: https://github.com/CloudCannon/base-jekyll-template
     demo_url: https://orange-ape.cloudvent.net/
     description: |-
-      [Base](https://github.com/CloudCannon/base-jekyll-template) Knowledge base template for Jekyll.
+      Knowledge base template for Jekyll.
 
       * Categories to help organise content.
       * Fully integrated search allows your customers to find the content they're looking for.
@@ -28,7 +28,7 @@ templates:
     repository: https://github.com/CloudCannon/treat-jekyll-template
     demo_url: https://spring-bat.cloudvent.net/
     description: |-
-      [Treat](https://github.com/CloudCannon/treat-jekyll-template) Food/baking blog template for Jekyll.
+      Food/baking blog template for Jekyll.
 
       * Share your best recipes with the world.
       * Beautifully structured recipe and ingredient lists.
@@ -43,7 +43,7 @@ templates:
     repository: https://github.com/CloudCannon/fur-jekyll-template
     demo_url: https://turquoise-rook.cloudvent.net/
     description: |-
-      [Fur](https://github.com/CloudCannon/fur-jekyll-template/tree/master) start selling products online with this E-Commerce template for Jekyll.
+      E-Commerce template for Jekyll.
 
       * Accept purchases using Snipcart.
       * Add products and variations.
@@ -56,17 +56,17 @@ templates:
       - image: /img/blog/3-new-jekyll-templates/fur/5.jpeg
 ---
 
-It's great to see the different ways people are using the [Jekyll templates we launched late last year](/announcements/2016/12/05/free-jekyll-templates/). To continue this success we've put together three news templates ready for your next site. As always these are licensed under MIT to feel free to use them on client/commercial projects.
+It's great to see the different ways people are using the [Jekyll templates we launched late last year](/announcements/2016/12/05/free-jekyll-templates/). To continue this success, we've put together three new templates ready for your next site. These are licensed under MIT to feel free to use them on client/commercial projects.
 
 <link type="text/css" rel="stylesheet" href="/css/lightslider.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-## The Templates
+### The Templates
 
 {% for template in page.templates %}
 <h3>
 	<a href="{{ template.repository }}">{{ template.name }}</a>
-	<small><a href="{{ template.demo_url }}" target="_blank">live demo <i class="fa fa-external-link" aria-hidden="true"></i></a></small>
+	<small><a href="{{ template.demo_url }}" target="_blank">live demo</a> <i class="fa fa-external-link" aria-hidden="true"></i></small>
 </h3>
 
 {{ template.description | markdownify }}
@@ -78,9 +78,9 @@ It's great to see the different ways people are using the [Jekyll templates we l
 </ul>
 {% endfor %}
 
-## Usage
+### Usage
 
-To use the new templates in CloudCannon, create a new site and select the "Choose a Template" option.
+To use the new templates in CloudCannon, create a new site and select the **Choose a Template** option.
 
 ![Choose a jekyll template](/img/blog/7-free-jekyll-templates/choose.jpeg){:class="screenshot"}
 
@@ -90,7 +90,7 @@ From here you can browse through the templates and select your favourite.
 
 These templates also work without CloudCannon, just fork the template repository on GitHub or download a zip.
 
-### What's next?
+### What's Next?
 
 We have more Jekyll templates in the works. If there's a use case a Jekyll template would help you solve let us know in the comments below.
 
