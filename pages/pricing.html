@@ -9,89 +9,68 @@ permalink: /pricing/
 
 <section>
 	<div class="container">
-		<table class="desktop-pricing">
-			<tr>
-				<th></th>
-				{% for plan in site.data.plans %}
-					<th><span>{{ plan.name }}</span></th>
-				{% endfor %}
-			</tr>
-			<tr>
-				<th class="tooltip">
-					<em data-title="Users are members of your team. Clients edit at no additional cost.">
-						Monthly price per user
-						<img src="/img/icons/help-outline.svg" width="13" height="13" class="tooltip-indicator">
-					</em>
-				</th>
-				{% for plan in site.data.plans %}
-					<th>{{ plan.price }}</th>
-				{% endfor %}
-			</tr>
+		<div class="radio-selector">
+			<label><input type="radio" name="billing-period" value="monthly" checked><span>Monthly</span></label>
+			<label><input type="radio" name="billing-period" value="annually"><span>Annually</span></label>
+		</div>
 
-			{% for feature in site.data.plan_features %}
-				{% if feature.name %}
-					<tr>
-						{% if feature.tooltip %}
-							<th class="tooltip">
-								<em data-title="{{ feature.tooltip }}">
-									{{ feature.name }}
-									<img src="/img/icons/help-outline.svg" width="13" height="13" class="tooltip-indicator">
-								</em>
-							</th>
-						{% else %}
-							<th>{{ feature.name }}</th>
-						{% endif %}
-
-						{% for plan in site.data.plans %}
-							{% assign val = feature[plan.name] %}
-							{% if val == 'not-available' %}
-								<td class="not-available">
-									<img src="/img/close.svg" width="32" height="32" alt="Not Available">
-								</td>
-							{% elsif val == 'available' %}
-								<td class="available">
-									<img src="/img/tick.svg" width="32" height="32" alt="Available">
-								</td>
-							{% else %}
-								<td>{{ val }}</td>
-							{% endif %}
-						{% endfor %}
-					</tr>
-				{% else %}
-					<tr class="separator">
-						{% if feature.tooltip %}
-							<td class="tooltip">
-								<em data-title="{{ feature.tooltip }}">
-									<h3>{{ feature.category_name }}</h3>
-									<img src="/img/icons/help-outline.svg" width="13" height="13" class="tooltip-indicator">
-								</em>
-							</td>
-						{% else %}
-							<td><h3>{{ feature.category_name }}</h3></td>
-						{% endif %}
-
-						<td colspan="{{ site.data.plans | size }}"></td>
-					</tr>
-				{% endif %}
-			{% endfor %}
-		</table>
-
-		{% for plan in site.data.plans %}
-			<div class="mobile-pricing">
-				<h3>{{ plan.name }} <small>Price: {{ plan.price }}</small></h3>
-				<dl>
-					{% for feature in site.data.plan_features %}
-						{% assign val = feature[plan.name] %}
-						{% if val != 'not-available' and feature.name %}
-							<dt><img src="/img/tick.svg" width="18" height="18" alt="Available"> {{ feature.name }}</dt>
-							{% unless val == 'available' %}
-								<dd>{{ val }}</dd>
-							{% endunless %}
-						{% endif %}
-					{% endfor %}
-				</dl>
+		<div class="plans annual-pricing">
+			<div class="plan" data-id="free">
+				<h4>Free</h4>
+				<span class="price">Free</span>
+				<p class="description">For development use only</p>
+				<p>On the free plan, sharing and authentication are disabled, and viewers are shown a splash screen for your sites.</p>
+				<p><i class="material-icons">check</i> Live test sites</p>
+				<p><i class="material-icons">check</i> Syncing via GitHub, Bitbucket and Dropbox</p>
 			</div>
-		{% endfor %}
+
+			<div class="plan" data-id="basic">
+				<h4>Basic</h4>
+				<span class="price monthly-price">$25/month</span>
+				<span class="price annual-price">$250/year</span>
+				<p class="description">Perfect for freelancers</p>
+
+				<p><i class="material-icons">check</i> Unlimited production sites</p>
+				<p><i class="material-icons">check</i> Free editing for clients</p>
+			</div>
+
+			<div class="plan" data-id="professional">
+				<h4>Pro</h4>
+				<span class="price monthly-price">$75/month</span>
+				<span class="price annual-price">$750/year</span>
+				<p class="description">For teams of any size</p>
+
+				<p><i class="material-icons">check</i> <strong>5 Team members included</strong></p>
+				<p><i class="material-icons">check</i> Organisation support</p>
+				<p><i class="material-icons">check</i> Custom branding</p>
+			</div>
+		</div>
+		<p class="seat-information">Additional team members on paid plans cost $25 dollars each.</p>
+
+		<h3>Need More?</h3>
+		<div class="plans">
+			<div class="plan">
+				<h4>Enterprise</h4>
+				<p class="description">Join companies like Netflix and Twitch</p>
+
+				<p><i class="material-icons">check</i> Larger teams</p>
+				<p><i class="material-icons">check</i> Training and optimisations</p>
+				<p><i class="material-icons">check</i> Faster support</p>
+
+				<p><a class="btn" href="/contact/">Contact Support</a></p>
+			</div>
+
+			<div class="plan">
+				<h4>Non-profit</h4>
+				<p class="description">Working for a good cause, we want to help</p>
+
+				<p><i class="material-icons">check</i> 5 Team members included</p>
+				<p><i class="material-icons">check</i> Organisation support</p>
+				<p><i class="material-icons">check</i> Custom branding</p>
+
+				<p><a class="btn" href="/contact/">Contact Support</a></p>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -109,7 +88,7 @@ permalink: /pricing/
 
 		<h4>Can I try CloudCannon for free?</h4>
 		<p>
-			Yes, signing up for CloudCannon starts a free 30 day trial on the <strong>Enterprise</strong> plan.
+			Yes, signing up for CloudCannon starts a free 30 day trial on the <strong>Pro</strong> plan.
 			During this trial period you can enter a credit card and select a plan if you'd like to continue using CloudCannon.
 		</p>
 
@@ -130,10 +109,8 @@ permalink: /pricing/
 			CloudCannon adds a prorated charge (or refund when removing a user) to your next invoice.
 		</p>
 		<p>
-			For example, if your team is on the <strong>Agency</strong> plan, it costs $75 per user per month.
-			You add a new team member 10 days into your billing period and there are 20 remaining days in the month.
-			The per-day cost for each user is $75 &divide; 30, so we add on $50
-			($75 &divide; 30 days &times; 20 days) to your next invoice.
+			For example, it costs $25 per user per month. You add a new team member 10 days into your billing period and there are 20 remaining days in the month.
+			The per-day cost for each user is $25 &divide; 30, so we add on ~$16.60 ($25 &divide; 30 days &times; 20 days) to your next invoice.
 		</p>
 
 		<h4>Do you take feature requests?</h4>
