@@ -51,16 +51,6 @@ Within CloudCannon we have a wide range of users; Hobbyists, Freelancers, Agenci
 The old Agency and Enterprise plans have been merged into the new Pro plan. This plan is $75 dollars and includes 5 team members. The cost of additional users on all plans has been reduced to $25 each. The Pro plan has all of the features of Enterprise with the addition of Organisation support.  You can check out the new plans within your
 *account settings* or on [our pricing page](/pricing/). All existing Agency and Enterprise customers are automatically migrated to the Pro plan.
 
-<!--
-Ross/Mike -> What I wanted to cover:
-
-- Pricing discussions and thoughts
-- Agency/Enterprise -> Pro
-- Standard per user cost across the plans
-- New plan page to communicate the plans
-- How it affects existing users
-- Future plans to pump up the free plan -->
-
 ### Organisation Support
 
 Organisations adds a way of creating an account for your team. The account can be managed by different people with different levels of permissions. This gives you more control over the privileges and experience your team members have. Read more in the [organisation team documentation](#).
@@ -72,12 +62,6 @@ At the core of Organisations we wanted you to be able to create a custom experie
 ![CloudCannon sites list branded with the Netflix Logo](/img/blog/organisations/branded-sites-list.png){:class="screenshot"}
 
 Enterprise team management is often solved internally with a SAML Identity Provider (IdP). To make this easier we have added SAML support to Organisations. Connect CloudCannon to your IdP and we will automatically create accounts attached to your Organisation. Read more in the [organisation SAML documentation](#).
-
-<!-- Ross/Mike -> What I wanted to cover:
-- What it is
-- Team Management and Permissions
-- Branding
-- SAML -->
 
 To ease the transfer to Organisations we have added the ability to transfer sites between accounts. Transfers will ensure all data related to a site is transferred to the new owner with a request and accept process. Read more in the [transfers documentation](#).
 
