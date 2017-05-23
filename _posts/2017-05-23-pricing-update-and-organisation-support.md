@@ -10,11 +10,11 @@ author: george
 extra_google_fonts: "|Material+Icons"
 ---
 
-Today we release a big improvement to the way teams use CloudCannon. Firstly, we have updated our pricing to be more team friendly and a simpler structure to get you going faster. Secondly, we added Organisations which will allow greater team management, branding and data sharing.
+Today we are announcing a big improvement to the way teams use CloudCannon. Firstly, we have updated our pricing to be more team friendly and a simpler structure to get you going faster. Secondly, we added Organisations which will allow greater team management, branding and data sharing.
 
-### Pricing Update
+### Improved Team Pricing
 
-Within CloudCannon we have a wide range of users; Hobbyists, Freelancers, Agencies and Large Enterprise teams. We wanted a pricing structure that would enable all of the users, from individuals to large teams. Below are the three plans we have now:
+Within CloudCannon we have a wide range of users; Hobbyists, Freelancers, Agencies and Large Enterprise teams. We wanted a pricing structure that would enable all of the users, from individuals to large teams. Below are the plans available now:
 
 <div class="plans">
     <div class="plan">
@@ -48,7 +48,8 @@ Within CloudCannon we have a wide range of users; Hobbyists, Freelancers, Agenci
     </div>
 </div>
 
-The old Agency and Enterprise plans have been merged into the new Pro plan. This plan is $75 dollars and includes 5 team members. The cost of additional users on all plans has been reduced to $25 each. The Pro plan has all of the features of Enterprise with the addition of Organisation support. All existing Agency and Enterprise customers have bee automatically been migrated to the Pro plan. You can check out the new plans within the app or on our pricing page.
+The old Agency and Enterprise plans have been merged into the new Pro plan. This plan is $75 dollars and includes 5 team members. The cost of additional users on all plans has been reduced to $25 each. The Pro plan has all of the features of Enterprise with the addition of Organisation support.  You can check out the new plans within your
+*account settings* or on [our pricing page](/pricing/). All existing Agency and Enterprise customers are automatically migrated to the Pro plan.
 
 <!--
 Ross/Mike -> What I wanted to cover:
@@ -62,15 +63,15 @@ Ross/Mike -> What I wanted to cover:
 
 ### Organisation Support
 
-Team management has just become much easier on CloudCannon. Organisations adds a way of creating an account for your team. The account can me managed by different people and permissions can be defined. This gives you more control over the privileges and experience your team members have. To read more about team management, check out our organisation team documentation.
+Organisations adds a way of creating an account for your team. The account can be managed by different people with different levels of permissions. This gives you more control over the privileges and experience your team members have. Read more in the [organisation team documentation](#).
 
-![CloudCannon and Jekyll logos](/img/blog/7-free-jekyll-templates/templates.jpeg){:class="screenshot"}
+![CloudCannon team management interface](/img/blog/organisations/add-team-member.png){:class="screenshot"}
 
-At the core of Organisations we wanted you to be able to create a custom experience for your team. This starts with two assets; a badge and a logo. To read more about organisation branding, check out our organisation branding documentation.
+At the core of Organisations we wanted you to be able to create a custom experience for your team. This starts with two assets; a badge and a logo. Read more in the [organisation branding documentation](#).
 
-![CloudCannon and Jekyll logos](/img/blog/7-free-jekyll-templates/templates.jpeg){:class="screenshot"}
+![CloudCannon sites list branded with the Netflix Logo](/img/blog/organisations/branded-sites-list.png){:class="screenshot"}
 
-Enterprise team management can become difficult with so many people. To make this easier we have added SAML support to Organisations. Connect CloudCannon to your Identity Provider and we will automatically create accounts attached to your Organisation. These users will only be allowed to login via your system which gives full control over who has access.
+Enterprise team management is often solved internally with a SAML Identity Provider (IdP). To make this easier we have added SAML support to Organisations. Connect CloudCannon to your IdP and we will automatically create accounts attached to your Organisation. Read more in the [organisation SAML documentation](#).
 
 <!-- Ross/Mike -> What I wanted to cover:
 - What it is
@@ -78,6 +79,12 @@ Enterprise team management can become difficult with so many people. To make thi
 - Branding
 - SAML -->
 
+To ease the transfer to Organisations we have added the ability to transfer sites between accounts. Transfers will ensure all data related to a site is transferred to the new owner with a request and accept process. Read more in the [transfers documentation](#).
+
+---
+
 ### What's Next?
 
-This is our largest release in 2017 so far, we hope to keep up this momentum and bring in some highly requested features soon. In the next few months we plan to improve our SSL offering, provide better support for large sites, and generally improve existing features. As always our feature development is driven by user feedback and usage statistics. If you need anything or just want a chat be sure to reach out to support.
+This is our largest release in 2017 so far, we plan to keep up this momentum and bring in some highly requested features soon. In the next few months we plan to improve our SSL offering, provide better support for large sites, and generally improve existing features. As always our feature development is driven by user feedback and usage statistics. If you need anything or just want a chat be sure to reach out to support.
+
+**TLDR;** Better team pricing, Organisations support and transfer sites
