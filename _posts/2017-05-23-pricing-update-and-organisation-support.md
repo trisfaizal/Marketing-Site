@@ -10,51 +10,15 @@ author: george
 extra_google_fonts: "|Material+Icons"
 ---
 
-Today we are announcing a big improvement to the way teams use CloudCannon. Firstly, we have updated our pricing to be more team friendly and a simpler structure to get you going faster. Secondly, we added Organisations which allows greater team management, branding and data sharing.
+Today we are announcing a big improvement to the way teams use CloudCannon. Firstly, we have updated our pricing to be more team friendly and a simpler structure to get you going faster. Secondly, we have added Organisations which allows greater team management, branding and data sharing.
 
 ### Improved Team Pricing
 
-Within CloudCannon we have a wide range of users; hobbyists, freelancers, agencies and large enterprise teams. We wanted a pricing structure that would enable all of the users, from individuals to large teams. Below are the plans available now:
+Within CloudCannon we have a wide range of users; hobbyists, freelancers, agencies and large enterprise teams. We wanted a pricing structure that would enable individuals to large teams. Below are the plans available now:
 
-<div class="plans">
-    <div class="plan">
-        <h4>Free</h4>
-        <span class="price">Free</span>
-        <p class="description">Great for development</p>
-        <p><i class="material-icons">check</i> Live test sites</p>
-        <p><i class="material-icons">check</i> GitHub, Bitbucket and Dropbox syncing</p>
-        <p class="disabled-state"><i class="material-icons">lock_outline</i>Sharing disabled</p>
-        <p class="disabled-state"><i class="material-icons">lock_outline</i>Authentication disabled</p>
-    </div>
+{% include pricing-table.html %}
 
-    <div class="plan">
-        <h4>Basic</h4>
-        <span class="price monthly-price">$25/month</span>
-        <span class="price annual-price">$250/year</span>
-        <p class="description">Perfect for freelancers</p>
-
-        <p><i class="material-icons">check</i> Unlimited production sites</p>
-        <p><i class="material-icons">check</i> Custom domains and DNS</p>
-        <p><i class="material-icons">check</i> Per site sharing</p>
-        <p><i class="material-icons">check</i> Free editing for clients</p>
-    </div>
-
-    <div class="plan">
-        <h4>Pro</h4>
-        <span class="price monthly-price">$75/month</span>
-        <span class="price annual-price">$750/year</span>
-        <p class="description">For teams of any size</p>
-
-        <p><i class="material-icons">check</i> <strong>5 Team members included</strong></p>
-        <p><i class="material-icons">check</i> Organisation support</p>
-        <p><i class="material-icons">check</i> Custom branding</p>
-        <p><i class="material-icons">check</i> Team Sharing</p>
-        <p><i class="material-icons">check</i> SAML support</p>
-    </div>
-</div>
-
-The old Agency and Enterprise plans have been merged into the new Pro plan. This plan is $75 dollars and includes 5 team members. The cost of additional users on all plans has been reduced to $25 each. The Pro plan has Organisation support and all existing Enterprise features.  You can check out the new plans within your
-*account settings* or on [our pricing page](/pricing/). All existing Agency and Enterprise customers have been automatically migrated to the Pro plan.
+The old Agency and Enterprise plans have been merged into the new Pro plan. This plan is $75 and includes 5 team members. The cost of additional users on all plans has been reduced to $25 each. You can check out the new plans within your *Account Settings* or on [our pricing page](/pricing/). All existing Agency and Enterprise customers have been migrated to the Pro plan. The Pro plan has all existing Enterprise features and organisations.
 
 ### Organisation Support
 
@@ -62,7 +26,7 @@ Organisations adds a way of creating an account for your team. The account can b
 
 ![CloudCannon team management interface](/img/blog/organisations/add-team-member.png){:class="screenshot"}
 
-At the core of Organisations we wanted you to be able to create a custom experience for your team. This starts with two assets; a badge and a logo. Read more in the [organisation branding documentation](#).
+At the core of Organisations, we wanted you to be able to create a custom experience for your team. This starts with two assets; a badge and a sites list logo. Read more in the [organisation branding documentation](#).
 
 ![CloudCannon sites list branded with the Netflix Logo](/img/blog/organisations/branded-sites-list.png){:class="screenshot"}
 
@@ -76,4 +40,4 @@ To ease the transfer to Organisations we have added the ability to transfer site
 
 This is our largest release in 2017 so far, we plan to keep up this momentum and bring in some highly requested features soon. In the next few months we plan to improve our SSL offering, provide better support for large sites, and generally improve existing features. As always our feature development is driven by user feedback and usage statistics. If you need anything or just want a chat be sure to reach out to support.
 
-**TLDR;** Better team pricing, Organisations support and transfer sites.
+**TLDR;** Better team pricing, organisations and transfer sites.

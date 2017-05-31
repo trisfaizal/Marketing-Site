@@ -14,44 +14,9 @@ permalink: /pricing/
 			<label><input type="radio" name="billing-period" value="annually"><span>Annually</span></label>
 		</div>
 
-		<div class="main-plans plans">
-			<div class="plan" data-id="free">
-				<h4>Free</h4>
-				<span class="price">Free</span>
-				<p class="description">Great for development</p>
-				<p><i class="material-icons">check</i> Live test sites</p>
-				<p><i class="material-icons">check</i> GitHub, Bitbucket and Dropbox syncing</p>
-				<p class="disabled-state"><i class="material-icons">lock_outline</i>Sharing disabled</p>
-				<p class="disabled-state"><i class="material-icons">lock_outline</i>Authentication disabled</p>
-			</div>
-
-			<div class="plan" data-id="basic">
-				<h4>Basic</h4>
-				<span class="price monthly-price">$25/month</span>
-				<span class="price annual-price">$250/year</span>
-				<p class="description">Perfect for freelancers</p>
-
-				<p><i class="material-icons">check</i> Unlimited production sites</p>
-				<p><i class="material-icons">check</i> Custom domains and DNS</p>
-				<p><i class="material-icons">check</i> Per site sharing</p>
-				<p><i class="material-icons">check</i> Free editing for clients</p>
-			</div>
-
-			<div class="plan" data-id="professional">
-				<h4>Pro</h4>
-				<span class="price monthly-price">$75/month</span>
-				<span class="price annual-price">$750/year</span>
-				<p class="description">For teams of any size</p>
-
-				<p><i class="material-icons">check</i> <strong>5 Team members included</strong></p>
-				<p><i class="material-icons">check</i> Organisation support</p>
-				<p><i class="material-icons">check</i> Custom branding</p>
-				<p><i class="material-icons">check</i> Team Sharing</p>
-				<p><i class="material-icons">check</i> SAML support</p>
-			</div>
-		</div>
-		<p class="seat-information monthly-price">Additional team members on paid plans cost $25 dollars per month.</p>
-		<p class="seat-information annual-price" style="display: none;">Additional team members on paid plans cost $250 dollars per year.</p>
+		{% include pricing-table.html %}
+		<p class="seat-information monthly-price">Additional team members on paid plans cost $25 per month.</p>
+		<p class="seat-information annual-price" style="display: none;">Additional team members on paid plans cost $250 per year.</p>
 
 		<h3>Need More?</h3>
 		<div class="plans">
