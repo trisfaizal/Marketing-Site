@@ -143,6 +143,7 @@
 		font-size: 1em;
 		font-style: italic;
 		color: #444;
+		padding-left: 0;
 	}
 
 	.price {
@@ -170,15 +171,22 @@
 
 	p {
 		margin: 10px 0;
-		font-size: 0.9em;
+		font-size: 0.8em;
+		position: relative;
+		padding-left: 35px;
 	}
 
 	i {
-		float: left;
-		margin-right: 10px;
-		color: green;
+		position: absolute;
+		left:0;
+		top: 0;
+		color: #6E8E3D;
 		font-size: 26px;
 		padding-top: 2px;
+	}
+
+	.disabled-state i {
+		color: #aaa;
 	}
 
 	.btn {

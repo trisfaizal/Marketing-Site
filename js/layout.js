@@ -131,7 +131,10 @@ $(".theme-demo").click(function () {
 
 $(".radio-selector input").change(function () {
 	var value = $(".radio-selector input:checked").val();
-	$(".main-plans").toggleClass("annual-pricing", value === "annually")
+	$(".main-plans").toggleClass("annual-pricing", value === "annually");
+	$(".seat-information").hide();
+	$(".seat-information.annual-price").toggle(value === "annually");
+	$(".seat-information.monthly-price").toggle(value !== "annually");
 });
 
 (function () {
