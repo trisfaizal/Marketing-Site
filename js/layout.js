@@ -129,6 +129,14 @@ $(".theme-demo").click(function () {
 	window.eventsWrapper.record("Viewed demo of Jekyll Theme", {"theme": $(this).attr("title")});
 });
 
+$(".radio-selector input").change(function () {
+	var value = $(".radio-selector input:checked").val();
+	$(".main-plans").toggleClass("annual-pricing", value === "annually");
+	$(".seat-information").hide();
+	$(".seat-information.annual-price").toggle(value === "annually");
+	$(".seat-information.monthly-price").toggle(value !== "annually");
+});
+
 (function () {
 	var lastTime = 0,
 		vendors = ["webkit", "moz"];
