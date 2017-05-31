@@ -20,10 +20,11 @@ Within CloudCannon we have a wide range of users; hobbyists, freelancers, agenci
     <div class="plan">
         <h4>Free</h4>
         <span class="price">Free</span>
-        <p class="description">For development use only</p>
-        <p>On the free plan, sharing and authentication are disabled, and viewers are shown a splash screen for your sites.</p>
+        <p class="description">Great for development</p>
         <p><i class="material-icons">check</i> Live test sites</p>
-        <p><i class="material-icons">check</i> Syncing via GitHub, Bitbucket and Dropbox</p>
+        <p><i class="material-icons">check</i> GitHub, Bitbucket and Dropbox syncing</p>
+        <p class="disabled-state"><i class="material-icons">lock_outline</i>Sharing disabled</p>
+        <p class="disabled-state"><i class="material-icons">lock_outline</i>Authentication disabled</p>
     </div>
 
     <div class="plan">
@@ -33,6 +34,8 @@ Within CloudCannon we have a wide range of users; hobbyists, freelancers, agenci
         <p class="description">Perfect for freelancers</p>
 
         <p><i class="material-icons">check</i> Unlimited production sites</p>
+        <p><i class="material-icons">check</i> Custom domains and DNS</p>
+        <p><i class="material-icons">check</i> Per site sharing</p>
         <p><i class="material-icons">check</i> Free editing for clients</p>
     </div>
 
@@ -45,6 +48,8 @@ Within CloudCannon we have a wide range of users; hobbyists, freelancers, agenci
         <p><i class="material-icons">check</i> <strong>5 Team members included</strong></p>
         <p><i class="material-icons">check</i> Organisation support</p>
         <p><i class="material-icons">check</i> Custom branding</p>
+        <p><i class="material-icons">check</i> Team Sharing</p>
+        <p><i class="material-icons">check</i> SAML support</p>
     </div>
 </div>
 
