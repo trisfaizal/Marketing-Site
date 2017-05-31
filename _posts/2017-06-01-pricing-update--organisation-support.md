@@ -1,14 +1,15 @@
 ---
-title: Pricing Update & Organisation Support
-header: Pricing Update & Organisation Support
+title: 'Pricing Update & Organisation Support'
+header: 'Pricing Update & Organisation Support'
 category: Announcements
 post_image: /img/blog/3-new-jekyll-templates/base/1.jpeg
 post_image_type: image/png
 post_image_width: 1600
-post_image_height: 1000
+post_image_height: 583
 author: george
-extra_google_fonts: "|Material+Icons"
+extra_google_fonts: '|Material+Icons'
 ---
+
 
 Today we are announcing a big improvement to the way teams use CloudCannon. We have updated our pricing to be more team friendly and a simpler structure to get you going faster. Additionally, we have added Organisations which allows greater team management, branding and data sharing.
 
@@ -24,11 +25,11 @@ The old Agency and Enterprise plans have been merged into the new Pro plan. This
 
 Organisations adds a way of creating an account for your team. The account can be managed by different people with different permission levels. This gives you more control over the privileges and experience your team members have. Read more in the [organisation team documentation](https://docs.cloudcannon.com/organisations/team-management/).
 
-![CloudCannon team management interface](/img/blog/organisations/add-team-member.png){:class="screenshot"}
+![CloudCannon team management interface](/img/blog/organisations/add-team-member.png){: .screenshot}
 
 At the core of Organisations, we wanted you to be able to create a custom experience for your team. This starts with two assets; a badge and a sites list logo. Read more in the [organisation branding documentation](https://docs.cloudcannon.com/organisations/branding/).
 
-![CloudCannon sites list branded with the Netflix Logo](/img/blog/organisations/branded-sites-list.png){:class="screenshot"}
+![CloudCannon sites list branded with the Netflix Logo](/img/blog/organisations/branded-sites-list.png){: .screenshot}
 
 Enterprise team management is often solved internally with a SAML Identity Provider (IdP). To make this easier we have added SAML support to Organisations. Connect CloudCannon to your IdP and we will automatically create accounts attached to your Organisation. Read more in the [organisation SAML documentation](https://docs.cloudcannon.com/organisations/saml/).
 
