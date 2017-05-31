@@ -2,7 +2,7 @@
 title: 'Pricing Update & Organisation Support'
 header: 'Pricing Update & Organisation Support'
 category: Announcements
-post_image: /img/blog/3-new-jekyll-templates/base/1.jpeg
+post_image: /uploads/pricing.png
 post_image_type: image/png
 post_image_width: 1600
 post_image_height: 583
