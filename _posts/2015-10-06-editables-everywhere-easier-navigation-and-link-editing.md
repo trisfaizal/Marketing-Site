@@ -1,11 +1,10 @@
 ---
-title: Editables Everywhere, Easier Navigation and Link Editing
-header: Editables Everywhere, Easier Navigation and Link Editing
+title: Editables everywhere, easier navigation and link editing
 category: Features
 author: george
+image:
+image_featured: false
 ---
-
-
 
 In the past two weeks we’ve released major features to make CloudCannon easier to use. Thanks to all the customers who have provided valuable feedback which inspired these changes.
 

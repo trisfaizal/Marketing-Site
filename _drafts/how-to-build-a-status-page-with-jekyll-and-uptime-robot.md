@@ -3,16 +3,13 @@ layout: post
 title: How to build a status page with Jekyll and Uptimerobot
 header: How to build a Jekyll status page
 category: Features
-post_image: /img/blog/status-page/banner@2x.png
-post_image_type: image/png
-post_image_width: 1600
-post_image_height: 1000
+image: /images/blog/status-page/banner@2x.png
 author: george
 ---
 
 Public visibility of an apps performance is vital to the trust placed on that product. Today we announce our [new status page](http://status.cloudcannon.com/) and [twitter account](https://twitter.com/CCAppStatus) focused on greater visibility into our performance and uptime. Our status page was built using Jekyll and [Uptimerobot](https://uptimerobot.com/). This allows us to host the site anywhere with minimal cost. Building this site in Jekyll gives the added benefit of being fully customisable with any HTML, CSS or JavaScript.
 
-[![The banner of the CloudCannon status page](/img/blog/status-page/banner.png){: .screenshot srcset="/img/blog/status-page/banner.png 800w, /img/blog/status-page/banner@2x.png 1600w"}](http://status.cloudcannon.com/)
+[![The banner of the CloudCannon status page](/images/blog/status-page/banner.png){: .screenshot srcset="/images/blog/status-page/banner.png 800w, /images/blog/status-page/banner@2x.png 1600w"}](http://status.cloudcannon.com/)
 
 This article will break down how each section was created and their purpose. An unbranded version of the status page is available on GitHub.
 
@@ -65,7 +62,7 @@ Additionally, we want the title to change if any component state is not set to `
 
 This completes the components section where we can easily change the state of all the different parts.
 
-![Displaying the components](/img/blog/status-page/components.png){: .screenshot srcset="/img/blog/status-page/components.png 800w, /img/blog/status-page/components@2x.png 1600w"}
+![Displaying the components](/images/blog/status-page/components.png){: .screenshot srcset="/images/blog/status-page/components.png 800w, /images/blog/status-page/components@2x.png 1600w"}
 
 ### Incidents
 
@@ -154,7 +151,7 @@ Next we need to output an element for each day in the past 10 days, if there are
 
 Adding/updating a post in Git or on CloudCannon will add it to our status page. Alternatively, recent incidents could be implemented using a Jekyll plugin and a daily compile.
 
-![Displaying the incidents](/img/blog/status-page/incidents.png){: .screenshot srcset="/img/blog/status-page/incidents.png 800w, /img/blog/status-page/incidents@2x.png 1600w"}
+![Displaying the incidents](/images/blog/status-page/incidents.png){: .screenshot srcset="/images/blog/status-page/incidents.png 800w, /images/blog/status-page/incidents@2x.png 1600w"}
 
 ### Metrics Graphs with Uptimerobot
 
@@ -371,7 +368,7 @@ getData(monitor, function (err, data) {
 
 This creates a graph for our response time data over the last 12 hours. Now we have a complete status page with metrics managed with a Jekyll collection.
 
-![Displaying the metrics](/img/blog/status-page/metrics.png){: .screenshot srcset="/img/blog/status-page/metrics.png 800w, /img/blog/status-page/metrics@2x.png 1600w"}
+![Displaying the metrics](/images/blog/status-page/metrics.png){: .screenshot srcset="/images/blog/status-page/metrics.png 800w, /images/blog/status-page/metrics@2x.png 1600w"}
 
 ---
 

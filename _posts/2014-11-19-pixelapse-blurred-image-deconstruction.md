@@ -1,8 +1,9 @@
 ---
 title: How Pixelapse image blurring works
-header: Pixelapse blurred Image deconstruction
 category: Deconstructions
 author: george
+image:
+image_featured: false
 permalink: /deconstructions/2014/11/19/pixelapse-blurred-image-deconstruction.html
 ---
 
@@ -133,13 +134,13 @@ Note: I used unprefixed CSS in the code examples to keep it clean. You can use <
 
     .the-blurred-image,
     .the-nice-crisp-image {
-        background: url("/img/blog/deconstructions/blurry-golden-gate.jpg") no-repeat center;
+        background: url("/images/blog/deconstructions/blurry-golden-gate.jpg") no-repeat center;
         -webkit-background-size: cover;
         background-size: cover;
     }
 
     .the-nice-crisp-image {
-        background-image: url("/img/blog/deconstructions/crisp-golden-gate.jpg");
+        background-image: url("/images/blog/deconstructions/crisp-golden-gate.jpg");
     }
 
     .pixelapse-image .the-blurred-image,

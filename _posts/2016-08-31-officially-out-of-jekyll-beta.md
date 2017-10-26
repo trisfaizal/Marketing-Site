@@ -1,22 +1,19 @@
 ---
 title: Officially Out of Jekyll Beta
-header: Officially Out of Jekyll Beta
 category: Announcements
-post_image: /img/blog/officially-out-of-jekyll-beta/logos@2x.png
-post_image_type: image/png
-post_image_width: 1600
-post_image_height: 1000
 author: ross
-extra_google_fonts: "|Material+Icons"
+image: /images/blog/officially-out-of-jekyll-beta/logos@2x.png
+image_featured: true
+icons: true
 ---
 
 Today marks a huge milestone for CloudCannon. We've finished the Jekyll beta, making Jekyll and plugins available to all users on every plan. The latest release also includes some requested features and more Jekyll configuration.
 
-![CloudCannon and Jekyll logos](/img/blog/officially-out-of-jekyll-beta/logos.png){: srcset="/img/blog/officially-out-of-jekyll-beta/logos.png 800w, /img/blog/officially-out-of-jekyll-beta/logos@2x.png 1600w"}
+![CloudCannon and Jekyll logos](/images/blog/officially-out-of-jekyll-beta/logos.png){: srcset="/images/blog/officially-out-of-jekyll-beta/logos.png 800w, /images/blog/officially-out-of-jekyll-beta/logos@2x.png 1600w"}
 
 ***
 
-#### Plugins
+### Plugins
 
 Every new site created on CloudCannon from today is automatically built with Jekyll and supports custom plugins. To prevent breaking changes, existing sites need to create a `_config.yml` for CloudCannon to build with Jekyll. New and existing static sites that do not use Jekyll are still supported in full.
 
@@ -25,7 +22,7 @@ Every new site created on CloudCannon from today is automatically built with Jek
 
 ***
 
-#### Versions
+### Versions
 
 We've added support for all the latest versions of Jekyll, and have consolidated the way versions are set. The version is now set through a `Gemfile`. The default version for new Jekyll sites is **3.2.1**. You can always check what version of Jekyll is active on the *Status* section.
 
@@ -34,7 +31,7 @@ We've added support for all the latest versions of Jekyll, and have consolidated
 
 ***
 
-#### Configuration
+### Configuration
 
 Jekyll has a number of command line options for builds. Setting these in the new *Site Settings* / *Build* section gives you more control and helps reproduce your local environment. The existing CloudCannon Optimisations and Jekyll Environment options have been moved to this section.
 
@@ -43,11 +40,11 @@ The most notable options are `baseurl`, `source`, and Jekyll's other custom dire
 <i class="material-icons">settings</i> [Full documentation for build configuration](https://docs.cloudcannon.com/building/configuration/#image-elements)
 {: .list-item-with-icon}
 
-![Site Settings Build Interface](/img/blog/officially-out-of-jekyll-beta/configuration.png){: .screenshot srcset="/img/blog/officially-out-of-jekyll-beta/configuration.png 800w, /img/blog/officially-out-of-jekyll-beta/configuration@2x.png 1600w"}
+![Site Settings Build Interface](/images/blog/officially-out-of-jekyll-beta/configuration.png){: .screenshot srcset="/images/blog/officially-out-of-jekyll-beta/configuration.png 800w, /images/blog/officially-out-of-jekyll-beta/configuration@2x.png 1600w"}
 
 ***
 
-#### Additional Features
+### Additional Features
 
 To complement Jekyll's custom directories, we've created `uploads_dir` to change the location that images uploaded in the editor are stored. By default it's set to **uploads**. For consistency with Jekyll, the path is relative to the Jekyll `source` if set.
 
@@ -59,7 +56,7 @@ For those of you battling targeted spam email, we've added Google reCAPTCHA supp
 <i class="material-icons">email</i> [Full documentation for contact forms](https://docs.cloudcannon.com/hosting/contact-forms/)
 {: .list-item-with-icon}
 
-![reCAPTCHA Example](/img/blog/officially-out-of-jekyll-beta/captcha.gif)
+![reCAPTCHA Example](/images/blog/officially-out-of-jekyll-beta/captcha.gif)
 
 ***
 

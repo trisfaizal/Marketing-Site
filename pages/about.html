@@ -1,32 +1,57 @@
 ---
-layout: default
+layout: info-page
 title: About
-header: About
-header_subtext: The team and our mission
 permalink: /about/
-description: Discover the motivations behind creating CloudCannon. Meet the team developing and maintaining the Cloud CMS for Jekyll and static sites.
+icons: true
+static_manifesto:
+  - title: Simplicity
+    icon: child_care
+    content_markdown: Static sites are just HTML, CSS and JavaScript files. This means they're faster to build, require less technical knowledge, need less upkeep and are future proofed.
+  - title: Scalability
+    icon: trending_up
+    content_markdown: A single webserver can handle [a lot](http://www.speedemy.com/apache-vs-nginx-2015/) of traffic if it's only serving static content.
+  - title: Speed
+    content_markdown: With static there's no database queries or page to generate on-the-fly. All the web server needs to do is return a static file.
+    icon: flight_takeoff
+  - title: Security
+    content_markdown: A static site is as secure as the web server its running on which makes them significantly less vunerable to hackers.
+    icon: lock
+  - title: Stability
+    content_markdown: There's fewer points of failure with static sites so it's likely your uptime will be much higher.
+    icon: all_inclusive
+  - title: Source controlled
+    content_markdown: The entire site and content can live in a source control system such as Git. This gives you many advantages such as backups, approval processes and collaboration tools.
+    icon: star
 ---
-<section>
-	<div class="container text-container">
-		<p>
-			We believe building websites should be simple for developers.
-			You shouldn't have to read pages of documentation just to build a simple website.
-			You shouldn't have to worry if installing a plugin is going to make your site vulnerable or unscalable.
-			You certainly shouldn't be hesitant to make an update because it might break something on the live website.
-		</p>
 
-		<p>We love static websites because they're:</p>
-		<ul>
-			<li>Fast to build</li>
-			<li>Simple</li>
-			<li>Scalable</li>
-			<li>Secure</li>
-			<li>Source control backed</li>
-			<li>Powerful - with <a target="_blank" href="http://jekyllrb.com">static site generators</a> and <a target="_blank" href="http://cloudcannon.com/tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html">third party plugins</a>, there's not a lot you can't do</li>
-		</ul>
+<div class="about">
+	<h1>CloudCannon is a new kind of CMS for the static site generator, Jekyll.</h1>
 
-		<p>Our mission is to bring static websites to the mainstream. CloudCannon unites developers and non-developers by providing the best of both worlds. Developers build static websites to gain all the advantages listed above. Non-developers can make updates quickly and easily without any coding.</p>
-		<p><a href="/contact/" class="btn">Contact Us</a></p>
-	</div>
-</section>
+	<h2>What drives us</h2>
+	<p>Our mission is to bring all the advantages of static technology to developers while giving editors intuitive interfaces and workflows to update content. We believe most informational websites should be static. The reason they’re not is non-technical editors need to update content.</p>
 
+	<h2>Why static?</h2>
+	<ul class="cards feature-content">
+		{% for item in page.static_manifesto %}
+			<li class="card">
+				<h3><i class="material-icons">{{ item.icon }}</i> {{ item.title }}</h3>
+				{{ item.content_markdown | markdownify }}
+			</li>
+		{% endfor %}
+	</ul>
+
+	<h2>Our team</h2>
+	<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
+
+	<ul class="mugs">
+		{% for person_obj in site.data.authors %}
+			{% assign person = person_obj[1] %}
+			{% if person.position %}
+				<li>
+					<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
+					<p>{{ person.name }}</p>
+				</li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</div>

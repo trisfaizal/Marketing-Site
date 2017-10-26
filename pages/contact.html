@@ -1,37 +1,35 @@
 ---
-layout: default
+layout: page
 title: Contact
-description: Ask a question or send a message to the team at CloudCannon, the Cloud CMS for Jekyll and static sites.
-header: Contact
-header_subtext: Ask a question or send us a message
+icons: true
 permalink: /contact/
 ---
 
-<section>
-	<div class="container">
-		<iframe height="300" frameborder="0" style="border:0; background: #eee; display: block; width: 100%;" src="https://www.google.com/maps/embed/v1/place?key={{ site[jekyll.environment].google_maps_embed_api_key }}&q={{ site.company.address | remove: ',' | replace: ' ','+' | uri_escape }}"></iframe>
+<div class="contact">
+	<div class="wrapper">
+		<div class="contact-content">
+			<h2>Let's talk</h2>
+			<p>Have questions about CloudCannon Jekyll or anything else? Send us a message and we'll get back to you.</p>
+			<p><a href="mailto:support@cloudcannon.com">support@cloudcannon.com</a></p>
+		</div>
+		<form action="/contact-success/" method="post" class="contact-form">
+			<input type="hidden" name="_to" value="support@cloudcannon.com">
 
-        <form action="/contact-success/" method="post" class="contact-form">
-			<input type="hidden" name="cc_emails[]" value="support@cloudcannon.com">
+			<div class="text-field">
+				<label class="form-icon">
+					<i class="material-icons">person</i>
+					<input type="text" name="name" id="name" placeholder="Name">
+				</label>
 
-			<label for="name">Full Name</label>
-			<input type="text" name="name" id="name" placeholder="Enter your name...">
+				<label class="form-icon">
+					<i class="material-icons">email</i>
+					<input type="email" name="email" id="email" placeholder="Email Address" required>
+				</label>
+			</div>
 
-			<label for="email">Email Address</label>
-			<input type="email" name="email" id="email" placeholder="Enter your email..." required>
-
-			<label for="message">Message</label>
-			<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
+			<textarea name="message" id="message" placeholder="Your Message"></textarea>
 
 			<input type="submit" value="Send Message">
 		</form>
-
-		<div class="contact-details">
-			<h4>Address</h4>
-			<p><address>{{ site.company.address | replace: ', ',',<br>' }}</address></p>
-
-			<h4>Email</h4>
-			<p><a href="mailto:support@cloudcannon.com">support@cloudcannon.com</a></p>
-		</div>
 	</div>
-</section>
+</div>

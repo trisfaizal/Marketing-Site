@@ -1,12 +1,11 @@
 ---
 title: Using CloudCannon with JavaScript
-header: Using CloudCannon with JavaScript
 category: Tutorials
 author: george
+image: /images/blog/slider.png
+image_featured: true
 permalink: /tutorials/2014/04/18/cloud-cannon-and-javascript.html
 ---
-
-![A fake slideshow image](/img/blog/slider.png)
 
 A common question that comes up is “How can I use JavaScript with CloudCannon?”. As a heavy JavaScript user, I would ask the same and that’s why we build CloudCannon from the ground up to handle a wide range of sites.
 
@@ -68,4 +67,4 @@ Accordions are another way of showing and hiding related content. They help decl
 
 ### That’s all today
 
-Thanks for reading. Here's [a demo of the slider](http://sliderdemo.cloudvent.net/). Note it's not pretty but would be easy to style. If you want me to go over any other kind of JavaScript UI modules or somethings unclear feel free to send me a message. To keep up to date on these posts make sure to [follow us on Twitter](https://twitter.com/CloudCannon).
+Thanks for reading. Here's [a demo of the slider](http://sliderdemo.cloudvent.net/). Note it's not pretty but would be easy to style. If you want me to go over any other kind of JavaScript UI modules or somethings unclear feel free to send me a message. To keep up to date on these posts make sure to [follow us on Twitter](https://twitter.com/cloudcannonapp).

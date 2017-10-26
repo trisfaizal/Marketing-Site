@@ -1,8 +1,9 @@
 ---
 title: Extreme CSS Zen Garden
-header: Extreme CSS Zen Garden
 category: Tips
 author: mike
+image:
+image_featured: false
 permalink: /tips/2014/12/18/extreme-css-zen-garden.html
 ---
 
@@ -28,7 +29,7 @@ It was absolute madness, everything I thought I knew about web design suddenly s
 
 Here's my [end result](http://cyan-accordion.cloudvent.net/index.html):
 
-[<img src="/img/blog/css-garden/css-garden.png" alt="extreme css zen garden">](http://cyan-accordion.cloudvent.net/index.html)
+[<img src="/images/blog/css-garden/css-garden.png" alt="extreme css zen garden">](http://cyan-accordion.cloudvent.net/index.html)
 
 And the CSS to go with that.
 
@@ -88,7 +89,7 @@ body::before {
 
 I did a 90s version too:
 
-[<img src="/img/blog/css-garden/css-garden-2.png" alt="extreme css zen garden">](http://cyan-accordion.cloudvent.net/index2.html)
+[<img src="/images/blog/css-garden/css-garden-2.png" alt="extreme css zen garden">](http://cyan-accordion.cloudvent.net/index2.html)
 
 See the [actual website](http://cyan-accordion.cloudvent.net/index2.html) for the full epileptic goodness.
 

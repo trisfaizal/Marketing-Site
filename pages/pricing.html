@@ -1,92 +1,43 @@
 ---
-layout: default
+layout: short
+heading: Get started with CloudCannon
+subtitle: Try CloudCannon Pro free for 30 days, no credit card required
 title: Pricing
-header: Pricing
-header_subtext: Plans to suit freelancers, agencies and enterprise teams
-description: Overview and details for the pricing plans in CloudCannon, the Cloud CMS for Jekyll and static sites.
 permalink: /pricing/
 ---
-
-<section>
-	<div class="container">
-		<div class="radio-selector">
-			<label><input type="radio" name="billing-period" value="monthly" checked><span>Monthly</span></label>
-			<label><input type="radio" name="billing-period" value="annually"><span>Annually</span></label>
-		</div>
-
-		{% include pricing-table.html %}
-		<p class="seat-information monthly-price">Additional team members on paid plans cost $25 per month.</p>
-		<p class="seat-information annual-price" style="display: none;">Additional team members on paid plans cost $250 per year.</p>
-
-		<h3>Need More?</h3>
-		<div class="plans">
-			<div class="plan">
-				<h4>Enterprise</h4>
-				<p class="description">Join companies like Netflix</p>
-
-				<p><i class="material-icons">check</i> Larger teams</p>
-				<p><i class="material-icons">check</i> Training and optimisations</p>
-				<p><i class="material-icons">check</i> Faster support</p>
-
-				<p><a class="btn" href="/contact/">Contact Support</a></p>
-			</div>
-		</div>
+<div class="period">
+	<div class="toggle-buttons">
+		<a class="button light no-border dark-hover selected monthly" href="#">Monthly</a><a class="button light no-border dark-hover annually" href="#">Annually</a>
 	</div>
+</div>
+
+<ul class="plans">
+	{% for plan in site.data.plans %}
+		{% include components/pricing/plan.html plan=plan %}
+	{% endfor %}
+</ul>
+
+<p class="price addition-plan">Additional team members on paid plans are <span class="monthly">$25 per month</span><span class="annually">$250 per year</span>.</p>
+
+<section class="faq">
+	<h2 id="faq">FAQ</h2>
+
+	<ul class="cards">
+		{% include components/pricing/faq.html q="Can I try CloudCannon for free?" a="Yes, signing up for CloudCannon starts a free 30 day trial on the <strong>Pro</strong> plan. During this trial period you can enter a credit card and select a plan if you'd like to continue using CloudCannon." %}
+
+		{% include components/pricing/faq.html q="What happens after the 30 day trial?" a="If you haven't added a credit card and selected a plan, you'll be downgraded to our free plan. The free plan restricts access to your sites and removes all the shares you've made." %}
+
+		{% include components/pricing/faq.html q="Can I switch plans?" a="Yes, change your plan any time in <em>Account Settings</em>." %}
+
+		{% include components/pricing/faq.html q="Do I pay for another user when sharing to a client?" a="No, sharing with <a href='https://docs.cloudcannon.com/sharing/client-sharing/' target='_blank'>Client Sharing</a> does not count towards your total users." %}
+
+		{% include components/pricing/faq.html q="How am I billed when adding new users?" a="CloudCannon adds a prorated charge (or refund when removing a user) to your next invoice. For example, if your team is on the <strong>Basic</strong> plan, it costs $25 per user per month. You add a new team member 10 days into your billing period and there are 20 remaining days in the month. The per-day cost for each user is $25 &divide; 30, so we add on $16.66 ($25 &divide; 30 days &times; 20 days) to your next invoice." %}
+
+		{% include components/pricing/faq.html q="Do you take feature requests?" a="Yes, we listen closely to our customers. <a href='mailto:support@cloudcannon.com'>Contact support</a> if you have requests or feedback. Many CloudCannon features are driven by your feedback." %}
+
+		{% include components/pricing/faq.html q="Where are CloudCannon sites hosted?" a="CloudCannon uses Amazon Web Services for all infrastructure. Sites are automatically optimised and served from our custom File Server. Optimisations include GZIP, serving assets from a CDN and minification. CloudCannon supports <a href='https://docs.cloudcannon.com/hosting/options/' target='_blank'>other hosting options</a>, including your own servers." %}
+
+		{% include components/pricing/faq.html q="How do I cancel my CloudCannon account?" a="Either downgrade to the free plan or delete your account. Find these options in your <em>Account Settings</em>." %}
+	</ul>
 </section>
-
-<section class="bright-section centered">
-	<div class="container">
-		<h2>Join <strong>thousands</strong> of developers building CloudCannon sites today</h2>
-		<p style="margin:0;"><a href="https://app.cloudcannon.com/users/sign_up" class="btn btn-primary btn-large btn-block btn-centered sign-up">Get Started Free</a>
-		<span class="btn-sub-text new-content">30 day free trial, no credit card required and free support</span></p>
-	</div>
-</section>
-
-<section>
-	<div class="container text-container">
-		<h2 id="faq">FAQ</h2>
-
-		<h4>Can I try CloudCannon for free?</h4>
-		<p>
-			Yes, signing up for CloudCannon starts a free 30 day trial on the <strong>Pro</strong> plan.
-			During this trial period you can enter a credit card and select a plan if you'd like to continue using CloudCannon.
-		</p>
-
-		<h4>What happens after the 30 day trial?</h4>
-		<p>
-			If you haven't added a credit card and selected a plan, you'll be downgraded to our free plan.
-			The free plan restricts access to your sites and removes all the shares you've made.
-		</p>
-
-		<h4>Can I switch plans?</h4>
-		<p>Yes, change your plan any time in <em>Account Settings</em>.</p>
-
-		<h4>Do I pay for another user when sharing to a client?</h4>
-		<p>No, sharing with <a href="https://docs.cloudcannon.com/sharing/client-sharing/" target="_blank">Client Sharing</a> does not count towards your total users.</p>
-
-		<h4>How am I billed when adding new users?</h4>
-		<p>
-			CloudCannon adds a prorated charge (or refund when removing a user) to your next invoice.
-		</p>
-		<p>
-			For example, it costs $25 per user per month. You add a new team member 10 days into your billing period and there are 20 remaining days in the month.
-			The per-day cost for each user is $25 &divide; 30, so we add on ~$16.60 ($25 &divide; 30 days &times; 20 days) to your next invoice.
-		</p>
-
-		<h4>Do you take feature requests?</h4>
-		<p>Yes, we listen closely to our customers. <a href="mailto:support@cloudcannon.com">Contact support</a> if you have requests or feedback. Many CloudCannon features are driven by your feedback.</p>
-
-		<h4>Where are CloudCannon sites hosted?</h4>
-		<p>
-			CloudCannon uses Amazon Web Services for all infrastructure.
-			Sites are automatically optimised and served from our custom <em>File Server</em>.
-			Optimisations include GZIP, serving assets from a CDN and minification.
-		</p>
-		<p>
-			CloudCannon supports <a href="https://docs.cloudcannon.com/hosting/options/" target="_blank">other hosting options</a>, including your own servers.
-		</p>
-
-		<h4>How do I cancel my CloudCannon account?</h4>
-		<p>Either downgrade to the free plan or delete your account. Find these options in your <em>Account Settings</em>.</p>
-	</div>
-</section>
+<script src="/js/pricing.js"></script>

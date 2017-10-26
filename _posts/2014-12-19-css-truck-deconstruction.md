@@ -1,8 +1,9 @@
 ---
-title: How To Create an Animated Pickup in CSS and HTML
-header: Creating a CSS and HTML Animated Pickup
+title: How to create an animated pickup in CSS and HTML
 category: Deconstructions
 author: george
+image:
+image_featured: false
 permalink: /deconstructions/2014/12/19/css-truck-deconstruction.html
 ---
 
@@ -14,9 +15,9 @@ I am going to rebuild the car/pickup in HTML, SVG and CSS. I was going to build 
 <div class="truck-container">
 	<div class="truck">
 		<div class="body">
-			<img src="/img/blog/truck-under.svg" width="500" height="136">
+			<img src="/images/blog/truck-under.svg" width="500" height="136">
 			<div class="shine"></div>
-			<img src="/img/blog/truck-frame.svg" width="500" height="136" class="frame">
+			<img src="/images/blog/truck-frame.svg" width="500" height="136" class="frame">
 		</div>
 
 		<div class="speed-thingy"></div>
@@ -53,7 +54,7 @@ I started building the car using just HTML and CSS so theses are circles built u
 <div class="truck-container">
 	<div class="truck">
 		<div class="body" style="visibility: hidden">
-			<img src="/img/blog/truck-frame.svg" width="500" height="136" class="frame">
+			<img src="/images/blog/truck-frame.svg" width="500" height="136" class="frame">
 		</div>
 
 		<div class="wheel back"></div>
@@ -117,7 +118,7 @@ I started building the body with HTML elements and CSS but felt I was using the 
 <div class="truck-container">
 	<div class="truck">
 		<div class="body">
-			<img src="/img/blog/truck-under.svg" width="500" height="136" class="frame">
+			<img src="/images/blog/truck-under.svg" width="500" height="136" class="frame">
 		</div>
 	</div>
 </div>
@@ -125,7 +126,7 @@ I started building the body with HTML elements and CSS but felt I was using the 
 <div class="truck-container">
 	<div class="truck">
 		<div class="body">
-			<img src="/img/blog/truck-frame.svg" width="500" height="136" class="frame">
+			<img src="/images/blog/truck-frame.svg" width="500" height="136" class="frame">
 		</div>
 	</div>
 </div>
@@ -220,7 +221,7 @@ These are simple shrinking and growing divs.
 <div class="truck-container">
 	<div class="truck">
 		<div class="body" style="visibility:hidden">
-			<img src="/img/blog/truck-frame.svg" width="500" height="136" class="frame">
+			<img src="/images/blog/truck-frame.svg" width="500" height="136" class="frame">
 		</div>
 
 		<div class="speed-thingy"></div>
@@ -270,7 +271,7 @@ This makes the bobbing effect seem more realistic and shows a platform for the w
 <div class="truck-container">
 	<div class="truck">
 		<div class="body" style="visibility:hidden">
-			<img src="/img/blog/truck-frame.svg" width="500" height="136" class="frame">
+			<img src="/images/blog/truck-frame.svg" width="500" height="136" class="frame">
 		</div>
 
 		<div class="shadow"></div>
@@ -304,9 +305,9 @@ This makes the bobbing effect seem more realistic and shows a platform for the w
 <div class="truck-container">
 	<div class="truck">
 		<div class="body">
-			<img src="/img/blog/truck-under.svg" width="500" height="136">
+			<img src="/images/blog/truck-under.svg" width="500" height="136">
 			<div class="shine"></div>
-			<img src="/img/blog/truck-frame.svg" width="500" height="136" class="frame">
+			<img src="/images/blog/truck-frame.svg" width="500" height="136" class="frame">
 		</div>
 
 		<div class="speed-thingy"></div>

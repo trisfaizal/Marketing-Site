@@ -1,8 +1,9 @@
 ---
-title: How To Create a Browser Window With Just CSS and HTML
-header: Creating a CSS and HTML Browser Window
+title: How to create a browser window with just CSS and HTML
 category: Deconstructions
 author: george
+image:
+image_featured: false
 permalink: /deconstructions/2014/11/21/flat-css-browser-wrapper.html
 ---
 
@@ -13,7 +14,7 @@ This deconstruction is from our recent <a href="/">front page redesign</a>. I wa
 ### What is it?
 It is wrapper with three buttons in the top corner (close, minimize and maximize).
 
-<img class="screenshot" src="/img/blog/deconstructions/browser-image-with-arrows.jpg" width="604" height="400" alt="arrows pointing out the features and a nice background">
+<img class="screenshot" src="/images/blog/deconstructions/browser-image-with-arrows.jpg" width="604" height="400" alt="arrows pointing out the features and a nice background">
 
 {% highlight css %}
 <div class="fake-browser-ui">
@@ -32,12 +33,12 @@ Let's break it down.
 #### The Content
 This doesn't need any explanation. Put what ever you want inside this, I am using an image but you could use a video, canvas or a unicorn. It definitely looks a bit naked.
 
-<div class="blank-image-wrapper"><img src="/img/blog/deconstructions/browser-image.jpg" width="604" height="400" alt="A nice background with some kitchen wares"></div>
+<div class="blank-image-wrapper"><img src="/images/blog/deconstructions/browser-image.jpg" width="604" height="400" alt="A nice background with some kitchen wares"></div>
 
 #### Wrap that content with a div.
 This div will give us a background colour and some padding to create the frame. I like to put a 2px border on the bottom to give some depth. It also wraps the content in case it is mostly white. Adding a line-height of 0 will prevent any spacing around the image. Then to top all of this off, add a border radius to soften the edges.
 
-<img class="screenshot" style="background-image: none;" src="/img/blog/deconstructions/browser-image.jpg" width="604" height="400" alt="A nice background with some kitchen wares">
+<img class="screenshot" style="background-image: none;" src="/images/blog/deconstructions/browser-image.jpg" width="604" height="400" alt="A nice background with some kitchen wares">
 
 {% highlight css %}
 .fake-browser-ui {
@@ -54,7 +55,7 @@ This div will give us a background colour and some padding to create the frame. 
 #### Three buttons
 I used 4 elements for this part. One to wrap the buttons and position it correctly. The other 3 are the buttons which just float beside each other.
 
-<img class="screenshot" src="/img/blog/deconstructions/browser-image-with-arrows.jpg" width="604" height="400" alt="arrows pointing out the features and a nice background">
+<img class="screenshot" src="/images/blog/deconstructions/browser-image-with-arrows.jpg" width="604" height="400" alt="arrows pointing out the features and a nice background">
 
 {% highlight css %}
 .fake-browser-ui .frame {

@@ -1,14 +1,15 @@
 ---
-title: Who's Using Jekyll?
-header: Who's Using Jekyll?
+title: Who's using Jekyll?
 category: Jekyll
 author: mike
+image:
+image_featured: false
 permalink: /jekyll/2015/06/12/whos-using-jekyll.html
 ---
 
 [Jekyll’s](http://jekyllrb.com) roots are in providing a tool for hackers to host their blog. It’s not just hackers using Jekyll today though.
 
-![Jekyll Sticker](/img/blog/whos-using-jekyll/sticker.jpg)
+![Jekyll Sticker](/images/blog/whos-using-jekyll/sticker.jpg)
 
 Large organizations are adopting Jekyll because of its simplicity, scalability, security and the ability to store the entire website in version control.
 

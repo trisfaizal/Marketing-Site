@@ -1,12 +1,9 @@
 ---
 title: Deploy Jekyll sites anywhere using jekyll-hook
-header: Deploy Jekyll sites anywhere using jekyll-hook
 category: Tutorial
-post_image: /img/blog/jekyll-hook/github.png
-post_image_type: image/png
-post_image_width: 900
-post_image_height: 563
 author: mike
+image: /images/blog/jekyll-hook/github.png
+image_featured: false
 ---
 
 [In the last tutorial](http://cloudcannon.com/tutorial/2016/01/21/deploy-jekyll-sites-to-s3-using-travis-ci/), we used [Travis CI](https://travis-ci.org) to deploy a Jekyll site to Amazon S3. This tutorial covers using [jekyll-hook](https://github.com/developmentseed/jekyll-hook) to automatically deploy changes from GitHub/CloudCannon to your own server.
@@ -174,11 +171,11 @@ Now we need GitHub to send jekyll-hook a webhook when there's a commit to the re
 
 Open your repository on GitHub. Then go to Settings -> Webhooks & services.
 
-![GitHub webhooks](/img/blog/jekyll-hook/github.png){:.screenshot}
+![GitHub webhooks](/images/blog/jekyll-hook/github.png){:.screenshot}
 
 Click Add webhook. Set the Payload URL to point at your jekyll-hook server `http://example.org:8080/hooks/jekyll/:branch` where `:branch` is the branch you want to publish. The rest of the defaults are fine, press Add webhook.
 
-![GitHub webhook](/img/blog/jekyll-hook/github-webhook.png){:.screenshot}
+![GitHub webhook](/images/blog/jekyll-hook/github-webhook.png){:.screenshot}
 
 ### Deploying the site
 

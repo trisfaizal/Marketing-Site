@@ -1,8 +1,9 @@
 ---
 title: International Domain Names
-header: International Domain Names
 category: Features
 author: mike
+image:
+image_featured: false
 permalink: /features/2013/09/14/international-domains.html
 ---
 We've just pushed a whole heap of changes you're going to love.

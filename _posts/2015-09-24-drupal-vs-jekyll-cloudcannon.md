@@ -1,8 +1,9 @@
 ---
 title: Drupal vs Jekyll + CloudCannon
-header: Drupal vs Jekyll + CloudCannon
 category: Comparison
 author: mike
+image:
+image_featured: false
 ---
 There's a huge eco-system of plugins and add-ons available for any CMS. In this comparison we'll be using the content management systems straight out of the box to reduce the complexity and time to get the sites live.
 
@@ -241,11 +242,11 @@ Overall using SiteGround saved me a lot of time as I didn't have to set up an en
 
 I used [CloudCannon](http://cloudcannon.com) to deploy and host the Jekyll site. To do this I created a GitHub repository with my source files, then connected that repository to a new site in CloudCannon.
 
-![](/img/blog/drupal-jekyll/connect-github.png){:.screenshot}
+![](/images/blog/drupal-jekyll/connect-github.png){:.screenshot}
 
 The files sync to CloudCannon and are live on a generated testing domain.
 
-![](/img/blog/drupal-jekyll/file-browser.png){:.screenshot}
+![](/images/blog/drupal-jekyll/file-browser.png){:.screenshot}
 
 All the content is in the files so there is no database.
 
@@ -257,33 +258,33 @@ All the content is in the files so there is no database.
 
 To update content in Drupal you use the admin panel. You can see existing articles and pages.
 
-![](/img/blog/drupal-jekyll/content.png){:.screenshot}
+![](/images/blog/drupal-jekyll/content.png){:.screenshot}
 
 Update content using a text area.
 
-![](/img/blog/drupal-jekyll/update-content.png){:.screenshot}
+![](/images/blog/drupal-jekyll/update-content.png){:.screenshot}
 
 And you can update other metadata.
 
-![](/img/blog/drupal-jekyll/update-content-2.png){:.screenshot}
+![](/images/blog/drupal-jekyll/update-content-2.png){:.screenshot}
 
 ### Jekyll
 
 In CloudCannon, editing is inline. You can update content on the about page by clicking and entering new content.
 
-![](/img/blog/drupal-jekyll/cc-edit.png){:.screenshot}
+![](/images/blog/drupal-jekyll/cc-edit.png){:.screenshot}
 
 Going to the collections view displays all the blog posts.
 
-![](/img/blog/drupal-jekyll/cc-edit-blog-list.png){:.screenshot}
+![](/images/blog/drupal-jekyll/cc-edit-blog-list.png){:.screenshot}
 
 You write and update blog posts in a simple editor.
 
-![](/img/blog/drupal-jekyll/cc-edit-blog.png){:.screenshot}
+![](/images/blog/drupal-jekyll/cc-edit-blog.png){:.screenshot}
 
 Update front matter in the settings sidebar.
 
-![](/img/blog/drupal-jekyll/cc-edit-frontmatter.png){:.screenshot}
+![](/images/blog/drupal-jekyll/cc-edit-frontmatter.png){:.screenshot}
 
 All changes made on CloudCannon are committed back to the repository so I can work on the site locally in tandem.
 
@@ -295,7 +296,7 @@ All changes made on CloudCannon are committed back to the repository so I can wo
 
 I had the following cache settings turned on and loaded the page several times to ensure everything was cached properly.
 
-![](/img/blog/drupal-jekyll/drupal-speed.png){:.screenshot}
+![](/images/blog/drupal-jekyll/drupal-speed.png){:.screenshot}
 
 For a further speed increase, one of our readers suggested using the [Boost module](https://www.drupal.org/project/boost).
 
@@ -307,7 +308,7 @@ CloudCannon serves static files and all assets are minified, compressed and deli
 
 I used a [free tool from MaxCDN](http://tools.maxcdn.com/http) to compare the load times from different parts of the world.
 
-![](/img/blog/drupal-jekyll/speed.png)
+![](/images/blog/drupal-jekyll/speed.png)
 
 ---
 

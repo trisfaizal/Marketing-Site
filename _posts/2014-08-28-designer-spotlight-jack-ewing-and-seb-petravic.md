@@ -1,13 +1,11 @@
 ---
 title: Designer Spotlight - Jack Ewing and Seb Petravic
-header: Designer Spotlight - Jack Ewing and Seb Petravic
 category: Interview
 author: sam
+image: /images/blog/ds-jack-ewing-and-seb-petravic/Seb_Jack.jpg
+image_featured: true
 permalink: /interview/2014/08/28/designer-spotlight-jack-ewing-and-seb-petravic.html
 ---
-
-![Jack & Seb](/img/blog/ds-jack-ewing-and-seb-petravic/Seb_Jack.jpg "Jack Ewing & Seb Petravic of Glassjar")
-
 > #### " First off we want everything we do to look good. But I guess the main purpose of the page is to visually explain what Glassjar does in a simple and effective way. " ####
 
 Jack Ewing and Seb Petravic are the front-end-dev/design combo powering group finance startup [Glassjar](https://glassjar.co/ "Stay mates with your roommates!").
@@ -18,7 +16,7 @@ They're using CloudCannon to pump out landing pages that delight customers and a
 
 Continuing our look at designers doing cool work on CloudCannon, we caught up with Jack Ewing and Sebastian Petravic, the front end dev & designer combo from group finance startup Glassjar.
 
-![Jack & Seb](/img/blog/ds-jack-ewing-and-seb-petravic/Seb_Jack.jpg "Jack Ewing & Seb Petravic of Glassjar")
+![Jack & Seb](/images/blog/ds-jack-ewing-and-seb-petravic/Seb_Jack.jpg "Jack Ewing & Seb Petravic of Glassjar")
 *Seb Petravic (left) and Jack Ewing of Glassjar*
 
 ### Jack & Seb, last time we caught up [Lightning Lab](http://www.lightninglab.co.nz "Lightning Lab website") accelerator programme was wrapping up and you were both coming on board Glassjar fulltime. You were just starting to work on some landing page strategy. What’s the latest? ###
@@ -27,8 +25,8 @@ Continuing our look at designers doing cool work on CloudCannon, we caught up wi
 
 <a href="https://glassjar.co.nz/">
 	<video autoplay="autoplay" loop="loop">
-		<source src="/img/blog/ds-jack-ewing-and-seb-petravic/GlassjarLandingPage.mp4" type="video/mp4" />
-		<source src="/img/blog/ds-jack-ewing-and-seb-petravic/GlassjarLandingPage.ogv" type="video/ogg" />
+		<source src="/images/blog/ds-jack-ewing-and-seb-petravic/GlassjarLandingPage.mp4" type="video/mp4" />
+		<source src="/images/blog/ds-jack-ewing-and-seb-petravic/GlassjarLandingPage.ogv" type="video/ogg" />
 		Your browser does not support the video tag - head to [www.glassjar.co](www.glassjar.co) to see what we're talking about.
 	</video>
 </a>
@@ -52,7 +50,7 @@ And then want people to press the big blue 'sign up' button of course.
 
 ### Back to the landing page, who was responsible for the design? ###
 
-![Jack & Seb drawing up concepts](/img/blog/ds-jack-ewing-and-seb-petravic/Whiteboard.jpg "Jack & Seb working on Glassjar concepts")
+![Jack & Seb drawing up concepts](/images/blog/ds-jack-ewing-and-seb-petravic/Whiteboard.jpg "Jack & Seb working on Glassjar concepts")
 
 **JE:** 	In the team we collaborate a lot, but we each have our own tasks. Seb’s mostly doing the design and layout.  I’m responsible for implementing front end. Matt our CTO is flat out working on the backend of the App itself.
 
@@ -75,7 +73,7 @@ And then want people to press the big blue 'sign up' button of course.
 
 **SP:**		Again I don’t have a large body of work either but I feel my main style currently is; modern, minimalist, flat colours, large images, thin lines and keeping variety of colour minimal, but awesome. I’m trying where I can to have something a little bit unique.
 
-![Jack & Seb coding](/img/blog/ds-jack-ewing-and-seb-petravic/Over_shoulder_laptop.jpg "Jack & Seb collaborating on landing page code")
+![Jack & Seb coding](/images/blog/ds-jack-ewing-and-seb-petravic/Over_shoulder_laptop.jpg "Jack & Seb collaborating on landing page code")
 
 ### Where are you guys finding your influences? ###
 
@@ -100,7 +98,7 @@ And then want people to press the big blue 'sign up' button of course.
 
 ### Awesome. How did you both come to be on team Glassjar then? ###
 
-![Jack & Seb](/img/blog/ds-jack-ewing-and-seb-petravic/JACK_SEB_COMPUTER.jpg "Jack & Seb of team Glassjar")
+![Jack & Seb](/images/blog/ds-jack-ewing-and-seb-petravic/JACK_SEB_COMPUTER.jpg "Jack & Seb of team Glassjar")
 
 **JE:** 	Heard about the opportunity to intern with the team through school. Decided to give it a go since I didn’t have a lot else on at the time.
 
@@ -110,9 +108,9 @@ And then want people to press the big blue 'sign up' button of course.
 
 **JE:**		Currently based at [Biz Dojo Wellington](http://bizdojo.com/). I like it. There’s a bunch of other cool people working on wicked stuff. Can’t go past free coffee.
 
-![Bizdojo Wellington](/img/blog/ds-jack-ewing-and-seb-petravic/DOJO_Outside.jpg "Outside BizDojo Wellington, NZ")
+![Bizdojo Wellington](/images/blog/ds-jack-ewing-and-seb-petravic/DOJO_Outside.jpg "Outside BizDojo Wellington, NZ")
 
-![Bizdojo Wellington](/img/blog/ds-jack-ewing-and-seb-petravic/Workspace.jpg "Inside BizDojo Wellington, NZ")
+![Bizdojo Wellington](/images/blog/ds-jack-ewing-and-seb-petravic/Workspace.jpg "Inside BizDojo Wellington, NZ")
 
 ### What do your upcoming projects look like? ###
 

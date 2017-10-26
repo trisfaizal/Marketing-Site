@@ -1,13 +1,16 @@
 ---
 title: Why every freelancer should solo travel around Thailand
-header: Why every freelancer should solo travel around Thailand
 category: Other
 author: mike
+image: https://farm6.staticflickr.com/5486/11081116376_dee6ee0431_b.jpg
+image_featured: true
 permalink: /other/2014/11/25/why-every-freelancer-should-solo-travel-around-thailand.html
 ---
 
 One year ago I decided I needed a change. I’d spent the majority of my life in Dunedin, a small city in New Zealand. I’d flown internationally once and it was to Australia which I’m not sure even counts. Basically, I was living in a bubble.
-<a href="https://www.flickr.com/photos/mikeneumegen/11081116376" title="DSC_0100 by Mike Neumegen, on Flickr"><img src="https://farm6.staticflickr.com/5486/11081116376_dee6ee0431_b.jpg" width="1024" height="678" alt="DSC_0100"></a>
+
+
+![Thailand](https://farm6.staticflickr.com/5486/11081116376_dee6ee0431_b.jpg)
 
 I decided to go on an adventure. But where? I wanted to go somewhere that would push me but not be too overwhelming for a first time traveller. Eventually I decided Thailand fitted the bill perfectly. The culture and language barrier were completely foreign from anything I’d ever experienced but it’s also a country which is welcoming to tourists.
 
@@ -34,11 +37,11 @@ Earlier this year I had the opportunity to travel to San Francisco for work with
 ## People matter
 I love travelling solo because it gives me ultimate flexibility, the downside is it gets pretty lonely. At least once a week I would go to a different city and have to make an entirely new group of friends which gave me a lot of practise building relationships from scratch. It’s amazing how fast you can become close with others if you’re sharing everything and spending all day together.
 
-![Friends](/img/blog/thailand/friends.jpg)
+![Friends](/images/blog/thailand/friends.jpg)
 
 One of my favourite moments was interacting with a local boy who spoke no English. I had an English to Thai translator so I tried to start a conversation by typing in “hello”, “how old are you?”. He smiled but didn’t respond. Eventually I opened a “fail video” on YouTube which is basically just 10 minutes of people hurting themselves. His eyes lit up and for every single 10 second clip there was uncontrollable laughter.
 
-![Boy](/img/blog/thailand/boy.jpg)
+![Boy](/images/blog/thailand/boy.jpg)
 
 At the core of it, business is about people and relationships. Now I’m much better at understanding someone's motives and interests, while being more open and vulnerable.  
 

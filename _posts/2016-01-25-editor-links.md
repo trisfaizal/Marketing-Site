@@ -1,12 +1,9 @@
 ---
 title: Editor Links
-header: Editor Links
 category: Features
-post_image: /img/blog/editor-links/blog-posts@2x.png
-post_image_type: image/png
-post_image_width: 1600
-post_image_height: 1000
 author: ross
+image: /images/blog/editor-links/blog-posts@2x.png
+image_featured: false
 ---
 
 Editor Links are a new CloudCannon feature to add in-app navigation around the editing interface.
@@ -37,7 +34,7 @@ Jekyll generates the paths you need in a number of situations. Adding an edit bu
 This could generate *https://app.cloudcannon.com/editor#/site/123/**collections/_posts/2016-01-16-my-blog-post.md***,
 navigating to the editor for that blog post.
 
-![CloudCannon blog posts with edit buttons](/img/blog/editor-links/blog-posts.png){: .screenshot srcset="/img/blog/editor-links/blog-posts.png 800w, /img/blog/editor-links/blog-posts@2x.png 1600w"}
+![CloudCannon blog posts with edit buttons](/images/blog/editor-links/blog-posts.png){: .screenshot srcset="/images/blog/editor-links/blog-posts.png 800w, /images/blog/editor-links/blog-posts@2x.png 1600w"}
 
 Our [documentation](https://docs.cloudcannon.com/editing/editor-links/) includes instructions for **Editor Links on collection items** and **hiding them in the live site**.
 

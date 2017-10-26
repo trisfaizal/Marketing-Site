@@ -1,8 +1,9 @@
 ---
-title: Improved Pricing
-header: Improved Pricing
+title: Improved pricing
 category: Features
 author: mike
+image:
+image_featured: false
 permalink: /features/2015/08/28/user_pricing.html
 ---
 

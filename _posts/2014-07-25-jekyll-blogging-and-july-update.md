@@ -1,19 +1,18 @@
 ---
 title: Jekyll private beta and July Update
-header: Jekyll private beta and July Update
 category: Newsletter
 author: mike
+image: /images/blog/july14-update/cc_jekyll_header.png
+image_featured: true
 permalink: /newsletter/2014/07/25/jekyll-blogging-and-july-update.html
 ---
-
-![Jekyll](/img/blog/july14-update/cc_jekyll_header.png)
 
 ### Blogging is coming to CloudCannon! ###
 When we first started CloudCannon we thought that we’d only ever serve static sites. However the sheer number of requests for blog support lead us to reconsider.
 
 Lately we've been working on an integration with [Jekyll](http://jekyllrb.com), a static site generator which has become extremely popular.
 
-<img src="/img/blog/july14-update/jekyll.png" alt="jekyll update" style="width:80%"/>
+<img src="/images/blog/july14-update/jekyll.png" alt="jekyll update" style="width:80%"/>
 
 Our Jekyll feature set is currently in private beta right now. To get early access to blogging on CloudCannon head over to [cloudcannon.com/jekyll](/jekyll).  
 
@@ -30,11 +29,11 @@ Three big changes you might have noticed about how CloudCannon looks:
 * We’ve done a complete redesign of the designer browser interface.
 We’ve changed icons to be larger, more colourful (yes we speak UK english) and clearer.
 
-<img src="/img/blog/july14-update/site_icons.png" alt="Site Icons" style="width: 80%" />
+<img src="/images/blog/july14-update/site_icons.png" alt="Site Icons" style="width: 80%" />
 
 * Configuration from the Designer view is also now much much easier. Config has it’s own tab down the left hand menu. Better than a couple of buttons along the bottom we had previously.
 
-<img src="/img/blog/july14-update/config.png" alt="Configuration" style="width: 80%" />
+<img src="/images/blog/july14-update/config.png" alt="Configuration" style="width: 80%" />
 
 
 * The client editing experience has been made much smoother, particularly around site navigation.
@@ -58,7 +57,7 @@ This functionality is enabled by creating a new ‘website’ under an already u
 
 * When you or your client has made changes and your site is syncing, we’ve added some icons to indicate the sync state.
 
-<img src="/img/blog/july14-update/sync_icon.png" alt="Sync icons" style="width: 40%" />
+<img src="/images/blog/july14-update/sync_icon.png" alt="Sync icons" style="width: 40%" />
 
 
 
@@ -66,11 +65,11 @@ This functionality is enabled by creating a new ‘website’ under an already u
 
 * We’ve added some sexy alert messages that pop out of the bottom right of your screen to let you know what’s going on.
 
-<img src="/img/blog/july14-update/update_alert.png" alt="Alert Message" style="width: 60%" />
+<img src="/images/blog/july14-update/update_alert.png" alt="Alert Message" style="width: 60%" />
 
 
 ### Other stuff ###
 
 * We got a new favicon. Awwww yeah.
 
-![Sync icon](/img/blog/july14-update/fav_icon.png)
+![Sync icon](/images/blog/july14-update/fav_icon.png)

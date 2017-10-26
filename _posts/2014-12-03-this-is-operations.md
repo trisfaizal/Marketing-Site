@@ -1,8 +1,9 @@
 ---
 title: The ops team
-header: Hi I'm Tim and I am the operations team.
 category: Operations
 author: tim
+image:
+image_featured: false
 permalink: /operations/2014/12/03/this-is-operations.html
 ---
 
@@ -12,7 +13,7 @@ Hi I’m Tim, the guy keeping all the servers running. I quietly joined the team
 >hearing the muffled applause  
 >the ops team smiles  
 
-![Makerbot](/img/blog/operations/makerbot.jpg)
+![Makerbot](/images/blog/operations/makerbot.jpg)
 
 While this series won’t be quite as exciting, especially graphically, as the other blog posts, the underlying system can be elegant in its own way. I am going to dive in to our infrastructure in future posts but I thought I would start off with something a bit more abstract.
 

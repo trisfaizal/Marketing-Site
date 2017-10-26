@@ -1,8 +1,9 @@
 ---
-title: Running a Kickass Online Conference with 400 attendees for $50
-header: Running a Kickass Online Conference with 400 attendees for $50
+title: Running a kickass online conference with 400 attendees for $50
 category: JekyllConf
 author: sam
+image:
+image_featured: false
 permalink: /jekyllconf/2015/05/19/lessons-learned-running-a-kickass-online-conference-50-dollars.html
 ---
 
@@ -141,4 +142,4 @@ Oh and where did the $50 go?
 * Bluetack and printing for our MC background - $12
 * Celebratory burrito (With guacamole) - $9
 
-![MC @SamBonney with JekyllConf background](/img/blog/mc_background.png)
+![MC @SamBonney with JekyllConf background](/images/blog/mc_background.png)

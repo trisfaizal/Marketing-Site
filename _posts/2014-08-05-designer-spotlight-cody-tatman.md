@@ -1,12 +1,11 @@
 ---
 title: Designer Spotlight - Cody Tatman
-header: Designer Spotlight - Cody Tatman
 category: Interview
 author: sam
+image: /images/blog/ds-cody-tatman/cody-tatman.png
+image_featured: true
 permalink: /interview/2014/08/05/designer-spotlight-cody-tatman.html
 ---
-![Cody Tatman](/img/blog/ds-cody-tatman/cody-tatman.png "Cody Tatman in his studio")
-
 #### " She just took over a company that is *all paper*. She actually said to me “I don't know what I’m going to do Cody!” *All Paper!* "
 
 Cody Tatman, freelance web designer and digital marketer, on the ups and downs of his latest work, finding clients and living in a burnt out mill.
@@ -19,14 +18,14 @@ And we get to deal with them a lot.
 
 It seems like a shame to keep all that to ourselves so we're shining the spotlight on the best designers we’ve come across so far.
 
-![Cody Tatman](/img/blog/ds-cody-tatman/cody-tatman.png "Cody Tatman in his studio")
+![Cody Tatman](/images/blog/ds-cody-tatman/cody-tatman.png "Cody Tatman in his studio")
 *Cody Tatman*
 
 This week we caught up with Cody Tatman, freelance web designer and digital marketer based in Sacramento, California.
 
 The recently re-launched [CodyTatman.com](http://www.CodyTatman.com "Head to CodyTatman.com") is eye catching, combines simple elements to great effect and is making good use of the power of CloudCannon. Here’s what Cody had to say:
 
-[![CodyTatman.com](/img/blog/ds-cody-tatman/codytatmancom.png)](http://www.CodyTatman.com "Click to visit the live CodyTatman.com")
+[![CodyTatman.com](/images/blog/ds-cody-tatman/codytatmancom.png)](http://www.CodyTatman.com "Click to visit the live CodyTatman.com")
 *[CodyTatman.com](http://www.CodyTatman.com "Head to CodyTatman.com") - Cody Tatman*
 
 ### What was your goal with the look and feel of the site?
@@ -50,7 +49,7 @@ I guess I’d describe it as really clean, temporary, a little bit nostalgic. A 
 I’m drawn to large, bold fonts that leave little room for confusion. Also, nearly every photo I use around the web has a focus on architecture. Black and White tends to draw the eye.
 
 
-![Untitled street print](/img/blog/ds-cody-tatman/untitled-ct-print.png "Untitled by Cody Tatman")
+![Untitled street print](/images/blog/ds-cody-tatman/untitled-ct-print.png "Untitled by Cody Tatman")
 *Cody Tatman - Nikon D7000, Focal Length 50mm, Aperture f/7.1, Shutter Speed1/200s, ISO 200*
 
 ### Your website certainly showcases all that about you. I was browsing your photo website [CRTphoto.com](http://www.CRTphoto.com) yesterday and the architecture thing really comes through.
@@ -68,7 +67,7 @@ The brand name she’s working with is Logo Logos, and the first thing I thought
 I guess you’d say that it’s very nostalgic. Sticking with my style!
 
 
-![3d glasses](/img/blog/ds-cody-tatman/3d-glasses.jpg)
+![3d glasses](/images/blog/ds-cody-tatman/3d-glasses.jpg)
 *http://www.3d-image.net/images/3D-glasses-anaglyph.jpg*
 
 ### How long have you been a web designer for?
@@ -85,7 +84,7 @@ I actually used to work for a SharePoint company where all of my skills went out
 
 My next big project is my friends website. That’s going to be a pretty big deal for my career. She basically does merchandise - like event ‘swag’ I guess you’d say. She left a big company that did promotions and she finally decided to go out on her own. It’s going to be a learning experience for me as this will be the first eCommerce site I’ve worked on. With promotions, many of the products are aggregated from many sources and I’ll have to bring them all into one. So I’m really excited to be working on that.
 
-[![WRK Midtown](/img/blog/ds-cody-tatman/wrk-midtown.png)](http://www.WRKmidtown.co "Visit WRK Midtown")
+[![WRK Midtown](/images/blog/ds-cody-tatman/wrk-midtown.png)](http://www.WRKmidtown.co "Visit WRK Midtown")
 *[WRKmidtown.co](http://www.WRKmidtown.co) - Cody Tatman*
 
 I’m also working on another project called [WRK Midtown](http://www.WRKmidtown.com), promoting the creative industries in Sacramento. Lately I’ve been working on getting out there and reaching local companies to feature on the site. I actually have about 5 CEOs that are down so that’s cool. The real focus is to create a better network of professionals in my hometown. If everything goes according to plan, WRK can become a go-to site for “best places to work in Sacramento”.
@@ -100,20 +99,20 @@ I did get someone who came to me through LinkedIn recently and it was someone wh
 
 I’m talking to you from my house. This is it. I live in an old flour mill actually. It’s been completely renovated into living space because of a fire that happened in the 90’s.
 
-![Globe Flour Mills](/img/blog/ds-cody-tatman/globe-flour-mills.jpg)
+![Globe Flour Mills](/images/blog/ds-cody-tatman/globe-flour-mills.jpg)
 *Cody Tatman*
 
 All of the stairwells are inside the flour silos. It’s really cool.
 
-![Globe Flour Mills internal stairwell landing](/img/blog/ds-cody-tatman/globe-flour-mills-landing.jpg)
+![Globe Flour Mills internal stairwell landing](/images/blog/ds-cody-tatman/globe-flour-mills-landing.jpg)
 *Cody Tatman*
 
 You can actually see the old graffiti from when this was abandoned like in the hallways and on my walls. It’s awesome.
 
-![Globe Flour Mills entrance](/img/blog/ds-cody-tatman/globe-flour-mills-entrance.jpg)
+![Globe Flour Mills entrance](/images/blog/ds-cody-tatman/globe-flour-mills-entrance.jpg)
 *Cody Tatman*
 
-![Globe Flour Mills stairwell](/img/blog/ds-cody-tatman/globe-flour-mills-stairs.jpg)
+![Globe Flour Mills stairwell](/images/blog/ds-cody-tatman/globe-flour-mills-stairs.jpg)
 *Cody Tatman*
 
 When I was in high school, I used to break into buildings like this. And now I get to live and work in one. So I’m pretty happy!

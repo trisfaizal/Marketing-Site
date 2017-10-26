@@ -1,67 +1,28 @@
+# ----
+# Site
+
 title: CloudCannon
-description: The Cloud CMS for Jekyll. Build static or Jekyll websites, have your team and clients update inline with the CloudCannon GUI.
-url: http://cloudcannon.com
+description: CloudCannon has everything you need to build, host and update Jekyll websites.
+url: https://cloudcannon.com
 disqus_shortname: cloudcannon
-
-logo: http://cloudcannon.com/img/cloudcannon-logo.png
-twitter:
-  username: CloudCannon
-
-facebook:
-  publisher: https://www.facebook.com/CloudCannon
-
-social:
-  links:
-    - https://www.facebook.com/CloudCannon
-    - https://plus.google.com/+CloudCannon
-    - https://twitter.com/CloudCannon
-    - https://www.youtube.com/c/CloudCannon
-    - https://www.linkedin.com/company/cloud-cannon
-    - https://github.com/CloudCannon
+baseurl:
 
 google_site_verification: GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o
-company:
-  founded: August 2013
-  team_size: 3
-  address: 226 Musselburgh Rise, Dunedin, 9013, Otago, New Zealand
-  funding: $500K Seed
-
-paginate: 10
-paginate_path: "blog/:num/"
-blog_name: The CloudCannon Blog
-blog_description: Stay informed with the latest news and web development tutorials from CloudCannon, the Cloud CMS for Jekyll and static sites.
 permalink: pretty
 timezone: Pacific/Auckland
 collections:
-  gallery:
-    name: Gallery
+  case_studies:
     output: false
-  experts:
-    name: Experts
-    output: false
-  staff:
-    name: Team Members
-    _hide_content: true
-    output: false
-  authors:
-    name: Authors
-    output: false
-  customers:
-    name: Case Studies
-    output: true
     permalink: /case-studies/:name/
 defaults:
   - scope:
       path: ""
-      type: "customers"
     values:
-      layout: "customer"
-  -
-    scope:
+      header_class: "short"
+  - scope:
       path: ""
       type: posts
     values:
-      is_post: true
       layout: post
 
 development:
@@ -84,3 +45,26 @@ production:
   keen:
     project_id: "55cbfe8490e4bd146ec3bf27"
     write_key: "f08246251e08b254e6611777a889f6094b596e58b08beb716ab3664540dbdf153a9054bf8c8cd5062d8f5677eb15220c9dddc49997984dec05aa0ac4cdef3f5c460e90350d898d0efef8a0e26350c2b471b215341517247e88aa7b666173aff84751f8a7ee9c7a76dbd7ba617a043a02"
+
+# ----------
+# SEO plugin
+
+lang: en_NZ
+logo: /siteicon.png
+twitter:
+  username: CloudCannon
+facebook:
+  publisher: https://www.facebook.com/CloudCannon
+social:
+  name: CloudCannon
+  links:
+    - https://twitter.com/CloudCannon
+    - https://www.facebook.com/CloudCannon
+    - https://plus.google.com/+CloudCannon
+    - https://www.youtube.com/c/CloudCannon
+    - https://github.com/CloudCannon
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json

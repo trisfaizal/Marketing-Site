@@ -1,12 +1,9 @@
 ---
 title: Deploy Jekyll sites to S3 using Travis CI
-header: Deploy Jekyll sites to S3 using Travis CI
 category: Tutorial
-post_image: /img/blog/travis-ci/travis-ci.png
-post_image_type: image/png
-post_image_width: 900
-post_image_height: 563
 author: mike
+image: /images/blog/travis-ci/travis-ci.png
+image_featured: true
 ---
 
 CloudCannon consolidates editing and reliable hosting into a single package. Alternatively, you can use external hosting solutions and keep editing in CloudCannon. To demonstrate this workflow, we will use [Amazon S3](http://aws.amazon.com/s3/), a great platform to host static and Jekyll websites. The uptime is [99.9% guaranteed](http://aws.amazon.com/s3/sla/), it scales indefinitely and it's cheap.
@@ -17,19 +14,19 @@ This tutorial shows you how to automatically deploy changes from CloudCannon/Git
 
 To begin, [sign up for Travis CI](https://travis-ci.org/).
 
-![Travis CI Homepage](/img/blog/travis-ci/travis-ci.png){:.screenshot}
+![Travis CI Homepage](/images/blog/travis-ci/travis-ci.png){:.screenshot}
 
 Travis CI requires access to your GitHub account.
 
-![GitHub authentication](/img/blog/travis-ci/travis-auth.png){:.screenshot}
+![GitHub authentication](/images/blog/travis-ci/travis-auth.png){:.screenshot}
 
 Click the add button next to My Repositories.
 
-![Travis CI Dashboard](/img/blog/travis-ci/my-repo.png){:.screenshot}
+![Travis CI Dashboard](/images/blog/travis-ci/my-repo.png){:.screenshot}
 
 Enable the repository with your Jekyll site.
 
-![Repository list](/img/blog/travis-ci/enable-repo.png){:.screenshot}
+![Repository list](/images/blog/travis-ci/enable-repo.png){:.screenshot}
 
 ## Scripts
 
@@ -88,7 +85,7 @@ The final step is to set environment variables for the S3 Access Key and Secret 
 
 Go to settings and add your Amazon S3 credentials:
 
-![Travis CI environment variables](/img/blog/travis-ci/settings.png){:.screenshot}
+![Travis CI environment variables](/images/blog/travis-ci/settings.png){:.screenshot}
 
 Every time you make a change to the repository in GitHub (including edits from [CloudCannon](http://cloudcannon.com)), Travis CI rebuilds the site and deploys it to S3.
 

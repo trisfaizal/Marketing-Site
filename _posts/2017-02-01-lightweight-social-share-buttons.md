@@ -1,14 +1,10 @@
 ---
 title: Lightweight Social Share Buttons
-header: Lightweight Social Share Buttons
 category: Tutorials
-post_image: /img/blog/lightweight-social-share-buttons/buttons@2x.png
-post_image_type: image/png
-post_image_width: 1600
-post_image_height: 540
 author: ross
+image: /images/blog/lightweight-social-share-buttons/buttons@2x.png
+image_featured: true
 ---
-
 
 Social share buttons are commonplace on a range of websites. Many social networks provide embed code to build them quickly, however these solutions load a number of additional requests and resources. This increases the load time for your pages.
 
@@ -17,33 +13,33 @@ Social networks also provide a share URL as an alternative to the embedded butto
 {% assign url = page.url | prepend: site.url | cgi_escape %}
 
 <div class="well">
-<a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" target="_blank">{% include social-icon.html icon="Facebook" %} Share on Facebook</a>
+<a class="share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" target="_blank">{% include svgs/social-icon.html icon="facebook" %} Share on Facebook</a>
 
-<a class="share-btn twitter" href="https://twitter.com/intent/tweet?url={{ url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannon" target="_blank">{% include social-icon.html icon="Twitter" %} Tweet this</a>
+<a class="share-button twitter" href="https://twitter.com/intent/tweet?url={{ url }}&amp;text={{ page.title | markdownify | strip_html | cgi_escape }}%20on%20{{ site.title | cgi_escape }}&amp;via=CloudCannon" target="_blank">{% include svgs/social-icon.html icon="twitter" %} Tweet this</a>
 
-<a class="share-btn google-plus" href="https://plus.google.com/share?url={{ url }}" target="_blank">{% include social-icon.html icon="Google Plus" %} Share on Google+</a>
+<a class="share-button google-plus" href="https://plus.google.com/share?url={{ url }}" target="_blank">{% include svgs/social-icon.html icon="google-plus" %} Share on Google+</a>
 
-<a class="share-btn pinterest" href="https://pinterest.com/pin/create/button/?url={{ url }}&description={{ page.title | cgi_escape }}&media={{ page.post_image | prepend: site.url | cgi_escape }}" target="_blank">{% include social-icon.html icon="Pinterest" %} Save on Pinterest</a>
+<a class="share-button pinterest" href="https://pinterest.com/pin/create/button/?url={{ url }}&description={{ page.title | cgi_escape }}&media={{ page.image | prepend: site.url | cgi_escape }}" target="_blank">{% include svgs/social-icon.html icon="pinterest" %} Save on Pinterest</a>
 
-<a class="share-btn linkedin" href="https://www.linkedin.com/shareArticle?url={{ url }}&title={{ page.title | cgi_escape }}&source=CloudCannon&mini=true" target="_blank">{% include social-icon.html icon="LinkedIn" %} Share on LinkedIn</a>
+<a class="share-button linkedin" href="https://www.linkedin.com/shareArticle?url={{ url }}&title={{ page.title | cgi_escape }}&source=CloudCannon&mini=true" target="_blank">{% include svgs/social-icon.html icon="linkedin" %} Share on LinkedIn</a>
 
-<a class="share-btn tumblr" href="
-https://tumblr.com/widgets/share/tool?canonicalUrl={{ url }}&tags=jekyll,webdev,webdesign&caption={{ page.title | cgi_escape}}" target="_blank">{% include social-icon.html icon="Tumblr" %} Share on Tumblr</a>
+<a class="share-button tumblr" href="
+https://tumblr.com/widgets/share/tool?canonicalUrl={{ url }}&tags=jekyll,webdev,webdesign&caption={{ page.title | cgi_escape}}" target="_blank">{% include svgs/social-icon.html icon="tumblr" %} Share on Tumblr</a>
 
-<a class="share-btn reddit" href="https://reddit.com/submit?url={{ url }}&title={{ page.title | cgi_escape }}&resubmit=true" target="_blank">{% include social-icon.html icon="Reddit" %} Submit to Reddit</a>
+<a class="share-button reddit" href="https://reddit.com/submit?url={{ url }}&title={{ page.title | cgi_escape }}&resubmit=true" target="_blank">{% include svgs/social-icon.html icon="reddit" %} Submit to Reddit</a>
 
-<a class="share-btn hacker-news" href="https://news.ycombinator.com/submitlink?u={{ url }}&t=={{ page.title | cgi_escape | replace: "+", "%20" }}" target="_blank">{% include social-icon.html icon="Hacker News" %} Submit to Hacker News</a>
+<a class="share-button hacker-news" href="https://news.ycombinator.com/submitlink?u={{ url }}&t=={{ page.title | cgi_escape | replace: "+", "%20" }}" target="_blank">{% include svgs/social-icon.html icon="hacker-news" %} Submit to Hacker News</a>
 
-<a class="share-btn designer-news" href="https://www.designernews.co/submit?url={{ url }}&title={{ page.title | cgi_escape }}" target="_blank">{% include social-icon.html icon="Designer News" %} Submit to Designer News</a>
+<a class="share-button designer-news" href="https://www.designernews.co/submit?url={{ url }}&title={{ page.title | cgi_escape }}" target="_blank">{% include svgs/social-icon.html icon="designer-news" %} Submit to Designer News</a>
 
-<a class="share-btn email" href="mailto:?subject={{ page.title | cgi_escape }}&body={{ "Check this out: " | cgi_escape | append: url }}" target="_blank">{% include social-icon.html icon="Email" %} Share via Email</a>
+<a class="share-button email" href="mailto:?subject={{ page.title | cgi_escape }}&body={{ "Check this out: " | cgi_escape | append: url }}" target="_blank">{% include svgs/social-icon.html icon="email" %} Share via Email</a>
 </div>
 
-<!-- ![Social icons on a phone](/img/blog/lightweight-social-share-buttons/social-icon-grid.jpg){: srcset="/img/blog/lightweight-social-share-buttons/social-icon-grid.jpg 800w, /img/blog/lightweight-social-share-buttons/social-icon-grid@2x.jpg 1600w"} -->
+<!-- ![Social icons on a phone](/images/blog/lightweight-social-share-buttons/social-icon-grid.jpg){: srcset="/images/blog/lightweight-social-share-buttons/social-icon-grid.jpg 800w, /images/blog/lightweight-social-share-buttons/social-icon-grid@2x.jpg 1600w"} -->
 
 ---
 
-#### Markup and Styling
+## Markup and Styling
 
 The social share buttons can be a simple anchor tag:
 
@@ -143,7 +139,7 @@ Here are the base styles for the buttons shown above:
 
 ---
 
-#### URL Reference
+## URL Reference
 
 Here's a collated list of provided share URLs and relevant options. It's better to only use relevant share buttons rather than bombard the visitor with every choice.
 
@@ -151,15 +147,15 @@ Options are provided for developers to customise the share experience. Previews 
 
 * **url** is the encoded URL to share
 
-##### Facebook
+#### Facebook
 
 `https://www.facebook.com/sharer/sharer.php?u={url}`
 
-##### [Google+](https://developers.google.com/+/web/share/#share-link)
+#### [Google+](https://developers.google.com/+/web/share/#share-link)
 
 `https://plus.google.com/share?url={url}`
 
-##### [Twitter](https://dev.twitter.com/web/tweet-button/web-intent)
+#### [Twitter](https://dev.twitter.com/web/tweet-button/web-intent)
 
 `https://twitter.com/intent/tweet?url={url}&text={text}&via={via}&hashtags={hashtags}`
 
@@ -167,14 +163,14 @@ Options are provided for developers to customise the share experience. Previews 
 * **hashtags** is a comma separated list of pre-populated hash tags (without "#")
 * **via** is the Twitter username of the author or site (without "@")
 
-##### [Pinterest](https://developers.pinterest.com/docs/widgets/save/)
+#### [Pinterest](https://developers.pinterest.com/docs/widgets/save/)
 
 `https://pinterest.com/pin/create/button/?url={url}&description={description}&media={media}`
 
 * **description** is the caption text for the pin
 * **media** is an encoded URL to the image in the pin
 
-##### [LinkedIn](https://developer.linkedin.com/docs/share-on-linkedin)
+#### [LinkedIn](https://developer.linkedin.com/docs/share-on-linkedin)
 
 `https://www.linkedin.com/shareArticle?url={url}&title={title}&source={source}&summary={summary}&mini=true`
 
@@ -182,32 +178,32 @@ Options are provided for developers to customise the share experience. Previews 
 * **summary** is the description for the share
 * **source** is your site name
 
-##### [Tumblr](https://www.tumblr.com/docs/en/share_button#custom-button)
+#### [Tumblr](https://www.tumblr.com/docs/en/share_button#custom-button)
 
 `https://tumblr.com/widgets/share/tool?canonicalUrl={url}&tags={tags}&caption={caption}`
 
 * **tags** is a comma separated list of tags
 * **caption** is the pre-populated share text
 
-##### [Reddit](https://www.reddit.com/dev/api#POST_api_submit)
+#### [Reddit](https://www.reddit.com/dev/api#POST_api_submit)
 
 `https://reddit.com/submit?url={url}&title={title}&resubmit=true`
 
 * **title** is the submission heading text
 
-##### Hacker News
+#### Hacker News
 
 `https://news.ycombinator.com/submitlink?u={url}&t={title}`
 
 * **title** is the submission heading text
 
-##### Designer News
+#### Designer News
 
 `https://www.designernews.co/submit?url={url}&title={title}`
 
 * **title** is the submission heading text
 
-##### Email
+#### Email
 
 `mailto:?subject={subject}&body={body}`
 
@@ -216,7 +212,7 @@ Options are provided for developers to customise the share experience. Previews 
 
 ---
 
-#### Tips
+## Tips
 
 The previews that are automatically generated rely heavily on the [Open Graph](http://ogp.me/) tags and well structured content. Facebook offers [this preview tool](https://developers.facebook.com/tools/debug/og/object/) to test and ensure these are set correctly on your sites.
 
