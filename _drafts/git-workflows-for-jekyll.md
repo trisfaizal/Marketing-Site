@@ -1,12 +1,9 @@
 ---
-title: Git workflows for Jekyll
-author: george
-category: Features
+title: Publishing Workflows for Jekyll
+author: mike
+category: Tips
 image:
 image_featured: false
 ---
 
-- Be honest
-- Avoid spelling mistakes
-- Avoid the passive voice
-- Send it to the team after rewriting it once
+
