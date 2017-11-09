@@ -6,12 +6,12 @@ image:
 image_featured: false
 ---
 
-Our main goal at CloudCannon is to make collaboration between developers and non-technical editors seamless. To an extent we've achieved this with editing a Jekyll site; Editors can update HTML, Markdown, front matter, blog posts, collections and data files without knowing anything about Jekyll or HTML but what about Git? Developers understand and are empowered by Git but what about non-technical editors? Recently we've been working to achieve the same thing for Git workflows. In this post I'm going over some of the new workflows we support.
+
+Our main goal at CloudCannon is to make collaboration between developers and non-technical editors seamless. To an extent we've achieved this with editing a Jekyll site; editors can update HTML, Markdown, front matter, blog posts, collections and data files without knowing anything about Jekyll or HTML but what about Git? Developers understand and are empowered by Git but what about non-technical editors? Recently we've been working to achieve the same thing for Git workflows. In this post I'm going over some of the new workflows we support.
 
 ## Two way Git syncing
 
-This is a feature we've supported for a while but it's worth mentioning as it's at the core of what we're trying to achieve. You can sync a repository from GitHub or Bitbucket to a site on CloudCannon. Developers work locally using their own tools, editors update on CloudCannon, and everything stays in sync through a central Git repository.
-![two way Git syncing](/images/blog/git-workflows/2-way-syncing.svg)
+This is a feature we've supported for a while but it's worth mentioning as it's at the core of what we're trying to achieve. You can sync a repository from GitHub or Bitbucket to a site on CloudCannon. Developers work locally using their own tools, editors update on CloudCannon, and everything stays in sync through a central Git repository. ![two way Git syncing](/images/blog/git-workflows/2-way-syncing.svg)
 
 ## Staging sites
 
@@ -25,7 +25,7 @@ We recommend you set up a CloudCannon site which syncs with the master branch on
 
 Build options allow you to customise the build differently for each environment. For example, on your staging site you can publish draft posts so editors can preview them on the live site. On your production site you probably want them hidden. To achieve this you can enable the `--drafts` flag in site settings-&gt;build on your staging site.
 
-![build settings](/images/blog/git-workflows/build-settings.png){: .screenshot }
+![build settings](/images/blog/git-workflows/build-settings.png){: .screenshot}
 
 `--limit-posts` is another useful option for your staging site. If you have a site with thousands of posts your editors will spend minutes waiting for it to build after making a change. For the staging site you can limit the number of posts that get published to drastically decrease build time.
 
@@ -39,27 +39,19 @@ On CloudCannon you can do this in your site settings-&gt;build.
 
 Then in can access the current environment in liquid using `jekyll.environment`. To only output the Google Analytics snippet in production you would do this:
 
-{% raw %}
-```
-{% if jekyll.environment == "production" %}
-  (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+{% raw %} ``` {% if jekyll.environment == "production" %} (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1\*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
 
-    ga("create", key , param);
-    ga("require", "linkid", "linkid.js");
-    ga("send", "pageview");
-  </script>
-{% endif %}
 ```
-{% endraw %}
+ga("create", key , param);
+ga("require", "linkid", "linkid.js");
+ga("send", "pageview");   </script> {% endif %} ``` {% endraw %}
+```
 
 ## Merging
 
 Merging allows editors to perform a merge from one branch to another in CloudCannon. This is typically for pushing a staging branch to production but there's nothing stopping you from using it with more complex workflows. To set this up go to your site settings-&gt;storage providers. Add the publishing branch you want to merge into and make sure Publishing Mode is set to Merge. Once that is set up, Editors will have a publish button when they're editing the site. When they press this it will perform the merge to the publishing branch.
 
-![merge](/images/blog/git-workflows/merge.png){: .screenshot }
+![merge](/images/blog/git-workflows/merge.png){: .screenshot}
 
 ## Pull Requests
 
