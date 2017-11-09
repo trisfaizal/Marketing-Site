@@ -25,7 +25,7 @@ The set up we typically see is you set up a CloudCannon site which syncs with th
 
 ![two way Git syncing](/images/blog/git-workflows/staging-sites.svg)
 
-## Build options, environments and environment variables
+## Build options and environments
 
 Build options allow you to customise the build differently for each environment. For example, on your staging site you can publish draft posts so editors can preview them on the live site. On your production site you probably want them hidden. To achieve this you can enable the `--drafts` flag in site settings-&gt;build on your staging site.
 
@@ -58,6 +58,9 @@ Then in can access the current environment in liquid using `jekyll.environment`.
 {% endif %}
 ```
 {% endraw %}
+
 ## Merging
+
+Merging allows editors to perform a merge from one branch to another in CloudCannon. This is typically for pushing a staging branch to production but there's nothing stopping you from using it with more complex workflows.   
 
 ## Pull requests
