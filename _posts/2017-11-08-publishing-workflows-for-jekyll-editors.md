@@ -29,6 +29,8 @@ The set up we typically see is you set up a CloudCannon site which syncs with th
 
 Build options allow you to customise the build differently for each environment. For example, on your staging site you can publish draft posts so editors can preview them on the live site. On your production site you probably want them hidden. To achieve this you can enable the `--drafts` flag in site settings-&gt;build on your staging site.
 
+![build settings](/images/blog/git-workflows/build-settings.png){: .screenshot }
+
 `--limit-posts` is another useful option for your staging site. If you have a site with thousands of posts your editors will spend minutes waiting for it build after making a change. For the staging site you can limit the number of posts that get published to drastically decrease build time.
 
 Jekyll environments are a way to switch on/off features for particular environments. I've found the most common usecase for this is to only output the Google Analytics snippet in production. You can set the environment using the `JEKYLL_ENV` environment variable. Locally you can do this on the command when you run Jekyll:
