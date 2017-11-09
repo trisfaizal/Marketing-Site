@@ -25,9 +25,15 @@ The set up we typically see is you set up a CloudCannon site which syncs with th
 
 ![two way Git syncing](/images/blog/git-workflows/staging-sites.svg)
 
-## Build options and environment variables
+## Build options, environments and environment variables
 
-performance
+Build options allow you to customise the build differently for each environment. For example, on your staging site you can publish draft posts so editors can preview them on the live site. On your production site you probably want them hidden. To achieve this you can enable the `--drafts` flag in site settings-&gt;build on your staging site.
+
+`--limit-posts` is another useful option for your staging site. If you have a site with thousands of posts your editors will spend minutes waiting for it build after making a change. For the staging site you can limit the number of posts that get published to drastically decrease build time.
+
+Jekyll environments are a way to switch on/off features for particular environments. I've found the most common usecase for this is to only output the Google Analytics snippet in production. You can set the environment using the `JEKYLL_ENV` environment variable. Locally you can do this on the command when you run Jekyll:&nbsp;<br><br>```<br>JEKYLL_ENV=production bundle exec jekyll serve<br>```<br><br>On CloudCannon you can do this in your site settings-&gt;build.
+
+Then in can access the current environment in liquid using `jekyll.environment`. To only output the Google Analytics snippet in production you would do this:<br><br>```<br>{% if jekyll.environment == "production" %}<br>&nbsp; &lt;script&gt;<br>&nbsp; &nbsp; (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){<br>&nbsp; &nbsp; (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1\*new Date();a=s.createElement(o),<br>&nbsp; &nbsp; m=s.getElementsByTagName(o<br>&nbsp; &nbsp; [0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)<br>&nbsp; &nbsp; })(window,document,"script","//www.google-analytics.com/analytics.js","ga");<br>&nbsp; &nbsp; ga("create", key , param);<br>&nbsp; &nbsp; ga("require", "linkid", "linkid.js");<br>&nbsp; &nbsp; ga("send", "pageview");<br>&nbsp; &lt;/script&gt;<br>{% endif %}<br>```
 
 ## Merging
 
