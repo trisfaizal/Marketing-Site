@@ -31,7 +31,13 @@ Build options allow you to customise the build differently for each environment.
 
 `--limit-posts` is another useful option for your staging site. If you have a site with thousands of posts your editors will spend minutes waiting for it build after making a change. For the staging site you can limit the number of posts that get published to drastically decrease build time.
 
-Jekyll environments are a way to switch on/off features for particular environments. I've found the most common usecase for this is to only output the Google Analytics snippet in production. You can set the environment using the `JEKYLL_ENV` environment variable. Locally you can do this on the command when you run Jekyll:&nbsp;<br><br>```<br>JEKYLL_ENV=production bundle exec jekyll serve<br>```<br><br>On CloudCannon you can do this in your site settings-&gt;build.
+Jekyll environments are a way to switch on/off features for particular environments. I've found the most common usecase for this is to only output the Google Analytics snippet in production. You can set the environment using the `JEKYLL_ENV` environment variable. Locally you can do this on the command when you run Jekyll:
+
+```
+JEKYLL_ENV=production bundle exec jekyll serve
+```
+
+On CloudCannon you can do this in your site settings-&gt;build.
 
 Then in can access the current environment in liquid using `jekyll.environment`. To only output the Google Analytics snippet in production you would do this:
 
