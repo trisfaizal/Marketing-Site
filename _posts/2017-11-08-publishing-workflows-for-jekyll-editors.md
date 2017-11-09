@@ -41,8 +41,8 @@ On CloudCannon you can do this in your site settings-&gt;build.
 
 Then in can access the current environment in liquid using `jekyll.environment`. To only output the Google Analytics snippet in production you would do this:
 
-```
 {% raw %}
+```
 {% if jekyll.environment == "production" %}
   (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -54,8 +54,8 @@ Then in can access the current environment in liquid using `jekyll.environment`.
     ga("send", "pageview");
   </script>
 {% endif %}
-{% endraw %}
 ```
+{% endraw %}
 ## Merging
 
 ## Pull requests
