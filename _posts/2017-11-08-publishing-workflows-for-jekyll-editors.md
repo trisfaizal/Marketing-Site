@@ -23,6 +23,8 @@ You might want to preview new content or changes on a live testing website befor
 
 The set up we typically see is you set up a CloudCannon site which syncs with the master branch on your repository. Editors can update this site without worrying about messing up the live site. They can see their changes on a live site with a testing domain. For the live site you create another CloudCannon site which syncs with a production branch in your repository. Editors wouldn't have access to this site and no changes should be made directly to it. When changes from the staging site need be pushed to production you simply merge master into production.
 
+![two way Git syncing](/images/blog/git-workflows/staging-sites.svg)
+
 ## Build options and environment variables
 
 performance
