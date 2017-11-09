@@ -37,7 +37,7 @@ Jekyll environments are a way to switch on/off features for particular environme
 JEKYLL_ENV=production bundle exec jekyll serve
 ```
 
-On CloudCannon you can do this in your site **Site Settings** / **Build**.
+On CloudCannon you can do this in your **Site Settings** / **Build**.
 
 Then in can access the current environment in liquid using `jekyll.environment`. To only output the Google Analytics snippet in production you would do this:
 
@@ -59,7 +59,7 @@ Then in can access the current environment in liquid using `jekyll.environment`.
 
 ## Merging
 
-Merging allows editors to perform a merge from one branch to another in CloudCannon. This is typically for pushing a staging branch to production but there's nothing stopping you from using it with more complex workflows. To set this up go to your **Site Settings** / **Storage Providers**. Add the publishing branch you want to merge into and make sure Publishing Mode is set to Merge. Once that is set up, Editors will have a publish button when they're editing the site. When they press this it will perform the merge to the publishing branch.
+Merging allows editors to perform a merge from one branch to another in CloudCannon. This is typically for pushing a staging branch to production but there's nothing stopping you from using it with more complex workflows. To set this up go to **Site Settings** / **Storage Providers**. Add the publishing branch you want to merge into and make sure Publishing Mode is set to Merge. Once that is set up, Editors will have a publish button when they're editing the site. When they press this it will perform the merge to the publishing branch.
 
 ![merge](/images/blog/git-workflows/merge.png){: .screenshot}
 
