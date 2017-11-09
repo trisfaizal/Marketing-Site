@@ -2,7 +2,7 @@
 title: Publishing Workflows for Jekyll Editors
 author: mike
 category: Tips
-image: /images/blog/git-workflows/banner.svg
+image: /images/blog/git-workflows/banner.png
 image_featured: true
 ---
 
