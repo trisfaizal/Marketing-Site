@@ -6,14 +6,11 @@ image:
 image_featured: false
 ---
 
-
-One of the reasons I love using Jekyll is my entire site can live in Git. With Git I can rollback to any previous version of my site, backup my repository to an offsite location and collaborate on my site with other developers. Developers understand and are empowered by Git but what about non-technical editors?
-
-Our main goal at CloudCannon is to make collaboration between developers and non-technical editors seamless. To an extent we've achieved this with editing a Jekyll site; Editors can update HTML, Markdown, front matter, blog posts, collections and data files without knowing anything about Jekyll or HTML. Recently we've been working to achieve the same thing for Git workflows. In this post I'm going over some of the new workflows we support.
+Our main goal at CloudCannon is to make collaboration between developers and non-technical editors seamless. To an extent we've achieved this with editing a Jekyll site; Editors can update HTML, Markdown, front matter, blog posts, collections and data files without knowing anything about Jekyll or HTML. There's one crucial piece missing: Git. Developers understand and are empowered by Git but what about non-technical editors? Recently we've been working to achieve the same thing for Git workflows. In this post I'm going over some of the new workflows we support.
 
 ## Two way Git syncing
 
-This isn't a new feature but it's worth mentioning as it's at the core of what we're trying to achieve. You can sync a repository from GitHub or Bitbucket to a site on CloudCannon. Developers work locally using their own tools, editors update on CloudCannon, everything stays in sync through a central Git repository.&nbsp;
+This is a feature we've supported for a while but it's worth mentioning as it's at the core of what we're trying to achieve. You can sync a repository from GitHub or Bitbucket to a site on CloudCannon. Developers work locally using their own tools, editors update on CloudCannon, and everything stays in sync through a central Git repository.&nbsp;
 
 ![two way Git syncing](/images/blog/git-workflows/2-way-syncing.svg)
 
@@ -31,7 +28,7 @@ Build options allow you to customise the build differently for each environment.
 
 ![build settings](/images/blog/git-workflows/build-settings.png){: .screenshot }
 
-`--limit-posts` is another useful option for your staging site. If you have a site with thousands of posts your editors will spend minutes waiting for it build after making a change. For the staging site you can limit the number of posts that get published to drastically decrease build time.
+`--limit-posts` is another useful option for your staging site. If you have a site with thousands of posts your editors will spend minutes waiting for it to build after making a change. For the staging site you can limit the number of posts that get published to drastically decrease build time.
 
 Jekyll environments are a way to switch on/off features for particular environments. I've found the most common usecase for this is to only output the Google Analytics snippet in production. You can set the environment using the `JEKYLL_ENV` environment variable. Locally you can do this on the command when you run Jekyll:
 
@@ -73,8 +70,8 @@ Pull Requests are a similar to merging but instead of performing a merge it crea
 
 Looking forward we're considering ways we can give editors an even deeper Git experience. We're asking ourselves:
 
-* How can we support hundreds of editors update content on single site?
+* How can we support hundreds of editors updating content on single site?
 * How can we provide enough information so a non-technical editor can confidently merge a PR and know what is changing?
 * How can we empower editors to try radical new ideas without fearing they'll break the site if they need to undo them?
 
-Git has answers to all of these. We're working on making it easy for editors to understand.
+If we can answer these questions, we will enable workflows that have never before been possible with a CMS.
