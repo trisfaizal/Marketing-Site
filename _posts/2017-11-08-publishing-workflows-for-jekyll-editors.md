@@ -33,8 +33,23 @@ Build options allow you to customise the build differently for each environment.
 
 Jekyll environments are a way to switch on/off features for particular environments. I've found the most common usecase for this is to only output the Google Analytics snippet in production. You can set the environment using the `JEKYLL_ENV` environment variable. Locally you can do this on the command when you run Jekyll:&nbsp;<br><br>```<br>JEKYLL_ENV=production bundle exec jekyll serve<br>```<br><br>On CloudCannon you can do this in your site settings-&gt;build.
 
-Then in can access the current environment in liquid using `jekyll.environment`. To only output the Google Analytics snippet in production you would do this:<br><br>```<br>{% if jekyll.environment == "production" %}<br>&nbsp; &lt;script&gt;<br>&nbsp; &nbsp; (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){<br>&nbsp; &nbsp; (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1\*new Date();a=s.createElement(o),<br>&nbsp; &nbsp; m=s.getElementsByTagName(o<br>&nbsp; &nbsp; [0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)<br>&nbsp; &nbsp; })(window,document,"script","//www.google-analytics.com/analytics.js","ga");<br>&nbsp; &nbsp; ga("create", key , param);<br>&nbsp; &nbsp; ga("require", "linkid", "linkid.js");<br>&nbsp; &nbsp; ga("send", "pageview");<br>&nbsp; &lt;/script&gt;<br>{% endif %}<br>```
+Then in can access the current environment in liquid using `jekyll.environment`. To only output the Google Analytics snippet in production you would do this:
 
+```
+{% raw %}
+{% if jekyll.environment == "production" %}
+  (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+
+	ga("create", key , param);
+	ga("require", "linkid", "linkid.js");
+	ga("send", "pageview");
+  </script>
+{% endif %}
+{% endraw %}
+```
 ## Merging
 
 ## Pull requests
