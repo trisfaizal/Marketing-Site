@@ -61,6 +61,8 @@ Then in can access the current environment in liquid using `jekyll.environment`.
 
 ## Merging
 
-Merging allows editors to perform a merge from one branch to another in CloudCannon. This is typically for pushing a staging branch to production but there's nothing stopping you from using it with more complex workflows.   
+Merging allows editors to perform a merge from one branch to another in CloudCannon. This is typically for pushing a staging branch to production but there's nothing stopping you from using it with more complex workflows. To set this up go to your site settings-&gt;storage providers. Add the publishing branch you want to merge into and make sure `Publishing Mode` is set to Merge. Once that is set up, Editors will have a "Publish" button when they're editing the site. When they press this it will perform the merge to the publishing branch.
+
+
 
 ## Pull requests
