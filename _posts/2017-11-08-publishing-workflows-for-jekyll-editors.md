@@ -69,3 +69,12 @@ Merging allows editors to perform a merge from one branch to another in CloudCan
 
 Pull Requests are a similar to merging but instead of performing a merge it creates a Pull Request. When a Pull Request is created, CloudCannon waits for any tests to run on the PR and then shows a merge button to the editor if everything passed. Using Pull requests gives you an extra saftey net as you can run your own testing scripts on a contious integration service.
 
+## Wrap up
+
+Looking forward we're considering ways we can give editors an even deeper Git experience. We're asking ourselves:
+
+* How can we support hundreds of editors update content on single site?
+* How can we provide enough information so a non-technical editor can confidently merge a PR and know what is changing?
+* How can we empower editors to try radical new ideas without fearing they'll break the site if they need to undo them?
+
+Git has answers to all of these. We're working on making it easy for editors to understand.
