@@ -7,7 +7,7 @@ image_featured: false
 ---
 
 
-Our main goal at CloudCannon is to make collaboration between developers and non-technical editors seamless. To an extent we've achieved this with editing a Jekyll site; editors can update HTML, Markdown, front matter, blog posts, collections and data files without knowing anything about Jekyll or HTML but what about Git? Recently we've been working to achieve the same level of integration for Git workflows. In this post I'm going over some of the new workflows we support.
+Our main goal at CloudCannon is to make collaboration between developers and non-technical editors seamless. To an extent we've achieved this with editing a Jekyll site; editors can update HTML, Markdown, front matter, blog posts, collections and data files without knowing anything about Jekyll or HTML but what about Git? Recently we've been working to achieve the same level of integration for Git workflows. In this post I'm going over some of the new workflows CloudCannon supports.
 
 ## Two way Git syncing
 
