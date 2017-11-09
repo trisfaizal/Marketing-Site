@@ -15,6 +15,8 @@ Our main goal at CloudCannon is to make collaboration between developers and non
 
 This isn't a new feature but it's worth mentioning anyway as it's at the core of what we're trying to achieve. You can sync a repository from GitHub or Bitbucket to a site on CloudCannon. Developers work locally using their own tools and push changes to the repository. CloudCannon syncs these changes so editors&nbsp;
 
+![two way Git syncing](/images/blog/git-workflows/2-way-syncing.svg)
+
 &nbsp;
 
 ## Staging sites
