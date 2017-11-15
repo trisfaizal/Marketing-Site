@@ -13,11 +13,11 @@ Let's start with the easiest way to improve build performance, update your Jekyl
 
 ## Exclude folders
 
-Does Jekyll really need to process your npm folder? Files that aren't used by Jekyll to build the site should be added to the `exclude:` key in your `_config.yml`. This prevents Jekyll having to copy them around every build.
+Developers often use tools like Bower and npm to manage JavaScript and CSS libraries. These tools are great but they often produce files which aren't required when building your site. You can add these files to the `exclude:` key in your `_config.yml`. This prevents Jekyll having to copy them around every build.
 
 ## Environment
 
-Your production environment may need to be translated into 20 languages and have everything compressed to ensure fast load times but does your development environment? Turning these off for development along with limiting the number of posts output with `--limit_posts`, not switching on `--lsi` and using `--incremental` will have a massive impact on build performance.
+Your production site might need to be translated into 20 languages and have everything compressed to ensure fast load times but you can avoid these while developing. Turning these off for development along with limiting the number of posts output with `--limit_posts`, not switching on `--lsi` and using `--incremental` will have a massive impact on build performance.
 
 ## Liquid
 
@@ -162,6 +162,8 @@ We can use those classes to highlight the current page:
   text-decoration: underline;
 }
 ```
+
+If you're hosting on CloudCannon, a class of `cc-active` is automatically added to any links which point to the current page. This allows you to simply a style for `.cc-active` in your CSS for active link highlighting.
 
 ## Gems
 
