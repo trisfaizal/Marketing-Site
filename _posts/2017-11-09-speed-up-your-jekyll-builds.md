@@ -163,7 +163,7 @@ We can use those classes to highlight the current page:
 }
 ```
 
-If you're hosting on CloudCannon, a class of `cc-active` is automatically added to any links which point to the current page. This allows you to simply a style for `.cc-active` in your CSS for active link highlighting.
+If you're hosting on CloudCannon, a class of `cc-active` is automatically added to any links which point to the current page. This allows you to simply add a style for `.cc-active` in your CSS for active link highlighting.
 
 ## Gems
 
@@ -183,8 +183,8 @@ One of the great things about Jekyll is you can have a piece of content which is
 
 ### Can you do this with a post processing tool?
 
-People have come up with ways to [minify HTML](https://github.com/penibelst/jekyll-compress-html) using a layout, have a full [asset pipeline](https://github.com/jekyll/jekyll-assets) inside Jekyll and perform other post processing tasks. I would argue that while it's nice to have one tool do everything, they site outside the scope of what Jekyll should be trying to do. [Grunt](https://gruntjs.com/) and [Gulp](https://gulpjs.com/) will perform much faster for these tasks and already have a huge library of scripts you can use.
+People have come up with ways to [minify HTML](https://github.com/penibelst/jekyll-compress-html) using a layout, have a full [asset pipeline](https://github.com/jekyll/jekyll-assets) inside Jekyll and perform other post processing tasks. I would argue that while it's nice to have one tool do everything, they sit outside the scope of what Jekyll should be trying to do. [Grunt](https://gruntjs.com/) and [Gulp](https://gulpjs.com/) will perform much faster for these tasks and already have a huge library of scripts you can use.
 
 ## Conclusion
 
-Jekyll has come a long way in decreasing building time. Knowing some of the constraints and working around them should bring most sites down to a reasonable build time. If you have any other build performance tips and tricks leave them in the comments below!
+Jekyll has come a long way in decreasing building time. Knowing some of the constraints and working around them should give you speedy build times. If you have any other build performance tips and tricks leave them in the comments below!
