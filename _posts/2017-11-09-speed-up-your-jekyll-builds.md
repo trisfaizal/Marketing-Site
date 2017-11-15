@@ -23,7 +23,7 @@ Your production site might need to be translated into 20 languages and have ever
 
 Liquid is often the main culprit in slow build times. The first port of call for optimising Liquid is using the Liquid profiler:
 
-```
+```bash
 bundle exec jekyll build --profile
 ```
 
@@ -55,7 +55,7 @@ index.html                       |     1 |   36.62K | 0.047
 The profiler gives us a baseline we can use to optimise individual files. Let's take `_includes/footer.html` from the example above. It's an include that iterates over a data file array:
 
 {% raw %}
-```
+```html
 <footer>
   <ul class="footer-links">
     {% for footer_item in site.data.footer %}
@@ -72,7 +72,7 @@ The profiler gives us a baseline we can use to optimise individual files. Let's 
 
 This Liquid for loop looks innocent enough but it's included on every page on the site. If there's 1000 pages Jekyll has to execute this for loop 1000 times. The easiest way to optimse this is to output static HTML and avoid using Liquid:
 
-```
+```html
 <footer>
   <ul class="footer-links">
       <li>
@@ -106,7 +106,7 @@ Ben Balter has solved this for us with his [jekyll-include-cache](https://github
 The footer is easy to cache as is exactly the same on every page. Let's look at something that isn't the same on every page, the main navigation. `_includes/navigation.html` iterates over a data file, outputs a link and name then adds a `active` class if the link is the current page:
 
 {% raw %}
-```
+```html
 <nav>
   {% for nav_item in site.data.navigation %}
     <a href="nav_item.link %}" {% if nav_item.link == page.url %}class="active"{% endif %}>{{ nav_item.name }}</a>
@@ -118,7 +118,7 @@ The footer is easy to cache as is exactly the same on every page. Let's look at 
 If we included this using `include_cached` the `active` class will be on the same link on every page as it will execute it once then use that version for subsequent includes. We need to move the active page logic outside the include so we can cache it properly:
 
 {% raw %}
-```
+```html
 <nav>
   {% for nav_item in site.data.navigation %}
     <a href="nav_item.link %}">{{ nav_item.name }}</a>
@@ -129,7 +129,7 @@ If we included this using `include_cached` the `active` class will be on the sam
 
 From here we could rely on JavaScript/JQuery to add the active class:
 
-```
+```javascript
 $(function() {
   $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
 });
@@ -137,7 +137,7 @@ $(function() {
 
 Or we could add a class to identify each `nav` item and a class to body in `_layouts/default.html` to identify the current page. The HTML output of the about page would look something like this:
 
-```
+```html
 ...
 <body class="about">
   <nav>
@@ -156,7 +156,7 @@ Or we could add a class to identify each `nav` item and a class to body in `_lay
 
 We can use those classes to highlight the current page:
 
-```
+```css
 .home .home, .about .about, .contact .contact { // Styles for active link
   color: red;
   text-decoration: underline;
@@ -177,7 +177,7 @@ When I started using Jekyll I thought pagination was essential for any blog, how
 
 One of the great things about Jekyll is you can have a piece of content which is used in different forms around your site. With a plugin like [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) you can also apply this logic to images. For example, you might want to generate thumbnails on the fly for a series of photo gallery images. Instead of doing this in Jekyll using a plugin you can use a 3rd party so it doesn't slow down your build. [Imgix](https://www.imgix.com/), [Cloudinary](https://cloudinary.com/) and [weserv](https://images.weserv.nl/) are all great candidates for doing this. You just need to tweak your image source so it's loaded from one of these services:
 
-```
+```html
 <img src="//images.weserv.nl/?url=mywebsite.com/cloud.jpg&w=300">
 ```
 
