@@ -55,6 +55,13 @@
 			border-radius: $border-radius $border-radius 0 0;
 			overflow: hidden;
 			line-height: 0;
+			position: relative;
+
+			a {
+				cursor: pointer;
+				display: block;
+				height: 100%;
+			}
 
 			img {
 				width: 100%;
