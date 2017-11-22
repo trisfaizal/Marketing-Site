@@ -16,7 +16,7 @@ The new design is developed from the ground up to make it your own. We have made
 
 SCREENSHOT OF BRANDING INTERFACE WITH DIFFERENT COLOR
 
-Branding also effects the client sharing interface. For personal accounts only the colour and brand logo are configurable.
+Branding also effects the client sharing interface. For personal pro accounts, the colour and brand logo are configurable.
 
 SCREENSHOT OF CLIENT EDITOR LOGIN WITH BRANDING
 
@@ -34,7 +34,7 @@ SCREENSHOT OF USER MENU OPEN ON SITES LIST
 
 ## Explore & Edit
 
-**Collections** is a great label for Jekyll developers but not so good otherwise. We have renamed this view to **Explore** which has undergone some minor adjustments. Output collections are now grouped with standalone pages. All other collections are grouped in a data section.
+**Collections** is a great label for Jekyll developers, the problem is editors may not understand this concept. We have renamed this view to **Explore** which has undergone some minor adjustments. Output collections are now grouped with standalone pages. All other collections are grouped in a data section.
 
 SCREENSHOT OF COLLECTION TAB
 
@@ -42,11 +42,11 @@ SCREENSHOT OF COLLECTION TAB
 
 ## Visual Editing
 
-When editing your website we believe the experience should mimic viewing it. The new editor modes are aimed to be distraction free and immersive. When clicking on an editor mode, the content pane will cover the entire width of the screen. To navigate back, the icon in the top left will be replaced with menu icon (either a map or folder icon). Clicking the icon will open the appropriate navigation for the previously opened page. This change is part of an on going effort offer more visual editing options.
+When editing your website we believe the experience should mimic viewing it. The new editor modes are aimed to be distraction free and immersive. When clicking on an editor mode, the content pane will cover the entire width of the screen. To navigate back, the icon in the top left will be replaced with menu icon (either a map or folder icon). Clicking the icon will open the appropriate navigation for the previously opened page. This change is part of an ongoing effort to offer more visual editing options.
 
 SCREENSHOT OF EDITOR OPEN WITH MAP ICON
 
 
 ---
 
-We look forward to you making the new app your own. Let us know what you think or if you need any assistance.
+We look forward to you making CloudCannon your own. Let us know what you think or if you need any assistance.
