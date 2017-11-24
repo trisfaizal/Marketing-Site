@@ -36,7 +36,7 @@ The old site status page is no more. **Status** has been shifted to the top righ
 
 **Collections** is a great label for Jekyll developers, the problem is editors may not understand this concept. We have renamed this view to **Explore** which has undergone some minor adjustments. Output collections are now grouped with standalone pages. All other collections are grouped in a data section.
 
-![Explore menu](/images/blog/org-branding/collections-interface.png){: .screenshot srcset="/images/blog/org-branding/collections-interface.png 800w, /images/blog/org-branding/status@2x.png 1600w"}
+![Explore menu](/images/blog/org-branding/collections-interface.png){: .screenshot srcset="/images/blog/org-branding/collections-interface.png 800w, /images/blog/org-branding/collections-interface@2x.png 1600w"}
 
 **Editor** has been shortened to the verb form of **Edit** to inspire action.
 
