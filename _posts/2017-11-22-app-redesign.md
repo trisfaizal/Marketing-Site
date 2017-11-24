@@ -36,7 +36,7 @@ The old site status page is no more. **Status** has been shifted to the top righ
 
 **Collections** is a great label for Jekyll developers, the problem is editors may not understand this concept. We have renamed this view to **Explore** which has undergone some minor adjustments. Output collections are now grouped with standalone pages. All other collections are grouped in a data section.
 
-SCREENSHOT OF COLLECTION TAB
+![Explore menu](/images/blog/org-branding/collections-interface.png){: .screenshot srcset="/images/blog/org-branding/collections-interface.png 800w, /images/blog/org-branding/status@2x.png 1600w"}
 
 **Editor** has been shortened to the verb form of **Edit** to inspire action.
 
@@ -44,7 +44,7 @@ SCREENSHOT OF COLLECTION TAB
 
 When editing your website we believe the experience should mimic viewing it. The new editor modes are aimed to be distraction free and immersive. When clicking on an editor mode, the content pane will cover the entire width of the screen. To navigate back, the icon in the top left will be replaced with menu icon (either a map or folder icon). Clicking the icon will open the appropriate navigation for the previously opened page. This change is part of an ongoing effort to offer more visual editing options.
 
-SCREENSHOT OF EDITOR OPEN WITH MAP ICON
+![New Visual Editor](/images/blog/org-branding/visual-editor.png){: .screenshot srcset="/images/blog/org-branding/visual-editor.png 800w, /images/blog/org-branding/visual-editor@2x.png 1600w"}
 
 
 ---
