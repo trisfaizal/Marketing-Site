@@ -15,7 +15,7 @@
 
 		<ul>
 			{% for feature in include.plan.features %}
-				<li><i class="material-icons">done</i><span>{{ feature }}</span></li>
+				<li><i class="material-icons">done</i><span>{{ feature | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
 			{% endfor %}
 		</ul>
 
