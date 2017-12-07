@@ -23,7 +23,7 @@ Your production site might need to be translated into multiple languages and hav
 
 ## Liquid
 
-Liquid is often the main culprit in slow build times. The first port of call for optimising Liquid is using the Liquid profiler:
+Liquid is often the a culprit in slow build times. The first port of call for optimising Liquid is using the Liquid profiler:
 
 ```bash
 bundle exec jekyll build --profile
@@ -56,7 +56,7 @@ index.html                       |     1 |   36.62K | 0.047
 
 The profiler gives us a baseline we can use to optimise individual files. Let's take `_includes/footer.html` from the example above. It's an include that iterates over a data file array:
 
-{% raw %} 
+{% raw %}
 
 ```html
 <footer>
@@ -114,11 +114,10 @@ The footer is easy to cache as is exactly the same on every page. Let's look at 
 <nav>
   {% for nav_item in site.data.navigation %}
     <a href="nav_item.link %}" {% if nav_item.link == page.url %}class="active"{% endif %}>
-      {{ nav_item.name }} 
+      {{ nav_item.name }}
     </a>
   {% endfor %}
 </nav>
-
 ```
 
 {% endraw %}
