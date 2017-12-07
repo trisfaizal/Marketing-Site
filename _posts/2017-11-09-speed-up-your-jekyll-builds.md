@@ -192,7 +192,7 @@ One of the great things about Jekyll is you can have a piece of content which is
 
 ### Can you do this with a post processing tool?
 
-People have come up with ways to [minify HTML](https://github.com/penibelst/jekyll-compress-html) using a layout, have a full [asset pipeline](https://github.com/jekyll/jekyll-assets) inside Jekyll and perform other post processing tasks. I would argue that while it's nice to have one tool do everything, they sit outside the scope of what Jekyll should be trying to do. [Grunt](https://gruntjs.com/) and [Gulp](https://gulpjs.com/) will perform much faster for these tasks and already have a huge library of scripts you can use.
+People have come up with ways to minify HTML using a layout, have a full asset pipeline inside Jekyll and perform other post processing tasks. I would argue that while it's nice to have one tool do everything, they sit outside the scope of what Jekyll should be trying to do. [Grunt](https://gruntjs.com/) and [Gulp](https://gulpjs.com/) will perform much faster for these tasks and already have a huge library of scripts you can use.
 
 ## Conclusion
 
