@@ -19,7 +19,7 @@ Developers often use tools like Bower and npm to manage JavaScript and CSS libra
 
 ## Environment
 
-Your production site might need to be translated into multiple languages and have everything compressed to ensure fast load times but you can avoid these while developing. Turning these off for development along with limiting the number of posts output with `--limit_posts`&nbsp;and not switching on `--lsi` &nbsp;will have a massive impact on build performance.
+Your production site might need to be translated into multiple languages and have everything compressed to ensure fast load times but you can avoid these while developing. Turning these off for development along with limiting the number of posts output with `--limit_posts` and not switching on `--lsi` will have a massive impact on build performance.
 
 ## Liquid
 
