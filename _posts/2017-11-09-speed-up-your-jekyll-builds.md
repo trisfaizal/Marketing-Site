@@ -98,11 +98,18 @@ Ben Balter has solved this for us with his [jekyll-include-cache](https://github
 
 The footer is easy to cache as is exactly the same on every page. Let's look at something that isn't the same on every page, the main navigation. `_includes/navigation.html` iterates over a data file, outputs a link and name then adds a `active` class if the link is the current page:
 
-{% raw %} ```html
+{% raw %}
 
-<nav>{% for nav_item in site.data.navigation %} &lt;a href="nav_item.link %}" {% if nav_item.link == page.url %}class="active"{% endif %}&gt;{{ nav_item.name }} {% endfor %}</nav>
-
+```html
+<nav>
+  {% for nav_item in site.data.navigation %}
+    <a href="nav_item.link %}" {% if nav_item.link == page.url %}class="active"{% endif %}>
+      {{ nav_item.name }} 
+    </a>
+  {% endfor %}
+</nav>
 ```
+
 {% endraw %}
 
 If we included this using `include_cached` the `active` class will be on the same link on every page as it will execute it once then use that version for subsequent includes. We need to move the active page logic outside the include so we can cache it properly:
