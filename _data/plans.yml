@@ -3,26 +3,25 @@
   sub: Great for development
   features:
     - Live test sites
-    - GitHub, Bitbucket and Dropbox syncing
+    - GitHub, Bitbucket and Dropbox source syncing
+    - Custom domains and DNS
     - Single user
 - name: Basic
   price: 25
   sub: Perfect for freelancers
   highlight: true
   features:
-    - Unlimited productions sites
-    - Custom domains and DNS
-    - Per site sharing
+    - "**Unlimited production sites**"
+    - GitHub, Bitbucket and FTP output syncing
     - Free editing for clients
+    - Per site sharing
 - name: Pro
   price: 75
   sub: For teams of any size
   features:
-    - Includes 5 team members
-    - Organisation support
+    - "**5 team members included**"
     - Custom branding
-    - Team sharing
-    - SAML support
+    - Organisation sharing
 - name: Enterprise
   price_alt: Enquire
   sub: Join companies like Netflix
@@ -30,7 +29,7 @@
     - Larger teams
     - Training and optimisations
     - Priority support
-    - Prioritised feature development
+    - SAML support
   cta:
     text: Contact Us
     link: /contact/
