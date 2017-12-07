@@ -55,6 +55,7 @@ DEPENDENCIES
   jekyll-feed (= 0.9.2)
   jekyll-seo-tag (= 2.3.0)
   jekyll-sitemap (= 1.1.1)
+  rouge
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.3
