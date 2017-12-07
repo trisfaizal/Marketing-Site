@@ -5,6 +5,8 @@ image: /images/blog/build-performance/banner.png
 image_featured: true
 author: mike
 ---
+
+
 Having a short Jekyll build time helps you iterate faster while developing and goes a long way to improving the experience for editors on CloudCannon. In this post we're going over how to identify bottlenecks in your Jekyll build and tips on how to address them.
 
 ## Jekyll version
@@ -17,7 +19,7 @@ Developers often use tools like Bower and npm to manage JavaScript and CSS libra
 
 ## Environment
 
-Your production site might need to be translated into 20 languages and have everything compressed to ensure fast load times but you can avoid these while developing. Turning these off for development along with limiting the number of posts output with `--limit_posts`, not switching on `--lsi` and using `--incremental` will have a massive impact on build performance.
+Your production site might need to be translated into multiple languages and have everything compressed to ensure fast load times but you can avoid these while developing. Turning these off for development along with limiting the number of posts output with `--limit_posts`, not switching on `--lsi` and using `--incremental` will have a massive impact on build performance.
 
 ## Liquid
 
@@ -54,19 +56,10 @@ index.html                       |     1 |   36.62K | 0.047
 
 The profiler gives us a baseline we can use to optimise individual files. Let's take `_includes/footer.html` from the example above. It's an include that iterates over a data file array:
 
-{% raw %}
-```html
-<footer>
-  <ul class="footer-links">
-    {% for footer_item in site.data.footer %}
-      <li>
-        <a href="{{ footer_item.link }}">
-          {{ footer_item.name }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</footer>
+{% raw %} ```html
+
+<footer><ul class="footer-links"><li>{% for footer_item in site.data.footer %}</li><li><a href="{{ footer_item.link }}">{{ footer_item.name }} </a></li><li>{% endfor %}</li></ul></footer>
+
 ```
 {% endraw %}
 
@@ -105,13 +98,10 @@ Ben Balter has solved this for us with his [jekyll-include-cache](https://github
 
 The footer is easy to cache as is exactly the same on every page. Let's look at something that isn't the same on every page, the main navigation. `_includes/navigation.html` iterates over a data file, outputs a link and name then adds a `active` class if the link is the current page:
 
-{% raw %}
-```html
-<nav>
-  {% for nav_item in site.data.navigation %}
-    <a href="nav_item.link %}" {% if nav_item.link == page.url %}class="active"{% endif %}>{{ nav_item.name }}</a>
-  {% endfor %}
-</nav>
+{% raw %} ```html
+
+<nav>{% for nav_item in site.data.navigation %} &lt;a href="nav_item.link %}" {% if nav_item.link == page.url %}class="active"{% endif %}&gt;{{ nav_item.name }} {% endfor %}</nav>
+
 ```
 {% endraw %}
 
@@ -125,6 +115,7 @@ If we included this using `include_cached` the `active` class will be on the sam
   {% endfor %}
 </nav>
 ```
+
 {% endraw %}
 
 From here we could rely on JavaScript/JQuery to add the active class:
