@@ -56,11 +56,20 @@ index.html                       |     1 |   36.62K | 0.047
 
 The profiler gives us a baseline we can use to optimise individual files. Let's take `_includes/footer.html` from the example above. It's an include that iterates over a data file array:
 
-{% raw %} ```html
+{% raw %} 
 
-<footer><ul class="footer-links"><li>{% for footer_item in site.data.footer %}</li><li><a href="{{ footer_item.link }}">{{ footer_item.name }} </a></li><li>{% endfor %}</li></ul></footer>
-
+```html
+<footer>
+  <ul class="footer-links">
+    {% for footer_item in site.data.footer %}
+      <li>
+        <a href="{{ footer_item.link }}">{{ footer_item.name }} </a>
+     </li>
+    {% endfor %}
+  </ul>
+</footer>
 ```
+
 {% endraw %}
 
 This Liquid for loop looks innocent enough but it's included on every page on the site. If there's 1000 pages Jekyll has to execute this for loop 1000 times. The easiest way to optimse this is to output static HTML and avoid using Liquid:
@@ -101,6 +110,7 @@ The footer is easy to cache as is exactly the same on every page. Let's look at 
 {% raw %}
 
 ```html
+
 <nav>
   {% for nav_item in site.data.navigation %}
     <a href="nav_item.link %}" {% if nav_item.link == page.url %}class="active"{% endif %}>
@@ -108,6 +118,7 @@ The footer is easy to cache as is exactly the same on every page. Let's look at 
     </a>
   {% endfor %}
 </nav>
+
 ```
 
 {% endraw %}
@@ -115,6 +126,7 @@ The footer is easy to cache as is exactly the same on every page. Let's look at 
 If we included this using `include_cached` the `active` class will be on the same link on every page as it will execute it once then use that version for subsequent includes. We need to move the active page logic outside the include so we can cache it properly:
 
 {% raw %}
+
 ```html
 <nav>
   {% for nav_item in site.data.navigation %}
