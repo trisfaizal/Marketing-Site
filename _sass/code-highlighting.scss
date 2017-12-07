@@ -33,10 +33,13 @@ blockquote > code,
 li > code,
 p > code {
 	padding: 4px 6px;
-	white-space: pre-wrap;
+	white-space: pre;
 }
 
 .highlight {
+	a {
+		color: #EAB289;
+	}
 	.hll { background-color: #ffffcc }
 	.c { color: #87ceeb} /* Comment */
 	.err { color: #ffffff} /* Error */
