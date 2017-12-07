@@ -6,13 +6,14 @@ image: /images/blog/build-outputs-and-toolbar-options/cover.png
 image_featured: true
 ---
 
+
 Editing and syncing are two critical features in CloudCannon. We've recently improved and added to those features to make them more configurable than ever.
 
 ### Build outputs
 
 In addition to syncing your source files with Bitbucket and GitHub, you can now set a repository as an output for your site. After every change, CloudCannon builds your site and syncs the output with your selected destination. Use this to create custom deployment flows for external hosting, or reduce the complexity of your current solution.
 
-![Storage Providers interface](/images/blog/build-outputs-and-toolbar-options/storage-providers.png){: srcset="/images/blog/build-outputs-and-toolbar-options/storage-providers.png 800w, /images/blog/build-outputs-and-toolbar-options/storage-providers@2x.png 1600w"}{: .screenshot}
+![Storage Providers interface](/images/blog/build-outputs-and-toolbar-options/storage-providers.png){: .screenshot srcset="/images/blog/build-outputs-and-toolbar-options/storage-providers.png 800w, /images/blog/build-outputs-and-toolbar-options/storage-providers@2x.png 1600w"}
 
 See our [official documentation](https://docs.cloudcannon.com/syncing/output/) for more details on setting your first output.
 
