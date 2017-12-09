@@ -7,11 +7,11 @@ author: mike
 ---
 
 
-Having a short Jekyll build time helps you iterate faster while developing and goes a long way to improving the experience for editors on CloudCannon. In this post we're going over how to identify bottlenecks in your Jekyll build and tips on how to address them.
+Having a short Jekyll build time helps you iterate faster while developing and goes a long way to improving the experience for editors on CloudCannon. In this post, we're going over how to identify bottlenecks in your Jekyll build and tips on how to address them.
 
 ## Jekyll version
 
-Let's start with the easiest way to improve build performance, update your Jekyll version! In the last year Jekyll has made great strides in decreasing build time. Keeping an eye on the [Jekyll news page](https://jekyllrb.com/news/) and making sure you're using the latest version will go a long way to keeping your build time down.
+Let's start with the easiest way to improve build performance, update your Jekyll version! In the last year, Jekyll has made great strides in decreasing build time. Keeping an eye on the [Jekyll news page](https://jekyllrb.com/news/) and making sure you're using the latest version will go a long way to keeping your build time down.
 
 ## Exclude folders
 
@@ -72,7 +72,7 @@ The profiler gives us a baseline we can use to optimise individual files. Let's 
 
 {% endraw %}
 
-This Liquid for loop looks innocent enough but it's included on every page on the site. If there's 1000 pages Jekyll has to execute this for loop 1000 times. The easiest way to optimse this is to output static HTML and avoid using Liquid:
+This Liquid for loop looks innocent enough but it's included on every page on the site. If there are 1000 pages Jekyll has to execute this for loop 1000 times. The easiest way to optimise this is to output static HTML and avoid using Liquid:
 
 ```html
 <footer>
