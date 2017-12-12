@@ -113,7 +113,7 @@ The footer is easy to cache as is exactly the same on every page. Let's look at 
 
 <nav>
   {% for nav_item in site.data.navigation %}
-    <a href="nav_item.link %}" {% if nav_item.link == page.url %}class="active"{% endif %}>
+    <a href="{{ nav_item.link }}" {% if nav_item.link == page.url %}class="active"{% endif %}>
       {{ nav_item.name }}
     </a>
   {% endfor %}
@@ -129,7 +129,7 @@ If we included this using `include_cached` the `active` class will be on the sam
 ```html
 <nav>
   {% for nav_item in site.data.navigation %}
-    <a href="nav_item.link %}">{{ nav_item.name }}</a>
+    <a href="{{ nav_item.link }}">{{ nav_item.name }}</a>
   {% endfor %}
 </nav>
 ```
