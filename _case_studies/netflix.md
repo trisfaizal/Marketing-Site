@@ -61,9 +61,9 @@ And update structured collection data using the front matter editor:
 
 ![Netflix Devices Inline](/images/case-studies/netflix/collection.png){: .screenshot }
 
-### Password protection
+### SAML authentication
 
-Netflix has internal websites for partners and Netflix employees. With CloudCannon password protection, Netflix can give select users access to these websites while making them private to everyone else.
+Netflix has internal websites for partners and Netflix employees. With CloudCannon SAML authentication, Netflix can give select users access to these websites while making them private to everyone else.
 
 ![Netflix Partner Marketing](/images/case-studies/netflix/partner.png){: .screenshot }
 
