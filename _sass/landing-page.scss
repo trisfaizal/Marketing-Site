@@ -38,7 +38,7 @@ $landing-image-color-dark: rgba(120, 120, 120, 0.5);
 	}
 }
 
-.landing-video {
+.landing-video, .landing-image {
 	border: 10px solid #fff;
 	border-radius: $border-radius;
 	line-height: 0;
@@ -63,6 +63,10 @@ $landing-image-color-dark: rgba(120, 120, 120, 0.5);
 	@media only screen and (min-width: $desktop-min) {
 		padding-top: 200px;
 		padding-bottom: 0;
+	}
+
+	.testimonial {
+		background: $testimonial-bg;
 	}
 }
 

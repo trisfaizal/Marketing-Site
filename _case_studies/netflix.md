@@ -3,7 +3,10 @@ name: Netflix
 title: Netflix Case Study
 logo: netflix
 brand_color: "#221f1f"
-tagline: The world’s leading Internet television network with over 62 million members.
+tagline: How Netflix keeps their microsites online and updatables
+featured:
+  image: /images/case-studies/netflix/home.png
+  url: https://devices.netflix.com
 testimonial:
   text_markdown: "Netflix is known for being nimble and moving at a high pace. Partnering with CloudCannon enables my Enterprise Platforms Team at Netflix to deliver highly customizable microsites to our internal business partners rapidly so they can work at the speed of our customers."
   image_path: /images/customers/netflix/ashi-small@2x.jpg
@@ -21,56 +24,51 @@ overview:
     alt: Internationlisation
   - image_path: /images/customers/netflix/geo.png
     alt: Geolocation
-features:
-  - name: GitHub Syncing
-    description: "Developers work on the site on their local machine. Marketers update in CloudCannon. Everything stays in sync through GitHub.
-
-
-    All content/file changes are version controlled and can be rolled back at any time."
-    image_path: /images/customers/netflix/filebrowser.png
-  - name: Editable Regions
-    description: "Marketers can update the site themselves by clicking on text to start writing content.
-
-
-    Developers define the Editable Regions by adding `class=\"editable\"` to elements in the HTML.
-    "
-    image_path: /images/customers/netflix/editable_region.png
-  - name: Front Matter
-    description: "Marketers control all parts of the site including the page title and sponsorship sections.
-
-
-    Developers set up the interface for making these changes by writing simple [Front Matter](https://docs.cloudcannon.com/editing/front-matter/).
-
-    "
-    image_path: /images/customers/netflix/frontmatter.png
-  - name: Collections
-    description: "The devices Netflix supports are managed using a simple interface.
-
-
-    The Developers were able to quickly set up this interface by using [Collections](https://docs.cloudcannon.com/editing/collections/)."
-    image_path: /images/customers/netflix/collections.png
-  - name: Internationalisation
-    description: "Netflix Devices is translated into 16 languages which all get served from the same Jekyll site.
-
-
-    Marketers update the site in English. The Netflix translation team works behind the scenes translating content into the other languages they support."
-    image_path: /images/customers/netflix/languages.png
-  - name: Geolocation
-    description: "Users are only shown devices and sections relevant to their country. This allows Netflix to completely customise the website experience to an individual customer."
-    image_path: /images/customers/netflix/geo.png
-  - name: Multiple Environments
-    description: "Content updates are made on a staging site. The team can preview the site and see exactly how it will look before they push it live."
-    image_path: /images/customers/netflix/staging.png
 ---
 
 ## Challenge
 
 Netflix is the world’s leading Internet television network. The company works hard to provide its partners and consumers with information at a fast pace. One of the ways Netflix does this is by ensuring informational websites stay up to date with relevant and engaging content.
 
-Maintaining sites such as [Netflix Devices](https://devices.netflix.com) was a difficult process. Existing solutions were inflexible in the kind of edits they allowed. The Netflix Partner Marketing team struggled to make the edits they needed, often requiring help from developers. Netflix Partner Marketing needed an innovative, fast paced way of creating and maintaining these sites to empower marketers and free up developer time.
+Previously, Drupal was used for websites such as [Netflix Devices](https://devices.netflix.com), however, the marketing team struggled to make the edits they needed, often requiring help from developers. Developers also had to spend significant resources to keep the websites online for Netflix's millions of customers.
 
-## Solution
+Netflix needed:
 
-Netflix partnered with CloudCannon to rebuild [Netflix Devices](https://devices.netflix.com). Devices was originally a Drupal site and was rebuilt in a fraction of the time using [Jekyll](http://jekyllrb.com). The site is static so it loads quickly and reliably scales to the millions of Netflix visitors.
+* A fast-paced way of creating and maintaining public and internal micro-sites
+* An editor marketers find easy to use
+* A way to translate their websites into 20 languages
+* A stable hosting platform that could scale to their audience
 
-The Partner Marketing team have taken control of their site. They're empowered to quickly try out new messaging and update content directly on the page.
+## How CloudCannon helped
+
+Netflix ran a pilot with [Netflix Devices](https://devices.netflix.com) to see if a Jekyll/CloudCannon solution would fit their requirements. The pilot was a success and Netflix now has ten websites hosted and updated on CloudCannon.
+
+### Hosting
+
+With CloudCannon hosting, these websites load quickly and reliably scales to the millions of Netflix visitors. The developers don't need to set up servers, keep plugins updated or handle traffic spikes.
+
+![Netflix Devices Criteria](/images/case-studies/netflix/criteria.png){: .screenshot }
+
+### Editing
+
+The marketing team have taken control of their site, they're empowered to quickly try new messaging and update content without involving a developer. Netflix Devices has a staging website set up so the marketing team can try out changes before pushing it to the live website.
+
+They can update HTML content directly on the website:
+
+![Netflix Devices Inline](/images/case-studies/netflix/inline.png){: .screenshot }
+
+And update structured collection data using the front matter editor:
+
+![Netflix Devices Inline](/images/case-studies/netflix/collection.png){: .screenshot }
+
+### Password protection
+
+Netflix has internal websites for partners and Netflix employees. With CloudCannon password protection, Netflix can give select users access to these websites while making them private to everyone else.
+
+![Netflix Partner Marketing](/images/case-studies/netflix/partner.png){: .screenshot }
+
+### Translations
+
+To support their global audience, Netflix needs their websites translated into over 20 languages. With CloudCannon, the marketing team updates content in english, this content is sent to the their translation team to translate the text which is loaded back into CloudCannon and served on the live website.
+
+![Creative services](/images/case-studies/netflix/translate.png){: .screenshot }

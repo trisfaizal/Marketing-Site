@@ -10,15 +10,25 @@ header_class: short
 	<section>
 		<div class="wrapper">
 			<h1>{% include svgs/customer-logo.html logo=page.logo %}</h1>
-			<p class="subtitle">A CloudCannon Case Study</p>
+			<h2 class="subtitle">{{ page.tagline }}</h2>
+			{% if page.featured %}
+				<div class="landing-image">
+					<a href="{{ page.featured.url }}" target="_blank">
+						<img src="{{ page.featured.image }}" alt="{{ page.name}}">
+					</a>
+				</div>
+			{% endif %}
 		</div>
 	</section>
 </header>
 
-<div class="dark-content">
+<div class="landing-page-content">
 	<div class="wrapper">
 		{{ content }}
 	</div>
 </div>
+
+{% include components/case-study/quote.html case=page %}
+
 
 {% include components/cta/main.html text="Join thousands of developers building sites on CloudCannon today" button="Get started free" %}
