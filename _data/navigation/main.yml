@@ -2,6 +2,8 @@
   name: Features
 - link: /pricing/
   name: Pricing
+- link: /case-studies/
+  name: Case Studies
 - link: /blog/
   name: Blog
 - link: https://learn.cloudcannon.com/

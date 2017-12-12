@@ -1,0 +1,24 @@
+---
+layout: default
+icons: true
+header_class: short
+---
+
+<header class="{{ page.header_class }} case-study" {% if page.brand_color %}style="background: {{ page.brand_color }}"{% endif %}>
+	{% include navigation/top.html %}
+
+	<section>
+		<div class="wrapper">
+			<h1>{% include svgs/customer-logo.html logo=page.logo %}</h1>
+			<p class="subtitle">A CloudCannon Case Study</p>
+		</div>
+	</section>
+</header>
+
+<div class="dark-content">
+	<div class="wrapper">
+		{{ content }}
+	</div>
+</div>
+
+{% include components/cta/main.html text="Join thousands of developers building sites on CloudCannon today" button="Get started free" %}

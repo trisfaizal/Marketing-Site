@@ -1,0 +1,11 @@
+---
+title: Case studies
+permalink: /case-studies/
+layout: short
+---
+
+<ul>
+{% for case in site.case_studies %}
+	<li><a href="{{ case.url }}">{{ case.name }}</a></li>
+{% endfor %}
+</ul>

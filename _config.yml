@@ -12,13 +12,17 @@ permalink: pretty
 timezone: Pacific/Auckland
 collections:
   case_studies:
-    output: false
+    output: true
     permalink: /case-studies/:name/
 defaults:
   - scope:
       path: ""
     values:
       header_class: "short"
+  - scope:
+      type: "case_studies"
+    values:
+      layout: "case-study"
   - scope:
       path: ""
       type: posts
