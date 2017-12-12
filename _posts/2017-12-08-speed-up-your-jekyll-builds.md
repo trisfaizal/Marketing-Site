@@ -7,11 +7,11 @@ author: mike
 ---
 
 
-Having a short Jekyll build time helps you iterate faster while developing and goes a long way to improving the experience for editors on CloudCannon. In this post we're going over how to identify bottlenecks in your Jekyll build and tips on how to address them.
+Having a short Jekyll build time helps you iterate faster while developing and goes a long way to improving the experience for editors on CloudCannon. In this post, we're going over how to identify bottlenecks in your Jekyll build and tips on how to address them.
 
 ## Jekyll version
 
-Let's start with the easiest way to improve build performance, update your Jekyll version! In the last year Jekyll has made great strides in decreasing build time. Keeping an eye on the [Jekyll news page](https://jekyllrb.com/news/) and making sure you're using the latest version will go a long way to keeping your build time down.
+Let's start with the easiest way to improve build performance, update your Jekyll version! In the last year, Jekyll has made great strides in decreasing build time. Keeping an eye on the [Jekyll news page](https://jekyllrb.com/news/) and making sure you're using the latest version will go a long way to keeping your build time down.
 
 ## Exclude folders
 
@@ -72,7 +72,7 @@ The profiler gives us a baseline we can use to optimise individual files. Let's 
 
 {% endraw %}
 
-This Liquid for loop looks innocent enough but it's included on every page on the site. If there's 1000 pages Jekyll has to execute this for loop 1000 times. The easiest way to optimse this is to output static HTML and avoid using Liquid:
+This Liquid for loop looks innocent enough but it's included on every page on the site. If there are 1000 pages Jekyll has to execute this for loop 1000 times. The easiest way to optimise this is to output static HTML and avoid using Liquid:
 
 ```html
 <footer>
@@ -105,7 +105,7 @@ This is much faster but makes the site harder to maintain. We need the best of b
 
 Ben Balter has solved this for us with his [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin. To install add `jekyll-include-cache` to your `Gemfile` then run `bundle install`. Instead of calling {% raw %}`{% include footer.html %}`{% endraw %} we call {% raw %}`{% include_cached footer.html %}`{% endraw %}. This took the execution time of this file from 0.596 to 0.001.
 
-The footer is easy to cache as is exactly the same on every page. Let's look at something that isn't the same on every page, the main navigation. `_includes/navigation.html` iterates over a data file, outputs a link and name then adds a `active` class if the link is the current page:
+The footer is easy to cache as is exactly the same on every page. Let's look at something that isn't the same on every page, the main navigation. `_includes/navigation.html` iterates over a data file, outputs a link and name then adds an&nbsp;`active` class if the link is the current page:
 
 {% raw %}
 
@@ -113,7 +113,7 @@ The footer is easy to cache as is exactly the same on every page. Let's look at 
 
 <nav>
   {% for nav_item in site.data.navigation %}
-    <a href="nav_item.link %}" {% if nav_item.link == page.url %}class="active"{% endif %}>
+    <a href="{{ nav_item.link }}" {% if nav_item.link == page.url %}class="active"{% endif %}>
       {{ nav_item.name }}
     </a>
   {% endfor %}
@@ -129,7 +129,7 @@ If we included this using `include_cached` the `active` class will be on the sam
 ```html
 <nav>
   {% for nav_item in site.data.navigation %}
-    <a href="nav_item.link %}">{{ nav_item.name }}</a>
+    <a href="{{ nav_item.link }}">{{ nav_item.name }}</a>
   {% endfor %}
 </nav>
 ```
@@ -176,13 +176,13 @@ If you're hosting on CloudCannon, a class of `cc-active` is automatically added 
 
 ## Gems
 
-While it can be tempting to add every Jekyll plugin under the sun to your site, they can have a big impact on your build performance. The best way to understand the impact is to profile before and after adding a plugin. If you identify a slow plugin there's a few workarounds to consider:
+While it can be tempting to add every Jekyll plugin under the sun to your site, they can have a big impact on your build performance. The best way to understand the impact is to profile before and after adding a plugin. If you identify a slow plugin there are a few workarounds to consider:
 
 ### Do you actually need the plugin?
 
-When I started using Jekyll I thought pagination was essential for any blog, however our analytics told a different story. I realised that very few people click through the pagination pages, they're simply a way for search engines to find content. Instead of using pagination now we have a [blog page](/blog/) which has our ten most recent posts and a [archived page](/archived/) which has the rest. No plugins necessary.
+When I started using Jekyll I thought pagination was essential for any blog, however, our analytics told a different story. I realised that very few people click through the pagination pages, they're simply a way for search engines to find content. Instead of using pagination now we have a [blog page](/blog/) which has our ten most recent posts and an&nbsp;[archived page](/archived/) which has the rest. No plugins necessary.
 
-### Can you do this in the frontend instead?
+### Can you do this in frontend instead?
 
 One of the great things about Jekyll is you can have a piece of content which is used in different forms around your site. With a plugin like [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) you can also apply this logic to images. For example, you might want to generate thumbnails on the fly for a series of photo gallery images. Instead of doing this in Jekyll using a plugin you can use a 3rd party so it doesn't slow down your build. [Imgix](https://www.imgix.com/), [Cloudinary](https://cloudinary.com/) and [weserv](https://images.weserv.nl/) are all great candidates for doing this. You just need to tweak your image source so it's loaded from one of these services:
 
@@ -190,9 +190,9 @@ One of the great things about Jekyll is you can have a piece of content which is
 <img src="//images.weserv.nl/?url=mywebsite.com/cloud.jpg&w=300">
 ```
 
-### Can you do this with a post processing tool?
+### Can you do this with a post-processing tool?
 
-People have come up with ways to minify HTML using a layout, have a full asset pipeline inside Jekyll and perform other post processing tasks. I would argue that while it's nice to have one tool do everything, they sit outside the scope of what Jekyll should be trying to do. [Grunt](https://gruntjs.com/) and [Gulp](https://gulpjs.com/) will perform much faster for these tasks and already have a huge library of scripts you can use.
+People have come up with ways to minify HTML using a layout, have a full asset pipeline inside Jekyll and perform other post-processing tasks. I would argue that while it's nice to have one tool do everything, they sit outside the scope of what Jekyll should be trying to do. [Grunt](https://gruntjs.com/) and [Gulp](https://gulpjs.com/) will perform much faster for these tasks and already have a huge library of scripts you can use.
 
 ## Conclusion
 
