@@ -12,7 +12,7 @@ header_class: short
 			<h1>{% include svgs/customer-logo.html logo=page.logo %}</h1>
 			<h2 class="subtitle">{{ page.tagline }}</h2>
 			{% if page.featured %}
-				<div class="landing-image">
+				<div class="featured-image">
 					<a href="{{ page.featured.url }}" target="_blank">
 						<img src="{{ page.featured.image }}" alt="{{ page.name}}">
 					</a>
@@ -22,13 +22,13 @@ header_class: short
 	</section>
 </header>
 
-<div class="landing-page-content">
+<div class="landing-page-content case-study-content">
 	<div class="wrapper">
 		{{ content }}
+
+		<p>If you're interested in setting up a similar usecase to {{ page.name }}, get in touch with our <a href="/contact">support team</a> and we'll help you get started.</p>
 	</div>
 </div>
-
-{% include components/case-study/quote.html case=page %}
 
 
 {% include components/cta/main.html text="Join thousands of developers building sites on CloudCannon today" button="Get started free" %}
