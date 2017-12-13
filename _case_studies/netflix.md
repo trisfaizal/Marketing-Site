@@ -3,7 +3,7 @@ name: Netflix
 title: Netflix Case Study
 logo: netflix
 brand_color: "#221f1f"
-tagline: How Netflix keeps their informational websites online and updatable
+tagline: Keeping Netflix informational websites online and updatable
 featured:
   image: /images/case-studies/netflix/home.png
   url: https://devices.netflix.com
@@ -32,14 +32,14 @@ Netflix is the world’s leading Internet television network. The company works 
 
 Drupal was previously used for informational websites such as [Netflix Devices](https://devices.netflix.com). However, the marketing team struggled to make the edits they needed, often requiring help from developers. Developers had to spend significant resources to keep the websites online for Netflix's millions of customers.
 
-Netflix needed:
+Netflix needs to:
 
-* A fast-paced way to create and maintain public and internal micro-sites
-* An editing interface marketers find easy to use
-* A way to translate their websites into 20 languages
-* A stable hosting platform that scales to their audience
+* Have a fast-paced way to create and maintain public and internal websites
+* Provide an editing interface marketers find easy to use
+* Translate their websites into 20 languages
+* Use a stable hosting platform scaling to their audience
 
-## How CloudCannon helped
+## How CloudCannon helps
 
 Netflix ran a pilot with [Netflix Devices](https://devices.netflix.com) to see if a Jekyll/CloudCannon solution would fit their requirements. The pilot was a success and Netflix now has many websites hosted and updated on CloudCannon.
 
@@ -47,7 +47,7 @@ Netflix ran a pilot with [Netflix Devices](https://devices.netflix.com) to see i
 
 ### Hosting
 
-With CloudCannon hosting, websites load quickly and scale reliably to millions of Netflix visitors. The developers don't need to set up servers, keep plugins updated or handle traffic spikes.
+CloudCannon hosting loads websites quickly and scales reliably to millions of Netflix visitors. The developers don't need to set up servers, keep plugins updated or handle traffic spikes.
 
 ![Netflix Devices Criteria](/images/case-studies/netflix/criteria.png){: .screenshot }
 
@@ -55,7 +55,7 @@ With CloudCannon hosting, websites load quickly and scale reliably to millions o
 
 The marketing team have taken control of their site, they’re able to quickly try new messaging and update content without involving a developer. Netflix Devices has a staging website set up so the marketing team can try out changes before pushing it to the live website.
 
-They update HTML content directly on the website:
+The marketing team updates HTML content directly on the website:
 
 ![Netflix Devices Inline](/images/case-studies/netflix/inline.png){: .screenshot }
 
@@ -71,6 +71,6 @@ Netflix has internal websites for partners and Netflix employees. CloudCannon SA
 
 ### Translations
 
-To support their global audience, Netflix needs their websites translated into over 20 languages. With CloudCannon, the marketing team updates content in English, this content is sent to the their translation team to translate the text which is loaded back into CloudCannon and served on the live website.
+To support their global audience, Netflix translates their websites into several languages. The marketing team updates content in English, this content is sent to the their translation team, which is then loaded into CloudCannon Internationalisation and served on the live website.
 
 ![Creative services](/images/case-studies/netflix/translate.png){: .screenshot }
