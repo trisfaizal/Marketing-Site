@@ -20,11 +20,11 @@ testimonial:
 
 Netflix is the world’s leading Internet television network. The company works hard to provide its partners and consumers with information at a fast pace. To do this, Netflix ensures informational websites stay up to date with relevant and engaging content.
 
-Drupal was previously used for informational websites such as [Netflix Devices](https://devices.netflix.com). However, the marketing team struggled to make the edits they needed, often requiring help from developers. Developers had to spend significant resources to keep the websites online for Netflix's millions of customers.
+Drupal was previously used for informational websites such as [Netflix Devices](https://devices.netflix.com). However, the marketing team struggled to make the edits they needed, often requiring help from developers. Developers had to spend significant resources to keep the websites online for millions of Netflix customers.
 
 Netflix needs to:
 
-* Have a fast-paced way to create and maintain public and internal websites
+* Create and maintain public and internal websites
 * Provide an editing interface marketers find easy to use
 * Translate their websites into 20 languages
 * Use a stable hosting platform scaling to their audience
