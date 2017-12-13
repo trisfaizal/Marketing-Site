@@ -2,6 +2,7 @@
 name: Netflix
 title: Netflix Case Study
 logo: netflix
+logo_dark: netflix
 brand_color: "#221f1f"
 tagline: Keeping Netflix informational websites online and updatable
 featured:
@@ -13,17 +14,6 @@ testimonial:
   name: Ashi Sheth
   work_title: Manager of Enterprise Platforms
   work_path: https://netflix.com
-overview:
-  - image_path: /images/customers/netflix/home.png
-    alt: Devices Home Page
-  - image_path: /images/customers/netflix/devices.png
-    alt: Devices
-  - image_path: /images/customers/netflix/nrtv.png
-    alt: NRTV
-  - image_path: /images/customers/netflix/languages.png
-    alt: Internationlisation
-  - image_path: /images/customers/netflix/geo.png
-    alt: Geolocation
 ---
 
 ## Challenge

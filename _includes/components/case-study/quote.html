@@ -8,8 +8,12 @@
 			</p>
 		</div>
 		<div class="quote">
-			{{ include.case.testimonial.text_markdown | prepend: "&ldquo;" | append: "&rdquo;" | markdownify }}
+			{% assign quote = include.quote %}
+			{% unless quote %}
+				{% assign quote = include.case.testimonial.text_markdown %}
+			{% endunless %}
+			{{ quote | prepend: "&ldquo;" | append: "&rdquo;" | markdownify }}
 		</div>
-		{% include svgs/customer-logo.html logo=include.case.logo %}
+		{% include svgs/customer-logo.html logo=include.case.logo_dark %}
 	</blockquote>
 </div>

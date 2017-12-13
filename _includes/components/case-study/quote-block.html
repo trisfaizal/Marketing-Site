@@ -11,7 +11,7 @@
 			<div class="quote">
 				{{ include.case.testimonial.text_markdown | prepend: "&ldquo;" | append: "&rdquo;" | markdownify }}
 			</div>
-			{% include svgs/customer-logo.html logo=include.case.logo %}
+			{% include svgs/customer-logo.html logo=include.case.logo_dark %}
 		</blockquote>
 		<div class="view-button"><a class="button" href="{{ include.case.url }}">View Case Study &rsaquo;</a></div>
 	</div>
