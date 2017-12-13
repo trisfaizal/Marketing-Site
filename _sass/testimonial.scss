@@ -1,6 +1,8 @@
-.testimonial {
-	// background: $testimonial-bg;
+body > .testimonial {
+	background: $testimonial-bg;
+}
 
+.testimonial {
 	blockquote {
 		margin: 0;
 		box-shadow: $large-box-shadow;
