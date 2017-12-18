@@ -6,7 +6,7 @@ logo_dark: netflix
 brand_color: "#221f1f"
 tagline: Keeping Netflix informational websites online and updatable
 featured:
-  image: /images/case-studies/netflix/home.png
+  image: /images/case-studies/netflix/partner.png
   url: https://devices.netflix.com
 testimonial:
   text_markdown: "Netflix is known for being nimble and moving at a high pace. Partnering with CloudCannon enables my Enterprise Platforms Team at Netflix to deliver highly customizable microsites to our internal business partners rapidly so they can work at the speed of our customers."
@@ -57,7 +57,7 @@ And update and manage structured collection data:
 
 Netflix has internal websites for partners and Netflix employees. CloudCannon SAML authentication enables Netflix to give select users access to these websites while making them private to everyone else.
 
-![Netflix Partner Marketing](/images/case-studies/netflix/partner.png){: .screenshot }
+![Netflix Partner Marketing](/images/case-studies/netflix/login.png){: .screenshot }
 
 ### Translations
 
