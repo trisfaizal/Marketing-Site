@@ -8,19 +8,62 @@ image_featured: false
 
 
 Jekyll is a fantastic tool for freelancers building websites for clients. Compared to a CMS like WordPress there's a number of advantages:
+{: .present-before-paste}
 
 * **Simplicity** - There's no complex templating or plugins you need to understand. Building a Jekyll site is similar to building a purely static website.
 * **Maintenance** - You don't need to worry about updating CMS software or plugins. Jekyll outputs a static website which are significantly faster, secure and stable than a typical WordPress setup.
 * **Backups**- Jekyll sites are typically connected to a Git repository which is used to undo unwanted changes by a client and as a full backup of all the files on the site.&nbsp;
 
 With a Jekyll CMS like [CloudCannon](https://cloudcannon.com), you can have all these advantages&nbsp;**and** have an easy-to-use interface for clients to update content. In this post we're going over tips for freelancers to get the most out of CloudCannon.
+{: .present-before-paste}
 
 ## Client Sharing
 
-[Client Sharing](https://docs.cloudcannon.com/sharing/client-sharing/)&nbsp;is a CloudCannon feature specifically for freelancers/agencies. Instead of each client needing their own CloudCannon account, you can set up a Client Sharing password in *Site Settings /&nbsp;Client Sharing.* Clients can then go to https://theirwebsite.com/update/ and enter the password. This gives them full access to update content on their site.
+[Client Sharing](https://docs.cloudcannon.com/sharing/client-sharing/)&nbsp;is a CloudCannon feature specifically for freelancers/agencies. Instead of each client needing their own CloudCannon account, you can set up a Client Sharing password in *Site Settings / Client Sharing.* Clients can then go to https://theirwebsite.com/update/ and enter the password. This gives the client full access to update content on their site. Client Sharing is available on paid plans at no extra charge.
+{: .present-before-paste}
 
 ![](/uploads/versions/client-login---x----1679-1049x---.png)&nbsp;
+{: .present-before-paste}
+
+## Start with a template
+
+CloudCannon has [templates available](https://learn.cloudcannon.com/jekyll-templates/)&nbsp;to help get you started on your next project. These templates are designed to get the most out of CloudCannon so they're a great starting point or just a reference of the features available on CloudCannon.
+{: .present-before-paste}
+
+![](/uploads/versions/template---x----1900-1188x---.png)
+{: .present-before-paste}
+
+## Staging site
+
+Having the client update the production site directly can be a dangerous game. Setting up a staging site which the client can promote to production gives them a chance to fix anything before it's pushed live. To set up a staging site:
+{: .present-before-paste}
+
+* Create another branch in your repository
+* Create a new site in CloudCannon and sync it with your new branch
+* Add a [publishing branch](https://docs.cloudcannon.com/syncing/publishing/) to your production branch
+
+## Set up form submissions
+
+Client sites often have a contact form. CloudCannon has a [Contact Forms](https://docs.cloudcannon.com/hosting/contact-forms/) feature you can use to set up an HTML form. When the form is submitted, the content is emailed to the client.
+
+![](/uploads/versions/contact---x----1900-1188x---.png)&nbsp;
+
+## Documentation site
+
+&nbsp;
+{: .present-before-paste}
+
+## Customise the Client interface
+
+&nbsp;
+{: .present-before-paste}
+
+## &nbsp;
+
+&nbsp;
+{: .present-before-paste}
 
 ## White Labelling
 
 &nbsp;
+{: .present-before-paste}
