@@ -3,7 +3,7 @@ title: Jekyll for Freelancers
 author: mike
 category: Tips
 image: /images/blog/jekyll-for-freelancers/freelancer.jpg
-image_featured: false
+image_featured: true
 ---
 
 
@@ -11,19 +11,19 @@ Jekyll is a fantastic tool for freelancers building websites for clients. Compar
 
 * **Simplicity** - There's no complex templating or plugins you need to understand. Building a Jekyll site is similar to building a purely static website.
 * **Maintenance** - You don't need to worry about updating CMS software or plugins. Jekyll outputs a static website which are significantly faster, secure and stable than a typical WordPress setup.
-* **Backups**- Jekyll sites are typically connected to a Git repository which is used to undo unwanted changes by a client and as a full backup of all the files on the site.&nbsp;
+* **Backups**- Jekyll sites are typically connected to a Git repository which is used to undo unwanted changes by a client and as a full backup of all the files on the site.
 
-With a Jekyll CMS like [CloudCannon](https://cloudcannon.com), you can have all these advantages&nbsp;**and** have an easy-to-use interface for clients to update content. In this post we're going over tips for freelancers to get the most out of CloudCannon.
+With a Jekyll CMS like [CloudCannon](https://cloudcannon.com), you can have all these advantages **and** have an easy-to-use interface for clients to update content. In this post we're going over tips for freelancers to get the most out of CloudCannon.
 
 ## Client Sharing
 
-[Client Sharing](https://docs.cloudcannon.com/sharing/client-sharing/)&nbsp;is a CloudCannon feature specifically for freelancers/agencies. Instead of each client needing their own CloudCannon account, you can set up a Client Sharing password in *Site Settings / Client Sharing.* Clients can then go to https://theirwebsite.com/update/ and enter the password. This gives the client full access to update content on their site. Client Sharing is available on paid plans at no extra charge.
+[Client Sharing](https://docs.cloudcannon.com/sharing/client-sharing/) is a CloudCannon feature specifically for freelancers/agencies. Instead of each client needing their own CloudCannon account, you can set up a Client Sharing password in *Site Settings / Client Sharing.* Clients can then go to https://theirwebsite.com/update/ and enter the password. This gives the client full access to update content on their site. Client Sharing is available on paid plans at no extra charge.
 
-![](/uploads/versions/client-login---x----1679-1049x---.png)&nbsp;
+![](/uploads/versions/client-login---x----1679-1049x---.png)
 
 ## Start with a template
 
-CloudCannon has [templates available](https://learn.cloudcannon.com/jekyll-templates/)&nbsp;to help get you started on your next project. These templates are designed to get the most out of CloudCannon so they're a great starting point or just a reference of the features available on CloudCannon.
+CloudCannon has [templates available](https://learn.cloudcannon.com/jekyll-templates/) to help get you started on your next project. These templates are designed to get the most out of CloudCannon so they're a great starting point or just a reference of the features available on CloudCannon.
 
 ![](/uploads/versions/template---x----1900-1188x---.png)
 
@@ -39,7 +39,7 @@ Having the client update the production site directly can be a dangerous game. S
 
 Client sites often have a contact form. CloudCannon has a [Contact Forms](https://docs.cloudcannon.com/hosting/contact-forms/) feature you can use to set up an HTML form. When the form is submitted, the content is emailed to the client.
 
-![](/uploads/versions/contact---x----1900-1188x---.png)&nbsp;
+![](/uploads/versions/contact---x----1900-1188x---.png)
 
 ## Documentation site
 
