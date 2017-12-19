@@ -2,7 +2,7 @@
 title: Jekyll for Freelancers
 author: mike
 category: Tips
-image:
+image: /images/blog/jekyll-for-freelancers/freelancer.jpg
 image_featured: false
 ---
 
