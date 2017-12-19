@@ -2,10 +2,21 @@
 title: Case studies
 permalink: /case-studies/
 layout: short
+heading: Case Studies
+subtitle: How CloudCannon helps leading companies succeed
 ---
 
-<ul>
-{% for case in site.case_studies %}
-	<li><a href="{{ case.url }}">{{ case.name }}</a></li>
-{% endfor %}
+<ul class="case-studies">
+	{% for case in site.case_studies %}
+		<li class="card">
+			<a href="{{ case.url }}">
+				<div class="case-box" style="background-color: {{ case.brand_color }}">
+					<div class="title">
+						<h2>{% include svgs/customer-logo.html logo=case.logo %}</h2>
+						<h3>{{ case.tagline }}</h3>
+					</div>
+				</div>
+			</a>
+		</li>
+	{% endfor %}
 </ul>

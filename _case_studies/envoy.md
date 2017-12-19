@@ -5,7 +5,7 @@ brand_color: "#ef3934"
 logo: envoy
 tagline: How Envoy keeps content fresh and relevant
 featured:
-  image: /images/case-studies/envoy/home.png
+  image: /images/case-studies/envoy/home.jpg
   url: https://envoy.com
 testimonial:
   text_markdown: "Envoy is constantly making changes to our marketing site to drive incremental improvement in SEO and paid advertising. With CloudCannon, our marketing team creates highly customised landing pages and blog posts without involving developers."

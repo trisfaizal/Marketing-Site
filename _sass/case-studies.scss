@@ -15,3 +15,20 @@
 		margin: $section-padding 0;
 	}
 }
+
+.case-box {
+	color: #fff;
+	text-align: center;
+	transition: $transition-duration opacity ease;
+	svg {
+		max-width: 300px;
+	}
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.case-box .title h3 a {
+	color: #fff;
+}
