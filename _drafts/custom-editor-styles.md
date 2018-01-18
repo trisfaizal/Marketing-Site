@@ -85,4 +85,4 @@ Use this to remove headings or mark up element that editors should not be using 
 
 ***
 
-This was one of the most requested features we've ever had, and we're proud to see it available for you to use.
+Read more about these features in our [official documentation](https://docs.cloudcannon.com/editing/options/). This was one of the most requested features we've ever had, and we're proud to see it available for you to use.
