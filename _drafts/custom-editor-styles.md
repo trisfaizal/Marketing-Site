@@ -14,6 +14,8 @@ Custom styles allow your editors to mark up inline or block level content with s
 
 This feature uses class names and styles that you define, so the editing experience is seamless in the Visual Editor, and much more contextual in the Content Editor.
 
+![Content Editor with custom styles and alignment](/images/blog/custom-editor-styles/content-editor-custom-styles.png){: .screenshot srcset="/images/blog/custom-editor-styles/content-editor-custom-styles.png 740w, /images/blog/custom-editor-styles/content-editor-custom-styles@2x.png 1480w"}
+
 To set up custom styles, you'll need to define a path to find the styles (following the same convention as our other [configuration options](https://docs.cloudcannon.com/editing/options/)):
 
 ~~~yaml
@@ -50,8 +52,8 @@ One of the most common requests for custom styles is for alignment. You can now 
 ~~~yaml
 _options:
   _block:
-    left: left-align
-    right: right-align
+    left: align-left
+    right: align-right
 ~~~
 
 Use the `styles` file above to include the alignment styles if you're using the Content Editor or a Rich Text field, otherwise adding the class won't affect the text in the editor.
@@ -84,7 +86,3 @@ Use this to remove headings or mark up element that editors should not be using 
 ***
 
 This was one of the most requested features we've ever had, and we're proud to see it available for you to use.
-
-
-
-<!-- ![Image](/images/blog/custom-editor-styles/image.png){: .screenshot srcset="/images/blog/custom-editor-styles/image.png 800w, /images/blog/custom-editor-styles/image@2x.png 1600w"} -->
