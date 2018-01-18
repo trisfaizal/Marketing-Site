@@ -10,7 +10,7 @@ The editing interface is the core of CloudCannon. It has sensible defaults for m
 
 ## Custom styles
 
-Custom styles allow your editors to mark up inline or block level content with styles that you predefine. This opens up an enormous number of use cases, including callouts, multiple types of text emphasis and image filtering. Available styles are configured on a custom scope from globally down to individual elements.
+Custom styles allow your editors to mark up inline or block level content with your predefined styles. This opens up an enormous number of use cases, including callouts, multiple types of text emphasis and image filtering. Available styles are configured on a custom scope from globally down to individual elements.
 
 This feature uses class names and styles that you define, so the editing experience is seamless in the *Visual Editor*, and much more contextual in the *Content Editor*.
 
