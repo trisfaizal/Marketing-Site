@@ -12,7 +12,7 @@ The editing interface is the core of CloudCannon. It has sensible defaults for m
 
 Custom styles allow your editors to mark up inline or block level content with styles that you predefine. This opens up an enormous number of use cases, including callouts, multiple types of text emphasis and image filtering. Available styles are configured on a custom scope from globally down to individual elements.
 
-This feature uses class names and styles that you define, so the editing experience is seamless in the Visual Editor, and much more contextual in the Content Editor.
+This feature uses class names and styles that you define, so the editing experience is seamless in the *Visual Editor*, and much more contextual in the *Content Editor*.
 
 ![Content Editor with custom styles and alignment](/images/blog/custom-editor-styles/content-editor-custom-styles.png){: .screenshot srcset="/images/blog/custom-editor-styles/content-editor-custom-styles.png 740w, /images/blog/custom-editor-styles/content-editor-custom-styles@2x.png 1480w"}
 
@@ -24,7 +24,7 @@ _options:
     styles: /css/editor.css
 ~~~
 
-CloudCannon extracts the styles in the file to populate the Styles dropdown. All styles in the file are added to the editor, however only the selectors in the `element.class-name` form appear in the dropdown. You must include the same styles on your live site for the Visual Editor.
+CloudCannon extracts the styles in the file to populate the *Styles* dropdown. All styles in the file are added to the editor, however only the selectors in the `element.class-name` form appear in the dropdown. You must include the same styles on your live site for the *Visual Editor*.
 
 ~~~css
 p.callout {
@@ -56,7 +56,7 @@ _options:
     right: align-right
 ~~~
 
-Use the `styles` file above to include the alignment styles if you're using the Content Editor or a Rich Text field, otherwise adding the class won't affect the text in the editor.
+Use the `styles` file above to include the alignment styles if you're using the *Content Editor* or a *Rich Text* field, otherwise adding the class won't affect the text in the editor.
 
 ~~~css
 .align-left {
@@ -73,7 +73,7 @@ You can style the alignment to match your output site (e.g. `text-align`, `float
 
 ## Structure
 
-The format dropdown has always been available in the Content Editor and on block level Editable Regions, used mainly to mark up headings. You can now define what options are available in this list:
+The format dropdown has always been available in the *Content Editor* and on block level *Editable Regions*, used mainly to mark up headings. You can now define what options are available in this list:
 
 ~~~yaml
 _options:
