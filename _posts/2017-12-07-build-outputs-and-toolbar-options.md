@@ -9,7 +9,7 @@ image_featured: true
 
 Editing and syncing are two critical features in CloudCannon. We've recently improved and added to those features to make them more configurable than ever.
 
-### Build outputs
+## Build outputs
 
 In addition to syncing your source files with Bitbucket and GitHub, you can now set a repository as an output for your site. After every change, CloudCannon builds your site and syncs the output with your selected destination. Use this to create custom deployment flows for external hosting, or reduce the complexity of your current solution.
 
@@ -17,7 +17,7 @@ In addition to syncing your source files with Bitbucket and GitHub, you can now 
 
 See our [official documentation](https://docs.cloudcannon.com/syncing/output/) for more details on setting your first output.
 
-### Toolbar options
+## Toolbar options
 
 The *Content Editor*, *Rich Text* front matter fields and *Editable Regions* are given default editor toolbars to handle the most common cases. For those of you who need more, you can now change the controls displayed on any of our toolbars. Choose to add or remove controls in your editing interface to suit the associated content.
 
