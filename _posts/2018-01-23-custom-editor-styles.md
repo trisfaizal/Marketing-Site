@@ -20,7 +20,7 @@ This feature uses class names and styles that you define, so the editing experie
 To set up custom styles, you'll need to define a path to find the styles (following the same convention as our other [configuration options](https://docs.cloudcannon.com/editing/options/)):
 
 ```yaml
-\_options:
+_options:
   content:
     styles: /css/editor.css
 ```
@@ -50,8 +50,8 @@ h2 {
 One of the most common requests for custom styles is for alignment. You can now enable toolbar buttons for alignment and define the class that is applied.
 
 ```yaml
-\_options:
-  \_block:
+_options:
+  _block:
     left: align-left
     right: align-right
 ```
@@ -75,8 +75,8 @@ You can style the alignment to match your output site (e.g. `text-align`, `float
 The format dropdown has always been available in the *Content Editor* and on block level *Editable Regions*, used mainly to mark up headings. You can now define what options are available in this list:
 
 ```yaml
-\_options:
-  my\_rich\_text\_markdown:
+_options:
+  my_rich_text_markdown:
     format: p h2 h3
 ```
 
