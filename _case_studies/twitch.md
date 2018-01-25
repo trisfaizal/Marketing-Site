@@ -20,13 +20,13 @@ testimonial:
 
 Twitch is the world’s leading social video service and community for video games. To support their 15 million daily active users and 2.2 million content creators, they have an array of informational websites with fresh content.
 
-In the past these informational websites were built using Ruby on Rails. The marketing team updated content by pasting HTML into text boxes. They had no way of knowing what was changing until it was on the live website. For each new site the developers had to spin up and maintain infrastructure.
+In the past, these informational websites were built with Ruby on Rails. The marketing team updated content by pasting HTML into text boxes. They had no way to be certain what was changing until it was on the live website. For each new site, the developers had to spin up and maintain additional infrastructure.
 
 Twitch needs to:
 
 * Provide an editing interface marketers find easy to use
 * Have marketers publish content without involving developers
-* Preview content before its pushed live
+* Preview content before it’s pushed live
 * Host the websites on their own Amazon S3 Buckets
 
 ## How CloudCannon helps
@@ -43,20 +43,20 @@ The marketing team no longer works directly with HTML. They update content by ty
 
 ## Publishing Workflows
 
-Marketers edit content on staging sites hosted by CloudCannon. They can navigate a live version of the staging site to see exactly what is changing. When they're ready to push content live they click a publish button. In the background, CloudCannon then creates a GitHub Pull Request, which triggers a Travis CI build to check for broken links and other problems. If all the tests pass, the pull request can then be merged in CloudCannon. This triggers Travis CI again and deploys the website to the Twitch production Amazon S3 servers.
+Marketers edit content on staging sites hosted by CloudCannon. They can navigate a live version of the staging site to see exactly what is changing. When they're ready to push content live, they click a publish button. In the background, CloudCannon then creates a GitHub Pull Request, which triggers a Travis CI build to check for broken links and other problems. If all the tests pass, the pull request can then be merged in CloudCannon. This triggers Travis CI again and deploys the website to the Twitch production Amazon S3 servers.
 
 ![TwitchCon Publishing](/images/case-studies/twitch/publish.png){: .screenshot }
 
 ## Plugins
 
-Twitch has extended Jekyll's functionality with custom built Ruby plugins. One plugin downloads speaker data from an external source and formats it into the speaker schedule for TwitchCon. By doing this, Twitch doesn't need to keep two copies of data in sync, it happens automatically when they build the site.
+Twitch has extended Jekyll's functionality with custom built Ruby plugins. One of these plugins downloads speaker data from an external source and formats it into the speaker schedule for TwitchCon. By doing this, Twitch doesn't need to keep two copies of data in sync, it happens automatically when they build the site.
 
 ![TwitchCon Speakers](/images/case-studies/twitch/plugin.png){: .screenshot }
 
 ## Share levels
 
-{% include components/case-study/quote.html case=page quote="Twitch is an engineering heavy company so I knew I had to find something that works for engineers and marketers. Engineers don’t want to use a visual editor because it’s faster for them to write code. With CloudCannon, I give developers access to the code while keeping the visual editor for marketers." %}
-
 Twitch changes the editors available in CloudCannon depending on the person's technical ability. Non-technical editors update content using an easy-to-use interface while technical editors have full access to write their own code.
+
+{% include components/case-study/quote.html case=page quote="Twitch is an engineering heavy company so I knew I had to find something that works for engineers and marketers. Engineers don’t want to use a visual editor because it’s faster for them to write code. With CloudCannon, I give developers access to the code while keeping the visual editor for marketers." %}
 
 ![Twitch Markdown](/images/case-studies/twitch/markdown.png){: .screenshot }

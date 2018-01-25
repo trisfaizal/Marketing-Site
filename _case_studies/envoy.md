@@ -36,24 +36,24 @@ With CloudCannon, the marketing team iterates on content in a staging environmen
 
 ## Editing
 
-The marketing team no longer needs to go through a developer to get content on the site. They can create new case studies, blog posts and landing  pages independently.
+The marketing team no longer needs to go through a developer to get content on the site. They create new case studies, blog posts and landing pages independently.
 
 ![Envoy Case](/images/case-studies/envoy/case.png){: .screenshot }
 
 ## Staging preview
 
-The marketing team previews content on a staging website to ensure everything is working before pushing it production. When they push to production, CloudCannon performs a merges branches which triggers a deployment script to push it to their hosting on Heroku.
+The marketing team previews content on a staging website to ensure everything is working before publishing it to production. When they publish, CloudCannon merges the changes into a Git branch which triggers a custom deployment script, pushing to their hosting on Heroku.
 
 ![Envoy Staging](/images/case-studies/envoy/staging.png){: .screenshot }
 
 ## Content search
 
-Envoy marketers can filter their posts and case studies using the built in search in CloudCannon to find the content they're looking for.
+Envoy marketers filter their posts and case studies using the built in search in CloudCannon to find the content they're looking for.
 
 ![Envoy Search](/images/case-studies/envoy/search.png){: .screenshot }
 
 ## Landing Pages
 
-Envoy spins up landing pages with CloudCannon to test new ideas with Google AdWord campaigns. The developers created a card system using front matter to allow marketers to control even complex UI elements.
+Envoy creates landing pages with CloudCannon to test new ideas with Google AdWord campaigns. Their developers created a card system with front matter to allow marketers to control the order and content of complex structured UI elements.
 
 ![Envoy cards](/images/case-studies/envoy/cards.png){: .screenshot }

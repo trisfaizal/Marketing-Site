@@ -49,7 +49,7 @@ The marketing team updates HTML content directly on the website:
 
 ![Netflix Devices Inline](/images/case-studies/netflix/inline.png){: .screenshot }
 
-And update and manage structured collection data:
+And manages structured collection data with an easy-to-use interface:
 
 ![Netflix Devices Inline](/images/case-studies/netflix/collection.png){: .screenshot }
 
