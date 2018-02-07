@@ -17,7 +17,7 @@ With a Jekyll CMS like [CloudCannon](https://cloudcannon.com), you have all thes
 
 ## Client Sharing
 
-[Client Sharing](https://docs.cloudcannon.com/sharing/client-sharing/)&nbsp;is a CloudCannon feature specifically for freelancers and agencies. Instead of each client creating their own CloudCannon account, you set up a *Client Sharing* password in *Site Settings / Client Sharing.* Clients then go to https://theirwebsite.com/update/ and enter the password to update content on their site. *Client Sharing* is available on paid plans at no extra charge.
+[Client Sharing](https://docs.cloudcannon.com/sharing/client-sharing/) is a CloudCannon feature specifically for freelancers and agencies. Instead of each client creating their own CloudCannon account, you set up a *Client Sharing* password in *Site Settings / Client Sharing.* Clients then go to https://theirwebsite.com/update/ and enter the password to update content on their site. *Client Sharing* is available on paid plans at no extra charge.
 
 ![](/images/blog/jekyll-for-freelancers/client-login.png){: .screenshot srcset="/images/blog/jekyll-for-freelancers/client-login.png 800w, /images/blog/jekyll-for-freelancers/client-login@2x.png 1600w"}
 
