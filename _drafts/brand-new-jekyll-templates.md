@@ -22,7 +22,7 @@ Write and publish ebooks using Jekyll.
 
 ## [Aperture](https://learn.cloudcannon.com/templates/aperture/)
 
-Build your photography portfolio
+Build your photography portfolio.
 
 ![Aperture template](/images/blog/brand-new-jekyll-templates/aperture.jpg){: .screenshot srcset="/images/blog/brand-new-jekyll-templates/aperture.jpg 740w, /images/blog//brand-new-jekyll-templates/aperture@2x.jpg 1480w"}
 
