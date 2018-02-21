@@ -26,7 +26,7 @@ Build your photography portfolio.
 
 ![Aperture template](/images/blog/brand-new-jekyll-templates/aperture.jpg){: .screenshot srcset="/images/blog/brand-new-jekyll-templates/aperture.jpg 740w, /images/blog/brand-new-jekyll-templates/aperture@2x.jpg 1480w"}
 
-<br/>
+&nbsp;
 
 We've also given two of our existing templates a makeover:
 
