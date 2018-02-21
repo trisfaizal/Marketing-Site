@@ -16,7 +16,7 @@ Build an API documentation website.
 
 ## [Author](https://learn.cloudcannon.com/templates/author/)
 
-Write and publish ebooks using Jekyll.
+Write and publish eBooks using Jekyll.
 
 ![Author template](/images/blog/brand-new-jekyll-templates/author.jpg){: .screenshot srcset="/images/blog/brand-new-jekyll-templates/author.jpg 740w, /images/blog/brand-new-jekyll-templates/author@2x.jpg 1480w"}
 
