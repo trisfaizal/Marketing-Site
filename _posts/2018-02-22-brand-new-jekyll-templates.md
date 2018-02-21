@@ -6,7 +6,7 @@ image: /images/blog/brand-new-jekyll-templates/cover.jpg
 image_featured: true
 ---
 
-Jekyll is often pigeon-holed as a tool for developers to write their blog. This is just one of the many great uses of Jekyll. We're always interested in exploring unconventional use cases which push the boundaries in Jekyll. Today we’re releasing three MIT licensed templates that do exactly that.
+Jekyll is often pigeon-holed as a tool for developers to write their blog. This is just one of the many great uses of Jekyll. We're always interested in exploring unconventional use cases which push the boundaries in Jekyll. Today we’re releasing three MIT licensed templates which do exactly that.
 
 ## [Aviator](https://learn.cloudcannon.com/templates/aviator/)
 
