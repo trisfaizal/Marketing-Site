@@ -5,8 +5,10 @@ title: CloudCannon
 description: CloudCannon has everything you need to build, host and update Jekyll websites.
 url: https://cloudcannon.com
 disqus_shortname: cloudcannon
+theme: jekyll-theme-cloudcannon
 baseurl:
 
+main_url:
 google_site_verification: GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o
 permalink: pretty
 timezone: Pacific/Auckland
@@ -24,6 +26,12 @@ defaults:
       type: posts
     values:
       layout: post
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-data
 
 # ----------
 # SEO plugin
