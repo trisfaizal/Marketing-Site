@@ -8,7 +8,8 @@ disqus_shortname: cloudcannon
 theme: jekyll-theme-cloudcannon
 baseurl:
 
-main_url:
+active_sibling: Home
+main_url: ""
 google_site_verification: GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o
 permalink: pretty
 timezone: Pacific/Auckland

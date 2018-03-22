@@ -1,0 +1,23 @@
+{
+  "name": "marketing",
+  "version": "1.0.0",
+  "description": "CloudCannon marketing site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCannon/Marketing-Site.git"
+  },
+  "author": "CloudCannon Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CloudCannon/Marketing-Site/issues"
+  },
+  "homepage": "https://github.com/CloudCannon/Marketing-Site#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "cloudcannon-suite": "git+ssh://git@github.com/CloudCannon/cloudcannon-suite.git"
+  }
+}
