@@ -6,18 +6,18 @@ logo: envoy
 tagline: How Envoy keeps content fresh and relevant
 featured:
   image: /images/case-studies/envoy/home.jpg
-  url: https://envoy.com
+  url: https://envoy.com/?utm_source=organic_partner&utm_campaign=case_study&utm_term=cloud_cannon
 testimonial:
   text_markdown: "Envoy is constantly making changes to our marketing site to drive incremental improvement in SEO and paid advertising. With CloudCannon, our marketing team creates highly customised landing pages and blog posts without involving developers."
   image_path: /images/case-studies/envoy/jordan.jpg
   name: Jordan Stein
   work_title: Data Analyst
-  work_path: https://envoy.com
+  work_path: https://envoy.com/?utm_source=organic_partner&utm_campaign=case_study&utm_term=cloud_cannon
 ---
 
 ## Challenge
 
-Envoy has revolutionised the visitor/host experience in the workplace. As a fast growing company, Envoy needs ways of quickly experimenting with new landing pages and content.
+Envoy is modernizing and challenging the status quo of workplace technology, starting with visitors and deliveries at the front desk. As a fast growing company, Envoy needs ways of quickly experimenting with new landing pages and content.
 
 Previously, Envoy marketers would communicate the changes they wanted to make to the websites to developers. This created bottlenecks and made it time consuming to push out new content.
 
