@@ -5,6 +5,8 @@ icons: true
 permalink: /contact/
 ---
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <div class="contact">
 	<div class="wrapper">
 		<div class="contact-content">
@@ -28,6 +30,8 @@ permalink: /contact/
 			</div>
 
 			<textarea name="message" id="message" placeholder="Your Message"></textarea>
+
+      <div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>
 
 			<input type="submit" value="Send Message">
 		</form>

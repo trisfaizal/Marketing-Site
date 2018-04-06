@@ -56,3 +56,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - package.json
+
+recaptcha:
+  sitekey: 6Lfng1EUAAAAAIqcLgzGcjRjVHR46BbyqZNgU2Xd
