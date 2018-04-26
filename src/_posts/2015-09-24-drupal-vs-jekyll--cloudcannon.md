@@ -5,6 +5,7 @@ author: mike
 image:
 image_featured: false
 ---
+
 There's a huge eco-system of plugins and add-ons available for any CMS. In this comparison we'll be using the content management systems straight out of the box to reduce the complexity and time to get the sites live.
 
 We're looking at Drupal, a powerful open source PHP CMS which has been around since 2000.
@@ -29,15 +30,15 @@ You can see the static site I started each integration with [here](https://githu
 
 The home page lists all the blog posts.
 
-![](/uploads/versions/home---x----900-563x---.jpg){:.screenshot}
+![](/uploads/versions/home---x----900-563x---.jpg){: .screenshot}
 
 There's an about page.
 
-![](/uploads/versions/screen-shot-2015-09-23-at-2.40.19-pm---x----900-563x---.png){:.screenshot}
+![](/uploads/versions/screen-shot-2015-09-23-at-2.40.19-pm---x----900-563x---.png){: .screenshot}
 
 And a page to view a blog post.
 
-![](/uploads/versions/screen-shot-2015-09-23-at-2.38.07-pm---x----900-563x---.png){:.screenshot}
+![](/uploads/versions/screen-shot-2015-09-23-at-2.38.07-pm---x----900-563x---.png){: .screenshot}
 
 In this scenario I'm a web designer making a website for a non-technical client. The client needs to update the about page and manage their blog without touching any code.
 
@@ -49,7 +50,7 @@ In this scenario I'm a web designer making a website for a non-technical client.
 
 I'm on Mac OS X so I decided to use [MAMP](https://www.mamp.info/en/) to set up my PHP environment. After a 240MB download I had a full PHP and MySQL environment. Next, I downloaded Drupal 7, unzipped it to the `htdocs` directory inside MAMP and loaded the quick installer in my browser.
 
-![](/uploads/versions/drupal---x----900-563x---.png){:.screenshot}
+![](/uploads/versions/drupal---x----900-563x---.png){: .screenshot}
 
 The quick install involved configuring the database and other site settings for my site.
 
@@ -140,7 +141,6 @@ With Drupal, I made a copy of the Stark theme and read documentation on building
 {% endraw %}
 {% endhighlight %}
 
-
 `page--front.tpl.php`: Container for front page HTML. Sits between `html.tpl.php` and the front page code in `node.tpl.php`.
 
 `page.tpl.php`: Container for page HTML. Sits between `html.tpl.php` and the page/blog entry code in `node.tpl.php`.
@@ -163,7 +163,7 @@ It took me a long time and a lot of reading to figure out which files to edit or
 
 The other gotcha is each time I made an update to the template I would have to go into the Drupal admin panel to clear the cache before I could see the changes:
 
-![](/uploads/versions/screen-shot-2015-09-23-at-3.05.30-pm---x----900-563x---.png){:.screenshot}
+![](/uploads/versions/screen-shot-2015-09-23-at-3.05.30-pm---x----900-563x---.png){: .screenshot}
 
 [Source for Drupal Theme](https://github.com/CloudCannon/Drupal-material-theme)
 
@@ -242,11 +242,11 @@ Overall using SiteGround saved me a lot of time as I didn't have to set up an en
 
 I used [CloudCannon](http://cloudcannon.com) to deploy and host the Jekyll site. To do this I created a GitHub repository with my source files, then connected that repository to a new site in CloudCannon.
 
-![](/images/blog/drupal-jekyll/connect-github.png){:.screenshot}
+![](/images/blog/drupal-jekyll/connect-github.png){: .screenshot}
 
 The files sync to CloudCannon and are live on a generated testing domain.
 
-![](/images/blog/drupal-jekyll/file-browser.png){:.screenshot}
+![](/images/blog/drupal-jekyll/file-browser.png){: .screenshot}
 
 All the content is in the files so there is no database.
 
@@ -258,33 +258,33 @@ All the content is in the files so there is no database.
 
 To update content in Drupal you use the admin panel. You can see existing articles and pages.
 
-![](/images/blog/drupal-jekyll/content.png){:.screenshot}
+![](/images/blog/drupal-jekyll/content.png){: .screenshot}
 
 Update content using a text area.
 
-![](/images/blog/drupal-jekyll/update-content.png){:.screenshot}
+![](/images/blog/drupal-jekyll/update-content.png){: .screenshot}
 
 And you can update other metadata.
 
-![](/images/blog/drupal-jekyll/update-content-2.png){:.screenshot}
+![](/images/blog/drupal-jekyll/update-content-2.png){: .screenshot}
 
 ### Jekyll
 
 In CloudCannon, editing is inline. You can update content on the about page by clicking and entering new content.
 
-![](/images/blog/drupal-jekyll/cc-edit.png){:.screenshot}
+![](/images/blog/drupal-jekyll/cc-edit.png){: .screenshot}
 
 Going to the collections view displays all the blog posts.
 
-![](/images/blog/drupal-jekyll/cc-edit-blog-list.png){:.screenshot}
+![](/images/blog/drupal-jekyll/cc-edit-blog-list.png){: .screenshot}
 
 You write and update blog posts in a simple editor.
 
-![](/images/blog/drupal-jekyll/cc-edit-blog.png){:.screenshot}
+![](/images/blog/drupal-jekyll/cc-edit-blog.png){: .screenshot}
 
 Update front matter in the settings sidebar.
 
-![](/images/blog/drupal-jekyll/cc-edit-frontmatter.png){:.screenshot}
+![](/images/blog/drupal-jekyll/cc-edit-frontmatter.png){: .screenshot}
 
 All changes made on CloudCannon are committed back to the repository so I can work on the site locally in tandem.
 
@@ -296,13 +296,13 @@ All changes made on CloudCannon are committed back to the repository so I can wo
 
 I had the following cache settings turned on and loaded the page several times to ensure everything was cached properly.
 
-![](/images/blog/drupal-jekyll/drupal-speed.png){:.screenshot}
+![](/images/blog/drupal-jekyll/drupal-speed.png){: .screenshot}
 
 For a further speed increase, one of our readers suggested using the [Boost module](https://www.drupal.org/project/boost).
 
 ### Jekyll
 
-CloudCannon serves static files and all assets are minified, compressed and delivered on a CDN.
+CloudCannon serves static files and all assets are minified, optimised and delivered on a CDN.
 
 ### Comparison
 
@@ -320,6 +320,6 @@ Jekyll was a small step from the static website, deployment was a simple `git pu
 
 All the source files are available on GitHub:
 
- * [Static Site](https://github.com/CloudCannon/material-design-lite)
- * [Drupal Theme](https://github.com/CloudCannon/Drupal-material-theme)
- * [Jekyll Site](https://github.com/CloudCannon/jekyll-material-design-lite)
+* [Static Site](https://github.com/CloudCannon/material-design-lite)
+* [Drupal Theme](https://github.com/CloudCannon/Drupal-material-theme)
+* [Jekyll Site](https://github.com/CloudCannon/jekyll-material-design-lite)
