@@ -1,6 +1,6 @@
 ---
 layout: info-page
-title: Privacy Policy
+title: Terms and Conditions
 permalink: /terms/
 ---
 
