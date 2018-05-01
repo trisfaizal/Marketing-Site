@@ -1,7 +1,7 @@
 ---
 layout: info-page
 title: Privacy Policy
-permalink: /privacy/
+permalink: /terms/
 ---
 
 # Terms of Service
