@@ -30,6 +30,8 @@ defaults:
       _options:
         content:
           uploads_dir: "images/blog/:title"
+        image:
+          upload_dir: "images/blog/:title"
 
 plugins:
   - jekyll-feed
