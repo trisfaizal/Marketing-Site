@@ -75,4 +75,4 @@ _options:
     numberedlist: true
     bulletedlist: true
     code: true
-    styles: "src/css/editor.css"
+    styles: "css/editor.css"
