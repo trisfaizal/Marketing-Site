@@ -27,6 +27,9 @@ defaults:
       type: posts
     values:
       layout: post
+      _options:
+        content:
+          uploads_dir: "images/blog/:title"
 
 plugins:
   - jekyll-feed
