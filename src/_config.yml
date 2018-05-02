@@ -59,3 +59,14 @@ exclude:
 
 recaptcha:
   sitekey: 6Lfng1EUAAAAAIqcLgzGcjRjVHR46BbyqZNgU2Xd
+  
+_options:
+  content:
+    format: p h2 h3 h4 h5 h6
+    link: true
+    removeformat: true
+    bold: true
+    image: true
+    numberedlist: true
+    bulletedlist: true
+    code: true
