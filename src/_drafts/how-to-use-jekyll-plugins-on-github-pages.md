@@ -17,3 +17,7 @@ Here's a basic setup for using Outputs with GitHub Pages:
 1. Move your Jekyll source code to the `master`&nbsp;branch in your GitHub repository.
 2. Create a site in CloudCannon and connect it to the `master`&nbsp;branch.
 3. Add an [Output](https://docs.cloudcannon.com/syncing/output/){: target="_blank"}&nbsp;to the `gh-pages`&nbsp;branch.
+
+This setup is useful for other situations as well. You might have a CI script that performs static checks on a site and then deploys it to your hosting environment. If the CI uses the static output for performing these tasks it will run faster as it doesn't have to build the site.&nbsp;
+
+Hope these tips are useful! Let us know how you're using Outputs.
