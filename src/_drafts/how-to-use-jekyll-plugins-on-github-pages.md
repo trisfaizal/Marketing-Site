@@ -2,7 +2,7 @@
 title: How to use custom Jekyll plugins on GitHub Pages
 author: mike
 category: Features
-image: /images/blog/how-to-use-jekyll-plugins-on-github-pages/header.png
+image: /uploads/header.jpg
 image_featured: true
 ---
 
