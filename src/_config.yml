@@ -41,7 +41,7 @@ defaults:
           styles: "css/editor.css"
         image:
           upload_dir: "images/blog/:title"
-
+          
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
