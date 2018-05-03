@@ -34,7 +34,7 @@ defaults:
           link: true
           removeformat: true
           bold: true
-          italics: true
+          italic: true
           image: true
           numberedlist: true
           bulletedlist: true
@@ -81,7 +81,7 @@ _options:
     link: true
     removeformat: true
     bold: true
-    italics: true
+    italic: true
     image: true
     numberedlist: true
     bulletedlist: true
