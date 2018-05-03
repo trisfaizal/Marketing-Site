@@ -38,7 +38,7 @@ defaults:
           numberedlist: true
           bulletedlist: true
           code: true
-          styles: "css/editor.css"
+          styles: "src/css/editor.css"
         image:
           upload_dir: "images/blog/:title"
           
