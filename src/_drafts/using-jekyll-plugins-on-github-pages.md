@@ -1,7 +1,7 @@
 ---
 title: Using Jekyll plugins on GitHub Pages
 author: mike
-category: Features
+category: Tips
 image: /uploads/header-1.jpg
 image_featured: true
 ---
