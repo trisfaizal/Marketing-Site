@@ -30,6 +30,15 @@ defaults:
       _options:
         content:
           uploads_dir: "images/blog/:title"
+          format: p h2 h3 h4 h5 h6
+          link: true
+          removeformat: true
+          bold: true
+          image: true
+          numberedlist: true
+          bulletedlist: true
+          code: true
+          styles: "css/editor.css"
         image:
           upload_dir: "images/blog/:title"
 
