@@ -45,4 +45,4 @@ Hide fields by prefixing the key with an underscore (e.g. `_hidden_text`) or wit
 
 ***
 
-See our [official documentation](https://docs.cloudcannon.com/editing/editor-links/) for more details on setting your first *Editor Link*.
+See our [official documentation](https://docs.cloudcannon.com/editing/editor-links/) for more details on setting up your first *Editor Link*.
