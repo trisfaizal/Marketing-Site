@@ -10,7 +10,7 @@ Front matter is a great way to structure content and metadata for a Jekyll websi
 
 ## Sidebar and Editor Links
 
-The right sidebar is the default place to edit your front matter in the *Visual* and *Content Editors*. CloudCannon builds an easy to use interface around each of your fields, controlled by a intuitive naming scheme. With larger sets of front matter, it's sometimes difficult for editors to connect where the changes appear. *Editor Links* help bridge this context gap.
+The right sidebar is the default place to edit your front matter in the *Visual* and *Content Editors*. CloudCannon builds an easy to use interface around each of your fields, controlled by an intuitive naming scheme. With larger sets of front matter, it's sometimes difficult for editors to connect where the changes appear. *Editor Links* help bridge this context gap.
 
 Editor Links are contextual pointers to front matter fields and other pages in the *Visual Editor*. The default behaviour of a front matter *Editor Link* is to highlight the associated front matter field in the sidebar. For example, an **Edit Title** button that highlights the `page.title` field so editors know where to change it.
 
@@ -21,7 +21,7 @@ Editor Links are contextual pointers to front matter fields and other pages in t
 
 ## Modals
 
-We've added the option to have *Editor Links* open front matter fields in a modal pop up instead of highlighting the field in the sidebar. Use this option to keep your editors inside the *Visual Editor* where context is at its peak.
+We've added the option to have *Editor Links* open front matter fields in a modal pop up. Use this option to keep your editors inside the *Visual Editor* where context is at its peak.
 
 > Modals display the linked field only and provide more screen space than the sidebar. This is particularly useful with *Rich Text* fields.
 {: .explainer}
