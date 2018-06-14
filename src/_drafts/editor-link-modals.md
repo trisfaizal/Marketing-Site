@@ -34,6 +34,8 @@ Open *Editor Links* in a modal by setting the `data-cms-editor-link-style` attri
 <a href="cloudcannon:#title" data-cms-editor-link-style="modal">Edit the title</a>
 ```
 
+CloudCannon adds the `cms-editor-link-dirty` class to *Editor Links* after changes are made using the modal style. Use this to add styles indicating that changes are pending in the editor.
+
 ## Hiding fields
 
 You can hide specific fields in the sidebar to prevent changes from editors, or to move front matter editing into modals.
