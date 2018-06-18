@@ -45,6 +45,6 @@ You can hide specific fields in the sidebar to prevent changes from editors, or 
 
 Hide fields by prefixing the key with an underscore (e.g. `_hidden_text`) or with [editing options](https://docs.cloudcannon.com/editing/options/#hidden-fields) (e.g. setting `_options.layout.hidden` to **true**).
 
-***
+---
 
 See our [official documentation](https://docs.cloudcannon.com/editing/editor-links/) for more details on setting up your first *Editor Link*.
