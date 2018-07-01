@@ -20,7 +20,7 @@ Once you add a domain name to CloudCannon we will attempt to generate an SSL cer
 ![](/images/blog/free-automatic-ssl/f1c251082b2ed18c0769acfd4c61f8ad.png){: .screenshot}
 {: .present-before-paste}
 
-HTTP will default to redirect to HTTPS for all CloudCannon sites. This can be configured using the *Site Settings*. Automatic generation can also be disabled which will enable a custom certificate upload option. If you have any issues, see the [documentation](https://docs.cloudcannon.com/ssl/custom-certificate/#doc) or [contact support](/contact/).
+HTTP will default to redirect to HTTPS for all CloudCannon sites. This can be configured using the *Site Settings*. Automatic generation can also be disabled which will enable a custom certificate upload option. If you have any issues, see the [documentation](https://docs.cloudcannon.com/ssl/letsencrypt/#doc) or [contact support](/contact/).
 {: .present-before-paste}
 
 ### What else is new
