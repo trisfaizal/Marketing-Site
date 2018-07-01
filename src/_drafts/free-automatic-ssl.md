@@ -2,8 +2,8 @@
 title: Free Automatic SSL
 author: george
 category: Features
-image:
-image_featured: false
+image: /uploads/greenlock.png
+image_featured: true
 ---
 
 This week [chrome is releasing an update](https://security.googleblog.com/2018/02/a-secure-web-is-here-to-stay.html) that will show "Not Secure" on any site that uses HTTP. This is part of an ongoing strategy to create a&nbsp;more secure web. To solve this issue we have added free automatic SSL certificates on all CloudCannon connected domains. This draws our SSL private beta to a close making it available for all CloudCannon users.
