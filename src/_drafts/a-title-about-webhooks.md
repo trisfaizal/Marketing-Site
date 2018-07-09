@@ -6,7 +6,4 @@ image:
 image_featured: false
 ---
 
-- Be honest
-- Avoid spelling mistakes
-- Avoid the passive voice
-- Send it to the team after rewriting it once
+* ![](/images/blog/a-title-about-webhooks/01-make-a-zap.png)
