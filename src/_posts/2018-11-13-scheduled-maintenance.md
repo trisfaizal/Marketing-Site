@@ -6,7 +6,7 @@ image:
 image_featured: false
 ---
 
-The maintenance was a success and everything is back to normal. We will release a post mortom later this week.
+The maintenance was a success and everything is back to normal. We will release a post about the changes later this week.
 
 ---
 
@@ -46,5 +46,5 @@ The following supporting data will not be recorded on updates made during this m
 These items are intended for logging purposes and will not affect the live site or editing process after the migration.
 {: .present-before-paste}
 
- 
+&nbsp;
 {: .present-before-paste}
