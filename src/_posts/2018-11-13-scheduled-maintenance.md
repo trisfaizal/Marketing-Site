@@ -6,6 +6,10 @@ image:
 image_featured: false
 ---
 
+The maintenance was a success and everything is back to normal. We will release a post mortom later this week.
+
+---
+
 Today at [5:00pm NZDT](https://everytimezone.com/#2018-11-13,-480,b8jj) CloudCannon will be set to a read-only state for 2 hours. This will mean the following:
 {: .present-before-paste}
 
