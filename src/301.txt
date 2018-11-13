@@ -27,3 +27,4 @@
 /smileys/* http://smiley.cloudcannon.com/
 /previewer/ http://previewer.cloudcannon.com/
 /previewer/* http://previewer.cloudcannon.com/
+/operations/2018/11/13/scheduled-maintanence/ /operations/2018/11/13/scheduled-maintenance/
