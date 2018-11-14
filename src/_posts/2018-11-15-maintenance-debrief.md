@@ -2,7 +2,7 @@
 title: Maintenance Debrief
 author: george
 category: Operations
-image: /uploads/maintenance-debreif.png
+image: /uploads/maintenance-debrief.png
 image_featured: true
 ---
 
