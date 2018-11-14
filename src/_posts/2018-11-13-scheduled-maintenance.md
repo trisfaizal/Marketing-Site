@@ -6,7 +6,7 @@ image:
 image_featured: false
 ---
 
-The maintenance was a success and everything is back to normal. Read about that update in our [Maintenance Debrief](/operations/2018/11/15/maintenance-debrief/).
+The maintenance was a success and everything is back to normal. Read about the update in our [Maintenance Debrief](/operations/2018/11/15/maintenance-debrief/).
 
 ---
 
