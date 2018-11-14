@@ -27,6 +27,7 @@ url: https://cloudcannon.com/operations/2018/11/13/scheduled-maintenance/
 This file tells our default layout to add a clickable banner on the top of all pages:
 
 ```
+{% raw %}
 {% if site.data.banner_notification.enabled %}
   <div class="banner-notification">
     <p><a href="{{ site.data.banner_notification.url }}">
@@ -34,15 +35,16 @@ This file tells our default layout to add a clickable banner on the top of all p
     </a></p>
   </div>
 {% endif %}
+{% endraw %}
 ```
 
 Our sites are built using [CloudCannon suite](https://suite.cloudcannon.com), to build our sites locally we run `gulp dev`. Using iterm2 we build all of our sites simultaneously and the suite even watches the local Jekyll Theme repository.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xkZo5d54x5Y?autoplay=1&loop=1&playlist=xkZo5d54x5Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style='position:relative;padding-bottom:54%' class="screenshot"><iframe src='https://gfycat.com/ifr/HiddenMammothGrayfox' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
 
 Once built we can see that the banner is live on all sites.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xxJtBYc34g8?autoplay=1&loop=1&playlist=xxJtBYc34g8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style='position:relative;padding-bottom:54%' class="screenshot"><iframe src='https://gfycat.com/ifr/OnlyThickBushsqueaker' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
 
 To get this live we push the updated `Gemfile.lock` to master and publish to production via CloudCannon.
 
