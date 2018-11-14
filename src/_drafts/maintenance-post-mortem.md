@@ -27,6 +27,7 @@ url: https://cloudcannon.com/operations/2018/11/13/scheduled-maintenance/
 This file tells our default layout to add a clickable banner on the top of all pages:
 
 {% raw %}
+
 ```html
 {% if site.data.banner_notification.enabled %}
   <div class="banner-notification">
@@ -38,15 +39,16 @@ This file tells our default layout to add a clickable banner on the top of all p
   </div>
 {% endif %}
 ```
+
 {% endraw %}
 
 Our sites are built using [CloudCannon suite](https://suite.cloudcannon.com), to build our sites locally we run `gulp dev`. Using iterm2 we build all of our sites simultaneously and the suite even watches the local Jekyll Theme repository.
 
-<div class="cms-embed" data-cms-embed="PGRpdiBzdHlsZT0icG9zaXRpb246cmVsYXRpdmU7cGFkZGluZy1ib3R0b206NjklIiBjbGFzcz0ic2NyZWVuc2hvdCI+PGlmcmFtZSBzcmM9Imh0dHBzOi8vZ2Z5Y2F0LmNvbS9pZnIvRXhjaXRhYmxlRm9uZENlbnRpcGVkZT9oZD0xIiBmcmFtZWJvcmRlcj0iMCIgc2Nyb2xsaW5nPSJubyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9InBvc2l0aW9uOmFic29sdXRlO3RvcDowO2xlZnQ6MCIgYWxsb3dmdWxsc2NyZWVuPjwvaWZyYW1lPjwvZGl2Pg=="><div style="position:relative;padding-bottom:69%" class="screenshot"><iframe src="https://gfycat.com/ifr/ExcitableFondCentipede?hd=1" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0" allowfullscreen=""></iframe></div></div>
+<div class="cms-embed" data-cms-embed="PGRpdiBzdHlsZT0icG9zaXRpb246cmVsYXRpdmU7cGFkZGluZy1ib3R0b206NjYlIiBjbGFzcz0ic2NyZWVuc2hvdCI+PGlmcmFtZSBzcmM9Imh0dHBzOi8vZ2Z5Y2F0LmNvbS9pZnIvRXhjaXRhYmxlRm9uZENlbnRpcGVkZT9oZD0xIiBmcmFtZWJvcmRlcj0iMCIgc2Nyb2xsaW5nPSJubyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9InBvc2l0aW9uOmFic29sdXRlO3RvcDowO2xlZnQ6MCIgYWxsb3dmdWxsc2NyZWVuPjwvaWZyYW1lPjwvZGl2Pg=="><div style="position:relative;padding-bottom:66%" class="screenshot"><iframe src="https://gfycat.com/ifr/ExcitableFondCentipede?hd=1" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0" allowfullscreen=""></iframe></div></div>
 
 Once built we can see that the banner is live on all sites.
 
-<div class="cms-embed" data-cms-embed="PGRpdiBzdHlsZT0icG9zaXRpb246cmVsYXRpdmU7cGFkZGluZy1ib3R0b206NjklIiBjbGFzcz0ic2NyZWVuc2hvdCI+PGlmcmFtZSBzcmM9Imh0dHBzOi8vZ2Z5Y2F0LmNvbS9pZnIvV2F0ZXJsb2dnZWRPcm5lcnlEb3VnbGFzZmlyYmFya2JlZXRsZT9oZD0xIiBmcmFtZWJvcmRlcj0iMCIgc2Nyb2xsaW5nPSJubyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9InBvc2l0aW9uOmFic29sdXRlO3RvcDowO2xlZnQ6MCIgYWxsb3dmdWxsc2NyZWVuPjwvaWZyYW1lPjwvZGl2Pg=="><div style="position:relative;padding-bottom:69%" class="screenshot"><iframe src="https://gfycat.com/ifr/WaterloggedOrneryDouglasfirbarkbeetle?hd=1" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0" allowfullscreen=""></iframe></div></div>
+<div class="cms-embed" data-cms-embed="PGRpdiBzdHlsZT0icG9zaXRpb246cmVsYXRpdmU7cGFkZGluZy1ib3R0b206NjYlIiBjbGFzcz0ic2NyZWVuc2hvdCI+PGlmcmFtZSBzcmM9Imh0dHBzOi8vZ2Z5Y2F0LmNvbS9pZnIvV2F0ZXJsb2dnZWRPcm5lcnlEb3VnbGFzZmlyYmFya2JlZXRsZT9oZD0xIiBmcmFtZWJvcmRlcj0iMCIgc2Nyb2xsaW5nPSJubyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgc3R5bGU9InBvc2l0aW9uOmFic29sdXRlO3RvcDowO2xlZnQ6MCIgYWxsb3dmdWxsc2NyZWVuPjwvaWZyYW1lPjwvZGl2Pg=="><div style="position:relative;padding-bottom:66%" class="screenshot"><iframe src="https://gfycat.com/ifr/WaterloggedOrneryDouglasfirbarkbeetle?hd=1" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0" allowfullscreen=""></iframe></div></div>
 
 To get this live we push the updated `Gemfile.lock` to master and publish to production via CloudCannon.
 
