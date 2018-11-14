@@ -54,7 +54,7 @@ To get this live we push the updated `Gemfile.lock` to master and publish to pro
 
 ### Why 3 hours not 2?
 
-Once we completed the database upgrades with 15 minutes to spare. We turned the app back on to point at the new database and saw our performance crushed. We turned our error back on and ran `VACUUM ANALYZE`&nbsp;on our database. This solved all of our issues but took some time. A nasty surprise at the end of a fairly seamless migration.
+Once we completed the database upgrades with 15 minutes to spare. We turned the app back on to point at the new database and the performance was abysmal. We needed to run the SQL command&nbsp;`VACUUM ANALYZE`&nbsp;on our database. This solved all of our issues but took some time. A nasty surprise at the end of a fairly seamless migration.
 
 &nbsp;
 
