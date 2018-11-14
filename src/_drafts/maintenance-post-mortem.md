@@ -14,9 +14,27 @@ We have successfully completed our Scheduled Maintenance. During this time we al
 
 ### How we communicated the downtime
 
-To communicate in our app, we use intercom. Intercom offers us a way to send a message&nbsp;
+To communicate in our app, we use Intercom. Intercom offers us a way to send a message to all active users. The logged in users were sent a message and then again once it was completed.
 
-On our marketing sites we added a banner that linked to our blog:
+On our marketing sites we added a banner that linked to our blog. To do this we updated a data file in our jekyll theme called `_data/banner_notification.yml`. This file looks like:
+
+```
+enabled: true
+text: Scheduled Maintanence today at 5:00pm NZDT
+url: https://cloudcannon.com/operations/2018/11/13/scheduled-maintenance/
+```
+
+This file tells our default layout to add a clickable banner on the top of all pages:
+
+```
+{% if site.data.banner_notification.enabled %}
+  <div class="banner-notification">
+    <p><a href="{{ site.data.banner_notification.url }}">
+       {{ site.data.banner_notification.text }}
+    </a></p>
+  </div>
+{% endif %}
+```
 
 * Updated our Jekyll theme
 * Updated our sites to use the latest theme
