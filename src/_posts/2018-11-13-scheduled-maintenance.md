@@ -6,7 +6,7 @@ image:
 image_featured: false
 ---
 
-The maintenance was a success and everything is back to normal. We will release a post about the changes later this week.
+The maintenance was a success and everything is back to normal. Read about that update in our [Maintenance Debrief](/operations/2018/11/15/maintenance-debrief/).
 
 ---
 
