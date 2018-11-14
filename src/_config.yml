@@ -41,6 +41,7 @@ defaults:
           numberedlist: true
           bulletedlist: true
           code: true
+          embed: true
           styles: "src/css/editor.css"
         image:
           upload_dir: "images/blog/:title"
