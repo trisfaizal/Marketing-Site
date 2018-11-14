@@ -26,17 +26,6 @@ url: https://cloudcannon.com/operations/2018/11/13/scheduled-maintenance/
 
 This file tells our default layout to add a clickable banner on the top of all pages:
 
-```
-{% raw %}
-{% if site.data.banner_notification.enabled %}
-  <div class="banner-notification">
-    <p><a href="{{ site.data.banner_notification.url }}">
-       {{ site.data.banner_notification.text }}
-    </a></p>
-  </div>
-{% endif %}
-{% endraw %}
-```
 
 Our sites are built using [CloudCannon suite](https://suite.cloudcannon.com), to build our sites locally we run `gulp dev`. Using iterm2 we build all of our sites simultaneously and the suite even watches the local Jekyll Theme repository.
 
