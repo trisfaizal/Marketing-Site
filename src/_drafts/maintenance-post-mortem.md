@@ -1,5 +1,5 @@
 ---
-title: Maintenance post mortem
+title: Maintenance Debrief
 author: george
 category: Operations
 image:
@@ -29,7 +29,7 @@ This file tells our default layout to add a clickable banner on the top of all p
 {% raw %}
 
 ```html
-{% if site.data.banner_notification.enabled %}
+{% raw %}{% if site.data.banner_notification.enabled %}
   <div class="banner-notification">
     <p>
       <a href="{{ site.data.banner_notification.url }}">
@@ -37,7 +37,7 @@ This file tells our default layout to add a clickable banner on the top of all p
       </a>
     </p>
   </div>
-{% endif %}
+{% endif %}{% endraw %}
 ```
 
 {% endraw %}
