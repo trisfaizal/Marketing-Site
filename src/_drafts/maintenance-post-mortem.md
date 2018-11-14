@@ -18,7 +18,7 @@ To communicate in our app, we use Intercom. Intercom offers us a way to send a m
 
 On our marketing sites we added a banner that linked to our blog. To do this we updated a data file in our jekyll theme called `_data/banner_notification.yml`. This file looks like:
 
-```
+```yaml
 enabled: true
 text: Scheduled Maintanence today at 5:00pm NZDT
 url: https://cloudcannon.com/operations/2018/11/13/scheduled-maintenance/
@@ -26,6 +26,17 @@ url: https://cloudcannon.com/operations/2018/11/13/scheduled-maintenance/
 
 This file tells our default layout to add a clickable banner on the top of all pages:
 
+{% raw %}
+```html
+{% if site.data.banner_notification.enabled %}
+  <div class="banner-notification">
+    <p><a href>
+       {{ site.data.banner_notification.text }}
+    </a></p>
+  </div>
+{% endif %}
+```
+{% endraw %}
 
 Our sites are built using [CloudCannon suite](https://suite.cloudcannon.com), to build our sites locally we run `gulp dev`. Using iterm2 we build all of our sites simultaneously and the suite even watches the local Jekyll Theme repository.
 
