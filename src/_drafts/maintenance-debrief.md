@@ -50,9 +50,11 @@ To get this live we push the updated `Gemfile.lock` to master and publish to pro
 
 ### Improvements for next time
 
+Here are the updates we are going to make the next time we schedule maintenance:
+
 * Inform earlier
-* Build a status page
-* Better communication of any change (change log feed in the app)
+* Update our status page and integrate this with our app
+* Integrate our [change log](https://docs.cloudcannon.com/changelog/) in the app
 
 ### Why 3 hours not 2?
 
