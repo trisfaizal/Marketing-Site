@@ -6,9 +6,9 @@ image: /uploads/maintenance-debrief.png
 image_featured: true
 ---
 
-We have successfully completed our Scheduled Maintenance. During this time we allocated 2 hours and completed the migration in just over 3 hours. During the update we had the following successes:
+We have successfully completed our [Scheduled Maintenance](/operations/2018/11/13/scheduled-maintenance/). During this time we allocated two hours and completed the migration in just over three hours. During the update we had the following successes:
 
-1. Upgraded our Postgres database 4 major versions
+1. Upgraded our Postgres database four major versions
 2. Added a set of other security improvements
 3. Achieved zero downtime on sites
 
@@ -56,6 +56,6 @@ Here are the updates we are going to make the next time we schedule maintenance:
 * Update our status page and integrate this with our app
 * Integrate our [change log](https://docs.cloudcannon.com/changelog/) in the app
 
-### Why 3 hours not 2?
+### Why three hours not two?
 
 Once we completed the database upgrades with 15 minutes to spare. We turned the app back on to point at the new database and the performance was abysmal. We needed to run the SQL command `VACUUM ANALYZE` on our database. This solved all of our issues but took some time. A nasty surprise at the end of a fairly seamless migration.
