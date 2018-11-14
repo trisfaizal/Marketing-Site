@@ -36,8 +36,15 @@ This file tells our default layout to add a clickable banner on the top of all p
 {% endif %}
 ```
 
-* Updated our Jekyll theme
-* Updated our sites to use the latest theme
+Our sites are built using [CloudCannon suite](https://suite.cloudcannon.com), to build our sites locally we run `gulp dev`. Using iterm2 we build all of our sites simultaneously and the suite even watches the local Jekyll Theme repository.
+
+TERMINAL VIDEO HERE
+
+Once built we can see that the banner is live on all sites.
+
+SITES VIDEO HERE
+
+To get this live we push the updated `Gemfile.lock` to master and publish to production via CloudCannon.
 
 ### Improvements for next time
 
