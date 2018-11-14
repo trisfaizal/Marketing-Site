@@ -40,11 +40,11 @@ This file tells our default layout to add a clickable banner on the top of all p
 
 Our sites are built using [CloudCannon suite](https://suite.cloudcannon.com), to build our sites locally we run `gulp dev`. Using iterm2 we build all of our sites simultaneously and the suite even watches the local Jekyll Theme repository.
 
-<div style='position:relative;padding-bottom:54%' class="screenshot"><iframe src='https://gfycat.com/ifr/HiddenMammothGrayfox' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
+<div style='position:relative;padding-bottom:54%' class="screenshot"><iframe src='https://gfycat.com/ifr/ExcitableFondCentipede?hd=1' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
 
 Once built we can see that the banner is live on all sites.
 
-<div style='position:relative;padding-bottom:54%' class="screenshot"><iframe src='https://gfycat.com/ifr/OnlyThickBushsqueaker' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
+<div style='position:relative;padding-bottom:54%' class="screenshot"><iframe src='https://gfycat.com/ifr/WaterloggedOrneryDouglasfirbarkbeetle?hd=1' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
 
 To get this live we push the updated `Gemfile.lock` to master and publish to production via CloudCannon.
 
