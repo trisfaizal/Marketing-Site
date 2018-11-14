@@ -30,9 +30,11 @@ This file tells our default layout to add a clickable banner on the top of all p
 ```html
 {% if site.data.banner_notification.enabled %}
   <div class="banner-notification">
-    <p><a href>
-       {{ site.data.banner_notification.text }}
-    </a></p>
+    <p>
+        <a href="{{ site.data.banner_notification.url }}">
+            {{ site.data.banner_notification.text }}
+        </a>
+    </p>
   </div>
 {% endif %}
 ```
