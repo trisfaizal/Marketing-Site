@@ -2,8 +2,8 @@
 title: Maintenance Debrief
 author: george
 category: Operations
-image:
-image_featured: false
+image: /uploads/maintenance-debreif.png
+image_featured: true
 ---
 
 We have successfully completed our Scheduled Maintenance. During this time we allocated 2 hours and completed the migration in just over 3 hours. During the update we had the following successes:
