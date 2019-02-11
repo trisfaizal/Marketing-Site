@@ -1,0 +1,11 @@
+<a href="{{include.feature.url}}">
+    <div class="features-nav-item">
+        <div class="features-nav-item-icon">
+            {% include components/features-nav-icon.html icon=include.feature.icon %}
+        </div>
+        <div class="features-nav-item-text">
+            <p class="nav-item-heading">{{include.feature.title}}</p>
+            <p><i>{{include.feature.subheading}}</i></p>
+        </div>
+    </div>
+</a>

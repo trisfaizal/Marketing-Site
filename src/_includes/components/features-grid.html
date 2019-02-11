@@ -1,0 +1,8 @@
+<div class="features-grid">
+    {% for item in include.grid %}
+        <div class="features-grid-item">
+            <h3>{{item.heading}}</h3>
+            <p>{{item.text}}</p>
+        </div>
+    {% endfor %}
+</div>
