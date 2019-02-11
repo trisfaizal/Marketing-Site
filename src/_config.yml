@@ -13,17 +13,29 @@ main_url: ""
 google_site_verification: GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o
 permalink: pretty
 timezone: Pacific/Auckland
+
 collections:
   case_studies:
     output: false
     permalink: /case-studies/:name/
+  features:
+    title: Solutions
+    output: true
+    permalink: /solutions/:name/
+    _hide_content: true
   posts:
     _image_size: cover
+    
 defaults:
   - scope:
       path: ""
     values:
       header_class: "short"
+  - scope:
+      path: ""
+      type: "features"
+    values:
+      layout: "feature"
   - scope:
       path: ""
       type: posts
