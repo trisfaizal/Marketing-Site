@@ -1,0 +1,35 @@
+---
+layout: info-page
+---
+<div class="feature-item-container">
+    {% assign left = false %}
+    {% for item in page.pitch %}
+        {% if item.standalone_heading %}
+            <h1 style="text-align:center">{{item.standalone_heading}}</h1>
+            {% if item.text %}
+            <p style="text-align:center">{{item.text}}</p>
+            {% endif %}
+        {% else %}
+            <div class="feature-item {%if left%} left {%endif%} {%if forloop.first%} first {%endif%}">
+                <div class="feature-item-text">
+                    <h2>{{item.heading}}</h2>
+                    <p>{{item.text}}</p>
+                </div>
+                {% if item.icon %}
+                    {% assign icon = "svg/" | append: item.icon | append: ".svg" %}
+                    {% include {{icon}} %}
+                {% elsif item.image %}
+                    <img src="{{site.baseurl}}/images/features/{{item.image}}">
+                {% endif %}
+            </div>
+
+            {% if left %}
+                {% assign left = false %}
+            {% else %}
+                {% assign left = true %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
+
+{{page.content}}
