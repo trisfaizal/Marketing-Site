@@ -1,0 +1,13 @@
+<nav class="main">
+    <div>
+        <a href="#" id="features-nav-button">Solutions</a>
+        {% include components/features-nav.html %}
+    </div>
+	{% for item in site.data.navigation.main %}
+		<a {% if page.url == item.link %}class="active"{% endif %} href="{{ item.link}}">
+            {{ item.name }}
+        </a>
+    {% endfor %}
+</nav>
+
+<script src="{{site.baseurl}}/js/features-nav.js"></script>
