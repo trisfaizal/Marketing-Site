@@ -10,6 +10,7 @@ baseurl:
 
 active_sibling: Home
 main_url: ""
+google_analytics_key: "UA-37472773-17"
 google_site_verification: GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o
 permalink: pretty
 timezone: Pacific/Auckland
