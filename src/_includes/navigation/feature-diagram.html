@@ -1,0 +1,28 @@
+<div class="feature-diagram-container">
+    {% assign overview = site.pages | where: "title", "Why CloudCannon?" | first %}
+    {% if overview %}
+        <a class="feature-diagram-box" href="{{overview.url}}">
+            <div class="feature-diagram-icon">
+                {% include components/features-nav-icon.html icon=overview.icon %}
+            </div>
+            <div class="feature-diagram-text">
+                <h4>{{overview.title}}</h4>
+                <div class="feature-diagram-subheading">{{overview.subheading}}</div>
+                <div class="feature-diagram-learn-more">Learn more...</div>
+            </div>
+        </a>
+    {% endif %}
+    {% assign sorted_features = site.features | sort: "order" %}
+    {% for feature in sorted_features %}
+        <a class="feature-diagram-box" href="{{feature.url}}">
+            <div class="feature-diagram-icon">
+                {% include components/features-nav-icon.html icon=feature.icon %}
+            </div>
+            <div class="feature-diagram-text">
+                <h4>{{feature.title}}</h4>
+                <div class="feature-diagram-subheading">{{feature.subheading}}</div>
+                <div class="feature-diagram-learn-more">Learn more...</div>
+            </div>
+        </a>
+    {% endfor %}
+</div>

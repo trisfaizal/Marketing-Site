@@ -1,0 +1,10 @@
+<div id='features-nav'>
+    <ul>
+        {% assign ordered-features = site.features | sort: "order" %}
+        {% for feature in ordered-features %}
+        <li>
+            {% include components/features-nav-item.html feature=feature %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>

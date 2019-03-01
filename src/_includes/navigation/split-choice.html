@@ -1,0 +1,45 @@
+{% assign sorted_features = site.features | sort: "order" %}
+
+{% assign prev_feature = null %}
+{% assign current_feature = null %}
+{% assign next_feature = null %}
+
+{% for feature in sorted_features %}
+    {% unless next_feature %}
+        {% if page.url contains feature.url %}
+            {% assign current_feature = feature %}
+        {% elsif current_feature %}
+            {% assign next_feature = feature %}
+        {% else %}
+            {% assign prev_feature = feature %}
+        {% endif %}
+    {% endunless %}
+{% endfor %}
+
+{% if current_feature %}
+    <div class="split-choice-wrapper">
+        {% if prev_feature %}
+            <div class="split-choice">
+                <div class="split-choice-content">
+                    <div class="split-choice-icon">
+                        {% include components/features-nav-icon.html icon=prev_feature.icon %}
+                    </div>
+                    <h3>{{prev_feature.title}}</h3>
+                    <a class="button light" href="{{prev_feature.url}}">Back</a>
+                </div>
+            </div>
+        {% endif %}
+        
+        {% if next_feature %}
+            <div class="split-choice">
+                <div class="split-choice-content">
+                    <div class="split-choice-icon">
+                        {% include components/features-nav-icon.html icon=next_feature.icon %}
+                    </div>
+                    <h3>{{next_feature.title}}</h3>
+                    <a class="button" href="{{next_feature.url}}">See More</a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endif %}
