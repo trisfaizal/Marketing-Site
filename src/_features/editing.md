@@ -15,7 +15,7 @@ pitch:
     text: Focus on your content in this distraction free writing environment, perfect for blog posts and other long form content.
     video: pzzMMms1eSU
   - heading: Front matter editing
-    text: Build a interface around your content to keep it consistent and easy to update. There's UIs for images, HTML content, colours, arrays, dates and more.
+    text: Build an interface around your content to keep it consistent and easy to update. There's UIs for images, HTML content, colours, arrays, dates and more.
     video: rbJoUhSPUHA
   - heading: Blogging, collections and data files
     text: Enable editors to add posts, collection documents and data files without understanding the inner workings of Jekyll.
