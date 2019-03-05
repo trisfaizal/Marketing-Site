@@ -21,13 +21,13 @@ pitch:
     text: DDoS attacks are a constant threat to taking down or slowing down your site for customers. With DDoS protection your site stays online even with the most sophisticated attacks. 
     icon: artificial-intelligence
   - heading: Scales to your needs
-    text: Whether you're planning a super bowl ad or are already experiencing huge traffic loads, CloudCannon scales to handle your traffic.
+    text: Whether you're planning a Super Bowl ad or are already experiencing huge traffic loads, CloudCannon scales to handle your traffic.
     icon: social-growth
   - heading: Hosting you can rely on
     text: Don't lose sleep over downtime. CloudCannon hosting remains online and fast even under the largest traffic loads.
     icon: financial-data
   - heading: Easy form submissions
-    text: Handle forms on your site with pure HTML, no backend required. Email the submitted data or output it to another service using Zapier..
+    text: Handle forms on your site with pure HTML, no backend required. Email the submitted data or output it to another service using Zapier.
     icon: group-chat
 features_grid:
   - heading: Redirects
