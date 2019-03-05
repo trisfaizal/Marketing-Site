@@ -67,15 +67,15 @@
             width: 100%;
             margin: 0;
         }
-        .feature-svg, .feature-image, {
-            max-width: 100%;
-            height: auto;
-        }
         &.first h2 {
             font-size: 2em;
         }
         .screenshot {
             max-width: none;
+        }
+        .feature-svg, .feature-image, {
+            max-width: 100%;
+            height: auto;
         }
         .feature-video > iframe {
             width: 90vw;
