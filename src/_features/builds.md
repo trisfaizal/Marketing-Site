@@ -24,6 +24,6 @@ pitch:
     text: Do you have content that needs to go live at 2am? Get a good night sleep by using scheduling to publish content at a future point in time. 
     icon: time-management
   - heading: Multiple sites made easy
-    text: Share your layout, CSS, Javascript and other assets across multiple sites to ensure they’re consistent and easy to maintain. Jekyll themes make managing multiple sites with a similar layout a breeze.
+    text: Share your layout, CSS, JavaScript and other assets across multiple sites to ensure they’re consistent and easy to maintain. Jekyll themes make managing multiple sites with a similar layout a breeze.
     icon: onboarding
 ---
