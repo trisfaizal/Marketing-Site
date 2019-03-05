@@ -13,7 +13,7 @@ pitch:
   - heading: Multilingual content
     text: >-
       Translate your content into as many languages as you need. CloudCannon
-      pushes your content to your translation service . Once finished,
+      pushes your content to your translation service. Once finished,
       CloudCannon pulls the translated content back in and generates a site with
       all your languages.
     icon: sunny-day
