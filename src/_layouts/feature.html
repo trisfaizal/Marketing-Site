@@ -8,15 +8,15 @@ body_class: "feature-nav-open"
     {% include navigation/top.html %}
 </header>
 
-<div class="feature-wrapper balance-text">
+<div class="feature-wrapper">
     {% include navigation/feature-nav-selection.html %}
     {% assign left = false %}
     {% for item in page.pitch %}
         {% if item.standalone_heading %}
             <div class="wrapper wrapper-large">
-                <h2>{{item.standalone_heading}}</h2>
+                <h2 class="balance-text">{{item.standalone_heading}}</h2>
                 {% if item.text %}
-                    <p>{{item.text}}</p>
+                    <p class="balance-text">{{item.text}}</p>
                 {% endif %}
             </div>
         {% else %}
@@ -24,11 +24,11 @@ body_class: "feature-nav-open"
                 <div class="feature-item {%if left%} left {%endif%} {%if forloop.first%} first {%endif%}">
                     <div class="feature-item-text">
                         {% if forloop.first %}
-                            <h1>{{item.heading}}</h1>
+                            <h1 class="balance-text">{{item.heading}}</h1>
                         {% else %}
-                            <h2>{{item.heading}}</h2>
+                            <h2 class="balance-text">{{item.heading}}</h2>
                         {% endif %}
-                        <p>{{item.text}}</p>
+                        <p class="balance-text">{{item.text}}</p>
                     </div>
                     {% if item.icon %}
                         <img class="feature-svg" src="{{site.baseurl}}/images/features/{{item.icon}}.svg">
