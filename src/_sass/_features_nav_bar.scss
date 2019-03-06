@@ -26,6 +26,10 @@ div.doc-nav {
         padding-top: 10px;
     }
 
+    &.none:not(.bottom) ul {
+        margin-top: -10px;
+    }
+
     &.bottom {
         background-color: transparent;
         padding-top: 0;
@@ -34,6 +38,10 @@ div.doc-nav {
         &:before {
             top: 10px;
             bottom: 0;
+        }
+
+        &.none {
+            padding-bottom: 0;
         }
 
         .doc-nav-sections-empty-fix {

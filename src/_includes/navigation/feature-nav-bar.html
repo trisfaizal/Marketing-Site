@@ -1,7 +1,7 @@
 {% assign sorted_features = site.features | sort: "order" %}
 {% assign current_feature = site.features | where: "title", page.title | first %}
 
-<div class="{%if include.bottom%}bottom{%endif%} doc-nav">
+<div class="{% if include.bottom %}bottom {% endif %}{% unless current_feature %}none {% endunless %}doc-nav">
     <div class="wrapper wrapper-large" style="padding: 0 10px;">
         <ul class="doc-nav-sections">
             {% for feature in sorted_features %}
