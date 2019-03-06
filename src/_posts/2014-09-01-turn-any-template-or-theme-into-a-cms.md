@@ -22,7 +22,7 @@ You can bring any HTML template or theme on the web.
 
 [Theme Forest](http://themeforest.net/category/site-templates)? Yup.
 
-[Template Monster](http://www.templatemonster.com/website-templates.php)? Yes please.
+[Template Monster](https://www.templatemonster.com/website-templates.php)? Yes please.
 
 [HTML5 Up](http://html5up.net/)? Oh yea.
 
