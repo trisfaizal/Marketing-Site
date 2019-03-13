@@ -25,12 +25,13 @@ static_manifesto:
 ---
 
 <div class="about">
-	<h1>Bug Bounty</h1>
+	<div class="editable">
+		<h1>CloudCannon Bug Bounty</h1>
+		<h2>About</h2>
+		<p>Our mission is to bring all the advantages of static technology to developers while giving editors intuitive interfaces and workflows to update content. We believe most informational websites should be static. The reason they’re not is non-technical editors need to update content.</p>
+	</div>
 
-	<h2>What drives us</h2>
-	<p>Our mission is to bring all the advantages of static technology to developers while giving editors intuitive interfaces and workflows to update content. We believe most informational websites should be static. The reason they’re not is non-technical editors need to update content.</p>
-
-	<h2>Why static?</h2>
+	<h2 class="editable">Scope</h2>
 	<ul class="cards feature-content">
 		{% for item in page.static_manifesto %}
 			<li class="card">
@@ -40,18 +41,9 @@ static_manifesto:
 		{% endfor %}
 	</ul>
 
-	<h2>Our team</h2>
-	<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
-
-	<ul class="mugs">
-		{% for person_obj in site.data.authors %}
-			{% assign person = person_obj[1] %}
-			{% if person.position %}
-				<li>
-					<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
-					<p>{{ person.name }}</p>
-				</li>
-			{% endif %}
-		{% endfor %}
-	</ul>
+	<div class="editable">
+		<h2>Bug Bounty Policy</h2>
+		<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
+	</div>
+	
 </div>
