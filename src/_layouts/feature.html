@@ -1,0 +1,59 @@
+---
+layout: default
+header_class: short
+body_class: "feature-nav-open"
+---
+
+<header class="short">
+    {% include navigation/top.html %}
+</header>
+
+<div class="feature-wrapper">
+    {% include navigation/feature-nav-selection.html %}
+    {% assign left = false %}
+    {% for item in page.pitch %}
+        {% if item.standalone_heading %}
+            <div class="wrapper wrapper-large">
+                <h2>{{item.standalone_heading}}</h2>
+                {% if item.text %}
+                    <p>{{item.text}}</p>
+                {% endif %}
+            </div>
+        {% else %}
+            <div class="wrapper wrapper-large">
+                <div class="feature-item {%if left%} left {%endif%} {%if forloop.first%} first {%endif%}">
+                    <div class="feature-item-text">
+                        {% if forloop.first %}
+                            <h1>{{item.heading}}</h1>
+                        {% else %}
+                            <h2>{{item.heading}}</h2>
+                        {% endif %}
+                        <p>{{item.text}}</p>
+                    </div>
+                    {% if item.icon %}
+                        <img class="feature-svg" src="{{site.baseurl}}/images/features/{{item.icon}}.svg">
+                    {% elsif item.image %}
+                        <img class="screenshot feature-image" src="{{site.baseurl}}/images/features/{{item.image}}">
+                    {% elsif item.video %}
+                            {% include components/feature-video.html video=item.video %}
+                    {% endif %}
+                </div>
+            </div>
+            {% if left %}
+                {% assign left = false %}
+            {% else %}
+                {% assign left = true %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    
+    {{page.content}}
+
+</div>
+
+{% include navigation/feature-nav-bar.html bottom=true %}
+
+{% unless page.hide_cta %}
+    {% include components/cta/main.html text="Join thousands of developers building sites on CloudCannon today" button="Get started free" %}
+{% endunless %}
+
