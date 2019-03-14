@@ -9,9 +9,9 @@ pitch:
     text: Control your team's access to sites on CloudCannon.
     icon: organizing-projects
   - heading: Team management
-    text: Sharing each individual site with team members is an administration nightmare. With organisations, you can share all of your sites, and future sites at once. 
+    text: Sharing a large number of sites individually with your team can get in the way of updating them. With organisations, you can share all of your current and future sites at once. 
     icon: followers
   - heading: Make CloudCannon your own
-    text: With organisations you can change the interface colours and add a logo to brand CloudCannon as your own.
+    text: With organisations, you can change the interface colours and add a logo to brand CloudCannon as your own.
     icon: wireframing
 ---

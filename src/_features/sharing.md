@@ -12,6 +12,6 @@ pitch:
     text: Give update access to your clients without them having to sign up for a CloudCannon account or knowing you use CloudCannon at all.
     icon: meditation
   - heading: Collaboration
-    text: Invite your team and clients to update your Jekyll site.
+    text: Give your team members access to the specific sites they need, with an editing interface that suits their role. Choose from developer, technical editor or editor.
     icon: pair-programming
 ---    

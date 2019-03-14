@@ -12,7 +12,7 @@ pitch:
     text: Rolling out a new CMS across your company websites can be overwhelming. You’ll have your own dedicated Account Manager to help you solve any roadblocks and ensure you're getting the most out of CloudCannon.
     icon: team-page
   - heading: Custom implementation
-    text: We've built complex Jekyll websites for some of the largest brands in the world. We can build from scratch, migrate a legacy site or help with anything else Jekyll or CloudCannon related.
+    text: We build and maintain complex Jekyll websites for some of the largest brands in the world. We can build from scratch, migrate a legacy site or consult with anything else related to Jekyll or CloudCannon.
     icon: programming
   - heading: Enterprise Authentication
     text: Control who can access your sites on CloudCannon using SAML and a centralised identity provider. 
