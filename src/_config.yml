@@ -18,6 +18,11 @@ collections:
   case_studies:
     output: false
     permalink: /case-studies/:name/
+  features:
+    title: Features
+    output: true
+    permalink: /features/:name/
+    _hide_content: true
   posts:
     _image_size: cover
 defaults:
@@ -29,6 +34,12 @@ defaults:
       path: ""
       type: pages
     values:
+      search_result_highlighting_selector: body
+  - scope:
+      path: ""
+      type: "features"
+    values:
+      layout: "feature"
       search_result_highlighting_selector: body
   - scope:
       path: ""
@@ -54,6 +65,7 @@ defaults:
           upload_dir: "images/blog/:title"
 
 plugins:
+  - jekyll-autoprefixer
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
