@@ -129,6 +129,7 @@ table_of_contents:
 					</div>
 
 					<form action="/contact-success/" method="post" class="contact-form">
+						<input type="hidden" name="_to" value="support@cloudcannon.com">
 						<div class="text-field">
 							<label class="form-icon">
 								<i class="material-icons">person</i>
@@ -149,7 +150,7 @@ table_of_contents:
 
 
 - Supporting Information</textarea>
-						<div class="g-recaptcha" data-sitekey=""></div>
+						<div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>
 						<input type="submit" value="Submit Report" />
 						<input type="hidden" name="_encrypted_details" value="6a0e8b9039aa55661ef87f80d02c6fb7cd64cf1ead03865869ecd8948d531424bbe7de" />
 					</form>
