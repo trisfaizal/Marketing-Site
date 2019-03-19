@@ -30,7 +30,7 @@ table_of_contents:
   - heading: Submit Report
     id: submit-report
 ---
-
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <div class="dark-content docs-container bugbounty">
 	<div class="wrapper wrapper-large">
 		<nav class="docs-nav">
@@ -142,17 +142,10 @@ table_of_contents:
 							</label>
 						</div>
 						<textarea name="description" id="description" placeholder="Report description"></textarea>
-						<label>Please include the steps to reproduce and any other supporting information.
-						<textarea name="report" id="report">- Summary
-
-
-- Steps To Reproduce
-
-
-- Supporting Information</textarea>
+						<textarea name="report" id="report" placeholder="Steps to reproduce"></textarea>
+						<textarea name="supporting-info" id="supporting-info" placeholder="Supporting information"></textarea>
 						<div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>
 						<input type="submit" value="Submit Report" />
-						<input type="hidden" name="_encrypted_details" value="6a0e8b9039aa55661ef87f80d02c6fb7cd64cf1ead03865869ecd8948d531424bbe7de" />
 					</form>
 				</section>
 			</article>
