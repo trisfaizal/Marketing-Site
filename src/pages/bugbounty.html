@@ -6,13 +6,13 @@ icons: true
 static_manifesto:
   - title: Check Scope
     icon: looks_one
-    content_markdown: "Confirm the bug fits within the scope defined in the Bug Bounty Policy"
+    content_markdown: "Confirm the bug fits within the scope defined in the [Bug Bounty Policy](#bounty-policy)"
   - title: Submit Report
     icon: looks_two
-    content_markdown: "Make your submission with the form below that includes clear, concise and reproducable steps to replicate the issue."
+    content_markdown: "[Submit your report](#submit-report) which includes clear, concise and reproducable steps to replicate the issue."
   - title: Confirmation
     icon: looks_3
-    content_markdown: "The CloudCannon support team will make contact within five working days acknowledging we have received your report."
+    content_markdown: "The CloudCannon support team will make contact within five working days to acknowledge we have received your report."
   - title: Assessment & Rewards
     icon: looks_4
     content_markdown: "CloudCannon will assess the report and will offer a reward based on severity and current scope."
@@ -47,7 +47,7 @@ table_of_contents:
 				<h1 class="editable">CloudCannon Bug Bounty</h1>
 
 				<section class="editable">
-					<p>Our mission is to bring all the advantages of static technology to developers while giving editors intuitive interfaces and workflows to update content. We believe most informational websites should be static. The reason they’re not is non-technical editors need to update content.</p>
+					<p>Welcome to CloudCannon's bug bounty programme. If you believe you've found a critical vulnerability please follow the steps below and create a bug report. While we appreciate all submissions, only critical bugs will meet the bug bounty criteria.</p>
 				</section>
 
 				<section>
@@ -64,14 +64,13 @@ table_of_contents:
 
 				<section class="editable">
 					<h2 id="scope">Scope</h2>
-					<p>Only the CloudCannon app (<a href="https://app.cloudcannon.com" rel="no-opener">app.cloudcannon.com</a>) is within scope at this stage. All other subdomains will not be considered for bug bounties.</p>
+					<p>Only the CloudCannon app (<a href="https://app.cloudcannon.com" rel="no-opener">app.cloudcannon.com</a>) is within scope at this stage. Other subdomains will not be considered for bug bounties.</p>
 				</section>
 
 				<section class="editable">
 					<h2 id="rewards">Rewards</h2>
 					<p>CloudCannon will award valid reports based on the scope and severety of each report. Monetary rewards are paid by <strong>PayPal transactions only</strong>.</p>
 					<table>
-						<caption><h3>Rewards Table</h3></caption>
 						<tr>
 							<th>Scope</th>
 							<th>Severity</th>
@@ -142,9 +141,9 @@ table_of_contents:
 								<input type="email" name="email" id="email" placeholder="Email Address" required />
 							</label>
 						</div>
-						<textarea name="description" id="description" placeholder="Report description"></textarea>
-						<textarea name="report" id="report" placeholder="Steps to reproduce"></textarea>
-						<textarea name="supporting-info" id="supporting-info" placeholder="Supporting information"></textarea>
+						<textarea name="report-description" id="description" placeholder="Report description"></textarea>
+						<textarea name="steps-to-reproduce" id="report" placeholder="Steps to reproduce"></textarea>
+						<textarea name="supporting-information" id="supporting-info" placeholder="Supporting information"></textarea>
 						<!--<div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>-->
 						<input type="submit" value="Submit Report" />
 					</form>
