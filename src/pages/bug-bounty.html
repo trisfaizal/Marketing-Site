@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bug Bounty
-permalink: /bugbounty/
+permalink: /bug-bounty/
 icons: true
 static_manifesto:
   - title: Check Scope
@@ -90,13 +90,13 @@ table_of_contents:
 							<td>https://app.cloudcannon.com</td>
 							<td>Critical</td>
 							<td>Yes</td>
-							<td>$50 - $100</td>
+							<td>$50 - $100 USD</td>
 						</tr>
 						<tr>
 							<td>https://app.cloudcannon.com</td>
 							<td>Moderate</td>
 							<td>Yes</td>
-							<td>CloudCannon T-Shirt</td>
+							<td>$20 - $50 USD</td>
 						</tr>
 					</table>
 				</section>
@@ -141,19 +141,20 @@ table_of_contents:
 					<form action="/contact-success/" method="post" class="contact-form">
 						<input type="hidden" name="_to" value="support@cloudcannon.com" />
 						<div class="text-field">
-							<label class="form-icon">
-								<i class="material-icons">person</i>
-								<input type="text" name="name" id="name" placeholder="Name" />
+							<label>Name:
+								<input type="text" name="name" id="name" required />
 							</label>
 
-							<label class="form-icon">
-								<i class="material-icons">email</i>
-								<input type="email" name="email" id="email" placeholder="Email Address" required />
+							<label>Email:
+								<input type="email" name="email" id="email" required />
 							</label>
 						</div>
-						<textarea name="report-description" id="description" placeholder="Report description"></textarea>
-						<textarea name="steps-to-reproduce" id="report" placeholder="Steps to reproduce"></textarea>
-						<textarea name="supporting-information" id="supporting-info" placeholder="Supporting information"></textarea>
+						<label>Report description:</label>
+						<textarea name="report-description" id="description" required></textarea>
+						<label>Steps to reproduce:</label>
+						<textarea name="steps-to-reproduce" id="report" required></textarea>
+						<label>Supporting information:</label>
+						<textarea name="supporting-information" id="supporting-info"></textarea>
 						<!--<div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>-->
 						<input type="submit" value="Submit Report" />
 					</form>
