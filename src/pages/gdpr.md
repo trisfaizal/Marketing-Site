@@ -20,6 +20,7 @@ internal procedures and security measures to ensure your data remains protected.
 This DPA sets forth the obligations of both CloudCannon and our customers with respect to GDPR compliance and data security.
 
 [CloudCannon Customer DPA Signed.pdf](/uploads/cc-dpa.pdf)
+{: .cms-no-rewrite }
 
 In order to execute this DPA, please have an authorized officer fill out your
 company name, date, name, position and sign where indicated. Send the completed
