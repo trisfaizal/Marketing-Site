@@ -14,3 +14,38 @@ permalink: /experts/
 		<li><a href="{{ expert.link }}">{{ expert.name }}</a> - {{ expert.location }}</li>
 	{% endfor %}
 </ul>
+
+<hr>
+
+<p>Interested in becoming an Expert? Here's what we look for:</p>
+<ul>
+	<li>Excellent web portfolio</li>
+	<li>Well-designed Jekyll sites</li>
+	<li>
+		Appreciation of CloudCannon workflows (for example, <a href="https://docs.cloudcannon.com/editing/options/input-options/#array-structures">array structures</a> and <a href="https://docs.cloudcannon.com/editing/experience/editor-links/">editor links</a>).
+	</li>
+</ul>
+
+<section class="contact">
+	<h2>Send us a message:</h2>
+
+	<form action="/contact-success/" method="post" class="contact-form">
+		<input type="hidden" name="_hook" value="https://hooks.zapier.com/hooks/catch/4148799/ji5j91/">
+		<div class="text-field">
+			<label>Email:
+				<input type="email" name="email" id="email" required />
+			</label>
+			<label>Company Name:
+				<input type="text" name="name" id="name" required />
+			</label>
+			<label>Company URL:
+				<input type="text" name="url" id="url" required />
+			</label>
+		</div>
+		<label>Message:</label>
+		<textarea name="message" id="message" required></textarea>
+		<div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>
+		<input type="submit" value="Send Message" />
+	</form>
+</section>
+
