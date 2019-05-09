@@ -18,4 +18,7 @@
   location: 'Fort Collins, Colorado, USA'
 - name: Jon Persson
   link: 'https://jonpersson.co/'
-  location: 'Sweden'
+  location: Sweden
+- name: Helium
+  link: 'https://heliumdev.com/'
+  location: 'Gig Harbor, Washington, USA'
