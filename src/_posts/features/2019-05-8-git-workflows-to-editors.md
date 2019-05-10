@@ -17,8 +17,8 @@ a great workflow because it allows editors to preview changes and iterate on con
 before publishing to production. One issue of this approach is having multiple
 sites in CloudCannon for each repository soon gets overwhelming.
 
-[Projects](https://docs.cloudcannon.com/projects/introduction/) address this issue,
-, providing a logical grouping to the sites in your CloudCannon account.
+[Projects](https://docs.cloudcannon.com/projects/introduction/) address this issue, 
+providing a logical grouping to the sites in your CloudCannon account.
 Each project is centered around a single Git repository.
 
 ![Projects](/images/blog/bringing-git-workflows/projects.png){: .screenshot srcset="/images/blog/bringing-git-workflows/projects.png 800w, /images/blog/bringing-git-workflows/projects@2x.png 1600w" }
