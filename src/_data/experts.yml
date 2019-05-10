@@ -7,9 +7,9 @@
 - name: Brickspace Lab
   link: 'https://brickspacelab.com/'
   location: 'Toronto, Canada'
-- name: Sonnet Media
-  link: 'https://www.sonnetmedia.net/'
-  location: 'New York, USA'
+- name: Quor
+  link: 'https://www.quorstudio.com/'
+  location: 'San Francisco, California, USA'
 - name: Thomas Love
   link: 'https://thomas.love/'
   location: 'Leeds, England'
@@ -18,4 +18,7 @@
   location: 'Fort Collins, Colorado, USA'
 - name: Jon Persson
   link: 'https://jonpersson.co/'
-  location: 'Sweden'
+  location: Sweden
+- name: Helium
+  link: 'https://heliumdev.com/'
+  location: 'Gig Harbor, Washington, USA'
