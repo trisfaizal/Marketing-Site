@@ -1,6 +1,6 @@
 <nav class="main">
 	{% for item in site.data.navigation.main %}
-		<a {% if page.url == item.link or item.link contains "features/" and page.url contains "features/" %}class="active"{% endif %} 
+		<a {% if page.url == item.link or (item.link contains "features/" and page.url contains "features/" and !page.path contains '_posts') %}class="active"{% endif %} 
 		    id="{{ item.name | slugify }}-nav-button"
 		    href="{{ item.link}}">
             {{ item.name }}

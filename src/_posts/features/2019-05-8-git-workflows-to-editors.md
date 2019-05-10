@@ -6,24 +6,25 @@ image: /images/blog/bringing-git-workflows/collaboration.jpg
 image_featured: true
 ---
 
-We've talked about our mission of bringing [publishing workflows to non-technical editors](/tips/2017/11/29/publishing-workflows-for-jekyll-editors/)
-in the past. This post is an update on some interesting new CloudCannon features
-bringing us closer to fully realising this vision.
+In the past we've talked about our mission of bringing [publishing workflows to non-technical editors](/tips/2017/11/29/publishing-workflows-for-jekyll-editors/). This post is an update on some interesting new CloudCannon features
+bringing us closer to fully realising our vision.
 
 ## Projects
 
-A typical workflow for CloudCannon is to have a staging site where editors
-make content changes, and a production site which serves the live site. This is
+A typical workflow on CloudCannon is to have editors work on a staging site,
+with a separate production site serving a live copy to the public. This is
 a great workflow because it allows editors to preview changes and iterate on content
 before publishing to production. One issue of this approach is having multiple
 sites in CloudCannon for each repository soon gets overwhelming.
 
-[Projects](https://docs.cloudcannon.com/projects/introduction/) address this issue
-by grouping your sites by their repository.
+[Projects](https://docs.cloudcannon.com/projects/introduction/) address this issue,
+, providing a logical grouping to the sites in your CloudCannon account.
+Each project is centered around a single Git repository.
 
 ![Projects](/images/blog/bringing-git-workflows/projects.png){: .screenshot srcset="/images/blog/bringing-git-workflows/projects.png 800w, /images/blog/bringing-git-workflows/projects@2x.png 1600w" }
 
-Selecting a project lists the sites connected to that repository.
+Selecting a project lists the sites connected to that repository. You can also
+add a description, and links to resources outside of CloudCannon.
 
 ![Sites](/images/blog/bringing-git-workflows/sites.png){: .screenshot srcset="/images/blog/bringing-git-workflows/sites.png 800w, /images/blog/bringing-git-workflows/sites@2x.png 1600w" }
 
@@ -43,9 +44,9 @@ a blog post. You can't release a half finished landing page so your changes are
 now blocking the blog post from releasing. These situations only get more
 complicated and harder to resolve as you add more editors.
 
-With Projects, editors can branch which gets around this limitation.
-Editors click the + button and set a name which creates a branch on GitHub and completely isolated
-site with its own URL on CloudCannon.
+With Projects this workflow is improved, as editors can now harness the power of branching.
+Editors click the + button and set a name. This creates a branch on GitHub and
+a completely isolated site with its own URL on CloudCannon.
 
 ![Branch](/images/blog/bringing-git-workflows/branch.png){: .screenshot srcset="/images/blog/bringing-git-workflows/branch.png 800w, /images/blog/bringing-git-workflows/branch@2x.png 1600w" }
 
@@ -54,12 +55,13 @@ The editor is now free to update this site without blocking the main staging bra
 ![Editing](/images/blog/bringing-git-workflows/editing.png){: .screenshot srcset="/images/blog/bringing-git-workflows/editing.png 800w, /images/blog/bringing-git-workflows/editing@2x.png 1600w" }
 
 When the content is ready for primetime, editors can publish the content.
-Behind the scenes the performs a Git merge into the staging branch.
+Behind the scenes we perform a Git merge into the staging branch.
 
 ![Publish](/images/blog/bringing-git-workflows/publish.png){: .screenshot srcset="/images/blog/bringing-git-workflows/publish.png 800w, /images/blog/bringing-git-workflows/publish@2x.png 1600w" }
 
 ## What's next?
 
-We're excited at how these workflows are progressing for editors. The next
-step is to provide more confidence and context to editors merging to another
-branch. Stayed tuned to find out more!  
+We're excited at how these workflows are progressing for editors, enabling them
+to work with Git and collaborate more effectively. The next step is to provide
+more confidence and context to editors merging to another branch. Stayed tuned
+to find out more!  
