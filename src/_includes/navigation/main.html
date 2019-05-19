@@ -1,6 +1,15 @@
 <nav class="main">
 	{% for item in site.data.navigation.main %}
-		<a {% if page.url == item.link or (item.link contains "features/" and page.url contains "features/" and !page.path contains '_posts') %}class="active"{% endif %} 
+		{% comment %}
+			Annoying workaround as you can't assign conditions to variables and having
+			everything in one condition causes false positives. Might be fixed in
+			future liquid versions.
+		{% endcomment %}
+		{% assign feature_check = false %}
+		{% if item.link contains "features/" and page.url contains "features/" and page.collection != "posts" %}
+			{% assign feature_check = true %}
+		{% endif %}
+		<a {% if (page.url == item.link) or feature_check or (item.link == "/blog/" and page.collection == "posts") %}class="active"{% endif %}
 		    id="{{ item.name | slugify }}-nav-button"
 		    href="{{ item.link}}">
             {{ item.name }}
