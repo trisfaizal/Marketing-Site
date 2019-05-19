@@ -11,7 +11,7 @@ to build their own pages with complex elements such as slideshows, testimonials
 and call to actions is something we've wanted to support but haven't had a
 good solution for.
 
-Using the Visual Editor or Content Editor can work for these complex elements
+Using the Visual Editor or Content Editor for these complex elements can work,
 but don't provide any structure resulting in editors creating inconsistent
 and hard to maintain pages.
 
