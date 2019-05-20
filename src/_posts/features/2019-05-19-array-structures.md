@@ -49,7 +49,7 @@ In this example we've set an `_id` for each content type. This isn't required
 and isn't a special field, we'll use it later to identify the content type
 when we're iterating over the array for output.
 
-For a more detailed explanation of configuring Array Structures, checkout out the
+For a more detailed explanation of configuring Array Structures, check out out the
 [documentation](https://docs.cloudcannon.com/editing/options/input-options/#array-structures).
 
 ```yaml
@@ -128,7 +128,7 @@ page_blocks:
 ## Output
 
 The final step is to iterate over the `page_blocks` array to output the content
-on the page. You can do this however you'd like, we find using a case statement
+on the page. You can do this however you'd like. We find using a case statement
 on an `_id` field and having an include for each type the cleanest option.
 
 {% raw %}
@@ -168,5 +168,5 @@ in the future:
 
 ## Summary
 
-Array Structures opens a wealth of opportunities to empower editors to
+Array Structures open a wealth of opportunities to empower editors to
 build complex pages. We'd love to hear about how you're using them!
