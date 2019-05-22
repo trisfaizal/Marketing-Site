@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/CloudCannon/jekyll-theme-cloudcannon.git
-  revision: c248a444042e9f1b39fb1fb8dba7e53802c10b9c
+  revision: adaf435225f45ad691184f1ca36cda2476424532
   branch: master
   specs:
     jekyll-theme-cloudcannon (0.1.0)
@@ -20,7 +20,7 @@ GEM
       execjs
     colorator (1.1.0)
     execjs (2.7.0)
-    ffi (1.10.0)
+    ffi (1.11.0)
     forwardable-extended (2.6.0)
     jekyll (3.6.2)
       addressable (~> 2.4)
