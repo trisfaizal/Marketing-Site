@@ -84,7 +84,7 @@ A deploy token can be generated on Gemfury's website to provide authentication f
 
 ![](/images/blog/screen-shot-2019-05-27-at-2-04-02-pm.png){: width="1153" height="521"}
 
-Adding authentication for local builds can be done unsing `bundle config`\:
+Adding authentication for local builds can be done using `bundle config`\:
 
 ```console
 bundle config https://gem.fury.io/USERNAME/ DEPLOYTOKEN
