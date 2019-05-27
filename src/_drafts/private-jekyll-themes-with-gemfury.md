@@ -24,7 +24,7 @@ $ jekyll new-theme mytheme
 
 ### Packaging Themes
 
-Themes should be packaged as a ***.gem*** file before being hosted on Gemfury. It is good practice to add all relevant details to the .***gemspec*** file (***yourtheme.gemspec***), and the ***readme ***before packaging. Errors will be displayed when packaging a theme if the ***.gemspec*** and *\*\*readme \*\**files contain "FIXME" and "TODO" entries.
+Themes should be packaged as a **.gem** file before being hosted on Gemfury. It is good practice to add all relevant details to the ***.gemspec*** file (***yourtheme.gemspec***), and the ***readme*** before packaging. Errors will be displayed when packaging a theme if the ***.gemspec*** and ***readme*** files contain "FIXME" and "TODO" entries.
 
 Themes are packaged into a ***gem*** file by using the `gem build` command:
 
