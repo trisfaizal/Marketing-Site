@@ -106,7 +106,3 @@ $ bundle exec jekyll serve
 ### Updating Themes
 
 Each time a theme is updated you will need to run `bundle update yourtheme` within your site's directory. This updates your Gemfile.lock which tells the site to use the latest theme version. Pushing this file will update the version used by CloudCannon.
-
-&nbsp;
-
-&nbsp;
