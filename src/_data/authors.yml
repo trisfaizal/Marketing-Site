@@ -22,16 +22,51 @@ ross:
   email_address: ross@cloudcannon.com
   bio: "is an Application Engineer at CloudCannon. He creates and maintains features for the platform. His main interests are technology, snowboarding, nature and travel."
 
-tim:
-  image: /images/authors/tim.jpg
-  twitter: n00begon
-  author: tim
-  name: Tim Neumegen
-  bio: "is fascinated by technology and history."
+liam:
+  name: Liam Bigelow
+  image: /images/team/ross.jpg
+  position: To update
+  twitter:
+  email_address: liam@cloudcannon.com
+  bio:
 
-sam:
-  image: /images/authors/sam.jpg
-  twitter: sambonney
-  author: sam
-  name: Sam Bonney
-  bio: "loves noodles, cravats, and the great outdoors. Sometimes all at the same time."
+jordan:
+  name: Jordan Trbuhovic
+  image: /images/team/ross.jpg
+  position: Support & Testing Engineer
+  twitter:
+  email_address: jordan@cloudcannon.com
+  bio:
+
+ryan:
+  name: Ryan Collins
+  image: /images/team/ross.jpg
+  position: To update
+  twitter:
+  email_address: ryan@cloudcannon.com
+  bio:
+
+darcy:
+  name: Darcy Knox
+  image: /images/team/ross.jpg
+  position: To update
+  twitter:
+  email_address: darcy@cloudcannon.com
+  bio:
+
+anja:
+  name: Anja Waugh
+  image: /images/team/ross.jpg
+  position: To update
+  twitter:
+  email_address: anja@cloudcannon.com
+  bio:
+
+alex:
+  name: Alex Nelson
+  image: /images/team/ross.jpg
+  position: To update
+  twitter:
+  email_address: alex@cloudcannon.com
+  bio:
+

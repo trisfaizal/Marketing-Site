@@ -1,0 +1,127 @@
+.mugs {
+	margin-bottom: 25px;
+
+	li {
+		flex: 0 1 290px;
+		text-align: left;
+
+		.name {
+			font-size: 1.2em;
+			font-weight: bolder;
+		}
+
+		.image {
+			img {
+				border-radius: 0%;
+				border: 1px solid #979797;
+			}
+		}
+	}
+}
+
+.offices, .office-image {
+	display: flex;
+	flex-flow: column wrap;
+
+	.office {
+		margin-bottom: 115px; 
+
+		.office-image {
+			width: 100%;
+			height: 320px;
+			margin-bottom: 50px;
+			background-color: #eee;
+		}
+
+		.office-content {
+			display: flex;
+			flex-flow: row wrap;
+
+			.content {
+				display: flex;
+				flex-flow: column wrap;
+				padding-right: 25px;
+				box-sizing: border-box;
+			}
+
+			.content, .map {
+				flex: 1 1 42%;
+				width: 100%;
+				max-width: 50%;
+			}
+
+			.map {
+				iframe {
+					max-width: 480px;
+				}
+			}
+		}
+	}
+}
+
+.timeline {
+	h2 {
+		margin-bottom: 75px;
+	}
+
+	.event {
+		display: flex;
+		flex-flow: row nowrap;
+
+		h4 {
+			margin-right: 50px;
+		}
+
+		h4.year {
+			color: #407AFC;
+		}
+
+		.timeline-graphic {
+			min-height: 320px;
+			border-left: 8px solid #407AFC;
+		}
+
+		.timeline-graphic::before, .timeline-graphic::after {
+			content: '';
+			position: absolute;
+			left: 90px;
+			margin-top: -25px;
+			width: 60px;
+			height: 60px;
+			background-color: #ffffff;
+			border: 8px solid #407AFC;
+			border-radius: 50%;
+		}
+
+		.timeline-graphic::after {
+			width: 0px;
+			height: 0px;
+			left: 118px;
+			margin-top: 3px;
+			border: 10px solid #407AFC;
+		}
+
+		.timeline-graphic.last-event {
+			min-height: none;
+			height: 0px;
+			border-left: 0px transparent;
+		}
+
+		.timeline-content {
+			margin-left: 50px;
+		}
+	}
+}
+
+.investors {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 auto;
+	padding: 0px;
+	list-style: none;
+
+	li {
+		flex: 1 0 300px;
+		padding-right: 15px;
+	}
+}

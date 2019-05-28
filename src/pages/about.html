@@ -3,25 +3,70 @@ layout: info-page
 title: About
 permalink: /about/
 icons: true
-static_manifesto:
-  - title: Simplicity
-    icon: child_care
-    content_markdown: Static sites are just HTML, CSS and JavaScript files. This means they're faster to build, require less technical knowledge, need less upkeep and are future proofed.
-  - title: Scalability
-    icon: trending_up
-    content_markdown: A single webserver can handle [a lot](http://www.speedemy.com/apache-vs-nginx-2015/) of traffic if it's only serving static content.
-  - title: Speed
-    content_markdown: With static there's no database queries or page to generate on-the-fly. All the web server needs to do is return a static file.
-    icon: flight_takeoff
-  - title: Security
-    content_markdown: A static site is as secure as the web server its running on which makes them significantly less vulnerable to hackers.
-    icon: lock
-  - title: Stability
-    content_markdown: There's fewer points of failure with static sites so it's likely your uptime will be much higher.
-    icon: all_inclusive
-  - title: Source controlled
-    content_markdown: The entire site and content can live in a source control system such as Git. This gives you many advantages such as backups, approval processes and collaboration tools.
-    icon: star
+offices:
+  - location: Dunedin, NZ
+    description_html: '<p>Cray jianbing iceland cold-pressed pop-up, biodiesel la croix four dollar toast tilde woke yr chartreuse edison bulb. Artisan gastropub hammock echo park disrupt art party. Neutra meditation adaptogen brooklyn cloud bread seitan skateboard lomo pabst. Williamsburg hashtag unicorn, tilde gentrify locavore shabby chic squid seitan selfies tacos street art knausgaard kale chips tousled.</p>'
+    office_image:
+    map_iframe_embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.669317717654!2d170.5005326165269!3d-45.87792514445534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac0e399fd875%3A0x61f1b3dc26178dd8!2s1+Bond+St%2C+Dunedin%2C+9016!5e0!3m2!1sen!2snz!4v1559018263182!5m2!1sen!2snz" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>'
+  - location: San Francisco, USA
+    description_html: '<p>Cray jianbing iceland cold-pressed pop-up, biodiesel la croix four dollar toast tilde woke yr chartreuse edison bulb. Artisan gastropub hammock echo park disrupt art party. Neutra meditation adaptogen brooklyn cloud bread seitan skateboard lomo pabst. Williamsburg hashtag unicorn, tilde gentrify locavore shabby chic squid seitan selfies tacos street art knausgaard kale chips tousled.</p>'
+    office_image:
+    map_iframe_embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16840.726061398596!2d-122.46185793704069!3d37.76489897912867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2snz!4v1559019094219!5m2!1sen!2snz" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>'
+timeline_events:
+  - title: Title 
+    year: 2013
+    content_html: '<p>Cray jianbing iceland cold-pressed pop-up, biodiesel la croix four dollar toast tilde woke yr chartreuse edison bulb. Artisan gastropub hammock echo park disrupt art party.</p>'
+  - title: Title 
+    year: 2014
+    content_html: '<p>Cray jianbing iceland cold-pressed pop-up, biodiesel la croix four dollar toast tilde woke yr chartreuse edison bulb. Artisan gastropub hammock echo park disrupt art party.</p>'
+  - title: Title 
+    year: 2015
+    content_html: '<p>Cray jianbing iceland cold-pressed pop-up, biodiesel la croix four dollar toast tilde woke yr chartreuse edison bulb. Artisan gastropub hammock echo park disrupt art party.</p>'
+  - title: Title 
+    year: 2016
+    content_html: '<p>Cray jianbing iceland cold-pressed pop-up, biodiesel la croix four dollar toast tilde woke yr chartreuse edison bulb. Artisan gastropub hammock echo park disrupt art party.</p>'
+  - title: Title 
+    year: 2017
+    content_html: '<p>Cray jianbing iceland cold-pressed pop-up, biodiesel la croix four dollar toast tilde woke yr chartreuse edison bulb. Artisan gastropub hammock echo park disrupt art party.</p>'
+  - title: Title 
+    year: 2018
+    content_html: '<p>Cray jianbing iceland cold-pressed pop-up, biodiesel la croix four dollar toast tilde woke yr chartreuse edison bulb. Artisan gastropub hammock echo park disrupt art party.</p>'
+  - title: Title 
+    year: 2019
+    content_html: '<p>Cray jianbing iceland cold-pressed pop-up, biodiesel la croix four dollar toast tilde woke yr chartreuse edison bulb. Artisan gastropub hammock echo park disrupt art party.</p>'
+investors:
+  - name: Creative HQ Limited
+    url:
+  - name: Lightning Lab
+    url:
+  - name: Jasmine Investment Holdings
+    url:
+  - name: Evander Management Limited
+    url:
+  - name: SCW Trustees Limited
+    url:
+  - name: K One W One Limited
+    url:
+  - name: Daniel Khan
+    url:
+  - name: Clark Adam
+    url:
+  - name: FTL Trustees Limited
+    url:
+  - name: Bendall & Cant Trustee Company Limited
+    url:
+  - name: Laura Reitel
+    url:
+  - name: Robert Trevor Dickinson
+    url:
+  - name: Tainz Ventures Limited
+    url:
+  - name: Lyndsay Tait & Sharon Bryant
+    url:
+  - name: Sergio Van Dam
+    url:
+  - name: Graeme Ransley
+    url:
 ---
 
 <div class="about">
@@ -29,16 +74,6 @@ static_manifesto:
 
 	<h2>What drives us</h2>
 	<p>Our mission is to bring all the advantages of static technology to developers while giving editors intuitive interfaces and workflows to update content. We believe most informational websites should be static. The reason they’re not is non-technical editors need to update content.</p>
-
-	<h2>Why static?</h2>
-	<ul class="cards feature-content">
-		{% for item in page.static_manifesto %}
-			<li class="card">
-				<h3><i class="material-icons">{{ item.icon }}</i> {{ item.title }}</h3>
-				{{ item.content_markdown | markdownify }}
-			</li>
-		{% endfor %}
-	</ul>
 
 	<h2>Our team</h2>
 	<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
@@ -49,9 +84,57 @@ static_manifesto:
 			{% if person.position %}
 				<li>
 					<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
-					<p>{{ person.name }}</p>
+					<p class="name">{{ person.name }}</p>
+					<p>{{ person.position }}</p>
 				</li>
 			{% endif %}
+		{% endfor %}
+	</ul>
+	<p>We're a small, friendly, remote team who value lifestyle and self direction. We're passionate about evangelising static websites and working with others who do the same. If you think you'd be a good fit for a role with us, reach out.</p>
+
+	<h2>Our Offices</h2>
+	<div class="offices">
+		{% for office in page.offices %}
+			<div class="office">
+				<div class="office-image" style="background: {{ office.office_image }}; background-size: cover; background-position: center center;">
+				</div>
+				<div class="office-content">
+					<div class="content">
+						<h3>{{ office.location }}</h3>
+						{{ office.description_html }}
+					</div>
+					<div class="map">
+						{{ office.map_iframe_embed }}
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+
+	{% assign events = page.timeline_events | sort: 'year' %}
+	<div class="timeline">
+		<h2>Timeline</h2>
+		{% for event in events %}
+			<div class="event">
+				<h4 class="year">{{ event.year }}</h4>
+				<div class="timeline-graphic{%- if forloop.last == true %} last-event{%- endif -%}"></div>
+				<div class="timeline-content">
+					<h4>{{ event.title }}</h4>
+					{{ event.content_html }}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+
+	<h2>Our Investors</h2>
+	<ul class="investors">
+		{% for investor in page.investors %}
+			<li>{% if investor.url %}
+					<a href="{{ investor.url }}">{{ investor.name }}</a>
+				{% else %}
+					{{ investor.name }}
+				{% endif %}
+			</li>
 		{% endfor %}
 	</ul>
 </div>
