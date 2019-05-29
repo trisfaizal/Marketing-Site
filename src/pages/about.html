@@ -1,6 +1,8 @@
 ---
-layout: info-page
+layout: short
 title: About
+heading: "Who are we?"
+subtitle:
 permalink: /about/
 icons: true
 offices:
@@ -70,30 +72,32 @@ investors:
 ---
 
 <div class="about">
-	<h1>CloudCannon is a new kind of CMS for the static site generator, Jekyll.</h1>
+	<div class="wrapper first">
+		<!--h1>CloudCannon is a new kind of CMS for the static site generator, Jekyll.</h1> -->
+		<h2>What drives us</h2>
+		<p>Our mission is to bring all the advantages of static technology to developers while giving editors intuitive interfaces and workflows to update content. We believe most informational websites should be static. The reason they’re not is non-technical editors need to update content.</p>
+	</div>
 
-	<h2>What drives us</h2>
-	<p>Our mission is to bring all the advantages of static technology to developers while giving editors intuitive interfaces and workflows to update content. We believe most informational websites should be static. The reason they’re not is non-technical editors need to update content.</p>
+	<div class="wrapper minimal">
+		<h2>Our team</h2>
+		<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
+		<ul class="mugs">
+			{% for person_obj in site.data.authors %}
+				{% assign person = person_obj[1] %}
+				{% if person.position %}
+					<li>
+						<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
+						<p class="name">{{ person.name }}</p>
+						<p>{{ person.position }}</p>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+		<p>We're a small, friendly, remote team who value lifestyle and self direction. We're passionate about evangelising static websites and working with others who do the same. If you think you'd be a good fit for a role with us, reach out.</p>
+	</div>
 
-	<h2>Our team</h2>
-	<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
-
-	<ul class="mugs">
-		{% for person_obj in site.data.authors %}
-			{% assign person = person_obj[1] %}
-			{% if person.position %}
-				<li>
-					<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
-					<p class="name">{{ person.name }}</p>
-					<p>{{ person.position }}</p>
-				</li>
-			{% endif %}
-		{% endfor %}
-	</ul>
-	<p>We're a small, friendly, remote team who value lifestyle and self direction. We're passionate about evangelising static websites and working with others who do the same. If you think you'd be a good fit for a role with us, reach out.</p>
-
-	<h2>Our Offices</h2>
-	<div class="offices">
+	<div class="offices wrapper">
+		<h2>Our Offices</h2>
 		{% for office in page.offices %}
 			<div class="office">
 				<div class="office-image" style="background: {{ office.office_image }}; background-size: cover; background-position: center center;">
@@ -112,7 +116,7 @@ investors:
 	</div>
 
 	{% assign events = page.timeline_events | sort: 'year' %}
-	<div class="timeline">
+	<div class="timeline wrapper">
 		<h2>Timeline</h2>
 		{% for event in events %}
 			<div class="event">
@@ -126,15 +130,17 @@ investors:
 		{% endfor %}
 	</div>
 
-	<h2>Our Investors</h2>
-	<ul class="investors">
-		{% for investor in page.investors %}
-			<li>{% if investor.url %}
-					<a href="{{ investor.url }}">{{ investor.name }}</a>
-				{% else %}
-					{{ investor.name }}
-				{% endif %}
-			</li>
-		{% endfor %}
-	</ul>
+	<div class="investors wrapper">
+		<h2>Our Investors</h2>
+		<ul>
+			{% for investor in page.investors %}
+				<li>{% if investor.url %}
+						<a href="{{ investor.url }}">{{ investor.name }}</a>
+					{% else %}
+						{{ investor.name }}
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
 </div>
