@@ -109,3 +109,21 @@ _options:
     bulletedlist: true
     code: true
     styles: "css/editor.css"
+
+plan_options:
+  - 'True'
+  - 'False'
+  - 'Free'
+  - 'Custom'
+  - 'Basic'
+  - 'Advanced'
+  - 'Priority'
+  - 'Yes*'
+  - '$25/month'
+  - '$75/month'
+  - '$25/user/month'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'

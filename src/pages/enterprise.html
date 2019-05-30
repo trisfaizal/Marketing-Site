@@ -3,45 +3,11 @@ layout: pricing-feature
 heading: Get started with CloudCannon
 subtitle: Try CloudCannon Pro free for 30 days, no credit card required
 title: Pricing
-permalink: /pricing/
-
+permalink: /enterprise/
 ---
 
 
-<section class="wrapper">
-	<ul class="plans">
-		{% for plan in site.data.plans.types %}
-			{% include components/pricing/plan.html plan=plan %}
-		{% endfor %}
-	</ul>
-	<p class="price addition-plan">Additional team members on paid plans are <span class="monthly">$25 per month</span><span class="annually">$250 per year</span>.</p>
-</section>
 
-<section class="wrapper">
-	<h2>Compare Plans</h2>
-	<table>
-
-		<thead>
-			{% assign table_data = site.data.plan-features.features %}
-			<tr>
-				<th></th>
-				{% for heading in table_data.table_headings %}
-					<th>{{ heading }}</th>
-				{% endfor %}
-			</tr>
-			{% for row in table_data.table_rows %}
-				<tr>
-					<td>{{ row }}</td>
-					<td>{{ row.free_plan_option }}</td>
-					<td>{{ row.basic_plan_option }}</td>
-					<td>{{ row.pro_plan_option }}</td>
-					<td>{{ row.enterprise_plan_option }}</td>
-				</tr>
-			{% endfor %}
-		</thead>
-		<tbody>
-	</table>
-</section>
 
 <section class="wrapper faq">
 	<h2 id="faq">FAQ</h2>
