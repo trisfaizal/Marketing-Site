@@ -11,20 +11,57 @@ In some cases, you may also want to bundle your JavaScript files together, to re
 
 ## Jekyll includes
 
-A simple technique for bundling JavaScript is to use Jekyll includes. With this approach, a single JavaScript file would use `{% raw %}{% include %}{% endraw %}` tags to include other scripts. For example:
+A simple technique for bundling JavaScript is to use Jekyll includes. With this approach, a single JavaScript file would use `{% raw %}{% include %}{% endraw %}` tags to include other scripts. For example, you could create a `bundle.js` file with the following:
 
 ```js
-/* bundle.js */
 ---
 ---
 {% raw %}{% include /assets/script-1.js %}
 {% include /assets/script-2.js %}{% endraw %}
 ```
 
-> Remember to keep your included scripts in the _includes directory, and to add front matter dashes in bundle.js so that Jekyll processes the Liquid.
+> Remember to add front matter dashes in bundle.js so that Jekyll processes the Liquid.
 {: .explainer }
 
-This allows you to break your JavaScript into manageable pieces in development, while only linking to `bundle.js` on your site. Bear in mind that the scripts are simply being concatenated, so you may need to be mindful of conflicting variable names.
+This allows you to divide your JavaScript into manageable pieces in development, while only linking to `bundle.js` on your site: 
+
+```html
+<script src="{%raw%}{{ site.baseurl }}{%endraw%}/js/bundle.js"></script>
+```
+
+Note that if you don't want to keep all your scripts in the _includes folder, you can use the [include_relative](https://jekyllrb.com/docs/includes/#including-files-relative-to-another-file) tag. This will allow you to specify a path relative to the file where the tag is being used (you cannot access higher-level directories however). For better readability, you might also want to keep your includes in the front matter and use Liquid to manage the include tags. 
+
+For example, if you are working in `/js/bundle.js` and your JavaScript files are in `/js/scripts/`, you could use the following:
+
+```
+---
+dir_path: scripts/
+scripts:
+  - script-1.js
+  - script-2.js
+---
+{% raw %}{% for script in scripts %}
+    {% assign script_path = dir_path | append: script %}
+    {% include_relative script_path %}
+{% endfor %}{% endraw %}
+```
+
+Bear in mind that the scripts are simply being concatenated, so you will need to be mindful of conflicting variable names. You can avoid this problem by wrapping each script in a function that is called as soon as it is defined (i.e. an [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)). Variables within the function cannot be accessed from outside of it, so there won't be any conflicting variables between the included scripts.
+
+```js
+---
+dir_path: scripts/
+scripts:
+  - script-1.js
+  - script-2.js
+---
+{% raw %}{% for script in scripts %}
+    {% assign script_path = dir_path | append: script %}
+    (function () {
+        {% include_relative script_path %}
+    })();
+{% endfor %}{% endraw %}
+```
 
 ## Using webpack
 
@@ -44,7 +81,11 @@ js/file-3.js \
 -o js/output.js
 ```
 
-This will bundle all your scripts into one file. In your `<script>` tags, you can simply link to `{%raw%}{{ site.baseurl }}{%endraw%}/js/output.js`.
+This will bundle all your scripts into one file. In your `<script>` tags, you can simply link to the bundled file:
+
+```html
+<script src="{%raw%}{{ site.baseurl }}{%endraw%}/js/output.js"></script>
+```
 
 Instead of specifying each input file on the command line, you can create an `entry.js` file. This file should just require/import all the scripts you want to bundle. Then, you can use this as your input and all of the other imported scripts will be bundled.
 
@@ -68,7 +109,6 @@ $ npm install --save-dev gulp-concat
 Create a `gulpfile.js` at the root of your project with the following:
 
 ```js
-/* gulpfile.js */
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 
@@ -81,7 +121,11 @@ gulp.task('concat-scripts', function() {
 
 `gulp.task` defines a task called "concat-scripts". This task uses `gulp.src` to read in all JavaScript files from an /input-scripts/ directory. The scripts are concatenated into an output.js file, which is then saved into the /assets/ directory using `gulp.dest`.
 
-You can run this task from the command line in your project directory with `gulp concat-scripts`. Then you can simply link to /assets/output.js on your site.
+You can run this task from the command line in your project directory with `gulp concat-scripts`. Then you can simply link to /assets/output.js on your site:
+
+```html
+<script src="{%raw%}{{ site.baseurl }}{%endraw%}/assets/output.js"></script>
+```
 
 If you want to minify your script after bundling it, you can do this easily with [gulp-uglify](https://www.npmjs.com/package/gulp-uglify). This will reduce the size of your bundled script, to improve performance for visitors to your site.
 
@@ -90,7 +134,6 @@ $ npm install --save-dev gulp-uglify
 ```
 
 ```js
-/* gulpfile.js */
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
@@ -110,7 +153,6 @@ CloudCannon supports custom commands, so that you can use tools like Gulp and we
 For example:
 
 ```sh
-# _cloudcannon-prebuild.sh
 npm install webpack
 npm install webpack-cli
 
@@ -118,7 +160,6 @@ npm install webpack-cli
 ```
 
 ```sh
-# _cloudcannon-prebuild.sh
 npm install gulp
 npm install gulp-concat
 
