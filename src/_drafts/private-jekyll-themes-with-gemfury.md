@@ -6,11 +6,11 @@ image: /uploads/apple-desk-imac-39284.jpg
 image_featured: false
 ---
 
-Jekyll themes allow styles and site structures to be reused across any number of sites. This eliminates the need to duplicate content across sites.
+Jekyll themes allow styles and site structures to be reused across any number of sites. This eliminates the need to duplicate content, layouts, includes and assets across multiple sites.
 
 Themes are a necessity when managing more than one site that use the same designs or styles. All sites using a theme are updated whenever changes are made to the theme.
 
-[Gemfury](https://gemfury.com/){: target="_blank"} offer a secure hosting for gems/themes. All interactions to and from Gemfury are completed securely over HTTPS.
+[Gemfury](https://gemfury.com/){: target="_blank"} offers a secure hosting for gems/themes. All interactions with Gemfury are secure over HTTPS.
 
 ### Creating Jekyll Themes
 
@@ -20,9 +20,11 @@ The Jekyll&nbsp;`new-theme`{: .language-console} command creates a basic theme s
 $ jekyll new-theme mytheme
 ```
 
+This essentially generates a standard Jekyll site which other sites can inherit from.
+
 ### Packaging Themes
 
-Themes should be packaged as a `.gem` file before being hosted on Gemfury. It is good practice to add all relevant details to the `.gemspec` file (`yourtheme.gemspec`), and the `readme` before packaging. Errors will be displayed when packaging a theme if the `.gemspec` and `readme` files contain "FIXME" and "TODO" entries.
+Themes need to be packaged as a `.gem` file before being hosted on Gemfury. It is good practice to add all relevant details to the `.gemspec` file (`yourtheme.gemspec`), and the `readme` before packaging. Errors will be displayed when packaging a theme if the `.gemspec` and `readme` files contain "FIXME" and "TODO" entries.
 
 Themes are packaged into a ***gem*** file by using the `gem build` command:
 
@@ -103,8 +105,4 @@ $ bundle exec jekyll serve
 
 ### Updating Themes
 
-Each time a theme is updated you will need to run `bundle update yourtheme` within your site's directory. This updates your site to use the latest theme version.
-
-&nbsp;
-
-&nbsp;
+Each time a theme is updated you will need to run `bundle update yourtheme` within your site's directory. This updates your Gemfile.lock which tells the site to use the latest theme version. Pushing this file will update the version used by CloudCannon.
