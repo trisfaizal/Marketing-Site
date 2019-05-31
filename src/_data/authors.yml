@@ -1,7 +1,7 @@
 george:
   name: George Phillips
   image: /uploads/george-lightroomed-2.jpg
-  position: CTO/Co-founder
+  position: CTO/Cofounder
   twitter:
   email_address: george@cloudcannon.com
   bio: >-
@@ -11,7 +11,7 @@ george:
 mike:
   name: Mike Neumegen
   image: /images/team/mike.jpg
-  position: CEO/Co-founder
+  position: CEO/Cofounder
   twitter:
   email_address: mike@cloudcannon.com
   bio: >-
