@@ -2,71 +2,70 @@ george:
   name: George Phillips
   image: /images/team/george.jpg
   position: CTO/Co-founder
-  twitter: gphillips_nz
+  twitter:
   email_address: george@cloudcannon.com
-  bio: "is the CTO of CloudCannon. He is a passionate, self-taught designer with a BSc in Computer Science. He blogs about HTML/CSS, JavaScript and anything even remotely connected with Web Design."
-
+  bio: >-
+    is the CTO of CloudCannon. He is a passionate, self-taught designer with a
+    BSc in Computer Science. He blogs about HTML/CSS, JavaScript and anything
+    even remotely connected with Web Design.
 mike:
   name: Mike Neumegen
   image: /images/team/mike.jpg
   position: CEO/Co-founder
-  twitter: mikeneumegen
+  twitter:
   email_address: mike@cloudcannon.com
-  bio: "is the CEO of CloudCannon. He loves all things web design, tech, photography and music."
-
+  bio: >-
+    is the CEO of CloudCannon. He loves all things web design, tech, photography
+    and music.
 ross:
   name: Ross Phillips
   image: /images/team/ross.jpg
   position: Application Engineer
-  twitter: rphillips_nz
+  twitter:
   email_address: ross@cloudcannon.com
-  bio: "is an Application Engineer at CloudCannon. He creates and maintains features for the platform. His main interests are technology, snowboarding, nature and travel."
-
+  bio: >-
+    is an Application Engineer at CloudCannon. He creates and maintains features
+    for the platform. His main interests are technology, snowboarding, nature
+    and travel.
 liam:
   name: Liam Bigelow
-  image: /images/team/ross.jpg
-  position: To update
+  image: /uploads/liam-lightroomed.jpg
+  position: Services Engineer
   twitter:
   email_address: liam@cloudcannon.com
   bio:
-
 jordan:
   name: Jordan Trbuhovic
-  image: /images/team/ross.jpg
-  position: Support & Testing Engineer
+  image: /uploads/jordan-lightroomed.jpg
+  position: Support & Services Engineer
   twitter:
   email_address: jordan@cloudcannon.com
   bio:
-
 ryan:
   name: Ryan Collins
-  image: /images/team/ross.jpg
-  position: To update
+  image: /uploads/ryan-lightroomed.jpg
+  position: Support & Services Engineer
   twitter:
   email_address: ryan@cloudcannon.com
   bio:
-
 darcy:
   name: Darcy Knox
-  image: /images/team/ross.jpg
-  position: To update
+  image: /uploads/darcy-lightroomed.jpg
+  position: Support Engineer
   twitter:
   email_address: darcy@cloudcannon.com
   bio:
-
 anja:
   name: Anja Waugh
-  image: /images/team/ross.jpg
-  position: To update
+  image: /uploads/anja-lightroomed.jpg
+  position: UX Designer
   twitter:
   email_address: anja@cloudcannon.com
   bio:
-
 alex:
   name: Alex Nelson
-  image: /images/team/ross.jpg
-  position: To update
+  image: /uploads/alex-lightroomed.jpg
+  position: UX Designer
   twitter:
   email_address: alex@cloudcannon.com
   bio:
-
