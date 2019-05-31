@@ -1,6 +1,6 @@
 george:
   name: George Phillips
-  image: /images/team/george.jpg
+  image: /uploads/george-lightroomed-2.jpg
   position: CTO/Co-founder
   twitter:
   email_address: george@cloudcannon.com
@@ -19,7 +19,7 @@ mike:
     and music.
 ross:
   name: Ross Phillips
-  image: /images/team/ross.jpg
+  image: /uploads/ross-lightroomed.jpg
   position: Application Engineer
   twitter:
   email_address: ross@cloudcannon.com
