@@ -82,16 +82,22 @@ investors:
 		<h2>Our team</h2>
 		<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
 		<ul class="mugs">
-			{% for person_obj in site.data.authors %}
-				{% assign person = person_obj[1] %}
-				{% if person.position %}
-					<li>
-						<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
-						<p class="name">{{ person.name }}</p>
-						<p>{{ person.position }}</p>
-					</li>
-				{% endif %}
-			{% endfor %}
+			<div class="mug-wrapper">
+				{% for person_obj in site.data.authors %}
+					{% assign person = person_obj[1] %}
+					{% if person.position %}
+						<li>
+							<div class="mug">
+								<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
+								<div class="image-content">
+									<p class="name">{{ person.name }}</p>
+									<p>{{ person.position }}</p>
+								</div>
+							</div>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</div>
 		</ul>
 		<p>We're a small, friendly, remote team who value lifestyle and self direction. We're passionate about evangelising static websites and working with others who do the same. If you think you'd be a good fit for a role with us, reach out.</p>
 	</div>
