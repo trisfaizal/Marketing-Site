@@ -84,18 +84,12 @@
 	}
 }
 
-.offices, .office-image {
+.offices {
 	display: flex;
 	flex-flow: column wrap;
 
 	.office {
-
-		.office-image {
-			width: 100%;
-			height: 320px;
-			margin-bottom: 50px;
-			background-color: #eee;
-		}
+        margin-bottom: 40px;
 
 		.office-content {
 			display: flex;
