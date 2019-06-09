@@ -7,7 +7,8 @@
 }
 
 .mugs {
-
+    margin-bottom: 20px;
+    
 	.mug-wrapper {
 		display: flex;
 		flex-flow: row wrap;
@@ -162,7 +163,6 @@
 		}
 
 		.timeline-graphic {
-			min-height: 320px;
 			border-left: 8px solid #407AFC;
 
 			@media (max-width: 680px) {
@@ -215,6 +215,7 @@
 
 		.timeline-content {
 			margin-left: 50px;
+			padding-bottom: 20px;
 
 			@media (max-width: 680px) {
 				margin-left: 35px;
