@@ -8,7 +8,7 @@ george:
     is the CTO of CloudCannon. He is a passionate, self-taught designer with a
     BSc in Computer Science. He blogs about HTML/CSS, JavaScript and anything
     even remotely connected with Web Design.
-  office:
+  office: dunedin
 mike:
   name: Mike Neumegen
   image: /images/team/mike.jpg
@@ -18,7 +18,7 @@ mike:
   bio: >-
     is the CEO of CloudCannon. He loves all things web design, tech, photography
     and music.
-  office:
+  office: san-franciso
 ross:
   name: Ross Phillips
   image: /uploads/ross-lightroomed.jpg
@@ -29,7 +29,7 @@ ross:
     is an Application Engineer at CloudCannon. He creates and maintains features
     for the platform. His main interests are technology, snowboarding, nature
     and travel.
-  office:
+  office: dunedin
 liam:
   name: Liam Bigelow
   image: /uploads/liam-lightroomed.jpg
@@ -37,7 +37,7 @@ liam:
   twitter:
   email_address: liam@cloudcannon.com
   bio:
-  office:
+  office: dunedin
 jordan:
   name: Jordan Trbuhovic
   image: /uploads/jordan-lightroomed.jpg
@@ -45,7 +45,7 @@ jordan:
   twitter:
   email_address: jordan@cloudcannon.com
   bio:
-  office:
+  office: dunedin
 ryan:
   name: Ryan Collins
   image: /uploads/ryan-lightroomed.jpg
@@ -53,7 +53,7 @@ ryan:
   twitter:
   email_address: ryan@cloudcannon.com
   bio:
-  office:
+  office: dunedin
 darcy:
   name: Darcy Knox
   image: /uploads/darcy-lightroomed.jpg
@@ -61,7 +61,7 @@ darcy:
   twitter:
   email_address: darcy@cloudcannon.com
   bio:
-  office:
+  office: dunedin
 anja:
   name: Anja Waugh
   image: /uploads/anja-lightroomed.jpg
@@ -69,7 +69,7 @@ anja:
   twitter:
   email_address: anja@cloudcannon.com
   bio:
-  office:
+  office: dunedin
 alex:
   name: Alex Nelson
   image: /uploads/alex-lightroomed.jpg
@@ -77,4 +77,4 @@ alex:
   twitter:
   email_address: alex@cloudcannon.com
   bio:
-  office:
+  office: dunedin
