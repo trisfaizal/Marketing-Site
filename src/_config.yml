@@ -25,6 +25,8 @@ collections:
     _hide_content: true
   posts:
     _image_size: cover
+  faq:
+    output: false
 defaults:
   - scope:
       path: ""
@@ -127,3 +129,6 @@ plan_options:
   - '3'
   - '4'
   - '5'
+image_position:
+  - 'Left'
+  - 'Right'

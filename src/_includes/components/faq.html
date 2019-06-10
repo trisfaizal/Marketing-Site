@@ -1,0 +1,38 @@
+	<section class="dark-content">
+		<div class="wrapper faq-section">
+			<h2 id="faq">FAQ</h2>
+			{% assign faq = site.faq %}
+			{% assign column1 = faq | slice: 0, 4 %}
+			{% assign column2 = faq | slice: 4, 7 %}
+
+			<div class="flex-container">
+				<ul class="cards">
+					{% for question in column1 %}
+						<li class="card faq">
+							<input id="{{ question.question | slugify }}" class="toggle" type="checkbox">
+							<label for="{{ question.question | slugify }}" class="label-toggle">
+								<h3>{{ question.question }}</h3>
+							</label>
+							<div class="faq-content">
+								<p>{{ question.answer_markdown }}</p>
+							</div>
+						</li> 
+					{% endfor %}
+				</ul>
+
+				<ul class="cards">
+					{% for question in column2 %}
+						<li class="card faq">
+							<input id="{{ question.question | slugify }}" class="toggle" type="checkbox">
+							<label for="{{ question.question | slugify }}" class="label-toggle">
+								<h3>{{ question.question }}</h3>
+							</label>
+							<div class="faq-content">
+								<p>{{ question.answer_markdown }}</p>
+							</div>
+						</li> 
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</section>

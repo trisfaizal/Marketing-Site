@@ -1,200 +1,176 @@
-features:
-  - table_headings:
-      - heading: Free
-      - heading: Basic
-      - heading: Pro
-      - heading: Enterprise
-  - table_rows:
-      - feature_title: Price
-        free_plan_option: Free
-        basic_plan_option: $25/month
-        pro_plan_option: $75/month
-        enterprise_plan_option: Custom
-      - feature_title: Included Users
-        free_plan_option: '1'
-        basic_plan_option: '1'
-        pro_plan_option: '5'
-        enterprise_plan_option: Custom
-      - feature_title: Extra Users
-        free_plan_option: 'False'
-        basic_plan_option: $25/user/month
-        pro_plan_option: $25/user/month
-        enterprise_plan_option: Custom
-      - feature_title: Free Client Sharing
-        free_plan_option: 'False'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Role Based Sharinhg
-        free_plan_option: 'False'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Organisational Level Sharing
-        free_plan_option: 'False'
-        basic_plan_option: 'False'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Visual Editing
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Content Editing
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Front Matter Editing
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Source Editing
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Editor Links
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Global CDN Hosting
-        free_plan_option:
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Automatic HTTPS
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Instant Cache Invalidation
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: DDoSS Protection
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Form Submissions
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Site Passwords
-        free_plan_option: 'False'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: GitHub and Bitbucket Syncing
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Outputs
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Publishing Workflows
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Branching Workflows
-        free_plan_option: 'False'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Jekyll Builds
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Custom Jekyll Plugins
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Automatic Asset Compression
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Scheduling
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Custom Branding
-        free_plan_option: 'False'
-        basic_plan_option: 'False'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: DNS and Management
-        free_plan_option: 'True'
-        basic_plan_option: 'True'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Projects
-        free_plan_option: 'False'
-        basic_plan_option: 'False'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Translation Workflows
-        free_plan_option: 'False'
-        basic_plan_option: 'False'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Geolocation
-        free_plan_option: 'False'
-        basic_plan_option: 'False'
-        pro_plan_option: 'True'
-        enterprise_plan_option: 'True'
-      - feature_title: Support
-        free_plan_option: Basic
-        basic_plan_option: Basic
-        pro_plan_option: Advanced
-        enterprise_plan_option: Priority
-      - feature_title: Training Sessions
-        free_plan_option: 'False'
-        basic_plan_option: 'False'
-        pro_plan_option: 'False'
-        enterprise_plan_option: 'True'
-      - feature_title: Custom Implementation
-        free_plan_option: 'False'
-        basic_plan_option: 'False'
-        pro_plan_option: 'False'
-        enterprise_plan_option: 'True'
-      - feature_title: SAML Authentication
-        free_plan_option: 'False'
-        basic_plan_option: 'False'
-        pro_plan_option: 'False'
-        enterprise_plan_option: 'True'
-_array_structures:
-  features:
-    - label: Table Headings
-      icon: ballot
-      value:
-        table_headings: []
-    - label: Table
-      icon: format_quote
-      value:
-        table_rows: []
-  table_headings:
-    label: Heading
-    value:
-      heading:
-  table_rows:
-    label: row
-    icon: collections
-    value:
-      feature_title:
-      free_plan_option:
-      basic_plan_option:
-      pro_plan_option:
-      enterprise_plan_option:
+table_headings:
+  - heading: Free
+  - heading: Basic
+  - heading: Pro
+  - heading: Enterprise
+table_rows:
+  - feature_title: Price
+    free_plan_option: Free
+    basic_plan_option: $25/month
+    pro_plan_option: $75/month
+    enterprise_plan_option: Custom
+  - feature_title: Included Users
+    free_plan_option: '1'
+    basic_plan_option: '1'
+    pro_plan_option: '5'
+    enterprise_plan_option: Custom
+  - feature_title: Extra Users
+    free_plan_option: 'False'
+    basic_plan_option: $25/user/month
+    pro_plan_option: $25/user/month
+    enterprise_plan_option: Custom
+  - feature_title: Free Client Sharing
+    free_plan_option: 'False'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Role Based Sharing
+    free_plan_option: 'False'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Organisational Level Sharing
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Visual Editing
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Content Editing
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Front Matter Editing
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Source Editing
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Editor Links
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Global CDN Hosting
+    free_plan_option:
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Automatic HTTPS
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Instant Cache Invalidation
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: DDoSS Protection
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Form Submissions
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Site Passwords
+    free_plan_option: 'False'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: GitHub and Bitbucket Syncing
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Outputs
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Publishing Workflows
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Branching Workflows
+    free_plan_option: 'False'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Jekyll Builds
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Custom Jekyll Plugins
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Automatic Asset Compression
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Scheduling
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Custom Branding
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: DNS and Management
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Projects
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Translation Workflows
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Geolocation
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Support
+    free_plan_option: Basic
+    basic_plan_option: Basic
+    pro_plan_option: Advanced
+    enterprise_plan_option: Priority
+  - feature_title: Training Sessions
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'False'
+    enterprise_plan_option: 'True'
+  - feature_title: Custom Implementation
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'False'
+    enterprise_plan_option: 'True'
+  - feature_title: SAML Authentication
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'False'
+    enterprise_plan_option: 'True'
