@@ -209,6 +209,7 @@
 		.timeline-content {
 			margin-left: 60px;
 			padding-bottom: 20px;
+			min-height: 180px;
 
 			@media (max-width: 680px) {
 				margin-left: 45px;

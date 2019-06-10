@@ -5,69 +5,43 @@ heading: Who are we?
 subtitle:
 permalink: /about/
 icons: true
-offices:
-  - location: 'Dunedin, NZ'
-    description_html: >-
-      <p>Located in the heritage district of Dunedin. This office creates a
-      distraction free place to work in everyday to solve our customers
-      problems. Main features include:</p><ul><li>A large whiteboard surrounded
-      by couches</li><li>A small kitchen complete with cereal dispensers,
-      LaCroix in the fridge, freshly brewed filter coffee and a range of healthy
-      snacks</li><li>Sit stand desks for all employees</li><li>Status dashboards
-      for full visibility</li></ul>
-    office_image:
-    map_iframe_embed: >-
-      <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.669317722773!2d170.50052725210145!3d-45.877925144352936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eac0e399fd875%3A0x61f1b3dc26178dd8!2s1+Bond+St%2C+Dunedin%2C+9016!5e0!3m2!1sen!2snz!4v1559269749978!5m2!1sen!2snz"
-      width="600" height="450" frameborder="0" style="border:0"
-      allowfullscreen></iframe>
-  - location: 'San Francisco, USA'
-    description_html: >-
-      <p>The CloudCannon US office is located at Covo, a coworking space in 
-      downtown San Francisco.</p>
-    office_image:
-    map_iframe_embed: >-
-      <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3769201129603!2d-122.41029514831719!3d37.78120561946168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808410f9e4dd%3A0x2a7b3d59e3d195a8!2s981+Mission+St%2C+San+Francisco%2C+CA+94103%2C+USA!5e0!3m2!1sen!2snz!4v1559269570936!5m2!1sen!2snz"
-      width="600" height="450" frameborder="0" style="border:0"
-      allowfullscreen></iframe>
 timeline_events:
-  - title: CloudCannon is born
-    year: 2013
+  - title: CloudFlare partnership
+    year: 2019
     content_html: >-
-      <p>Mike and George start CloudCannon from their bedrooms in Dunedin, New
-      Zealand. CloudCannon could sync entirely static sites using Dropbox and
-      host them.</p>
-  - title: Seed funding
-    year: 2014
+      <p>CloudCannon partners with CloudFlare to offer high speed, global hosting
+      to customers.</p>
+  - title: SSL
+    year: 2018
     content_html: >-
-      <p>After an intense 3 months in the Lightning Lab business accelerator,
-      CloudCannon raises its seed round of funding. GitHub support was also
-      added during the year.</p>
-  - title: Jekyll Support
-    year: 2015
-    content_html: <p>CloudCannon adds Jekyll support and hosts the first JekyllConf.</p>
+      <p>Automated SSL was added to CloudCannon hosting and the first version of
+      the CloudCannon Suite  was released.</p>
+  - title: Organisations
+    year: 2017
+    content_html: >-
+      <p>CloudCannon Organisations were introduced to help large teams
+      collaborate on multiple sites.</p>
   - title: Front matter Support
     year: 2016
     content_html: >-
       <p>Front matter UI conventions were introduced allowing developers to
       build  their own interfaces for editors to update content. Bitbucket
       support was  also added.</p>
-  - title: Organisations
-    year: 2017
+  - title: Jekyll Support
+    year: 2015
+    content_html: <p>CloudCannon adds Jekyll support and hosts the first JekyllConf.</p>
+  - title: Seed funding
+    year: 2014
     content_html: >-
-      <p>CloudCannon Organisations were introduced to help large teams
-      collaborate on multiple sites.</p>
-  - title: SSL
-    year: 2018
+      <p>After an intense 3 months in the Lightning Lab business accelerator,
+      CloudCannon raises its seed round of funding. GitHub support was also
+      added during the year.</p>
+  - title: CloudCannon is born
+    year: 2013
     content_html: >-
-      <p>Automated SSL was added to CloudCannon hosting and the first version of
-      the CloudCannon Suite  was released.</p>
-  - title: CloudFlare partnership
-    year: 2019
-    content_html: >-
-      <p>CloudCannon parters with CloudFlare to offer high speed, global hosting
-      to customers.</p>
+      <p>Mike and George start CloudCannon from their bedrooms in Dunedin, New
+      Zealand. CloudCannon could sync entirely static sites using Dropbox and
+      host them.</p>
 investors:
   - name: Creative HQ Limited
     url:
@@ -136,7 +110,7 @@ investors:
 
 	<div class="offices wrapper">
 		<h2>Our Offices</h2>
-		{% for office in page.offices %}
+		{% for office in site.offices %}
 			<div class="office">
 				<div class="office-content">
 					<div class="content">
@@ -151,7 +125,7 @@ investors:
 		{% endfor %}
 	</div>
 
-	{% assign events = page.timeline_events | sort: 'year' %}
+	{% assign events = page.timeline_events | sort: 'year' | reverse %}
 	<div class="timeline wrapper">
 		<h2>Timeline</h2>
 		{% for event in events %}

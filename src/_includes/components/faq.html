@@ -1,7 +1,7 @@
 	<section class="dark-content">
 		<div class="wrapper faq-section">
 			<h2 id="faq">FAQ</h2>
-			{% assign faq = site.faq %}
+			{% assign faq = site.data.pricing-page.faq %}
 			{% assign column1 = faq | slice: 0, 4 %}
 			{% assign column2 = faq | slice: 4, 7 %}
 
@@ -14,7 +14,7 @@
 								<h3>{{ question.question }}</h3>
 							</label>
 							<div class="faq-content">
-								<p>{{ question.answer_markdown }}</p>
+								{{ question.answer_html }}
 							</div>
 						</li> 
 					{% endfor %}
@@ -28,7 +28,7 @@
 								<h3>{{ question.question }}</h3>
 							</label>
 							<div class="faq-content">
-								<p>{{ question.answer_markdown }}</p>
+								{{ question.answer_html }}
 							</div>
 						</li> 
 					{% endfor %}
