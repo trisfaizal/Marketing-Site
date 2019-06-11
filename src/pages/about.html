@@ -97,7 +97,7 @@ investors:
 								<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
 								<div class="image-content">
 									<p class="name">{{ person.name }}</p>
-									<p>{{ person.position }}</p>
+                  <p>{{ person.position }}</p>
 								</div>
 							</div>
 						</li>
@@ -126,7 +126,7 @@ investors:
 	</div>
 
 	{% assign events = page.timeline_events | sort: 'year' | reverse %}
-	<div class="timeline wrapper">
+	<div class="timeline wrapper short">
 		<h2>Timeline</h2>
 		{% for event in events %}
 			<div class="event">

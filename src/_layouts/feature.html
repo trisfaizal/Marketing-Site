@@ -5,11 +5,18 @@ body_class: "feature-nav-open"
 ---
 
 <header class="short">
-    {% include navigation/top.html %}
+    <div class="nav-bar wrapper wrapper-large">
+        <a id="open-nav" href="#">{% include svgs/other-icon.html icon="menu" %}</a>
+        {% include navigation/logo.html %}
+        {% include navigation/search.html %}
+        {% include navigation/main.html %}
+        {% include navigation/right.html %}
+    </div>
+
+    {% include navigation/feature-nav-bar.html %}
 </header>
 
 <div class="feature-wrapper">
-    {% include navigation/feature-nav-selection.html %}
     {% assign left = false %}
     {% for item in page.pitch %}
         {% if item.standalone_heading %}

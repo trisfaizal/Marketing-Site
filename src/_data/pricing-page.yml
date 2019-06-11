@@ -19,7 +19,7 @@ faq:
       <p>No, sharing with <a target="_blank" href="https://docs.cloudcannon.com/sharing/client-sharing/">Client Sharing</a> does not count towards your total users.</p>
   - question: Do you take feature requests?
     answer_html: >-
-      <p>Yes, we listen closely to our customers. <a href="mailto:support@cloudcannon.com">Contact&nbsp; support</a> if you have requests or feedback.&nbsp; Many CloudCannon features are driven by your feedback.</p>
+      <p>Yes, we listen closely to our customers. <a href="mailto:support@cloudcannon.com">Contact support</a> if you have requests or feedback.&nbsp; Many CloudCannon features are driven by your feedback.</p>
   - question: How do I cancel my CloudCannon account?
     answer_html: >-
       <p>Either downgrade to the free plan or delete your account. Find these options in your <em>Account Settings</em>.</p>
@@ -86,7 +86,7 @@ table_rows:
     pro_plan_option: 'True'
     enterprise_plan_option: 'True'
   - feature_title: Global CDN Hosting
-    free_plan_option:
+    free_plan_option: 'True'
     basic_plan_option: 'True'
     pro_plan_option: 'True'
     enterprise_plan_option: 'True'
@@ -131,7 +131,7 @@ table_rows:
     pro_plan_option: 'True'
     enterprise_plan_option: 'True'
   - feature_title: Branching Workflows
-    free_plan_option: 'False'
+    free_plan_option: 'True'
     basic_plan_option: 'True'
     pro_plan_option: 'True'
     enterprise_plan_option: 'True'
@@ -166,8 +166,8 @@ table_rows:
     pro_plan_option: 'True'
     enterprise_plan_option: 'True'
   - feature_title: Projects
-    free_plan_option: 'False'
-    basic_plan_option: 'False'
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
     pro_plan_option: 'True'
     enterprise_plan_option: 'True'
   - feature_title: Translation Workflows

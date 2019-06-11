@@ -4,9 +4,9 @@ $nav-bar-background: mix($white, $black, 99%);
 
 div.doc-nav {
     max-height: 0;
-    padding: 0;
     background-color: $nav-bar-background;
     transition: max-height 0.2s ease-in, padding 0.2s linear;
+    overflow-x: auto;
 
     li a {
         color: #666;
@@ -60,6 +60,10 @@ div.doc-nav {
                 border-radius: 0 $docs-nav-bottom-curve-size 0 0;
             }
         }
+    }
+
+    @media (max-width: 800px) {
+        background-color: #e6e5e6;
     }
 }
 

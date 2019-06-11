@@ -2,7 +2,7 @@
 layout: pricing-feature
 heading: Get started with CloudCannon
 subtitle: Try CloudCannon Pro free for 30 days, no credit card required
-title: Enterprise
+title: Enterprise Pricing
 permalink: /enterprise/
 display_plan_comparison_table: true
 display_faq: true
@@ -20,13 +20,12 @@ enterprise_features:
     image_path: /images/pricing/authentication.png
     image_position: Left
 case_studies:
-  - company: Netflix
-    name: Sam Harnack
-    position: Technical Marketing Director
-    image_path: /images/pricing/case-studies/samh.jpg
-    company_logo_image: /images/pricing/case-studies/netflix_logo.svg
-    content_html: >- 
-      <p>Partnering with CloudCannon enables my Enterprise Platforms Team at Netflix to deliver highly customizable microsites to our internal business partners rapidly so they can work at the speed of our customers.</p>
+  - company:
+    name:
+    position:
+    image_path:
+    company_logo_image:
+    content_html:
 ---
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <div class="enterprise-page">
@@ -34,7 +33,9 @@ case_studies:
 		<div class="enterprise-features">
 			{% for feature in page.enterprise_features %}
 				<div class="enterprise-feature{% if feature.image_position == 'Right' %} reverse{% endif %}{% if forloop.first %} no-top-margin{% endif %}">
-					<img src="{{ feature.image_path }}" alt="{{ feature.title }}" />
+					<div class="image-container">
+						<img src="{{ feature.image_path }}" alt="{{ feature.title }}" />
+					</div>
 					<div class="feature-content">
 						<h3>{{ feature.title }}</h3>
 						<p>{{ feature.content_markdown }}</p>
@@ -46,23 +47,25 @@ case_studies:
 
 	<section class="short wrapper wrapper-large">
 		<div class="form-section">
-			{% for case_study in page.case_studies %}
-				<div class="form-case-study-wrapper">
-					<div class="form-case-study">
-						{{ case_study.content_html }}
-						<div class="case-study-images">
-							<img class="avatar" src="{{ case_study.image_path }}" alt="{{ case_study.name }}" />
-							<div>
-								<p class="case-study-name">{{ case_study.name }}</p>
-								<p>{{ case_study.position }}</p>
-								<img src="{{ case_study.company_logo_image }}" alt="{{ case_study.company }}" />
+			{% if page.case_studies[0].company %}
+				{% for case_study in page.case_studies %}
+					<div class="form-case-study-wrapper">
+						<div class="form-case-study">
+							{{ case_study.content_html }}
+							<div class="case-study-images">
+								<img class="avatar" src="{{ case_study.image_path }}" alt="{{ case_study.name }}" />
+								<div>
+									<p class="case-study-name">{{ case_study.name }}</p>
+									<p>{{ case_study.position }}</p>
+									<img src="{{ case_study.company_logo_image }}" alt="{{ case_study.company }}" />
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			{% endfor %}
+				{% endfor %}
+			{% endif %}
 
-			<div class="demo-theme-form">
+			<div class="demo-theme-form{% unless page.case_studies[0].company %} full-width{% endunless %}">
 				<h3>Let's Talk</h3>
 				<form method="post" action="/success.html">
 					<span>
@@ -94,7 +97,7 @@ case_studies:
 
 					<input type="hidden" name="_to" value="support@cloudcannon.com">
 
-					<span class='stretch'>
+					<span class='stretch recaptcha'>
 						<div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>
 					</span>
 
