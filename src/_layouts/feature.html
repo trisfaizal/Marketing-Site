@@ -12,11 +12,10 @@ body_class: "feature-nav-open"
         {% include navigation/main.html %}
         {% include navigation/right.html %}
     </div>
-
-    {% include navigation/feature-nav-bar.html %}
 </header>
 
 <div class="feature-wrapper">
+    {% include navigation/feature-nav-bar.html %}
     {% assign left = false %}
     {% for item in page.pitch %}
         {% if item.standalone_heading %}
@@ -57,8 +56,6 @@ body_class: "feature-nav-open"
     {{page.content}}
 
 </div>
-
-{% include navigation/feature-nav-bar.html bottom=true %}
 
 {% unless page.hide_cta %}
     {% include components/cta/main.html text="Join thousands of developers building sites on CloudCannon today" button="Get started free" %}

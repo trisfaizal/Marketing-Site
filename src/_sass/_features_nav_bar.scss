@@ -6,7 +6,15 @@ div.doc-nav {
     max-height: 0;
     background-color: $nav-bar-background;
     transition: max-height 0.2s ease-in, padding 0.2s linear;
-    overflow-x: auto;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    box-shadow: 0px 15px 15px #fff;
+    
+    @media (max-width: 800px) {
+        overflow-x: auto;
+        box-shadow: 0px 0px 0px transparent;
+    }
 
     li a {
         color: #666;
@@ -23,7 +31,6 @@ div.doc-nav {
     .feature-nav-open &,
     &.bottom {
         max-height: 200px;
-        padding-top: 10px;
     }
 
     &.none:not(.bottom) ul {
@@ -69,5 +76,4 @@ div.doc-nav {
 
 div.doc-nav.pricing-nav {
     max-height: none;
-    padding-top: 10px;
 }

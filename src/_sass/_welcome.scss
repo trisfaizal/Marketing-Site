@@ -139,6 +139,7 @@ li.doc-nav-section {
 	flex: 1 0 75px;
 	display: flex;
 	flex-direction: column;
+	padding-top: 10px;
 }
 
 $docs-nav-bottom-curve-size: 10px;
@@ -235,7 +236,7 @@ a.doc-nav-section-link {
 			border-radius: 0 0 $docs-nav-bottom-curve-size 0;
 
 			@media (max-width: 800px) {
-				background: rgba(0, 0, 0, 0.1);;
+				background: rgba(0, 0, 0, 0.1);
 				border-radius: 0;
 				height: 0px;
 			}
