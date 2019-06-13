@@ -128,10 +128,10 @@ section.short, wrapper.short {
 	}
 
 	.cards:last-child {
-			@media (max-width: 750px) {
-				margin-top: -1px;
-			}
+		@media (max-width: 750px) {
+			margin-top: -1px;
 		}
+	}
 
 	.table-section {
 		overflow: hidden;
@@ -341,12 +341,13 @@ section.short, wrapper.short {
 			flex: 1 450px;
 
 			h3 {
-				margin: 10px;
+				margin: 10px 0px;
 			}
 
 			form {
 				display: flex;
 				flex-flow: row wrap;
+				margin: -8px;
 
 				span {
 					flex: 1 200px;
