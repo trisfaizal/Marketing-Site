@@ -1,5 +1,5 @@
 ---
-title: Jekyll themes with Gemfury and GitHub
+title: Private Jekyll themes with Gemfury
 author: jordan
 category: Tutorial
 image: /uploads/gemfuryblog.png
