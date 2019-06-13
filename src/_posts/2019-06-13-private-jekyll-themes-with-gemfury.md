@@ -121,6 +121,6 @@ All packages uploaded to Gemfury are made private by default. To make a package 
 
 ![](/images/blog/private-jekyll-themes-with-gemfury/screen-shot-2019-06-13-at-3-01-36-pm.png){: width="892" height="386"}
 
-Your package/theme can now be accessed following your Repo-URL (https://repo.fury.io/USERNAME/)
+Your package/theme can now be accessed following your Repo-URL `https://repo.fury.io/USERNAME/`
 
 &nbsp;
