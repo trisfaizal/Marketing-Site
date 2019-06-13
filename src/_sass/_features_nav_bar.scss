@@ -4,7 +4,7 @@ $nav-bar-background: mix($white, $black, 99%);
 
 div.doc-nav {
     max-height: 0;
-    background-color: $nav-bar-background;
+    background-color: #fff;
     transition: max-height 0.2s ease-in, padding 0.2s linear;
     position: sticky;
     top: 0;

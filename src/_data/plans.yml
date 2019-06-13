@@ -3,26 +3,28 @@ types:
     price: 0
     sub: Great for development
     features:
-      - Live test sites
-      - GitHub, Bitbucket and Dropbox source syncing
-      - Custom domains and DNS
       - Single user
+      - GitHub and Bitbucket two way syncing
+      - Hosting with splash page
   - name: Basic
-    price: 25
+    price: '20.83'
+    price_monthly: 25/m if billing monthly
     sub: Perfect for freelancers
     highlight: true
     features:
-      - "**Unlimited production sites**"
-      - GitHub, Bitbucket and FTP output syncing
-      - Free editing for clients
-      - Per site sharing
+      - Unlimited production sites
+      - GitHub and Bitbucket two way syncing
+      - Global CDN Hosting
+      - Automatic Asset compression
   - name: Pro
-    price: 75
+    price: '62.50'
+    price_monthly: 75/m if billing monthly
     sub: For teams of any size
     features:
-      - "**5 team members included**"
-      - Custom branding
-      - Organisation sharing
+      - White label branding
+      - Branching and collaboration workflows
+      - Organisation permissions
+      - 5 team members included
 groups:
   - name: Teams
     icon: group
