@@ -1,26 +1,4 @@
-@media (min-width: 930px) {
-    #features-nav-button {
-        &:after {
-            content: "";
-            width: 0;
-            height: 0;
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-bottom: 5px solid white;
-            
-            display: inline-block;
-            vertical-align: middle;
-            margin-left: 4px;
-        }
-        
-        &.arrow-down {
-            &:after {
-                border-bottom: 0px solid transparent;
-                border-top: 5px solid white;
-            }
-        }
-    }
-}
+
 
 .feature-context > h2 {
     display: flex;

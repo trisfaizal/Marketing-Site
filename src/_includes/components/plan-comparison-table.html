@@ -1,0 +1,74 @@
+	<section class="dark-content">
+		<div class="table-section wrapper short">
+			<h2>Compare Plans</h2>
+			<table>
+
+				<thead>
+					{% assign headings = site.data.pricing-page.table_headings %}
+					{% assign table_rows = site.data.pricing-page.table_rows %}
+					<tr>
+						<th></th>
+						{% for item in headings %}
+							<th>{{ item.heading }}</th>
+						{% endfor %}
+					</tr>
+				</thead>
+				{% for row in table_rows %}
+					{% assign free = row.free_plan_option %}
+					{% assign basic = row.basic_plan_option %}
+					{% assign pro = row.pro_plan_option %}
+					{% assign enterprise = row.enterprise_plan_option %}
+					{% assign free_slug = row.free_plan_option | slugify %}
+					{% assign basic_slug = row.basic_plan_option | slugify %}
+					{% assign pro_slug = row.pro_plan_option | slugify %}
+					{% assign enterprise_slug = row.enterprise_plan_option | slugify %}
+					<tr>
+						<td class="left-align">{{ row.feature_title }}</td>
+						<td>
+							{% if free_slug == 'true' %}
+								<i class="material-icons tick">done</i>
+							{% elsif free_slug == 'false' %}
+								<i class="material-icons">clear</i>
+							{% else %}
+								{{ free }}
+							{% endif %}
+						</td>
+						<td>
+							{% if basic_slug == 'true' %}
+								<i class="material-icons tick">done</i>
+							{% elsif basic_slug == 'false' %}
+								<i class="material-icons">clear</i>
+							{% else %}
+								{{ basic }}
+							{% endif %}
+						</td>
+						<td>
+							{% if pro_slug == 'true' %}
+								<i class="material-icons tick">done</i>
+							{% elsif pro_slug == 'false' %}
+								<i class="material-icons">clear</i>
+							{% else %}
+								{{ pro }}
+							{% endif %}
+						</td>
+						<td>
+							{% if enterprise_slug == 'true' %}
+								<i class="material-icons tick">done</i>
+							{% elsif enterprise_slug == 'false' %}
+								<i class="material-icons">clear</i>
+							{% else %}
+								{{ enterprise }}
+							{% endif %}
+						</td>
+					</tr>
+				{% endfor %}
+					<tr>
+						<td></td>
+						<td><a class="button light" href="https://app.cloudcannon.com/register">Start Now</a></td>
+						<td><a class="button light" href="https://app.cloudcannon.com/register">Free Trial</a></td>
+						<td><a class="button light" href="https://app.cloudcannon.com/register">Free Trial</a></td>
+						<td><a class="button brand" href="https://app.cloudcannon.com/register">Schedule a Demo</a></td>
+					</tr>
+			</table>
+		</div>
+	</section>

@@ -1,0 +1,202 @@
+faq:
+  - question: Can I try CloudCannon for free?
+    answer_html: >-
+      <p>Yes, signing up for CloudCannon starts a free 30 day trial on the <strong>Pro</strong>&nbsp; plan. During this trial period you can enter a credit card and select a plan&nbsp; if you'd like to continue using CloudCannon.</p>
+  - question: Can I switch plans?
+    answer_html: >-
+      <p>Yes, change your plan any time in <em>Account Settings.</em></p>
+  - question: How am I billed when adding new users?
+    answer_html: >-
+      <p>CloudCannon adds a prorated charge (or refund when removing a user) to your next invoice. For example, if your team is on the <strong>Basic</strong> plan, it costs $25&nbsp; per user per month. You add a new team member 10 days into your billing period and there are 20 remaining days in the month. The per-day cost for each user&nbsp; is $25 &divide; 30, so we add on $16.66 ($25 &divide; 30 days &times; 20 days) to your next invoice.</p>
+  - question: Where are CloudCannon sites hosted?
+    answer_html: >-
+      <p>CloudCannon uses Amazon Web Services for all infrastructure. Sites are automatically optimised and served from our custom File Server. Optimisations&nbsp; include GZIP, serving assets from a CDN and minification. CloudCannon supports <a target="_blank" href="https://docs.cloudcannon.com/hosting/options/">other hosting options</a>, including your own servers.</p>
+  - question: What happens after the 30 day trial?
+    answer_html: >-
+      <p>If you haven't added a credit card and selected a plan, you'll be downgraded to our free plan. The free plan restricts access to your sites and removes all the shares you've made.</p>
+  - question: Do I pay for another user when sharing to a client?
+    answer_html: >-
+      <p>No, sharing with <a target="_blank" href="https://docs.cloudcannon.com/sharing/client-sharing/">Client Sharing</a> does not count towards your total users.</p>
+  - question: Do you take feature requests?
+    answer_html: >-
+      <p>Yes, we listen closely to our customers. <a href="mailto:support@cloudcannon.com">Contact support</a> if you have requests or feedback.&nbsp; Many CloudCannon features are driven by your feedback.</p>
+  - question: How do I cancel my CloudCannon account?
+    answer_html: >-
+      <p>Either downgrade to the free plan or delete your account. Find these options in your <em>Account Settings</em>.</p>
+
+table_headings:
+  - heading: Free
+  - heading: Basic
+  - heading: Pro
+  - heading: Enterprise
+table_rows:
+  - feature_title: Price
+    free_plan_option: Free
+    basic_plan_option: $25/month
+    pro_plan_option: $75/month
+    enterprise_plan_option: Custom
+  - feature_title: Included Users
+    free_plan_option: '1'
+    basic_plan_option: '1'
+    pro_plan_option: '5'
+    enterprise_plan_option: Custom
+  - feature_title: Extra Users
+    free_plan_option: 'False'
+    basic_plan_option: $25/user/month
+    pro_plan_option: $25/user/month
+    enterprise_plan_option: Custom
+  - feature_title: Free Client Sharing
+    free_plan_option: 'False'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Role Based Sharing
+    free_plan_option: 'False'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Organisational Level Sharing
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Visual Editing
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Content Editing
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Front Matter Editing
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Source Editing
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Editor Links
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Global CDN Hosting
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Automatic HTTPS
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Instant Cache Invalidation
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: DDoSS Protection
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Form Submissions
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Site Passwords
+    free_plan_option: 'False'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: GitHub and Bitbucket Syncing
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Outputs
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Publishing Workflows
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Branching Workflows
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Jekyll Builds
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Custom Jekyll Plugins
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Automatic Asset Compression
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Scheduling
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Custom Branding
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: DNS and Management
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Projects
+    free_plan_option: 'True'
+    basic_plan_option: 'True'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Translation Workflows
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Geolocation
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'True'
+    enterprise_plan_option: 'True'
+  - feature_title: Support
+    free_plan_option: Basic
+    basic_plan_option: Basic
+    pro_plan_option: Advanced
+    enterprise_plan_option: Priority
+  - feature_title: Training Sessions
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'False'
+    enterprise_plan_option: 'True'
+  - feature_title: Custom Implementation
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'False'
+    enterprise_plan_option: 'True'
+  - feature_title: SAML Authentication
+    free_plan_option: 'False'
+    basic_plan_option: 'False'
+    pro_plan_option: 'False'
+    enterprise_plan_option: 'True'

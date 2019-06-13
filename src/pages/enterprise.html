@@ -1,0 +1,109 @@
+---
+layout: pricing-feature
+heading: Get started with CloudCannon
+subtitle: Try CloudCannon Pro free for 30 days, no credit card required
+title: Enterprise Pricing
+permalink: /enterprise/
+display_plan_comparison_table: false
+display_faq: true
+enterprise_features:
+  - title: Dedicated Support
+    content_markdown: Rolling out a new CMS across your company websites can be overwhelming. You'll have your own dedicated Account Manager to help you solve any roadblocks and ensure you're getting the most out of CloudCannon.
+    image_path: /images/pricing/support.png
+    image_position: Left
+  - title: Custom Implementation
+    content_markdown: We build and maintain complex Jekyll websites for some of the largest brands in the world. We can build from scratch, migrate a legacy site or consult with anything else related to Jekyll or CloudCannon.
+    image_path: /images/pricing/implementation.png
+    image_position: Right
+  - title: Enterprise Authentication
+    content_markdown: Control who can access your sites on CloudCannon using SAML and a centralised identity provider.
+    image_path: /images/pricing/authentication.png
+    image_position: Left
+case_studies:
+  - company:
+    name:
+    position:
+    image_path:
+    company_logo_image:
+    content_html:
+---
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<div class="enterprise-page">
+	<section class="wrapper">
+		<div class="enterprise-features">
+			{% for feature in page.enterprise_features %}
+				<div class="enterprise-feature{% if feature.image_position == 'Right' %} reverse{% endif %}{% if forloop.first %} no-top-margin{% endif %}">
+					<div class="image-container">
+						<img src="{{ feature.image_path }}" alt="{{ feature.title }}" />
+					</div>
+					<div class="feature-content">
+						<h3>{{ feature.title }}</h3>
+						<p>{{ feature.content_markdown }}</p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</section>
+
+	<section class="short wrapper wrapper-large">
+		<div class="form-section">
+			{% if page.case_studies[0].company %}
+				{% for case_study in page.case_studies %}
+					<div class="form-case-study-wrapper">
+						<div class="form-case-study">
+							{{ case_study.content_html }}
+							<div class="case-study-images">
+								<img class="avatar" src="{{ case_study.image_path }}" alt="{{ case_study.name }}" />
+								<div>
+									<p class="case-study-name">{{ case_study.name }}</p>
+									<p>{{ case_study.position }}</p>
+									<img src="{{ case_study.company_logo_image }}" alt="{{ case_study.company }}" />
+								</div>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			{% endif %}
+
+			<div class="demo-theme-form{% unless page.case_studies[0].company %} full-width{% endunless %}">
+				<h3>Let's Talk</h3>
+				<form method="post" action="/success.html">
+					<span>
+						<label>Name</label>
+						<input type="text" name="name">
+					</span>
+
+					<span>
+						<label>Email Address</label>
+						<input type="text" name="email">
+					</span>
+
+					<span>
+						<label>Company</label>
+						<input type="text" name="company">
+					</span>
+
+					<span>
+						<label>Position</label>
+						<input type="text" name="email">
+					</span>
+
+					<span class='stretch'>
+						<label>Message</label>
+						<textarea name="message"></textarea>
+					</span>
+
+					<input type="text" name="_gotcha" style="display: none;">
+
+					<input type="hidden" name="_to" value="support@cloudcannon.com">
+
+					<span class='stretch recaptcha'>
+						<div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>
+					</span>
+
+					<input class="button brand" type="submit" value="Send Message">
+				</form>
+			</div>
+		</div>
+	</section>
+</div>
