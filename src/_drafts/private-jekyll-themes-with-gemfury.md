@@ -24,12 +24,12 @@ This essentially generates a standard Jekyll site which other sites can inherit 
 
 ### Packaging Themes
 
-Themes need to be packaged as a `.gem` file before being hosted on Gemfury. It is good practice to add all relevant details to the `.gemspec` file (`yourtheme.gemspec`), and the `readme` before packaging. Errors will be displayed when packaging a theme if the `.gemspec` and `readme` files contain "FIXME" and "TODO" entries.
+Themes need to be packaged as a `.gem` file before being hosted on Gemfury. It is good practice to add all relevant details to the `.gemspec` file (`mytheme.gemspec`), and the `readme` before packaging. Errors will be displayed when packaging a theme if the `.gemspec` and `readme` files contain "FIXME" and "TODO" entries.
 
 Themes are packaged into a ***gem*** file by using the `gem build` command:
 
 ```shell
-$ gem build yourtheme.gemspec
+$ gem build mytheme.gemspec
 ```
 
 This packages all files and directories within your theme into a single ***gem*** file (***yourtheme.gem***).
@@ -51,13 +51,13 @@ $ fury login
 Upload the ***gem*** theme to your account:
 
 ```shell
-$ fury push yourtheme-0.1.0.gem
+$ fury push mytheme-0.1.0.gem
 ```
 
 If you're pushing to a shared account you will need to enter the [username parameter](https://gemfury.com/help/gemfury-cli#uploading-packages){: target="_blank"}\:
 
 ```shell
-$ fury push yourtheme-0.1.0.gem --as USERNAME
+$ fury push mytheme-0.1.0.gem --as USERNAME
 ```
 
 ### Using Themes
@@ -75,7 +75,7 @@ The above Ruby code searches for the gem/theme from the `source` on build, and d
 Jekyll also needs to know that a site uses a theme. This is achieved by specifying the theme within your site's `_config.yml` file.
 
 ```yaml
-theme: yourtheme
+theme: mytheme
 ```
 
 ### Authentication
@@ -105,4 +105,45 @@ $ bundle exec jekyll serve
 
 ### Updating Themes
 
-Each time a theme is updated you will need to run `bundle update yourtheme` within your site's directory. This updates your Gemfile.lock which tells the site to use the latest theme version. Pushing this file will update the version used by CloudCannon.
+Each time a theme is updated you will need to run `bundle update mytheme` within your site's directory. This updates your Gemfile.lock which tells the site to use the latest theme version. Pushing this file will update the version used by CloudCannon.
+
+## Theme Hosting with GitHub
+
+GitHub is another alternative for hosting themes. GitHub offer methods of hosting themes both privately and publicly.
+
+### Uploading themes to GitHub
+
+Before uploading a theme repository to GitHub, the 'Creating Jekyll Themes' and 'Packaging Themes' steps detailed above must be completed.
+
+### Public Themes
+
+The same steps are required as in the "Using Themes" step above. The theme URL specified in a site's Gemfile should include the git URL of the theme's repository.
+
+```ruby
+gem 'mytheme', git: 'https://github.com/GITHUB-USERNAME/mytheme.git'
+```
+
+The theme also needs to be specified within your site's `_config.yml` file.
+
+```yaml
+theme: mytheme
+```
+
+### Private Themes
+
+The following steps are required for hosting a private theme on GitHub:
+
+* Open your GitHub account settings
+* Select 'Developer Settings' from the left-hand menu
+* Select 'Personal Access Tokens' from the left-hand menu
+* Select the 'Generate New Token button
+
+You will be prompted to set the relevant permissions that this token can has access to. Once the token has been generated, note it and keep it private. Keys are not recoverable once they're lost.
+
+The theme URL specified in the site's Gemfile needs to include the token:
+
+```ruby
+gem 'mytheme', git: 'https://INSERT-TOKEN:x-oauth-basic@github.com/USERNAME/mytheme.git'
+```
+
+The theme will need to be specified in your site's `_config.yml` file to be used.
