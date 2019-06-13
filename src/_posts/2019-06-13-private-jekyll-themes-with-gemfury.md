@@ -107,43 +107,20 @@ $ bundle exec jekyll serve
 
 Each time a theme is updated you will need to run `bundle update mytheme` within your site's directory. This updates your Gemfile.lock which tells the site to use the latest theme version. Pushing this file will update the version used by CloudCannon.
 
-## Theme Hosting with GitHub
-
-GitHub is another alternative for hosting themes. GitHub offer methods of hosting themes both privately and publicly.
-
-### Uploading themes to GitHub
-
-Before uploading a theme repository to GitHub, the 'Creating Jekyll Themes' and 'Packaging Themes' steps detailed above must be completed.
-
 ### Public Themes
 
-The same steps are required as in the "Using Themes" step above. The theme URL specified in a site's Gemfile should include the git URL of the theme's repository.
+All packages uploaded to Gemfury are made private by default. To make a package public you will need to change it's privacy settings:
 
-```ruby
-gem 'mytheme', git: 'https://github.com/GITHUB-USERNAME/mytheme.git'
-```
+* Upload your package/theme to Gemfury
+* Open [your account Dashboard](https://manage.fury.io/users/sign_in)
+* Open the relevant package and select 'Settings', or select the lock icon displayed beside the package's version
 
-The theme also needs to be specified within your site's `_config.yml` file.
+![](/images/blog/private-jekyll-themes-with-gemfury/screen-shot-2019-06-13-at-3-02-31-pm.png){: width="847" height="72"}
 
-```yaml
-theme: mytheme
-```
+* Select the 'Make package public' button
 
-### Private Themes
+![](/images/blog/private-jekyll-themes-with-gemfury/screen-shot-2019-06-13-at-3-01-36-pm.png){: width="892" height="386"}
 
-The following steps are required for hosting a private theme on GitHub:
+Your package/theme can now be accessed following your Repo-URL (https://repo.fury.io/USERNAME/)
 
-* Open your GitHub account settings
-* Select 'Developer Settings' from the left-hand menu
-* Select 'Personal Access Tokens' from the left-hand menu
-* Select the 'Generate New Token button
-
-You will be prompted to set the relevant permissions that this token can has access to. Once the token has been generated, note it and keep it private. Keys are not recoverable once they're lost.
-
-The theme URL specified in the site's Gemfile needs to include the token:
-
-```ruby
-gem 'mytheme', git: 'https://INSERT-TOKEN:x-oauth-basic@github.com/USERNAME/mytheme.git'
-```
-
-The theme will need to be specified in your site's `_config.yml` file to be used.
+&nbsp;
