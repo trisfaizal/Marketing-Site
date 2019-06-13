@@ -1,0 +1,24 @@
+---
+layout: default
+header_class: short
+icons: true
+---
+<header class="short">
+    {% include navigation/top.html %}
+</header>
+
+<div class="pricing pricing-page">
+	{% include navigation/pricing-navigation.html %}
+	{{ content}}
+
+	{% if page.display_plan_comparison_table %}
+		{% include /components/plan-comparison-table.html %}
+	{% endif %}
+
+	{% if page.display_faq %}
+		{% include /components/faq.html %}
+	{% endif %}
+
+</div>
+	{% include components/cta/main.html text="Join thousands of developers building sites on CloudCannon today" button="Get started free" %}
+<script src="/js/pricing.js"></script>

@@ -1,0 +1,23 @@
+
+{% assign plan_types = site.data.plans.groups %}
+{% assign current_feature = site.features | where: "name", "Enterprise" %}
+<div class="{% if include.bottom %}bottom {% endif %}{% unless current_feature %}none {% endunless %}doc-nav pricing-nav">
+    <div class="wrapper wrapper-large" style="padding: 0 10px;">
+        <ul class="doc-nav-sections">
+            {% assign title = page.title | slugify | append: '/' | prepend: '/' %}
+            {% for type in plan_types %}
+                    <li class="doc-nav-section">
+                        <a href="{{ type.url }}" class="doc-nav-section-link {% if type.url == page.url %}current{% endif %}">
+                            <div class="split-choice-icon">
+                                {% include components/features-nav-icon.html icon=type.icon %}
+                            </div>
+                            <strong>{{ type.name }}</strong>
+                        </a>
+                    </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% unless current_feature %}
+        <div class="doc-nav-sections-empty-fix"></div>
+    {% endunless %}
+</div>

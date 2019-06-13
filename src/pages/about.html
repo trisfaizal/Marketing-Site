@@ -1,57 +1,156 @@
 ---
-layout: info-page
+layout: short
 title: About
+heading: Who are we?
+subtitle:
 permalink: /about/
 icons: true
-static_manifesto:
-  - title: Simplicity
-    icon: child_care
-    content_markdown: Static sites are just HTML, CSS and JavaScript files. This means they're faster to build, require less technical knowledge, need less upkeep and are future proofed.
-  - title: Scalability
-    icon: trending_up
-    content_markdown: A single webserver can handle [a lot](http://www.speedemy.com/apache-vs-nginx-2015/) of traffic if it's only serving static content.
-  - title: Speed
-    content_markdown: With static there's no database queries or page to generate on-the-fly. All the web server needs to do is return a static file.
-    icon: flight_takeoff
-  - title: Security
-    content_markdown: A static site is as secure as the web server its running on which makes them significantly less vulnerable to hackers.
-    icon: lock
-  - title: Stability
-    content_markdown: There's fewer points of failure with static sites so it's likely your uptime will be much higher.
-    icon: all_inclusive
-  - title: Source controlled
-    content_markdown: The entire site and content can live in a source control system such as Git. This gives you many advantages such as backups, approval processes and collaboration tools.
-    icon: star
+timeline_events:
+  - title: CloudFlare partnership
+    year: 2019
+    content_html: >-
+      <p>CloudCannon partners with CloudFlare to offer high speed, global hosting
+      to customers.</p>
+  - title: SSL
+    year: 2018
+    content_html: >-
+      <p>Automated SSL was added to CloudCannon hosting and the first version of
+      the CloudCannon Suite  was released.</p>
+  - title: Organisations
+    year: 2017
+    content_html: >-
+      <p>CloudCannon Organisations were introduced to help large teams
+      collaborate on multiple sites.</p>
+  - title: Front matter Support
+    year: 2016
+    content_html: >-
+      <p>Front matter UI conventions were introduced allowing developers to
+      build  their own interfaces for editors to update content. Bitbucket
+      support was  also added.</p>
+  - title: Jekyll Support
+    year: 2015
+    content_html: <p>CloudCannon adds Jekyll support and hosts the first JekyllConf.</p>
+  - title: Seed funding
+    year: 2014
+    content_html: >-
+      <p>After an intense 3 months in the Lightning Lab business accelerator,
+      CloudCannon raises its seed round of funding. GitHub support was also
+      added during the year.</p>
+  - title: CloudCannon is born
+    year: 2013
+    content_html: >-
+      <p>Mike and George start CloudCannon from their bedrooms in Dunedin, New
+      Zealand. CloudCannon could sync entirely static sites using Dropbox and
+      host them.</p>
+investors:
+  - name: Creative HQ Limited
+    url:
+  - name: Lightning Lab
+    url:
+  - name: Jasmine Investment Holdings
+    url:
+  - name: Evander Management Limited
+    url:
+  - name: SCW Trustees Limited
+    url:
+  - name: K One W One Limited
+    url:
+  - name: Daniel Khan
+    url:
+  - name: Adam Clark
+    url:
+  - name: FTL Trustees Limited
+    url:
+  - name: Bendall & Cant Trustee Company Limited
+    url:
+  - name: Laura Reitel
+    url:
+  - name: Robert Trevor Dickinson
+    url:
+  - name: Tainz Ventures Limited
+    url:
+  - name: Lyndsay Tait & Sharon Bryant
+    url:
+  - name: Sergio Van Dam
+    url:
+  - name: Graeme Ransley
+    url:
 ---
 
 <div class="about">
-	<h1>CloudCannon is a new kind of CMS for the static site generator, Jekyll.</h1>
+	<div class="wrapper first">
+		<!--h1>CloudCannon is a new kind of CMS for the static site generator, Jekyll.</h1> -->
+		<h2>What drives us</h2>
+		<p>Our mission is to bring all the advantages of static technology to developers while giving editors intuitive interfaces and workflows to update content. We believe most informational websites should be static. The reason they’re not is non-technical editors need to update content.</p>
+	</div>
 
-	<h2>What drives us</h2>
-	<p>Our mission is to bring all the advantages of static technology to developers while giving editors intuitive interfaces and workflows to update content. We believe most informational websites should be static. The reason they’re not is non-technical editors need to update content.</p>
+	<div class="wrapper minimal">
+		<h2>Our team</h2>
+		<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
+		<ul class="mugs">
+			<div class="mug-wrapper">
+				{% for person_obj in site.data.authors %}
+					{% assign person = person_obj[1] %}
+					{% if person.position %}
+						<li>
+							<div class="mug">
+								<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
+								<div class="image-content">
+									<p class="name">{{ person.name }}</p>
+                  <p>{{ person.position }}</p>
+								</div>
+							</div>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</ul>
+		<p>We're a small, friendly, remote team who value lifestyle and self direction. We're passionate about evangelising static websites and working with others who do the same. If you think you'd be a good fit for a role with us, reach out.</p>
+	</div>
 
-	<h2>Why static?</h2>
-	<ul class="cards feature-content">
-		{% for item in page.static_manifesto %}
-			<li class="card">
-				<h3><i class="material-icons">{{ item.icon }}</i> {{ item.title }}</h3>
-				{{ item.content_markdown | markdownify }}
-			</li>
+	<div class="offices wrapper">
+		<h2>Our Offices</h2>
+		{% for office in site.offices %}
+			<div class="office">
+				<div class="office-content">
+					<div class="content">
+						<h3>{{ office.location }}</h3>
+						{{ office.description_html }}
+					</div>
+					<div class="map">
+						{{ office.map_iframe_embed }}
+					</div>
+				</div>
+			</div>
 		{% endfor %}
-	</ul>
+	</div>
 
-	<h2>Our team</h2>
-	<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
+	{% assign events = page.timeline_events | sort: 'year' | reverse %}
+	<div class="timeline wrapper short">
+		<h2>Timeline</h2>
+		{% for event in events %}
+			<div class="event">
+				<h4 class="year">{{ event.year }}</h4>
+				<div class="timeline-graphic{%- if forloop.last == true %} last-event{%- endif -%}"></div>
+				<div class="timeline-content">
+					<h4>{{ event.title }}</h4>
+					{{ event.content_html }}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
 
-	<ul class="mugs">
-		{% for person_obj in site.data.authors %}
-			{% assign person = person_obj[1] %}
-			{% if person.position %}
-				<li>
-					<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
-					<p>{{ person.name }}</p>
+	<div class="investors wrapper">
+		<h2>Our Investors</h2>
+		<ul>
+			{% for investor in page.investors %}
+				<li>{% if investor.url %}
+						<a href="{{ investor.url }}">{{ investor.name }}</a>
+					{% else %}
+						{{ investor.name }}
+					{% endif %}
 				</li>
-			{% endif %}
-		{% endfor %}
-	</ul>
+			{% endfor %}
+		</ul>
+	</div>
 </div>
