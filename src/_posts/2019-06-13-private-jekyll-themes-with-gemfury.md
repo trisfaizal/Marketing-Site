@@ -3,7 +3,7 @@ title: Private Jekyll themes with Gemfury
 author: jordan
 category: Tutorial
 image: /uploads/gemfuryblog.png
-image_featured: false
+image_featured: true
 ---
 
 Jekyll themes allow styles and site structures to be reused across any number of sites. This eliminates the need to duplicate content, layouts, includes and assets across multiple sites.
