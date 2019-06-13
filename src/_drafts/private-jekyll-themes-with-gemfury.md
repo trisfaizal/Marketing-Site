@@ -2,7 +2,7 @@
 title: Private Jekyll themes with Gemfury
 author: jordan
 category: Tutorial
-image: /uploads/apple-desk-imac-39284.jpg
+image: /uploads/gemfuryblog.png
 image_featured: false
 ---
 
