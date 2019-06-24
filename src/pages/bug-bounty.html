@@ -53,14 +53,18 @@ table_of_contents:
 
 		<section class="docs-main" id="doc">
 			<article class="content">
-				<h1 class="editable">CloudCannon Bug Bounty</h1>
+				<h1 class="editable">
+					CloudCannon Bug Bounty
+				</h1>
 
 				<section class="editable">
 					<p>Welcome to CloudCannon's bug bounty programme. If you believe you've found a critical vulnerability please follow the steps below and create a bug report. While we appreciate all submissions, only critical bugs are within scope.</p>
 				</section>
 
 				<section>
-					<h2 class="editable" id="submission-process">Submission Process</h2>
+					<h2 class="editable" id="submission-process">
+						Submission Process
+					</h2>
 					<ul class="cards feature-content">
 						{% for item in page.static_manifesto %}
 							<li class="card">
@@ -80,24 +84,26 @@ table_of_contents:
 					<h2 id="rewards">Rewards</h2>
 					<p>CloudCannon will award valid reports based on the scope and severety of each report. Monetary rewards are paid by <strong>PayPal transactions only</strong>. Any charges incurred for PayPal transactions <strong>will not</strong> be covered by CloudCannon.</p>
 					<table>
-						<tr>
-							<th>Scope</th>
-							<th>Severity</th>
-							<th>Bounty</th>
-							<th>Reward</th>
-						</tr>
-						<tr>
-							<td>https://app.cloudcannon.com</td>
-							<td>Critical</td>
-							<td>Yes</td>
-							<td>$50 - $100 USD</td>
-						</tr>
-						<tr>
-							<td>https://app.cloudcannon.com</td>
-							<td>Moderate</td>
-							<td>Yes</td>
-							<td>$20 - $50 USD</td>
-						</tr>
+						<tbody>
+							<tr>
+								<th>Scope</th>
+								<th>Severity</th>
+								<th>Bounty</th>
+								<th>Reward</th>
+							</tr>
+							<tr>
+								<td>https://app.cloudcannon.com</td>
+								<td>Critical</td>
+								<td>Yes</td>
+								<td>$50 - $100 USD</td>
+							</tr>
+							<tr>
+								<td>https://app.cloudcannon.com</td>
+								<td>Moderate</td>
+								<td>Yes</td>
+								<td>$20 - $50 USD</td>
+							</tr>
+						</tbody>
 					</table>
 				</section>
 
@@ -126,6 +132,7 @@ table_of_contents:
 						<li>Social engineering (including phishing) of CloudCannon staff or contractors</li>
 						<li>Any physical attempts against CloudCannon property or data centers</li>
 					</ul>
+					<p><em>We do not cover PayPal fees for international transactions, credit card transactions or any other services. PayPal deduct this from the amount sent to the payee.</em></p>
 					<h4>Safe Harbour</h4>
 					<p>Any activities conducted in a manner consistent with this policy will be considered authorised conduct and we will not initiate legal action against you. If legal action is initiated by a third party against you in connection with activities conducted under this policy, we will take steps to make it known that your actions were conducted in compliance with this policy.</p>
 					<p>Thank you for helping to keep CloudCannon and our users safe!</p>
@@ -138,7 +145,7 @@ table_of_contents:
 					<p>Please provide as much information as possible about the potential issue you have discovered. The more information you provide, the faster CloudCannon will be able to validate the issue.&nbsp;</p>
 				</div>
 					<form action="/contact-success/" method="post" class="contact-form">
-						<input type="hidden" name="_hook" value="https://hooks.zapier.com/hooks/catch/4680965/723l53/">
+						<input type="hidden" name="_hook" value="https://hooks.zapier.com/hooks/catch/4680965/723l53/" />
 						<div class="text-field">
 							<label>Name:
 								<input type="text" name="name" id="name" required />
