@@ -14,7 +14,11 @@ While themes can be [hosted with GemFury](https://cloudcannon.com/tutorial/2019/
 
 ### Creating Jekyll Themes
 
-Create a new repository on GitHub and clone it locally - this will be your theme repository. The Jekyll&nbsp;`new-theme`{: .language-console} command builds a basic theme structure that includes the \_layouts, \_includes and \_sass directories. Start building a theme by entering the following into your command line:
+Create a new repository on GitHub - this will be your theme repository. Anyone can use your theme if the repository is public.
+
+![](/images/blog/jekyll-themes-with-github/screen-shot-2019-06-27-at-9-59-17-am.png){: width="1460" height="850"}
+
+Clone the repository to your local machine and open it in the command line. The Jekyll&nbsp;`new-theme`{: .language-console} command builds a basic theme structure that includes the \_layouts, \_includes and \_sass directories. Start building a theme by entering the following into your command line:
 
 ~~~shell
 $ jekyll new-theme mytheme
@@ -34,7 +38,7 @@ $ gem build mytheme.gemspec
 
 This packages all files and directories within your theme into a single ***gem*** file (***mytheme.gem***).
 
-Push all of the changes to your theme's repository on GitHub to ensure everything is up to date. Anyone can use your theme if the repository is public.
+Push all of the changes to your theme's repository on GitHub to ensure everything is up to date.
 
 ### Using Themes
 
@@ -62,6 +66,8 @@ You can access a private theme/repository using OAuth Tokens instead of using yo
 * Select 'Developer Settings' from the left-hand menu
 * Select 'Personal Access Tokens' from the left-hand menu
 * Select the 'Generate New Token button
+
+![](/images/blog/jekyll-themes-with-github/screen-shot-2019-06-27-at-9-56-42-am.png){: width="1998" height="646"}
 
 You will be prompted to set the relevant permissions the token has access to. Once the token has been generated, note it and keep it private. Keys are not recoverable once they're lost.
 
