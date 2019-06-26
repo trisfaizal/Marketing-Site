@@ -1,0 +1,21 @@
+plans:
+  - 'Free'
+  - 'Basic'
+  - 'Pro'
+  - 'Enterprise'
+
+features:
+  - title:
+    tool_tip:
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: false
+      alternate_detail:
+    pro_plan:
+      enabled: false
+      alternate_detail:
+    enterprise_plan:
+      enabled: false
+      alternate_detail:
