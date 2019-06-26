@@ -4,7 +4,7 @@ plans:
   - 'Pro'
   - 'Enterprise'
 
-features:
+plan_features:
   - title:
     tool_tip:
     free_plan:
