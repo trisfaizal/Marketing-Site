@@ -7,7 +7,7 @@ plans:
     price: $62.50/m
   - title: Enterprise
     price: Custom
-plan_features:
+table_items:
   - title: Included Users
     tool_tip_html: >-
       <p>Extra users cost an additional $25/user/month on the Basic and Pro
