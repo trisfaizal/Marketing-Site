@@ -135,18 +135,54 @@ section.short, wrapper.short {
 	.table-section {
 		overflow: hidden;
 		padding-bottom: 0px;
+		max-width: 1200px;
+		margin: 0 auto;
+		position: relative;
+		box-sizing: border-box;
 
 		table {
-			box-shadow: 0px 0px 25px #eaeaea;
-			border: 1px solid #e6e6e6;
 			margin-bottom: 0px;
 			table-layout: fixed;
+			border: 0px;
+
+			th {
+				font-size: 1.4rem;
+				color: #407AFC;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			tr, tr:nth-child(2n) {
+				background: transparent;
+				display: flex;
+			}
+
+			tr {
+				border-bottom: 1px solid #DDDDDD;
+			}
+
+			th {
+				border: 0px;
+			}
 
 			td, th {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 70px;
 				text-align: center;
 			}
 
 			td.left-align {
+				text-align: left;
+			}
+
+			.item-title {
+				justify-content: flex-start;
+				max-width: 260px;
+				padding-left: 25px;
 				text-align: left;
 			}
 
@@ -155,6 +191,31 @@ section.short, wrapper.short {
 				padding: 18px 8px;
 				width: 100%;
 				max-width: 90%;
+			}
+
+
+			.material-icons.tick, .material-icons {
+				background: #333333;
+				border-radius: 50%;
+				padding: 2px;
+				color: #ffffff;
+				font-size: 16px;
+				box-shadow: inset 0px 0px 3px #1E52AF;
+			}
+
+			.material-icons.tick {
+				background-color: #407afc;
+			}
+
+			.info-svg {
+				margin-left: 15px;
+				width: 22px;
+				height: 22px;
+				fill: #1bb500;
+				border-radius: 50%;
+				background: url('/images/pricing/info.svg');
+				background-size: 22px 22px;
+				box-shadow: inset 0px 0px 2px #808080;
 			}
 		}
 	}

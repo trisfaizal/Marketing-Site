@@ -1,6 +1,6 @@
 plans:
   - title: Free
-    price:
+    price: Free
   - title: Basic
     price: $20.83/m
   - title: Pro

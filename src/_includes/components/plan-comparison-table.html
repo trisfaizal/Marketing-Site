@@ -1,4 +1,75 @@
-	<section class="dark-content">
+<section class="dark-content">
+	<div class="table-section short">
+		<h2>Compare Plans</h2>
+		<table>
+			{% assign plan_data = site.data.pricing-table %}
+			<thead>
+				<tr>
+					<th></th>
+					{% for plan in plan_data.plans %}
+						<th>{{ plan.title }}</th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tr>
+				<td class="item-title">Price</td>
+			{% for plan in plan_data.plans %}
+				<td>{{ plan.price }}</td>
+			{% endfor %}
+			</tr>
+			{% for item in plan_data.table_items %}
+				<tr>
+					<td class="item-title">
+						{% if item.tool_tip_html %}
+							<a href="#">{{ item.title }}</a><span class="info-svg"></span>
+						{% else %}
+							{{ item.title }}
+						{% endif %}
+					</td>
+					<td>
+						{% if item.free_plan.alternate_detail %}
+							{{ item.free_plan.alternate_detail }}
+						{% elsif item.free_plan.enabled %}
+							<i class="material-icons tick">done</i>
+						{% else %}
+							<i class="material-icons">clear</i>
+						{% endif %}
+					</td>
+					<td>
+						{% if item.basic_plan.alternate_detail %}
+							{{ item.basic_plan.alternate_detail }}
+						{% elsif item.basic_plan.enabled %}
+							<i class="material-icons tick">done</i>
+						{% else %}
+							<i class="material-icons">clear</i>
+						{% endif %}
+					</td>
+					<td>
+						{% if item.pro_plan.alternate_detail %}
+							{{ item.pro_plan.alternate_detail }}
+						{% elsif item.pro_plan.enabled %}
+							<i class="material-icons tick">done</i>
+						{% else %}
+							<i class="material-icons">clear</i>
+						{% endif %}
+					</td>
+					<td>
+						{% if item.enterprise_plan.alternate_detail %}
+							{{ item.enterprise_plan.alternate_detail }}
+						{% elsif item.enterprise_plan.enabled %}
+							<i class="material-icons tick">done</i>
+						{% else %}
+							<i class="material-icons">clear</i>
+						{% endif %}
+					</td>
+			{% endfor %}
+		</table>
+	</div>
+</section>
+
+
+
+<!-- 	<section class="dark-content">
 		<div class="table-section wrapper short">
 			<h2>Compare Plans</h2>
 			<table>
@@ -71,4 +142,4 @@
 					</tr>
 			</table>
 		</div>
-	</section>
+	</section> -->
