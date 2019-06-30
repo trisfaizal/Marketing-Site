@@ -22,9 +22,9 @@ Clone the repository to your local machine and open it in the command line. The 
 $ jekyll new-theme mytheme
 ~~~
 
-This generates a basic Jekyll site which other sites can inherit from.
+This generates a basic Jekyll site which other sites can inherit from. The Jekyll&nbsp;`new-theme`{: .language-console} command also creates a gemspec file (`mytheme.gemspec`). This holds the version, and any other relevant theme details.
 
-Themes must also include a gemspec file (`mytheme.gemspec`). This holds the theme version, and any other relevant details.
+It is good practice to add all relevant details to the `.gemspec` file, and the `readme` file. Errors will be displayed when using the theme if the `.gemspec` and `readme` files contain “FIXME” and “TODO” entries.
 
 Push all of the changes to your theme's repository on GitHub to ensure everything is up to date.
 
@@ -33,10 +33,8 @@ Push all of the changes to your theme's repository on GitHub to ensure everythin
 To build a themed site the `Gemfile` needs to be adjusted so the theme is downloaded during the build process. Open your new site’s `Gemfile` and add the following line:
 
 ~~~ruby
-gem 'mytheme', git: 'https://github.com/GITHUB-USERNAME/mytheme.git'
+gem 'mytheme', '>= 0.1.0', :git => 'https://github.com/GITHUB-USERNAME/mytheme.git'
 ~~~
-
-The above Ruby code searches for the theme repository on build, and uses the current version.
 
 Jekyll also needs to know that the site is using a theme. This is achieved by specifying the theme within your site’s `_config.yml` file.
 
@@ -44,7 +42,18 @@ Jekyll also needs to know that the site is using a theme. This is achieved by sp
 theme: mytheme
 ~~~
 
-### <br>**using branch versions, and other theme versions**<br><br>Private Themes
+### **Using Different Versions**
+
+It is also possible to specify a particular theme ref/commit, branch, or tag to use.
+
+~~~ruby
+gem 'mytheme', '>= 1.2.4', :git => 'https://github.com/GITHUB-USERNAME/mytheme.git'
+:git => 'https://github.com/GITHUB-USERNAME/mytheme.git', :ref => '6afec'
+:git => 'https://github.com/GITHUB-USERNAME/mytheme.git', :branch => '1-2-beta'
+:git => 'https://github.com/GITHUB-USERNAME/mytheme.git', :tag => 'v1.2.4'
+~~~
+
+### Private Themes
 
 You can access a private theme/repository using OAuth Tokens instead of using your account's credentials. The following steps are required to create an OAuth Token:
 
@@ -59,8 +68,8 @@ You will be prompted to set the relevant permissions the token has access to. On
 
 To use a private theme the repository URL specified in the site's Gemfile needs to include the token:
 
-~~~ruby
-gem 'mytheme', git: 'https://TOKEN:x-oauth-basic@github.com/USERNAME/mytheme.git'
+~~~
+gem 'mytheme', '>= 0.1.0', :git => 'https://TOKEN:x-oauth-basic@github.com/USERNAME/mytheme.git'
 ~~~
 
 The theme will also need to be specified in your site's `_config.yml` file to be used.
