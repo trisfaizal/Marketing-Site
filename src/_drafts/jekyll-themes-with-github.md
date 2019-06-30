@@ -10,11 +10,9 @@ image_featured: true
 
 While themes can be [hosted with GemFury](https://cloudcannon.com/tutorial/2019/06/13/private-jekyll-themes-with-gemfury/){: target="_blank"}, they can also be hosted for free with GitHub. GitHub allow both public and private theme hosting.
 
-&nbsp;
+### Create a theme repository
 
-### Creating Jekyll Themes
-
-Create a new repository on GitHub - this will be your theme repository. Anyone can use your theme if the repository is public.
+A repository must first be created on GitHub. Anyone can use your theme if the repository is public.
 
 ![](/images/blog/jekyll-themes-with-github/screen-shot-2019-06-27-at-9-59-17-am.png){: width="1460" height="850"}
 
@@ -26,17 +24,7 @@ $ jekyll new-theme mytheme
 
 This generates a basic Jekyll site which other sites can inherit from.
 
-### Packaging Themes
-
-Themes need to be packaged as a `.gem` file before being used. It is good practice to add all relevant details to the `.gemspec` file (`mytheme.gemspec`), and the `readme` before packaging. Errors will be displayed when packaging a theme if the `.gemspec` and `readme` files contain “FIXME” and “TODO” entries.
-
-Themes are packaged into a ***gem*** file by using the `gem build` command:
-
-~~~shell
-$ gem build mytheme.gemspec
-~~~
-
-This packages all files and directories within your theme into a single ***gem*** file (***mytheme.gem***).
+Themes must also include a gemspec file (`mytheme.gemspec`). This holds the theme version, and any other relevant details.
 
 Push all of the changes to your theme's repository on GitHub to ensure everything is up to date.
 
@@ -56,9 +44,7 @@ Jekyll also needs to know that the site is using a theme. This is achieved by sp
 theme: mytheme
 ~~~
 
-&nbsp;
-
-### Private Themes
+### <br>**using branch versions, and other theme versions**<br><br>Private Themes
 
 You can access a private theme/repository using OAuth Tokens instead of using your account's credentials. The following steps are required to create an OAuth Token:
 
