@@ -5,7 +5,7 @@
 			{% assign plan_data = site.data.pricing-table %}
 			<thead>
 				<tr>
-					<th></th>
+					<th class="item-title"></th>
 					{% for plan in plan_data.plans %}
 						<th>{{ plan.title }}</th>
 					{% endfor %}
@@ -21,7 +21,12 @@
 				<tr>
 					<td class="item-title">
 						{% if item.tool_tip_html %}
-							<a href="#">{{ item.title }}</a><span class="info-svg"></span>
+							{{ item.title }}<div class="table-icons svg">
+								<span class="info-svg"></span>
+								<div class="tool-tip">
+									{{ item.tool_tip_html }}
+								</div>
+							</div>
 						{% else %}
 							{{ item.title }}
 						{% endif %}
@@ -30,36 +35,52 @@
 						{% if item.free_plan.alternate_detail %}
 							{{ item.free_plan.alternate_detail }}
 						{% elsif item.free_plan.enabled %}
-							<i class="material-icons tick">done</i>
+							<div class="table-icons">
+								<i class="material-icons tick">done</i>
+							</div>
 						{% else %}
-							<i class="material-icons">clear</i>
+							<div class="table-icons">
+								<i class="material-icons">clear</i>
+							</div>
 						{% endif %}
 					</td>
 					<td>
 						{% if item.basic_plan.alternate_detail %}
 							{{ item.basic_plan.alternate_detail }}
 						{% elsif item.basic_plan.enabled %}
-							<i class="material-icons tick">done</i>
+							<div class="table-icons">
+								<i class="material-icons tick">done</i>
+							</div>
 						{% else %}
-							<i class="material-icons">clear</i>
+							<div class="table-icons">
+								<i class="material-icons">clear</i>
+							</div>
 						{% endif %}
 					</td>
 					<td>
 						{% if item.pro_plan.alternate_detail %}
 							{{ item.pro_plan.alternate_detail }}
 						{% elsif item.pro_plan.enabled %}
-							<i class="material-icons tick">done</i>
+							<div class="table-icons">
+								<i class="material-icons tick">done</i>
+							</div>
 						{% else %}
-							<i class="material-icons">clear</i>
+							<div class="table-icons">
+								<i class="material-icons">clear</i>
+							</div>
 						{% endif %}
 					</td>
 					<td>
 						{% if item.enterprise_plan.alternate_detail %}
 							{{ item.enterprise_plan.alternate_detail }}
 						{% elsif item.enterprise_plan.enabled %}
-							<i class="material-icons tick">done</i>
+							<div class="table-icons">
+								<i class="material-icons tick">done</i>
+							</div>
 						{% else %}
-							<i class="material-icons">clear</i>
+							<div class="table-icons">
+								<i class="material-icons">clear</i>
+							</div>
 						{% endif %}
 					</td>
 			{% endfor %}
