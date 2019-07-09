@@ -6,11 +6,11 @@ image: /uploads/website.png
 image_featured: true
 ---
 
-Recently we covered turning a Jekyll theme into a Gem and hosting it privately on GemFury. In this post we’re demonstrating how you can host your theme on GitHub . GitHub allow both public and private repository/theme hosting.
+Recently we covered [turning a Jekyll theme into a Gem and hosting it privately on GemFury](https://cloudcannon.com/tutorial/2019/06/13/private-jekyll-themes-with-gemfury/){: target="_blank"}. In this post we’re demonstrating how you can host your theme on GitHub . GitHub allow both public and private repository/theme hosting.
 
 ### Create a theme repository
 
-First, create a repository on GitHub. Anyone can use your theme if the repository is public.
+First, [create a repository](https://github.com/new){: target="_blank"} on GitHub. Anyone can use your theme if the repository is public.
 
 ![](/images/blog/jekyll-themes-with-github/screen-shot-2019-06-27-at-9-59-17-am.png){: width="1460" height="850"}
 
@@ -22,13 +22,13 @@ $ jekyll new-theme mytheme
 
 This generates a basic Jekyll site which other sites can inherit from. The Jekyll&nbsp;`new-theme`{: .language-console} command also creates a gemspec file (`mytheme.gemspec`). This holds the version, and other relevant theme details.
 
-It is good practice to add all relevant details to the `.gemspec` file, and the `readme` file. You will receive build errors if the `.gemspec` and `readme` files contain “FIXME” and “TODO” entries.
+It is good practice to add all relevant details to the `.gemspec` file, and the `README.md` file. You will receive build errors if the `.gemspec` and `README.md` files contain “FIXME” and “TODO” entries.
 
 Push these changes to your theme's repository on GitHub to ensure everything is up to date.
 
 ### Using Themes
 
-To build a themed site the Gemfile should specify where to download the theme from. Open your site’s Gemfile and add the following line:
+To build a themed site the `Gemfile` should specify where to download the theme from. Open your site’s `Gemfile` and add the following line:
 
 ~~~ruby
 gem 'mytheme', '>= 0.1.0', :git => 'https://github.com/GITHUB-USERNAME/mytheme.git'
@@ -55,16 +55,16 @@ gem 'mytheme', '>= 1.2.4', :git => 'https://github.com/GITHUB-USERNAME/mytheme.g
 
 Private repositories can be accessed using OAuth Tokens instead of personal credentials. To create an OAuth Token follow these steps:
 
-* Open your GitHub account settings
-* Select 'Developer Settings' from the left-hand menu
-* Select 'Personal Access Tokens' from the left-hand menu
-* Select the 'Generate New Token button
+1. Open your GitHub account settings
+2. Select *Developer Settings* from the left-hand menu
+3. Select *Personal Access Tokens* from the left-hand menu
+4. Select the *Generate New Token* button
 
 ![](/images/blog/jekyll-themes-with-github/screen-shot-2019-06-27-at-9-56-42-am.png){: width="1998" height="646"}
 
 Set the relevant permissions which the token will have access to. Once the token has generated, note it and keep it private. Keys are not recoverable once they're lost.
 
-To use a private theme the repository URL specified in the site's Gemfile needs to include the token:
+To use a private theme the repository URL specified in the site's `Gemfile` needs to include the token:[...](https://cloudcannon.com/tutorial/2019/06/13/private-jekyll-themes-with-gemfury/){: target="_blank"}
 
 ~~~
 gem 'mytheme', '>= 0.1.0', :git => 'https://TOKEN:x-oauth-basic@github.com/USERNAME/mytheme.git'
@@ -75,3 +75,7 @@ Be sure to specify the theme you are using within the site’s `_config.yml` fil
 ### Updating Themes
 
 The `Gemfile.lock` will always lock to a specific commit/version. Run the `bundle update theme_name` command to pull new theme changes/versions.
+
+### Summary
+
+Using themes with GitHub can be more convenient while you’re developing. With GitHub repositories, you don’t need to release a gem for every change or update. Once the theme is stable it may be more beneficial to use a Gem. Using Gems help to keep consistency with versioning across your sites.
