@@ -2,41 +2,41 @@
 title: Jekyll Themes with GitHub
 author: jordan
 category: Tutorial
-image:
+image: /uploads/website.png
 image_featured: true
 ---
 
 ## Theme Hosting with GitHub
 
-While themes can be [hosted with GemFury](https://cloudcannon.com/tutorial/2019/06/13/private-jekyll-themes-with-gemfury/){: target="_blank"}, they can also be hosted for free with GitHub. GitHub allow both public and private theme hosting.
+Recently we covered turning a Jekyll theme into a Gem and hosting it privately on GemFury. In this post we’re demonstrating how you can host your theme on GitHub . GitHub allow both public and private repository/theme hosting.
 
 ### Create a theme repository
 
-A repository must first be created on GitHub. Anyone can use your theme if the repository is public.
+First, create a repository on GitHub. Anyone can use your theme if the repository is public.
 
 ![](/images/blog/jekyll-themes-with-github/screen-shot-2019-06-27-at-9-59-17-am.png){: width="1460" height="850"}
 
-Clone the repository to your local machine and open it in the command line. The Jekyll&nbsp;`new-theme`{: .language-console} command builds a basic theme structure that includes the \_layouts, \_includes and \_sass directories. Start building a theme by entering the following into your command line:
+Clone the repository to your local machine and open it from the command line. The Jekyll&nbsp;`new-theme`{: .language-console} command builds a basic theme structure that includes the `_layouts`, `_includes` and `_sass` directories. Start building a theme by entering the following into your command line:
 
 ~~~shell
 $ jekyll new-theme mytheme
 ~~~
 
-This generates a basic Jekyll site which other sites can inherit from. The Jekyll&nbsp;`new-theme`{: .language-console} command also creates a gemspec file (`mytheme.gemspec`). This holds the version, and any other relevant theme details.
+This generates a basic Jekyll site which other sites can inherit from. The Jekyll&nbsp;`new-theme`{: .language-console} command also creates a gemspec file (`mytheme.gemspec`). This holds the version, and other relevant theme details.
 
-It is good practice to add all relevant details to the `.gemspec` file, and the `readme` file. Errors will be displayed when using the theme if the `.gemspec` and `readme` files contain “FIXME” and “TODO” entries.
+It is good practice to add all relevant details to the `.gemspec` file, and the `readme` file. You will receive build errors if the `.gemspec` and `readme` files contain “FIXME” and “TODO” entries.
 
-Push all of the changes to your theme's repository on GitHub to ensure everything is up to date.
+Push these changes to your theme's repository on GitHub to ensure everything is up to date.
 
 ### Using Themes
 
-To build a themed site the `Gemfile` needs to be adjusted so the theme is downloaded during the build process. Open your new site’s `Gemfile` and add the following line:
+To build a themed site the Gemfile should specify where to download the theme from. Open your site’s Gemfile and add the following line:
 
 ~~~ruby
 gem 'mytheme', '>= 0.1.0', :git => 'https://github.com/GITHUB-USERNAME/mytheme.git'
 ~~~
 
-Jekyll also needs to know that the site is using a theme. This is achieved by specifying the theme within your site’s `_config.yml` file.
+Jekyll also needs to know that the site is using a theme. Specify the theme you are using within the site’s `_config.yml` file.
 
 ~~~yaml
 theme: mytheme
@@ -55,7 +55,7 @@ gem 'mytheme', '>= 1.2.4', :git => 'https://github.com/GITHUB-USERNAME/mytheme.g
 
 ### Private Themes
 
-You can access a private theme/repository using OAuth Tokens instead of using your account's credentials. The following steps are required to create an OAuth Token:
+Private repositories can be accessed using OAuth Tokens instead of personal credentials. To create an OAuth Token follow these steps:
 
 * Open your GitHub account settings
 * Select 'Developer Settings' from the left-hand menu
@@ -64,7 +64,7 @@ You can access a private theme/repository using OAuth Tokens instead of using yo
 
 ![](/images/blog/jekyll-themes-with-github/screen-shot-2019-06-27-at-9-56-42-am.png){: width="1998" height="646"}
 
-You will be prompted to set the relevant permissions the token has access to. Once the token has been generated, note it and keep it private. Keys are not recoverable once they're lost.
+Set the relevant permissions which the token will have access to. Once the token has generated, note it and keep it private. Keys are not recoverable once they're lost.
 
 To use a private theme the repository URL specified in the site's Gemfile needs to include the token:
 
@@ -72,8 +72,8 @@ To use a private theme the repository URL specified in the site's Gemfile needs 
 gem 'mytheme', '>= 0.1.0', :git => 'https://TOKEN:x-oauth-basic@github.com/USERNAME/mytheme.git'
 ~~~
 
-The theme will also need to be specified in your site's `_config.yml` file to be used.
+Be sure to specify the theme you are using within the site’s `_config.yml` file.
 
 ### Updating Themes
 
-Changes to a theme can be pushed directly to the theme's repository, and any sites using the theme will be updated. If a site's gemfile.lock file is locked to a specific version, changes will not be applied.
+The `Gemfile.lock` will always lock to a specific commit/version. Run the `bundle update theme_name` command to pull new theme changes/versions.
