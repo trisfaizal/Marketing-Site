@@ -6,8 +6,6 @@ image: /uploads/website.png
 image_featured: true
 ---
 
-## Theme Hosting with GitHub
-
 Recently we covered turning a Jekyll theme into a Gem and hosting it privately on GemFury. In this post we’re demonstrating how you can host your theme on GitHub . GitHub allow both public and private repository/theme hosting.
 
 ### Create a theme repository
