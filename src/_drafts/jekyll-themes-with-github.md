@@ -66,7 +66,7 @@ Set the relevant permissions which the token will have access to. Once the token
 
 To use a private theme the repository URL specified in the site's `Gemfile` needs to include the token:[...](https://cloudcannon.com/tutorial/2019/06/13/private-jekyll-themes-with-gemfury/){: target="_blank"}
 
-~~~
+~~~ruby
 gem 'mytheme', '>= 0.1.0', :git => 'https://TOKEN:x-oauth-basic@github.com/USERNAME/mytheme.git'
 ~~~
 
