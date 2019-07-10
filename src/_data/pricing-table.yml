@@ -1,0 +1,527 @@
+plans:
+  - title: Free
+    price: Free
+  - title: Basic
+    price: $20.83/m
+  - title: Pro
+    price: $62.50/m
+  - title: Enterprise
+    price: Custom
+table_items:
+  - title: Included Users
+    tool_tip_html: >-
+      <p>Extra users cost an additional $25/user/month on the Basic and Pro
+      plans. Contact us for enterprise information.</p>
+    free_plan:
+      enabled: true
+      alternate_detail: '1'
+    basic_plan:
+      enabled: true
+      alternate_detail: '1'
+    pro_plan:
+      enabled: true
+      alternate_detail: '5'
+    enterprise_plan:
+      enabled: true
+      alternate_detail: Custom
+  - title: Client Sharing
+    tool_tip_html: >-
+      <p><a target="_blank"
+      href="https://docs.cloudcannon.com/sharing/client-sharing/client-sharing/">Share
+      your site</a> with your clients without them having to create a
+      CloudCannon account and use a seat on your pricing plan.</p>
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Role Based Sharing
+    tool_tip_html: >-
+      <p>Give other CloudCannon users/<a target="_blank"
+      href="https://docs.cloudcannon.com/sharing/general/collaborators/">collaborators</a>
+      access to any number of sites.</p>
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Organisational Level Sharing
+    tool_tip_html: >-
+      <p>Choose from a range of <a target="_blank"
+      href="https://docs.cloudcannon.com/organisations/team-management/">organisational
+      sharing roles</a> that include Owners, Developers, Technical Editors,
+      Editors and External Collaborators.</p>
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: false
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Visual Editing
+    tool_tip_html: >-
+      <p>The <em><a target="_blank"
+      href="https://docs.cloudcannon.com/editing/editors/visual-editor/">Visual
+      Editor</a> </em>is an inline editor that allows content editing within a
+      <em>what you see is what you get</em> interface. <a target="_blank"
+      href="https://docs.cloudcannon.com/editing/experience/editor-links/"><em>Editor
+      links</em></a> also provide an easy way to edit site modules/components
+      within the <em>Visual Editor</em>.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Content Editing
+    tool_tip_html: >-
+      <p>The <a target="_blank"
+      href="https://docs.cloudcannon.com/editing/editors/content-editor/"><em>Content
+      Editor</em></a> is an elegant rich text editor for Markdown files. Clients
+      and team members use this to edit formatted Markdown without having to
+      know the syntax or use a plain text editor.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Front Matter Editing
+    tool_tip_html: >-
+      <p>Front matter is a <a
+      href="http://jekyllrb.com/docs/frontmatter/">Jekyll feature</a> to set
+      custom variables for a page. These variables can be accessed in the page
+      with <a
+      href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">Liquid</a>.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Source Editing
+    tool_tip_html: >-
+      <p>The <a target="_blank"
+      href="https://docs.cloudcannon.com/editing/editors/source-editor/"><em>Source
+      Editor</em></a> is used to make edits within CloudCannon on any text-based
+      file. It is available to the owner and developers of the site.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Global CDN Hosting
+    tool_tip_html:
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Automatic HTTPS
+    tool_tip_html: >-
+      <p>CloudCannon offers free <a target="_blank" href="CloudCannon offers
+      free SSL by default on every site and serves them over
+      HTTPS.">CloudFlare</a> SSL by default on every site and serves them over
+      HTTPS.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Instant Cache Invalidation
+    tool_tip_html:
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: DDoSS Protection
+    tool_tip_html:
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Form Submissions
+    tool_tip_html: >-
+      <p><a target="_blank"
+      href="https://docs.cloudcannon.com/hosting/forms/introduction/">Create
+      forms</a> for your sites. CloudCannon sends named form data to email
+      addresses of your choosing. Alternatively, <a
+      href="https://docs.cloudcannon.com/hosting/forms/using-webhooks/">use a
+      hook</a> to integrate with services like Zapier or IFTTT.</p><p>&nbsp;</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Site Passwords
+    tool_tip_html: >-
+      <p><a target="_blank"
+      href="https://docs.cloudcannon.com/hosting/authentication/password/">Password
+      authentication</a> restricts access to your site by prompting viewers to
+      enter a password.</p>
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: GitHub and BitBucket Syncing
+    tool_tip_html: >-
+      <p>Connecting your remote repository allows you to work on your websites
+      locally and have the changes <a target="_blank"
+      href="https://docs.cloudcannon.com/files/source-syncing/github/">sync with
+      CloudCannon</a>. File changes made on CloudCannon also get synced back to
+      your remote repository.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Outputs
+    tool_tip_html: >-
+      <p>Connecting a storage provider to <a target="_blank"
+      href="https://docs.cloudcannon.com/files/output-syncing/introduction/">output</a>
+      allows you to access the compiled output of a site.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Publishing Workflows
+    tool_tip_html: >-
+      <p><a target="_blank"
+      href="https://docs.cloudcannon.com/files/publishing/introduction/">Publishing</a>
+      allows editors to merge changes from one branch to another. You can choose
+      to merge directly or with a pull request. Selecting a publish branch
+      enables the publish interface for your site. This is useful for staging
+      sites.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Branching Workflows
+    tool_tip_html:
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Jekyll Builds
+    tool_tip_html:
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Custom Jekyll Plugins
+    tool_tip_html: >-
+      <p>Use community-contributed packages and run custom code to extend your
+      sites. All sites on CloudCannon support Jekyll plugins.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Automatic Asset Compressions
+    tool_tip_html: >-
+      <p>CloudCannon optimises sites to load as fast as possible. CloudCannon
+      minifies CSS with <a
+      href="https://github.com/GoalSmashers/clean-css">clean-css</a> and
+      JavaScript with <a href="https://github.com/lautis/uglifier">Uglifier</a>.
+      Externally hosted assets are not optimised.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Scheduling
+    tool_tip_html: >-
+      <p><a target="_blank"
+      href="https://docs.cloudcannon.com/builds/scheduling/">Scheduling</a>
+      allows you to define when your site is built automatically.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Custom Branding
+    tool_tip_html: >-
+      <p>Remove all CloudCannon logos and <a target="_blank"
+      href="https://docs.cloudcannon.com/sharing/client-sharing/branding/?h=custom%20branding">brand
+      it as your own</a>.</p>
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: false
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: DNS and Management
+    tool_tip_html: >-
+      <p>Add external services or ownership validation through DNS records while
+      your site is configured with CloudCannon DNS.</p>
+    free_plan:
+      enabled: true
+      alternate_detail:
+    basic_plan:
+      enabled: true
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Projects
+    tool_tip_html: >-
+      <p><a target="_blank"
+      href="https://docs.cloudcannon.com/projects/introduction/"><em>Projects</em></a>
+      group related sites together with a supporting description and external
+      links. Access to <em>Projects</em> is available after you have created at
+      least one site.</p>
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: false
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Translation Workflows
+    tool_tip_html: >-
+      <p>CloudCannon <a target="_blank"
+      href="https://docs.cloudcannon.com/i18n/translation/">Internationalisation</a>
+      allows you to serve your site in different languages based on the viewers
+      browser settings.</p>
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: false
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Geolocation
+    tool_tip_html: >-
+      <p><a target="_blank"
+      href="https://docs.cloudcannon.com/i18n/geolocation/">Geolocation</a> on
+      CloudCannon allows you to detect which country your viewers are coming
+      from. CloudCannon automatically injects the viewers country code into the
+      HTML elements class as it is served.</p>
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: false
+      alternate_detail:
+    pro_plan:
+      enabled: true
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: Support
+    tool_tip_html:
+    free_plan:
+      enabled: true
+      alternate_detail: Basic
+    basic_plan:
+      enabled: true
+      alternate_detail: Basic
+    pro_plan:
+      enabled: true
+      alternate_detail: Advanced
+    enterprise_plan:
+      enabled: true
+      alternate_detail: Priority
+  - title: Training Sessions
+    tool_tip_html:
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: false
+      alternate_detail:
+    pro_plan:
+      enabled: false
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
+  - title: SAML Authentication
+    tool_tip_html: >-
+      <p>CloudCannon is set up as a Service Provider (SP) to allow Single Sign
+      On (SSO) for your organisation. To use this feature you must already have
+      your own Identity Provider (IdP). See our documentation on <a
+      target="_blank"
+      href="https://docs.cloudcannon.com/organisations/saml/">SAML
+      Authentication</a> for more information.</p>
+    free_plan:
+      enabled: false
+      alternate_detail:
+    basic_plan:
+      enabled: false
+      alternate_detail:
+    pro_plan:
+      enabled: false
+      alternate_detail:
+    enterprise_plan:
+      enabled: true
+      alternate_detail:
