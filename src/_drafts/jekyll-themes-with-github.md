@@ -78,4 +78,4 @@ The `Gemfile.lock` will always lock to a specific commit/version. Run the `bundl
 
 ### Summary
 
-Using themes with GitHub can be more convenient while you’re developing. With GitHub repositories, you don’t need to release a gem for every change or update. Once the theme is stable it may be more beneficial to use a Gem. Using Gems help to keep consistency with versioning across your sites.
+Using themes with GitHub can be more convenient while you’re developing. With GitHub repositories, you don’t need to release a gem for every change or update. Once a theme is stable it may be more beneficial to use a Gem. Using Gems help to keep consistency with versioning across your sites.
