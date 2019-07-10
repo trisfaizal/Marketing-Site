@@ -1,4 +1,298 @@
-	<section class="dark-content">
+<section class="dark-content">
+	<div class="table-section short">
+		<h2>Compare Plans</h2>
+		<table class="full-table">
+			{% assign plan_data = site.data.pricing-table %}
+			<thead>
+				<tr>
+					<th class="item-title"></th>
+					{% for plan in plan_data.plans %}
+						<th>{{ plan.title }}</th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tr>
+				<td class="item-title">Price</td>
+				{% for plan in plan_data.plans %}
+					<td>{{ plan.price }}</td>
+				{% endfor %}
+			</tr>
+			{% for item in plan_data.table_items %}
+				<tr>
+					<td class="item-title">
+						{% if item.tool_tip_html %}
+							{{ item.title }}<div class="table-icons svg">
+								<span class="info-svg"></span>
+								<div class="tool-tip">
+									{{ item.tool_tip_html }}
+								</div>
+							</div>
+						{% else %}
+							{{ item.title }}
+						{% endif %}
+					</td>
+					<td>
+						{% if item.free_plan.alternate_detail %}
+							{{ item.free_plan.alternate_detail }}
+						{% elsif item.free_plan.enabled %}
+							<div class="table-icons">
+								<i class="material-icons tick">done</i>
+							</div>
+						{% else %}
+							<div class="table-icons">
+								<i class="material-icons">clear</i>
+							</div>
+						{% endif %}
+					</td>
+					<td>
+						{% if item.basic_plan.alternate_detail %}
+							{{ item.basic_plan.alternate_detail }}
+						{% elsif item.basic_plan.enabled %}
+							<div class="table-icons">
+								<i class="material-icons tick">done</i>
+							</div>
+						{% else %}
+							<div class="table-icons">
+								<i class="material-icons">clear</i>
+							</div>
+						{% endif %}
+					</td>
+					<td>
+						{% if item.pro_plan.alternate_detail %}
+							{{ item.pro_plan.alternate_detail }}
+						{% elsif item.pro_plan.enabled %}
+							<div class="table-icons">
+								<i class="material-icons tick">done</i>
+							</div>
+						{% else %}
+							<div class="table-icons">
+								<i class="material-icons">clear</i>
+							</div>
+						{% endif %}
+					</td>
+					<td>
+						{% if item.enterprise_plan.alternate_detail %}
+							{{ item.enterprise_plan.alternate_detail }}
+						{% elsif item.enterprise_plan.enabled %}
+							<div class="table-icons">
+								<i class="material-icons tick">done</i>
+							</div>
+						{% else %}
+							<div class="table-icons">
+								<i class="material-icons">clear</i>
+							</div>
+						{% endif %}
+					</td>
+				</tr>
+			{% endfor %}
+		</table>
+
+		<div class="mobile-table">
+			<div class="table-navigation">
+				<form class="button-wrapper">
+					<input id="tab1" class="tab-input" type="radio" name="tabs">
+					<label class="tab-label" for="tab1" onclick="openTab('Free')">Free
+					</label>
+
+					<input id="tab2" class="tab-input" type="radio" name="tabs">
+					<label class="tab-label" for="tab2" onclick="openTab('Basic')">Basic
+					</label>
+
+					<input id="tab3" class="tab-input" type="radio" name="tabs">
+					<label class="tab-label" for="tab3" onclick="openTab('Pro')">Pro
+					</label>
+
+					<input id="tab4" class="tab-input" type="radio" name="tabs" checked>
+					<label id="defaultOpen" class="tab-label" for="tab4" onclick="openTab('Enterprise')">Enterprise
+					</label>
+				</form>
+			</div>
+
+			<table id="Free" class="tabcontent">
+				<tr>
+					<td class="item-title">Price</td>
+					{% for plan in plan_data.plans %}
+						{% assign plan_title = plan.title | slugify %}
+						{% if plan_title == 'free' %}
+							<td>{{ plan.price }}</td>
+						{% endif %}
+					{% endfor %}
+				</tr>
+				{% for item in plan_data.table_items %}
+					<tr>
+						<td class="item-title">
+							{% if item.tool_tip_html %}
+								{{ item.title }}<div class="table-icons svg">
+									<span class="info-svg"></span>
+									<div class="tool-tip">
+										{{ item.tool_tip_html }}
+									</div>
+								</div>
+							{% else %}
+								{{ item.title }}
+							{% endif %}
+						</td>
+						<td>
+							{% if item.free_plan.alternate_detail %}
+								{{ item.free_plan.alternate_detail }}
+							{% elsif item.free_plan.enabled %}
+								<div class="table-icons">
+									<i class="material-icons tick">done</i>
+								</div>
+							{% else %}
+								<div class="table-icons">
+									<i class="material-icons">clear</i>
+								</div>
+							{% endif %}
+						</td>
+					</tr>
+				{% endfor %}
+			</table>
+
+			<table id="Basic" class="tabcontent">
+				<tr>
+					<td class="item-title">Price</td>
+					{% for plan in plan_data.plans %}
+						{% assign plan_title = plan.title | slugify %}
+						{% if plan_title == 'basic' %}
+							<td>{{ plan.price }}</td>
+						{% endif %}
+					{% endfor %}
+				</tr>
+				{% for item in plan_data.table_items %}
+					<tr>
+						<td class="item-title">
+							{% if item.tool_tip_html %}
+								{{ item.title }}<div class="table-icons svg">
+									<span class="info-svg"></span>
+									<div class="tool-tip">
+										{{ item.tool_tip_html }}
+									</div>
+								</div>
+							{% else %}
+								{{ item.title }}
+							{% endif %}
+						</td>
+						<td>
+							{% if item.basic_plan.alternate_detail %}
+								{{ item.basic_plan.alternate_detail }}
+							{% elsif item.basic_plan.enabled %}
+								<div class="table-icons">
+									<i class="material-icons tick">done</i>
+								</div>
+							{% else %}
+								<div class="table-icons">
+									<i class="material-icons">clear</i>
+								</div>
+							{% endif %}
+						</td>
+					</tr>
+				{% endfor %}
+			</table>
+
+			<table id="Pro" class="tabcontent">
+				<tr>
+					<td class="item-title">Price</td>
+					{% for plan in plan_data.plans %}
+						{% assign plan_title = plan.title | slugify %}
+						{% if plan_title == 'pro' %}
+							<td>{{ plan.price }}</td>
+						{% endif %}
+					{% endfor %}
+				</tr>
+				{% for item in plan_data.table_items %}
+					<tr>
+						<td class="item-title">
+							{% if item.tool_tip_html %}
+								{{ item.title }}<div class="table-icons svg">
+									<span class="info-svg"></span>
+									<div class="tool-tip">
+										{{ item.tool_tip_html }}
+									</div>
+								</div>
+							{% else %}
+								{{ item.title }}
+							{% endif %}
+						</td>
+						<td>
+							{% if item.pro_plan.alternate_detail %}
+								{{ item.pro_plan.alternate_detail }}
+							{% elsif item.pro_plan.enabled %}
+								<div class="table-icons">
+									<i class="material-icons tick">done</i>
+								</div>
+							{% else %}
+								<div class="table-icons">
+									<i class="material-icons">clear</i>
+								</div>
+							{% endif %}
+						</td>
+					</tr>
+				{% endfor %}
+			</table>
+
+			<table id="Enterprise" class="tabcontent">
+				<tr>
+					<td class="item-title">Price</td>
+					{% for plan in plan_data.plans %}
+						{% assign plan_title = plan.title | slugify %}
+						{% if plan_title == 'enterprise' %}
+							<td>{{ plan.price }}</td>
+						{% endif %}
+					{% endfor %}
+				</tr>
+				{% for item in plan_data.table_items %}
+					<tr>
+						<td class="item-title">
+							{% if item.tool_tip_html %}
+								{{ item.title }}<div class="table-icons svg">
+									<span class="info-svg"></span>
+									<div class="tool-tip">
+										{{ item.tool_tip_html }}
+									</div>
+								</div>
+							{% else %}
+								{{ item.title }}
+							{% endif %}
+						</td>
+						<td>
+							{% if item.enterprise_plan.alternate_detail %}
+								{{ item.enterprise_plan.alternate_detail }}
+							{% elsif item.enterprise_plan.enabled %}
+								<div class="table-icons">
+									<i class="material-icons tick">done</i>
+								</div>
+							{% else %}
+								<div class="table-icons">
+									<i class="material-icons">clear</i>
+								</div>
+							{% endif %}
+						</td>
+					</tr>
+				{% endfor %}
+			</table>
+
+			<script>
+				function openTab(tabName) {
+				  // Hide all elements with class="tabcontent" by default */
+				  var i, tabcontent, tablinks;
+				  tabcontent = document.getElementsByClassName("tabcontent");
+				  for (i = 0; i < tabcontent.length; i++) {
+				    tabcontent[i].style.display = "none";
+				  }
+				  // Show the specific tab content
+				  document.getElementById(tabName).style.display = "flex";
+				}
+				// Get the element with id="defaultOpen" and click on it
+				document.getElementById("defaultOpen").click(); 
+			</script>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- 	<section class="dark-content">
 		<div class="table-section wrapper short">
 			<h2>Compare Plans</h2>
 			<table>
@@ -71,4 +365,4 @@
 					</tr>
 			</table>
 		</div>
-	</section>
+	</section> -->
