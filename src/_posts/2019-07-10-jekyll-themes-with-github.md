@@ -1,5 +1,5 @@
 ---
-title: Jekyll Themes with GitHub
+title: Jekyll themes with GitHub
 author: jordan
 category: Tutorial
 image: /uploads/website.png
@@ -64,7 +64,7 @@ Private repositories can be accessed using OAuth Tokens instead of personal cred
 
 Set the relevant permissions which the token will have access to. Once the token has generated, note it and keep it private. Keys are not recoverable once they're lost.
 
-To use a private theme the repository URL specified in the site's `Gemfile` needs to include the token:[...](https://cloudcannon.com/tutorial/2019/06/13/private-jekyll-themes-with-gemfury/){: target="_blank"}
+To use a private theme the repository URL specified in the site's `Gemfile` needs to include the token:[…](https://cloudcannon.com/tutorial/2019/06/13/private-jekyll-themes-with-gemfury/){: target="_blank"}
 
 ~~~ruby
 gem 'mytheme', '>= 0.1.0', :git => 'https://TOKEN:x-oauth-basic@github.com/USERNAME/mytheme.git'
