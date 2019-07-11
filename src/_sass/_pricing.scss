@@ -237,10 +237,16 @@ section.short, wrapper.short {
 			}
 
 			.item-title {
+				position: relative;
 				justify-content: flex-start;
 				max-width: 260px;
 				padding-left: 25px;
 				text-align: left;
+
+				.td-container {
+					word-break: break-word;
+					line-height: 2rem;
+				}
 			}
 
 			a.button {
@@ -283,8 +289,10 @@ section.short, wrapper.short {
 			}
 
 			.table-icons.svg {
-				margin-left: 15px;
-				position: relative;
+				position: absolute;
+				display:inline;
+				margin-left: 5px;
+				line-height: 2rem;
 
 				@media (max-width: 850px) {
 					display: none;
@@ -295,8 +303,7 @@ section.short, wrapper.short {
 				display: none;
 				position: absolute;
 				left: 30px;
-				margin-top: 50%;
-				margin-bottom: 50%;
+				top: -15px;
 				padding: 15px;
 				width: 450px;
 				height: auto;
