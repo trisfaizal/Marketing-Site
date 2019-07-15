@@ -1,5 +1,6 @@
 ---
 ---
 {% unless jekyll.environment == "production" %}User-agent: *
-Disallow: /{% endunless %}
+Disallow: /
+noindex: /{% endunless %}
 Sitemap: https://cloudcannon.com/sitemap.xml
