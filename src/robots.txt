@@ -1,6 +1,7 @@
 ---
 ---
-{% unless jekyll.environment == "production" %}User-agent: *
+{% if jekyll.environment == "production" %}Sitemap: https://cloudcannon.com/sitemap.xml
+{% else %}User-agent: *
 Disallow: /
-noindex: /{% endunless %}
-Sitemap: https://cloudcannon.com/sitemap.xml
+noindex: /
+{% endif %}
