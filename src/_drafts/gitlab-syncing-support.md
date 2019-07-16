@@ -12,9 +12,15 @@ We've seen GitLab grow from a self hosted alternative to GitHub to an entire sui
 
 First create a new site on CloudCannon and select the GitLab Repository button.
 
+![](/images/blog/gitlab-support/2@2x.png){: width="1600" height="1000"}
+
 If it's your first time connecting a GitLab repository you will need to authenticate. After authenticating, CloudCannon shows a list of your repositories. Select your desired repository and branch.
 
+![](/images/blog/gitlab-support/1@2x.png){: width="1600" height="1000"}
+
 CloudCannon syncs the files from your repository, builds the Jekyll site and serves it live. Updates made on CloudCannon sync back to GitLab repository and vice-versa for changes made to the GitLab repository. Branching and publishing workflows are fully supported with this integration too.
+
+![](/images/blog/gitlab-support/3@2x.png){: width="1600" height="1000"}
 
 ## Wrap up
 
