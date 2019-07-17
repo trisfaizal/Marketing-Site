@@ -6,7 +6,7 @@ image: /uploads/cover.jpg
 image_featured: true
 ---
 
-We've seen GitLab grow from a self hosted alternative to GitHub to an entire suite of tools to build and deploy software used by some of the largest companies in the world.GitLab support is one of our most hotly requested features for CloudCannon. Today, I'm happy to announce CloudCannon now has full GitLab integration\!
+We've seen GitLab grow from a self hosted alternative to GitHub to an entire suite of tools to build and deploy software used by some of the largest companies in the world. GitLab support is one of our most hotly requested features for CloudCannon. Today, I'm happy to announce CloudCannon now has full GitLab integration\!
 
 ## How does it work?
 
@@ -16,6 +16,8 @@ If it's your first time connecting a GitLab repository you will need to authenti
 
 CloudCannon syncs the files from your repository, builds the Jekyll site and serves it live. Updates made on CloudCannon sync back to GitLab repository and vice-versa for changes made to the GitLab repository. Branching and publishing workflows are fully supported with this integration too.<br><br>![Live Site](/images/blog/gitlab-support/3@2x.png){: .screenshot srcset="/images/blog/gitlab-support/3.png 800w, /images/blog/gitlab-support/3@2x.png 1600w"}
 
+One caveat is the integration only works with GitLab.com repositories, we do not currently support self hosted instances of GitLab.
+
 ## Wrap up
 
-One caveat is this only works with GitLab.com repositories, we do not currently support self hosted instances of GitLab.
+We're always looking for ways to help developers work with their favorite tools and platforms. Let us know if there's something we can add for your workflow.
