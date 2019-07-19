@@ -8,7 +8,9 @@ body_class: "feature-nav-open"
     {% include navigation/top.html %}
 </header>
 
+
 <div class="feature-wrapper">
+    {% include navigation/collection-nav.html features_nav=true %}
     {% assign left = false %}
     {% for item in page.pitch %}
         {% if item.standalone_heading %}
