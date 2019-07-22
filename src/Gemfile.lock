@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/CloudCannon/jekyll-feed.git
-  revision: dd24d194826f5d61c54fb601df5e80f1b786b7db
+  revision: 7e4a5ed7605aa106558ed12bd1ca67006b24f778
   branch: master
   specs:
     jekyll-feed (0.12.1)
@@ -8,10 +8,10 @@ GIT
 
 GIT
   remote: git://github.com/CloudCannon/jekyll-theme-cloudcannon.git
-  revision: 33876fa5077906375ceb1df02156bac7c86268de
+  revision: 15e3df5d99321e797aa623b1ee44688b5ae32b22
   branch: master
   specs:
-    jekyll-theme-cloudcannon (0.1.0)
+    jekyll-theme-cloudcannon (0.1.1)
       jekyll (~> 3.6)
       jekyll-data (~> 1.0)
       jekyll-feed (> 0.9.2)
@@ -24,7 +24,7 @@ GEM
   specs:
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
-    autoprefixer-rails (9.6.0)
+    autoprefixer-rails (9.6.1)
       execjs
     colorator (1.1.0)
     concurrent-ruby (1.1.5)
