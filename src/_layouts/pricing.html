@@ -8,8 +8,8 @@ icons: true
 </header>
 
 <div class="pricing pricing-page">
-	{% include navigation/pricing-navigation.html %}
-	{{ content}}
+	{% include navigation/collection-nav.html pricing_nav=true %}
+	{{ content }}
 
 	{% if page.display_plan_comparison_table %}
 		{% include /components/plan-comparison-table.html %}

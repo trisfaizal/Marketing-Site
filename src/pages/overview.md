@@ -35,7 +35,9 @@ pitch:
 ---
 
 {% assign next_heading_item = nil %}
+
 <div class="feature-wrapper">
+    {% include navigation/collection-nav.html features_nav=true %}
     {% assign left = false %}
     {% for item in page.pitch %}
         {% if item.standalone_heading %}
@@ -96,6 +98,6 @@ pitch:
     {% endif %}
 </div>
 
-{% include navigation/feature-nav-bar.html bottom=true %}
+
 
 
