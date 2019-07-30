@@ -6,7 +6,7 @@ image: /uploads/cover.jpg
 image_featured: true
 ---
 
-We've seen GitLab grow from a self hosted alternative to GitHub to an entire suite of tools to build and deploy software used by some of the largest companies in the world. GitLab support is one of our most hotly requested features for CloudCannon. Today I'm happy to announce CloudCannon now has full GitLab.com integration\!
+We've seen GitLab grow from a self hosted alternative to GitHub to an entire suite of tools to build and deploy software used by some of the largest companies in the world. GitLab support is one of our most hotly requested features for CloudCannon. Today we're happy to announce CloudCannon now has full GitLab.com integration\!
 
 ## How does it work?
 
