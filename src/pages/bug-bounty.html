@@ -3,6 +3,7 @@ layout: page
 title: Bug Bounty
 permalink: /bug-bounty/
 icons: true
+show_form: false
 static_manifesto:
   - title: Check Scope
     icon: looks_one
@@ -139,36 +140,39 @@ table_of_contents:
 				</section>
 
 				<section class="contact">
-				
 					<div class="editable contact-content">
-					<h2 id="submit-report">Submit Report</h2>
-					<p>Please provide as much information as possible about the potential issue you have discovered. The more information you provide, the faster CloudCannon will be able to validate the issue.&nbsp;</p>
-				</div>
-					<form action="/contact-success/" method="post" class="contact-form">
-						<input type="hidden" name="_hook" value="https://hooks.zapier.com/hooks/catch/4680965/723l53/" />
-						<div class="text-field">
-							<label>Name:
-								<input type="text" name="name" id="name" required />
-							</label>
+						<h2 id="submit-report">Submit Report</h2>
+						<p>Please provide as much information as possible about the potential issue you have discovered. The more information you provide, the faster CloudCannon will be able to validate the issue.&nbsp;</p>
+					</div>
+					{% if page.show_form %}
+						<form action="/contact-success/" method="post" class="contact-form">
+							<input type="hidden" name="_hook" value="https://hooks.zapier.com/hooks/catch/4680965/723l53/" />
+							<div class="text-field">
+								<label>Name:
+									<input type="text" name="name" id="name" required />
+								</label>
 
-							<label>Email:
-								<input type="email" name="email" id="email" required />
-							</label>
-						</div>
-						<div class="text-field">
-							<label>Name of vulnerability:
-								<input type="text" name="vulnerability" id="vulnerability" required />
-							</label>
-						</div>
-						<label>Report description:</label>
-						<textarea name="report-description" id="description" required></textarea>
-						<label>Steps to reproduce:</label>
-						<textarea name="steps-to-reproduce" id="report" required></textarea>
-						<label>Supporting information:</label>
-						<textarea name="supporting-information" id="supporting-info"></textarea>
-						<div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>
-						<input type="submit" value="Submit Report" />
-					</form>
+								<label>Email:
+									<input type="email" name="email" id="email" required />
+								</label>
+							</div>
+							<div class="text-field">
+								<label>Name of vulnerability:
+									<input type="text" name="vulnerability" id="vulnerability" required />
+								</label>
+							</div>
+							<label>Report description:</label>
+							<textarea name="report-description" id="description" required></textarea>
+							<label>Steps to reproduce:</label>
+							<textarea name="steps-to-reproduce" id="report" required></textarea>
+							<label>Supporting information:</label>
+							<textarea name="supporting-information" id="supporting-info"></textarea>
+							<div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>
+							<input type="submit" value="Submit Report" />
+						</form>
+					{% else %}
+						<blockquote class="explainer warning">Submissions have been disabled while we work through outstanding reports. Please do not submit any reports until we have re-enabled this form.</blockquote>
+					{% endif %}
 				</section>
 			</article>
 		</section>
