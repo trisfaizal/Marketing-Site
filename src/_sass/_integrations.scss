@@ -1,0 +1,23 @@
+.integration-logos {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+
+	.logo-box {
+		flex: 0 0 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #ddd;
+		height: 200px;
+		margin: 0 10px;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+}
+
+.integration-body {
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto;
+}

@@ -1,0 +1,13 @@
+---
+layout: short
+title: Integrations
+heading: Integrations
+permalink: /integrations/
+---
+
+<ul class="integrations">
+	{% for s in site.ssg %}
+		<li><a href="{{ s.url }}">{{ s.title }}</a></li>
+		{% include components/integration-list.html list=site.storage_providers ssg=s %}
+	{% endfor %}
+</ul>

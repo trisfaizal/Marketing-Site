@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/CloudCannon/jekyll-feed.git
+  remote: https://github.com/CloudCannon/jekyll-feed.git
   revision: 7e4a5ed7605aa106558ed12bd1ca67006b24f778
   branch: master
   specs:
@@ -7,8 +7,8 @@ GIT
       jekyll (>= 3.7, < 5.0)
 
 GIT
-  remote: git://github.com/CloudCannon/jekyll-theme-cloudcannon.git
-  revision: 15e3df5d99321e797aa623b1ee44688b5ae32b22
+  remote: https://github.com/CloudCannon/jekyll-theme-cloudcannon.git
+  revision: 0fb1270903a9fb76019d8e216453d0966a3aca27
   branch: master
   specs:
     jekyll-theme-cloudcannon (0.1.1)

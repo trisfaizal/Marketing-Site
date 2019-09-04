@@ -1,0 +1,3 @@
+{% for b in include.list %}
+	<li><a href="{{ b.url }}">{{ include.ssg.title }} &#43; {{ b.title }}</a></li>
+{% endfor %}
