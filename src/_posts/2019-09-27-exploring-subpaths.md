@@ -12,7 +12,7 @@ your main marketing site at example.com. Many companies use subdomains this way
 and it's easy to set up in CloudCannon.
 
 Subdomains however, are not your only option. The alternative is mounting
-the sites on subpaths. Soblog.example.com becomes example.com/blog/ and
+the sites on subpaths. So blog.example.com becomes example.com/blog/ and
 docs.example.com becomes example.com/docs/. SEO is the main benefit of doing this
 as your content is not split between multiple logical sites. Moz are thought leaders
 in the SEO space and have a great video outlining subdomains vs subpaths.
