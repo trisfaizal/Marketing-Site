@@ -19,7 +19,7 @@ in the SEO space and have a great video outlining subdomains vs subpaths.
 
 <div class="video-embed" style="padding-bottom:60.5%;"><iframe allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" src="https://fast.wistia.net/embed/iframe/6erzjiily8" width="400" height="225"></iframe></div>
 
-To achieve this on CloudCannon you could create a monolithic Jekyll site that has
+To achieve this you could create a monolithic Jekyll site that has
 your blog, docs and marketing site. If you have a small amount of content this
  works fine, however if you have a large amount of content your build times,
  content structure and site complexity will soon get out of control. It also
@@ -43,11 +43,11 @@ Once the primary domain is configured we can set the subpath for other sites.
 Now anything beginning with the path `/blog/` is handled by the second site, everything
 else is handled by the first.
 
-One thing to keep in mind is CloudCannon isn't rewriting URLs (at this stage), so
+CloudCannon doesn't rewrite you generate so
 all links on the second site needs to be prepended with `/blog/` (or whatever your subpath is) using Jekyll's
 [baseurl](https://jekyllrb.com/docs/configuration/options/#serve-command-options) or some other method.
 
 ## Wrapping up
 
-Subpaths allow you to split complex sites into smaller, more manageable chunks.
-Thanks to our customers for suggesting and testing this feature!
+Subpaths allow you to split large sites into smaller, more manageable chunks. We
+hope this helps you create more complex sites on CloudCannon.
