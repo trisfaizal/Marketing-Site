@@ -1,7 +1,7 @@
 ---
-title: Build the fastest websites in the world
+title: Make your websites faster with CloudCannon
 author: mike
-category: Jekyll
+category: Features
 image: /images/blog/speed/banner.jpg
 image_featured: true
 ---
@@ -19,8 +19,8 @@ customers.
 ## Cloudflare Partnership
 
 One of our main focusses of CloudCannon Hosting is delivering files as quickly as
-possible, anywhere in the world. Previously our infrastructure served sites out of San Jose on the west coast.
-This was fast if you were viewing a site while in the bay area, but slow viewing
+possible, anywhere in the world. Previously our infrastructure served sites out of California.
+This was fast if you were viewing a site while in California, but slow viewing
 it from anywhere else.
 
 To solve this issue, we set out to partner with a CDN provider to serve CloudCannon
@@ -61,18 +61,21 @@ processed yet adds to the file size which impacts load time.
 Minifiers help solve this problem by turning a nice human readable file into a
 condensed file that basically only a computer can understand. CloudCannon automatically
 minifies JavaScript files using [Uglifier](https://github.com/lautis/uglifier) and
-CSS using [clean-css](https://github.com/jakubpawlowicz/clean-css).
+CSS using [clean-css](https://github.com/jakubpawlowicz/clean-css). This gives you
+the best of both worlds where your source code remains nicely readable and the build
+site has minified assets.  
+
 
 ## Compression
 
-In the past, internet speeds were slower so it was common to run zip a document
+In the past, internet speeds were slower so it was common to zip a document
 before emailing it to someone to reduce the file size. Compression on a web server
-works in a similar way, when the browser requests a file it adds a header defining
+works in a similar way. When the browser requests a file it adds a header defining
 which compression algorithms (if any) it understands. Before the server sends
 the response it compresses the body which greatly reduces the file size. Once the
 browser has the response it can uncompress the body to get the original response.
 
-CloudCannon automatically runs gzip or brotli compression for supported content
+CloudCannon automatically runs [gzip](https://youtu.be/Mjab_aZsdxw) or [brotli](https://medium.com/oyotech/how-brotli-compression-gave-us-37-latency-improvement-14d41e50fee4) compression for supported content
 types which greatly reduces the file size meaning faster load times for your
 customers.
 
