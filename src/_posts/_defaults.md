@@ -1,6 +1,6 @@
 ---
 title:
-author: george
+staff_member: george-phillips
 category: Features
 image:
 image_featured: false

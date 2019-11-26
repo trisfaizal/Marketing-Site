@@ -28,6 +28,9 @@ collections:
   offices:
     output: false
     _hide_content: true
+  staff_members:
+    output: false
+    _hide_content: true
 defaults:
   - scope:
       path: ""

@@ -1,7 +1,7 @@
 ---
 title: Using CloudCannon with JavaScript
 category: Tutorials
-author: george
+staff_member: george-phillips
 image: /images/blog/slider.png
 image_featured: true
 permalink: /tutorials/2014/04/18/cloud-cannon-and-javascript.html

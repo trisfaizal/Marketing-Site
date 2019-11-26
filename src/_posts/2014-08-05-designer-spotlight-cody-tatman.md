@@ -1,7 +1,7 @@
 ---
 title: Designer Spotlight - Cody Tatman
 category: Interview
-author: sam
+staff_member: sam
 image: /images/blog/ds-cody-tatman/cody-tatman.png
 image_featured: true
 permalink: /interview/2014/08/05/designer-spotlight-cody-tatman.html

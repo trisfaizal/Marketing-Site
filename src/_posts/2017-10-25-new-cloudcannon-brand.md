@@ -3,7 +3,7 @@ title: New CloudCannon Brand
 category: Announcements
 image: /images/blog/new-brand/new-homepage.png
 image_featured: true
-author: mike
+staff_member: mike-neumegen
 ---
 We've been reassessing our brand and how it aligns with our values. Simplicity has always been at the core of everything we do at CloudCannon and we felt we could do better with our branding.
 

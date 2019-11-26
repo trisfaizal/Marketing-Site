@@ -1,6 +1,6 @@
 ---
 title: Scheduled Maintenance
-author: george
+staff_member: george-phillips
 category: Operations
 image:
 image_featured: false

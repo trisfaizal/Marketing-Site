@@ -1,7 +1,7 @@
 ---
 title: Drupal vs Jekyll + CloudCannon
 category: Comparison
-author: mike
+staff_member: mike-neumegen
 image:
 image_featured: false
 ---

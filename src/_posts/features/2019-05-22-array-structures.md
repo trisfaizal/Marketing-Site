@@ -1,6 +1,6 @@
 ---
 title: Managing complex content with Array Structures
-author: mike
+staff_member: mike-neumegen
 category: Features
 image: /images/blog/array-structures/bridge.jpg
 image_featured: true

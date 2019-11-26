@@ -1,6 +1,6 @@
 ---
 title: Publishing Workflows for Jekyll Editors
-author: mike
+staff_member: mike-neumegen
 category: Tips
 image: /images/blog/git-workflows/banner.png
 image_featured: true

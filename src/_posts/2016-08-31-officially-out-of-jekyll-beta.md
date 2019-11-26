@@ -1,7 +1,7 @@
 ---
 title: Officially Out of Jekyll Beta
 category: Announcements
-author: ross
+staff_member: ross-phillips
 image: /images/blog/officially-out-of-jekyll-beta/logos@2x.png
 image_featured: true
 icons: true

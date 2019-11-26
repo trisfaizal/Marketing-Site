@@ -1,6 +1,6 @@
 ---
 title: Editor Link Modals
-author: ross
+staff_member: ross-phillips
 category: Features
 image: /images/blog/editor-link-modals/cover.jpg
 image_featured: true

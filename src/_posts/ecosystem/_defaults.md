@@ -1,6 +1,6 @@
 ---
 title:
-author:
+staff_member:
 category: Tips
 image:
 image_featured: false

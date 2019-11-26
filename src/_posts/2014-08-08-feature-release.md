@@ -1,7 +1,7 @@
 ---
 title: 8th August Feature Release
 category: Features
-author: george
+staff_member: george-phillips
 image: /images/blog/2014-08-08-feature-release/new-site-empty-state-header.png
 image_featured: true
 permalink: /features/2014/08/08/feature-release.html

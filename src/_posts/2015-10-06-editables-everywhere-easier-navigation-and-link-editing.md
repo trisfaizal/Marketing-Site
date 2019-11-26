@@ -1,7 +1,7 @@
 ---
 title: Editables everywhere, easier navigation and link editing
 category: Features
-author: george
+staff_member: george-phillips
 image:
 image_featured: false
 ---

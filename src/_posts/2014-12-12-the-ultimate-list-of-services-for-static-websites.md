@@ -1,7 +1,7 @@
 ---
 title: The ultimate list of services for static websites
 category: Tips
-author: mike
+staff_member: mike-neumegen
 image: /images/blog/apps-for-static-sites/static-jekyll-site-services.png
 image_featured: true
 permalink: /tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html

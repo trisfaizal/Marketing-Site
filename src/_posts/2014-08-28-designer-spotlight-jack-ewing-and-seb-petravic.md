@@ -1,7 +1,7 @@
 ---
 title: Designer Spotlight - Jack Ewing and Seb Petravic
 category: Interview
-author: sam
+staff_member: sam
 image: /images/blog/ds-jack-ewing-and-seb-petravic/Seb_Jack.jpg
 image_featured: true
 permalink: /interview/2014/08/28/designer-spotlight-jack-ewing-and-seb-petravic.html

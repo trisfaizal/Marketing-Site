@@ -1,6 +1,6 @@
 ---
 title: Speed up your Jekyll builds
-author: mike
+staff_member: mike-neumegen
 category: Tips
 image: /images/blog/build-performance/banner.png
 image_featured: true

@@ -1,6 +1,6 @@
 ---
 title: What's new in Jekyll 4
-author: mike
+staff_member: mike-neumegen
 category: Jekyll
 image: /images/blog/jekyll-4/banner.jpg
 image_featured: true

@@ -1,6 +1,6 @@
 ---
 title: Private Jekyll themes with Gemfury
-author: jordan
+staff_member: jordan-trbuhovic
 category: Tutorial
 image: /uploads/gemfuryblog.png
 image_featured: true

@@ -1,7 +1,7 @@
 ---
 title: 'Pricing Update & Organisation Support'
 category: Announcements
-author: george
+staff_member: george-phillips
 image:
 image_featured: false
 ---

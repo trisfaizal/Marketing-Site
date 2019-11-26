@@ -6,3 +6,4 @@ vendor/bundle
 src/.bundle/config
 vendor/
 .bundle
+src/.jekyll-cache/

@@ -1,7 +1,7 @@
 ---
 title: International Domain Names
 category: Features
-author: mike
+staff_member: mike-neumegen
 image:
 image_featured: false
 permalink: /features/2013/09/14/international-domains.html

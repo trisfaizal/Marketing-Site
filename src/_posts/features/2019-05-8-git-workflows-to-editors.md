@@ -1,6 +1,6 @@
 ---
 title: Bringing Git Workflows to Editors
-author: mike
+staff_member: mike-neumegen
 category: Features
 image: /images/blog/bringing-git-workflows/collaboration.jpg
 image_featured: true

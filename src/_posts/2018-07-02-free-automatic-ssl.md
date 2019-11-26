@@ -1,6 +1,6 @@
 ---
 title: Free Automatic SSL
-author: george
+staff_member: george-phillips
 category: Features
 image: /uploads/greenlock.png
 image_featured: true

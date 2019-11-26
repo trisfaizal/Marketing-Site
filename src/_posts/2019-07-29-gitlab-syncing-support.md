@@ -1,6 +1,6 @@
 ---
 title: GitLab syncing support
-author: mike
+staff_member: mike-neumegen
 category: Features
 image: /uploads/cover.jpg
 image_featured: true

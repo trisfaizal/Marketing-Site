@@ -1,6 +1,6 @@
 ---
 title:
-author:
+staff_member:
 category: Features
 image:
 image_featured: false

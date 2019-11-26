@@ -1,7 +1,7 @@
 ---
 title: Deploy Jekyll sites to S3 using Travis CI
 category: Tutorial
-author: mike
+staff_member: mike-neumegen
 image: /images/blog/travis-ci/travis-ci.png
 image_featured: true
 ---

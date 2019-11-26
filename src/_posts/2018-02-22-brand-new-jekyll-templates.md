@@ -1,7 +1,7 @@
 ---
 title: Brand New Jekyll Templates
 category: Announcements
-author: mike
+staff_member: mike-neumegen
 image: /images/blog/brand-new-jekyll-templates/cover.jpg
 image_featured: true
 ---

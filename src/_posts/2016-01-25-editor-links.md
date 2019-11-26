@@ -1,7 +1,7 @@
 ---
 title: Editor Links
 category: Features
-author: ross
+staff_member: ross-phillips
 image: /images/blog/editor-links/blog-posts@2x.png
 image_featured: false
 ---

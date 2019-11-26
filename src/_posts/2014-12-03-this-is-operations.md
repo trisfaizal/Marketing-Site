@@ -1,7 +1,7 @@
 ---
 title: The ops team
 category: Operations
-author: tim
+staff_member: tim
 image:
 image_featured: false
 permalink: /operations/2014/12/03/this-is-operations.html

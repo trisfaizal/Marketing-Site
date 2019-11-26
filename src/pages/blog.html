@@ -36,9 +36,16 @@ sitemap:
 				</div>
 
 				<div class="post-details">
-					{% assign author = site.data.authors[post.author] %}
-					<img src="{{ author.image }}" alt="A stunning photo of {{ author.name }}" width="200" height="200">
-					<span class="name">{{ author.name }}</span>
+					{% for staff in site.staff_members %}
+						{% assign staff_name = staff.title | slugify %}
+						{% if staff_name == post.staff_member %}
+							{% assign author = staff %}
+						{% endif %}
+					{% endfor %}
+					{% if author %}
+						<img src="{{ author.image }}" alt="A stunning photo of {{ author.name }}" width="200" height="200">
+						<span class="name">{{ author.name }}</span>
+					{% endif %}
 					{% for category in post.categories %}
 						<span class="category-separator">&bull;</span> <span class="category">{{ category }}</span>
 					{% endfor %}

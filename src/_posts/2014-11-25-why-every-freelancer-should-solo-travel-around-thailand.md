@@ -1,7 +1,7 @@
 ---
 title: Why every freelancer should solo travel around Thailand
 category: Other
-author: mike
+staff_member: mike-neumegen
 image: https://farm6.staticflickr.com/5486/11081116376_dee6ee0431_b.jpg
 image_featured: true
 permalink: /other/2014/11/25/why-every-freelancer-should-solo-travel-around-thailand.html
