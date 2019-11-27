@@ -78,15 +78,15 @@ investors:
 ---
 
 <div class="about">
-	<div class="wrapper first">
+	<div class="wrapper first editable">
 		<!--h1>CloudCannon is a new kind of CMS for the static site generator, Jekyll.</h1> -->
 		<h2>What drives us</h2>
 		<p>Our mission is to bring all the advantages of static technology to developers while giving editors intuitive interfaces and workflows to update content. We believe most informational websites should be static. The reason they’re not is non-technical editors need to update content.</p>
 	</div>
 
 	<div class="wrapper minimal">
-		<h2>Our team</h2>
-		<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
+		<h2 class="editable">Our team</h2>
+		<p class="editable">Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
 		<ul class="mugs">
 			<div class="mug-wrapper">
 				{% for person_obj in site.data.authors %}
@@ -109,7 +109,7 @@ investors:
 	</div>
 
 	<div class="offices wrapper">
-		<h2>Our Offices</h2>
+		<h2 class="editable">Our Offices</h2>
 		{% for office in site.offices %}
 			<div class="office">
 				<div class="office-content">
@@ -127,7 +127,7 @@ investors:
 
 	{% assign events = page.timeline_events | sort: 'year' | reverse %}
 	<div class="timeline wrapper short">
-		<h2>Timeline</h2>
+		<h2 class="editable">Timeline</h2>
 		{% for event in events %}
 			<div class="event">
 				<h4 class="year">{{ event.year }}</h4>
@@ -141,7 +141,7 @@ investors:
 	</div>
 
 	<div class="investors wrapper">
-		<h2>Our Investors</h2>
+		<h2 class="editable">Our Investors</h2>
 		<ul>
 			{% for investor in page.investors %}
 				<li>{% if investor.url %}
