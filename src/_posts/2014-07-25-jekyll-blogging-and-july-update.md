@@ -1,7 +1,7 @@
 ---
 title: Jekyll private beta and July Update
 category: Newsletter
-author: mike
+staff_member: mike-neumegen
 image: /images/blog/july14-update/cc_jekyll_header.png
 image_featured: true
 permalink: /newsletter/2014/07/25/jekyll-blogging-and-july-update.html

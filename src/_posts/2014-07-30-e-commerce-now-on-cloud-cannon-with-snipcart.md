@@ -1,7 +1,7 @@
 ---
 title: Build e-commerce sites on CloudCannon with Snipcart
 category: Tutorials
-author: sam
+staff_member: sam
 image: /images/blog/snipcart-response/cloudcannon-and-snipcart.png
 image_featured: true
 permalink: /tutorials/2014/07/30/e-commerce-now-on-cloud-cannon-with-snipcart.html

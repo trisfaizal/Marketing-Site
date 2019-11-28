@@ -1,7 +1,7 @@
 ---
 title: Who's using Jekyll?
 category: Jekyll
-author: mike
+staff_member: mike-neumegen
 image:
 image_featured: false
 permalink: /jekyll/2015/06/12/whos-using-jekyll.html

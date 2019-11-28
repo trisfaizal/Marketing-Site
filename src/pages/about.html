@@ -89,15 +89,14 @@ investors:
 		<p>Founded in Dunedin, New Zealand and now serving customers from all over the world. Our team is passionate about doing our part in making static site generators mainstream.</p>
 		<ul class="mugs">
 			<div class="mug-wrapper">
-				{% for person_obj in site.data.authors %}
-					{% assign person = person_obj[1] %}
-					{% if person.position %}
+				{% for staff_member in site.staff_members %}
+					{% if staff_member.active_employment %}
 						<li>
 							<div class="mug">
-								<div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
+								<div class="image"><img src="{{ staff_member.image }}" alt="{{ staff_member.name }}"></div>
 								<div class="image-content">
-									<p class="name">{{ person.name }}</p>
-                  <p>{{ person.position }}</p>
+									<p class="name">{{ staff_member.name }}</p>
+					                <p>{{ staff_member.position }}</p>
 								</div>
 							</div>
 						</li>

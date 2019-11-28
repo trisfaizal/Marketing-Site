@@ -4,7 +4,7 @@ title: How to build a status page with Jekyll and Uptimerobot
 header: How to build a Jekyll status page
 category: Features
 image: /images/blog/status-page/banner@2x.png
-author: george
+staff_member: george-phillips
 ---
 
 Public visibility of an apps performance is vital to the trust placed on that product. Today we announce our [new status page](http://status.cloudcannon.com/) and [twitter account](https://twitter.com/CCAppStatus) focused on greater visibility into our performance and uptime. Our status page was built using Jekyll and [Uptimerobot](https://uptimerobot.com/). This allows us to host the site anywhere with minimal cost. Building this site in Jekyll gives the added benefit of being fully customisable with any HTML, CSS or JavaScript.

@@ -1,6 +1,6 @@
 ---
 title: Jekyll for Freelancers
-author: mike
+staff_member: mike-neumegen
 category: Tips
 image: /images/blog/jekyll-for-freelancers/freelancer.jpg
 image_featured: true

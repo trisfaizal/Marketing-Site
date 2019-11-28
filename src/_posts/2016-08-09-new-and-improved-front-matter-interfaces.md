@@ -1,7 +1,7 @@
 ---
 title: New and Improved Front Matter Interfaces
 category: Features
-author: ross
+staff_member: ross-phillips
 image: /images/blog/new-and-improved-front-matter-interfaces/front-matter-example@2x.png
 image_featured: false
 ---

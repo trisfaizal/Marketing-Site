@@ -1,7 +1,7 @@
 ---
 title: Lightweight Social Share Buttons
 category: Tutorials
-author: ross
+staff_member: ross-phillips
 image: /images/blog/lightweight-social-share-buttons/buttons@2x.png
 image_featured: true
 ---

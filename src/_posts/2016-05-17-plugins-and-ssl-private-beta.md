@@ -1,7 +1,7 @@
 ---
 title: Plugins and SSL Private Beta
 category: Features
-author: george
+staff_member: george-phillips
 image: /images/blog/plugins/filetypes@2x.png
 image_featured: true
 image_featured_style: padded

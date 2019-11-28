@@ -1,7 +1,7 @@
 ---
 title: Three New Jekyll Templates
 category: Announcements
-author: mike
+staff_member: mike-neumegen
 image: /images/blog/3-new-jekyll-templates/base/1.jpeg
 image_featured: false
 ---

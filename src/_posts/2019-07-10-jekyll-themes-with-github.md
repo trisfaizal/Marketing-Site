@@ -1,6 +1,6 @@
 ---
 title: Jekyll themes with GitHub
-author: jordan
+staff_member: jordan-trbuhovic
 category: Tutorial
 image: /uploads/website.png
 image_featured: true

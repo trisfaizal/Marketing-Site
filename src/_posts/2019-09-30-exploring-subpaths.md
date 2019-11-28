@@ -1,6 +1,6 @@
 ---
 title: Introducing Subpaths
-author: mike
+staff_member: mike-neumegen
 category: Jekyll
 image: /images/blog/subpaths/banner.jpg
 image_featured: true

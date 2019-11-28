@@ -1,7 +1,7 @@
 ---
 title: Bring your Jekyll site to life with Bitbucket Connect
 category: Features
-author: mike
+staff_member: mike-neumegen
 image:
 image_featured: false
 permalink: /features/2015/06/11/bitbucket-connect.html

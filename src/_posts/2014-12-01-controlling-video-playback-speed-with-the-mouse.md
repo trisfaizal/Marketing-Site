@@ -1,7 +1,7 @@
 ---
 title: Controlling video playback with the mouse
 category: Tutorials
-author: mike
+staff_member: mike-neumegen
 image: /images/blog/video-playback/old.png
 image_featured: true
 permalink: /tutorials/2014/12/01/controlling-video-playback-speed-with-the-mouse.html

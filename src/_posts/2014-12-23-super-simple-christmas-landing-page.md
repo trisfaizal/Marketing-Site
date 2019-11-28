@@ -1,7 +1,7 @@
 ---
 title: How to create a super simple Christmas landing page
 category: Deconstructions
-author: george
+staff_member: george-phillips
 image:
 image_featured: false
 permalink: /deconstructions/2014/12/23/super-simple-christmas-landing-page.html

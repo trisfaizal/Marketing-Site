@@ -1,6 +1,6 @@
 ---
 title: Maintenance Debrief
-author: george
+staff_member: george-phillips
 category: Operations
 image: /uploads/maintenance-debrief.png
 image_featured: true

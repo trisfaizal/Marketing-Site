@@ -1,7 +1,7 @@
 ---
 title: Output Drafts and Collection Defaults
 category: Features
-author: george
+staff_member: george-phillips
 image: /images/blog/drafts-and-defaults/defaults-in-browser@2x.png
 image_featured: true
 ---

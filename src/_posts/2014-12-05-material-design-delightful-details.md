@@ -1,7 +1,7 @@
 ---
 title: Google's transforming material icons in HTML and CSS
 category: Deconstructions
-author: george
+staff_member: george-phillips
 image: /images/blog/delightful-details.png
 image_featured: true
 permalink: /deconstructions/2014/12/05/material-design-delightful-details.html

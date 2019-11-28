@@ -1,7 +1,7 @@
 ---
 title: Turn ANY template or theme into a CMS
 category: Tutorials
-author: sam
+staff_member: sam
 image:
 image_featured: false
 permalink: /tutorials/2014/09/01/turn-any-template-or-theme-into-a-cms.html

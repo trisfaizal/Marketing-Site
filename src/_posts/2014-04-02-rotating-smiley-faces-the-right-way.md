@@ -1,7 +1,7 @@
 ---
 title: How to turn text smiley faces the right way up with Smiley.js
 category: Freebies
-author: george
+staff_member: george-phillips
 image: /images/blog/smileys-js.png
 image_featured: true
 permalink: /freebies/2014/04/02/rotating-smiley-faces-the-right-way.html

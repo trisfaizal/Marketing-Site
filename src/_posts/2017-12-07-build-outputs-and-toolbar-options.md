@@ -1,6 +1,6 @@
 ---
 title: Build Outputs and Toolbar Options
-author: ross
+staff_member: ross-phillips
 category: Features
 image: /images/blog/build-outputs-and-toolbar-options/cover.png
 image_featured: true

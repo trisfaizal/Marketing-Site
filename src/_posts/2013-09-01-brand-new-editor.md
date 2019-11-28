@@ -1,7 +1,7 @@
 ---
 title: Brand New Editor
 category: Features
-author: mike
+staff_member: mike-neumegen
 image:
 image_featured: false
 permalink: /features/2013/09/01/brand-new-editor.html

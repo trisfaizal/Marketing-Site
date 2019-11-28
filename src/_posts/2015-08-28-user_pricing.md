@@ -1,7 +1,7 @@
 ---
 title: Improved pricing
 category: Features
-author: mike
+staff_member: mike-neumegen
 image:
 image_featured: false
 permalink: /features/2015/08/28/user_pricing.html

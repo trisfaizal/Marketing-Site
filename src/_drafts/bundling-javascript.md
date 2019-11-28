@@ -1,6 +1,6 @@
 ---
 title: Bundling JavaScript for Jekyll
-author: ryan
+staff_member: ryan-collins
 category: Tutorial
 image:
 image_featured: true

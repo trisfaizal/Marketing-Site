@@ -1,7 +1,7 @@
 ---
 title: How the Facebook content placeholder works
 category: Deconstructions
-author: george
+staff_member: george-phillips
 image: /images/blog/facebook-content-placeholder.png
 image_featured: true
 permalink: /deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html

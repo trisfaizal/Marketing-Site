@@ -1,7 +1,7 @@
 ---
 title: 3 ways to improve your web design skills
 category: Tutorials
-author: mike
+staff_member: mike-neumegen
 image:
 image_featured: false
 permalink: /tutorials/2014/11/17/3-ways-to-improve-your-webdesign-skills.html

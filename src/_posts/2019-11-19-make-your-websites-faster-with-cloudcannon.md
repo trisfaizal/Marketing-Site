@@ -1,6 +1,6 @@
 ---
 title: Make your websites faster with CloudCannon
-author: mike
+staff_member: mike-neumegen
 category: Features
 image: /images/blog/speed/banner.jpg
 image_featured: true

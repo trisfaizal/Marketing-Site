@@ -1,7 +1,7 @@
 ---
 title: Site Status and New User Flow
 category: Features
-author: ross
+staff_member: ross-phillips
 image: /images/blog/site-status-and-new-user-flow/site-status@2x.png
 image_featured: false
 ---

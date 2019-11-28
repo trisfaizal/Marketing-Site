@@ -1,6 +1,6 @@
 ---
 title: App Redesign & Custom Organisation Branding
-author: george
+staff_member: george-phillips
 category: Features
 image: /images/blog/org-branding/unbranded-sites-list.png
 image_featured: true

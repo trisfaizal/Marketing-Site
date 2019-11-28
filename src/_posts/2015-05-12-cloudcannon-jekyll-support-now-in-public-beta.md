@@ -1,7 +1,7 @@
 ---
 title: CloudCannon Jekyll support now in public beta
 category: Announcements
-author: sam
+staff_member: sam
 image:
 image_featured: false
 permalink: /announcements/2015/05/12/cloudcannon-jekyll-support-now-in-public-beta.html

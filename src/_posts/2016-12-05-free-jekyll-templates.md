@@ -1,7 +1,7 @@
 ---
 title: 7 Free Jekyll Templates
 category: Announcements
-author: mike
+staff_member: mike-neumegen
 image: /images/blog/7-free-jekyll-templates/frisco1.jpeg
 image_featured: true
 ---

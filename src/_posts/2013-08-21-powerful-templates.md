@@ -1,6 +1,6 @@
 ---
 title: Powerful Templates
-author: mike
+staff_member: mike-neumegen
 category: Features
 image:
 image_featured: false

@@ -1,6 +1,6 @@
 ---
 title: Custom Editor Styles
-author: ross
+staff_member: ross-phillips
 category: Features
 image: /images/blog/custom-editor-styles/cover.jpg
 image_featured: true
