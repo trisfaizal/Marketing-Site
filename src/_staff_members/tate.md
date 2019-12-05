@@ -1,10 +1,10 @@
 ---
-name: Tate
+name: Tate Kennington
 image: /uploads/tate.jpg
-position:
+position: Development Intern
 twitter:
 email_address: tate@cloudcannon.com
 bio:
 office: dunedin
-active_employment: false
+active_employment: true
 ---
