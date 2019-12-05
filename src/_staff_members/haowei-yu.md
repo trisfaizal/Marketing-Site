@@ -6,5 +6,5 @@ twitter:
 email_address: haowei@cloudcannon.com
 bio:
 office: dunedin
-active_employment: false
+active_employment: true
 ---
