@@ -1,7 +1,7 @@
 ---
 name: Nathan Kennedy
 image: /uploads/nathan.jpg
-position:
+position: Development Intern
 twitter:
 email_address: nathan@cloudcannon.com
 bio:
