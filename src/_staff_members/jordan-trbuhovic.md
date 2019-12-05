@@ -1,6 +1,6 @@
 ---
 name: Jordan Trbuhovic
-image: /uploads/jordan-lightroomed.jpg
+image: /uploads/jordan.jpg
 position: Support & Services Engineer
 twitter:
 email_address: jordan@cloudcannon.com
