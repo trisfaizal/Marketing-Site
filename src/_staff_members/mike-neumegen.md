@@ -1,6 +1,6 @@
 ---
 name: Mike Neumegen
-image: /images/team/mike.jpg
+image: /uploads/mike.jpg
 position: CEO/Cofounder
 twitter:
 email_address: mike@cloudcannon.com
