@@ -6,5 +6,5 @@ twitter:
 email_address: anja@cloudcannon.com
 bio:
 office: dunedin
-active_employment: true
+active_employment: false
 ---

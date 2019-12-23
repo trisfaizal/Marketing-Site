@@ -1,6 +1,6 @@
 ---
 name: Alex Nelson
-image: /uploads/alex-lightroomed.jpg
+image: /uploads/alex.jpg
 position: UX Designer
 twitter:
 email_address: alex@cloudcannon.com
