@@ -1,18 +1,18 @@
 ---
-title: GSuite Authenticated Sites with CloudCannon and SAML
+title: G Suite Authenticated Sites with CloudCannon and SAML
 staff_member: george-phillips
 category: Tutorials
 image:
 image_featured: false
 ---
 
-Internally at CloudCannon, we use Google GSuite to manage all of our emails. This allows us to work together on products like Google Drive and Google Meet. When a staff member joins or leaves our organisation we can manage their account within the GSuite admin panel. When a new member joins our team, they need to access all of the relevant documentation. Some of our internal documentation is as you'd expect, a Jekyll site. Our internal documentation is hosted on CloudCannon at office.cloudcannon.com behind Google authentication. This site is only accessible to people within our organisation. When a staff member leaves, we disable their email and the internal documentation is restricted to them once again. This blog post will guide you through the process of adding Google Authentication to one of your sites.
+Internally at CloudCannon, we use G Suite to manage all of our emails. This allows us to work together on products like Google Drive and Google Meet. When a staff member joins or leaves our organisation we can manage their account within the G Suite admin panel. When a new member joins our team, they need to access all of the relevant documentation. Some of our internal documentation is as you'd expect, a Jekyll site. Our internal documentation is hosted on CloudCannon at office.cloudcannon.com behind Google authentication. This site is only accessible to people within our organisation. When a staff member leaves, we disable their email and the internal documentation is restricted to them once again. This blog post will guide you through the process of adding Google Authentication to one of your sites.
 
 ![](/images/blog/gsuite-authenticated-sites-with-cloudcannon-and-saml/screen-shot-2020-01-30-at-20-21-55.png){: .screenshot width="2880" height="1800"}
 
-## Creating a SAML app in the GSuite Admin console
+## Creating a SAML app in the G Suite Admin console
 
-Once you have your site ready to go, we will need to add authentication to the site. To achieve this, we will need to go to the [GSuite Admin console](https://admin.google.com/ac/home).
+Once you have your site ready to go, we will need to add authentication to the site. To achieve this, we will need to go to the [G Suite Admin console](https://admin.google.com/ac/home).
 
 ![](/images/blog/gsuite-authenticated-sites-with-cloudcannon-and-saml/screen-shot-2020-01-30-at-20-48-27.png){: .screenshot width="2880" height="1800"}
 
