@@ -6,7 +6,7 @@ image:
 image_featured: false
 ---
 
-Internally at CloudCannon, we use G Suite to manage all of our emails. This allows us to work together on products like Google Drive and Google Meet. When a staff member joins or leaves our organisation we can manage their account within the G Suite admin panel. When a new member joins our team, they need to access all of the relevant documentation. Some of our internal documentation is as you'd expect, a Jekyll site. Our internal documentation is hosted on CloudCannon at office.cloudcannon.com behind Google authentication. This site is only accessible to people within our organisation. When a staff member leaves, we disable their email and the internal documentation is restricted to them once again. This blog post will guide you through the process of adding Google Authentication to one of your sites.
+Internally at CloudCannon, we use G Suite to manage all of our emails. This allows us to work together on products like Google Drive and Google Meet. When a new member joins our team, they need to access all of the relevant documentation. Some of our internal documentation is as you'd expect, a Jekyll site hosted on CloudCannon. This site is only accessible to people within our organisation using Google authentication. When a staff member leaves, we disable their email and the internal documentation is restricted to them once again. This blog post will guide you through the process of adding Google Authentication to one of your&nbsp; CloudCannon sites.
 
 ![](/images/blog/gsuite-authenticated-sites-with-cloudcannon-and-saml/screen-shot-2020-01-30-at-20-21-55.png){: .screenshot width="2880" height="1800"}
 
@@ -36,7 +36,7 @@ Here some information is provided. Save the SSO URL and Download the Certificate
 
 ![](/images/blog/gsuite-authenticated-sites-with-cloudcannon-and-saml/screen-shot-2020-01-30-at-20-50-05.png){: .screenshot width="2880" height="1800"}
 
-You can now customise your App with a name, description and Logo. Take care to add this information as you will be unable to update this point. Once completed click NEXT.
+You can now customise your App with a name, description and logo. Take care to add this information as you will be unable to update this point. Once completed click NEXT.
 
 ![](/images/blog/gsuite-authenticated-sites-with-cloudcannon-and-saml/screen-shot-2020-01-30-at-20-55-02.png){: .screenshot width="2880" height="1800"}
 
