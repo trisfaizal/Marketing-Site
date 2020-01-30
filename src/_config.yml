@@ -114,6 +114,7 @@ _options:
     numberedlist: true
     bulletedlist: true
     code: true
+    table: true
     styles: "css/editor.css"
 
 plan_options:
