@@ -65,6 +65,7 @@ defaults:
           numberedlist: true
           bulletedlist: true
           code: true
+          table: true
           embed: true
           styles: "src/css/editor.css"
         image:
