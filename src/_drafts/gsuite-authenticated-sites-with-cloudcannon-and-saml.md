@@ -62,4 +62,6 @@ In here you will need to paste the following information:
 * The copied "SSO URL" into "SAML 2.0 Endpoint (HTTP)"
 * The downloaded certificate files contents into "X.509 Certificate"
 
-Scroll down and click "Update SAML Configuration". 🎉 Congratulations, your site is now restricted to your team members in your Google organisation. Try visiting your site and logging in. Reach out to support if you have any questions.
+Scroll down and click "Update SAML Configuration".
+
+🎉 Congratulations, your site is now restricted to your team members in your Google organisation. Try visiting your site and logging in. Reach out to support if you have any questions.
