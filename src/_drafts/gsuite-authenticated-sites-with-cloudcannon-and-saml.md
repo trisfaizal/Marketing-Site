@@ -1,5 +1,5 @@
 ---
-title: G Suite Authenticated Sites with CloudCannon
+title: G Suite Authenticated Sites with CloudCannon and SAML
 staff_member: george-phillips
 category: Tutorials
 image:
