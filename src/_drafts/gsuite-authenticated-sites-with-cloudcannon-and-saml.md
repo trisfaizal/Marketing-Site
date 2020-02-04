@@ -2,8 +2,8 @@
 title: G Suite Authenticated Sites with CloudCannon and SAML
 staff_member: george-phillips
 category: Tutorials
-image:
-image_featured: false
+image: /uploads/tobias-mrzyk-iuqmgmst5po-unsplash.jpg
+image_featured: true
 ---
 
 Internally at CloudCannon, we use G Suite to manage all of our emails. This allows us to work together on products like Google Drive and Google Meet. When a new member joins our team, they need to access all of the relevant documentation. Some of our internal documentation is as you'd expect, a Jekyll site hosted on CloudCannon. This site is only accessible to people within our organisation using Google authentication. When a staff member leaves, we disable their email and the internal documentation is restricted to them once again. This blog post will guide you through the process of adding Google Authentication to one of your&nbsp; CloudCannon sites.
