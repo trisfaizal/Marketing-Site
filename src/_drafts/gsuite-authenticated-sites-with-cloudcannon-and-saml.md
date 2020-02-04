@@ -60,6 +60,7 @@ Open CloudCannon at your site, visit *Site Settings / Authentication* and select
 In here you will need to paste the following information:
 
 * The copied "SSO URL" into "SAML 2.0 Endpoint (HTTP)"
+* Leave issue suffix blank
 * The downloaded certificate files contents into "X.509 Certificate"
 
 Scroll down and click "Update SAML Configuration".
