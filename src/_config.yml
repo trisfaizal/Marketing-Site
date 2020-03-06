@@ -138,3 +138,17 @@ plan_options:
 image_position:
   - 'Left'
   - 'Right'
+
+_array_structures:
+  page_sections:
+    - label: Page Section
+      icon: burst_mode
+      value:
+        section_heading:
+        components:
+  components:
+    - label: Content Block
+      icon: notes
+      value:
+        _component_type: Content Block
+        content_html:
