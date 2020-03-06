@@ -1,0 +1,11 @@
+{% assign content_class = 'c-content-block' %}
+<div class="{{ content_class }} page-component">
+	{% if include.heading %}
+		<h3>{{ include.heading }}</h3>
+	{% endif %}
+	{% if include.content %}
+		<div class="{{ content_class }}__user-content">
+			{{ include.content }}
+		</div>
+	{% endif %}
+</div>

@@ -1,0 +1,38 @@
+{% comment %} Page Components {% endcomment %}
+
+{% assign sections = page.page_sections %}
+
+{% if sections %}
+    <div class="page-components">
+        <div class="page-components__wrapper">
+            <div class="page-components__sections">
+                {% for section in sections %}
+                    <div class="page-components__section" id="{{ section.section_heading | slugify }}">
+                        <div class="page-components__content{% if page._wide_sections %} page-components__content--wide{% endif %}">
+                            {% if section.section_heading %}
+                                <h2 class="page-components__section-header">{{ section.section_heading }}</h2>
+                            {% endif %}
+                            {% for component in section.components %}
+                                {% capture component_contents %}
+                                    {% assign component_type = component._component_type | slugify %}
+                                    {% case component_type %}
+                                        {% when "content-block" %}
+                                            {% include page-components/content-block.html %}
+
+                                        {% comment %} Add new components here, and the components array structure in _config.yml {% endcomment %}
+
+
+                                        {% else %}
+                                            <!-- Incorrect component selection -->
+                                    {% endcase %}
+                                {% endcapture %}
+                                {% assign component_contents = component_contents | normalize_whitespace | strip %}
+                                <div class="page-components__component">{{ component_contents }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endif %}
