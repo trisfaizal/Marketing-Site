@@ -8,7 +8,7 @@
             <div class="page-components__sections">
                 {% for section in sections %}
                     <div class="page-components__section" id="{{ section.section_heading | slugify }}">
-                        <div class="page-components__content{% if page._wide_sections %} page-components__content--wide{% endif %}">
+                        <div class="page-components__components{% if page._wide_sections %} page-components__components--wide{% endif %}">
                             {% if section.section_heading %}
                                 <h2 class="page-components__section-header">{{ section.section_heading }}</h2>
                             {% endif %}
@@ -17,7 +17,9 @@
                                     {% assign component_type = component._component_type | slugify %}
                                     {% case component_type %}
                                         {% when "content-block" %}
-                                            {% include page-components/content-block.html %}
+                                            {% include page-components/content-block.html
+                                                heading=component.heading
+                                                content=component.content_html %}
 
                                         {% comment %} Add new components here, and the components array structure in _config.yml {% endcomment %}
 
