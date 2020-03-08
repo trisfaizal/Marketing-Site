@@ -178,7 +178,9 @@ _array_structures:
         _component_type: Group Items
         heading:
         show_icons: false
-        items:
-          - item:
-            description_html:
-            svg_image: '/assets/icons/check.svg'
+        group_items:
+
+  group_items:
+    - group_item:
+      description_html:
+      svg_image: '/assets/icons/check.svg'
