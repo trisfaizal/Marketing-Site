@@ -168,8 +168,8 @@ _array_structures:
       icon: touch_app
       value:
         _component_type: CTA Link
-        content_html:
-        image:
+        text:
+        url:
 
 
     - label: Group Items
@@ -178,7 +178,7 @@ _array_structures:
         _component_type: Group Items
         heading:
         show_icons: false
-        features:
-          - feature:
+        items:
+          - item:
             description_html:
             svg_image: '/assets/icons/check.svg'
