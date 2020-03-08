@@ -142,30 +142,30 @@ image_position:
 _array_structures:
   page_sections:
     - label: Page Section
-      icon: burst_mode
+      icon: view_agenda
       value:
         section_heading:
         components:
   components:
     - label: Content Block
-      icon: notes
+      icon: subject
       value:
         _component_type: Content Block
         content_html:
     - label: Left Image Right Text
-      icon: notes
+      icon: format_align_right
       value:
         _component_type: Left Image Right Text
         image:
         content_html:
     - label: Right Image Left Text
-      icon: notes
+      icon: format_align_left
       value:
         _component_type: Right Image Left Text
         content_html:
         image:
     - label: CTA Link
-      icon: notes
+      icon: touch_app
       value:
         _component_type: CTA Link
         content_html:
