@@ -152,18 +152,18 @@ _array_structures:
       value:
         _component_type: Content Block
         content_html:
-    - label: Left Image Right Text
-      icon: format_align_right
-      value:
-        _component_type: Left Image Right Text
-        image:
-        content_html:
-    - label: Right Image Left Text
+    - label: Left Text Right Image
       icon: format_align_left
       value:
-        _component_type: Right Image Left Text
+        _component_type: Left Text Right Image
         content_html:
         image:
+    - label: Right Text Left Image
+      icon: format_align_right
+      value:
+        _component_type: Right Text Left Image
+        image:
+        content_html:
     - label: CTA Link
       icon: touch_app
       value:
