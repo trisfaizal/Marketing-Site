@@ -173,7 +173,7 @@ _array_structures:
 
 
     - label: Group Items
-      icon: notes
+      icon: view_module
       value:
         _component_type: Group Items
         heading:
