@@ -20,6 +20,8 @@
                                             {% include page-components/content-block.html
                                                 heading=component.heading
                                                 content=component.content_html %}
+                                        {% when "features-with-icons" %}
+                                            {% include page-components/features-with-icons.html %}
 
                                         {% comment %} Add new components here, and the components array structure in _config.yml {% endcomment %}
 

@@ -1,0 +1,19 @@
+{% assign content_class = 'c-features-with-icons' %}
+<div class="{{ content_class }} page-component">
+	{% if include.heading %}
+		<h3>{{ include.heading }}</h3>
+	{% endif %}
+	<div class="{{ content_class }}__features">
+		{% for feature in component.features %}
+			<div class="{{ content_class }}__features__feature">
+				<div class="{{ content_class }}__features__feature__heading">
+					<img src="{{ feature.svg_image }}" alt="{{ feature.heading }}" />
+					<h4>{{ feature.heading }}</h4>
+				</div>
+				<div class="{{ content_class }}__features__feature__content">
+					{{ feature.description_html }}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>

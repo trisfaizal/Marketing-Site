@@ -152,3 +152,33 @@ _array_structures:
       value:
         _component_type: Content Block
         content_html:
+    - label: Left Image Right Text
+      icon: notes
+      value:
+        _component_type: Left Image Right Text
+        image:
+        content_html:
+    - label: Right Image Left Text
+      icon: notes
+      value:
+        _component_type: Right Image Left Text
+        content_html:
+        image:
+    - label: CTA Link
+      icon: notes
+      value:
+        _component_type: CTA Link
+        content_html:
+        image:
+
+
+    - label: Group Items
+      icon: notes
+      value:
+        _component_type: Group Items
+        heading:
+        show_icons: false
+        features:
+          - feature:
+            description_html:
+            svg_image: '/assets/icons/check.svg'
