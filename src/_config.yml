@@ -179,8 +179,8 @@ _array_structures:
         heading:
         show_icons: false
         group_items:
+          - title:
+            description_html:
+            svg_image: '/assets/icons/check.svg'
 
-  group_items:
-    - title:
-      description_html:
-      svg_image: '/assets/icons/check.svg'
+        
