@@ -1,0 +1,41 @@
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@mixin vwscale($map) {
+  $map: map-merge((attribute: font-size, stop-at: 800px, max-at: 1600px), $map);
+  #{map-get($map, 'attribute')}: map-get($map, 'value-at-max');
+  $pct: strip-unit(map-get($map, 'value-at-max')/map-get($map, 'max-at'));
+  
+  @media (max-width: map-get($map, 'max-at')) {
+    #{map-get($map, 'attribute')}: #{$pct*100}vw;
+  }
+  @media (max-width: map-get($map, 'stop-at')) {
+    #{map-get($map, 'attribute')}: #{map-get($map, 'stop-at')*$pct};
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: $height / $width * 100%;
+    width: 100%;
+    z-index: 0;
+  }
+}
+.c-aspect-inner {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}

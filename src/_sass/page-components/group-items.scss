@@ -1,0 +1,48 @@
+.c-group-items {
+	color: $neptune;
+	
+	&__heading {
+		@include vwscale((attribute: font-size, value-at-max: 55px, stop-at: 850px, max-at: 1200px));
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 -40px;
+
+		&__item {
+			flex: 1 250px;
+			margin: 10px 40px;
+
+			&__heading {
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: center;
+
+				h4 {
+					margin: 0;
+					line-height: 45px;
+					@include vwscale((attribute: font-size, value-at-max: 35px, stop-at: 850px, max-at: 1200px));
+				}
+
+				img {
+					margin: 0 15px 0 0;
+					@include vwscale((attribute: width, value-at-max: 45px, stop-at: 850px, max-at: 1200px));
+					@include vwscale((attribute: height, value-at-max: 45px, stop-at: 850px, max-at: 1200px));
+				}
+			}
+
+			&__content {
+				margin-top: 7px;
+
+				p {
+					margin: 0;
+				}
+			}
+		}
+
+		&--filler {
+
+		}
+	}
+}

@@ -21,7 +21,8 @@
                                                 heading=component.heading
                                                 content=component.content_html %}
                                         {% when "group-items" %}
-                                            {% include page-components/group-items.html %}
+                                            {% include page-components/group-items.html
+                                                heading=component.heading %}
                                         {% when "left-text-right-image" %}
                                             {% include page-components/left-text-right-image.html 
                                                 content=component.content_html 

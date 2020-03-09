@@ -1,19 +1,25 @@
 {% assign component_class = 'c-group-items' %}
 <div class="{{ component_class }} page-component">
 	{% if include.heading %}
-		<h3>{{ include.heading }}</h3>
+		<h3 class="{{ component_class }}__heading">{{ include.heading }}</h3>
 	{% endif %}
 	<div class="{{ component_class }}__wrapper">
-		{% for item in component.items %}
+		{% for item in component.group_items %}
 			<div class="{{ component_class }}__wrapper__item">
 				<div class="{{ component_class }}__wrapper__item__heading">
-					<img src="{{ item.svg_image }}" alt="{{ item.heading }}" />
-					<h4>{{ item.heading }}</h4>
+					{% if component.show_icons %}
+						{% if item.svg_image %}
+							<img src="{{ item.svg_image }}" alt="{{ item.heading }}" />
+						{% endif %}
+					{% endif %}
+					<h4>{{ item.title }}</h4>
 				</div>
 				<div class="{{ component_class }}__wrapper__item__content">
 					{{ item.description_html }}
 				</div>
 			</div>
 		{% endfor %}
+			<div class="{{ component_class }}__wrapper__item {{ component_class }}__wrapper__item--filler"></div>
+			<div class="{{ component_class }}__wrapper__item {{ component_class }}__wrapper__item--filler"></div>
 	</div>
 </div>

@@ -158,12 +158,18 @@ _array_structures:
         _component_type: Left Text Right Image
         content_html:
         image:
+        call_to_action:
+          link_text:
+          link_url:
     - label: Right Text Left Image
       icon: format_align_right
       value:
         _component_type: Right Text Left Image
         image:
         content_html:
+        call_to_action:
+          link_text:
+          link_url:
     - label: CTA Link
       icon: touch_app
       value:
@@ -181,6 +187,6 @@ _array_structures:
         group_items:
           - title:
             description_html:
-            svg_image: '/assets/icons/check.svg'
+            svg_image:
 
         
