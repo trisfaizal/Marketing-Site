@@ -181,6 +181,6 @@ _array_structures:
         group_items:
 
   group_items:
-    - group_item:
+    - title:
       description_html:
       svg_image: '/assets/icons/check.svg'

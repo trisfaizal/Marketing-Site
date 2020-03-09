@@ -1,17 +1,17 @@
-{% assign content_class = 'c-features-with-icons' %}
-<div class="{{ content_class }} page-component">
+{% assign component_class = 'c-group-items' %}
+<div class="{{ component_class }} page-component">
 	{% if include.heading %}
 		<h3>{{ include.heading }}</h3>
 	{% endif %}
-	<div class="{{ content_class }}__features">
-		{% for feature in component.features %}
-			<div class="{{ content_class }}__features__feature">
-				<div class="{{ content_class }}__features__feature__heading">
-					<img src="{{ feature.svg_image }}" alt="{{ feature.heading }}" />
-					<h4>{{ feature.heading }}</h4>
+	<div class="{{ component_class }}__wrapper">
+		{% for item in component.items %}
+			<div class="{{ component_class }}__wrapper__item">
+				<div class="{{ component_class }}__wrapper__item__heading">
+					<img src="{{ item.svg_image }}" alt="{{ item.heading }}" />
+					<h4>{{ item.heading }}</h4>
 				</div>
-				<div class="{{ content_class }}__features__feature__content">
-					{{ feature.description_html }}
+				<div class="{{ component_class }}__wrapper__item__content">
+					{{ item.description_html }}
 				</div>
 			</div>
 		{% endfor %}
