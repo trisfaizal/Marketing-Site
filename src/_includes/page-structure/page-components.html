@@ -20,8 +20,20 @@
                                             {% include page-components/content-block.html
                                                 heading=component.heading
                                                 content=component.content_html %}
-                                        {% when "features-with-icons" %}
-                                            {% include page-components/features-with-icons.html %}
+                                        {% when "group-items" %}
+                                            {% include page-components/group-items.html %}
+                                        {% when "left-text-right-image" %}
+                                            {% include page-components/fleft-text-right-image.html 
+                                                content=component.content_html 
+                                                image=component.image %}
+                                        {% when "right-text-left-image" %}
+                                            {% include page-components/right-text-left-image.html 
+                                                content=component.content_html 
+                                                image=component.image %}
+                                        {% when "cta-link" %}
+                                            {% include page-components/cta-link.html 
+                                                link=component.url
+                                                text=component.text %}
 
                                         {% comment %} Add new components here, and the components array structure in _config.yml {% endcomment %}
 
