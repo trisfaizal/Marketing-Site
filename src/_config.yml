@@ -156,6 +156,8 @@ _array_structures:
       icon: format_align_left
       value:
         _component_type: Left Text Right Image
+        heading:
+        topic:
         content_html:
         image:
         call_to_action:
@@ -165,6 +167,8 @@ _array_structures:
       icon: format_align_right
       value:
         _component_type: Right Text Left Image
+        heading:
+        topic:
         image:
         content_html:
         call_to_action:

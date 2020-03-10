@@ -24,13 +24,22 @@
                                             {% include page-components/group-items.html
                                                 heading=component.heading %}
                                         {% when "left-text-right-image" %}
-                                            {% include page-components/left-text-right-image.html 
-                                                content=component.content_html 
-                                                image=component.image %}
+                                            {% include page-components/image-and-text.html 
+                                                content=component.content_html
+                                                heading=component.heading
+                                                topic=component.topic 
+                                                image=component.image
+                                                cta_link=component.call_to_action.link_url
+                                                cta_text=component.call_to_action.link_text %}
                                         {% when "right-text-left-image" %}
-                                            {% include page-components/right-text-left-image.html 
-                                                content=component.content_html 
-                                                image=component.image %}
+                                            {% include page-components/image-and-text.html 
+                                                content=component.content_html
+                                                heading=component.heading
+                                                topic=component.topic 
+                                                image=component.image
+                                                cta_link=component.call_to_action.link_url
+                                                cta_text=component.call_to_action.link_text
+                                                right-aligned=true %}
                                         {% when "cta-link" %}
                                             {% include page-components/cta-link.html 
                                                 link=component.url

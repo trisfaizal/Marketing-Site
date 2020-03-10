@@ -1,0 +1,78 @@
+.c-image-and-text {
+	display: flex;
+	flex-flow: row wrap;
+
+	@media (max-width: 890px) {
+		flex-direction: column;
+	}
+
+	&__content {
+		flex: 1 400px;
+
+		@media (max-width: 890px) {
+			flex: 1 auto;
+			margin-bottom: 25px;
+		}
+
+		&__topic {
+			margin: 0;
+			@include vwscale((attribute: font-size, value-at-max: 25px, stop-at: 850px, max-at: 1200px));
+			color: $mercury;
+		}
+
+		&__heading {
+			@include vwscale((attribute: margin-bottom, value-at-max: 100px, stop-at: 850px, max-at: 1200px));
+			@include vwscale((attribute: font-size, value-at-max: 55px, stop-at: 850px, max-at: 1200px));
+			color: $neptune;
+
+			@media (max-width: 890px) {
+				margin-bottom: 50px;
+			}
+		}
+
+		&__cta {
+			position: relative;
+			display: inline-block;
+			padding-right: 40px;
+			@include vwscale((attribute: font-size, value-at-max: 20px, stop-at: 850px, max-at: 1200px));
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				width: 30px;
+				height: 20px;
+				background-image: url('/assets/icons/link-icon.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			}
+		}
+	}
+
+	&__img {
+		@include vwscale((attribute: margin-left, value-at-max: 50px, stop-at: 850px, max-at: 1200px));
+		flex: 1 400px;
+		min-height: 350px;
+		background-size: cover;
+		background-position: center center;
+
+		@media (max-width: 890px) {
+			margin: 0;
+			min-height: 150px;
+			@include vwscale((attribute: flex-basis, value-at-max: 400px, stop-at: 0px, max-at: 450px));
+		}
+	}
+
+	&--right {
+		flex-flow: row-reverse;
+		flex-wrap: wrap;
+
+		.c-image-and-text__img {
+			margin: 0;
+			@include vwscale((attribute: margin-right, value-at-max: 50px, stop-at: 850px, max-at: 1200px));
+		}
+	}
+}
