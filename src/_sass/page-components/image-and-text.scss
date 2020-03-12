@@ -33,21 +33,24 @@
 		&__cta {
 			position: relative;
 			display: inline-block;
-			padding-right: 40px;
 			@include vwscale((attribute: font-size, value-at-max: 20px, stop-at: 850px, max-at: 1200px));
 
-			&:after {
-				content: '';
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				right: 0;
-				width: 30px;
-				height: 20px;
-				background-image: url('/assets/icons/link-icon.svg');
-				background-repeat: no-repeat;
-				background-size: contain;
-				background-position: center;
+			a {
+				padding-right: 35px;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					width: 24px;
+					height: 100%;
+					background-image: url('/assets/icons/link-icon.svg');
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+				}
 			}
 		}
 	}

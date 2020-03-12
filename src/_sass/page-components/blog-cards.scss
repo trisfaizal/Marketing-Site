@@ -1,0 +1,51 @@
+.c-blog-card {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #979797;
+	box-sizing: border-box;
+
+	&__image {
+		width: 450px;
+		height: 270px;
+
+	}
+
+	&__heading-block {
+		h3 {
+			font-size: 25px;
+			line-height: 31px;
+			font-weight: bold;
+			color: $neptune;
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 18px;
+			color: $mercury;
+		}
+	}
+
+	&__content {
+		margin-bottom: 50px;
+		font-size: 18px;
+		line-height: 30px;
+		color: $neptune;
+
+	}
+
+	&__lower-block {
+		display: flex;
+		flex-flow: row wrap;
+
+		&__tag {
+			background-color: $grey_element_background;
+			border-radius: 3px;
+			color: $mercury;
+		}
+
+		&__link {
+
+		}
+	}
+}

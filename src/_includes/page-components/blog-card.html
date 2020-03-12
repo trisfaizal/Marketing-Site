@@ -1,0 +1,17 @@
+{% assign content_class = 'c-blog-card' %}
+<div class="{{ content_class }}">
+	<div class="{{ content_class }}__image">
+		<img src="{{ include.image }}" alt="{{ include.title }}" />
+	</div>
+	<div class="{{ content_class }}__heading-block">
+		<h3>{{ include.title }}</h3>
+		<p>{{ include.date }} | time</p>
+	</div>
+	<div class="{{ content_class }}__content">
+		{{ include.content }}
+	</div>
+	<div class="{{ content_class }}__lower-block">
+		<p class="{{ content_class }}__lower-block__tag">{{ include.category }}</p>
+		<p class="{{ content_class }}__lower-block__link"><a href="{{ include.url }}">Read More</a></p>
+	</div>
+</div>

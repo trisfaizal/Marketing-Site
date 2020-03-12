@@ -44,6 +44,47 @@
                                             {% include page-components/cta-link.html 
                                                 link=component.url
                                                 text=component.text %}
+                                            
+                                        {% when "recent-posts" %}
+                                            {% include page-components/recent-posts.html %}
+                                        {% comment %}
+                                        {% when "copy-with-image-carousel" %}
+                                            {% include page-components/copy-with-image-carousel.html %}
+                                            
+                                        {% when "copy-category-toggle-with-image" %}
+                                            {% include page-components/copy-category-toggle-with-image.html %}
+                                            
+                                        {% when "listing-cards" %}
+                                            {% include page-components/listing-cards.html %}
+                                            
+                                        {% when "general-page-header" %}
+                                            {% include page-components/general-page-header.html %}
+                                            
+                                        {% when "blog-post-header" %}
+                                            {% include page-components/blog-post-header.html %}
+                                            
+                                        {% when "home-page-header" %}
+                                            {% include page-components/home-page-header.html %}
+                                            
+                                        {% when "pricing-page-header" %}
+                                            {% include page-components/pricing-page-header.html %}
+                                            
+                                        {% when "category-cards" %}
+                                            {% include page-components/category-cards.html %}
+                                            
+                                        {% when "intern" %}
+                                            {% include page-components/intern.html %}
+                                            
+                                        {% when "quote-carousel" %}
+                                            {% include page-components/quote-carousel.html %}
+                                            
+                                        {% when "pricing-table" %}
+                                            {% include page-components/pricing-table.html %}
+                                            
+                                        {% when "pricing-card" %}
+                                            {% include page-components/pricing-card.html %}
+                                            
+                                        {% endcomment %}
 
                                         {% comment %} Add new components here, and the components array structure in _config.yml {% endcomment %}
 

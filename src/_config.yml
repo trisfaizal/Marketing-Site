@@ -179,7 +179,24 @@ _array_structures:
       value:
         _component_type: CTA Link
         text:
-        url:
+    - label: Recent Posts
+      icon: touch_app
+      value:
+        _component_type: Recent Posts
+        heading: Recent Posts
+        display_recent_posts: true
+    - label: Featured Post
+      icon: touch_app
+      value:
+        _component_type: Featured Post
+        heading: Featured Post
+        display_featured_post: true
+    - label: All Posts
+      icon: touch_app
+      value:
+        _component_type: All Posts
+        heading: All Posts
+        display_all_posts: true
 
 
     - label: Group Items
