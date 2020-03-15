@@ -1,10 +1,11 @@
 {% assign content_class = 'c-recent-posts' %}
 <div class="{{ content_class }}">
 	{% for post in site.posts %}
-		{% include components/blog-card.html 
+		{% include page-components/blog-card.html 
 			title=post.title
 			date=post.date
-			content=post.content
+			image=post.image
+			content=post.excerpt
 			category=post.category
 			url=post.url %}
 	{% endfor %}
