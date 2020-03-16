@@ -4,25 +4,35 @@
 	<div class="{{ content_class }} {{ content_class }}--filler">
 	</div>
 {% else %}
-	<div class="{{ content_class }}">
+	<div class="{{ content_class }}
+		{% if include.featured %}
+			{{ content_class }}--featured
+		{% endif %}"
+	>
 		<div class="{{ content_class }}__image" style="background-image: url('{{ include.image }}')">
 		</div>
-		<div class="{{ content_class }}__heading-block">
-			<h3>{{ include.title }}</h3>
-			{% assign post_content = include.content %}
-			<p>
-				<span class="{{ content_class }}__heading-block__date">
-					{{ include.date | date_to_long_string}}
-				</span> 
-				{% include page-components/read-time.html content=post_content %}
-			</p>
-		</div>
-		<div class="{{ content_class }}__content">
-			{{ include.content | strip_html | truncate: 145  }}
-		</div>
-		<div class="{{ content_class }}__lower-block">
-			<p class="{{ content_class }}__lower-block__tag">{{ include.category }}</p>
-			<p class="{{ content_class }}__lower-block__link"><a href="{{ include.url }}">Read More</a></p>
+		<div class="{{ content_class }}__content-wrapper">
+			<div class="{{ content_class }}__content-wrapper__heading-block">
+				<h3>{{ include.title }}</h3>
+				{% assign post_content = include.content %}
+				<p>
+					<span class="{{ content_class }}__content-wrapper__heading-block__date">
+						{{ include.date | date_to_long_string}}
+					</span> 
+					{% include page-components/read-time.html content=post_content %}
+				</p>
+			</div>
+			<div class="{{ content_class }}__content-wrapper__content">
+				{% if include.featured %}
+					{{ include.content | strip_html | truncate: 245  }}
+				{% else %}
+					{{ include.content | strip_html | truncate: 145  }}
+				{% endif %}
+			</div>
+			<div class="{{ content_class }}__content-wrapper__lower-block">
+				<p class="{{ content_class }}__content-wrapper__lower-block__tag">{{ include.category }}</p>
+				<p class="{{ content_class }}__content-wrapper__lower-block__link"><a href="{{ include.url }}">Read More</a></p>
+			</div>
 		</div>
 	</div>
 {% endif %}

@@ -16,7 +16,13 @@
 	{% elsif include.featured %}
 		{% for post in site.posts limit: 1 %}
 			{% include page-components/blog-card.html 
-				content=post.content %}
+				title=post.title
+				date=post.date
+				image=post.image
+				content=post.content
+				category=post.category
+				url=post.url
+				featured=true %}
 		{% endfor %}
 
 	{% else %}
