@@ -31,6 +31,9 @@ collections:
   staff_members:
     output: false
     _hide_content: true
+  jobs:
+    output: true
+    _hide_content: true
 defaults:
   - scope:
       path: ""
@@ -145,6 +148,7 @@ _array_structures:
       icon: view_agenda
       value:
         section_heading:
+        wide_section: false
         components:
   components:
     - label: Content Block

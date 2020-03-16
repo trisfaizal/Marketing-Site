@@ -7,7 +7,12 @@
         <div class="page-components__wrapper">
             <div class="page-components__sections">
                 {% for section in sections %}
-                    <div class="page-components__section" id="{{ section.section_heading | slugify }}">
+                    <div class="page-components__section 
+                        {% if section.wide_section %}
+                            page-components__section--wide
+                        {% endif %}" 
+                        id="{{ section.section_heading | slugify }}"
+                    >
                         <div class="page-components__components{% if page._wide_sections %} page-components__components--wide{% endif %}">
                             {% if section.section_heading %}
                                 <h2 class="page-components__section-header">{{ section.section_heading }}</h2>
@@ -46,7 +51,15 @@
                                                 text=component.text %}
                                             
                                         {% when "recent-posts" %}
-                                            {% include page-components/recent-posts.html %}
+                                            {% include page-components/posts.html 
+                                                recent=true %}
+                                            
+                                        {% when "featured-post" %}
+                                            {% include page-components/posts.html 
+                                                featured=true %}
+
+                                        {% when "all-posts" %}
+                                            {% include page-components/posts.html %}
                                         {% comment %}
                                         {% when "copy-with-image-carousel" %}
                                             {% include page-components/copy-with-image-carousel.html %}

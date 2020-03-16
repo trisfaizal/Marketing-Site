@@ -3,6 +3,10 @@
 		margin: 0 auto;
 		padding: 90px 25px;
 		max-width: 1200px;
+
+		&--wide {
+			max-width: 1520px;
+		}
 	}
 
 	&__component {
