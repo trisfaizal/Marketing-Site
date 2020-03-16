@@ -10,7 +10,12 @@
 		<div class="{{ content_class }}__heading-block">
 			<h3>{{ include.title }}</h3>
 			{% assign post_content = include.content %}
-			<p><span class="{{ content_class }}__heading-block__date">{{ include.date | date_to_long_string}}</span> {% include page-components/read-time.html content=post_content %}</p>
+			<p>
+				<span class="{{ content_class }}__heading-block__date">
+					{{ include.date | date_to_long_string}}
+				</span> 
+				{% include page-components/read-time.html content=post_content %}
+			</p>
 		</div>
 		<div class="{{ content_class }}__content">
 			{{ include.content | strip_html | truncate: 145  }}

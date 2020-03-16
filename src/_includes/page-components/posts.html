@@ -15,7 +15,8 @@
 
 	{% elsif include.featured %}
 		{% for post in site.posts limit: 1 %}
-			{% include page-components/blog-card.html featured=true %}
+			{% include page-components/blog-card.html 
+				content=post.content %}
 		{% endfor %}
 
 	{% else %}
