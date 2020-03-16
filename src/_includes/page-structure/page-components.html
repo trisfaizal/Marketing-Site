@@ -52,14 +52,17 @@
                                             
                                         {% when "recent-posts" %}
                                             {% include page-components/posts.html 
-                                                recent=true %}
+                                                recent=true
+                                                visible=component.display_recent_posts %}
                                             
                                         {% when "featured-post" %}
                                             {% include page-components/posts.html 
-                                                featured=true %}
+                                                featured=true
+                                                visible=component.display_featured_post %}
 
                                         {% when "all-posts" %}
-                                            {% include page-components/posts.html %}
+                                            {% include page-components/posts.html
+                                                visible=component.display_all_posts %}
                                         {% comment %}
                                         {% when "copy-with-image-carousel" %}
                                             {% include page-components/copy-with-image-carousel.html %}

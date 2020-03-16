@@ -1,41 +1,43 @@
 {% assign content_class = 'c-posts' %}
-<div class="{{ content_class }}">
-	{% if include.recent %}
-		{% for post in site.posts limit: 6 %}
-			{% include page-components/blog-card.html 
-				title=post.title
-				date=post.date
-				image=post.image
-				content=post.content
-				category=post.category
-				url=post.url %}
-		{% endfor %}
-		{% include page-components/blog-card.html filler=true %}
-		{% include page-components/blog-card.html filler=true %}
+{% if include.visible %}
+	<div class="{{ content_class }}">
+		{% if include.recent %}
+			{% for post in site.posts limit: 6 %}
+				{% include page-components/blog-card.html 
+					title=post.title
+					date=post.date
+					image=post.image
+					content=post.content
+					category=post.category
+					url=post.url %}
+			{% endfor %}
+			{% include page-components/blog-card.html filler=true %}
+			{% include page-components/blog-card.html filler=true %}
 
-	{% elsif include.featured %}
-		{% for post in site.posts limit: 1 %}
-			{% include page-components/blog-card.html 
-				title=post.title
-				date=post.date
-				image=post.image
-				content=post.content
-				category=post.category
-				url=post.url
-				featured=true %}
-		{% endfor %}
+		{% elsif include.featured %}
+			{% for post in site.posts limit: 1 %}
+				{% include page-components/blog-card.html 
+					title=post.title
+					date=post.date
+					image=post.image
+					content=post.content
+					category=post.category
+					url=post.url
+					featured=true %}
+			{% endfor %}
 
-	{% else %}
-		{% for post in site.posts %}
-			{% include page-components/blog-card.html 
-				title=post.title
-				date=post.date
-				image=post.image
-				content=post.content
-				category=post.category
-				url=post.url %}
-		{% endfor %}
-		{% include page-components/blog-card.html filler=true %}
-		{% include page-components/blog-card.html filler=true %}
-	{% endif %}
-</div>
+		{% else %}
+			{% for post in site.posts %}
+				{% include page-components/blog-card.html 
+					title=post.title
+					date=post.date
+					image=post.image
+					content=post.content
+					category=post.category
+					url=post.url %}
+			{% endfor %}
+			{% include page-components/blog-card.html filler=true %}
+			{% include page-components/blog-card.html filler=true %}
+		{% endif %}
+	</div>
+{% endif %}
