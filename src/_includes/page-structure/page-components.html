@@ -63,9 +63,10 @@
                                         {% when "all-posts" %}
                                             {% include page-components/posts.html
                                                 visible=component.display_all_posts %}
+
+                                        {% when "job-listings" %}
+                                            {% include page-components/job-listings.html %}
                                         {% comment %}
-                                        {% when "copy-with-image-carousel" %}
-                                            {% include page-components/copy-with-image-carousel.html %}
                                             
                                         {% when "copy-category-toggle-with-image" %}
                                             {% include page-components/copy-category-toggle-with-image.html %}

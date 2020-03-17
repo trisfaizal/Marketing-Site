@@ -201,6 +201,11 @@ _array_structures:
         _component_type: All Posts
         heading: All Posts
         display_all_posts: true
+    - label: Job Listings
+      icon: touch_app
+      value:
+        _component_type: Job Listings
+        heading: Job Listings
 
 
     - label: Group Items
