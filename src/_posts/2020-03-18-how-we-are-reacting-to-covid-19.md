@@ -6,8 +6,6 @@ image: /uploads/work-From-Home-flexible-jobs.jpg
 image_featured: true
 ---
 
-## How we are reacting to COVID-19
-
 We want to do our part in containing the spread of COVID-19. While our main priority is to keep our employees healthy and safe, we also see it as our responsibility to help protect the population that is at risk due to age and pre-existing conditions. As of March 17th, we have decided that all CloudCannon employees will work from home (WFH). At the time of writing, there is only one confirmed case in Dunedin, New Zealand (main office location). This may seem like a radical measure at this point in time, but we believe it’s appropriate due to the evolving situation in Europe. If we can help save lives by staying at home, this is a no-brainer\!
 
 ### Our Approach to Work
