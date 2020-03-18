@@ -3,7 +3,7 @@ title: How we are reacting to COVID-19
 staff_member: chris-wingate
 category: Announcements
 image: /uploads/work-From-Home-flexible-jobs.jpg
-image_featured: false
+image_featured: true
 ---
 
 ## How we are reacting to COVID-19
