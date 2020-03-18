@@ -206,6 +206,11 @@ _array_structures:
       value:
         _component_type: Job Listings
         heading: Job Listings
+    - label: Documentaion Categories
+      icon: touch_app
+      value:
+        _component_type: Documentaion Categories
+        heading: Documentaion Categories
 
 
     - label: Group Items

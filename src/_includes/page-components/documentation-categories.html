@@ -1,0 +1,12 @@
+{% assign component_class = 'c-documentation-categories' %}
+
+<div class="{{ component_class }}">
+	{% for post in site.posts %}
+		{% include page-components/category-card 
+			heading=post.title
+			image=post.image
+			button_url=post.url
+			button_text='Learn More'
+			button_type='branded' %}
+	{% endfor %}
+</div>

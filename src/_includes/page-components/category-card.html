@@ -1,0 +1,16 @@
+{% assign component_class = 'c-category-card' %}
+
+<div class="{{ component_class }}">
+	<div class="{{ component_class }}__heading">
+		<h3>{{ include.heading }}</h3>
+	</div>
+	<div class="{{ component_class }}__image" style="background-image: url('{{ include.image }}')"></div>
+	<div class="{{ component_class }}__content">
+		<p>{{ include.content }}</p>
+		{% include sub-components/button.html 
+			url=include.button_url
+			text=include.button_text
+			button_type=include.button_type
+			%}
+	</div>
+</div>
