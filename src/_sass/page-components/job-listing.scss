@@ -1,0 +1,52 @@
+.c-job-listings {
+	display: flex;
+	flex-flow: row wrap;
+	margin: -20px;
+
+	&__listing {
+		flex: 1 450px;
+		margin: 20px;
+		padding: 30px;
+		border: 1px solid $titanium;
+		box-sizing: border-box;
+
+		&__title {
+			font-weight: bold;
+			font-size: 25px;
+			line-height: 31px;
+			color: $neptune;
+		}
+
+		&__brief {
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 30px;
+			color: $neptune;
+		}
+
+		&__lower-block {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-top: 18px;
+			border-top: 1px solid $titanium;
+
+			p {
+				margin: 0;
+				font-size: 20px;
+				line-height: 30px;
+				color: $titanium;
+			}
+
+			a {
+				padding: 12px 17px;
+				border-radius: 3px;
+				background-color: $button-blue;
+				font-size: 20px;
+				line-height: 25px;
+				color: #ffffff;
+				text-align: center;
+			}
+		}
+	}
+}

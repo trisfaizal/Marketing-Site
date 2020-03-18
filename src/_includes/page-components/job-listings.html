@@ -1,1 +1,14 @@
-<h1>Job Listings</h1>
+{% assign component_class = 'c-job-listings' %}
+
+<div class="{{ component_class }}">
+	{% for listing in site.jobs %}
+		<div class="{{ component_class }}__listing">
+			<h4 class="{{ component_class }}__listing__title">{{ listing.title }}</h4>
+			<p class="{{ component_class }}__listing__brief">{{ listing.brief_description }}</p>
+			<div class="{{ component_class }}__listing__lower-block">
+				<p>{{ listing.location }}</p>
+				<a href="{{ listing.url }}">View Posting</a>
+			</div>
+		</div>
+	{% endfor %}
+</div>
