@@ -218,7 +218,7 @@ _array_structures:
         heading: Page Header
         text:
         image:
-        button_row:
+        buttons:
 
 
     - label: Group Items
@@ -232,12 +232,9 @@ _array_structures:
             description_html:
             svg_image:
 
-  button_row:
-    - label: Button Row
-      icon: view_agenda
-      value:
-        - button_text:
-          button_url:
-          button_type:
+  buttons:
+    - button_text:
+      button_url:
+      button_type:
 
         
