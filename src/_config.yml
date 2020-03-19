@@ -219,6 +219,9 @@ _array_structures:
         text:
         image:
         buttons:
+          - button_text:
+            button_url:
+            button_type:
 
 
     - label: Group Items
@@ -232,9 +235,6 @@ _array_structures:
             description_html:
             svg_image:
 
-  buttons:
-    - button_text:
-      button_url:
-      button_type:
+        
 
         
