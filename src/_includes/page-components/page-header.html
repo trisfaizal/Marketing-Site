@@ -11,14 +11,22 @@
 				{{ component_class }}__content__heading--branded
 			{% endif %}">{{ include.heading }}</h1>
 		<p class="{{ component_class }}__content__text">{{ include.text }}</p>
-		<div class="buttons-row">
-			{% for button in include.buttons %}
-				{% include sub-components/button.html 
-				button_type=button.button_type
-				url=button.button_url
-				text=button.button_text %}
-			{% endfor %}
-		</div>
+
+		{% if include.toggle %}
+		
+		{% endif %}
+
+		{% if include.buttons %}
+			<div class="buttons-row">
+				{% for button in include.buttons %}
+					{% include sub-components/button.html 
+					button_type=button.button_type
+					url=button.button_url
+					text=button.button_text %}
+				{% endfor %}
+			</div>
+		{% endif %}
+		
 		{% if include.note %}
 			<p class="c-page-header__content__note">{{ include.note }}</p>
 		{% endif %}
