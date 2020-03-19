@@ -8,7 +8,7 @@
 	@include vwscale((attribute: line-height, value-at-max: 25px, stop-at: 660px, max-at: 950px));
 
 	&--branded {
-		background-color: $button-blue;
+		background-color: $cc_blue;
 		color: #ffffff;
 	}
 

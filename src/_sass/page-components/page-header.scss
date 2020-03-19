@@ -33,6 +33,10 @@
 			@media (max-width: 850px) {
 				margin-top: 25px;
 			}
+
+			&--branded {
+				color: $cc_blue;
+			}
 		}
 
 		&__text {
@@ -44,6 +48,13 @@
 
 		.buttons-row {
 			margin: 0 -18px;
+		}
+
+		&__note {
+			font-weight: normal;
+			font-size: 11px;
+			line-height: 14px;
+			color: $mercury;
 		}
 	}
 }

@@ -6,7 +6,10 @@
 	{% endif %}">
 	<div class="{{ component_class }}__image" style="background-image: url('{{ include.image }}')"></div>
 	<div class="{{ component_class }}__content">
-		<h1 class="{{ component_class }}__content__heading">{{ include.heading }}</h1>
+		<h1 class="{{ component_class }}__content__heading 
+			{% if include.branded %}
+				{{ component_class }}__content__heading--branded
+			{% endif %}">{{ include.heading }}</h1>
 		<p class="{{ component_class }}__content__text">{{ include.text }}</p>
 		<div class="buttons-row">
 			{% for button in include.buttons %}
@@ -16,5 +19,8 @@
 				text=button.button_text %}
 			{% endfor %}
 		</div>
+		{% if include.note %}
+			<p class="c-page-header__content__note">{{ include.note }}</p>
+		{% endif %}
 	</div>
 </div>

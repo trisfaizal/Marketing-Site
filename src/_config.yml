@@ -223,6 +223,8 @@ _array_structures:
             button_url:
             button_type:
         flip_image_and_text: false
+        brand_coloured_heading: false
+        note:
 
 
     - label: Group Items
