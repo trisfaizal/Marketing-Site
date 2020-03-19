@@ -1,0 +1,14 @@
+.c-button {
+	display: inline-block;
+	margin: 18px;
+	padding: 12px 18px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+	border-radius: 3px;
+
+	&--branded {
+		background-color: $button-blue;
+		color: #ffffff;
+	}
+}

@@ -2,7 +2,7 @@
 
 <div class="{{ component_class }}">
 	{% for post in site.posts %}
-		{% include page-components/category-card 
+		{% include page-components/category-card.html 
 			heading=post.title
 			image=post.image
 			button_url=post.url

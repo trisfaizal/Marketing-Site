@@ -1,9 +1,9 @@
 {% assign component_class = 'c-category-card' %}
 
 <div class="{{ component_class }}">
-	<div class="{{ component_class }}__heading">
+	<a class="{{ component_class }}__heading" href="{{ include.button_url }}">
 		<h3>{{ include.heading }}</h3>
-	</div>
+	</a>
 	<div class="{{ component_class }}__image" style="background-image: url('{{ include.image }}')"></div>
 	<div class="{{ component_class }}__content">
 		<p>{{ include.content }}</p>
