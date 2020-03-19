@@ -222,7 +222,7 @@ _array_structures:
           - button_text:
             button_url:
             button_type:
-        options:
+        header_options:
           flip_image_and_text: false
           brand_coloured_heading: false
           note:
