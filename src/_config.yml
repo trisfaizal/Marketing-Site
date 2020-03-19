@@ -222,6 +222,7 @@ _array_structures:
           - button_text:
             button_url:
             button_type:
+        flip_image_and_text: false
 
 
     - label: Group Items

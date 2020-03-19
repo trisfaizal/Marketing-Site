@@ -1,6 +1,9 @@
 {% assign component_class = 'c-page-header' %}
 
-<div class="{{ component_class }}">
+<div class="{{ component_class }}
+	{% if include.flipped %}
+		{{ component_class }}--flipped
+	{% endif %}">
 	<div class="{{ component_class }}__image" style="background-image: url('{{ include.image }}')"></div>
 	<div class="{{ component_class }}__content">
 		<h1 class="{{ component_class }}__content__heading">{{ include.heading }}</h1>

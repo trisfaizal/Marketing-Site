@@ -3,6 +3,10 @@
 	flex-flow: row wrap;
 	margin: 0 -25px;
 
+	&--flipped {
+		flex-flow: row-reverse wrap;
+	}
+
 	&__image {
 		padding: 0 35px 0 0;
 		flex: 1 425px;
