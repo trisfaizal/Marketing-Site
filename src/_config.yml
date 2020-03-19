@@ -236,5 +236,7 @@ _array_structures:
             svg_image:
 
         
-
+button_types:
+  - 'Branded'
+  - 'Non-Branded'
         
