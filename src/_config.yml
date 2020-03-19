@@ -211,6 +211,14 @@ _array_structures:
       value:
         _component_type: Documentation Categories
         heading: Documentation Categories
+    - label: Page Header
+      icon: touch_app
+      value:
+        _component_type: Page Header
+        heading: Page Header
+        text:
+        image:
+        button_row:
 
 
     - label: Group Items
@@ -223,5 +231,13 @@ _array_structures:
           - title:
             description_html:
             svg_image:
+
+  button_row:
+    - label: Button Row
+      icon: view_agenda
+      value:
+        - button_text:
+          button_url:
+          button_type:
 
         
