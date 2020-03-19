@@ -69,6 +69,13 @@
 
                                         {% when "documentation-categories" %}
                                             {% include page-components/documentation-categories.html %}
+
+                                        {% when "page-header" %}
+                                            {% include page-components/page-header.html
+                                                heading=component.heading
+                                                text=component.text
+                                                image=component.image
+                                                buttons=component.buttons %}
                                         {% comment %}
                                             
                                         {% when "copy-category-toggle-with-image" %}

@@ -2,14 +2,14 @@
 
 
 
-{% assign type = include.button_type %}
+{% assign type = include.button_type | slugify %}
 {% case type %}
 	{% when "branded" %}
 		{% assign button_class=component_class | append: '--branded' %}
-	{% when "cookie" %}
-		This is a cookie
+	{% when "non-branded" %}
+		{% assign button_class=component_class | append: '--non-branded' %}
 	{% else %}
-		This is not a cake nor a cookie
+		{% comment %}Stop{% endcomment %}
 {% endcase %}
 
 

@@ -1,3 +1,45 @@
 .c-page-header {
-	
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 -25px;
+
+	&__image {
+		padding: 0 35px 0 0;
+		flex: 1 425px;
+		box-sizing: border-box;
+		@include vwscale((attribute: width, value-at-max: 680px, stop-at: 0px, max-at: 1520px));
+		@include vwscale((attribute: height, value-at-max: 590px, stop-at: 0px, max-at: 1520px));
+		background-size: cover;
+		background-position: center center;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 0 0 35px;
+		flex: 1 425px;
+		box-sizing: border-box;
+
+		&__heading {
+			color: $neptune;
+			@include vwscale((attribute: font-size, value-at-max: 55px, stop-at: 575px, max-at: 950px));
+			@include vwscale((attribute: line-height, value-at-max: 69px, stop-at: 575px, max-at: 950px));
+			
+			@media (max-width: 850px) {
+				margin-top: 25px;
+			}
+		}
+
+		&__text {
+			color: $neptune;
+			font-weight: 300;
+			@include vwscale((attribute: font-size, value-at-max: 20px, stop-at: 755px, max-at: 950px));
+			@include vwscale((attribute: line-height, value-at-max: 30px, stop-at: 755px, max-at: 950px));
+		}
+
+		.buttons-row {
+			margin: 0 -18px;
+		}
+	}
 }
