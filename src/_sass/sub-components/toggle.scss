@@ -56,7 +56,7 @@
 
 			&:checked {
 				& + label:before {
-					background: #2ecc71;
+					background: $cc_blue;
 					transition: width .2s cubic-bezier(0, 0, 0, .1);
 				}
 				& + label:after {

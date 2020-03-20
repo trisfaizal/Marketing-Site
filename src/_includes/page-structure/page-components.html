@@ -84,6 +84,11 @@
                                                 toggle_1_note=component.options.toggle.option_1_note
                                                 toggle_2=component.options.toggle.option_2
                                                 toggle_2_note=component.options.toggle.option_2_note %}
+
+                                        {% when "mailing-list-cta" %}
+                                            {% include page-components/mailing-list-cta.html
+                                                heading=component.heading
+                                                text=component.text %}
                                         {% comment %}
                                             
                                         {% when "copy-category-toggle-with-image" %}

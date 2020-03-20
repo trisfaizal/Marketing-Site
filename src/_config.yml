@@ -231,6 +231,12 @@ _array_structures:
             option_1_note:
             option_2:
             option_2_note:
+    - label: Mailing List CTA
+      icon: touch_app
+      value:
+        _component_type: Mailing List CTA
+        heading: Mailing List CTA
+        text:
 
 
     - label: Group Items
