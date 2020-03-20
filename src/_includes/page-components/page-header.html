@@ -33,9 +33,14 @@
 		{% if include.note %}
 			<p class="c-page-header__content__note">{{ include.note }}</p>
 		{% endif %}
+
+		{% if include.toggle_enabled %}
+			{% include sub-components/toggle.html
+				option_1=include.toggle_1
+				option_2=include.toggle_2
+				option_1_note=include.toggle_1_note
+				option_2_note=include.toggle_2_note
+			 %}
+		{% endif %}
 	</div>
 </div>
-
-
-{% include sub-components/toggle.html %}
-
