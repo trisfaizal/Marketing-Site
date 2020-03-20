@@ -12,8 +12,11 @@
 			{% endif %}">{{ include.heading }}</h1>
 		<p class="{{ component_class }}__content__text">{{ include.text }}</p>
 
-		{% if include.toggle %}
-		
+		{% if include.toggle_enabled %}
+			<form class="{{ component_class }}__content__toggle">
+				<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+				<label for="vehicle1"> I have a bike</label><br>
+			</form>
 		{% endif %}
 
 		{% if include.buttons %}
@@ -26,9 +29,13 @@
 				{% endfor %}
 			</div>
 		{% endif %}
-		
+
 		{% if include.note %}
 			<p class="c-page-header__content__note">{{ include.note }}</p>
 		{% endif %}
 	</div>
 </div>
+
+
+{% include sub-components/toggle.html %}
+

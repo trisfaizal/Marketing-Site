@@ -226,6 +226,11 @@ _array_structures:
           flip_image_and_text: false
           brand_coloured_heading: false
           note:
+          toggle:
+            option_1:
+            option_1_note:
+            option_2:
+            option_2_note:
 
 
     - label: Group Items
