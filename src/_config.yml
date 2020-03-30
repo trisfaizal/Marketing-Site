@@ -39,6 +39,20 @@ defaults:
       path: ""
     values:
       header_class: "short"
+      _options:
+        content_html:
+          format: p h2 h3 h4 h5 h6
+          link: true
+          removeformat: true
+          bold: true
+          italic: true
+          image: true
+          numberedlist: true
+          bulletedlist: true
+          code: true
+          table: true
+          embed: true
+          styles: "src/css/editor.css"
   - scope:
       path: ""
       type: pages
@@ -73,19 +87,6 @@ defaults:
           styles: "src/css/editor.css"
         image:
           upload_dir: "images/blog/:title"
-        content_html:
-          format: p h2 h3 h4 h5 h6
-          link: true
-          removeformat: true
-          bold: true
-          italic: true
-          image: true
-          numberedlist: true
-          bulletedlist: true
-          code: true
-          table: true
-          embed: true
-          styles: "src/css/editor.css"
 
 plugins:
   - jekyll-autoprefixer
