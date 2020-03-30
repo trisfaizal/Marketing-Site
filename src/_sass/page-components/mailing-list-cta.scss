@@ -1,15 +1,47 @@
 .c-mailing-list-cta {
-	&__content {
-		&__heading {
+	margin: 0 -25px;
+	background-color: $cloud;
 
+	&__content {
+		margin: 0 auto;
+		padding: 72px 0;
+		max-width: 755px;
+		text-align: center;
+
+		&__heading {
+			margin: 0 0 10px;
+			font-size: 35px;
+			font-weight: bold;
+			line-height: 44px;
+			color: $neptune;
 		}
 
 		&__text {
-
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 25px;
+			color: $mercury;
 		}
 
 		form {
-			
+			fieldset {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+				align-items: center;
+
+				input {
+					margin: 0 15px;
+					flex: 1 250px;
+					padding: 10px 16px;
+					@include vwscale((attribute: line-height, value-at-max: 30px, stop-at: 660px, max-at: 950px));
+
+				}
+
+				.c-button {
+					margin-left: 0px;
+				}
+			}
 		}
 	}
 }

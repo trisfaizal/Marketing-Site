@@ -1,0 +1,54 @@
+.c-intern-descriptions {
+	
+}
+
+.c-intern-description {
+	display: flex;
+	flex-flow: row wrap;
+
+	&__left-column {
+		width: 100%;
+		max-width: 350px;
+	}
+
+	&__image {
+		margin-bottom: 70px;
+		padding-bottom: 100%;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	&__right-column {
+		padding: 34px 34px 60px 100px;
+
+		h3 {
+			margin: 0;
+			font-size: 25px;
+			font-weight: bold;
+			line-height: 31px;
+			color: $mercury;
+		}
+
+		h4 {
+			margin: 5px 0 100px 0;
+			font-size: 35px;
+			font-weight: bold;
+			line-height: 44px;
+			color: $neptune;
+		}
+
+	}
+
+	&__content {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 30px;
+		color: $neptune;
+	}
+
+	&__link {
+		width: 100%;
+		text-align: right;
+	}
+}

@@ -1,0 +1,16 @@
+{% assign component_class = 'c-intern-description' %}
+<div class="{{ component_class }}">
+	<div class="{{ component_class }}__left-column">
+		<div class="{{ component_class }}__image" style="background: url('{{ include.image }}')"></div>
+	</div>
+	<div class="{{ component_class }}__right-column">
+		<h3>{{ include.name }}</h3>
+		<h4>{{ include.role }}</h4>
+		<div class="{{ component_class }}__content">
+			{{ include.content }}
+		</div>
+		{% include sub-components/link.html 
+			url=include.url
+			url_text=include.url_text %}
+	</div>
+</div>

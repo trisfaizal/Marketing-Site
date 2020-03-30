@@ -4,7 +4,14 @@
 	<div class="{{ component_class }}__content">
 		<h3 class="{{ component_class }}__content__heading">{{ include.heading }}</h3>
 		<p class="{{ component_class }}__content__text">{{ include.text }}</p>
-		<form>
+		<form action="/contact-success/" method="post">
+			<fieldset>
+				<input type="email" name="email" id="email" placeholder="Email Address" required>
+				{% include sub-components/button.html
+					button_type="Branded"
+					text="Sign Up"
+					submit=true %}
+			</fieldset>
 		</form>
 	</div>
 </div>

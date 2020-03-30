@@ -1,0 +1,13 @@
+{% assign component_class = 'c-intern-descriptions' %}
+
+<div class="{{ component_class }}">
+	{% for intern in component.interns %}
+		{% include page-components/intern-description.html 
+			name=intern.name
+			role=intern.role
+			content=intern.content_html
+			image=intern.intern_image
+			url_text=intern.url.text
+			url=intern.url.url %}
+	{% endfor %}
+</div>

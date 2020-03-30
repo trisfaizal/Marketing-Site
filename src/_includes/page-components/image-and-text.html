@@ -5,7 +5,9 @@
 		<p class="{{ component_class }}__content__topic">{{ include.topic }}</p>
 		<h4 class="{{ component_class }}__content__heading">{{ include.heading }}</h4>
 		{{ include.content }}
-		<p class="{{ component_class }}__content__cta"><a href="{{ include.cta_link }}">{{ include.cta_text }}</a></p>
+		{% if include.cta_text | size > 2 %}
+			<p class="{{ component_class }}__content__cta"><a href="{{ include.cta_link }}">{{ include.cta_text }}</a></p>
+		{% endif %}
 	</div>
 	<div class="{{ component_class }}__img" style="background-image: url('{{ include.image }}')">
 	</div>

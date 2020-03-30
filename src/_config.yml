@@ -251,6 +251,19 @@ _array_structures:
         _component_type: Mailing List CTA
         heading: Mailing List CTA
         text:
+    - label: Intern Descriptions
+      icon: touch_app
+      value:
+        _component_type: Intern Descriptions
+        heading: Intern Descriptions
+        interns:
+          - name:
+            role:
+            content_html:
+            intern_image:
+            url:
+              text:
+              url:
 
 
     - label: Group Items

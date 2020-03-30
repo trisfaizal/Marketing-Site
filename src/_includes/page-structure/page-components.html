@@ -89,6 +89,9 @@
                                             {% include page-components/mailing-list-cta.html
                                                 heading=component.heading
                                                 text=component.text %}
+
+                                        {% when "intern-descriptions" %}
+                                            {% include page-components/intern-descriptions.html %}
                                         {% comment %}
                                             
                                         {% when "copy-category-toggle-with-image" %}

@@ -17,6 +17,11 @@
 	{% if button_class %}
 		{{ button_class }}
 	{% endif %}"
-	href="{{ include.url }}">
+	{% if include.url %}
+		href="{{ include.url }}"
+	{% endif %}
+	{% if include.submit %}
+		type="submit"
+	{% endif %}>
 	{{ include.text }}
 </a>

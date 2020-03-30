@@ -1,0 +1,6 @@
+{% if include.cta_text | size > 1 %}
+	{% assign component_class="c-link" %}
+	<p class="{{ component_class }}">
+		<a href="{{ include.url }}">{{ include.url_text }}</a>
+	</p>
+{% endif %}
