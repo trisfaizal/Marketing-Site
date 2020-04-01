@@ -1,0 +1,56 @@
+.c-heading-with-features { $c: &;
+	&__heading {
+		margin: 12px 0;
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 44px;
+		color: $neptune;
+	}
+
+	&__content {
+		margin: 0 0 12px 0;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 30px;
+		color: $neptune;
+	}
+
+	&__features {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin: -25px;
+	}
+
+	&__feature {
+		flex: 1 275px;
+		margin: 25px;
+
+		&--filler {
+			margin: 0 25px;
+			height: 0;
+		}
+
+		h4 {
+			margin: 12px 0;
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 31px;
+			color: $neptune;
+		}
+
+		p {
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 30px;
+			color: $neptune;
+		}
+	}
+
+	&__feature-image {
+		width: 100%;
+		padding-bottom: 62.5%;
+		background-position: center center;
+		background-size: cover;
+	}
+}

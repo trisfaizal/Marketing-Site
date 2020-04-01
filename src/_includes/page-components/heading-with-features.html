@@ -1,0 +1,21 @@
+{% assign component_class = 'c-heading-with-features' %}
+
+<div class="{{ component_class }}">
+	<h3 class="{{ component_class }}__heading">{{ component.heading }}</h3>
+	<div class="{{ component_class }}__content">
+		{{ component.content_html }}
+	</div>
+	<div class="{{ component_class }}__features">
+		{% for feature in component.features %}
+			<div class="{{ component_class }}__feature">
+				<div class="{{ component_class }}__feature-image"
+					style="background-image: url('{{ feature.image }}')"></div>
+				<h4>{{ feature.title }}</h4>
+				<p>{{ feature.content }}</p>
+			</div>
+		{% endfor %}
+			<div class="{{ component_class }}__feature {{ component_class }}__feature--filler"></div>
+			<div class="{{ component_class }}__feature {{ component_class }}__feature--filler"></div>
+			<div class="{{ component_class }}__feature {{ component_class }}__feature--filler"></div>
+	</div>
+</div>

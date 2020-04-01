@@ -1,0 +1,29 @@
+{% assign component_class = 'c-case-studies-side-block' %}
+
+<div class="{{ component_class }}">
+	<div class="{{ component_class }}__image" style="background-image: url('{{ include.image }}')"></div>
+
+	<div class="{{ component_class }}__stats">
+		<div class="{{ component_class }}__stat {{ component_class }}__stat--location">
+			<h5>Location</h5>
+			<p>{{ include.location }}</p>
+		</div>
+		<div class="{{ component_class }}__stat {{ component_class }}__stat--size">
+			<h5>Company Size</h5>
+			<p>{{ include.size }}</p>
+		</div>
+		<div class="{{ component_class }}__stat {{ component_class }}__stat--onboarded">
+			<h5>Customer Since</h5>
+			<p>{{ include.customer_since }}</p>
+		</div>
+		<div class="{{ component_class }}__stat {{ component_class }}__stat--industry">
+			<h5>Industry</h5>
+			<p>{{ include.industry }}</p>
+		</div>
+	</div>
+
+	<div class="{{ component_class }}__favourite">
+		<h5>Favourite Feature:</h5>
+		<p>{{ include.favourite }}</p>
+	</div>
+</div>

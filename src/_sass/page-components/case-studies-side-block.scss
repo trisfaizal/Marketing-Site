@@ -1,0 +1,108 @@
+.c-case-studies-side-block { $c: &;
+	position: fixed;
+	z-index: 5;
+	top: 20%;
+	right: 0px;
+	padding: 20px 40px 40px 40px;
+	max-width: 450px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+
+	&__image {
+		margin-bottom: 20px;
+		width: 100%;
+		padding-bottom: 18%;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	&__stats {
+		display: flex;
+		flex-flow: row wrap;
+		padding: 30px 0;
+		border-top: 1px solid $titanium;
+		border-bottom: 1px solid $titanium;
+		box-sizing: border-box;
+	}
+
+	&__stat {
+		position: relative;
+		padding: 0 20px 30px 30px;
+		flex: 1 50%;
+		box-sizing: border-box;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 24px;
+			height: 24px;
+			background-position: center center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		&--location {
+			&:before {
+				background-image: url('/assets/icons/location.svg')
+			}
+		}
+
+		&--size {
+			&:before {
+				background-image: url('/assets/icons/people.svg')
+			}
+		}
+
+		&--onboarded {
+			&:before {
+				background-image: url('/assets/icons/clock.svg')
+			}
+		}
+
+		&--industry {
+			&:before {
+				background-image: url('/assets/icons/industry.svg')
+			}
+		}
+
+		h5 {
+			margin: 0;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 25px;
+			color: $mercury;
+		}
+
+		p {
+			margin: 0;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 26px;
+			color: $mercury;
+		}	
+	}
+
+	&__favourite {
+		padding: 17px 0 22px 0;
+		border-top: 1px solid $titanium;
+		border-bottom: 1px solid $titanium;
+
+		h5 {
+			margin: 0 0 22px 0;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 25px;
+			color: $neptune;
+		}
+
+		p {
+			margin: 0;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 26px;
+			color: $mercury;
+		}
+	}
+
+}

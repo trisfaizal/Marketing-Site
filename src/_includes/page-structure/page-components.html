@@ -92,6 +92,21 @@
 
                                         {% when "intern-descriptions" %}
                                             {% include page-components/intern-descriptions.html %}
+
+                                        {% when "heading-with-features" %}
+                                            {% include page-components/heading-with-features.html %}
+
+                                        {% when "case-studies-side-block" %}
+                                            {% include page-components/case-studies-side-block.html
+                                            image='/uploads/tiger-bee-face.jpeg'
+                                            location='Wellington, NZ'
+                                            size='~12 Employees'
+                                            customer_since='2017'
+                                            industry='Finances, SAAS'
+                                            favourite='It is clearly the superior content management system to use.' %}
+
+                                        {% when "template-cards" %}
+                                            {% include page-components/template-cards.html %}
                                         {% comment %}
                                             
                                         {% when "copy-category-toggle-with-image" %}

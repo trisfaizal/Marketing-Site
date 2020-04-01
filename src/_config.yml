@@ -264,6 +264,20 @@ _array_structures:
             url:
               text:
               url:
+    - label: Heading With Features
+      icon: touch_app
+      value:
+        _component_type: Heading With Features
+        heading: Heading With Features
+        content_html:
+        features:
+          - title:
+            content:
+            image:
+    - label: Case Studies Side Block
+      icon: touch_app
+      value:
+        _component_type: Case Studies Side Block
 
 
     - label: Group Items
