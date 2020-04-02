@@ -1,6 +1,8 @@
 ---
 layout: info-page
 title: GDPR
+description: 
+image: 
 permalink: /gdpr/
 ---
 

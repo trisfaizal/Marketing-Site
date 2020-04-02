@@ -1,6 +1,8 @@
 ---
 layout: info-page
 title: Terms of Service
+description: 
+image: 
 permalink: /terms/
 ---
 

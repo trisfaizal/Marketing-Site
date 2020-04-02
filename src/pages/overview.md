@@ -1,6 +1,8 @@
 ---
 title: Why CloudCannon?
 layout: page
+description: 
+image: 
 permalink: /overview/
 subheading: The benefits of static sites, Jekyll and CloudCannon
 icon: emblem-icon
