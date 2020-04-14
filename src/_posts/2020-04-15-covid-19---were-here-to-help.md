@@ -2,7 +2,7 @@
 title: COVID-19 - We're here to help
 staff_member: chris-wingate
 category: Features
-image:
+image: /uploads/stay-home-stay-safe.jpg
 image_featured: false
 ---
 
