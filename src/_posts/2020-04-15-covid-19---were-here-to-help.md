@@ -6,7 +6,7 @@ image: /uploads/stay-home-stay-safe.jpg
 image_featured: true
 ---
 
-Last week, we got an email from our landlord (shoutout Nick) telling us he’s going to reduce our rent by 50% for the month of April. No questions asked. No conditions. We thought this was a great way of showing compassion in these unprecedented times. We are very grateful for his selfless act of kindness, and now we want to pay it forward.
+Last week, we got an email from our landlord (shoutout Nick) telling us he’s going to reduce our rent by 50% for the month of April. No questions asked. No conditions. We thought this was a great way of showing compassion in these unprecedented times.<br><br>We are very grateful for his selfless act of kindness, and now we want to pay it forward.
 
 These are trying times for everyone, but some companies and individuals are experiencing immense stress on all fronts due to the COVID-19 pandemic. In order to help the people and businesses that are impacted the most, we would like to offer current and new customers a **50% discount on CloudCannon** **subscriptions for 2 months.** No questions asked. No conditions.
 
