@@ -1,7 +1,7 @@
 ---
 name: Chris Wingate
 image: /uploads/chris.jpg
-position: Business Development Manager
+position: CFO
 twitter:
 email_address: christopher@cloudcannon.com
 bio:
