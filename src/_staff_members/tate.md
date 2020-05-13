@@ -1,7 +1,7 @@
 ---
 name: Tate Kennington
 image: /uploads/tate.jpg
-position: Development Intern
+position: Junior Developer
 twitter:
 email_address: tate@cloudcannon.com
 bio:
